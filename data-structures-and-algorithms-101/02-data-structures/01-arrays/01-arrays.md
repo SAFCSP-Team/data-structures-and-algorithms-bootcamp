@@ -6,7 +6,7 @@ Array :
 - Arrays can store **primitive** data types  or **non-primitive** data type.
 - The length of an array is **fixed** at the time of its creation and remains constant throughout its lifetime.
 - An array is the **simplest data structure** where each data element can be randomly **accessed** using its **index number**.
-- The `index` **starts with the number 0** , so if the size of an array is n ,**the maximum index number is n-1**.
+- The `index` **starts with the number 0** for the first element and increments by 1 for each subsequent element , so if the size of an array is **n**,the maximum index number is **n-1**.
 
 Types of arrays based on their dimensions :
 
