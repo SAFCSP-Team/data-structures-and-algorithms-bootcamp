@@ -5,6 +5,7 @@
 
 This definition is what most of us read about and know, and it is correct. Data structures helps us organize data and manipulate it easily. But here we will take each keyword in the definition individually and explain what it is.
 
+
 ### Data
 First part we want to focus on is `data`, which is the raw data that we want to organize and manipulate. It is the main input for our data structures (organizations) so we will start from it. 
 
@@ -17,6 +18,7 @@ Data in our programs could be categorized as
 
 Following the same example above, if we have an unorganized collection of data such as integers, then it will be hard for us to search or access a specific number. But, if we organize these integers using an `Array` as an example, then it is going to be easy to access, search and modify.
 
+![data representation](./images/data.jpg)
 
 ### Organize
 Organizing data could be done using multiple ways. If we return to the toys example in data section, we can come with multiple ways to organize the toys, we can organize it as boxes by category or color or even sizes. We can also store it by using its original boxes and stack them over each others and so on. 
@@ -28,6 +30,7 @@ Organization is Data Structure. When we want to organize toys, plates or books w
 
 So, if we want to make accessing, searching and handling some data in a program easier then we will organize it using one of the organizations types (data structures). These organizations could be array, stack, queue or any other way of organizing your data.
 
+![data organization representation](./images/organization.jpg)
 
 ### Manipulate 
 Manipulating means performing some actions or operations on data. So when we organize toys we can perform some actions like searching, taking and storing a toy.
@@ -39,10 +42,18 @@ Manipulations means writing an operation aka "Algorithm". So, when we write an i
 
 In another word, manipulation in the data structure definitions means writing algorithms to perform some actions on the data.
 
-### Conclusion 
+![data operation on organization representation](./images/operation.jpg)
+
+## Conclusion 
 
 In conclusion, Data structures are just organizations type to use for organizing data, while algorithms are the operations we perform on these organizations and its data.
 
 
 ## Projects
-<!-- the project should be using one of the animation tools to structure data in any way. and perform some action on it such as inserting a value -->
+Having a list of week days as string, visualize the data as an array using [array visualizer](https://array-3d-viz.vercel.app/).
+
+```
+[ "sunday", "monday", "tuesday", "wednesday", "thursday", "friday" ]
+```
+
+> Note: for submission, create an issue called "array visualization submission - <your-github-username>" 
