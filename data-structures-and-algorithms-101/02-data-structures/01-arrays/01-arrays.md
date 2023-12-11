@@ -3,16 +3,16 @@ In computer programming, in most cases, there is a need to **store a large numbe
 ## Concept
 Array :  
 > is a collection of **similar type** data items **stored in contiguous** `memory locations`.
-- Arrays can store primitive data types  or non-primitive data type .
+- Arrays can store **primitive** data types  or **non-primitive** data type.
+- The length of an array is **fixed** at the time of its creation and remains constant throughout its lifetime.
 - An array is the **simplest data structure** where each data element can be randomly **accessed** using its **index number**.
 - The `index` **starts with the number 0** , so if the size of an array is n ,**the maximum index number is n-1**.
 
 Types of arrays based on their dimensions :
 
-- `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a single row or column, and each element can be accessed using its index number.
-- `Two-Dimensional Arrays`: Also known as matrices, two-dimensional arrays organize elements in rows and columns. They are useful for representing tables.
-- `Multi-Dimensional Array`: Has more than two dimensions. It can have three or more dimensions, similar to a 3D object. For example, a 3D array can represent a cube of data with length, width, and height.
-
+- `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a **single row**.
+- `Two-Dimensional Arrays`: Also known as matrices, two-dimensional arrays organize elements in **rows and columns**. They are useful for representing tables.
+- `Multi-Dimensional Array`: Has **more than two dimensions**. It can have three or more dimensions, similar to a 3D object. 
 ## Example 
 
 ### Primitive 
