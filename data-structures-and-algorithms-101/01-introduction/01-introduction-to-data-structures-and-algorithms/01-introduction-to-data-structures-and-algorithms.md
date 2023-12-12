@@ -44,10 +44,15 @@ In other words, manipulation in the data structure definitions means writing alg
 
 ![data operation on organization representation](./images/operation.jpg)
 
-## Conclusion 
+Algorithms performed on data structures are mostly applied to any type of organization. For example, the fetching, inserting, and removing processes could be done on your toys, clothes, or books. But there are some cases when you perform some actions on a specific type of organization, books for example could be read but toys can not be read but could be played with.
+That being said, we can categorize algorithms into two types, common algorithms that are applied to any type of organization. And specific organization's algorithms that apply to specific types of organization. 
+
+
+## Conclusion
 
 In conclusion, Data structures are just organization types to use for organizing data, while algorithms are the operations we perform on these organizations and their data.
-
+ ### Next Step
+We will focus later on, on explaining each organization, its attributes, and algorithms. Then we will cover the common shared operations that are applied to these organizations such as sorting and searching.
 
 ## Projects
 Having a list of weekdays as a string, visualize the data as an array using [array visualizer](https://array-3d-viz.vercel.app/).
