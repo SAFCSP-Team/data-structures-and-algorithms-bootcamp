@@ -3,4 +3,4 @@ Tree
 
 
 
-![data representation](./images/data.jpg)
+![data representation](./images/Tree.jpg)
