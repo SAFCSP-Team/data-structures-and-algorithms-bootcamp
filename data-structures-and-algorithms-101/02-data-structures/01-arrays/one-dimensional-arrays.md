@@ -4,7 +4,8 @@ one-dimensional array, also known as a 1D array or a single-dimensional array, i
 ## Concept
 `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a single row. [picture one](https://miro.com/welcomeonboard/VmlhamFJYzBvNnF1ZDBHYzhZd2t4WHRuT1VvZnhTWkF0eDRtdUhJSEwxUWVYZHRsWlltaWVrQ0VETlRpcTUwaHwzNDU4NzY0NTcyODA5NjYwMjI5fDI=?share_link_id=27226874419)
 - The length of an array called **A** can be accessed using the syntax **A.length** in java or **len(A)** in python.
-- To access an element in a one-dimensional array, you use square brackets [] and index that represents the position of an element in the array, A[0] gives the first element in an array called **A** 
+- To access an element in a one-dimensional array, you use square brackets [] and index that represents the position of an element in the array, A[0] gives the first element in an array called **A**
+  [picture two](https://miro.com/welcomeonboard/VmlhamFJYzBvNnF1ZDBHYzhZd2t4WHRuT1VvZnhTWkF0eDRtdUhJSEwxUWVYZHRsWlltaWVrQ0VETlRpcTUwaHwzNDU4NzY0NTcyODA5NjYwMjI5fDI=?share_link_id=27226874419)
 
 ## Example 
 
