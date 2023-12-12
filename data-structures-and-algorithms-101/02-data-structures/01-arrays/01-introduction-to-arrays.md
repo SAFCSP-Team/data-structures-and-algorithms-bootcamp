@@ -11,7 +11,7 @@ Array :
 Types of arrays based on their dimensions :
 
 - `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a **single row**.
-- `Multi-Dimensional Array`: Has **more than one dimension**. It can have two or more dimensions, similar to a 3D object. The most common type of multi-dimensional array is a two-dimensional array, often referred to as a matrix.
+- `Multi-Dimensional Array`: Has **more than one dimension**. It can have two or more dimensions, similar to a 3D object. The most common type of multi-dimensional array is a two-dimensional array.
 - `Two-Dimensional Arrays`: Also known as matrices, two-dimensional arrays organize elements in **rows and columns**. They are useful for representing tables.
 
 
