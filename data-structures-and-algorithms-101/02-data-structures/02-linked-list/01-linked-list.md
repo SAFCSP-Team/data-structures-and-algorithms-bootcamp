@@ -1,11 +1,11 @@
 # Introduction to Linked List
 
-Imagine you are on a treasure hunt with a series of cards leading you to the hidden gold. The cards are arranged in a linked list to guide you on the path.
+Imagine you are on a treasure hunt with a series of cards leading you to the hidden gold. The cards are arranged in a links to guide you on the path.
+
+Let's say there are two cards in the treasure hunt:
+the first card would contain the information about card 1 and a reference to the next card, in the second card would hold the information about card 2 and have a null reference since it's the last card in the treasure hunt.
 
 In this linked list representation, each card is like a `node`. Each `node` **contains two parts**: the information about the card itself and a `pointer`(or reference) to the next card in the list.
-
-**For example**, let's say there are two cards in the treasure hunt:
-the first card would contain the information about card 1 and a reference to the next card, In the second card would hold the information about card 2 and have a null reference since it's the last card in the treasure hunt.
 
 ## Concept
 
