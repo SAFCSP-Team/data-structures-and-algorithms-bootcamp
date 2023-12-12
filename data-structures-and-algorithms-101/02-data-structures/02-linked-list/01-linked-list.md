@@ -1,15 +1,36 @@
 # Introduction to Linked List
 
+Imagine you are on a treasure hunt with a series of cards leading you to the hidden gold. The cards are arranged in a linked list to guide you on the path.
+
+In this linked list representation, each card is like a `node`. Each `node` **contains two parts**: the information about the card itself and a `pointer`(or reference) to the next card in the list.
+
+**For example**, let's say there are two cards in the treasure hunt:
+the first card would contain the information about card 1 and a reference to the next card, In the second card would hold the information about card 2 and have a null reference since it's the last card in the treasure hunt.
+
 ## Concept
 
-A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. Each node contains both the `data` and a `pointer` to the next node in the sequence. The last node in the list has a pointer to null, 
-`tail` indicates the end of the list.
+A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. Each node contains the `data` and a `pointer` to the next node in the sequence. The last node in the list has a pointer to null, `tail` indicates the end of the list.
 
-You can use a linked list to arrange student's names in **alphabetical order**, Each student will be stored as a `node` in the **linked list**, Each `node` will contain the student name as **data** and a `pointer` (or reference) to the **next node in the list**.
+
+
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/e5906bb0-2a3a-4bfd-9f14-fa919ba80bd6)
+
+
+**Types of Linked List**:
+
+* Single linked list.
+   
+  > A type of linked list that is unidirectional, it can be traversed in only one direction from head to the last node (tail).
+* Double linked list.
+  > It is a special type of linked list where each node contains a pointer to the previous node as well as the next node of the linked list.
+  
+* Circular linked list.
+  > is a type of linked list in which the first and the last nodes are also connected to each other to form a circle.
 
 ## Example 
 
 ### Primitive 
+
 
 ### Composite
 
