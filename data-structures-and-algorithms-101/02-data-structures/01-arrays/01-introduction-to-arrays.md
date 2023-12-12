@@ -1,4 +1,4 @@
-# Arrays
+# Introduction to Arrays
 In computer programming, in most cases, there is a need to **store a large number of data of the same type**. To handle such data, we need to define a **large number of variables**. It would be **very difficult** to **remember the names** of all the variables while writing the programs. Instead of using different variable names, it is **better to define an array and store all the elements in it**.
 ## Concept
 Array :  
@@ -11,8 +11,11 @@ Array :
 Types of arrays based on their dimensions :
 
 - `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a **single row**.
+- `Multi-Dimensional Array`: Has **more than one dimension**. It can have two or more dimensions, similar to a 3D object. The most common type of multi-dimensional array is a two-dimensional array, often referred to as a matrix.
 - `Two-Dimensional Arrays`: Also known as matrices, two-dimensional arrays organize elements in **rows and columns**. They are useful for representing tables.
-- `Multi-Dimensional Array`: Has **more than two dimensions**. It can have three or more dimensions, similar to a 3D object. 
+
+
+
 ## Example 
 
 ### Primitive 
