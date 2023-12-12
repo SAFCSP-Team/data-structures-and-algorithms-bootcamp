@@ -16,69 +16,31 @@
     * To search for a specific element in the `linked list`, you start from the head and traverse the list until you find the element or reach the end of the list. You can compare the data in each node with the target element to determine if it matches.
 
 * Remove a node from the list.
-  
-
-
-
-
+* To remove a node from the linked list, you need to update the next pointer of the previous node to bypass the node to be deleted. If the node to be deleted is the head, you update the head pointer to point to the next node. 
 ## Example 
 
-> In java and c++, you can declare and initialize linkedlist in a similar way.
+> In java and C++, you can declare and initialize linked lists in a similar way.
 
 ### Primitive 
-
+* Single linked list of primitive data types in Java:
+  
 ```java
 
-public class Node {
-    public int data; // Primitive data type
-    public Node next;
-
-    public Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
 ```
-* linkedlist of primitive data types in c++:
+* Single linked list of primitive data types in C++:
 ```c++
-struct Node {
-    int data; // Primitive data type
-    Node* next;
-
-    Node(int data) {
-        this->data = data;
-        next = nullptr;
-    }
-};
 
 
 ```
 
 ### non Primitive
-* linkedlist of non primitive data types in Java:
+* Single linked list of non primitive data types in Java:
 ```java
-public class Node {
-    public String data; // Non-primitive data type
-    public Node next;
 
-    public Node(String data) {
-        this.data = data;
-        this.next = null;
-    }    }
 ```
-* linkedlist of non primitive data types in c++:
+Single linked list of non primitive data types in C++:
   
 ```c++
-
-struct Node {
-    std::string data; // Non-primitive data type
-    Node* next;
-
-    Node(const std::string& data) {
-        this->data = data;
-        next = nullptr;
-    }
-};
   
   ```
 
