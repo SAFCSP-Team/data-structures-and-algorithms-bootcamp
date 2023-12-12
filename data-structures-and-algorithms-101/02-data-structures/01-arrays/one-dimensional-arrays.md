@@ -16,7 +16,6 @@ int[] numbers = {1, 7, 9, 1, 5};
 int count= numbers.length; // Assigns the length of the array to count (5 in this case)
 int secondElement = numbers[1]; // Assigns the value at index 1 (7 in this case)
 ```
-[](https://miro.com/welcomeonboard/VmlhamFJYzBvNnF1ZDBHYzhZd2t4WHRuT1VvZnhTWkF0eDRtdUhJSEwxUWVYZHRsWlltaWVrQ0VETlRpcTUwaHwzNDU4NzY0NTcyODA5NjYwMjI5fDI=?share_link_id=27226874419)
 
 ### non-primitive
 Consider a class called "Person" that represents a person's name and age. You can create an array of Person objects in java like this:
