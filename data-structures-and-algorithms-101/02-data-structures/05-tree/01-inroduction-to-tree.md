@@ -8,6 +8,8 @@ Let's say you have a big company and your company have a large number of employe
 
 Tree should be considered here, lets's see how would the company employees would be organized using the tree as the below image:
 
+![data representation](./images/Company-employees-tree.jpg)
+
 
 
 ## Concept
