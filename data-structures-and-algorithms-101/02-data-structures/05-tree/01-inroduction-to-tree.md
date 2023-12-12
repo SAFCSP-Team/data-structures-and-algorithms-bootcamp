@@ -6,7 +6,7 @@ When to use the tree and why?
 
 Let's say you have a big company and your company have a large number of employees, the company have CEO, managers, directors.. How would you orgnanize the employees considering their roles/position?
 
-Tree should be considered here, lets's see how would the company employees would be organized using the tree as the below image:
+Tree should be considered here, lets's see how the company employees would be organized using the tree as the below image:
 
 ![data representation](./images/Company-employees-tree.jpg)
 
