@@ -42,7 +42,9 @@ Types of tree:
 - Example: The `balanced factor` for the node `A` = (height of left subtree {1} - height of right subtree {1}) = {0}.
   
 4 - B-tree
-- 
+- A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
+
+  
 
 
 ## Example 
