@@ -23,12 +23,14 @@ A tree is a collection of nodes that are connected by edges and has a hierarchic
 Types of tree:
 
 1 - Binary tree
-A tree where the node has at most two child.
+
+- A tree where the node has at most two child.
 
 2 - Binary search tree (BST)
-A tree where the node at most has two child 
-A tree where the left subtree is less than the root
-A tree where the right subtree is bigger than the root
+
+- A tree where the node at most has two child 
+- A tree where the left subtree is less than the root
+- A tree where the right subtree is bigger than the root
 
 3 - AVL tree
 
