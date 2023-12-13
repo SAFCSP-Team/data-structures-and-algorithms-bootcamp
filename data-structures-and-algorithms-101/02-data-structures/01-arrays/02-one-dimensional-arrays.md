@@ -8,7 +8,7 @@ One-dimensional array, also known as a 1D array or a single-dimensional array, i
 ## Example 
 
 ### Primitive 
-One Dimensional Array of numbers called `numbers` in java: 
+- One Dimensional Array of numbers called `numbers` in java: 
 ```java
 int[] numbers = {1, 7, 9, 1, 5};
 int count= numbers.length; // Assigns the length of the array to count
@@ -21,7 +21,7 @@ System.out.println("The secondElement = " +secondElement);
 The count = 5
 The secondElement = 7
 ```
-One Dimensional Array of numbers called `numbers` in C++: 
+- One Dimensional Array of numbers called `numbers` in C++: 
 ``` c++
     int numbers[] = {1, 7, 9, 1, 5};
     int count = sizeof(numbers) / sizeof(numbers[0]);
@@ -39,7 +39,7 @@ The secondElement = 7
 
 
 ### non-primitive
-- Consider a class called [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) that represents a person's name and age. You can create an array of Person objects in java like this:
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
  ``` java
 Person[] peopleArray = new Person[3];
 peopleArray[0] = new Person("Alice", 25);
@@ -55,8 +55,7 @@ Output
 The count = 3
 The secondElement = Name: Bob Age: 30
 ```
--
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++ like this:
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
 ```C++
     Person peopleArray[] = { Person("Alice", 25),Person("Bob", 30),
     Person("Charlie", 35) };
