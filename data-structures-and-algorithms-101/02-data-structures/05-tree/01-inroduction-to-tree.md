@@ -84,6 +84,7 @@ There are three ways to travers tree:
 
 ## Example 
 Before digging into the expample let's see what is the node class structure? and what is it's attributes?
+Node class consists of 3 attributes `int key`, `Node left` and `Node right` and a constructor that take an .
 
 ```java
 // Node creation
