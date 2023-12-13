@@ -1,4 +1,4 @@
-public class Person {
+class Person {
     private String name;
     private int age;
 
@@ -25,4 +25,12 @@ public class Person {
     public void setAge(int newAge) {
         age = newAge;
     }
+
+    // toString method
+    @Override
+    public String toString() {
+        return "Name: " + name + " Age: " + age;
+    }
+
+ 
 }
