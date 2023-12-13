@@ -21,7 +21,7 @@ Figure 2
 ![data representation](./images/Tree.jpg)
 
 
-Types of tree:
+**Types of tree**
 
 1 - Binary tree
 
@@ -44,6 +44,8 @@ Types of tree:
 4 - B-tree
 - A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
 
+
+**Tree Traversal**
   
 
 
