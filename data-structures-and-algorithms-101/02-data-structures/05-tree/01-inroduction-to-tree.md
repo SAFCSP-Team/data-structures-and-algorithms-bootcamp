@@ -56,7 +56,7 @@ There are three ways to travers tree:
 - Visit the root node
 - Visit all nodes from the left side
 - Visit all node from the right side
-- Example: in figuer 2, the pre-order path is: A -> D -> B -> E ->
+- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
 
 2-
 3-
