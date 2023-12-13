@@ -46,7 +46,14 @@ Figure 2
 
 
 **Tree Traversal**
-  
+
+The process of visiting required node to perform special operation or visiting each node and print their values.
+
+There are three ways to travers tree:
+
+1-
+2-
+3-
 
 
 ## Example 
