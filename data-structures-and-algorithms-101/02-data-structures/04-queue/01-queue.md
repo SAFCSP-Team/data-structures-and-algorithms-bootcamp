@@ -48,10 +48,19 @@ QueueArray queue = new QueueArray();
 Non-Prmitive
 
 ````Java
-queue.enQueue(50);
-queue.display(); //10 20 30 40 50
-queue.deQueue();
-queue.display(); //20 30 40 50
+Queue<User> queue = new LinkedList<>();
+
+        User user1 = new User("Khalid", 20);
+        User user2 = new User("Faris", 25);
+        User user3 = new User("Majed", 22);
+
+        queue.enQueue(user1);
+        queue.enQueue(user2);
+        queue.enQueue(user3);
+
+        queue.deQueue();
+
+        queue.display(); // Faris, Majed
 ````
 
 ## Projects
