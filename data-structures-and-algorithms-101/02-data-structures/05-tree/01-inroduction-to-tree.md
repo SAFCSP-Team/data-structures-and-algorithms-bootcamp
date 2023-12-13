@@ -86,7 +86,8 @@ There are three ways to travers tree:
 
 <summary>Node class and BinaryTree class structure</summary>
 <br/>
-Before digging into the expample let's see what is the node class structure? and what is it's attributes?
+Before digging into the expample let's see what is the node BinaryTree class and structure? and what ist 
+heir attributes?
 
 Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
 
@@ -106,13 +107,15 @@ Node(value) {
 }
 ```
 
-BinaryTree:
+BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
+
+BinaryTree
 ```java
 // BinaryTree creation
 class BinaryTree {
   Node root;
 
-  BinaryTree(value) {
+  BinaryTree(key) {
   root = new Node(key);
   }
 
@@ -132,8 +135,6 @@ class BinaryTree {
 public static void main(String[] args) {
 // Execute operations
 }
-
-
 }
 ```
 </details>
