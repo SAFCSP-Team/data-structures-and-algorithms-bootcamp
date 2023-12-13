@@ -10,7 +10,7 @@ The `length` property works differently depending on the number of dimensions in
 - For a `one-dimensional array`, ***oneDArray.length*** represents the **total number of elements** in the array. 
 - For multi-dimensional arrays with more dimensions, you can chain the `length` property to **access the size in each dimension**. 
 
-    - Let's consider a `two-dimensional array`: <br>
+    - Let's consider a `two-dimensional array`: 
         - ***twoDArray.length*** gives the number of rows. 
         - Each row of the array is itself an array so, ***twoDArray[0].length*** provides the **number of columns in the first row**.
 
@@ -51,7 +51,7 @@ int secondElement = twoDArray[1][2]; // Row 1, Column 2
 System.out.println("Element at (1, 2): " + element);
 
 ```
-Output
+Output:
 ```
 Number of rows: 3
 Number of columns: 3
