@@ -90,6 +90,7 @@ Before digging into the expample let's see what is the node class structure? and
 
 Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
 
+Node class
 ```java
 // Node creation
 class Node {
@@ -102,6 +103,37 @@ Node(value) {
   left = null;
   right = null;
   }
+}
+```
+
+BinaryTree:
+```java
+// BinaryTree creation
+class BinaryTree {
+  Node root;
+
+  BinaryTree(value) {
+  root = new Node(key);
+  }
+
+  BinaryTree() {
+  root = null;
+  }
+
+  // Traverse Inorder
+  public void traverseInOrder(Node node)
+
+// Traverse Postorder
+  public void traversePostOrder(Node node)
+
+// Traverse Preorder
+  public void traversePreOrder(Node node)
+
+public static void main(String[] args) {
+// Execute operations
+}
+
+
 }
 ```
 </details>
