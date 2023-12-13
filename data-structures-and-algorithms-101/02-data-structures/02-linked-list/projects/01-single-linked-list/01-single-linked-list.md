@@ -1,4 +1,4 @@
-# Single Linked List - Primitive type
+# Single Linked List
 
 ### Objective
 In this project, our main goal will be to Understand the fundamentals of a linked list, their operations.
