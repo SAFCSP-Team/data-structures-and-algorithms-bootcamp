@@ -23,22 +23,120 @@ The `length` property works differently depending on the number of dimensions in
 To access an element in a multi-dimensional array, you need to **provide the indices for each dimension**. 
 > The number of indices required **depends on** the number of dimensions of the array.
 
-     - In a `two-dimensional array`: 
+ - In a `two-dimensional array`: 
 
-To access the element at **row 1, column 2** , we use *twoDArray[1][2]*. The first index **`[1]` represents the row index**, and the **second index `[2]` represents the column** index.
+To access the element at row 1, and column 2, we use ***twoDArray[1][2]***.
+ - In a `three-dimensional array` :
 
-     - In a `three-dimensional array` :
+To access the element at layer 1, row 0, column 2, we use ***threeDArray[1][0][2]***.
 
-To access the element at layer 1, row 0, column 2, we use *threeDArray[1][0][2]*.
 > The process is similar for arrays with more dimensions. You provide the indices for each dimension in square brackets `[ ]` to access the desired element in the multi-dimensional array.
 ## Example 
 
 ### Primitive 
+- Two-dimensional array in java:
+```java
+int[][] twoDArray = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+int rows = twoDArray.length;
+int columns = twoDArray[0].length;
 
+System.out.println("Number of rows: " + rows);
+System.out.println("Number of columns: " + columns);
+
+int secondElement = twoDArray[1][2]; // Row 1, Column 2
+System.out.println("Element at (1, 2): " + element);
+
+```
+Output
+```
+Number of rows: 3
+Number of columns: 3
+Element at (1, 2): 6
+```
+- Two-dimensional array in C++:
+```C++
+int twoDArray[][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+int rows = sizeof(twoDArray) / sizeof(twoDArray[0]);
+int columns = sizeof(twoDArray[0]) / sizeof(twoDArray[0][0]);
+
+std::cout << "Number of rows: " << rows << std::endl;
+std::cout << "Number of columns: " << columns << std::endl;
+
+// Accessing elements
+int secondElement = twoDArray[1][2]; // Row 1, Column 2
+std::cout << "Element at (1, 2): " << secondElement << std::endl;
+```
+Output:
+```
+Number of rows: 3
+Number of columns: 3
+Element at (1, 2): 6
+```
+> Note: in C++, you need to specify the size of all dimensions except the first when declaring a multidimensional array.
 
 ### non-primitive
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
+``` java
+Person[][] twoDArray = new Person[3][3];
+ // Initializing the elements
+twoDArray[0][0] = new Person("John", 25);
+twoDArray[0][1] = new Person("Alice", 30);
+twoDArray[0][2] = new Person("Bob", 35);
+twoDArray[1][0] = new Person("Sarah", 28);
+twoDArray[1][1] = new Person("Mike", 32);
+twoDArray[1][2] = new Person("Emily", 27);
 
+int rows = twoDArray.length;
+int columns = twoDArray[0].length;
 
+System.out.println("Number of rows: " + rows);
+System.out.println("Number of columns: " + columns);
+
+// Accessing elements
+Person secondElement = twoDArray[1][2];
+System.out.println(secondElement);
+```
+Output
+```
+Number of rows: 3
+Number of columns: 3
+Name: Emily Age: 27
+```
+> Node: in Java, when creating a 2D array, you need to specify the dimensions explicitly or provide the array elements immediately.
+
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
+```C++
+
+Person twoDArray[][2] = {
+        {Person("John", 25), Person("Alice", 30)},
+        {Person("Bob", 35), Person("Sarah", 28)}
+};
+
+int rows = sizeof(twoDArray) / sizeof(twoDArray[0]);
+int columns = sizeof(twoDArray[0]) / sizeof(twoDArray[0][0]);
+std::cout << "Number of rows: " << rows << std::endl;
+std::cout << "Number of columns: " << columns << std::endl;
+
+// Accessing elements
+Person person = twoDArray[1][1];
+std::cout << "Element at (1, 1): " ;
+person.printInfo()
+```
+Output:
+```
+Number of rows: 2
+Number of columns: 2
+Element at (1, 1): Name: Sarah Age: 28
+```
 ## Projects
 
 
