@@ -6,8 +6,7 @@ It is important to note that an organized library significantly improves the eas
 ## Concept
 In computer programming, in most cases, there is a need to **store a large number of data**. Instead of using different variable names, it is **better to define an array and store all the elements in it** to significantly improve the ease of dealing with data.
 
-Array :  
-> is a **collection of data items** stored in memory locations.
+`Array`: is a **collection of data items** stored in memory locations.
 - Arrays can store **primitive** data types or **non-primitive** data type.
 - The `length` of an array refers to the **number of elements** contained within the array. It represents the size or capacity of the array to hold elements.
 - An array is the **simple data structure** where each data element can be randomly **accessed** using its **index number**.
