@@ -36,9 +36,10 @@ Types of tree:
 3 - AVL tree
 
 - A self-balancing binary search tree
-- Each node stores a value called a `balanced factor`, which is the difference in the height of the left sub-tree and right sub-tree. 
+- Each node stores a value called a `balanced factor`, whose value is either -1, 0 or 1.
 - `balanced factor` = (height of left subtree - height of right subtree) or (height of right subtree - height of left subtree)
-- Example: In figure 2, the `balanced factor` for the node `A` = (height of left subtree {1} - height of right subtree {1}) = {0}.
+- The tree in figure 2 is AVL tree.
+- Example: The `balanced factor` for the node `A` = (height of left subtree {1} - height of right subtree {1}) = {0}.
   
 4 - B-tree
 - 
