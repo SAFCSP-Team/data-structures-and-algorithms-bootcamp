@@ -83,9 +83,23 @@ There are three ways to travers tree:
 
 
 ## Example 
+Before digging into the expample let's see what is the node class structure? and what is it's attributes?
+
+```java
+// Node creation
+class Node {
+  int key;
+  Node left, right;
+
+  public Node(int item) {
+  key = item;
+  left = right = null;
+  }
+}
+```
+
 
 ### Primitive 
-
 
 ### non-primitive
 
