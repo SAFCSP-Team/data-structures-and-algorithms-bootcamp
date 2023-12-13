@@ -27,23 +27,11 @@ public:
     void setAge(int newAge) {
         age = newAge;
     }
+
+    // Print method
+    void printInfo() const {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+    }
 };
 
-int main() {
-    // Create a Person object
-    Person person("Alice", 25);
-
-    // Get and display the person's name and age
-    std::cout << "Name: " << person.getName() << std::endl;
-    std::cout << "Age: " << person.getAge() << std::endl;
-
-    // Update the person's name and age
-    person.setName("Bob");
-    person.setAge(30);
-
-    // Get and display the updated information
-    std::cout << "Updated Name: " << person.getName() << std::endl;
-    std::cout << "Updated Age: " << person.getAge() << std::endl;
-
-    return 0;
-}
