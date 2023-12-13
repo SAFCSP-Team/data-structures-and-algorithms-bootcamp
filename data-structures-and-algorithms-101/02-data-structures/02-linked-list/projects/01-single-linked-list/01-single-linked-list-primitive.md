@@ -1,9 +1,9 @@
-# Single Linked List
+# Single Linked List - Primitive type
 
 ### Objective
 In this project, our main goal will be to Understand the fundamentals of a linked list, their operations.
 ### Concepts
-The project solution strongly depends on these concepts as they form the core foundation, highlighting the importance of using the provided resources for a better understanding.
+Using the provided resources for a better understanding.
 |Concept|	Resources|
 |-------|----------|
 |Class LinkedList |[oracle decumention](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html) |
@@ -11,7 +11,7 @@ The project solution strongly depends on these concepts as they form the core fo
 
 ### Problem
 
-Given the head of a singly linked list, reverse the list, and return the reversed list.
+Given the head of a single linked list primitive type, reverse the list, and return the reversed list.
 
 ### Implementation
 
