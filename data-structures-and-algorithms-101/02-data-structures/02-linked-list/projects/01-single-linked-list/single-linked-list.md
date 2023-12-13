@@ -1,7 +1,7 @@
 # Single Linked List
 
 ### Objective
-In this project, our main goal will be to Understand the fundamentals of a linked list, their operations.
+In this project, our main goal will be to understand the fundamentals of a linked list, their operations.
 ### Concepts
 Using the provided resources for a better understanding.
 |Concept|	Resources|
