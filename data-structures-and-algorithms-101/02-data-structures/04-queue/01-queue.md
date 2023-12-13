@@ -1,23 +1,22 @@
 # Queue
 
-An example of the `queue` in real life is a coffe shop line, the first person in line is served first, in another way first in first out.
+An example of the `queue` in real life is a coffee shop line, the first person in line is served first, and no one can get served without getting in the line.
+The `queue` data structure behaves the same as the coffee shop line. The queue is line the data in the queue line the first entered data gets processed first.
+The image describes a real-life queue and logical data structure queue. 
 
-[Image]
+![data-structures-and-algorithms - Queue](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/07accaea-7d94-4741-8ea9-f2898df09e35)
+
 
 ## Concept
 
-A `queue` is a **liner data structure**, it store data one after the other in an order, the first data comes, is the first data out. Queue inser data at the first which is `tail`or `rear end`this operation is called `enqueue`, and for the deleting it delete the first element which is `head`or `front end`this operation is called `dequeue`.
+A `queue` is a **liner data structure**, it stores data one after the other in order, we can use `Array` or `Linked List` to implement the queue. The first data comes, is the first data out, it's also called  **FIFO** First In First Out. Queue inserts data at the end which is `tail` or `rear end` this operation is called `enqueue`, and for the deleting, it deletes the first element which is `head` or `front end` this operation is called `dequeue`.
 
-An example of the `queue` in real life is a coffe shop line, the first person in line is served first, in another way first in first out.
 
-this terminology is called **FIFO** First In First Out.
-
-attributes [Image]:
-
-> * front/head
-> * rear/tail
-> * enqueue
-> * dequeue
+The Queue attributes are: 
+> * front / head
+> * rear / tail / end 
+> * enqueue / push / insert
+> * dequeue / pop / delete
 
 Types of queue:
 
