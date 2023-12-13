@@ -51,7 +51,7 @@ Figure 2
 
 <details>
 
-<summary>Tree Traversal</summary>
+<summary>Tree traversal</summary>
 <br/>
 The process of visiting required node to perform special operation or visiting each node and print their values.
 
@@ -108,6 +108,7 @@ Node(value) {
 ```
 
 BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
+BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
 
 BinaryTree
 ```java
