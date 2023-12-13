@@ -20,9 +20,10 @@ A tree is a collection of nodes that are connected by edges and has a hierarchic
 Figure 2
 ![data representation](./images/Tree.jpg)
 
+<details>
 
-**Types of tree**
-
+<summary>Types of tree</summary>
+<br/>
 1 - Binary tree
 
 - A tree where the node has at most two child.
@@ -43,6 +44,10 @@ Figure 2
   
 4 - B-tree
 - A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
+
+
+</details>
+
 
 
 **Tree Traversal**
