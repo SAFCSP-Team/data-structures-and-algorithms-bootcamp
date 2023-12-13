@@ -6,8 +6,6 @@ In this project, our main goal will be to Understand the fundamentals of a linke
 The project solution strongly depends on these concepts as they form the core foundation, highlighting the importance of using the provided resources for a better understanding.
 |Concept|	Resources|
 |-------|----------|
-|What is Difference between an array and a linked list|[Array VS Linked List](https://www.youtube.com/watch?v=Muo0UdwESn4)|
-|What is a Linked List  | [linked-list-concept](https://github.com/lamabeta/linked-list/blob/main/resources/linked-list-concept.md), [Linked List in Java](https://medium.com/nerd-for-tech/linked-list-in-java-40f96951097a)  |
 |Class LinkedList |[oracle decumention](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html) |
 | Linked List Implementation|[java Tutorial](https://www.youtube.com/watch?v=SMIq13-FZSE) |
 
