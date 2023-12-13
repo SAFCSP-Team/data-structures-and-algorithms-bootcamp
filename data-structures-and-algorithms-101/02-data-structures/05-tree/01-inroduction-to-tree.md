@@ -84,7 +84,7 @@ There are three ways to travers tree:
 
 <details>
 
-<summary>Node class and BinaryTree class structure</summary>
+<summary>Node and BinaryTree classes structure</summary>
 <br/>
 Before digging into the expample let's see what is the node BinaryTree class and structure? and what ist 
 heir attributes?
