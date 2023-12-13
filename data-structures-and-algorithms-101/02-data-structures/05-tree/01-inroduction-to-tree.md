@@ -86,8 +86,7 @@ There are three ways to travers tree:
 
 <summary>Node and BinaryTree classes structure</summary>
 <br/>
-Before digging into the expample let's see what is the node BinaryTree class and structure? and what ist 
-heir attributes?
+Before digging into the expample let's see what is the node and BinaryTree classes structure? and what are their attributes?
 
 Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
 
