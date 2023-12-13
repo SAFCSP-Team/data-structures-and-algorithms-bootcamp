@@ -7,27 +7,29 @@ Multi-dimensional arrays allow you to **organize and store data** in more comple
 #### Length
 The `length` property works differently depending on the number of dimensions in the array.
 
-- For a `one-dimensional array`, *oneDArray.length* represents the **total number of elements** in the array. 
+- For a `one-dimensional array`, ***oneDArray.length*** represents the **total number of elements** in the array. 
 - For multi-dimensional arrays with more dimensions, you can chain the `length` property to **access the size in each dimension**. 
 
-  Let's consider a `two-dimensional array`: <br>
-    - *twoDArray.length* gives the number of rows. 
-    - Each row of the array is itself an array so, *twoDArray[0].length* provides the **number of columns in the first row**.
+    - Let's consider a `two-dimensional array`: <br>
+        - ***twoDArray.length*** gives the number of rows. 
+        - Each row of the array is itself an array so, ***twoDArray[0].length*** provides the **number of columns in the first row**.
 
-  In a `three-dimensional array` :
-    - *threeDArray.length* provides the **number of layers**.
-    - *threeDArray[0].length* gives the **number of rows in the first layer**.
-    - *threeDArray[0][0].length* provides the **number of columns in the first layer's first row**.
+    - In a `three-dimensional array` :
+        - ***threeDArray.length*** provides the **number of layers**.
+        - ***threeDArray[0].length*** gives the **number of rows in the first layer**.
+        - ***threeDArray[0][0].length*** provides the **number of columns in the first layer's first row**.
 
 #### Access an Element
- To access an element in a multi-dimensional array, you need to **provide the indices for each dimension**. 
- > The number of indices required **depends on** the number of dimensions of the array.
+To access an element in a multi-dimensional array, you need to **provide the indices for each dimension**. 
+> The number of indices required **depends on** the number of dimensions of the array.
 
-  In a`two-dimensional array`: <br>
-  To access the element at **row 1, column 2** , we use *twoDArray[1][2]*. The first index **`[1]` represents the row index**, and the **second index `[2]` represents the column** index.
-  
-  In a `three-dimensional array` :
-  To access the element at layer 1, row 0, column 2, we use *threeDArray[1][0][2]*.
+     - In a `two-dimensional array`: 
+
+To access the element at **row 1, column 2** , we use *twoDArray[1][2]*. The first index **`[1]` represents the row index**, and the **second index `[2]` represents the column** index.
+
+     - In a `three-dimensional array` :
+
+To access the element at layer 1, row 0, column 2, we use *threeDArray[1][0][2]*.
 > The process is similar for arrays with more dimensions. You provide the indices for each dimension in square brackets `[ ]` to access the desired element in the multi-dimensional array.
 ## Example 
 
