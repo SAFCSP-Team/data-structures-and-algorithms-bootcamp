@@ -66,7 +66,7 @@ int main() {
     return 0;
 }
 ```
-
+* Single linked list of primitive data types in c++ .
 
 ### non Primitive
 ```java
@@ -91,6 +91,7 @@ class LinkedListNode<T> {
         this.val = val;
     } }
 ```
+* Single linked list of non primitive data types in Java.
 ## Projects
 
 
