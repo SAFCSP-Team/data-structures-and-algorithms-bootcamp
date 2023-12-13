@@ -43,14 +43,14 @@ char vowels[] = {'a', 'e', 'i', 'o', 'u'};
 ### non-primitive
 Consider a class called "Person" that represents a person's name and age. 
 
-- Array of Person objects in Java like this:
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) objects in Java like this:
  ``` java
 Person[] peopleArray = new Person[3];
 peopleArray[0] = new Person("Alice", 25);
 peopleArray[1] = new Person("Bob", 30);
 peopleArray[2] = new Person("Charlie", 35);
 ```
-- Array of Person objects in C++ like this:
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++ like this:
    ```C++
   Person* peopleArray[3];
     
