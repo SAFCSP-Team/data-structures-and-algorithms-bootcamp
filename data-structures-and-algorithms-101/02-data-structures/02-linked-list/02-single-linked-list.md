@@ -73,5 +73,5 @@ public class Main {
 | Id      | Title          | Deadline |
 | ------- | -------------- | -------- |
 | SLIProject01|                |          |
-| SLIProject02|                |          |
+
 
