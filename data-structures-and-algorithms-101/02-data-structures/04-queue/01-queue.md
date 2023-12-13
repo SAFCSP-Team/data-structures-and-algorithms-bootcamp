@@ -32,12 +32,17 @@ Types of queue:
 Java
 
 ````Java
-// Queue Array
-// Create an object 
-queue.enQueue(50);
-queue.display(); //10 20 30 40 50
-queue.deQueue();
-queue.display(); //20 30 40 50
+QueueArray queue = new QueueArray();
+
+        queue.enQueue(1);
+        queue.enQueue(2);
+        queue.enQueue(3);
+
+        queue.display(); // 1, 2, 3
+
+        queue.deQueue(); // 1
+
+        queue.display(); // 2, 3
 ````
 
 Non-Prmitive
