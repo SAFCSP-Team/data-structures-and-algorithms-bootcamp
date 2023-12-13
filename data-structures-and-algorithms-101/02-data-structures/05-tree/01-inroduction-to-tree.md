@@ -51,7 +51,13 @@ The process of visiting required node to perform special operation or visiting e
 
 There are three ways to travers tree:
 
-1-
+1- Pre-order traversal
+
+- Visit the root node
+- Visit all nodes from the left side
+- Visit all node from the right side
+- Example: in figuer 2, the pre-order path is: A -> 
+
 2-
 3-
 
