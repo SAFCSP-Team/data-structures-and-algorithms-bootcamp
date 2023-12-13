@@ -107,7 +107,7 @@ Node(value) {
 }
 ```
 
-BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
+BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
 
 BinaryTree
 ```java
