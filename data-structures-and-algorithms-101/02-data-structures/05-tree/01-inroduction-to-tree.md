@@ -94,7 +94,7 @@ Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `
 // Node creation
 class Node {
   key;
-  Node left
+  Node left;
   Node right;
 
 Node(value) {
