@@ -6,8 +6,9 @@ When to use the tree and why?
 
 Let's say you have a big company and your company have a large number of employees, the company have CEO, managers, directors.. How would you orgnanize the employees considering their roles/position?
 
-Tree should be considered here, lets's see how the company employees would be organized using the tree as the below image:
+Tree should be considered here, lets's see how the company employees would be organized using the tree as the below image (figuer 1):
 
+Figure 1
 ![data representation](./images/Company-employees-tree.jpg)
 
 
@@ -16,7 +17,7 @@ Tree should be considered here, lets's see how the company employees would be or
 
 A tree is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes.
 
-
+Figure 2
 ![data representation](./images/Tree.jpg)
 
 
@@ -34,7 +35,13 @@ Types of tree:
 
 3 - AVL tree
 
+- A self-balancing binary search tree
+- Each node stores a value called a `balanced factor`, which is the difference in the height of the left sub-tree and right sub-tree. 
+- `balanced factor` = (height of left subtree - height of right subtree) or (height of right subtree - height of left subtree)
+- Example: In figure 2, the `balanced factor` for the node `A` = (height of left subtree {1} - height of right subtree {1}) = {0}.
+  
 4 - B-tree
+- 
 
 
 ## Example 
