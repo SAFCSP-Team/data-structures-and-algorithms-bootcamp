@@ -82,22 +82,33 @@ There are three ways to travers tree:
 </details>
 
 
-## Example 
+<details>
+
+<summary>Node class and BinaryTree class structure</summary>
+<br/>
 Before digging into the expample let's see what is the node class structure? and what is it's attributes?
-Node class consists of 3 attributes `int key`, `Node left` and `Node right` and a constructor that take an .
+
+Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
 
 ```java
 // Node creation
 class Node {
-  int key;
-  Node left, right;
+  key;
+  Node left
+  Node right;
 
-  public Node(int item) {
-  key = item;
-  left = right = null;
+Node(value) {
+  key = value;
+  left = null;
+  right = null;
   }
 }
 ```
+</details>
+
+
+
+## Example 
 
 
 ### Primitive 
