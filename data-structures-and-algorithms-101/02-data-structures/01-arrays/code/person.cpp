@@ -30,8 +30,8 @@ public:
 
     // Print method
     void printInfo() const {
-        std::cout << "Name: " << name << std::endl;
-        std::cout << "Age: " << age << std::endl;
+        std::cout << "Name: " << name ;
+        std::cout << " Age: " << age << std::endl;
     }
 };
 
