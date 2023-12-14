@@ -1,20 +1,17 @@
-# Queue
+# Priority Queue
 
-An example of the `queue` in real life is a coffee shop line, the first person in line is served first, and no one can get served without getting in the line.
-The `queue` data structure behaves the same as the coffee shop line. The queue is line the data in the queue line the first entered data gets processed first.
-The image describes a real-life queue and logical data structure queue. 
+An example of the `Priority Queue` is the hospital emergency queue, where the patient with higher risk is treated first.
 
-![data-structures-and-algorithms - Queue](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/07accaea-7d94-4741-8ea9-f2898df09e35)
-
+It allocate the elements based on their priority value.
 
 ## Concept
 
-A `queue` is a **liner data structure**, it stores data one after the other in order, we can use `Array` or `Linked List` to implement the queue. The first data comes, is the first data out, it's also called  **FIFO** First In First Out. Queue inserts data at the end which is `tail` or `rear end` this operation is called `enqueue`, and for the deleting, it deletes the first element which is `head` or `front end` this operation is called `dequeue`.
+`Priority Queue` is one of the`queue` type that arrange the elements based on their priority. Elements with higher priority values are typically retrieved before elements with lower priority values.
 
+The Queue attributes are:
 
-The Queue attributes are: 
 > * front / head
-> * rear / tail / end 
+> * rear / tail / end
 > * enqueue / push / insert
 > * dequeue / pop / delete
 
@@ -65,11 +62,12 @@ Queue<User> queue = new LinkedList<>();
 
 ## Projects
 
+
 | Id      | Title          | Deadline |
 | ------- | -------------- | -------- |
 | Queue01 | QueueSimple    |          |
 | Queue02 | Circular Queue |          |
-| Queue03 | Deque |          |
+| Queue03 | Deque          |          |
 | Queue04 | Priority Queue |          |
 
 Create a coffe shop line where the each element has different order.
@@ -77,4 +75,3 @@ Create a coffe shop line where the each element has different order.
 ```Java
 ['black coffe', 'latte', 'mocca' 'espreso', 'americano']
 ```
-
