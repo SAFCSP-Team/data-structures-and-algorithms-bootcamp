@@ -94,6 +94,10 @@ As we explained before the tree is a collection of nodes. the tree consist of `n
 
 Node class
 
+Figure 3
+![data representation](./images/Node-class.jpg)
+
+
 
 BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
 BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
