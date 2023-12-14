@@ -4,7 +4,7 @@
 In this project, our objective is to create a tree of strings.
 
 ### Problem
-Create a tree to store persons names.
+Create a tree to store names.
 
 ### Implementation
 Using Java programming language: 
