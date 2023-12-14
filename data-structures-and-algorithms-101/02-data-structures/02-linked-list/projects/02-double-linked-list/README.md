@@ -1,12 +1,12 @@
-# Double Linked List 
+# Double Linked-List 
 
 ### Objective
 
-In this project, our main goal will be to understand the fundamentals of a double linked list, and their operations.
+In this project, our main goal will be to understand the fundamentals of a double linked-list and its operations.
 
 ### Concepts
 
-Using the provided resources for a better understanding.
+Use the provided resources for a better understanding.
 
 |Concept|	Resources|
 |-------|----------|
@@ -15,11 +15,11 @@ Using the provided resources for a better understanding.
 
 ### Problem
 
-Implement `deleteNode` method to remove a specific value from double linked list
+Implement `deleteNode` method to remove a specific value from a double linked-list
 
 ### Implementation
 
-Write  the implementation of the `deleteNode` method that removes a node with a specific value from the list.
+Write the implementation of the `deleteNode` method that removes a node with a specific value from the list.
 ```java
 
 public class Main {
