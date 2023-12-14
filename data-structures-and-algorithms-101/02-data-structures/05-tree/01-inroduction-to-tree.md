@@ -152,10 +152,11 @@ BinaryTree class also has the operations which should be performed in the tree, 
 Java code
 ```java
 // BinaryTree creation
+
 class BinaryTree {
   Node root;
 
-  BinaryTree(key) {
+  BinaryTree(int key) {
   root = new Node(key);
   }
 
@@ -164,17 +165,10 @@ class BinaryTree {
   }
 
   // Traverse Inorder
-  public void traverseInOrder(Node node)
+  public void traverseInOrder(Node node) {}
+  
 
-// Traverse Postorder
-  public void traversePostOrder(Node node)
 
-// Traverse Preorder
-  public void traversePreOrder(Node node)
-
-public static void main(String[] args) {
-// Execute operations
-}
 }
 ```
 
