@@ -2,7 +2,7 @@
 
 ### Objective
 
-In this project, our main goal will be to understand the fundamentals of a double linked list, and their operations.
+In this project, our main goal will be to understand the fundamentals of a circular linked list, and their operations.
 
 ### Concepts
 
@@ -10,12 +10,12 @@ Using the provided resources for a better understanding.
 
 |Concept|	Resources|
 |-------|----------|
-|||
-|||
+|What is a circular linked list|[Introduction to Circular Linked List](https://www.youtube.com/watch?v=HMkdlu5sP4A&t=185s)|
+|Inserting node at the end|[Insert node of a circular singly linked list](https://www.youtube.com/watch?v=kErHUGvFrNg)|
+|Circular linked list implementation|[Creation and Display](https://www.youtube.com/watch?v=fmfx1C4TTxw)|
 
 ### Problem
-
-Create `add()` method to added to the `CircularLinkedList` class and `display()` method to print the data values.
+Create the `add()` method to add to the `CircularLinkedList` class and the `display()` method to print the data values.
 
 ### Implementation
 
