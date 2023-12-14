@@ -34,7 +34,7 @@ So, if we want to make accessing, searching, and handling some data in a program
 ![data organization representation](./images/organization.jpg)
 
 #### Organization Components
-Most organizations consist of two main component, these components if used differently will form a specific type of organization (data structure). These component are  `Node` and `Pointer`.
+Most organizations consist of two main components, these components if used differently will form a specific type of organization (data structure). These components are  `Node` and `Pointer`.
 
 ![node and pointer](./images/node-and-pointer.jpg)
 
@@ -51,15 +51,15 @@ We can think of a node as the main container of our data (whether it is primitiv
 <details>
   <summary> Pointer </summary>
 
-Pointer or what might be called reference, is a link used to point to another node. 
+A pointer or what might be called a reference, is a link used to point to another node. 
 
-To demonstrate the idea, lets imagine you are in a really long car line at a drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and `point` to the car in front of you.
+To demonstrate the idea, let's imagine you are in a really long car line at a drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and `point` to the car in front of you.
 
 ![node and pointer example 1](./images/node-and-pointer-example-cars.jpg)
 
 
 
-The car example above is similar to `queue` data structure, if we manipulate the reference by having multiple references to multiple nodes we will form a `tree` data structure.
+The car example above is similar to the `queue` data structure, if we manipulate the reference by having multiple references to multiple nodes we will form a `tree` data structure.
 
 
 ![node and pointer example 2](./images/node-and-pointer-example-folders.jpg)
