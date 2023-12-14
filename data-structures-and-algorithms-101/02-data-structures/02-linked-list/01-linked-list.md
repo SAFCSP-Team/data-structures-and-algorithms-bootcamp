@@ -10,20 +10,16 @@ To simulate the treasure hunt in our program, we need to use a `linked list` to 
 
 A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. Each node contains the `data` and a `pointer` to the next node in the sequence. The last node in the list has a pointer to null, `tail` indicates the end of the list.
 
-
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/1275b8b7-457d-4657-9946-170ec9062628)
-
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/095e5e5f-8251-4b88-96dc-4c27103f9569)
 
 **Types of Linked List**:
 
-* Single linked list.
-   * A type of linked list that is unidirectional, it can be traversed in only **one direction** from `head` to the last node `tail`.
+* `Single linked list`: A type of linked list that is unidirectional, it can be traversed in only **one direction** from `head` to the last node `tail`.
      
-* Double linked list.
-  * It is a special type of linked list where each node contains a **pointer to the previous** node as well as the next node of the linked list.
+* `Double linked list`: It is a special type of linked list where each node contains a **pointer to the previous** node as well as the next node of the linked 
+   list.
   
-* Circular linked list.
-  * is a type of linked list in which the first and the last nodes are also connected to each other to form a circle.
+* `Circular linked list`: Is a type of linked list in which the first and the last nodes are also **connected** to each other to form a circle.
 
 ## Example 
 
