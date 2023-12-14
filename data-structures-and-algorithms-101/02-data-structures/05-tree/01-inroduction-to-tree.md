@@ -98,6 +98,14 @@ Figure 3
 ![data representation](./images/Node-class.jpg)
 
 
+`Tree` class will contain 1 information: `root`.
+
+Tree class
+
+Figure 4
+![data representation](./images/Binary-Tree.jpg)
+
+
 
 BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
 BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
