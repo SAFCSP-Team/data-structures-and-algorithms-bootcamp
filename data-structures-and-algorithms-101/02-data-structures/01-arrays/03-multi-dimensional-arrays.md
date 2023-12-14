@@ -24,17 +24,21 @@ To access an element in a multi-dimensional array, you need to **provide the ind
 > The number of indices required **depends on** the number of dimensions of the array.
 
  - In a `two-dimensional array`: 
-
-To access the element at row 1, and column 2, we use ***twoDArray[1][2]***.
+To access the element at row 0, and column 3, we use ***twoDArray[0][3]***.
+ 
  - In a `three-dimensional array` :
 
-To access the element at layer 1, row 0, column 2, we use ***threeDArray[1][0][2]***.
+To access the element at layer 0, row 0, column 2, we use ***threeDArray[0][0][2]***.
 
 > The process is similar for arrays with more dimensions. You provide the indices for each dimension in square brackets `[ ]` to access the desired element in the multi-dimensional array.
+
+<img width="910" alt="Multi Dimensional Arrays" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Multi%20Dimensional%20Arrays.jpg">
+
 ## Example 
 
 ### Primitive 
-- Two-dimensional array in java:
+1. Two-dimensional array in java:
+- Code: 
 ```java
 int[][] twoDArray = {
             {1, 2, 3},
@@ -51,13 +55,15 @@ int secondElement = twoDArray[1][2]; // Row 1, Column 2
 System.out.println("Element at (1, 2): " + element);
 
 ```
-Output:
+- Output
 ```
 Number of rows: 3
 Number of columns: 3
 Element at (1, 2): 6
 ```
-- Two-dimensional array in C++:
+
+2. Two-dimensional array in C++:
+- Code: 
 ```C++
 int twoDArray[][3] = {
         {1, 2, 3},
@@ -75,7 +81,7 @@ std::cout << "Number of columns: " << columns << std::endl;
 int secondElement = twoDArray[1][2]; // Row 1, Column 2
 std::cout << "Element at (1, 2): " << secondElement << std::endl;
 ```
-Output:
+- Output
 ```
 Number of rows: 3
 Number of columns: 3
@@ -84,7 +90,8 @@ Element at (1, 2): 6
 > Note: in C++, you need to specify the size of all dimensions except the first when declaring a multidimensional array.
 
 ### non-primitive
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
+1. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
+- Code: 
 ``` java
 Person[][] twoDArray = new Person[3][3];
  // Initializing the elements
@@ -105,7 +112,8 @@ System.out.println("Number of columns: " + columns);
 Person secondElement = twoDArray[1][2];
 System.out.println(secondElement);
 ```
-Output
+- Output
+
 ```
 Number of rows: 3
 Number of columns: 3
@@ -113,7 +121,8 @@ Name: Emily Age: 27
 ```
 > Node: in Java, when creating a 2D array, you need to specify the dimensions explicitly or provide the array elements immediately.
 
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
+2. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
+- Code: 
 ```C++
 
 Person twoDArray[][2] = {
@@ -131,13 +140,16 @@ Person person = twoDArray[1][1];
 std::cout << "Element at (1, 1): " ;
 person.printInfo()
 ```
-Output:
+- Output
 ```
 Number of rows: 2
 Number of columns: 2
 Element at (1, 1): Name: Sarah Age: 28
 ```
 ## Projects
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|DSAProject01| [Two Dimensional Array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/multi-dimensional-arrays/README.md) | - |
 
 
 
