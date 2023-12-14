@@ -11,6 +11,7 @@ A `doubly linked list` is an enhanced version of a linked list that allows **bid
 ## Example 
 
 ### Primitive 
+* Double linked list of primitive data types in java.
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -83,28 +84,23 @@ class DoublyLinkedList {
     }
 }
 ```
-* Double linked list of primitive data types in Java.
-  
 ### non Primitive
+* Double linked list of non primitive data types in c++.
 ```c++
 #include <iostream>
 #include <string>
-
 using namespace std;
-
-// Node declaration for doubly linked list
+/* Node declaration for doubly linked list */
 struct Node {
    string data;
    struct Node* prev, * next;
 };
-
 Node* newNode(string val) {
    Node* temp = new Node;
    temp->data = val;
    temp->prev = temp->next = nullptr;
    return temp;
 }
-
 void displayList(Node* head) {
    while (head->next != nullptr) {
       cout << head->data << " <==> ";
@@ -112,8 +108,7 @@ void displayList(Node* head) {
    }
    cout << head->data << endl;
 }
-
-// Insert a new node at the head of the list
+/* Insert a new node at the head of the list */
 void insert(Node** head, string node_data) {
    Node* temp = newNode(node_data);
    temp->next = *head;
@@ -122,26 +117,24 @@ void insert(Node** head, string node_data) {
    }
    *head = temp;
 }
-
-// Reverse the doubly linked list
+/* Reverse the doubly linked list */
 void reverseList(Node** head) {
    Node* left = *head;
    Node* right = *head;
 
-   // Traverse the entire list and set right next to right
+   /* Traverse the entire list and set right next to right */
    while (right->next != nullptr) {
       right = right->next;
    }
-
-   // Swap left and right data by moving them towards each other till they meet or cross
+   /* Swap left and right data by moving them towards each other till they meet or cross */
    while (left != right && left->prev != right) {
       // Swap left and right pointer data
       swap(left->data, right->data);
 
-      // Advance left pointer
+      /* Advance left pointer */
       left = left->next;
 
-      // Advance right pointer
+      /* Advance right pointer */
       right = right->prev;
    }
 }
@@ -156,13 +149,8 @@ int main() {
    cout << "Reverse doubly linked list:" << endl;
    reverseList(&headNode);
    displayList(headNode);
-
    return 0;
 }
-
-
 ```
-* Double linked list of primitive data types in c++ .
-
 ## Projects
 
