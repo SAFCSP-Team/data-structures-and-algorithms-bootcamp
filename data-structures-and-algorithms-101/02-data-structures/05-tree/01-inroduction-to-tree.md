@@ -185,7 +185,6 @@ public static void main(String[] args) {
 
 ## Projects
 
-## Projects
 
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
