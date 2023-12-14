@@ -130,11 +130,13 @@ Java code
 // Node creation
 class Node {
   int key;
-  Node left, right;
+  Node left;
+  Node right;
 
   public Node(int item) {
   key = item;
-  left = right = null;
+  left = null;
+  right = null;
   }
 }
 ```
