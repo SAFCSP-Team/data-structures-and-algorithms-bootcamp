@@ -11,8 +11,8 @@ A tree where every node has two child nodes (at the most)
 
 <summary>Types of Binary Tree</summary>
 <br/>
-1 - Full Binary Tree
 
+1 - Full Binary Tree
 
 2 - Complete Binary Tree 
 
