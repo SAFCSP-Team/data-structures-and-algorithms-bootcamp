@@ -118,6 +118,8 @@ Figure 4
 
 ## Example 
 
+### Primitive 
+
 In this example we will create a `tree` of integers.
 
 Node class consists of 3 attributes: `int key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
@@ -177,12 +179,18 @@ public static void main(String[] args) {
 ```
 
 
-### Primitive 
 
 ### non-primitive
 
 
 ## Projects
+
+## Projects
+
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|TreeProject01| [Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-primitive-data-types/README.md) | - | 
+
 
 
 
