@@ -88,9 +88,10 @@ There are three ways to travers tree:
 <br/>
 Before digging into the expample let's see the two main classes in the tree. 
 As we explained before the tree is a collection of nodes. the tree consist of `node` which holds the node information and data, and a `tree` which holds and connect all the nodes together.
-`node` and `tree` will be the main classes.
 
-`Node` class will contain 3 information: `data`, `left child` and `right child`.
+`Node` and `tree` will be the main classes.
+
+`Node` class will contain 3 information/attirbutes: `data`, `left child` and `right child`.
 
 Node class
 
@@ -98,7 +99,7 @@ Figure 3
 ![data representation](./images/Node-class.jpg)
 
 
-`Tree` class will contain 1 information: `root`.
+`Tree` class will contain 1 information/attribute: `root`.
 
 Tree class
 
