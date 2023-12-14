@@ -166,7 +166,6 @@ class BinaryTree {
 
   // Traverse Inorder
   public void traverseInOrder(Node node) {}
-  
 
 
 }
@@ -218,12 +217,11 @@ BinaryTree class also has the operations which should be performed in the tree, 
 Java code
 ```java
 // BinaryTree creation
-
 class BinaryTree {
-  Employee root;
+  Node root;
 
   BinaryTree(Employee e) {
-  root = new Employee(e);
+  root = new Node(e);
   }
 
   BinaryTree() {
@@ -232,7 +230,6 @@ class BinaryTree {
 
   // Traverse Inorder
   public void traverseInOrder(Node node) {}
-  
 
 
 }
