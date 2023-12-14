@@ -3,7 +3,7 @@
 ### Objective
 In this project, our main goal will be to understand the fundamentals of a linked list, and their operations.
 ### Concepts
-Using the provided resources for a better understanding.
+Use the provided resources for a better understanding.
 |Concept|	Resources|
 |-------|----------|
 |Class LinkedList |[oracle decumention](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html) |
