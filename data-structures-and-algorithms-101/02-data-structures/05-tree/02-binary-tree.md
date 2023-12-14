@@ -14,7 +14,7 @@ A tree where every node has two child nodes (at the most)
 1 - Full Binary Tree
 
 
-2 - Complete Binary Tree
+2 - Complete Binary Tree 
 
 3 - Perfect Binary Tree
 
