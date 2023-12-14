@@ -176,6 +176,67 @@ class BinaryTree {
 
 ### non-primitive
 
+In this example we will create a `tree` of employees.
+
+
+- Employee class
+
+Java code
+```java
+// Emplyee class creation
+class Employee {
+  int id;
+  String name;
+  String role;
+}
+```
+
+- Node class
+
+Java code
+```java
+// Node creation
+class Node {
+  Employee employee;
+  Employee left;
+  Employee right;
+
+  public Node(Employee e) {
+  employee = e;
+  left = null;
+  right = null;
+  }
+}
+```
+
+BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
+BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
+
+
+- BinaryTree class
+
+Java code
+```java
+// BinaryTree creation
+
+class BinaryTree {
+  Employee root;
+
+  BinaryTree(Employee e) {
+  root = new Employee(e);
+  }
+
+  BinaryTree() {
+  root = null;
+  }
+
+  // Traverse Inorder
+  public void traverseInOrder(Node node) {}
+  
+
+
+}
+```
 
 ## Projects
 
