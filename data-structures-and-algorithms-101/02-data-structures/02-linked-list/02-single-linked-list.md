@@ -10,7 +10,8 @@
     * When adding a new `node` at the beginning of the list, you simply create the node, set its data, and update its next pointer to point to the current head 
       node. Then, you update the head pointer to point to the new node.
       
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/c8720b15-54f6-41c3-bfdf-c070b9e8b4b0)
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/3376b985-3544-489c-b79e-f87c01fe818b)
+
 
 * Access for a node in the list.
     * To access a specific element in the `linked list`, you start from the head and traverse the list until you find the element or reach the end of the list. 
