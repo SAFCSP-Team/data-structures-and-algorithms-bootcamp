@@ -114,7 +114,7 @@ Figure 4
 
 ## Example 
 
-In this example we will create `tree` of integers.
+In this example we will create a `tree` of integers.
 
 Node class consists of 3 attributes: `int key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
 
