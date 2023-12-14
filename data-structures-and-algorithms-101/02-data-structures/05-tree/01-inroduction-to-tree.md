@@ -181,7 +181,7 @@ class BinaryTree {
 
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|TreeProject01| [Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-101/02-data-structures/05-tree/projects/introduction-to-tree/01-premetive-tree-creation/README.md) | - | 
+|TreeProject01| [Tree with primitive data types](projects/introduction-to-tree/01-premetive-tree-creation/README.md) | - | 
 
 
 
