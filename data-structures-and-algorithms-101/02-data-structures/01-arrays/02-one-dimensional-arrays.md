@@ -42,7 +42,7 @@ The secondElement = 7
 > Note: we use the sizeof operator to get the total size of the array (sizeof(numbers)) depending on the data type, and divide it by the size of a single element (sizeof(numbers[0])). This gives us the number of elements in the array.
 
 
-### non-primitive
+### Non-primitive
 1. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
  - Code: 
  ``` java
