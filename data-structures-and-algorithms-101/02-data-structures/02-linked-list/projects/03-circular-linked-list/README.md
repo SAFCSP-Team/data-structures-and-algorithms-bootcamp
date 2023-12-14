@@ -6,7 +6,7 @@ In this project, our main goal will be to understand the fundamentals of a circu
 
 ### Concepts
 
-Using the provided resources for a better understanding.
+Use the provided resources for a better understanding.
 
 |Concept|	Resources|
 |-------|----------|
@@ -20,7 +20,7 @@ Create the `add()` method to add to the `CircularLinkedList` class and the `disp
 ### Implementation
 
 In the `add()` method follow the provided steps:
-* It first checks if the head is null. If it is, the new node becomes both the head and tail of the list, and its next reference is set to itself.
+* It first checks if the head is null. If it is, the new node becomes both the head and tail of the list and its next reference is set to itself.
 * If the head is not null, the new node is added at the end of the list by updating the tail's next reference to the new node, and the new node becomes the new 
   tail.
 * The circularity of the list is maintained by making the tail's next reference point back to the head.
