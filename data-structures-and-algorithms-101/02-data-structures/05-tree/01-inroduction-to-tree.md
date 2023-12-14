@@ -120,6 +120,7 @@ Node class consists of 3 attributes: `int key`, `Node left` and `Node right` and
 
 
 - Node class
+
 Java code
 ```java
 // Node creation
@@ -139,6 +140,7 @@ BinaryTree class also has the operations which should be performed in the tree, 
 
 
 - BinaryTree class
+
 Java code
 ```java
 // BinaryTree creation
