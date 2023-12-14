@@ -1,4 +1,4 @@
-# Creating an Array With Primitive Data Type
+# Array With Primitive Data Type
 ### Objective
 In the project, the main focus is a comprehensive understanding of arrays, such as declaring arrays, accessing elements using indexes, and performing operations on arrays.
 ### Concepts
@@ -13,7 +13,7 @@ The project solution strongly depends on these concepts as they form the core fo
 Creating an array of integers`nums`, printing it, updating an element, and printing it again after the update.
 
 ### Implementation
-using C++ language: 
+Using C++ programming language: 
 - Create an array with a length of 10.
 - Initialize the array with default values and assign the value 2 to the second element.
 - Print the array.
