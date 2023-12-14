@@ -33,10 +33,10 @@ So, if we want to make accessing, searching, and handling some data in a program
 
 ![data organization representation](./images/organization.jpg)
 
-#### Organization's Node
-Each node in the organization (the circles in the image) consist of `data` and reference or `pointer`. Data is the part where actual data is stored (whither its primitive or non-primitive), while the pointer used to point to another node in the organization to link nodes together. 
+#### Organization Components
+Each node in the organization (the circles in the image) consists of `data` and reference or `pointer`. Data is the part where actual data is stored (whether it's primitive or non-primitive), while the pointer is used to point to another node in the organization to link nodes together. 
 
-The pointer could be used to point to the next node, prevues node or any other node depending on the organization structure.
+The pointer could be used to point to the next node, prevues node, or any other node depending on the organization structure.
 
 ### Manipulate 
 Manipulating means performing some actions or operations on data. So when we organize toys we can perform some actions like searching, taking, and storing a toy.
