@@ -4,11 +4,13 @@ One-dimensional array, also known as a 1D array or a single-dimensional array, i
 `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a single row. 
 - The length of an array called **names** can be accessed using the syntax ***names.length*** in java or ***len(numbers)*** in python.
 - To access an element in a one-dimensional array, you use square brackets **`[ ]`** and an index, ***names[0]*** gives the first element in an array called **names**
+<img width="910" alt="One Dimensional Arrays" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/One%20Dimensional%20Arrays.jpg">
 
 ## Example 
 
 ### Primitive 
-- One Dimensional Array of numbers called `numbers` in java: 
+1. One Dimensional Array of numbers called `numbers` in java:
+- Code: 
 ```java
 int[] numbers = {1, 7, 9, 1, 5};
 int count= numbers.length; // Assigns the length of the array to count
@@ -16,12 +18,14 @@ int secondElement = numbers[1]; // Assigns the value at index 1
 System.out.println("The count = " + count);
 System.out.println("The secondElement = " +secondElement);
 ```
-0utput : 
+- Output
 ```
 The count = 5
 The secondElement = 7
 ```
-- One Dimensional Array of numbers called `numbers` in C++: 
+
+2-  One Dimensional Array of numbers called `numbers` in C++: 
+- Code: 
 ``` c++
     int numbers[] = {1, 7, 9, 1, 5};
     int count = sizeof(numbers) / sizeof(numbers[0]);
@@ -30,7 +34,7 @@ The secondElement = 7
     std::cout << "The count = " << count << std::endl;
     std::cout << "The secondElement = " << secondElement << std::endl;
 ```
-0utput : 
+- Output
 ```
 The count = 5
 The secondElement = 7
@@ -39,7 +43,8 @@ The secondElement = 7
 
 
 ### non-primitive
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
+1. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
+ - Code: 
  ``` java
 Person[] peopleArray = new Person[3];
 peopleArray[0] = new Person("Alice", 25);
@@ -50,12 +55,14 @@ Person secondElement = peopleArray[1]; // Assigns the value at index 2 to second
 System.out.println("The count = " + count);
 System.out.println("The secondElement = " + secondElement);
 ```
-Output
+- Output
 ```
 The count = 3
 The secondElement = Name: Bob Age: 30
 ```
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
+
+2. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
+- Code: 
 ```C++
     Person peopleArray[] = { Person("Alice", 25),Person("Bob", 30),
     Person("Charlie", 35) };
@@ -65,13 +72,16 @@ The secondElement = Name: Bob Age: 30
     std::cout << "The secondElement = ";
     secondElement.printInfo();
 ```
-Output:
+- Output
 ```
 The count = 3
 The secondElement = Name: Bob Age: 30
 ```
 
 ## Projects
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|DSAProject01| [One Dimensional Array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/one-dimensional-arrays/README.md) | - | 
 
 
 
