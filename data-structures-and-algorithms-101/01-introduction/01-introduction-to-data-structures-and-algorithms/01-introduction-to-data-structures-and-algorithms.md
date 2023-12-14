@@ -34,9 +34,35 @@ So, if we want to make accessing, searching, and handling some data in a program
 ![data organization representation](./images/organization.jpg)
 
 #### Organization Components
-Each node in the organization (the circles in the image) consists of `data` and reference or `pointer`. Data is the part where actual data is stored (whether it's primitive or non-primitive), while the pointer is used to point to another node in the organization to link nodes together. 
+Most organizations consist of two main component, these components if used differently will form a specific type of organization (data structure). These component are  `Node` and `Pointer`.
 
-The pointer could be used to point to the next node, prevues node, or any other node depending on the organization structure.
+![node and pointer](./images/node-and-pointer.jpg)
+
+**Node**
+We can think of a node as the main container of our data (whether it is primitive or non-primitive).
+> It is described in the images as a circle containing data.
+
+**Pointer**
+Pointer or what might be called reference, is a link used to point to another node. 
+
+To demonstrate the idea, lets imagine you are in a really long car line at a drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and `point` to the car in front of you.
+
+![node and pointer example 1](./images/node-and-pointer-example-cars.jpg)
+
+
+
+The car example above is similar to `queue` data structure, if we manipulate the reference by having multiple references to multiple nodes we will form a `tree` data structure.
+
+
+![node and pointer example 2](./images/node-and-pointer-example-folders.jpg)
+
+The concept of pointers is crucial, and as you saw we can form different organizations if used differently. This means when we  explain organizations later on we will mostly focus on storing data and manipulating pointers.
+
+
+> Each node can have single or multiple pointers.
+
+> Pointers are normally part of the node.
+
 
 ### Manipulate 
 Manipulating means performing some actions or operations on data. So when we organize toys we can perform some actions like searching, taking, and storing a toy.
