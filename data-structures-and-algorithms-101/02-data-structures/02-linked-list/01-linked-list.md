@@ -27,11 +27,9 @@ A `linked list` is a **data structure** that consists of a **sequence of element
 
 ## Example 
 
-> In java and c++, you can declare and initialize linkedlist in a similar way.
-
-
-
 ### Primitive 
+
+* linkedlist of primitive data types in Java.
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -55,7 +53,7 @@ class LinkedListNode {
     }
 }
 ```
-* linkedlist of primitive data types in Java.
+* linkedlist of primitive data types in c++.
   
 ```c++
 
@@ -76,10 +74,9 @@ void printList(LinkedListNode* head) {
 }
 
 ```
-* linkedlist of primitive data types in c++.
-  
 ### non Primitive
-
+* linkedlist of non primitive data types in Java.
+  
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -104,8 +101,8 @@ class LinkedListNode<T> {
     }
 }
 ```
-* linkedlist of non primitive data types in Java.
-
+* linkedlist of non primitive data types in c++:
+  
 ```c++
 #include <iostream>
 #include <string>
@@ -135,6 +132,7 @@ int main() {
 }
   
   ```
-* linkedlist of non primitive data types in c++:
+> In java and c++, you can declare and initialize linkedlist in a similar way.
+
 
 ## Projects
