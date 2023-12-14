@@ -8,7 +8,7 @@ Create a tree to store persons names.
 
 ### Implementation
 Using Java programming language: 
-Create `node` class with the below attributes:\
+Create `Node` class with the below attributes:
 
 `String name`
 `Node right`
@@ -17,6 +17,14 @@ Create `node` class with the below attributes:\
 And a constructor that takes name as parameter and assigne it to the name attribute:
 
 `Node()`
+
+Create `BinaryTee` class with the below attribute:
+
+`Node root`
+
+And a constructor that takes node type as parameter and assigne it to the root attribute:
+
+`BinaryTree()`
 
 ```java
 
