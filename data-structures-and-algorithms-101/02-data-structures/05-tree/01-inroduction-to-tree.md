@@ -86,9 +86,9 @@ There are three ways to travers tree:
 
 <summary>Tree structure</summary>
 <br/>
-Before digging into the expample let's see the two main classes in the tree. 
-As we explained before the tree is a collection of nodes. the tree consist of `node` which holds the node information and data, and a `tree` which holds and connect all the nodes together.
+Before digging into the expample let's see the two main classes in the tree. As we explained before the tree is a collection of nodes. 
 
+the tree consist of `node` which holds the node information and data, and a `tree` which holds and connect all the nodes together.
 `Node` and `tree` will be the main classes.
 
 `Node` class will contain 3 information/attirbutes: `data`, `left child` and `right child`.
@@ -107,11 +107,39 @@ Figure 4
 ![data representation](./images/Binary-Tree.jpg)
 
 
+</details>
+
+
+
+
+## Example 
+
+In this example we will create `tree` of integers.
+
+Node class consists of 3 attributes: `int key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
+
+
+- Node class
+Java code
+```java
+// Node creation
+class Node {
+  int key;
+  Node left, right;
+
+  public Node(int item) {
+  key = item;
+  left = right = null;
+  }
+}
+```
 
 BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
 BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
 
-BinaryTree class
+
+- BinaryTree class
+Java code
 ```java
 // BinaryTree creation
 class BinaryTree {
@@ -139,18 +167,6 @@ public static void main(String[] args) {
 }
 }
 ```
-</details>
-
-
-
-Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
-BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
-BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
-
-
-
-
-## Example 
 
 
 ### Primitive 
