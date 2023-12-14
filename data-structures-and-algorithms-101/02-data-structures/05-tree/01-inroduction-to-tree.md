@@ -90,23 +90,10 @@ Before digging into the expample let's see the two main classes in the tree.
 As we explained before the tree is a collection of nodes. the tree consist of `node` which holds the node information and data, and a `tree` which holds and connect all the nodes together.
 `node` and `tree` will be the main classes.
 
-Node class consists of 3 attributes: `key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
+`Node` class will contain 3 information: `data`, `left child` and `right child`.
 
 Node class
-```java
-// Node creation
-class Node {
-  key;
-  Node left;
-  Node right;
 
-Node(value) {
-  key = value;
-  left = null;
-  right = null;
-  }
-}
-```
 
 BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
 BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
