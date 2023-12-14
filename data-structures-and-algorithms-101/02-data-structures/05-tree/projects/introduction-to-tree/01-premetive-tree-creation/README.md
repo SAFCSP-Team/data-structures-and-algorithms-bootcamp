@@ -1,4 +1,4 @@
-# Array With Non-Primitive Data Type
+# Tree premitive projects
 
 ### Objective
 In this project, our objective is to create a tree of strings.
