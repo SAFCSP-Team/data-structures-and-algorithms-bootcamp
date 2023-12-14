@@ -14,7 +14,7 @@ In computer programming, a stack is similar to this stack of books. It is a data
   - IsEmpty(): return true if the stack is empty.
   - size(): return the size of the stack.
 
-<img width="910" alt="Stack" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/03-stack/Images/Stack.jpg">
+<img width="910" alt="Stack" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/03-stack/Images/Stack.png">
 
 > Java provides a built-in generic class called [Stack](https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html) in the java.util package, which can hold elements of any type.
 
