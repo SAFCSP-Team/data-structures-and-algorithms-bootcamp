@@ -89,7 +89,7 @@ Element at (1, 2): 6
 ```
 > Note: in C++, you need to specify the size of all dimensions except the first when declaring a multidimensional array.
 
-### non-primitive
+### Non-primitive
 1. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
 - Code: 
 ``` java
