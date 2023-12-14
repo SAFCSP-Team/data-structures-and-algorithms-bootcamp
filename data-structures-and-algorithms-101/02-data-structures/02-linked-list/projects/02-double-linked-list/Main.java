@@ -1,27 +1,3 @@
-# Double Linked List 
-
-### Objective
-
-In this project, our main goal will be to understand the fundamentals of a double linked list, and their operations.
-
-### Concepts
-
-Using the provided resources for a better understanding.
-
-|Concept|	Resources|
-|-------|----------|
-|What is a double linked list|[double linked list in c](https://medium.com/@noransaber685/efficient-data-manipulation-with-doubly-linked-lists-insertion-deletion-and-positional-6d4c6b79cdeb)|
-|Double linked list Java|[Insert and delete elements](https://www.youtube.com/watch?v=ZlNKNSz88Nk)|
-
-### Problem
-
-Implement `deleteNode` method to remove a specific value from double linked list
-
-### Implementation
-
-Write  the implementation of the `deleteNode` method that removes a node with a specific value from the list.
-```java
-
 public class Main {
     public static void main(String[] args) {
         DoublyLinkedList list = new DoublyLinkedList();
@@ -76,8 +52,6 @@ public class DoublyLinkedList {
         }
         System.out.println();
     }
-
-/* your code here */
+    
+    /* your code here */
 } }
-```
-

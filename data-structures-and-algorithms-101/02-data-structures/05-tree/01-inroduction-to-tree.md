@@ -86,22 +86,26 @@ There are three ways to travers tree:
 
 <summary>Tree structure</summary>
 <br/>
-Before digging into the expample let's see the two main classes in the tree. As we explained before the tree is a collection of nodes. 
+Before digging into the expample let's see what is the two main classes in the tree?. As we explained before the tree is a collection of nodes. 
+<br/>
+<br/>
+The tree consists of two main classes:
+<br/>
 
-the tree consist of `node` which holds the node information and data, and a `tree` which holds and connect all the nodes together.
-`Node` and `tree` will be the main classes.
+`node` class which holds the node information and data.
+`tree` class which holds and connect all the nodes together.
+
+- Node class
 
 `Node` class will contain 3 information/attirbutes: `data`, `left child` and `right child`.
-
-Node class
 
 Figure 3
 ![data representation](./images/Node-class.jpg)
 
 
+- Tree class
+  
 `Tree` class will contain 1 information/attribute: `root`.
-
-Tree class
 
 Figure 4
 ![data representation](./images/Binary-Tree.jpg)
