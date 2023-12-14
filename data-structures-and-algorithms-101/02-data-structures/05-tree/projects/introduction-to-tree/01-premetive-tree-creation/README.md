@@ -1,4 +1,4 @@
-# Tree premitive projects
+# Tree premitive project
 
 ### Objective
 In this project, our objective is to create a tree of strings.
