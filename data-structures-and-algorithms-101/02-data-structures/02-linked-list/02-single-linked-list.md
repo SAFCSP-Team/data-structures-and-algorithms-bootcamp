@@ -22,6 +22,8 @@
 ## Example 
 
 ### Primitive 
+
+* Single linked list of primitive data types in c++ .
 ```c++
 #include <iostream>
 struct Node {
@@ -66,9 +68,8 @@ int main() {
     return 0;
 }
 ```
-* Single linked list of primitive data types in c++ .
-
 ### non Primitive
+* Single linked list of non primitive data types in Java.
 ```java
 public class Main {
  public static void main(String[] args) {
@@ -91,7 +92,6 @@ class LinkedListNode<T> {
         this.val = val;
     } }
 ```
-* Single linked list of non primitive data types in Java.
 ## Projects
 
 
