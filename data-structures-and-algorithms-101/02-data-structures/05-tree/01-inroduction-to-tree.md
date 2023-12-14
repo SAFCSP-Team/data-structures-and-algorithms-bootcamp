@@ -84,7 +84,7 @@ There are three ways to travers tree:
 
 <details>
 
-<summary>Tree implementation structure</summary>
+<summary>Tree structure</summary>
 <br/>
 Before digging into the expample let's see the two main classes in the tree. 
 As we explained before the tree is a collection of nodes. the tree consist of `node` which holds the node information and data, and a `tree` which holds and connect all the nodes together.
