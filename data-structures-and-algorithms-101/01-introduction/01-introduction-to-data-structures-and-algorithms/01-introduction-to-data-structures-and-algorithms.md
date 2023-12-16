@@ -59,7 +59,7 @@ To demonstrate the idea, let's imagine you are in a really long car line at a dr
 
 
 
-The car example above is similar to the `queue` data structure, if we manipulate the reference by having multiple references to multiple nodes we will form a `tree` data structure.
+The car example above is similar to the `queue` data structure, if we manipulate the structure by having multiple pointers for each node we will form a `tree` data structure.
 
 
 ![node and pointer example 2](./images/node-and-pointer-example-folders.jpg)
@@ -69,7 +69,7 @@ The concept of pointers is crucial, and as you saw we can form different organiz
 
 > Each node can have single or multiple pointers.
 
-> Pointers are normally part of the node.
+> Pointers are normally stored as part of the node.
 
 </details>
 
@@ -93,11 +93,12 @@ That being said, we can categorize algorithms into two types, common algorithms 
 ## Conclusion
 
 In conclusion, Data structures are just organization types to use for organizing data, while algorithms are the operations we perform on these organizations and their data.
+
  ### Next Step
 We will focus later on, on explaining each organization, its attributes, and algorithms. Then we will cover the common shared operations that are applied to these organizations such as sorting and searching.
 
 ## Projects
-Having a list of weekdays as a string, visualize the data as an array using [array visualizer](https://array-3d-viz.vercel.app/).
+1. Having a list of weekdays as a string, visualize the data as an array using [array visualizer](https://array-3d-viz.vercel.app/).
 
 ```
 [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ]
