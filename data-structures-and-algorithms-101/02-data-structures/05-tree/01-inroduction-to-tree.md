@@ -182,29 +182,37 @@ In this example we will create a `tree` of employees.
 
 Java code
 ```java
-// Emplyee class creation
-class Employee {
-  int id;
-  String name;
-  String role;
+public class Employee {
+
+    int id;
+    String name;
+    String role;
+
+    Employee(int id, String name, String role){
+        this.id = id;
+        this.name = name;
+        this.role = role;
+    }
+  
 }
+
 ```
 
 - Node class
 
 Java code
 ```java
-// Node creation
-class Node {
-  Employee employee;
-  Employee left;
-  Employee right;
+public class Node {
+  Employee data;
+  Node left;
+  Node right;
 
   public Node(Employee e) {
-  employee = e;
+  data = e;
   left = null;
   right = null;
   }
+
 }
 ```
 
@@ -216,8 +224,7 @@ BinaryTree class also has the operations which should be performed in the tree, 
 
 Java code
 ```java
-// BinaryTree creation
-class BinaryTree {
+public class BinaryTree {
   Node root;
 
   BinaryTree(Employee e) {
@@ -227,10 +234,6 @@ class BinaryTree {
   BinaryTree() {
   root = null;
   }
-
-  // Traverse Inorder
-  public void traverseInOrder(Node node) {}
-
 
 }
 ```
