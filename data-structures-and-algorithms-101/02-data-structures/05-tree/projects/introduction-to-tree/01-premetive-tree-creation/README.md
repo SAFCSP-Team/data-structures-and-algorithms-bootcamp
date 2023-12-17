@@ -15,7 +15,7 @@ Using Java programming language:
 `Node right`
 `Node left`
 
-And a constructor that takes name as parameter and assigne it to the name attribute:
+And a constructor that takes `name` as parameter and assigne it to the name attribute, declare `left` abd `right` with null value.
 
 `Node()`
 
