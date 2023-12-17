@@ -31,6 +31,15 @@ In the `display()` method follow the provided steps:
 * It then loops through the list, printing the data of each node pointed to by the current node, until the current node points back to the head.
 
 ```java
+
+public class Node{  
+ int data;  
+ Node next;  
+public Node(int data) {  
+  this.data = data;
+ }
+}
+
 public class CreateList { 
         public static void main(String[] args) {  
         CreateList cl = new CreateList();  
@@ -40,13 +49,7 @@ public class CreateList {
         cl.add(4);  
         cl.display();
     }
-    public class Node{  
-        int data;  
-        Node next;  
-        public Node(int data) {  
-            this.data = data;  
-        }  
-    }
+
    public Node head = null;  
    public Node tail = null;  
      
