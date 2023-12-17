@@ -1,6 +1,6 @@
 # One Dimensional Arrays
 ### Objective
-In the project, the main focus is a comprehensive understanding of one-dimensional array, such as declaring arrays, accessing elements using indexes, and performing operations on arrays.
+The project's main focus is understanding one-dimensional arrays, declaring them, accessing their elements using indexes, and performing operations on them.
 ### Problem
 Create an array of weekdays and print it.
 
