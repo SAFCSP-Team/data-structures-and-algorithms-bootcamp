@@ -26,59 +26,119 @@ A `linked list` is a **data structure** that consists of a **sequence of element
 ### Primitive 
 
 * linkedlist of primitive data types in Java.
+  
 ```java
 public class Main {
-    public static void main(String[] args) {
-     LinkedListNode head = new LinkedListNode(1);
-     LinkedListNode second = new LinkedListNode(2);
-     LinkedListNode third = new LinkedListNode(3);
-      head.next = second;
-      second.next = third;
-      /* Print the elements of the linked list */
-       LinkedListNode current = head;
-       while (current != null) {
-         System.out.println(current.val);
-          current = current.next;
-        }  }
-}
-class LinkedListNode {
-    int val;
-    LinkedListNode next;
-    LinkedListNode(int val) {
-        this.val = val;
+ public static void main(String[] args) {
+   LinkedList linkedList = new LinkedList();
+     linkedList.insert(10);
+     linkedList.insert(20);
+     linkedList.insert(30);
+     linkedList.insert(40);
+     linkedList.display();
     }
+class Node {
+  int data;
+  Node next;
+   Node(int data) {
+     this.data = data;
+     this.next = null;
+    }
+}
+class LinkedList {
+  private Node head;
+  LinkedList() {
+   this.head = null;
+    }
+ public void insert(int data) {
+  Node Node = new Node(data);
+  if (head == null) {
+   head = Node;
+    } else {
+    Node current = head;
+    while (current.next != null) {
+     current = current.next;
+       }
+     current.next = Node;
+      }
+    }
+ public void display() {
+  if (head == null) {
+   System.out.println("Linked list is empty.");
+    } else {
+     Node current = head;
+     while (current != null) {
+     System.out.print(current.data + " ");
+    current = current.next;
+       }
+   System.out.println();
+    } }
+}
 }
 ```
 * linkedlist of primitive data types in c++.
-  
 ```c++
-
-struct LinkedListNode {
-    int val;
-    LinkedListNode* next;
-
-    LinkedListNode(int value) : val(value), next(nullptr) {}
-};
-
-void printList(LinkedListNode* head) {
-    LinkedListNode* current = head;
-    while (current != nullptr) {
-        std::cout << current->val << " ";
-        current = current->next;
+#include <iostream>
+class Node {
+public:
+int data;
+Node* next;
+ Node(int data) {
+  this->data = data;
+  this->next = nullptr;
     }
-    std::cout << std::endl;
+};
+class SinglyLinkedList {
+private:
+    Node* head;
+public:
+LinkedList() {
+  this->head = nullptr;
+ }
+void insert(int data) {
+ Node* newNode = new Node(data);
+ if (head == nullptr) {
+ head = newNode;
+ } else {
+  Node* current = head;
+  while (current->next != nullptr) {
+ current = current->next;
+  }
+current->next = newNode;
+        }
+    }
+void display() {
+ if (head == nullptr) {
+ std::cout << "Linked list is empty." << std::endl;
+ } else {
+ Node* current = head;
+ while (current != nullptr) {
+  std::cout << current->data << " ";
+   current = current->next;
+ }
+ std::cout << std::endl;
+        }
+    }
+};
+int main() {
+ LinkedList linkedList;
+  linkedList.insert(10);
+  linkedList.insert(20);
+  linkedList.insert(30);
+  linkedList.insert(40);
+  linkedList.display();
+    return 0;
 }
-
 ```
-### non Primitive
-* linkedlist of non primitive data types in Java.
+### Non Primitive
+* linkedlist of non-primitive data types in Java.
   
 ```java
 public class Main {
   public static void main(String[] args) {
-    LinkedListNode<String> head = new LinkedListNode<>(new String("LAMA"));
-    LinkedListNode< String > second = new LinkedListNode<>(new String("SARA"));
-    LinkedListNode<String> third = new LinkedListNode<>(new String("EMAN"));
+    LinkedListNode<String> head = new LinkedListNode<>(new String("Lama"));
+    LinkedListNode< String > second = new LinkedListNode<>(new String("Sara"));
+    LinkedListNode<String> third = new LinkedListNode<>(new String("Eman"));
       head.next = second;
       second.next = third;
         /* Print the elements of the linked list */
@@ -118,9 +178,9 @@ void printPersonList(PersonNode* head) {
         current = current->next;
     }}
 int main() {
-    PersonNode* head = new PersonNode(Person("John"));
-    PersonNode* second = new PersonNode(Person("Jane"));
-    PersonNode* third = new PersonNode(Person("Mike"));
+    PersonNode* head = new PersonNode(Person("Lama"));
+    PersonNode* second = new PersonNode(Person("Noura"));
+    PersonNode* third = new PersonNode(Person("Lamyaa"));
     head->next = second;
     second->next = third;
     /* Print the elements of the linked list */
