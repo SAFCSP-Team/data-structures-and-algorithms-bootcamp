@@ -20,10 +20,3 @@ Create a `linked list` class that corresponds to the following diagram.
 * Create a `Node` class where the data is an integer.
 * Create a `linked list` class to `insert` these values.
 * print the values in the main method.
-
-  
-```java
-
-/* your code here */
-
-```
