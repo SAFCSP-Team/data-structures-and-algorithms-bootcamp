@@ -15,7 +15,7 @@ Use the provided resources for a better understanding.
 
 ### Problem
 
-Create a `deleteNode` method to remove a specific value from a double linked-list
+Create a `deleteNode` method to remove a specific value from a double linked-list.
 
 ### Implementation
 
