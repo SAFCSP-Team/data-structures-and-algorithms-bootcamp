@@ -8,8 +8,6 @@ In this project, our main focus will be on understanding two-dimensional arrays,
 Convert a one-dimensional array `nums` into a two-dimensional array.
 
 ### Implementation
-Using java programming language:
-
 Write the implementation of the `convert` method that takes a one-dimensional array `nums` as input, and return a 2D array with a 3x3 dimension.
 
 After calling the method : 
