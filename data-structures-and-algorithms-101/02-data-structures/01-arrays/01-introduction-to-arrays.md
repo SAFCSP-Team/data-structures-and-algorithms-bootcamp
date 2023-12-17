@@ -42,6 +42,7 @@ int main() {
    int numbers[] = {1, 2, 3, 4, 5};
    double grades[] = {85.5, 90.0, 77.5, 92.5};
    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+   return 0;
 }
 ```
 > In C++ and java, you can declare and initialize arrays similarly. 
@@ -67,6 +68,7 @@ int main() {
           Person("Alice", 30),
           Person("Bob", 35)
     };
+    return 0;
 }
 ```
 ## Projects
