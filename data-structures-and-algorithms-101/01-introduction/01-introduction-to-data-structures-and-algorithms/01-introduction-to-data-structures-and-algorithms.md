@@ -38,18 +38,15 @@ Most organizations consist of two main components, these components if used diff
 
 ![node and pointer](./images/node-and-pointer.jpg)
 
-<details>
-  <summary> Node </summary>
+**Node**
 
 We can think of a node as the main container of our data (whether it is primitive or non-primitive).
 
 > It is described in the images as a circle containing data.
 
-</details>
 
 
-<details>
-  <summary> Pointer </summary>
+**Pointer**
 
 A pointer or what might be called a reference, is a link used to point to another node. 
 
@@ -73,7 +70,7 @@ The concept of pointers is crucial, and as you saw we can form different organiz
 
 > Pointers are normally stored as part of the node.
 
-</details>
+
 
 
 ### Manipulate 
