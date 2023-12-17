@@ -31,9 +31,12 @@ A tree where every node has two child nodes (at the most)
 
 
 5 - Degenerate Binary Tree
-
+- A tree where every internal nodes (parent) has exactly one child.
 
 </details>
+
+
+You looked into the different types of binary trees. Now you will see some operations you can perform on binary trees.
 
 
 
