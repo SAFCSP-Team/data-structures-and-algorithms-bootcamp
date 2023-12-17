@@ -13,7 +13,7 @@ A tree where every node has two child nodes (at the most)
 <br/>
 
 1 - Full Binary Tree
-- A where tree nodes can have either two children or no child.
+- A tree where tree nodes can have either two children or no child.
   
 
 2 - Complete Binary Tree 
