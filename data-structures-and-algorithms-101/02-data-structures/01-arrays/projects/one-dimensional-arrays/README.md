@@ -5,7 +5,6 @@ In the project, the main focus is a comprehensive understanding of one-dimension
 Create an array of weekdays and print it.
 
 ### Implementation
-Using java programming language: 
 - Create an array of weekdays and print it.
 - Print the length of the array.
 - Print the last element in the array using the index. 
