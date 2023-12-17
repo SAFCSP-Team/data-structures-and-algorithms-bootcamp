@@ -15,7 +15,7 @@ Use the provided resources for a better understanding.
 |Circular linked list implementation|[Creation and Display](https://www.youtube.com/watch?v=fmfx1C4TTxw)|
 
 ### Problem
-Create the `add()` method to add to the `CircularLinkedList` class and the `display()` method to print the data values.
+Create an `add()` method to add to the `CircularLinkedList` class and a `display()` method to print the data values.
 
 ### Implementation
 
