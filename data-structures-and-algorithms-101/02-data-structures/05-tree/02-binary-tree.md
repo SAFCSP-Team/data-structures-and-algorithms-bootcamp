@@ -31,7 +31,8 @@ A tree where every node has maximum two child nodes
 
 
 5 - Degenerate Binary Tree
-- A tree where every internal nodes (parent) has exactly one child.
+- A tree where every `internal nodes` has exactly one child.
+- `Internal node`: Any node with a child and a parent
 
 </details>
 
