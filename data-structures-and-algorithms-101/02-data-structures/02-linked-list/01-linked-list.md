@@ -204,3 +204,6 @@ int main() {
 
 
 ## Projects
+| Project Title | Deadline |
+|:-----------:|:-------------|
+| [linked list](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/01-linked-list) | - | 
