@@ -90,7 +90,6 @@ class Stack {
 Top element: 40
 Top element after popping: 30
 The size of stack: 3
-
 ```
 
 
@@ -173,4 +172,6 @@ The size of stack: 3
 ```
 
 ## Projects
-|DSAProject01| [Stack](-) | - | 
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|DSAProject01| [Stack](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/03-stack/projects/01-stack/READMDE.md) | - | 
