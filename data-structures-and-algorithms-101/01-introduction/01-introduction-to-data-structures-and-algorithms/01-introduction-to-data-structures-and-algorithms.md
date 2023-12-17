@@ -53,13 +53,15 @@ We can think of a node as the main container of our data (whether it is primitiv
 
 A pointer or what might be called a reference, is a link used to point to another node. 
 
-To demonstrate the idea, let's imagine you are in a really long car line at a drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and `point` to the car in front of you.
+To demonstrate the idea, let's imagine you are in a long car line at a food truck drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and `point` to the car in front of you.
+
+> Note: cars in the line can be served randomly since some orders are faster than others.
 
 ![node and pointer example 1](./images/node-and-pointer-example-cars.jpg)
 
 
 
-The car example above is similar to the `queue` data structure, if we manipulate the structure by having multiple pointers for each node we will form a `tree` data structure.
+The car example above is similar to the `linked-list` data structure. If we manipulate the structure by having multiple pointers for each node we will form a `tree` data structure.
 
 
 ![node and pointer example 2](./images/node-and-pointer-example-folders.jpg)
