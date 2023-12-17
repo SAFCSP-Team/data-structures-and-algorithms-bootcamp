@@ -3,7 +3,7 @@
 In the project, the main focus is a comprehensive understanding of the stack.
 
 ### Problem
-Develop a new implementation for a given stack class to store Book objects in java programming language.
+Develop a new implementation for a given stack class to store Book objects.
 
 ### Implementation
 The current code is responsible for creating a stack of integers. You are requested to update the class to store [Book](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/03-stack/projects/01-stack/Book.java) objects.
