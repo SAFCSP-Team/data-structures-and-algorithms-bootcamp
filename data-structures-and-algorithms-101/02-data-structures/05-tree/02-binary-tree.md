@@ -12,6 +12,9 @@ A tree where every node has maximum two child nodes
 <summary>Types of binary tree</summary>
 <br/>
 
+Figure 1
+![data representation](./images/Types-of-binary-tree.jpg)
+
 1 - Full Binary Tree
 - A tree where tree nodes can have either two children or no child.
   
