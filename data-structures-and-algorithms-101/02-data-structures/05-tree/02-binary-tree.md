@@ -140,6 +140,12 @@ class BinaryTree {
 
 ```
 
+Output
+```
+Pre order Traversal:  1 2 4 3
+In order Traversal:  4 2 1 3
+Post order Traversal:  4 2 3 1
+```
 
 ## Projects
 
