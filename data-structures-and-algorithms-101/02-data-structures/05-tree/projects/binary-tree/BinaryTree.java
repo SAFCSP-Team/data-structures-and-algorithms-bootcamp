@@ -74,11 +74,11 @@ class Employee {
         tree.root.right = new Node(e2);
         tree.root.left.left = new Node(e3);
       
-        System.out.print("Pre order Traversal: ");
+        System.out.println("Pre order Traversal: ");
         tree.traversePreOrder(tree.root);
-        System.out.print("\nIn order Traversal: ");
+        System.out.println("\nIn order Traversal: ");
         tree.traverseInOrder(tree.root);
-        System.out.print("\nPost order Traversal: ");
+        System.out.println("\nPost order Traversal: ");
         tree.traversePostOrder(tree.root);
         }
 
