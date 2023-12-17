@@ -26,51 +26,56 @@
 ```c++
 #include <iostream>
 
-struct Node {
-    int data;
-    Node* next;
-    Node(int value) : data(value), next(nullptr) {}
+class Node {
+public:
+  int data;
+  Node* next; 
+ Node(int data) {
+ this->data = data;
+ this->next = nullptr;
+    }
 };
 
 class LinkedList {
 private:
-    Node* head;
+  Node* head;
 public:
-    LinkedList() : head(nullptr) {}
-/* Method to insert elements into a single linked list */
-    void insert(int data) {
-        Node* Node = new Node(data);
-        if (head == nullptr) {
-            head = Node;
-        } else {
-            Node* current = head;
-            while (current->next != nullptr) {
-                current = current->next;
-            }
-            current->next = Node;
-        }
+  LinkedList() {
+  head = nullptr;
     }
-void display() {
-        Node* current = head;
-        while (current != nullptr) {
-            std::cout << current->data << " ";
-            current = current->next;
+ void insert(int data) {
+  Node* node = new Node(data);
+   if (head == nullptr) {
+     head = node;
+      } else {
+      Node* current = head;
+      while (current->next != nullptr) {
+      current = current->next;
+            }
+            current->next = node;
+        }  }
+
+ void display() {
+  Node* current = head;
+      while (current != nullptr) {
+         std::cout << current->data << " ";
+         current = current->next;
         }
         std::cout << std::endl;
     }
 };
 
 int main() {
- LinkedList linkedList;
- linkedList.insert(7);
- linkedList.insert(14);
- linkedList.insert(21);
- linkedList.insert(28);
- linkedList.display();
- return 0;
-}
+    LinkedList linkedList;
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.display();
 
+    return 0;
+}
 ```
+
 ### Non-Primitive
 * Single linked list of non-primitive data types in Java.
 ```java
@@ -82,8 +87,7 @@ public class Main {
    linkedList.insert("SARA");
    linkedList.insert("EMAN");
    linkedList.display();
-    }
-}
+    } }
 
 class Node<T> {
     T data;
@@ -91,8 +95,7 @@ class Node<T> {
     Node(T data) {
         this.data = data;
         this.next = null;
-    }
-}
+    } }
 
 class LinkedList<T> {
     private Node<T> head;
@@ -120,10 +123,7 @@ class LinkedList<T> {
    System.out.println(current.data);
    current = current.next;
             }
-        }
-    }
-}
-
+        }  } }
 ```
 ## Projects
 | Project Title | Deadline |
