@@ -1,9 +1,9 @@
 # Double Linked List.
 ## Concept
 
-A `doubly linked list` is an enhanced version of a linked list that allows **bidirectional traversal**. Each `node` in a **double linked list** contains of additional pointer called the `previous pointer`, which points to the previous node in the list. This feature enables efficient **traversal** both **forward and backward** through the list. Unlike singly linked lists, where traversal is only possible in one direction.
+A `double linked list` is an enhanced version of a linked list that allows **bidirectional traversal**. Each `node` in a **double linked list** contains of additional pointer called the `previous pointer`, which points to the previous node in the list. This feature enables efficient **traversal** both **forward and backward** through the list. Unlike singly linked lists, where traversal is only possible in one direction.
 
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/3a9688d3-045c-410f-8342-f656c95ce870)
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/6e7ee626-df74-4e29-8771-eb23d84d4f19)
 
  `Doubly linked list` enables efficient implementation of operations like **reverse traversal, 
   inserting elements** before or after a given node, and **deleting** a node with direct access to it.
@@ -19,11 +19,11 @@ public class Main {
     doublyLinkedList.insert(7);
     doublyLinkedList.insert(14);
     doublyLinkedList.insert(21);
-     System.out.println("Original list:");
-     doublyLinkedList.display();
-     doublyLinkedList.delete(14);
-     System.out.println("List after deleting 14:");
-     doublyLinkedList.display();
+    System.out.println("Original list:");
+    doublyLinkedList.display();
+    doublyLinkedList.delete(14);
+    System.out.println("List after deleting 14:");
+    doublyLinkedList.display();
     }}
 class Node {
     int data;
@@ -153,4 +153,7 @@ int main() {
 }
 ```
 ## Projects
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|DSAProject02| [Double linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/02-double-linked-list) | - | 
 
