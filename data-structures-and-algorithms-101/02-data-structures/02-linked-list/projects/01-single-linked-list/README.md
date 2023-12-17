@@ -11,8 +11,8 @@ Use the provided resources for a better understanding.
 
 ### Problem
 
- Create a `display()` method, for each node by making the current to point to the node next to it in each iteration.
- 
+Create a display() method, to print the content of the linked list.
+
 ### Implementation
 
 * The `LinkedList` class is defined, which represents a linked list data structure. It has a single instance variable head, which points to the first node of the 
