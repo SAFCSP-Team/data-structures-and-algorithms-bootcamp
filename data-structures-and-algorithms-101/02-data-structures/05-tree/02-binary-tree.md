@@ -37,7 +37,9 @@ A tree where every node has maximum two child nodes
 </details>
 
 
-You looked into the different types of binary trees. Now you will see some operations you can perform on binary trees.
+We looked into the different types of binary trees. Now you will see some operations you can perform on binary trees.
+
+
 
 
 
