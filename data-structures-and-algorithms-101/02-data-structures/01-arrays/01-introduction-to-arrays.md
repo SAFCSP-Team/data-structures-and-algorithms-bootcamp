@@ -6,8 +6,6 @@ It is important to note that an organized library significantly improves the eas
 ## Concept
 In computer programming, in most cases, there is a need to **store a large number of similar data**. for example, books or weekdays. So, instead of using different variable names to represent each value, it is **better to define an array and store all the elements in it** to significantly improve the ease of dealing with data.
 
-for example, books or cups
-
 `Array`: is a collection of similar data items grouped together.
 - Arrays can store **primitive** data types or **non-primitive** data type.
 - The `length` of an array refers to the **number of elements** contained within the array.
