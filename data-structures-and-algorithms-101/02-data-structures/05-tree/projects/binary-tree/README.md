@@ -128,3 +128,9 @@ public class BinaryTree {
 }
 ```
 
+Output:
+```
+id: 2 name: Alo Role: IT Managaer
+ id: 3 name: Abdullah Role: HR Manager
+ id: 1 name: Ahmed Role: CEO
+```
