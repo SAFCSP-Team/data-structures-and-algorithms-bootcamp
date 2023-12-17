@@ -4,15 +4,15 @@ Imagine a scenario where we have two libraries: one is organized, and the other 
 It is important to note that an organized library significantly improves the ease of dealing with books by providing a structured system for book organization. In contrast, a scattered library lacking such organization creates difficulties and hinders efficient dealing with library resources.
 
 ## Concept
-In computer programming, in most cases, there is a need to **store a large number of data**. Instead of using different variable names, it is **better to define an array and store all the elements in it** to significantly improve the ease of dealing with data.
+In computer programming, in most cases, there is a need to **store a large number of similar data**. for example, books or weekdays. So, instead of using different variable names to represent each value, it is **better to define an array and store all the elements in it** to significantly improve the ease of dealing with data.
 
 `Array`: is a collection of similar data items grouped together.
 - Arrays can store **primitive** data types or **non-primitive** data type.
 - The `length` of an array refers to the **number of elements** contained within the array.
-- An array is the **simple data structure** where each data element can be randomly **accessed** using its **index number**.
+- An array is **simple data structure** where each data element can be randomly **accessed** using its **index number**.
 - The `index` of an array refers to the **position or location of an element** within the array. It represents the **unique numeric** identifier assigned to each element in the array.
 - If the size of an array is **n**, the maximum index number is **n-1**.
- >  Note : In most programming languages, array indices typically start from 0 and increment by 1 for each subsequent element.
+ >  Note: In most programming languages, array indices typically start from 0 and increment by 1 for each subsequent element.
 
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-01.png">
 
@@ -42,6 +42,7 @@ int main() {
    int numbers[] = {1, 2, 3, 4, 5};
    double grades[] = {85.5, 90.0, 77.5, 92.5};
    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+   return 0;
 }
 ```
 > In C++ and java, you can declare and initialize arrays similarly. 
@@ -67,12 +68,13 @@ int main() {
           Person("Alice", 30),
           Person("Bob", 35)
     };
+    return 0;
 }
 ```
 ## Projects
 
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
-|DSAProject01| [Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-primitive-data-type/README.md) | - | 
-|DSAProject02| [Array with non-primitive data types ](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/README.md) | - | 
+|Project Title | Deadline |
+|:-----------:|:-------------|
+|[Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-primitive-data-type/README.md) | - | 
+|[Array with non-primitive data types ](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/README.md) | - | 
 

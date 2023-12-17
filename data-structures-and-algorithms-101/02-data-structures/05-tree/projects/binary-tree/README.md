@@ -9,7 +9,7 @@ Create a tree to store employees.
 ### Implementation
 Using Java programming language: 
 
-- `Employee` class is already implemented and added to the project files as below:
+- `Employee` class is already implemented and added to the BinartTree class as the below:
 ```java
 
 public class Employee {
@@ -29,7 +29,7 @@ public class Employee {
 ```
 
 
-- `Node` class is already implemented and added to the project files as below:
+- `Node` class is already implemented and added to the BinartTree class as the below:
 ```java
 
 
@@ -72,7 +72,18 @@ Employee e = new Employee(01,"Ahmed","CEO");
 4 - Output of this projects should be the same as below:
 - Output:
 ```
-id: 2 name: Alo Role: IT Managaer
+Pre order Traversal:  id: 1 name: Ahmed Role: CEO
+ id: 2 name: Ali Role: IT Managaer
+ id: 4 name: Mohammed Role: Software Developer
+ id: 3 name: Abdullah Role: HR Manager
+
+In order Traversal:  id: 4 name: Mohammed Role: Software Developer
+ id: 2 name: Ali Role: IT Managaer
+ id: 1 name: Ahmed Role: CEO
+ id: 3 name: Abdullah Role: HR Manager
+
+Post order Traversal:  id: 4 name: Mohammed Role: Software Developer
+ id: 2 name: Ali Role: IT Managaer
  id: 3 name: Abdullah Role: HR Manager
  id: 1 name: Ahmed Role: CEO
 ```
