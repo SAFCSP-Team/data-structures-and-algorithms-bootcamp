@@ -25,7 +25,7 @@ A `linked list` is a **data structure** that consists of a **sequence of element
 
 ### Primitive 
 
-* linkedlist of primitive data types in Java.
+* linked list of primitive data types in Java.
   
 ```java
 public class Main {
@@ -37,6 +37,7 @@ public class Main {
      linkedList.insert(40);
      linkedList.display();
     }
+
 class Node {
   int data;
   Node next;
@@ -45,11 +46,13 @@ class Node {
      this.next = null;
     }
 }
+
 class LinkedList {
   private Node head;
   LinkedList() {
    this.head = null;
     }
+
  public void insert(int data) {
   Node Node = new Node(data);
   if (head == null) {
@@ -62,6 +65,7 @@ class LinkedList {
      current.next = Node;
       }
     }
+
  public void display() {
   if (head == null) {
    System.out.println("Linked list is empty.");
@@ -76,9 +80,10 @@ class LinkedList {
 }
 }
 ```
-* linkedlist of primitive data types in c++.
+* linked list of primitive data types in c++.
 ```c++
 #include <iostream>
+
 class Node {
 public:
 int data;
@@ -88,25 +93,28 @@ Node* next;
   this->next = nullptr;
     }
 };
-class SinglyLinkedList {
+
+class LinkedList {
 private:
     Node* head;
 public:
 LinkedList() {
   this->head = nullptr;
  }
+
 void insert(int data) {
- Node* newNode = new Node(data);
+ Node* Node = new Node(data);
  if (head == nullptr) {
- head = newNode;
+ head = Node;
  } else {
   Node* current = head;
   while (current->next != nullptr) {
  current = current->next;
   }
-current->next = newNode;
+current->next = Node;
         }
     }
+
 void display() {
  if (head == nullptr) {
  std::cout << "Linked list is empty." << std::endl;
@@ -120,6 +128,7 @@ void display() {
         }
     }
 };
+
 int main() {
  LinkedList linkedList;
   linkedList.insert(10);
@@ -130,8 +139,8 @@ int main() {
     return 0;
 }
 ```
-### Non Primitive
-* linkedlist of non-primitive data types in Java.
+### Non-Primitive
+* linked list of non-primitive data types in Java.
   
 ```java
 public class Main {
@@ -148,35 +157,39 @@ public class Main {
             current = current.next;
         } }
 }
+
 class LinkedListNode<T> {
     T val;
     LinkedListNode<T> next;
 
     LinkedListNode(T val) {
         this.val = val;
-    }
-}
+    } }
 ```
-* linkedlist of non primitive data types in c++:
+* linked list of non primitive data types in c++:
   
 ```c++
 #include <iostream>
 #include <string>
+
 struct Person {
     std::string name;
     Person(const std::string& n) : name(n) {}
 };
+
 struct PersonNode {
     Person val;
     PersonNode* next;
     PersonNode(const Person& p) : val(p), next(nullptr) {}
 };
+
 void printPersonList(PersonNode* head) {
     PersonNode* current = head;
     while (current != nullptr) {
         std::cout << "Name:  " << current-> val.name;
         current = current->next;
     }}
+
 int main() {
     PersonNode* head = new PersonNode(Person("Lama"));
     PersonNode* second = new PersonNode(Person("Noura"));
@@ -186,9 +199,8 @@ int main() {
     /* Print the elements of the linked list */
    printPersonList(head);
 }
-  
   ```
-> In java and c++, you can declare and initialize linkedlist in a similar way.
+> In java and c++, you can declare and initialize linked list in a similar way.
 
 
 ## Projects
