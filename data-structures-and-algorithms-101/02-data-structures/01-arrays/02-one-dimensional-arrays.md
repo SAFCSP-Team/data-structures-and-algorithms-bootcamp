@@ -31,7 +31,8 @@ The count = 5
 The secondElement = 7
 ```
 
-- One Dimensional Array of numbers called `numbers` in C++: 
+- One Dimensional Array of numbers called `numbers` in C++:
+
 **Code** 
 ``` c++
 int main() {
@@ -53,8 +54,9 @@ The secondElement = 7
 
 
 ### Non-primitive
-1. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
- - Code: 
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java) in java:
+
+**Code**
  ``` java
 public static void main(String[] args) {
     Person[] peopleArray = new Person[3];
@@ -67,14 +69,15 @@ public static void main(String[] args) {
     System.out.println("The secondElement = " + secondElement);
 }
 ```
-- Output
+**Output**
 ```
 The count = 3
 The secondElement = Name: Bob Age: 30
 ```
 
-2. Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
-- Code: 
+- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++:
+
+**Code** 
 ```C++
 int main() {
     Person peopleArray[] = { Person("Alice", 25),Person("Bob", 30),
@@ -87,7 +90,7 @@ int main() {
     return 0;
 }
 ```
-- Output
+**Output**
 ```
 The count = 3
 The secondElement = Name: Bob Age: 30
