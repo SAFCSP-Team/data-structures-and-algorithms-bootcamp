@@ -26,8 +26,8 @@ A tree where every node has two child nodes (at the most)
 
 
 4 - Balanced Binary Tree
-- Balance factor = height(left subtree) - height(right subtree)
-- It balances a binary tree for each node if its balance factor is either -1,0 or 1. The height of the left subtree and that of the right tree can vary by at most one.
+- `Balance factor` = height(left subtree) - height(right subtree)
+- It balances a binary tree for each node if its `balance factor` is either -1,0 or 1. The height of the left subtree and that of the right tree can vary by at most one.
 
 
 5 - Degenerate Binary Tree
