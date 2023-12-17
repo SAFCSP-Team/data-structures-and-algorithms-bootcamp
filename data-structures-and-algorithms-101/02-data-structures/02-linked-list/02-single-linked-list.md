@@ -9,7 +9,7 @@
 * `Add a node to the list`: when adding a new `node` at the beginning of the list, you simply create the node, set its data, and update its next pointer to point 
   to the current head node. Then, you update the head pointer to point to the new node.
       
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/a5ef5ea4-12db-4109-a54a-ccc9d0290857)
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/5e0c1f75-9400-473f-a647-5d3f20268785)
 
 
 * `Access for a node in the list`: to access a specific element in the `linked list`, you start from the head and traverse the list until you find the element or 
@@ -25,11 +25,13 @@
 * Single linked list of primitive data types in c++ .
 ```c++
 #include <iostream>
+
 struct Node {
     int data;
     Node* next;
     Node(int value) : data(value), next(nullptr) {}
 };
+
 class LinkedList {
 private:
     Node* head;
@@ -57,6 +59,7 @@ void display() {
         std::cout << std::endl;
     }
 };
+
 int main() {
  LinkedList linkedList;
  linkedList.insert(7);
@@ -66,10 +69,12 @@ int main() {
  linkedList.display();
  return 0;
 }
+
 ```
-### non Primitive
-* Single linked list of non primitive data types in Java.
+### Non-Primitive
+* Single linked list of non-primitive data types in Java.
 ```java
+
 public class Main {
  public static void main(String[] args) {
    LinkedList<String> linkedList = new LinkedList<>();
@@ -79,6 +84,7 @@ public class Main {
    linkedList.display();
     }
 }
+
 class Node<T> {
     T data;
     Node<T> next;
@@ -87,6 +93,7 @@ class Node<T> {
         this.next = null;
     }
 }
+
 class LinkedList<T> {
     private Node<T> head;
     LinkedList() {
@@ -116,8 +123,9 @@ class LinkedList<T> {
         }
     }
 }
+
 ```
 ## Projects
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
-|DSAProject01| [Single linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/01-single-linked-list) | - | 
+| Project Title | Deadline |
+|:-----------:|:-------------|
+| [Single linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/01-single-linked-list) | - | 
