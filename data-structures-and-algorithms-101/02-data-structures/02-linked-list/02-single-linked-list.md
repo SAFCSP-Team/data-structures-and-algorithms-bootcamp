@@ -6,19 +6,17 @@
 
 **Common Singly Linked List Operations**
 
-* Add a node to the list.
-    * When adding a new `node` at the beginning of the list, you simply create the node, set its data, and update its next pointer to point to the current head 
-      node. Then, you update the head pointer to point to the new node.
+* `Add a node to the list`: when adding a new `node` at the beginning of the list, you simply create the node, set its data, and update its next pointer to point 
+  to the current head node. Then, you update the head pointer to point to the new node.
       
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/3376b985-3544-489c-b79e-f87c01fe818b)
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/a5ef5ea4-12db-4109-a54a-ccc9d0290857)
 
 
-* Access for a node in the list.
-    * To access a specific element in the `linked list`, you start from the head and traverse the list until you find the element or reach the end of the list. 
-      You can compare the data in each node with the target element to determine if it matches.
+* `Access for a node in the list`: to access a specific element in the `linked list`, you start from the head and traverse the list until you find the element or 
+  reach the end of the list. You can compare the data in each node with the target element to determine if it matches.
 
-* Remove a node from the list.
-* To remove a node from the linked list, you need to update the next pointer of the previous node to bypass the node to be deleted. If the node to be deleted is the head, you update the head pointer to point to the next node.
+* `Remove a node from the list`: to remove a node from the linked list, you need to update the next pointer of the previous node to bypass the node to be deleted. If the node to be deleted 
+  is the head, you update the head pointer to point to the next node.
   
 ## Example 
 
@@ -39,15 +37,15 @@ public:
     LinkedList() : head(nullptr) {}
 /* Method to insert elements into a single linked list */
     void insert(int data) {
-        Node* newNode = new Node(data);
+        Node* Node = new Node(data);
         if (head == nullptr) {
-            head = newNode;
+            head = Node;
         } else {
             Node* current = head;
             while (current->next != nullptr) {
                 current = current->next;
             }
-            current->next = newNode;
+            current->next = Node;
         }
     }
 void display() {
@@ -60,13 +58,13 @@ void display() {
     }
 };
 int main() {
-    LinkedList linkedList;
-    linkedList.insert(7);
-    linkedList.insert(14);
-    linkedList.insert(21);
-    linkedList.insert(28);
-    linkedList.display();
-    return 0;
+ LinkedList linkedList;
+ linkedList.insert(7);
+ linkedList.insert(14);
+ linkedList.insert(21);
+ linkedList.insert(28);
+ linkedList.display();
+ return 0;
 }
 ```
 ### non Primitive
@@ -74,30 +72,52 @@ int main() {
 ```java
 public class Main {
  public static void main(String[] args) {
-   LinkedListNode<String> head = new LinkedListNode<>(new String("LAMA"));
-   LinkedListNode< String > second = new LinkedListNode<>(new String("SARA"));
-   LinkedListNode<String> third = new LinkedListNode<>(new String("EMAN"));
-     head.next = second;
-     second.next = third;
-        /* Print the elements of the linked list */
-        LinkedListNode<String> current = head;
-        while (current != null) {
-          System.out.println(current.val);
-          current = current.next;
-        }  }
+   LinkedList<String> linkedList = new LinkedList<>();
+   linkedList.insert("LAMA");
+   linkedList.insert("SARA");
+   linkedList.insert("EMAN");
+   linkedList.display();
+    }
 }
-class LinkedListNode<T> {
-    T val;
-    LinkedListNode<T> next;
-    LinkedListNode(T val) {
-        this.val = val;
-    } }
+class Node<T> {
+    T data;
+    Node<T> next;
+    Node(T data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+class LinkedList<T> {
+    private Node<T> head;
+    LinkedList() {
+        this.head = null;
+    }
+ void insert(T data) {
+ Node<T> newNode = new Node<>(data);
+    if (head == null) {
+     head = newNode;
+    } else {
+    Node<T> current = head;
+    while (current.next != null) {
+    current = current.next;
+     }
+    current.next = newNode;
+        }
+    }
+ void display() {
+  if (head == null) {
+   System.out.println("Linked list is empty.");
+   } else {
+   Node<T> current = head;
+  while (current != null) {
+   System.out.println(current.data);
+   current = current.next;
+            }
+        }
+    }
+}
 ```
 ## Projects
-
-
-| Id      | Title          | Deadline |
-| ------- | -------------- | -------- |
-| SLIProject01|                |          |
-
-
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|DSAProject01| [Single linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/01-single-linked-list) | - | 
