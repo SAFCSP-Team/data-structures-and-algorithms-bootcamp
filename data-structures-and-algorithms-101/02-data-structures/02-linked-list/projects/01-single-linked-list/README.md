@@ -21,7 +21,18 @@ Create a display() method, to print the content of the linked list.
 * Create a `display()` method to print the contents of the linked list starting from the head node. It iterates through the list by following the next 
   references of each node and prints the data value.
   
+
 ```java
+
+ static class Node {
+  int data;
+  Node next;
+  Node(int d) {
+  data = d;
+  next = null;
+        }
+ }
+
 public class LinkedList {
     Node head;
 
@@ -35,6 +46,7 @@ public class LinkedList {
     }
           /* your code here */
 
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.head = new Node(100);
@@ -45,5 +57,4 @@ public class LinkedList {
         list.display();
     }
 }
-
 ```
