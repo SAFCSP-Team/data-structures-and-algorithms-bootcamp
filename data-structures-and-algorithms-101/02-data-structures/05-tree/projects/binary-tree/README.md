@@ -65,8 +65,18 @@ Employee e: id: 01, name: Ahmed, role: CEO.
 ```java
 Employee e = new Employee(01,"Ahmed","CEO");
 ````
+
 3 - Crete the root node
 - use `tree.root` to create the root and store the object `e`.
+
+4 - Output of this projects should be the same as below:
+- Output:
+```
+id: 2 name: Alo Role: IT Managaer
+ id: 3 name: Abdullah Role: HR Manager
+ id: 1 name: Ahmed Role: CEO
+```
+
 
 ```java
 public class BinaryTree {
