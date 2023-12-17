@@ -9,7 +9,7 @@ A tree where every node has maximum two child nodes
 
 <details>
 
-<summary>Types of Binary Tree</summary>
+<summary>Types of binary tree</summary>
 <br/>
 
 1 - Full Binary Tree
@@ -40,14 +40,49 @@ A tree where every node has maximum two child nodes
 We looked into the different types of binary trees. Now you will see some operations you can perform on binary trees.
 
 
+<details>
 
+<summary>Binary tree operation</summary>
+<br/>
+1 - Insert
 
+2 - Delete
+<br/>
+
+How Do You Traverse a Binary Tree in Data Structures?
+
+- Preorder
+- Inorder
+- Postorder
+
+We will look into these operation in the example section
+
+</details>
 
 
 
 ## Example 
+We will crete a tree of integers and we will perform the operations on it.
 
 ### Primitive 
+
+In node class we will declate the attibutes, create a constructor.
+
+```java
+
+class Node {
+  int key;
+  Node left, right;
+
+  public Node(int item) {
+  key = item;
+  left = right = null;
+  }
+}
+```
+
+In binary tree class we will declare the root as an attribute, create constructor, add insert, delete, traversal operations/functions.
+
 
 
 ### non-primitive
