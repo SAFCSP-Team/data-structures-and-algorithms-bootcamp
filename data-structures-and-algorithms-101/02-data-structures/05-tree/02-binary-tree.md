@@ -145,7 +145,7 @@ class BinaryTree {
 
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|TreeProject02| [Tree with non primitive (Employees) data types](projects/introduction-to-tree/01-premetive-tree-creation/README.md) | - | 
+|TreeProject02| [Tree with non primitive (Employees) data types](projects/binary-tree/README.md) | - | 
 
 
 
