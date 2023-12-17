@@ -11,10 +11,10 @@ for example, books or cups
 `Array`: is a collection of similar data items grouped together.
 - Arrays can store **primitive** data types or **non-primitive** data type.
 - The `length` of an array refers to the **number of elements** contained within the array.
-- An array is the **simple data structure** where each data element can be randomly **accessed** using its **index number**.
+- An array is **simple data structure** where each data element can be randomly **accessed** using its **index number**.
 - The `index` of an array refers to the **position or location of an element** within the array. It represents the **unique numeric** identifier assigned to each element in the array.
 - If the size of an array is **n**, the maximum index number is **n-1**.
- >  Note : In most programming languages, array indices typically start from 0 and increment by 1 for each subsequent element.
+ >  Note: In most programming languages, array indices typically start from 0 and increment by 1 for each subsequent element.
 
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-01.png">
 
@@ -73,8 +73,8 @@ int main() {
 ```
 ## Projects
 
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
-|DSAProject01| [Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-primitive-data-type/README.md) | - | 
-|DSAProject02| [Array with non-primitive data types ](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/README.md) | - | 
+|Project Title | Deadline |
+|:-----------:|:-------------|
+|[Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-primitive-data-type/README.md) | - | 
+|[Array with non-primitive data types ](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/README.md) | - | 
 
