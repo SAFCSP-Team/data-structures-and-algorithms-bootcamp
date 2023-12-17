@@ -15,11 +15,11 @@ Use the provided resources for a better understanding.
 
 ### Problem
 
-Create a `deleteNode` method to remove a specific value from a double linked-list.
+Create a `deleteNode` method to remove a specific value from a double linked list.
 
 ### Implementation
 
-Write the implementation of the `deleteNode` method that removes a node with a specific value from the list.
+write the implementation of the `deleteNode` method that removes a node with a specific value from the list.
 ```java
 
 public class Main {
