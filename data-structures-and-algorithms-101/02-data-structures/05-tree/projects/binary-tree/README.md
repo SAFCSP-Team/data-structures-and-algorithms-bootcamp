@@ -9,7 +9,7 @@ Create a tree to store employees.
 ### Implementation
 Using Java programming language: 
 
-- `Employee` class is already implemented and added to the project files as below:
+- `Employee` class is already implemented and added to the BinartTree class as the below:
 ```java
 
 public class Employee {
@@ -29,7 +29,7 @@ public class Employee {
 ```
 
 
-- `Node` class is already implemented and added to the project files as below:
+- `Node` class is already implemented and added to the BinartTree class as the below:
 ```java
 
 
