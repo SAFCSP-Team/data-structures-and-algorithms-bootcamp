@@ -7,7 +7,6 @@ In this project, our objective is to explore the concept of arrays array with no
 Create an array of objects to store book information using the [Book](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/Book.java) class.
 
 ### Implementation
-Using Java programming language: 
 Create three objects from the [`Book`](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/Book.java) class with the provided information and storing them in `bookCollection` array. 
 - First `Book` object
    - Title: `Data Structures and Algorithms in Java`
