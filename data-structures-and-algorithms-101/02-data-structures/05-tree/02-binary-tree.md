@@ -64,7 +64,7 @@ We will crete a tree of integers and we will perform the operations on it.
 
 ### Primitive 
 
-In node class we will declate the attibutes, create a constructor.
+- In `node` class we will declate the attibutes, create a constructor.
 
 ```java
 
@@ -79,7 +79,7 @@ class Node {
 }
 ```
 
-In binary tree class we will declare the root as an attribute, create constructor, create node, create a tree of nodes, traversal operations/functions.
+- In `binary tree` class we will declare the root as an attribute, create constructor, create node, create a tree of nodes, traversal operations/functions.
 
 ```java
 
