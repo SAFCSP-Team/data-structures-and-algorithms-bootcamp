@@ -65,6 +65,7 @@ Employee e: id: 01, name: Ahmed, role: CEO.
 ```java
 Employee e = new Employee(01,"Ahmed","CEO");
 ````
+
 3 - Crete the root node
 - use `tree.root` to create the root and store the object `e`.
 
