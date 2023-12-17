@@ -52,23 +52,22 @@ public class Node {
 
 - `BinaryTree` class is where you will perform the below requirements:
 
-1 - in `BinaryTree` class, create `Preorder` traversal function. 
-2 - Creat a tree and add the below nodes that have information about the employees:
+1 - In `BinaryTree` class, create `Preorder` traversal function. 
+2 - In `main` creat a tree and add the below nodes that have information about the employees:
+- Employee e1: id: 02, name: Ali, role: IT Managaer.
+- Employee e2: id: 03, name: Abdullah, role: HR Manager.
+- Employee e3: id: 04, name: Mohammed, role: Software Developer.
+
 In the code you can see the `root` is already created with the below informatio:
 Employee e: id: 01, name: Ahmed, role: CEO.
 ```java
 Employee e = new Employee(01,"Ahmed","CEO");
 ````
-- Employee e1: id: 02, name: Ali, role: IT Managaer.
-- Employee e2: id: 03, name: Abdullah, role: HR Manager.
-- Employee e3: id: 04, name: Mohammed, role: Software Developer.
+3 - Crete the root node
+- use `tree.root` to create the root and store the object `e`.
 
 ```java
-
-package TreeTryEmployeeTreeCode;
-
-public 
-class BinaryTree {
+public class BinaryTree {
   Node root;
 
   BinaryTree(Employee e) {
@@ -100,7 +99,7 @@ class BinaryTree {
     // Traverse Preorder
     public void traversePreOrder(Node node) {
 
-    // ** add your code here ** //
+    // ** 1- add your code here ** //
 
     }
 
@@ -108,11 +107,9 @@ class BinaryTree {
         BinaryTree tree = new BinaryTree();
       
         Employee e = new Employee(01,"Ahmed","CEO");
-        Employee e1 = new Employee(02,"Alo","IT Managaer");
-        Employee e2 = new Employee(03,"Abdullah","HR Manager");
-        Employee e3 = new Employee(04,"Mohammed","Software Developer");
+    // ** 2- add your code here ** //
 
-        tree.root = new Node(e);
+    // ** 3- add your code here ** //
         tree.root.left = new Node(e1);
         tree.root.right = new Node(e2);
         tree.root.left.left = new Node(e3);
@@ -128,38 +125,4 @@ class BinaryTree {
 
 }
 ```
-And a constructor that takes `name` as parameter and assigne it to the name attribute, declare `left` abd `right` with null value.
 
-`Node()`
-
-- Create `BinaryTree` class with the below attribute:
-
-`Node root`
-
-And a constructor that takes node type as parameter and assigne it to the root attribute:
-
-`BinaryTree()`
-
-```java
-
-class Node {
- 
-  // * add your code here *
-
-  // attributes declaraion
-  
-  // Node constructre 
-
-}
-
-
-
-class BinaryTree {
-
-  // * add your code here *
-
-  // attributes declaraion
-  
-  // BinaryTree constructres 
-
-}
