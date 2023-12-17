@@ -53,20 +53,13 @@ Queue<User> queue = new LinkedList<>();
 Create a coffe shop queue line where the each element has different order.
 
 1. Add the following orders:
-2.
 
 ```Java
-["black coffe", "latte", "mocca"]
+["black coffe", "latte"]
 ```
 
 2. Display the list of order.
-3. The served the three orders.
-4. Add two orders.
+3. Remove the two orders from the list, by using dequeue.
+4. Add two orders ["espreso", "mocca", "americano"]
 5. Display the list of orders.
 6. Finally Display the index of the head and tail.
-
----
-
-```Java
-["black coffe", "latte", "mocca", "espreso", "americano"]
-```
