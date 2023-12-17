@@ -4,7 +4,7 @@ Binary tree is a tree useed to store and organize hierarchical data
 
 ## Concept
 
-A tree where every node has two child nodes (at the most)
+A tree where every node has maximum two child nodes 
 
 
 <details>
