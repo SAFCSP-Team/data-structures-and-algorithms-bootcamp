@@ -25,6 +25,7 @@ public class Main {
     System.out.println("List after deleting 14:");
     doublyLinkedList.display();
     }}
+
 class Node {
     int data;
     Node previous;
@@ -34,19 +35,20 @@ class Node {
         this.previous = null;
         this.next = null;
     }}
+
 class DoublyLinkedList {
  Node head;
  public void insert(int data) {
-    Node newNode = new Node(data);
+    Node Node = new Node(data);
      if (head == null) {
-         head = newNode;
+         head = Node;
    } else {
     Node current = head;
       while (current.next != null) {
         current = current.next;
           }
           newNode.previous = current;
-          current.next = newNode;
+          current.next = Node;
         }
     }
     public void delete(int data) {
@@ -83,24 +85,28 @@ class DoublyLinkedList {
         System.out.println();
     }
 }
+
 ```
-### Non Primitive
-* Double linked list of non primitive data types in c++.
+### Non-Primitive
+* Double linked list of non-primitive data types in c++.
 ```c++
 #include <iostream>
 #include <string>
 using namespace std;
+
 /* Node declaration for doubly linked list */
 struct Node {
    string data;
    struct Node* prev, * next;
 };
-Node* newNode(string val) {
+
+Node* Node(string val) {
    Node* temp = new Node;
    temp->data = val;
    temp->prev = temp->next = nullptr;
    return temp;
 }
+
 void displayList(Node* head) {
    while (head->next != nullptr) {
       cout << head->data << " <==> ";
@@ -108,15 +114,17 @@ void displayList(Node* head) {
    }
    cout << head->data << endl;
 }
+
 /* Insert a new node at the head of the list */
 void insert(Node** head, string node_data) {
-   Node* temp = newNode(node_data);
+   Node* temp = Node(node_data);
    temp->next = *head;
    if (*head != nullptr) {
       (*head)->prev = temp;
    }
    *head = temp;
 }
+
 /* Reverse the doubly linked list */
 void reverseList(Node** head) {
    Node* left = *head;
@@ -153,7 +161,7 @@ int main() {
 }
 ```
 ## Projects
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
-|DSAProject02| [Double linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/02-double-linked-list) | - | 
+| Project Title | Deadline |
+|:-----------:|:-------------|
+ [Double linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/02-double-linked-list) | - | 
 
