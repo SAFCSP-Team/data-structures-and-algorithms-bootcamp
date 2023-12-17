@@ -35,6 +35,7 @@ The secondElement = 7
 
 **Code** 
 ``` c++
+#include <iostream>
 int main() {
     int numbers[] = {1, 7, 9, 1, 5};
     int count = sizeof(numbers) / sizeof(numbers[0]);
@@ -79,6 +80,7 @@ The secondElement = Name: Bob Age: 30
 
 **Code** 
 ```C++
+#include <iostream>
 int main() {
     Person peopleArray[] = { Person("Alice", 25),Person("Bob", 30),
     Person("Charlie", 35) };
