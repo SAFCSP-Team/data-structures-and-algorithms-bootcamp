@@ -2,7 +2,9 @@
 
 ## Concept
 
-**Linear Queue**, insertion (Enqueue) takes place at end of the queue which is rear/tail, while the deletion occuers at the start of the queue which is front/head. As we discussed previews, queue is like a waiting line, each node is waiting for the head/front node to be process (Dequeue). Queue can do operation at the start of the queue and at the end of the queue.
+**Linear Queue** is one of the linear data structure `queue` type,
+
+insertion (Enqueue) takes place at end of the queue which is rear/tail, while the deletion occuers at the start of the queue which is front/head. As we discussed previews, queue is like a waiting line, each node is waiting for the head/front node to be process (Dequeue). Queue can do operation at the start of the queue and at the end of the queue.
 
 **EnQueue**
 
@@ -50,16 +52,7 @@ Queue<User> queue = new LinkedList<>();
 
 ## Projects
 
-Create a coffe shop queue line where the each element has different order.
 
-1. Add the following orders:
-
-```Java
-["black coffe", "latte"]
-```
-
-2. Display the list of order.
-3. Remove the two orders from the list, by using dequeue.
-4. Add two orders ["espreso", "mocca", "americano"]
-5. Display the list of orders.
-6. Finally Display the index of the head and tail.
+| Project ID   | Project Title     | Deadline |
+| ------------ | ----------------- | -------- |
+| DSAProject01 | [Linear Queue]() |          |

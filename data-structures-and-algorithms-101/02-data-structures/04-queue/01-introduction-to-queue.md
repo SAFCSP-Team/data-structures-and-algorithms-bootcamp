@@ -1,6 +1,8 @@
 # Queue
 
-Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank, when we form a line the serving process will be much easier and controllable. Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line.
+Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank as imag, when we form a line the serving process will be much easier and controllable Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line
+
+![1702812022182](images/01-introduction-to-queue/1702812022182.png)
 
 We use the same concept in the data structure to organize the data in programs, it's called a `queue`, which has the same concept as what we described earlier.
 
@@ -8,19 +10,19 @@ We use the same concept in the data structure to organize the data in programs, 
 
 ## Concept
 
-`Queue` is a **linear data structure**. `queue` are organized in a line/queue the first element in the queue is called`head`. The end of the element in the queue is called the `tail`. Every new element will be added at the end of the queue. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
+`Queue` is a **linear data structure**. `queue` are organized in a line/queue the first element in the queue is called`head`. The end of the element in the queue is called the `tail`.
+
+![1702810878533](images/01-introduction-to-queue/1702810878533.png)
 
 > Some resources refer to the first element in the queue as [head, front],
 >
 > and for the end of the element they refer to it as [rear, tail, end]
 
-**Why we use a queue?**
-
-To ensure that elements are processed in the order in which they were added, making it possible to manage tasks or requests in a systematic and predictable manner.
-
 **Queue Operation**
 
-These are the primary operations of the queue:
+Every new element will be added at the end of the queue. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
+
+![1702810965330](images/01-introduction-to-queue/1702810965330.png)
 
 **Enqueue**: add an element at the end of the queue.
 
@@ -30,6 +32,10 @@ These are the primary operations of the queue:
 >
 > * enqueue = push / addFirst / insert
 > * dequeue = pop / removeLast /delete
+
+**Why we use a queue?**
+
+To ensure that elements are processed in the order in which they were added, making it possible to manage tasks or requests in a systematic and predictable manner.
 
 **Types of queue:**
 
@@ -182,9 +188,9 @@ int main() {
 ## Projects
 
 
-| Id      | Title           | Deadline |
-| ------- | --------------- | -------- |
-| Queue01 | Linear Queue    |          |
-| Queue02 | Circular Queue |          |
-| Queue03 | Deque           |          |
-| Queue04 | Priority Queue  |          |
+| Project ID         | Project Title   | Deadline |
+| ------------------- | --------------- | -------- |
+| DSAProject01Queue01 | Linear Queue    |          |
+| DSAProject01Queue02 | Circular Queue |          |
+| DSAProject01Queue03 | Deque           |          |
+| DSAProject01Queue04 | Priority Queue  |          |
