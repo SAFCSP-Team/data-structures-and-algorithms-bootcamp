@@ -43,11 +43,9 @@ We looked into the different types of binary trees. Now you will see some operat
 <details>
 
 <summary>Binary tree operation</summary>
-<br/>
-1 - Insert
 
-2 - Delete
-<br/>
+1 - create node
+2 - create tree of nodes
 
 How Do You Traverse a Binary Tree in Data Structures?
 
