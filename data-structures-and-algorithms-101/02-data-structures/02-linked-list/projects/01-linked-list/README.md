@@ -8,8 +8,8 @@ In this project, our main goal will be to understand the fundamentals of a linke
 Use the provided resources for a better understanding.
 |Concept|	Resources|
 |-------|----------|
-|Class LinkedList |[oracle decumention](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html) |
-| Linked List Implementation|[java Tutorial](https://www.youtube.com/watch?v=SMIq13-FZSE) |
+|Class LinkedList |[Java Linked List](https://medium.com/@ainayat865/how-to-create-own-linked-list-class-in-java-f62deb30710) |
+|Implementing a Linked List in Java |[java Tutorial](https://www.youtube.com/watch?v=zNBxHH04hws) |
 
 ### Problem
 Create a `linked list` class that corresponds to the following diagram.
