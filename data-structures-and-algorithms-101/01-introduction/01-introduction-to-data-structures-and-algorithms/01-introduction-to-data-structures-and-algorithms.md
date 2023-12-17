@@ -14,7 +14,7 @@ From the start, data structures help us organize the data we have into an organi
 #### Data types
 Data in our programs could be categorized as
 -  `primitive`, the basic types including integers, doubles, booleans, and characters.
--  `non-primitive` or we can call it `compost`, which is a more complex type that composes more than one primitive type such as objects.
+-  `non-primitive` or we can call it `composite`, which is a more complex type that composes more than one primitive type such as objects.
 
 Following the same example above, if we have an unorganized collection of data such as integers, then it will be hard for us to search or access a specific number. But, if we organize these integers using an `Array` as an example, then it is going to be easy to access, search, and modify.
 
