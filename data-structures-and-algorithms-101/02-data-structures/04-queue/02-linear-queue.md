@@ -2,52 +2,217 @@
 
 ## Concept
 
-**Linear Queue** is one of the linear data structure `queue` type,
+**Linear Queue** is one of the linear data structure `queue` types. The first element is called `head`, and the last element of the queue is called `tail`.
 
-insertion (Enqueue) takes place at end of the queue which is rear/tail, while the deletion occuers at the start of the queue which is front/head. As we discussed previews, queue is like a waiting line, each node is waiting for the head/front node to be process (Dequeue). Queue can do operation at the start of the queue and at the end of the queue.
+The operation occurs at the first of the `queue` and the last of the `queue`, the primary operations of the queue are:
 
-**EnQueue**
+**Enqueue**
 
-The insertion of a node at the end of the queue, which is at the rear/tail.
+The insertion of a node at the end of the queue, which is at the `rear`/`tail`.
 
-**DeQueue**
+**Dequeue**
 
-The deletion of a node occuers at the start of the queue, which is at the head/front.
+The deletion of a node occuers at the start of the queue, which is at the `head`/`front`.
 
-### Primitive
+![1702816143315](images/02-linear-queue/1702816143315.png)
+
+Primitive
 
 Java
 
 ````Java
-QueueArray queue = new QueueArray();
+public class QueueArray {
+    final int SIZE = 5;
 
-        queue.enQueue(1);
-        queue.enQueue(2);
-        queue.enQueue(3);
+    int items[] = new int[SIZE];
 
-        queue.display(); // 1, 2, 3
+    int front, rear;
 
-        queue.deQueue(); // 1
+    QueueArray() {
+        front = -1;
+        rear = -1;
+    }
 
-        queue.display(); // 2, 3
+    public boolean isFull(){
+        if(front == 0 && rear == SIZE - 1){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isEmpty(){
+        if(front == -1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public void enQueue(int element) {
+        if(isFull()) {
+            System.out.println("QueueLinkedList.Queue is full");
+            return;
+        }
+        // if the queue is empty
+        if(front == -1) {
+            front = 0;
+        }
+
+        rear++;
+        items[rear] = element;
+
+    }
+
+    public int deQueue() {
+        int element;
+
+        if(isEmpty()){
+            System.out.println("QueueLinkedList.Queue is empty");
+            return (-1);
+        }
+        else {
+
+            element = items[front];
+
+            if(front >= rear){
+                front = -1;
+                rear = -1;
+            }
+            else {
+                front++;
+            }
+            System.out.println( element + " Deleted");
+            return (element);
+        }
+    }
+
+    public void display() {
+        int i;
+        if(isEmpty()) {
+            System.out.println("Queue is empty!");
+        }
+        else {
+            for(i = front; i <= rear; i++)
+                System.out.println("Item -> " + items[i] + "  ");
+        }
+    }
+
+    public static void main(String[] args) {
+        QueueArray queueArray = new QueueArray();
+
+        queueArray.enQueue(1);
+        queueArray.enQueue(2);
+        queueArray.enQueue(3);
+
+        queueArray.display();
+
+        queueArray.deQueue();
+
+        queueArray.display();
+
+    }
+}
+
 ````
 
 Non-Prmitive
 
 ````Java
-Queue<User> queue = new LinkedList<>();
+import java.util.Arrays;
 
-        User user1 = new User("Khalid", 20);
-        User user2 = new User("Faris", 25);
-        User user3 = new User("Majed", 22);
+public class QueueArray {
+    final int SIZE = 5;
 
-        queue.enQueue(user1);
-        queue.enQueue(user2);
-        queue.enQueue(user3);
+    String items[] = new String[SIZE];
 
-        queue.deQueue();
+    int front, rear;
 
-        queue.display(); // Faris, Majed
+    QueueArray() {
+        front = -1;
+        rear = -1;
+    }
+
+    public boolean isFull(){
+        if(front == 0 && rear == SIZE - 1){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isEmpty(){
+        if(front == -1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public void enQueue(String element) {
+        if(isFull()) {
+            System.out.println("QueueLinkedList.Queue is full");
+            return;
+        }
+        // if the queue is empty
+        if(front == -1) {
+            front = 0;
+        }
+
+        rear++;
+        items[rear] = element;
+
+    }
+
+    public String deQueue() {
+        String element;
+
+        if(isEmpty()){
+            System.out.println("QueueLinkedList.Queue is empty");
+            return null;
+        }
+        else {
+
+            element = items[front];
+
+            if(front >= rear){
+                front = -1;
+                rear = -1;
+            }
+            else {
+                front++;
+            }
+            System.out.println( element + " Deleted");
+            return (element);
+        }
+    }
+
+    public void display() {
+        int i;
+        if(isEmpty()) {
+            System.out.println("Queue is empty!");
+        }
+        else {
+            for(i = front; i <= rear; i++)
+                System.out.println("Item -> " + items[i] + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        QueueArray queueArray = new QueueArray();
+
+        queueArray.enQueue("A");
+        queueArray.enQueue("B");
+        queueArray.enQueue("C");
+
+        queueArray.display();
+
+        queueArray.deQueue();
+
+        queueArray.display();
+
+    }
+}
 ````
 
 ## Projects

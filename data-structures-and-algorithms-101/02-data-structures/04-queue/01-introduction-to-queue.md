@@ -1,6 +1,6 @@
 # Queue
 
-Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank as imag, when we form a line the serving process will be much easier and controllable Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line
+Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank, when we form a line the serving process will be much easier and controllable Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line
 
 ![1702812022182](images/01-introduction-to-queue/1702812022182.png)
 
