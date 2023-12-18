@@ -70,9 +70,90 @@ The concept of pointers is crucial, and as you saw we can form different organiz
 
 > Pointers are normally stored as part of the node.
 
+#### Slice Perspective
 
+Usually, when we face a new problem leading us to use a data structure, we think of the implementation as a whole data structure being implemented and its operations is performed on this complete data structure. But, what we don't know about is a way of thinking about data structure that can simplify the process greatly.
 
+As we covered earlier, data structures consist of two main components, a `node` and `pointers`. If we take these components and understand how they are related we can be comfortable using and implementing data structures.
 
+Look at the following image. 
+![slice-pattern](./images/slice-pattern.jpg)
+
+(<i>Image 1</i>) let us call it a `slice`, represent each node in a binary tree data structure, which means each node have two pointers, one for the left child the the other for the right child. Each node in the tree uses the same **pattern**. If we duplicated the `slice` (<i>Image 2</i>) and combined them together we can then have a complete tree (<i>Image 3</i>).
+
+> The empty pointers does not means it does not exist, pointers always exists but since we don't use them they get erased from the images. 
+
+<!-- Same concept applies on other data structures, such as linked list.  -->
+
+Now let us try to implement the data structure,
+
+```Java
+class Node{ 
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data){
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+```
+In the code above, we implemented the slice in <i>Image 1</i>, which is just a node with two pointers. This slice can be used now to create the complete tree data structure as the following.
+
+```java 
+
+class Node{ 
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data){
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class Tree{
+    /* Tree operations */
+
+    /* Print the root and its left children */
+        void printLeft(Node node){
+        System.out.println(node.data);
+        if(node.left != null){
+            printLeft(node.left);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Tree tree = new Tree();
+        Node root = new Node(1);
+        root.left =  new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+
+        tree.printLeft(root); 
+
+    }
+}
+```
+
+```
+1
+2
+4
+```
+
+As you can see, since the `slice` was ready, we used it to create node, link it to each others and even applied the operation on this single slice and moved forward with the rest "as slices". This concludes that by focusing only on the repetitive part (which is the slice) that forms the pattern we simplified our thinking and handling of data structures.
+
+Additionally, we can can apply same perspective on `linked list` or any other data structure. By focusing on the slice and its pattern.
+
+![linked-list-slice-pattern](./images/linked-list-slice-pattern.jpg)
 ### Manipulate 
 Manipulating means performing some actions or operations on data. So when we organize toys we can perform some actions like searching, taking, and storing a toy.
 
