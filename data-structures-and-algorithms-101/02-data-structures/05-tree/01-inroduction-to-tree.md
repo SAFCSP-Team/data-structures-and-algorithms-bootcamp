@@ -24,17 +24,22 @@ Figure 2
 
 - **Types of tree**
 
-1 - Binary tree
+1 - General Tree
+
+A tree where there are no constraints on the hierarchical structure.
+A tree where a node can have any number of child nodes.
+
+2 - Binary tree
 
 - A tree where the node has at most two child.
 
-2 - Binary search tree (BST)
+3 - Binary search tree (BST)
 
 - A tree where the node at most has two child 
 - A tree where the left subtree is less than the root
 - A tree where the right subtree is bigger than the root
 
-3 - AVL tree
+4 - AVL tree
 
 - A self-balancing binary search tree
 - Each node stores a value called a `balanced factor`, whose value is either -1, 0 or 1.
@@ -42,7 +47,7 @@ Figure 2
 - The tree in figure 2 is AVL tree.
 - Example: The `balanced factor` for the node `A` = (height of left subtree {1} - height of right subtree {1}) = {0}.
   
-4 - B-tree
+5 - B-tree
 - A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
 
 
