@@ -28,7 +28,7 @@ Every new element will be added at the end of the queue. The first element in th
 
 **Dequeue**: return the last element from the queue and remove it from the queue.
 
-> Each programming language has different names for enqueue and dequeue, however the results are the same.
+> Each programming language has different names for enqueue and dequeue operations.
 >
 > * enqueue = push / addFirst / insert
 > * dequeue = pop / removeLast /delete
