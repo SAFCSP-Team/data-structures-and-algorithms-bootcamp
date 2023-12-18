@@ -77,20 +77,19 @@ BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that 
 BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
 
 
-- BinaryTree class
+- Tree class
 
 Java code
 ```java
-// BinaryTree creation
 
-class BinaryTree {
+class Tree {
   Node root;
 
-  BinaryTree(int key) {
+  Tree(int key) {
   root = new Node(key);
   }
 
-  BinaryTree() {
+  Tree() {
   root = null;
   }
 
@@ -146,11 +145,11 @@ public class Node {
 }
 ```
 
-BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
-BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
+Tree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
+Tree class also has the operations which should be performed in the tree, like the tree traversal.
 
 
-- BinaryTree class
+- Tree class
 
 Java code
 ```java
