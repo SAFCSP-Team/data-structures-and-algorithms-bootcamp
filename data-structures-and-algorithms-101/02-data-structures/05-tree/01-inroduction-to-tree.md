@@ -56,7 +56,7 @@ Node class consists of 2 attributes: `int number`,  `ArrayList children` to stor
 This implementation is for general tree, the node can have multiple children.
 
 
-- Tree class
+- TreeNode class
 
 Java code
 ```java
@@ -116,12 +116,11 @@ Output:
 
 In this example we will create a `tree` of employees.
 
-
 - Employee class
 
 Java code
 ```java
-public class Employee {
+class Employee {
 
     int id;
     String name;
@@ -137,45 +136,62 @@ public class Employee {
 
 ```
 
-- Node class
 
-Java code
-```java
-public class Node {
-  Employee data;
-  Node left;
-  Node right;
-
-  public Node(Employee e) {
-  data = e;
-  left = null;
-  right = null;
-  }
-
-}
-```
-
-Tree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
+Tree class consists of 1 attributes: `Employee employee` and a `constructor` that takes `employee` as a parameter and assigne it to the `employee` attribute.
 Tree class also has the operations which should be performed in the tree, like the tree traversal.
 
 
-- Tree class
+- TreeNode class
 
 Java code
 ```java
-public class BinaryTree {
-  Node root;
 
-  BinaryTree(Employee e) {
-  root = new Node(e);
-  }
+public class TreeNode {
 
-  BinaryTree() {
-  root = null;
-  }
+    // Node Data
+    Employee employee;
+    // Node Children
+    ArrayList<TreeNode> children = new ArrayList<TreeNode>();
 
+    // Constructor to create the node
+    TreeNode(Employee e){
+        this.employee = e;
+    }
+
+    public static void main(String[] args) {
+
+        // Create Employees
+        Employee e = new Employee(01,"Ahmed","CEO");
+        Employee e1 = new Employee(02,"Ali","IT Managaer");
+        Employee e2 = new Employee(03,"Abdullah","HR Manager");
+        Employee e3 = new Employee(04,"Mohammed","Finance Manager");
+        
+        // Create the root
+        TreeNode root = new TreeNode(e);
+
+        // Create TreeNodes
+        TreeNode child1 = new TreeNode(e1);
+        TreeNode child2 = new TreeNode(e2);
+        TreeNode child3 = new TreeNode(e3);
+
+        // Add the TreeNodes as the root children
+        root.children.add(child1);
+        root.children.add(child2);
+        root.children.add(child3);
+
+        // Print the root and the children names
+        System.out.println(root.employee.name);
+        System.out.println(root.children.get(0).employee.name);
+        System.out.println(root.children.get(1).employee.name);
+        System.out.println(root.children.get(2).employee.name);
+
+    }
+
+    
 }
+
 ```
+
 
 ## Projects
 
