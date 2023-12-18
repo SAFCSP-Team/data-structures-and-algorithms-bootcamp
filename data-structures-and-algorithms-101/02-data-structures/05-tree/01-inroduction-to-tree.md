@@ -21,7 +21,7 @@ Figure 2
 ![data representation](./images/Tree.jpg)
 
 
-Types of tree
+**Types of tree**
 <br/>
 1 - Binary tree
 
