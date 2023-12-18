@@ -21,6 +21,36 @@ Figure 2
 ![data representation](./images/Tree.jpg)
 
 
+**Tree structure**
+<br/>
+Before digging into the expample let's see what is the two main classes in the tree?. As we explained before the tree is a collection of nodes. 
+<br/>
+<br/>
+The tree consists of two main classes:
+<br/>
+
+`node` class which holds the node `data` and `refrences/pointers/edges` for the left and right nodes.
+
+`tree` class which holds and connect all the `nodes` together.
+
+- Node class
+
+`Node` class will contain 3 information/attirbutes: `data`, `left child` and `right child`.
+
+Figure 3
+![data representation](./images/Node-class.jpg)
+
+
+- Tree class
+  
+`Tree` class will contain 1 information/attribute: `root`.
+
+Figure 4
+![data representation](./images/Binary-Tree.jpg)
+
+
+
+
 **Types of tree**
 <br/>
 
@@ -76,36 +106,6 @@ There are three ways to travers tree:
 - Visit all node from the right side
 - Visit the root node
 - Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
-
-
-
-
-Tree structure
-<br/>
-Before digging into the expample let's see what is the two main classes in the tree?. As we explained before the tree is a collection of nodes. 
-<br/>
-<br/>
-The tree consists of two main classes:
-<br/>
-
-`node` class which holds the node `data` and `refrences/pointers/edges` for the left and right nodes.
-
-`tree` class which holds and connect all the nodes together.
-
-- Node class
-
-`Node` class will contain 3 information/attirbutes: `data`, `left child` and `right child`.
-
-Figure 3
-![data representation](./images/Node-class.jpg)
-
-
-- Tree class
-  
-`Tree` class will contain 1 information/attribute: `root`.
-
-Figure 4
-![data representation](./images/Binary-Tree.jpg)
 
 
 
