@@ -33,9 +33,11 @@ Every new element will be added at the end of the queue. The first element in th
 > * enqueue = push / addFirst / insert
 > * dequeue = pop / removeLast /delete
 
-**Why we use a queue?**
+**Why do we use a queue?**
 
 To ensure that elements are processed in the order in which they were added, making it possible to manage tasks or requests in a systematic and predictable manner.
+
+> To implement a queue, you can use an `array` or a `linked list`.
 
 **Types of queue:**
 
