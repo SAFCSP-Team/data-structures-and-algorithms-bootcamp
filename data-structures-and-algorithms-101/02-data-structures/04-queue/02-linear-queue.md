@@ -2,19 +2,18 @@
 
 ## Concept
 
-**Linear Queue** is one of the linear data structure `queue` types. The first element is called `head`, and the last element of the queue is called `tail`.
+A **linear queue**, also known as a **simple queue** is a type of `queue` data structures, where the elements are stored in a linear or sequential manner. The first element is called `head`, and the last element of the queue is called `tail`.
 
-The operation occurs at the first of the `queue` and the last of the `queue`, the primary operations of the queue are:
+The primary operations of the queue are:
 
-**Enqueue**
-
-The insertion of a node at the end of the queue, which is at the `rear`/`tail`.
-
-**Dequeue**
-
-The deletion of a node occuers at the start of the queue, which is at the `head`/`front`.
+* **Enqueue**: The insertion of a node at the end of the queue, which is at the `rear`/`tail`.
+* **Dequeue**: The deletion of a node occuers at the start of the queue, which is at the `head`/`front`.
 
 ![1702816143315](images/02-linear-queue/1702816143315.png)
+
+## Example
+
+We can use either `Linked list` or `Array` to create a `queue` data structure.
 
 Primitive
 
