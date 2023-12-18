@@ -11,10 +11,15 @@ Create a tree to store names.
 Using Java programming language: 
 
 In `TreeNode` class:
+
 1 - Declare name attribute as String.
+
 In `main` class:
+
 2 - Craete {child2} with the name Khalid and {child3} with the name Abdullah.
+
 3 - Add {child2} and {child3} to the root children.
+
 4 - Print root child2 name.
 
 
