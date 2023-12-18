@@ -98,7 +98,9 @@ class Node {
 }
 ```
 
-- In `binary tree` class we will declare the root as an attribute, create constructor, create node, create a tree of nodes, traversal operations/functions.
+- In `binary tree` class we will declare the root as an attribute, create constructor.
+
+- In `main` we will create node, create a tree of nodes, traversal operations/functions.
 
 ```java
 
