@@ -61,7 +61,7 @@ public class TreeNode {
 
 
         // Print the root and the children data
-        System.out.println(root.number);
+        System.out.println(root.name);
         System.out.println(root.children.get(0).name);
         System.out.println(root.children.get(1).name);
             // ** add your code here **
