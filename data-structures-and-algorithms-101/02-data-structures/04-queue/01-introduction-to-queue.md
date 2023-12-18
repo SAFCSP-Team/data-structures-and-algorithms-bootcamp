@@ -40,8 +40,8 @@ To ensure that elements are processed in the order in which they were added, mak
 **Types of queue:**
 
 * **Linear Queue**: A linear `queue` is the most basic form of a `queue`, where elements are stored in a linear manner.
-* **Circular Queue**: A circular `queue` overcomes the limitation of a linear queue where the tail and head can reach the end of the underlying array or linked list.
 * **Deque (Double-Ended Queue)**: It allows insertion and removal of elements from both ends.
+* **Circular Queue**: It arranges the data in a circular order where the rear end is connected with the front end.
 * **Priority Queue**: Elements with higher priority are dequeued before elements with lower priority. If elements with the same priority occur, they are served according to their order in the queue.
 
 ## Example
