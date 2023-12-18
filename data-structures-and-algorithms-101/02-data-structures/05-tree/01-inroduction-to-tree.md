@@ -191,6 +191,13 @@ public class TreeNode {
 
 ```
 
+Output:
+```java
+Ahmed
+Ali
+Abdullah
+Mohammed
+```
 
 ## Projects
 
