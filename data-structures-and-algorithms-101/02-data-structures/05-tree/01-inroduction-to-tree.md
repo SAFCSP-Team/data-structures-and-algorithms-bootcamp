@@ -22,8 +22,7 @@ Figure 2
 
 
 
-**Types of tree**
-<br/>
+- **Types of tree**
 
 1 - Binary tree
 
