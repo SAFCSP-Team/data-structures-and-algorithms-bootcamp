@@ -23,11 +23,9 @@ Figure 2
 
 **Tree structure**
 <br/>
-Before digging into the expample let's see what is the two main classes in the tree?. As we explained before the tree is a collection of nodes. 
-<br/>
 <br/>
 The tree consists of two main classes:
-<br/>
+
 
 `node` class which holds the node `data` and `refrences/pointers/edges` for the left and right nodes.
 
