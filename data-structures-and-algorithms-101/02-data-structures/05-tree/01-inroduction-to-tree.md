@@ -21,33 +21,6 @@ Figure 2
 ![data representation](./images/Tree.jpg)
 
 
-**Tree structure**
-<br/>
-<br/>
-The tree consists of two main classes:
-
-
-`node` class which holds the node `data` and `refrences/pointers/edges` for the left and right nodes.
-
-`tree` class which holds and connect all the `nodes` together.
-
-- Node class
-
-`Node` class will contain 3 information/attirbutes: `data`, `left child` and `right child`.
-
-Figure 3
-![data representation](./images/Node-class.jpg)
-
-
-- Tree class
-  
-`Tree` class will contain 1 information/attribute: `root`.
-
-Figure 4
-![data representation](./images/Binary-Tree.jpg)
-
-
-
 
 **Types of tree**
 <br/>
@@ -72,41 +45,6 @@ Figure 4
   
 4 - B-tree
 - A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
-
-
-
-
-
-Tree traversal
-<br/>
-The process of visiting required node to perform special operation or visiting each node and print their values.
-
-There are three ways to travers tree:
-
-1- Pre-order traversal
-
-- Visit the root node
-- Visit all nodes from the left side
-- Visit all node from the right side
-- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
-
-2- In-order traversal
-
-- Visit all nodes from the left side
-- Visit the root node
-- Visit all node from the right side
-- Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
-
-
-3- Post-order traversal
-
-- Visit all nodes from the left side
-- Visit all node from the right side
-- Visit the root node
-- Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
-
-
-
 
 
 ## Example 
