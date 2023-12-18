@@ -22,6 +22,14 @@ In `main` class:
 
 4 - Print root child2 name.
 
+5 - Output should be the same as below:
+```java
+Mohammed
+Ahmed
+Khalid
+Abdullah
+```
+
 
 
 ```java
