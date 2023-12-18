@@ -52,52 +52,62 @@ Figure 2
 
 In this example we will create a `tree` of integers.
 
-Node class consists of 3 attributes: `int key`, `Node left` and `Node right` and a `constructor` that takes a value as a parameter and assigne it to the `key` attribute.
-
-
-- Node class
-
-Java code
-```java
-// Node creation
-class Node {
-  int key;
-  Node left;
-  Node right;
-
-  public Node(int item) {
-  key = item;
-  left = null;
-  right = null;
-  }
-}
-```
-
-BinaryTree class consists of 1 attributes: `Node root` and a `constructor` that takes `key` as a parameter and assigne it to the `root` attribute.
-BinaryTree class also has the operations which should be performed in the tree, like the tree traversal.
+Node class consists of 1 attributes: `int number`,  `ArrayList` to store the node children and a `constructor` that takes a value as a parameter and assigne it to the `number` attribute.
+This implementation is for general tree, the node can have multiple children.
 
 
 - Tree class
 
 Java code
 ```java
-
-class Tree {
-  Node root;
-
-  Tree(int key) {
-  root = new Node(key);
-  }
-
-  Tree() {
-  root = null;
-  }
-
-  // Traverse Inorder
-  public void traverseInOrder(Node node) {}
+import java.util.ArrayList;
 
 
+public class TreeNode {
+
+    // Node Data
+    int number;
+    // Node Children
+    ArrayList<TreeNode> children = new ArrayList<TreeNode>();
+
+    // Constructor to create the node
+    TreeNode(int number){
+        this.number = number;
+    }
+
+    public static void main(String[] args) {
+        
+        // Create the root
+        TreeNode root = new TreeNode(1);
+
+        // Create TreeNodes
+        TreeNode child1 = new TreeNode(2);
+        TreeNode child2 = new TreeNode(3);
+        TreeNode child3 = new TreeNode(4);
+
+        // Add the TreeNodes as the root children
+        root.children.add(child1);
+        root.children.add(child2);
+        root.children.add(child3);
+
+        // Print the root and the children data
+        System.out.println(root.number);
+        System.out.println(root.children.get(0).number);
+        System.out.println(root.children.get(1).number);
+        System.out.println(root.children.get(2).number);
+
+    }
+
+    
 }
+```
+
+Output:
+```java
+1
+2
+3
+4
 ```
 
 
