@@ -22,3 +22,4 @@ The bootcamp has **three** levels to cover data structures and algorithms concep
 
 > The entire bootcamp consists of the idea of data -> organization -> operation. Which is described in the first-level [introduction](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/01-introduction/01-introduction-to-data-structures-and-algorithms/01-introduction-to-data-structures-and-algorithms.md). Kindly do not pass it.
 
+> Kindly take a look at [tools](./Tools.md) file for tools and resources to help you through you learning experience.
