@@ -23,6 +23,7 @@ Figure 2
 
 **Types of tree**
 <br/>
+
 1 - Binary tree
 
 - A tree where the node has at most two child.
