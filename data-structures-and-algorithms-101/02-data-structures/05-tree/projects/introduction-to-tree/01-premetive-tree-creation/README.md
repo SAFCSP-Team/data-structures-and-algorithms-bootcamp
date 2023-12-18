@@ -7,46 +7,63 @@ In this project, our objective is to create a tree of strings.
 Create a tree to store names.
 
 ### Implementation
+
 Using Java programming language: 
 
-- Create `Node` class with the below attributes:
+In `TreeNode` class:
+1 - Declare name attribute as String.
+In `main` class:
+2 - Craete {child2} with the name Khalid and {child3} with the name Abdullah.
+3 - Add {child2} and {child3} to the root children.
+4 - Print root child2 name.
 
-`String name`
-`Node right`
-`Node left`
 
-And a constructor that takes `name` as parameter and assigne it to the name attribute, declare `left` abd `right` with null value.
-
-`Node()`
-
-- Create `BinaryTree` class with the below attribute:
-
-`Node root`
-
-And a constructor that takes node type as parameter and assigne it to the root attribute:
-
-`BinaryTree()`
 
 ```java
 
-class Node {
- 
-  // * add your code here *
+import java.util.ArrayList;
 
-  // attributes declaraion
-  
-  // Node constructre 
 
+public class TreeNode {
+
+    // Node data
+    // ** add your code here **
+    // 1 - Declare name attribute as String
+
+    // Node Children
+    ArrayList<TreeNode> children = new ArrayList<TreeNode>();
+
+    // Constructor to create the node
+    TreeNode(int name){
+        this.name = name;
+    }
+
+    public static void main(String[] args) {
+        
+        // Create the root
+        TreeNode root = new TreeNode("Mohammed");
+
+        // Create TreeNodes
+        TreeNode child1 = new TreeNode("Ahmed");
+         // ** add your code here **
+        // 2 - craete {child2} with the name Khalid and {child3} with the name Abdullah 
+
+
+        // Add the TreeNodes as the root children
+        root.children.add(child1);
+           // ** add your code here **
+        // 3 - add {child2} and {child3} to the root children 
+
+
+        // Print the root and the children data
+        System.out.println(root.number);
+        System.out.println(root.children.get(0).name);
+        System.out.println(root.children.get(1).name);
+            // ** add your code here **
+        // 4 - print root child2 name
+    }
+
+    
 }
 
-
-
-class BinaryTree {
-
-  // * add your code here *
-
-  // attributes declaraion
-  
-  // BinaryTree constructres 
-
-}
+```
