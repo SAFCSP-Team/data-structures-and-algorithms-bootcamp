@@ -52,7 +52,7 @@ Figure 2
 
 In this example we will create a `tree` of integers.
 
-Node class consists of 1 attributes: `int number`,  `ArrayList` to store the node children and a `constructor` that takes a value as a parameter and assigne it to the `number` attribute.
+Node class consists of 2 attributes: `int number`,  `ArrayList children` to store the node children and a `constructor` that takes a value as a parameter and assigne it to the `number` attribute.
 This implementation is for general tree, the node can have multiple children.
 
 
