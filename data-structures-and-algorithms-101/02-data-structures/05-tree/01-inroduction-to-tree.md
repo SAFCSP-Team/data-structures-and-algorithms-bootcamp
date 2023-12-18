@@ -88,7 +88,8 @@ Before digging into the expample let's see what is the two main classes in the t
 The tree consists of two main classes:
 <br/>
 
-`node` class which holds the node information and data.
+`node` class which holds the node `data` and `refrences/pointers/edges` for the left and right nodes.
+
 `tree` class which holds and connect all the nodes together.
 
 - Node class
