@@ -26,8 +26,8 @@ Figure 2
 
 1 - General Tree
 
-A tree where there are no constraints on the hierarchical structure.
-A tree where a node can have any number of child nodes.
+- A tree where there are no constraints on the hierarchical structure.
+- A tree where a node can have any number of child nodes.
 
 2 - Binary tree
 
