@@ -20,9 +20,8 @@ A tree is a collection of nodes that are connected by edges and has a hierarchic
 Figure 2
 ![data representation](./images/Tree.jpg)
 
-<details>
 
-<summary>Types of tree</summary>
+Types of tree
 <br/>
 1 - Binary tree
 
@@ -46,12 +45,10 @@ Figure 2
 - A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
 
 
-</details>
 
 
-<details>
 
-<summary>Tree traversal</summary>
+Tree traversal
 <br/>
 The process of visiting required node to perform special operation or visiting each node and print their values.
 
@@ -79,12 +76,10 @@ There are three ways to travers tree:
 - Visit the root node
 - Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
 
-</details>
 
 
-<details>
 
-<summary>Tree structure</summary>
+Tree structure
 <br/>
 Before digging into the expample let's see what is the two main classes in the tree?. As we explained before the tree is a collection of nodes. 
 <br/>
@@ -110,8 +105,6 @@ Figure 3
 Figure 4
 ![data representation](./images/Binary-Tree.jpg)
 
-
-</details>
 
 
 
