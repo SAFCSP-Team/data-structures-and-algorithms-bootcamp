@@ -4,12 +4,11 @@ Binary tree is a tree useed to store and organize hierarchical data
 
 ## Concept
 
-A tree where every node has maximum two child nodes 
+Binary tree is a tree where every node has maximum two child nodes 
 
 
-<details>
 
-<summary>Types of binary tree</summary>
+**Types of binary tree**
 <br/>
 
 Figure 1
@@ -37,15 +36,12 @@ Figure 1
 - A tree where every `internal nodes` has exactly one child.
 - `Internal node`: Any node with a child and a parent
 
-</details>
-
 
 We looked into the different types of binary trees. Now you will see some operations you can perform on binary trees.
 
 
-<details>
 
-<summary>Binary tree operation</summary>
+**Binary tree operation**
 <br/>
 
 1 - Create node
@@ -58,9 +54,9 @@ How Do You Traverse a Binary Tree in Data Structures?
 - Inorder
 - Postorder
 
-We will look into these operation in the example section
 
-</details>
+
+We will look into these operation in the example section
 
 
 
