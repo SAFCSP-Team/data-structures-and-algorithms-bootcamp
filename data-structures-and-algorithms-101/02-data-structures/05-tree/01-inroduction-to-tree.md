@@ -138,7 +138,6 @@ class Employee {
 
 
 Tree class consists of 1 attributes: `Employee employee` and a `constructor` that takes `employee` as a parameter and assigne it to the `employee` attribute.
-Tree class also has the operations which should be performed in the tree, like the tree traversal.
 
 
 - TreeNode class
