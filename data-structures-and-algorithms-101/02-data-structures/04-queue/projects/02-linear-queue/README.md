@@ -2,40 +2,32 @@
 
 ### Objective
 
-In this project, we will be covered the fundamentals of a `queue`, and its primary operations, `enqueue` and `dequeueand`.
+In this project, we will cover the fundamentals of the queue.
 
-### Concepts
-
-Use the provided resources for a better understanding.
-
-
-| Concept                                        | Resources                                                                                           |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Understand the Queue                           | [Queue Introduction](https://www.youtube.com/watch?v=8t_tzT52br8)                                   |
-| Understand how to implement queue linked list | [Queue Linked List Implementation](https://www.geeksforgeeks.org/queue-linked-list-implementation/) |
-| Understand how to implement queue array       | [Queue Array Implementation](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)   |
 
 ### Problem
 
-You have a list of coffee shop orders that need to be stored, use the `queue` data structures to store the orders, and print the list of orders.
+Create a queue class using an array-based approach.
 
 ### Implementation
 
-Write the implemenation of the `queue` to store the orders.
+Write the implementation of the queue class to store the invoice number.
+1. Create a Queue class using an array-based approach that contains two methods: enQueue and display.
+2. The `enQueue` method allows to add a new element.
+3. The `display` method print all element in the queue.
 
-1. Create either queue array or queue linked list.
-2. In the main method, add the follwoing orders `["black coffe", "latte"]`.
-3. Remove/`Dequeue` the two orders, then add another orders which are `["mocca", "espreso", "americano"]`
-4. Print the of the current orders.
-5. Finally print the value of `head` and the value of `tail`.
+> Run the main method to verify the implementation. 
+
 
 ````Java
-public class Main {
-    public static void main(String[] args) {
-        /* Your Code Here */
-  
+  public static void main(String[] args) {
+        QueueArray queueArray = new QueueArray();
+
+        queueArray.enQueue(100);
+        queueArray.enQueue(101);
+        queueArray.enQueue(102);
+        queueArray.display();
     }
-}
 ````
 
 > * Once you complete this project, Create an issue with title "Completed [your-username]".
