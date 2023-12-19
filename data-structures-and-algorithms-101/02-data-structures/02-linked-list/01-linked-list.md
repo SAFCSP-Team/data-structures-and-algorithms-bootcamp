@@ -6,11 +6,61 @@ Let's say there are two cards in the treasure hunt, the first card would contain
 
 To simulate the treasure hunt in our program, we need to use a `linked list` to represent the sequence of cards, each card is like a `node`. Each `node` **contains two parts**, the information about the card itself and a `pointer`(or reference) to the next card in the list.
 
-## Concept
+## Concep
 
 A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. Each node contains the `data` and a `pointer` to the next node in the sequence. The last node in the list has a pointer to null, `tail` indicates the end of the list.
 
 ![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/095e5e5f-8251-4b88-96dc-4c27103f9569)
+
+
+## Implementation
+
+The node contains the `data` and a `pointer`.
+
+<img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/adec00c1-36eb-44f3-9ea8-7a9dbb34e5d9" width="280" height="180">
+
+To create the `node` as a primitive type in java.
+```java
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+```
+* We define a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next Node in the linked list.
+  
+To create the `node` as a non-primitive type in c++.
+```c++
+class Node {
+public:
+    std::string data;
+    Node* next;
+
+    Node(const std::string& data) {
+        this->data = data;
+        this->next = nullptr;
+    }
+};
+```
+
+Link node in java.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+
+        linkedList.insert(10);
+```
+
+
+
+
+
 
 **Types of Linked List**:
 
@@ -20,6 +70,14 @@ A `linked list` is a **data structure** that consists of a **sequence of element
    list.
   
 * `Circular linked list`: Is a type of linked list in which the first and the last nodes are also **connected** to each other to form a circle.
+
+
+
+
+
+
+
+
 
 ## Example 
 
