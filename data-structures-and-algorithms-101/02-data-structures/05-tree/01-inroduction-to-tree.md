@@ -76,7 +76,7 @@ public class Node {
 
 In the above code, the node **data** is (1) and the **pointer** is refrencing to (null) as there is no node children created yet.
 
-Now lets's see how to update the node data? we will update the **data** to be (3).
+Now lets's see how to update the node **data**? we will update the **data** to be (3).
 ```java
 
 public class Node {
