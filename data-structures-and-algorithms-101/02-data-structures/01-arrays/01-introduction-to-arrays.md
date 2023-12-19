@@ -78,54 +78,6 @@ Types of arrays based on their dimensions :
 
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-02.png">
 
-## Example 
-
-### Primitive 
-- Arrays of primitive data types in Java:
-
-```java
-public static void main(String[] args) {
-    int numbers[] = {1, 2, 3, 4, 5};
-    double grades[] = {85.5, 90.0, 77.5, 92.5};
-    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
-}
-```
-
-- Arrays of primitive data types in C++ :
-```c++
-int main() {
-   int numbers[] = {1, 2, 3, 4, 5};
-   double grades[] = {85.5, 90.0, 77.5, 92.5};
-   char vowels[] = {'a', 'e', 'i', 'o', 'u'};
-   return 0;
-}
-```
-> In C++ and java, you can declare and initialize arrays similarly. 
-
-### Non-primitive
-Consider a class called "Person" that represents a person's name and age. 
-
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java)objects in Java.
-
-``` java
-public static void main(String[] args) {
-   Person[] peopleArray = new Person[3];
-   peopleArray[0] = new Person("Alice", 25);
-   peopleArray[1] = new Person("Bob", 30);
-   peopleArray[2] = new Person("Charlie", 35);
-}
-```
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++.
-```C++
-int main() {
-    Person peopleArray[] = {
-          Person("John", 25),
-          Person("Alice", 30),
-          Person("Bob", 35)
-    };
-    return 0;
-}
-```
 ## Projects
 
 |Project Title | Deadline |
