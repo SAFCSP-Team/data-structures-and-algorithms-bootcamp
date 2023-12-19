@@ -74,7 +74,7 @@ public class Node {
 
 ```
 
-
+After creating the node object, the **data** here is (1) and the **pointer** in refrecing to (null).
 
 - **Types of tree**
 
