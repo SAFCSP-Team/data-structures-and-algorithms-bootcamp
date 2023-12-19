@@ -33,12 +33,15 @@ Figure 3
 `Node` class implementation:
 
 ```java
+
 public class Node {
 
     // Data
     int number;
     // pointer
     ArrayList<Node> children = new ArrayList<Node>();
+
+}
 
 ```
 
