@@ -10,7 +10,11 @@
 
 Operations of the deque are:
 
-> * addFirst: add an element at the begining of the queue
+> * addFirst: add an element at the begining of the queue.
+> * addLast: add an element at the end of the queue.
+> * deleteFirst: remove the first element.
+> * deleteLast: remove the last element.
+
 
 ## Example
 
