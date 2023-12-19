@@ -225,7 +225,10 @@ That being said, we can categorize algorithms into two types, common algorithms 
 In conclusion, Data structures are just organization types to use for organizing data, while algorithms are the operations we perform on these organizations and their data.
 
  ### Next Step
-We will focus later on, on explaining each organization, its attributes, and algorithms. Then we will cover the common shared operations that are applied to these organizations such as sorting and searching.
+We will focus later on, on explaining each organization, its attributes, and algorithms. By explaining in each data structure's introduction the representation of the **slice** that is used to construct each data structure, the linking process for each slice or element to other elements using pointers, operations performed on the complete data structure, and lastly the applications or types of the data structure. 
+
+Then we will cover the common shared operations that are applied to these organizations such as sorting and searching.
+
 
 ## Projects
 1. Having a list of weekdays as a string, visualize the data as an array using [array visualizer](https://array-3d-viz.vercel.app/).
