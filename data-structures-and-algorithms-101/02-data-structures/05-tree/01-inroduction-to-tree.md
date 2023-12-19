@@ -38,29 +38,34 @@ public class Node {
 
     // Data
     int number;
-    // Pointer
-    ArrayList<Node> children = new ArrayList<Node>();
-
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
 }
 
 ```
 
-The above code is representing a `node` of integer **data** type and the **pointer** as an array list of nodes.  
-The **pointer** used as a reference to the node children.
+The above code is representing a `node` of integer **data** type and the **pointer** as references to the nodes children. 
 
-Now let's add a constructor to the `node` class and create an object of node in the main function.
+Now let's add a constructor to the `node` class and create an object of node with the name **root** in the main function.
 ```java
 
 public class Node {
 
     // Data
     int number;
-    // Pointer
-    ArrayList<Node> children = new ArrayList<Node>();
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
 
     // Constructor to create the node
     Node(int number){
         this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
     }
 
  public static void main(String[] args) {
@@ -76,9 +81,48 @@ public class Node {
 
 In the above code:     
 The node **data** is (1).  
-At the moment the **pointer** is refrencing to (null) as there is no node children created yet.
+At the moment the **pointer** is refrencing to (null) as there is no node children created yet.  
 
 Now lets's see how to update the node **data**? we will update the **data** to be (3).
+
+```java
+
+public class Node {
+
+     // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor to create the node
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
+}
+
+}
+
+```
+
+Now We will see how to create a child for the **root** node?   
+- Craete node object with the name **child**.   
+- Add **child** object to the **root** node children (left/center/right).
+
 ```java
 
 public class Node {
@@ -107,8 +151,6 @@ public class Node {
 }
 
 ```
-
-
 
 
 - **Types of tree**
