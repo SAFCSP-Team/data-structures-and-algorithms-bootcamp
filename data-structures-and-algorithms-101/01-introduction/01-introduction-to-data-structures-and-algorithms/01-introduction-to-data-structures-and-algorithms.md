@@ -50,7 +50,7 @@ We can think of a node as the main container of our data (whether it is primitiv
 
 A pointer or what might be called a reference, is a link used to point to another node. 
 
-To demonstrate the idea, let's imagine you are in a long car line at a food truck drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and `point` to the car in front of you.
+To demonstrate the idea, let's imagine you are in a long car line at a food truck drive-through. Could you tell whose car is currently served? mostly you can not tell if the line is straight, you only know who is in front of you. And that means you can know and **point** to the car in front of you.
 
 > Note: cars in the line can be served randomly since some orders are faster than others.
 
@@ -70,11 +70,11 @@ The concept of pointers is crucial, and as you saw we can form different organiz
 
 > Pointers are normally stored as part of the node.
 
-#### Slice Perspective
+#### Perspective
 
-Usually, when we face a new problem leading us to use a data structure, we think of the implementation as a whole data structure being implemented and its operations is performed on this complete data structure. But, what we don't know about is a way of thinking about data structure that can simplify the process greatly.
+Usually, when we face a new problem leading us to use a data structure, we think of the implementation as a **whole data structure** being implemented and its operations is performed on this complete data structure. But, what we don't know about is a way of thinking about data structure that can simplify the process greatly.
 
-As we covered earlier, data structures consist of two main components, a `node` and `pointers`. If we take these components and understand how they are related we can be comfortable using and implementing data structures.
+As we covered earlier, data structures consist of two main components, a **node** and **pointers**. If we take these components and understand how they are related we can be comfortable using and implementing data structures.
 
 Look at the following image. 
 ![slice-pattern](./images/slice-pattern.jpg)
