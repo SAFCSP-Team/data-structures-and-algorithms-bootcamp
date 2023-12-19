@@ -26,9 +26,23 @@ As we explaind before, the tree is a collection of nodes, but what is the node? 
 
 `Node` is the element that will hold the **data** and the **pointer** to the children.
 
-
 Figure 3
 ![data representation](./images/Node-element.jpg)
+
+
+`Node` class implementation:
+
+```java
+public class Node {
+
+    // Data
+    int number;
+    // pointer
+    ArrayList<Node> children = new ArrayList<Node>();
+
+```
+
+
 
 
 - **Types of tree**
