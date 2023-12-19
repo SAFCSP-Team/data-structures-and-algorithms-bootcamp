@@ -45,7 +45,7 @@ public class Node {
 
 ```
 
-The above code is representing a `node` of integer **data** type and the **pointer** as an array list of nodes.
+The above code is representing a `node` of integer **data** type and the **pointer** as an array list of nodes.  
 The **pointer** used as a reference to the node children.
 
 Now let's add a constructor to the `node` class and create an object of node in the main function.
