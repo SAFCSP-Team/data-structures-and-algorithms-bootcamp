@@ -165,6 +165,35 @@ public class Node {
 ```
 
 
+- **Tree traversal**
+<br/>
+The process of visiting required node to perform special operation or visiting each node and print their values.
+
+There are three ways to travers tree:
+
+1- Pre-order traversal
+
+- Visit the root node
+- Visit all nodes from the left side
+- Visit all node from the right side
+- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
+
+2- In-order traversal
+
+- Visit all nodes from the left side
+- Visit the root node
+- Visit all node from the right side
+- Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
+
+
+3- Post-order traversal
+
+- Visit all nodes from the left side
+- Visit all node from the right side
+- Visit the root node
+- Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
+
+
 - **Types of tree**
 
 1 - General Tree
