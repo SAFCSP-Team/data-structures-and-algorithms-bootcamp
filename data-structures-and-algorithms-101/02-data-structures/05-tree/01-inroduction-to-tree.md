@@ -65,7 +65,7 @@ public class Node {
 
  public static void main(String[] args) {
         
-        // Create the object
+        // Create an object of node
         Node root = new Node(1);
 
 }
