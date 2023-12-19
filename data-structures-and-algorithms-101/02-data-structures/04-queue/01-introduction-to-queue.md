@@ -46,13 +46,6 @@ To ensure that elements are processed in the order in which they were added, mak
 * **Circular Queue**: It arranges the data in a circular order where the rear end is connected with the front end.
 * **Priority Queue**: Elements with higher priority are dequeued before elements with lower priority. If elements with the same priority occur, they are served according to their order in the queue.
 
-## Implementaiont
-
-### Queue Array
-
-Create an element in the queue.
-
-
 ## Example
 
 ### Primitive

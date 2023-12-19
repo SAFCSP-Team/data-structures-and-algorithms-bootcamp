@@ -6,32 +6,39 @@ In this project, we will cover the fundamentals of the `deque`, and it's operati
 
 ### Problem
 
-Create a `deque` class using a `linked-list` approach.
+Create a `deque` class using an `array` approach.
 
 ### Implementation
 
-Write the implementation of the `deque` class, to store the drive through restaurants line.
+Write the implementation of the `DequeArray` class, to store the orders number on the drive through restaurants line.
 
-1. Create a `deque` class using a `linked-list` approach.
-2. Do the implementation of the following methods `enQueue` method allows to add a new element.
-3. The `display` method print all element in the queue.
+> the order number is `Integer` type.
+
+1. Write the `DequeArray` attributes, where we can store the orders.
+2. Write the implemenation of the following methods:
+   1. addFirst()
+   2. addLast()
+   3. deleteFirst()
+   4. deleteLast()
+3. In the main method, using the **addFirst()** method add **110** and **120** to the queue.
+4. using the **addLast()** method add **130** to the queue.
+5. Print the `front` and `rear` of the queue
 
 > Run the main method to verify the implementation.
 
 ````Java
-public class QueueArray {
-  /*add your code here*/
-  public static void main(String[] args) {
-        QueueArray queueArray = new QueueArray();
+class DequeArray{
+    /* Your Code Here */
+  
+}
 
-        queueArray.enQueue(100);
-        queueArray.enQueue(101);
-        queueArray.enQueue(102);
-        queueArray.display();
+public class Main {
+    public static void main(String[] args) {
+        /* Your Code Here */
     }
 }
+
 ````
 
 > * Once you complete this project, Create an issue with title "Completed [your-username]".
-> * You can use either Queue Array or Queue Linked List, to complete this project.
 > * Create an issue of your questions, If you face any trouble solving the project.
