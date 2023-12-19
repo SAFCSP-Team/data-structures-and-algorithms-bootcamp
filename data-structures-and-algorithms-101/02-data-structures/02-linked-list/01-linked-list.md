@@ -29,55 +29,57 @@ A `linked list` is a **data structure** that consists of a **sequence of element
   
 ```java
 public class Main {
- public static void main(String[] args) {
-   LinkedList linkedList = new LinkedList();
-     linkedList.insert(10);
-     linkedList.insert(20);
-     linkedList.insert(30);
-     linkedList.insert(40);
-     linkedList.display();
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert(10);
+        linkedList.insert(20);
+        linkedList.display();
     }
+}
 
 class Node {
-  int data;
-  Node next;
-   Node(int data) {
-     this.data = data;
-     this.next = null;
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
     }
 }
 
 class LinkedList {
-  private Node head;
-  LinkedList() {
-   this.head = null;
+    private Node head;
+
+    LinkedList() {
+        this.head = null;
     }
 
- public void insert(int data) {
-  Node Node = new Node(data);
-  if (head == null) {
-   head = Node;
-    } else {
-    Node current = head;
-    while (current.next != null) {
-     current = current.next;
-       }
-     current.next = Node;
-      }
+    public void insert(int data) {
+        Node value = new Node(data);
+
+        if (head == null) {
+            head = value;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = value;
+        }
     }
 
- public void display() {
-  if (head == null) {
-   System.out.println("Linked list is empty.");
-    } else {
-     Node current = head;
-     while (current != null) {
-     System.out.print(current.data + " ");
-    current = current.next;
-       }
-   System.out.println();
-    } }
-}
+    public void display() {
+        if (head == null) {
+            System.out.println("Linked list is empty.");
+        } else {
+            Node current = head;
+            while (current != null) {
+                System.out.print(current.data + " ");
+                current = current.next;
+            }
+            System.out.println();
+        }
+    }
 }
 ```
 * linked list of primitive data types in c++.
@@ -86,56 +88,59 @@ class LinkedList {
 
 class Node {
 public:
-int data;
-Node* next;
- Node(int data) {
-  this->data = data;
-  this->next = nullptr;
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = nullptr;
     }
 };
 
 class LinkedList {
 private:
     Node* head;
-public:
-LinkedList() {
-  this->head = nullptr;
- }
 
-void insert(int data) {
- Node* Node = new Node(data);
- if (head == nullptr) {
- head = Node;
- } else {
-  Node* current = head;
-  while (current->next != nullptr) {
- current = current->next;
-  }
-current->next = Node;
+public:
+    LinkedList() {
+        this->head = nullptr;
+    }
+
+    void insert(int data) {
+        Node* node = new Node(data);
+
+        if (head == nullptr) {
+            head = node;
+        } else {
+            Node* current = head;
+            while (current->next != nullptr) {
+                current = current->next;
+            }
+            current->next = node;
         }
     }
 
-void display() {
- if (head == nullptr) {
- std::cout << "Linked list is empty." << std::endl;
- } else {
- Node* current = head;
- while (current != nullptr) {
-  std::cout << current->data << " ";
-   current = current->next;
- }
- std::cout << std::endl;
+    void display() {
+        if (head == nullptr) {
+            std::cout << "Linked list is empty." << std::endl;
+        } else {
+            Node* current = head;
+            while (current != nullptr) {
+                std::cout << current->data << " ";
+                current = current->next;
+            }
+            std::cout << std::endl;
         }
     }
 };
 
 int main() {
- LinkedList linkedList;
-  linkedList.insert(10);
-  linkedList.insert(20);
-  linkedList.insert(30);
-  linkedList.insert(40);
-  linkedList.display();
+    LinkedList linkedList;
+    linkedList.insert(10);
+    linkedList.insert(20);
+    linkedList.insert(30);
+    linkedList.insert(40);
+    linkedList.display();
     return 0;
 }
 ```
