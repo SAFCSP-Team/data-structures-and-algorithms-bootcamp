@@ -38,7 +38,7 @@ public class Node {
 
     // Data
     int number;
-    // pointer
+    // Pointer
     ArrayList<Node> children = new ArrayList<Node>();
 
 }
