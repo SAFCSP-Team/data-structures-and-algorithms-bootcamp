@@ -156,7 +156,7 @@ public class Node {
         Node child = new Node(2);
 
 
-        // Add **child** object to the **root** children (left/center/right).
+        // Add child object to the root children (left/center/right).
         root.left = child;
 
 }
