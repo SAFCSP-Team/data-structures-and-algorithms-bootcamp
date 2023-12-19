@@ -22,6 +22,10 @@ Figure 2
 
 
 ## Implementation
+As we explaind before, the tree is a collection of nodes, but what is the node? and how to implement it?
+
+`Node` is the element that will hold the **data** and the **pointer** to the children.
+
 
 
 
