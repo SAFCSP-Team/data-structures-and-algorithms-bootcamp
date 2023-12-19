@@ -21,6 +21,9 @@ Figure 2
 ![data representation](./images/Tree.jpg)
 
 
+## Implementation
+
+
 
 - **Types of tree**
 
