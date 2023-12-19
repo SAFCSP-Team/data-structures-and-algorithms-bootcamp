@@ -82,7 +82,7 @@ public class Node {
 
 In the above code:     
 The node **data** is (1).  
-At the moment the **pointer** is refrencing to (null) as there is no node children created yet.  
+At the moment the **pointers** is refrencing to (null) as there is no node children created yet.  
 
 Now lets's see how to update the node **data**? we will update the **data** to be (3).
 
