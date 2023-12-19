@@ -1,19 +1,19 @@
-# Queue
+# Deque
 
 ### Objective
 
-In this project, we will cover the fundamentals of the queue.
+In this project, we will cover the fundamentals of the `deque`, and it's operations.
 
 ### Problem
 
-Create a `queue` class using an array-based approach.
+Create a `deque` class using a `linked-list` approach.
 
 ### Implementation
 
-Write the implementation of the `queue` class to store the invoice number.
+Write the implementation of the `deque` class, to store the drive through restaurants line.
 
-1. Create a `queue `class using an array-based approach that contains two methods: enQueue and display.
-2. The `enQueue` method allows to add a new element.
+1. Create a `deque` class using a `linked-list` approach.
+2. Do the implementation of the following methods `enQueue` method allows to add a new element.
 3. The `display` method print all element in the queue.
 
 > Run the main method to verify the implementation.
