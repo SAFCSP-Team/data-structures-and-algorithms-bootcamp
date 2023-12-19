@@ -46,7 +46,8 @@ public class Node {
 
 ```
 
-The above code is representing a `node` of integer **data** type and the **pointer** as references to the nodes children. 
+The above code is representing a `node` of integer **data** type and the **pointers** as references to the nodes children.   
+The node here have only 3 pointers that means it can have only 3 children
 
 Now let's add a constructor to the `node` class and create an object of node with the name **root** in the main function.
 ```java
@@ -60,7 +61,7 @@ public class Node {
     Node center;
     Node right;
 
-    // Constructor to create the node
+    // Constructor
     Node(int number){
         this.number = number;
         this.left = null;
@@ -96,7 +97,7 @@ public class Node {
     Node center;
     Node right;
 
-    // Constructor to create the node
+    // Constructor
     Node(int number){
         this.number = number;
         this.left = null;
@@ -120,21 +121,26 @@ public class Node {
 ```
 
 Now We will see how to create a child for the **root** node?   
-- Craete node object with the name **child**.   
-- Add **child** object to the **root** node children (left/center/right).
+1 - Craete node object with the name **child**.   
+2 - Add **child** object to the **root** children (left/center/right).
 
 ```java
 
 public class Node {
 
-    // Data
+     // Data
     int number;
-    // Pointer
-    ArrayList<Node> children = new ArrayList<Node>();
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
 
-    // Constructor to create the node
+    // Constructor
     Node(int number){
         this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
     }
 
  public static void main(String[] args) {
@@ -146,10 +152,16 @@ public class Node {
         root.number = 3;
 
 
-}
+        // Create an object of node
+        Node child = new Node(2);
+
+
+        // Add **child** object to the **root** children (left/center/right).
+        root.left = child;
 
 }
 
+}
 ```
 
 
