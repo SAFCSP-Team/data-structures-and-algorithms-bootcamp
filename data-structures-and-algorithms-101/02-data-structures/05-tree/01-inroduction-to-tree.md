@@ -74,7 +74,40 @@ public class Node {
 
 ```
 
-After creating the node object, the **data** here is (1) and the **pointer** in refrecing to (null).
+In the above code, the node **data** is (1) and the **pointer** is refrencing to (null) as there is no node children created yet.
+
+Now lets's see how to update the node data? we will update the **data** to be (3).
+```java
+
+public class Node {
+
+    // Data
+    int number;
+    // Pointer
+    ArrayList<Node> children = new ArrayList<Node>();
+
+    // Constructor to create the node
+    Node(int number){
+        this.number = number;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
+}
+
+}
+
+```
+
+
+
 
 - **Types of tree**
 
