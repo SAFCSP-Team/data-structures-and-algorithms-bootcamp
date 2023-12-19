@@ -166,7 +166,7 @@ public class Node {
 
 
 - **Tree traversal**
-<br/>
+
 The process of visiting required node to perform special operation or visiting each node and print their values.
 
 There are three ways to travers tree:
@@ -192,6 +192,8 @@ There are three ways to travers tree:
 - Visit all node from the right side
 - Visit the root node
 - Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
+
+<br/>
 
 
 - **Types of tree**
