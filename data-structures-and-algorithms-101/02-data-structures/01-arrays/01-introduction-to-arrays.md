@@ -22,59 +22,61 @@ Before implementing the five-element vowel array, let us try to implement part o
 
 <img width="910" alt="Introduction to Arrays-02" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-02.png">
 
+To create an array, you first need to declare it. You specify the type of elements it will hold and give it a name. 
 
-1. Declaration: To create an array, you first need to declare it. You specify the type of elements it will hold and give it a name. 
-
-For example, you can declare an array of integers called "numbers"
+In our case, the name of the array is **vowels** and its type is **char**.
+```java
+char[] vowels;
+```
+After declaring an array, you must allocate memory for it and specify its size. 
 
 ```java
-int[] numbers;
+vowels = new char[1];
 ```
-For example, you can declare an array of Person objects  called "peopleArray" 
+> Or you can combine the previous two steps into one step, declaring the array and specifying its size.
+```java
+char[] vowels = new char[1];
+```
+
+Now you can assign the value of 'A' to the array. Remember Each element in the array has an index, starting from 0 for the first element.
+
+```java
+vowels[0] = 'A';
+```
+We have added a capital letter A in the array. If you want to change the value to be similar to what is in the picture, you can access the elements of the array using its index and change the value.
+
+```java
+vowels[0] = 'a';
+```
+Great, we have created the array and added the element to it, but what would change if we wanted to create the complete array with the five elements?
+```java
+char[] vowels = new char[5];
+
+// Assigning values to the array elements
+vowels[0] = 'a";
+vowels[1] = 'e';
+vowels[2] = 'i';
+vowels[3] = 'o';
+vowels[4] = 'u';
+```
+As you noticed, nothing changed except the size of the array. Instead of 1, it became 5.
+
+There are also different ways to create the array, such as creating it and adding elements to it in one step.
+```java
+char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+```
+Or the array contains elements of the Non-primitive Data Type. For example, the array contains objects of the Person class
 
 ```java
 Person[] peopleArray;
 ```
-2. Initialization: After declaring an array, you need to allocate memory for it and specify its size. The size determines the number of elements the array can hold.
-
-For example, to create an array of one integer.
-
+To perform any operations on each element of an array, you can use loops. For example, to print all the elements of the "vowels" array:
 ```java
-numbers = new int[1];
-```
-3. Assignment: Once the array is initialized, you can assign values to its elements individually. Each element in the array has an index, starting from 0 for the first element.
-
-For example, to assign value to the element of the "numbers" array:
-
-```java
-numbers[0] = 10;
-```
-4. Accessing Elements: You can access the elements of an array using their index.
-
-For example, to retrieve the value of the first element from the "numbers" array:
-
-```java
-int firstElement  = numbers[0]; //10 
+for (int i = 0; i < vowels.length; i++) {
+    System.out.println(vowels[i]);
+}
 ```
 
-- To create an array consisting of several elements, all you have to do is change the size.
-
-For example, creating an array of 10 elements: 
-```java
-int[] numbers = new int[10];
-
-// Assigning values to the array elements
-numbers[0] = 10;
-numbers[1] = 20;
-numbers[2] = 30;
-numbers[3] = 40;
-numbers[4] = 50;
-numbers[5] = 60;
-numbers[6] = 70;
-numbers[7] = 80;
-numbers[8] = 90;
-numbers[9] = 100;
-```
 ## Types
 Types of arrays based on their dimensions :
 
