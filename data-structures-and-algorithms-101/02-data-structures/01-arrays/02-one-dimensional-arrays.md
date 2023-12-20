@@ -101,7 +101,7 @@ The secondElement = Name: Bob Age: 30
 ## Projects
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[One Dimensional Array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/one-dimensional-arrays/README.md) | - | 
+|[One Dimensional Array](https://github.com/SAFCSP-Team/one-dimensional-arrays) | - | 
 
 
 
