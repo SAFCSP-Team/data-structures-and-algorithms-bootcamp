@@ -61,9 +61,9 @@ Node root = new Node(1);
 }
 ```
 
->In the above code:     
->**data**: The root node **data** is (1).   
->**pointers**: At the moment the **pointers** is refrencing to (null) as there is no node children created yet.
+>**data**: __number__ = 1.   
+>**pointers**: __left__ , __center__ , __right__ = null. as there is no node children created yet.
+
 
 - Accecc the **root** data and print the root
 ```java
