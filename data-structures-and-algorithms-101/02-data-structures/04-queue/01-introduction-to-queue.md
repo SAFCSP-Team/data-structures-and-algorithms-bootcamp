@@ -10,21 +10,20 @@ We use the same concept in the data structure to organize the data in programs, 
 
 ## Concept
 
-`Queue` is a **linear data structure**. `queue` are organized in a line/queue. The first element in the `queue` is called`head`. The end of the element in the `queue`is called the`tail`.
+Queue is a **linear data structure**.  The first element in the `queue` is called`head`. The end of the element in the `queue`is called the`tail`.
 
 > To implement a queue, you can use an `array` or a `linked list`.
 
 **Queue Array**
 
 ![1703064728345](images/01-introduction-to-queue/1703064728345.png)
-<hr>
 
 **Queue Linked-list**
 
 ![1702810878533](images/01-introduction-to-queue/1702810878533.png)
 
 > Some resources refer to the first element in the queue as [head, front],
->
+> 
 > and for the end of the element they refer to it as [rear, tail, end]
 
 **Queue Operation**
@@ -38,7 +37,7 @@ Every new element will be added at the end of the queue. The first element in th
 **Dequeue**: return the last element from the queue and remove it from the queue.
 
 > Each programming language has different names for enqueue and dequeue operations.
->
+> 
 > * enqueue = push / addFirst / insert.
 > * dequeue = pop / removeLast /delete.
 
@@ -48,47 +47,60 @@ To ensure that elements are processed in the order in which they were added, mak
 
 ## Implementation
 
-In this section, we will implement the queue using `array`.
+In this section we will impelment the queue using `array`.
 
 ### Queue Array
 
-1. Declare the `queue array`, by creating a class, with the following attributes.
+1. Declare **QueueArray** class, by creating a class, with the following **attributes**.
+   
    ```java
    class QueueArray {
        int array[];
        int front;
        int rear;
        int size;
-
-       public QueueArray(int size) {
-           array = new int[size];
-           front = -1;
-           rear = -1;
-           this.size = size;
-       }
-
-
-       public static void main(String[] args) {
-
-
-       }
    }
    ```
 
-> We have declared the `front` which has the index of the first element and `rear` which has the last element, to easily do the operations.
+Create a **constructor** to **declare an array**, and assign **default value -1** for **front** and **rear** when an object is created. For the constructor parameter, we pass the size, which will be the size/length of the **Array**.
 
-2. Create an object from `DequeArray` and insert an element.
+2. Create a **constructor** to **declare an array**, and assign **default value -1** for **front** and **rear** when an object created. The constructor parameter, we pass the size, which it will be the size/length of the **Array**.
 
+```java
+class QueueArray {
+    int array[];
+    int front;
+    int rear;
+    int size;
+    // constructor
+    public QueueArray(int size) {
+        array = new int[size];
+        front = -1;
+        rear = -1;
+        this.size = size;
+    }
+
+}
+```
+
+> We have declared the `front` and `rear`, to easily do the operations **enqueue** and **dequeue**.
+
+2. Create an object from `QueueArray` class and insert an element.
+   
    ```java
    public static void main(String[] args) {
-
+   
            QueueArray queue = new QueueArray(4);
            queue.front++;
            queue.rear++;
            queue.array[rear] = 1;
-
+   
    }
    ```
+   
+   Every time we have add an element, we increase the rear by one [**queue.rear++**].
+   
+   When inserting the first element the value of front will be **0**, and it will be **-1** if the queue is empty.
 3. Update the element value.
 
 ```java
@@ -99,73 +111,103 @@ queue.array[rear] = 50;
 
 > Now we have created an element in the `queue`
 
-4. To make the insertion and deletion easy, we declare the methods `enqueue` and `dequeue`.
+4. In the QueueArray class, create a method that check if the queue is empty.
+   
+   ```java
+   boolean isEmpty() {
+           return front == -1;
+       }
+   ```
+5. Create a method that check if the queue if full.
+   
+   ```java
+   boolean isFull() {
+           return (front == 0 && rear == size - 1);
+       }
+   ```
+   
+   In the image below the queue array is full. We know that the tail is the index of the last element, so if the tail = size -1 will be true, which mean the array is full.
 
+![1703064728345](images/01-introduction-to-queue/1703064728345.png)
 
-   **`enqueue` method:**
+6. To make the insertion and deletion process easy, we declare a methods `enqueue` and `dequeue`.
 
 ```java
 void enqueue(int item) {
-        if ((front == 0 && rear == size - 1) || front == rear + 1) {
+        // check if the queue is full or not
+        if (isFull()) {
             System.out.println("Overflow");
             return;
         }
 
+        // if the queue is empty then set front and rear to 0
         if (front == -1) {
             front = 0;
             rear = 0;
         }
+        // if the queue is not empty then rear will be increment by 1
+        else {
+            rear++;
 
-        else if (front == 0)
-            front = size - 1;
-
-        else
-            front = front - 1;
-
-        array[front] = item;
-    }
-
-    public static void main(String[] args) {
-
-        QueueArray queue = new QueueArray(2);
-        queue.enqueue(10);
-
+        }
+        // insert the item at the rear
+        array[rear] = item;
     }
 ```
+
+The above code. We create a enqueue method, which insert a new element at rear. Let's break the code line by line.
+
+First the method take an argument of type integer that will store the value into the queue, then we have if statement to change the front and rear value depend on the queue status. Finally we will insert an element at the rear.
 
 **`dequeue` method**:
 
 ```java
-int dequeue() {
-        if (front == -1) {
-            System.out.println("Underflow");
-            return -1;
+void dequeue(){
+        if(isEmpty()){
+            System.out.println("Queue is empty. Nothing to dequeue");
+            // if the queue has only one element then set front and rear to -1
+        } else if (front == rear){
+            front = rear = -1;
+            // if the queue has more than one element then increment front by 1
+        } else {
+            front++;
         }
-
-        int item = array[front];
-
-        if (front == rear) {
-            front = -1;
-            rear = -1;
-        }
-
-        else if (front == size - 1)
-            front = 0;
-
-        else
-            front = front + 1;
-
-        return item;
-    }
-
-    public static void main(String[] args) {
-
-        QueueArray queue = new QueueArray(2);
-        queue.enqueue(10);
-        System.out.println(queue.dequeue());
-
     }
 ```
+
+In the code above. We have created a dequeue method that increment the **front by one**, and if the queue has only one element then the front and rear will be **-1**.
+
+So far we have created the following methods [isFull(), isEmpty, enqueue(), dequeue()] in the QueueArray class.
+
+Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
+
+```java
+class Main {
+    public static void main(String[] args) {
+        QueueArray queue = new QueueArray(4);
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.dequeue();
+        queue.enqueue(40);
+
+        System.out.println(queue.front);
+        System.out.println(queue.rear);
+    }
+}
+```
+
+In the main method. We have create a queue array that has the followin values.
+
+![1703078793617](images/01-introduction-to-queue/1703078793617.png)
+
+**OUTPUT**
+
+````
+FRONT: 1
+REAR: 3
+````
 
 ## Types of queue
 
@@ -319,7 +361,6 @@ int main() {
 ````
 
 ## Projects
-
 
 | Project ID          | Project Title  | Deadline |
 | ------------------- | -------------- | -------- |
