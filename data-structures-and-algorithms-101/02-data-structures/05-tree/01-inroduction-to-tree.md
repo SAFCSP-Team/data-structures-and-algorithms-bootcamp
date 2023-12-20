@@ -171,7 +171,7 @@ Print tree values
 - `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees**
 
-- Employee class:
+- `Employee` class:
 
 ```java
 public class Employee {
@@ -190,7 +190,7 @@ public class Employee {
 ```
 
 
-- Node class
+- `Node` class
 
 ```java
 
@@ -214,7 +214,7 @@ public class Node {
 }
 ```
 
-- Tree class
+- `Tree` class
 
 ```java
 
