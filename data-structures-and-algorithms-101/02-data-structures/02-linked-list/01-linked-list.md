@@ -15,7 +15,7 @@ A `linked list` is a **data structure** that consists of a **sequence of element
 
 ## Implementation
 
-In a `linked list`, a `node` represents an individual element in the sequence. Each node contains two main parts: the `data`, which stores the value associated with the node, and a `pointer` to the next node. The Node class captures this structure and provides the foundation for constructing linked lists.
+In a `linked list`, a node represents an individual element in the sequence, which is the key component that the linked list is built on. Each `node` contains two main parts: the `data`, which stores the value associated with the node, and a `pointer` to the next node. The Node class captures this structure to provide the foundation for constructing linked lists.
 
                                                                                                                                                           
   <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/c1c59d61-030a-41ec-89db-607d1fee63c3"
@@ -137,8 +137,8 @@ class LinkedList {
 ```
 > In java and c++, you can declare and initialize linked list in a similar way.
 
-
-**Types of Linked List**:
+## Types
+Types of Linked List:
 
 * `Single linked list`: A type of linked list that is unidirectional, it can be traversed in only **one direction** from `head` to the last node `tail`.
      
