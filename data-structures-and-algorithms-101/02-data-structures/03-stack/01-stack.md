@@ -6,7 +6,6 @@ In computer programming, a stack is similar to this stack of books. It is a data
 ## Concept
 `Stack`: is a fundamental data structure that stores data in a specific order, where items can **only be added or removed from the top**.
 - In a stack, the most recently added item is always at the top, and it is the first item to be removed. This behavior is known as **"last in, first out" (LIFO)**.
-- To implement a stack, you can use an array or a linked list.
 - A stack has associated the following operations:
   - top(): return the top element from the stack without removing it.
   - Pop(): remove the top element from the stack and return it.
@@ -18,9 +17,13 @@ In computer programming, a stack is similar to this stack of books. It is a data
 
 > Java provides a built-in generic class called [Stack](https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html) in the java.util package, which can hold elements of any type.
 
-## Example 
 
-#### 1. Implementing a stack class in java using an array:
+## Implementation
+To implement a stack, you can use an [array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/01-introduction-to-arrays.md) or a [linked list](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/01-introduction-to-linked-list.md).Previously, we learned about the characteristics of each of them, and now let's explore how the application of commands can differ for it.
+
+Both array-based and linked list-based implementations have their advantages and trade-offs. The choice between them depends on factors such as the expected size of the stack, memory requirements, and the specific needs of your application.
+
+1. Implementing a stack class in java using an array:
 - Code: 
 
 ```java
@@ -85,86 +88,78 @@ class Stack {
         System.out.println("The size of stack: " + stack.size());
     }
 ```
- - Output: 
+- Output: 
 ```
 Top element: 40
 Top element after popping: 30
 The size of stack: 3
 ```
-
-
-#### 2. Implementing a stack class in C++ using an array:
+2. Implementing a stack class in java using a linked list:
 - Code: 
-
-```C++
-#include <iostream>
-
-const int MAX_SIZE = 10; // Maximum size of the stack
-
+```java
 class Stack {
-private:
-    int data[MAX_SIZE]; // Array to store the stack elements
-    int Top; // Index of the top element in the stack
+    private Node top; // Reference to the top node of the stack
 
-public:
-    Stack() {
-        Top = -1; // Initialize the top index to -1 (empty stack)
+    public Stack() {
+        top = null; // Initialize the stack with no elements
     }
 
-    void push(int value) {
-        if (Top == MAX_SIZE - 1) {
-            std::cout << "Stack Overflow: Cannot push element, stack is full." << std::endl;
+    public void push(int value) {
+        Node newNode = new Node(value); // Create a new node with the given value
+        newNode.next = top; // Set the new node's next reference to the current top node
+        top = newNode; // Update the top reference to the new node
+    }
+
+    public void pop() {
+        if (isEmpty()) {
+            System.out.println("Stack Underflow: Cannot pop element, stack is empty.");
             return;
         }
-        data[++Top] = value; // Increment top and add the element to the stack
+        top = top.next; // Move the top reference to the next node, effectively removing the top node
     }
 
-    void pop() {
-        if (Top == -1) {
-            std::cout << "Stack Underflow: Cannot pop element, stack is empty." << std::endl;
-            return;
-        }
-        --Top; // Decrement top to remove the top element (no need to delete or clear memory)
-    }
-
-    int top() {
-        if (Top == -1) {
-            std::cout << "Stack is empty." << std::endl;
+    public int top() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty.");
             return -1; // Return a default value indicating an empty stack
         }
-        return data[Top]; // Return the top element without removing it
+        return top.data; // Return the data stored in the top node
     }
 
-    bool isEmpty() {
-        return (Top == -1); // Check if the stack is empty
+    public boolean isEmpty() {
+        return (top == null); // Check if the stack is empty
     }
-   int size() {
-    return Top + 1; // Return the number of elements in the stack
+
+    public int size() {
+        int count = 0;
+        Node current = top;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count; // Return the number of elements in the stack
+    }
 }
-};
-
 ```
 - Using the class:
-```C++
-int main() {
-    Stack stack;
+```java
+public static void main(String[] args) {
+    Stack stack = new Stack();
 
     stack.push(10);
     stack.push(20);
     stack.push(30);
     stack.push(40);
 
-    std::cout << "Top element: " << stack.top() << std::endl;
+    System.out.println("Top element: " + stack.top());
 
     stack.pop();
-    std::cout << "Top element after popping: " << stack.top() << std::endl;
+    System.out.println("Top element after popping: " + stack.top());
 
-std::cout << "The size of stack: " << stack.size() << std::endl;
-
-    return 0;
+    System.out.println("The size of the stack: " + stack.size());
 }
 ```
- - Output: 
+- Output: 
 ```
 Top element: 40
 Top element after popping: 30
