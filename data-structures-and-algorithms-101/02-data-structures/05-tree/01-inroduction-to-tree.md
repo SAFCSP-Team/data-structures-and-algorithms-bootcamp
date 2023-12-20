@@ -64,7 +64,7 @@ Node root = new Node(1);
 ```
 
 >**root data**: _number_ = 1.   
->**pointers**: _left_ , _center_ , _right_ = null. as there is no node children created yet.
+>**pointers**: ( _left_ , _center_ , _right_ ) = null. as there is no node children created yet.
 
 <br/>
 <br/>
