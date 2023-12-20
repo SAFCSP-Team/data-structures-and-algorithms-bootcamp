@@ -60,43 +60,13 @@ Node root = new Node(1);
 ```
 
 In the above code:     
-The root node **data** is (1).  
+The root node **data** is (1). 
 >At the moment the **pointers** is refrencing to (null) as there is no node children created yet.
 
-- Now lets's see how to update the node **data**? we will update the **data** to be (3).
+- Now lets's see how to update the root node **data**? we will update the **data** to be (3).
 
 ```java
-
-public class Node {
-
-     // Data
-    int number;
-    // Pointers
-    Node left;
-    Node center;
-    Node right;
-
-    // Constructor
-    Node(int number){
-        this.number = number;
-        this.left = null;
-        this.center = null;
-        this.right = null;
-    }
-
- public static void main(String[] args) {
-        
-        // Create an object of node
-        Node root = new Node(1);
-
-        // Update the node data
-        root.number = 3;
-
-
-}
-
-}
-
+root.number = 3;
 ```
 
 - Now We will see how to create a child for the **root** node?   
@@ -105,96 +75,23 @@ public class Node {
 
 ```java
 
-public class Node {
+// 1- Create an object of node
+Node child = new Node(2);
+// 2- Linke/add child object to the root children (left/center/right).
+root.left = child;
 
-     // Data
-    int number;
-    // Pointers
-    Node left;
-    Node center;
-    Node right;
-
-    // Constructor
-    Node(int number){
-        this.number = number;
-        this.left = null;
-        this.center = null;
-        this.right = null;
-    }
-
- public static void main(String[] args) {
-        
-        // Create an object of node
-        Node root = new Node(1);
-
-        // Update the node data
-        root.number = 3;
-
-
-        // 1- Create an object of node
-        Node child = new Node(2);
-
-
-        // 2- Linke/add child object to the root children (left/center/right).
-        root.left = child;
-
-}
-
-}
 ```
-In the above code we linked the child object to the root's of a **left** pointer, the **center** and **right** pointers is still pointing to null.
+>In the above code we linked the child object to the root's of a **left** pointer, the **center** and **right** pointers is still pointing to null.
 
 - Now let's print the root and the left child values:
-
 ```java
-
-public class Node {
-
-     // Data
-    int number;
-    // Pointers
-    Node left;
-    Node center;
-    Node right;
-
-    // Constructor
-    Node(int number){
-        this.number = number;
-        this.left = null;
-        this.center = null;
-        this.right = null;
-    }
-
- public static void main(String[] args) {
-        
-        // Create an object of node
-        Node root = new Node(1);
-
-        // Update the node data
-        root.number = 3;
-
-
-        // Create an object of node
-        Node child = new Node(2);
-
-
-        // Add child object to the root children (left/center/right).
-        root.left = child;
-
-
-        // print the root value
-        System.out.println(root.number);
-        // print the left child value
-        System.out.println(root.left.number);
-
-
-}
-
-}
+// print the root value
+System.out.println(root.number);
+// print the left child value
+System.out.println(root.left.number);
 ```
 
 Output:
-
 ```java
 3
 2
@@ -317,7 +214,7 @@ There are three ways to travers tree:
 <br/>
 
 
-- **Types of tree**
+## Types
 
 1 - General Tree
 
