@@ -96,8 +96,8 @@ root.number = 3;
 
 1 - Create Tree.  
 2 - Create tree root (node object).  
-3 - Accecc the root data and print it.  
-4 - Accecc and update the **root** data to be (3).  
+3 - Accecc the _root_ data and print it.  
+4 - Accecc and update the _root_ data to be (3).  
 5 - Create root child (left child).  
 6 - Print tree values  
 
