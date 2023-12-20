@@ -23,22 +23,47 @@ To implement a stack, you can use an [array](https://github.com/SAFCSP-Team/data
 
 Both array-based and linked list-based implementations have their advantages and trade-offs. The choice between them depends on factors such as the expected size of the stack, memory requirements, and the specific needs of your application.
 
-1. Implementing a stack class in java using an array:
-- Code: 
+#### Implementing a stack class in java using an array:
 
 ```java
-class Stack {
-    private static final int MAX_SIZE = 10; // Maximum size of the stack
+class StackArray {
     private int[] data; // Array to store the stack elements
     private int top; // Index of the top element in the stack
+    private int size; // Size of the stack
 
-    public Stack() {
-        data = new int[MAX_SIZE];
+    public StackArray(int size) {
+        data = new int[size];
+        top = -1; // Initialize the top index to -1 (empty stack)
+        this.size = size;
+    }
+}
+```
+Create an object from Stack with one element.
+```java
+public static void main(String[] args) {
+        StackArray Stack = new StackArray(4);
+        Stack.top++;// update the top to add the first element 
+        Stack.data[Stack.top] = 20;
+
+}
+```
+Update the element value.
+```java
+Stack.data[Stack.top] = 20;
+```
+Now To create a stack class to get all the properties, we will create the following methods, Top, Size, Pop, Push, IsEmpty, and size.
+```java
+class StackArray {
+    private int[] data; // Array to store the stack elements
+    private int top; // Index of the top element in the stack
+    private int size; // Size of the stack
+
+    public StackArray(int size) {
+        data = new int[size];
         top = -1; // Initialize the top index to -1 (empty stack)
     }
-
     public void push(int value) {
-        if (top == MAX_SIZE - 1) {
+        if (top == size - 1) {
             System.out.println("Stack Overflow: Cannot push element, stack is full.");
             return;
         }
@@ -73,7 +98,7 @@ class Stack {
 - Using the class:
 ```java
     public static void main(String[] args) {
-        Stack stack = new Stack();
+        StackArray stack = new StackArray(4);
 
         stack.push(10);
         stack.push(20);
@@ -94,20 +119,24 @@ Top element: 40
 Top element after popping: 30
 The size of stack: 3
 ```
-2. Implementing a stack class in java using a linked list:
-- Code: 
-```java
-class Stack {
-    private Node top; // Reference to the top node of the stack
 
-    public Stack() {
-        top = null; // Initialize the stack with no elements
+Now let’s implement a stack class using a linked list given the same previous output:
+
+```java
+class StackLinkedList {
+    private Node top; // Reference to the top node in the stack
+    private int size; // Size of the stack
+
+    public StackLinkedList() {
+        top = null; // Initialize the top node to null (empty stack)
+        size = 0; // Initialize the size to 0
     }
 
     public void push(int value) {
-        Node newNode = new Node(value); // Create a new node with the given value
-        newNode.next = top; // Set the new node's next reference to the current top node
-        top = newNode; // Update the top reference to the new node
+        Node newNode = new Node(value);
+        newNode.next = top; // Set the next node of the new node to the current top node
+        top = newNode; // Update the top node to the new node
+        size++; // Increment the size
     }
 
     public void pop() {
@@ -115,7 +144,8 @@ class Stack {
             System.out.println("Stack Underflow: Cannot pop element, stack is empty.");
             return;
         }
-        top = top.next; // Move the top reference to the next node, effectively removing the top node
+        top = top.next; // Move the top reference to the next node
+        size--; // Decrement the size
     }
 
     public int top() {
@@ -123,7 +153,7 @@ class Stack {
             System.out.println("Stack is empty.");
             return -1; // Return a default value indicating an empty stack
         }
-        return top.data; // Return the data stored in the top node
+        return top.data; // Return the data of the top node
     }
 
     public boolean isEmpty() {
@@ -131,40 +161,11 @@ class Stack {
     }
 
     public int size() {
-        int count = 0;
-        Node current = top;
-        while (current != null) {
-            count++;
-            current = current.next;
-        }
-        return count; // Return the number of elements in the stack
+        return size; // Return the size of the stack
     }
 }
 ```
-- Using the class:
-```java
-public static void main(String[] args) {
-    Stack stack = new Stack();
 
-    stack.push(10);
-    stack.push(20);
-    stack.push(30);
-    stack.push(40);
-
-    System.out.println("Top element: " + stack.top());
-
-    stack.pop();
-    System.out.println("Top element after popping: " + stack.top());
-
-    System.out.println("The size of the stack: " + stack.size());
-}
-```
-- Output: 
-```
-Top element: 40
-Top element after popping: 30
-The size of stack: 3
-```
 
 ## Projects
 Project ID | Project Title | Deadline |
