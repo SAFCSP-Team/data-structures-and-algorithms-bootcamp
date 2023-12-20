@@ -104,13 +104,12 @@ root.number = 3;
 
 ```java 
 
-
 public class Tree {
 
     Node root;
 
-    Tree(int key) {
-        root = new Node(key);
+    Tree(int number) {
+        root = new Node(number);
     }
 
     Tree() {
@@ -129,30 +128,42 @@ public class Tree {
     public static void main(String[] args) {
 
         // 1 - Create Tree
-        Tree tree = new Tree();
+        Tree T = new Tree();
 
         // 2 - Create tree root (node object)
-        tree.root = new Node(1);
+        T.root = new Node(1);
 
-        // 3 - Accecc the root data and print it
-        System.out.println(tree.root);
+        // 3 - Accecc the root data and print it\
+        System.out.println("Print root value");
+        System.out.println(T.root.number);
 
         // 4 - Accecc and update the **root** data to be (3)
-        tree.root.number = 3;
+        T.root.number = 3;
 
         // 5 - Create root child (left child)
-        tree.root.left = new Node(2);
+        T.root.left = new Node(2);
 
         // 6 - Print tree values
         System.out.println("Print tree values");
-        tree.printTreeValues(tree.root);
+        T.printTreeValues(T.root);
 
     }
 
 }
+
+
 ```
 
->Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.
+>Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.\\
+
+Output:
+```java
+Print root value
+1
+Print tree values
+2
+3
+```
 
 Now we will implement the same logic and code of the above tree but for **employees**:
 
