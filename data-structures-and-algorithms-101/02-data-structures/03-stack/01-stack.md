@@ -44,12 +44,16 @@ public static void main(String[] args) {
         StackArray Stack = new StackArray(4);
         Stack.top++;// update the top to add the first element 
         Stack.data[Stack.top] = 20;
+       System.out.println(Stack.data);
+
 
 }
 ```
 Update the element value.
 ```java
-Stack.data[Stack.top] = 20;
+Stack.data[Stack.top] = 10;
+System.out.println(Stack.data);
+
 ```
 Now To create a stack class to get all the properties, we will create the following methods, Top, Size, Pop, Push, IsEmpty, and size.
 ```java
