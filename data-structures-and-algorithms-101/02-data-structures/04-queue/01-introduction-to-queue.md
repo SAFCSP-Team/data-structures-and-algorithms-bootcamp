@@ -198,9 +198,10 @@ class Main {
 }
 ```
 
-In the main method. We have create a queue array that has the followin values.
+In the main method. We have created a queue array that has the following values.
 
-![1703078793617](images/01-introduction-to-queue/1703078793617.png)
+![data-structures-and-algorithms - Copy of Queue Array (2)](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/812ac14b-d246-4214-bfaa-3b4062cdd83c)
+
 
 **OUTPUT**
 
