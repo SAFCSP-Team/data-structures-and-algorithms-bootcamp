@@ -48,7 +48,7 @@ To ensure that elements are processed in the order in which they were added, mak
 
 ## Implementation
 
-In this section we will impelment the queue using `array`.
+In this section, we will implement the queue using `array`.
 
 ### Queue Array
 
@@ -99,7 +99,9 @@ queue.array[rear] = 50;
 
 > Now we have created an element in the `queue`
 
-4. To make the insertion and deletion easy, we declare a methods `enqueue` and `dequeue`.
+4. To make the insertion and deletion easy, we declare the methods `enqueue` and `dequeue`.
+
+
    **`enqueue` method:**
 
 ```java
