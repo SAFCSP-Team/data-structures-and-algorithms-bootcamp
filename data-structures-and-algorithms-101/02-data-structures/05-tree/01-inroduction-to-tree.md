@@ -62,7 +62,7 @@ Node root = new Node(1);
 ```
 
 >In the above code:     
->**data**: The root node **data** is (1). 
+>**data**: The root node **data** is (1).   
 >**pointers**: At the moment the **pointers** is refrencing to (null) as there is no node children created yet.
 
 - Now lets's see how to update the root node **data**? we will update the **data** to be (3).
