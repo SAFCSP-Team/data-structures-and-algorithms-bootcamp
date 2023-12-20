@@ -18,6 +18,11 @@ In computer programming, in most cases, there is a need to **store a large numbe
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-01.png">
 
 ## Implementation 
+Before implementing the five-element vowel array, let us try to implement part of it. For example, let us create an array that contains only the letter A.
+
+<img width="910" alt="Introduction to Arrays-02" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-02.png">
+
+
 1. Declaration: To create an array, you first need to declare it. You specify the type of elements it will hold and give it a name. 
 
 For example, you can declare an array of integers called "numbers"
@@ -76,7 +81,7 @@ Types of arrays based on their dimensions :
 - `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a **single row**.
 - `Multi-Dimensional Array`: Has **more than one dimension**. It can have two or more dimensions in rows and columns, similar to a 3D object. The most common type of multi-dimensional array is a two-dimensional array.
 
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-02.png">
+<img width="910" alt="Introduction to Arrays-03" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-03.png">
 
 ## Projects
 
