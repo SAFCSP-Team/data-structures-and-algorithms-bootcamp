@@ -251,7 +251,7 @@ public class Tree {
         System.out.println("Print root value");
         System.out.println(T.root.employeeData.name);
 
-        // 4 - Accecc and update the **root** data to be (3)
+        // 4 - Accecc and update the root data (employee name)t o be (Anas)
         T.root.employeeData.name = "Anas";
 
         // 5 - Create root child (left child)
