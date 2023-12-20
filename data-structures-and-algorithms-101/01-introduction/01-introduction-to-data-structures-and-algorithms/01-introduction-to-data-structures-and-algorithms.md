@@ -149,6 +149,11 @@ class Main {
 
 As you can see, since the `slice` was ready, we used it to create nodes, link them to each other, and even apply the operations on it. This concludes that by focusing only on the repetitive part (which is the **slice**) that forms the pattern, we simplified our thinking and handling of data structures.
 
+Take a look the the image below,
+![slice-code](./images/slice-code.jpg)
+
+Did you notice something? All our focus in coding was handling the slice itself. Once we created the structure of node we used it to perform all other operations on the data structure. As an example, if we want to print the entire data structure we will first start from the first node or element, print its data, and then follow the pointers to find other elements and print them as well. Thus, all our focus was on handling a single slice at a time.
+
 Additionally, we can apply the same perspective on a `linked list` or any other data structure. By focusing on the slice and its pattern.
 
 ![linked-list-slice-pattern](./images/linked-list-slice-pattern.jpg)
