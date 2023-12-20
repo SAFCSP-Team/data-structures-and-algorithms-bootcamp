@@ -270,8 +270,11 @@ public class Tree {
 Output:
 
 ```java
-mohammed
-Ali
+Print root value
+Ahmed
+Print tree values
+Khalid
+Anas
 ```
 
 
