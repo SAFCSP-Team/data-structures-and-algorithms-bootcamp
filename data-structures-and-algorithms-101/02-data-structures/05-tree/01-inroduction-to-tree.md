@@ -165,7 +165,10 @@ Print tree values
 3
 ```
 
-- `tree` Implementation with non-premitive data type.   
+<br/>
+<br/>
+
+- `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees**
 
 - Employee class:
