@@ -23,7 +23,7 @@ In a `linked list`, a `node` represents an individual element in the sequence. E
 
 Now, let's proceed with implementing the linked list data structure. We'll start by creating a `Node` class and then build the `LinkedList` class that manages the nodes and provides various operations to manipulate the list.
 
-* Create a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next Node in the linked list.
+* Create a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next `Node` in the linked list.
 ```java
 class Node {
     int data;
@@ -35,8 +35,7 @@ class Node {
     }
 }
 ```
-* Create a `LinkedList`, the class has a pointer to the head node, which is the starting point of the list.
-
+* Create a `LinkedList`, the class has a `pointer` to the **head** node, which is the starting point of the list.
 ```java
 class LinkedList {
     private Node head;
@@ -46,18 +45,20 @@ class LinkedList {
     }
 }
 ```
-* Create an instance of the LinkedList class and insert value.
-
+* Create an instance and link the first node to LinkedList.
 ```java
 public class Main {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+        LinkedList linkedlist = new LinkedList();
 
-        LinkedList linkedList = new LinkedList();
-        linkedList.insert(10);
-        linkedList.insert(60);
-        linkedList.insert(90);
+        /* Create the first node */
+        Node firstNode = new Node(10);
+
+        /* Link the first node to the LinkedList */
+        linkedList.head = firstNode;
     }
 }
+
 ```
 * Perform an action 
   
@@ -122,6 +123,7 @@ class LinkedList {
 }
 
 }
+
 ```
 > In java and c++, you can declare and initialize linked list in a similar way.
 
