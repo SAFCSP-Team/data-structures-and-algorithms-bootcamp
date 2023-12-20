@@ -30,7 +30,7 @@ Figure 3
 ![data representation](./images/Node-element.jpg)
 
 
-`Node` class implementation:
+- `Node` class implementation:
 
 ```java
 
@@ -49,7 +49,7 @@ public class Node {
 The above code is representing a `node` of integer **data** type and the **pointers** as references to the nodes children.   
 The node here have only 3 pointers that means it can have only 3 children
 
-Now let's add a constructor to the `node` class and create an object of node with the name **root** in the main function.
+- Now let's add a constructor to the `node` class and create an object of node with the name **root** in the main function.
 ```java
 
 public class Node {
@@ -84,7 +84,7 @@ In the above code:
 The node **data** is (1).  
 At the moment the **pointers** is refrencing to (null) as there is no node children created yet.  
 
-Now lets's see how to update the node **data**? we will update the **data** to be (3).
+- Now lets's see how to update the node **data**? we will update the **data** to be (3).
 
 ```java
 
@@ -120,7 +120,7 @@ public class Node {
 
 ```
 
-Now We will see how to create a child for the **root** node?   
+- Now We will see how to create a child for the **root** node?   
 1 - Craete node object with the name **child**.   
 2 - Link/add **child** object to the **root** children (left/center/right).
 
