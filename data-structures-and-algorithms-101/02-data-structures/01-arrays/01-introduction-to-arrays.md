@@ -88,6 +88,6 @@ Types of arrays based on their dimensions :
 
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[Array with primitive data types](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-primitive-data-type/README.md) | - | 
-|[Array with non-primitive data types ](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/introduction-to-arrays/array-with-non-primitive-data-type/README.md) | - | 
+|[Array with primitive data types](https://github.com/SAFCSP-Team/array-with-primitive-data-type) | - | 
+|[Array with non-primitive data types ](https://github.com/SAFCSP-Team/array-with-non-primitive-data-type) | - | 
 
