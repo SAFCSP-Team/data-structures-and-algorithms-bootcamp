@@ -17,6 +17,7 @@ We use the same concept in the data structure to organize the data in programs, 
 **Queue Array**
 
 ![1703064728345](images/01-introduction-to-queue/1703064728345.png)
+<hr>
 
 **Queue Linked-list**
 
