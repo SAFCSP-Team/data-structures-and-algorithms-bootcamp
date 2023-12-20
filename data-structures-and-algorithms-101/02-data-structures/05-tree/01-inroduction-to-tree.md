@@ -22,12 +22,12 @@ Figure 2
 
 
 ## Implementation
-As we explaind before, the tree is a collection of nodes, but what is the node? and how to implement it?
-
-`Node` is the element that will hold the **data** and the **pointer** to the children.
+As we explained before, the tree is a collection of nodes, and each node in the tree will contains data and pointers. The pointers in the tree node will depend on how many children a node can have, for example, let us implement a tree with maximum of three children (left, center, and right) will look as the following. 
 
 Figure 3
 ![data representation](./images/Node-element.jpg)
+
+As always, to implement the tree we will define the `Node` class first since it is the main component that will construct the whole tree.
 
 - `Node` class implementation:
 
@@ -53,43 +53,15 @@ public class Node {
 
 ```
 
-The above code is representing a `node` of integer **data** type and the **pointers** as references to the nodes children.   
-The node here have only 3 pointers that means it can have only 3 children
 
-- Now let's add a constructor to the `node` class and create an object of node with the name **root** in the main function.
+- Now let's create an object of node with the name **root** in the main function.
 ```java
-
-public class Node {
-
-    // Data
-    int number;
-    // Pointers
-    Node left;
-    Node center;
-    Node right;
-
-    // Constructor
-    Node(int number){
-        this.number = number;
-        this.left = null;
-        this.center = null;
-        this.right = null;
-    }
-
- public static void main(String[] args) {
-        
-        // Create an object of node
-        Node root = new Node(1);
-
-}
-
-}
-
+Node root = new Node(1);
 ```
 
 In the above code:     
-The node **data** is (1).  
-At the moment the **pointers** is refrencing to (null) as there is no node children created yet.  
+The root node **data** is (1).  
+>At the moment the **pointers** is refrencing to (null) as there is no node children created yet.
 
 - Now lets's see how to update the node **data**? we will update the **data** to be (3).
 
