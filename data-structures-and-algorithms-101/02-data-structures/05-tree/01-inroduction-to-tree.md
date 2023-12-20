@@ -61,8 +61,8 @@ Node root = new Node(1);
 }
 ```
 
->**data**: __number__ = 1.   
->**pointers**: __left__ , __center__ , __right__ = null. as there is no node children created yet.
+>**data**: _number_ = 1.   
+>**pointers**: _left_ , _center_ , _right_ = null. as there is no node children created yet.
 
 
 - Accecc the **root** data and print the root
