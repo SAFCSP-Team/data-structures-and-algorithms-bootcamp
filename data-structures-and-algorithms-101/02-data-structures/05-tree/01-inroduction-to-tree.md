@@ -268,6 +268,31 @@ public static void main(String[] args) {
 
         // Create Employees
         Employee e = new Employee(01,"Ahmed","CEO");
+        
+        // Create an object of node
+        Node root = new Node(e);
+
+        // Update the node data (1- change name) (2- change id)
+        root.data.name = "mohammed";
+        root.data.id = 02;
+
+
+        // Create Employees
+        Employee e1 = new Employee(1,"Ahmed","CEO");
+        
+        // Create an object of node
+        Node child = new Node(2);
+
+
+        // Add child object to the root children (left/center/right).
+        root.left = child;
+
+
+        // print the root value
+        System.out.println(root.number);
+        // print the left child value
+        System.out.println(root.left.number);
+
 
 
 
