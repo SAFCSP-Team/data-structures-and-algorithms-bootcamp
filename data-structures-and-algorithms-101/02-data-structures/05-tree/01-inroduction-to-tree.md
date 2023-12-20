@@ -145,10 +145,10 @@ public class Node {
 public static void main(String[] args) {
 
         // Create Employees
-        Employee e = new Employee(01,"Ahmed","CEO");
+        Employee firstEmployee = new Employee(01,"Ahmed","CEO");
         
         // Create an object of node
-        Node root = new Node(e);
+        Node root = new Node(firstEmployee);
 
         // Update the node data (1- change name) (2- change id)
         root.data.name = "mohammed";
@@ -156,10 +156,10 @@ public static void main(String[] args) {
 
 
         // Create Employees
-        Employee e1 = new Employee(03,"Ali","HR Manager");
+        Employee secondEmployee = new Employee(03,"Ali","HR Manager");
         
         // Create an object of node
-        Node child = new Node(e1);
+        Node child = new Node(secondEmployee);
 
 
         // Add child object to the root children (left/center/right).
