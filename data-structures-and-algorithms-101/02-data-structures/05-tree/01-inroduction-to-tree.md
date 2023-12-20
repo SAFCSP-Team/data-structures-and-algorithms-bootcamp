@@ -165,12 +165,14 @@ Print tree values
 3
 ```
 
-Now we will implement the same logic and code of the above tree but for **employees**:
+- `tree` Implementation with non-premitive data type.   
+We will follow the same logic, steps and code of the above tree but for **employees**
 
 - Employee class:
 
 ```java
 public class Employee {
+
     int id;
     String name;
     String role;
@@ -191,56 +193,77 @@ public class Employee {
 
 public class Node {
 
-     // Data
-    Employee data;
+    // Data
+    Employee employeeData;
     // Pointers
     Node left;
     Node center;
     Node right;
 
     // Constructor
- Node(Employee e) {
-  data = e;
-  left = null;
-  center = null;
-  right = null;
-  }
-
-public static void main(String[] args) {
-
-        // Create Employees
-        Employee firstEmployee = new Employee(01,"Ahmed","CEO");
-        
-        // Create an object of node
-        Node root = new Node(firstEmployee);
-
-        // Update the node data (1- change name) (2- change id)
-        root.data.name = "mohammed";
-        root.data.id = 02;
-
-
-        // Create Employees
-        Employee secondEmployee = new Employee(03,"Ali","HR Manager");
-        
-        // Create an object of node
-        Node child = new Node(secondEmployee);
-
-
-        // Add child object to the root children (left/center/right).
-        root.left = child;
-
-
-        // print the root value (name)
-        System.out.println(root.data.name);
-        // print the left child value (name)
-        System.out.println(root.left.data.name);
-
-
-}
+    Node(Employee e) {
+        this.employeeData = e;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
 
 }
 ```
 
+Tree class
+
+```java
+
+public class Tree {
+
+    Node root;
+
+    Tree(Employee e) {
+        root = new Node(e);
+    }
+
+    Tree() {
+        root = null;
+    }
+
+    // Print tree values function
+    public void printTreeValues(Node node) {
+        if (node != null) {
+            printTreeValues(node.left);
+            System.out.println(" " + node.employeeData.name);
+            printTreeValues(node.right);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        // 1 - Create Tree
+        Tree T = new Tree();
+
+        // 2 - Create tree root (node object)
+        T.root = new Node( new Employee(01,"Ahmed","CEO") );
+
+        // 3 - Accecc the root data and print it
+        System.out.println("Print root value");
+        System.out.println(T.root.employeeData.name);
+
+        // 4 - Accecc and update the **root** data to be (3)
+        T.root.employeeData.name = "Anas";
+
+        // 5 - Create root child (left child)
+        T.root.left = new Node(new Employee(02,"Khalid","HR Manager"));
+
+        // 6 - Print tree values
+        System.out.println("Print tree values");
+        T.printTreeValues(T.root);
+
+    }
+
+}
+
+
+```
 Output:
 
 ```java
