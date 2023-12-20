@@ -122,7 +122,7 @@ public class Node {
 
 Now We will see how to create a child for the **root** node?   
 1 - Craete node object with the name **child**.   
-2 - Add **child** object to the **root** children (left/center/right).
+2 - Link/add **child** object to the **root** children (left/center/right).
 
 ```java
 
