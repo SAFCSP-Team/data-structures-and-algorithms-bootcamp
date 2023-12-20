@@ -65,8 +65,7 @@ There are also different ways to create the array, such as creating it and addin
 ```java
 char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 ```
-Or the array contains elements of the Non-primitive Data Type. For example, the array contains objects of the Person class
-
+Also, your array might contain a complex type or what we call a non-primitive data type. For example, the array contains objects of the Person class.
 ```java
 Person[] peopleArray;
 ```
