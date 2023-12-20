@@ -22,7 +22,7 @@ Figure 2
 
 
 ## Implementation
-As we explained before, the tree is a collection of nodes, and each node in the tree will contains data and pointers. The pointers in the tree node will depend on how many children a node can have, for example, let us implement a tree with maximum of three children (left, center, and right) will look as the following. 
+>As we explained before, the tree is a collection of nodes, and each node in the tree will contains data and pointers. The pointers in the tree node will depend on how many children a node can have, for example, let us implement a tree with maximum of three children (left, center, and right) will look as the following. 
 
 Figure 3
 ![data representation](./images/Node-element.jpg)
@@ -56,7 +56,9 @@ public class Node {
 
 - Now let's create an object of node with the name **root** in the main function.
 ```java
+public static void main(String[] args) {
 Node root = new Node(1);
+}
 ```
 
 In the above code:     
