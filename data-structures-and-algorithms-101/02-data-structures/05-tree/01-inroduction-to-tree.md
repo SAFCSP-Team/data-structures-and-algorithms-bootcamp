@@ -63,13 +63,13 @@ Node root = new Node(1);
 }
 ```
 
->**data**: _number_ = 1.   
+>**root data**: _number_ = 1.   
 >**pointers**: _left_ , _center_ , _right_ = null. as there is no node children created yet.
 
 <br/>
 <br/>
 
-- Accecc the **root** data and print the root
+- Accecc the **root** data and print it.
 ```java
 // print the root value
 System.out.println(root.number);
@@ -92,7 +92,7 @@ root.number = 3;
 <br/>
 <br/>
 
-- Now We will see how to create a child for the **root** node?   
+- Create a child for the **root** node
 1 - Craete node object with the name **child**.   
 2 - Link/add **child** object to the **root** children (left/center/right).
 
@@ -104,12 +104,11 @@ Node child = new Node(2);
 root.left = child;
 
 ```
->In the above code we linked the child object to the root's of a **left** pointer, the **center** and **right** pointers is still pointing to null.
 
 <br/>
 <br/>
 
-- Now let's print the root and the left child values:
+- Access and print the **root** and the **left** child data:
 ```java
 // print the root value
 System.out.println(root.number);
@@ -122,8 +121,6 @@ Output:
 3
 2
 ```
-
->In the above implementation we did implement a tree of integers
 
 <br/>
 <br/>
