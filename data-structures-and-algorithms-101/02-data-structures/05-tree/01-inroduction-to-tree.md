@@ -125,6 +125,42 @@ Output:
 <br/>
 <br/>
 
+- Tree class implementation:
+
+```java 
+
+class Tree{
+    /* properties */
+    Node root;
+
+    /* operations */
+    /* Add left child to a parent */
+    void addLeft(Node parent, Node node){
+        parent.left = node;
+    }
+
+    /* Add right child to a parent */
+    void addRightNode(Node parent, Node node){
+        /* Implementation */
+    }
+
+
+}
+
+class Main {
+    public static void main(String[] args) {
+        Tree tree = new Tree();
+        Node root = new Node(1);
+        root.left =  new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        tree.addLeft(root.right, new Node(5));
+
+    }
+}
+```
+
+
 Now we will implement the same logic and code of the above tree but for **employees**:
 
 - Employee class:
