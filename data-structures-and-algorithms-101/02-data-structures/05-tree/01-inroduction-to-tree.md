@@ -221,6 +221,85 @@ Output:
 2
 ```
 
+In the above implementation we did implement a tree of integers, but how would the implementation be if it was of non premetive data type?
+
+Now we will implement the same logic and code of the above tree but for employees:
+
+- Employee class:
+
+```java
+public class Employee {
+    int id;
+    String name;
+    String role;
+
+    Employee(int id, String name, String role){
+        this.id = id;
+        this.name = name;
+        this.role = role;
+    }
+  
+}
+```
+
+
+- Node class
+
+Java code
+```java
+public class Node {
+
+     // Data
+    Employee data;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+ Node(Employee e) {
+  data = e;
+  left = null;
+  center = null;
+  right = null;
+  }
+
+public static void main(String[] args) {
+
+        // Create Employees
+        Employee e = new Employee(01,"Ahmed","CEO");
+
+
+
+
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
+        // Create an object of node
+        Node child = new Node(2);
+
+
+        // Add child object to the root children (left/center/right).
+        root.left = child;
+
+
+        // print the root value
+        System.out.println(root.number);
+        // print the left child value
+        System.out.println(root.left.number);
+
+
+}
+
+}
+
+}
+```
 
 
 - **Tree traversal**
