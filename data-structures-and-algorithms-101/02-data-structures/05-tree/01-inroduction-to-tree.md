@@ -204,15 +204,21 @@ public class Node {
 
 
         // print the root value
-        root.left = child;
-
+        System.out.println(root.number);
         // print the left child value
-        root.left = child;
+        System.out.println(root.left.number);
 
 
 }
 
 }
+```
+
+Output:
+
+```java
+3
+2
 ```
 
 
