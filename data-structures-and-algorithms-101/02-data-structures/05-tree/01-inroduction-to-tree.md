@@ -223,7 +223,7 @@ Output:
 
 In the above implementation we did implement a tree of integers, but how would the implementation be if it was of non premetive data type?
 
-Now we will implement the same logic and code of the above tree but for employees:
+Now we will implement the same logic and code of the above tree but for **employees**:
 
 - Employee class:
 
@@ -246,6 +246,7 @@ public class Employee {
 - Node class
 
 ```java
+
 public class Node {
 
      // Data
@@ -277,10 +278,10 @@ public static void main(String[] args) {
 
 
         // Create Employees
-        Employee e1 = new Employee(1,"Ahmed","CEO");
+        Employee e1 = new Employee(03,"Ali","HR Manager");
         
         // Create an object of node
-        Node child = new Node(2);
+        Node child = new Node(e1);
 
 
         // Add child object to the root children (left/center/right).
@@ -288,16 +289,21 @@ public static void main(String[] args) {
 
 
         // print the root value (name)
-        System.out.println(root.name);
+        System.out.println(root.data.name);
         // print the left child value (name)
-        System.out.println(root.left.name);
+        System.out.println(root.left.data.name);
 
 
 }
 
 }
+```
 
-}
+Output:
+
+```java
+mohammed
+Ali
 ```
 
 
