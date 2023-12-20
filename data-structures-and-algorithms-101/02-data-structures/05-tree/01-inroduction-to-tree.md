@@ -144,12 +144,24 @@ class Tree{
         /* Implementation */
     }
 
+   // Access all tree nodes data and print vlaue inorder
+    public void printTreeValues(Node node) {
+        if (node != null) {
+          printTreeValues(node.left);
+          System.out.print(" " + node.key);
+          printTreeValues(node.right);
+        }
+        }
+
 
 }
 
 class Main {
     public static void main(String[] args) {
+
+   // Access all tree nodes data and print vlaue inorder
         Tree tree = new Tree();
+
         Node root = new Node(1);
         root.left =  new Node(2);
         root.right = new Node(3);
@@ -157,6 +169,19 @@ class Main {
         tree.addLeft(root.right, new Node(5));
 
     }
+
+Tree tree = new Tree();
+      
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+      
+        System.out.print("Pre order Traversal: ");
+        tree.traversePreOrder(tree.root);
+        System.out.print("\nIn order Traversal: ");
+        tree.traverseInOrder(tree.root);
+      
 }
 ```
 
