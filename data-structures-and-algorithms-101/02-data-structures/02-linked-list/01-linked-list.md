@@ -35,6 +35,16 @@ class Node {
     }
 }
 ```
+* Example of a non-primitive `Node` class that holds an **string** data type in c++.
+```c++
+class Node {
+public:
+    std::string data;
+    Node* next;
+
+    Node(const std::string& data) : data(data), next(nullptr) {}
+};
+```
 * Create a `LinkedList`, the class has a `pointer` to the **head** node, which is the starting point of the list.
 ```java
 class LinkedList {
