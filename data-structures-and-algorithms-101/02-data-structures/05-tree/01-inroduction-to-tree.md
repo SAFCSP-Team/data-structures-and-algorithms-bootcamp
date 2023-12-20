@@ -77,7 +77,7 @@ Output:
 ```
 
 
-- Now lets's see how to update the root node **data**? we will update the **data** to be (3).
+- - Accecc and update the **root** data to be (3)
 
 ```java
 root.number = 3;
