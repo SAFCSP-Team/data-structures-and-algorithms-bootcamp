@@ -29,12 +29,6 @@ As we explaind before, the tree is a collection of nodes, but what is the node? 
 Figure 3
 ![data representation](./images/Node-element.jpg)
 
-
-<p align="center">
-  <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Node-element.jpg"
-width="300" height="300" >
-</p>
-
 - `Node` class implementation:
 
 ```java
