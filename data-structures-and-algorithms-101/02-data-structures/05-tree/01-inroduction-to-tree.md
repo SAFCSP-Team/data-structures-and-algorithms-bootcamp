@@ -152,12 +152,63 @@ public class Node {
         root.number = 3;
 
 
+        // 1- Create an object of node
+        Node child = new Node(2);
+
+
+        // 2- Linke/add child object to the root children (left/center/right).
+        root.left = child;
+
+}
+
+}
+```
+In the above code we linked the child object to the root's of a **left** pointer, the **center** and **right** pointers is still pointing to null.
+
+- Now let's print the root and the left child values:
+
+```java
+
+public class Node {
+
+     // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
         // Create an object of node
         Node child = new Node(2);
 
 
         // Add child object to the root children (left/center/right).
         root.left = child;
+
+
+        // print the root value
+        root.left = child;
+
+        // print the left child value
+        root.left = child;
+
 
 }
 
