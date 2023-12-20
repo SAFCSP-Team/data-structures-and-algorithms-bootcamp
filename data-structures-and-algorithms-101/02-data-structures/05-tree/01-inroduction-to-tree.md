@@ -99,7 +99,8 @@ Output:
 2
 ```
 
-In the above implementation we did implement a tree of integers, but how would the implementation be if it was of non premetive data type?
+>In the above implementation we did implement a tree of integers
+
 
 Now we will implement the same logic and code of the above tree but for **employees**:
 
