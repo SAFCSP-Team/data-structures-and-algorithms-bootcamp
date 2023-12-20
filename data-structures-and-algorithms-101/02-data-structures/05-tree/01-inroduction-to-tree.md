@@ -245,7 +245,6 @@ public class Employee {
 
 - Node class
 
-Java code
 ```java
 public class Node {
 
@@ -288,35 +287,10 @@ public static void main(String[] args) {
         root.left = child;
 
 
-        // print the root value
-        System.out.println(root.number);
-        // print the left child value
-        System.out.println(root.left.number);
-
-
-
-
-
-        
-        // Create an object of node
-        Node root = new Node(1);
-
-        // Update the node data
-        root.number = 3;
-
-
-        // Create an object of node
-        Node child = new Node(2);
-
-
-        // Add child object to the root children (left/center/right).
-        root.left = child;
-
-
-        // print the root value
-        System.out.println(root.number);
-        // print the left child value
-        System.out.println(root.left.number);
+        // print the root value (name)
+        System.out.println(root.name);
+        // print the left child value (name)
+        System.out.println(root.left.name);
 
 
 }
