@@ -18,8 +18,6 @@ width="300" height="300" >
 </p>
 
 
-
-
 ## Concept
 
 A tree is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes.
@@ -45,7 +43,6 @@ width="300" height="300" >
 - `Node` class implementation:
 
 ```java
-
 public class Node {
 
     // Data
@@ -54,6 +51,15 @@ public class Node {
     Node left;
     Node center;
     Node right;
+
+    // Constructor
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
 }
 
 ```
