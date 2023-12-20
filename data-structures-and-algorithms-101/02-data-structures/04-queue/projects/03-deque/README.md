@@ -4,6 +4,18 @@
 
 In this project, we will cover the fundamentals of the `deque`, and it's operations.
 
+
+### Concepts
+
+Use the provided resources for a better understanding.
+
+
+| Concept                                        | Resources                                                                                                                                |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Understand the Deque                           | [Deque Introduction](https://www.youtube.com/watch?v=gXZt4P97UW4)                                                                        |
+| Understand how to implement deque linked list | [Deque Linked List Implementation](https://www.geeksforgeeks.org/implementation-deque-using-doubly-linked-list/?ref=header_search)      |
+| Understand how to implement deque array       | [Deque Array Implementation](https://www.programiz.com/dsa/queue#:~:text=A%20queue%20is%20a%20useful,item%20that%20comes%20out%20first.) |
+
 ### Problem
 
 Create a `deque` class using an `array` approach.
@@ -20,9 +32,9 @@ Write the implementation of the `DequeArray` class, to store the orders number o
    2. addLast()
    3. deleteFirst()
    4. deleteLast()
-3. In the main method, using the **addFirst()** method add **110** and **120** to the queue.
-4. using the **addLast()** method add **130** to the queue.
-5. Print the `front` and `rear` of the queue
+3. In the main method, using the **addFirst()** method add **110** and **120** to the `deque`.
+4. using the **addLast()** method add **130** to the `deque`.
+5. Print the `front` and `rear` of the `deque`.
 
 > Run the main method to verify the implementation.
 
