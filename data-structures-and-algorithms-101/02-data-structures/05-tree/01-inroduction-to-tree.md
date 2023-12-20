@@ -54,7 +54,7 @@ public class Node {
 ```
 
 
-- Now let's create an object of node with the name **root** in the main function.
+- Create an object of `node` with the name **root** in the main function.
 ```java
 public static void main(String[] args) {
 Node root = new Node(1);
@@ -64,6 +64,18 @@ Node root = new Node(1);
 >In the above code:     
 >**data**: The root node **data** is (1).   
 >**pointers**: At the moment the **pointers** is refrencing to (null) as there is no node children created yet.
+
+- Accecc the **root** data and print the root
+```java
+// print the root value
+System.out.println(root.number);
+```
+
+Output:
+```java
+1
+```
+
 
 - Now lets's see how to update the root node **data**? we will update the **data** to be (3).
 
