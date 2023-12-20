@@ -164,6 +164,13 @@ int dequeue() {
     }
 ```
 
+## Types of queue
+
+* **Linear Queue**: A linear `queue` is the most basic form of a `queue`, where elements are stored in a linear manner.
+* **Deque (Double-Ended Queue)**: It allows insertion and removal of elements from both ends.
+* **Circular Queue**: It arranges the data in a circular order where the rear end is connected with the front end.
+* **Priority Queue**: Elements with higher priority are dequeued before elements with lower priority. If elements with the same priority occur, they are served according to their order in the queue.
+
 ## Example
 
 another way to use queue is by using the built-in classes.
