@@ -158,7 +158,7 @@ Element at (1, 1): Name: Sarah Age: 28
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Two Dimensional Array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/projects/multi-dimensional-arrays/README.md) | - |
+| [Two Dimensional Array](https://github.com/SAFCSP-Team/multi-dimensional-arrays) | - |
 
 
 
