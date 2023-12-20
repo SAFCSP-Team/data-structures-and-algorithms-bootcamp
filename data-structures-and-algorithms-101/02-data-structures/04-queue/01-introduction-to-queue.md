@@ -1,6 +1,6 @@
 # Queue
 
-Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank, when we form a line the serving process will be much easier and controllable Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line.
+Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank. When we form a line the serving process will be much easier and controllable. Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line.
 
 ![1702812022182](images/01-introduction-to-queue/1702812022182.png)
 
@@ -12,6 +12,14 @@ We use the same concept in the data structure to organize the data in programs, 
 
 `Queue` is a **linear data structure**. `queue` are organized in a line/queue. The first element in the `queue` is called`head`. The end of the element in the `queue`is called the`tail`.
 
+> To implement a queue, you can use an `array` or a `linked list`.
+
+**Queue Array**
+
+![1703064728345](images/01-introduction-to-queue/1703064728345.png)
+
+**Queue Linked-list**
+
 ![1702810878533](images/01-introduction-to-queue/1702810878533.png)
 
 > Some resources refer to the first element in the queue as [head, front],
@@ -20,7 +28,7 @@ We use the same concept in the data structure to organize the data in programs, 
 
 **Queue Operation**
 
-Every new element will be added at the end of the `queue`. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
+Every new element will be added at the end of the queue. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
 
 ![1702810965330](images/01-introduction-to-queue/1702810965330.png)
 
@@ -37,16 +45,9 @@ Every new element will be added at the end of the `queue`. The first element in 
 
 To ensure that elements are processed in the order in which they were added, making it possible to manage tasks or requests in a systematic and predictable manner.
 
-> To implement a queue, you can use an `array` or a `linked list`.
-
-**Types of queue:**
-
-* **Linear Queue**: A linear `queue` is the most basic form of a `queue`, where elements are stored in a linear manner.
-* **Deque (Double-Ended Queue)**: It allows insertion and removal of elements from both ends.
-* **Circular Queue**: It arranges the data in a circular order where the rear end is connected with the front end.
-* **Priority Queue**: Elements with higher priority are dequeued before elements with lower priority. If elements with the same priority occur, they are served according to their order in the queue.
-
 ## Implementation
+
+In this section we will impelment the queue using `array`.
 
 ### Queue Array
 
@@ -92,7 +93,6 @@ To ensure that elements are processed in the order in which they were added, mak
 ```java
 queue.array[rear] = 50;
 ```
-
 
 <img width="300" alt="An element in the queue array" src="https://github-production-user-asset-6210df.s3.amazonaws.com/149315149/291831594-29388372-f231-45f3-b55b-959f56b29c25.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231220%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231220T083636Z&X-Amz-Expires=300&X-Amz-Signature=22cde6c46925b05f630b7ed0ddfb50a42eab260868f4fd584b70dffccf07674b&X-Amz-SignedHeaders=host&actor_id=149315149&key_id=0&repo_id=729945960">
 
