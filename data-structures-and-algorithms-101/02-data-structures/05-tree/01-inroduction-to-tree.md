@@ -53,6 +53,8 @@ public class Node {
 
 ```
 
+<br/>
+<br/>
 
 - Create an object of `node` with the name **root** in the main function.
 ```java
@@ -64,6 +66,8 @@ Node root = new Node(1);
 >**data**: _number_ = 1.   
 >**pointers**: _left_ , _center_ , _right_ = null. as there is no node children created yet.
 
+<br/>
+<br/>
 
 - Accecc the **root** data and print the root
 ```java
@@ -76,12 +80,17 @@ Output:
 1
 ```
 
+<br/>
+<br/>
 
-- - Accecc and update the **root** data to be (3)
+- Accecc and update the **root** data to be (3)
 
 ```java
 root.number = 3;
 ```
+
+<br/>
+<br/>
 
 - Now We will see how to create a child for the **root** node?   
 1 - Craete node object with the name **child**.   
@@ -96,6 +105,9 @@ root.left = child;
 
 ```
 >In the above code we linked the child object to the root's of a **left** pointer, the **center** and **right** pointers is still pointing to null.
+
+<br/>
+<br/>
 
 - Now let's print the root and the left child values:
 ```java
@@ -113,6 +125,8 @@ Output:
 
 >In the above implementation we did implement a tree of integers
 
+<br/>
+<br/>
 
 Now we will implement the same logic and code of the above tree but for **employees**:
 
