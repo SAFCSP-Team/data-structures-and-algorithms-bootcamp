@@ -15,11 +15,15 @@ A `linked list` is a **data structure** that consists of a **sequence of element
 
 ## Implementation
 
-The node contains the `data` and a `pointer`.
+In a `linked list`, a `node` represents an individual element in the sequence. Each node contains two main parts: the `data`, which stores the value associated with the node, and a `pointer` to the next node. The Node class captures this structure and provides the foundation for constructing linked lists.
 
-<img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/adec00c1-36eb-44f3-9ea8-7a9dbb34e5d9" width="280" height="180">
+                                                                                                                                                          
+  <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/c1c59d61-030a-41ec-89db-607d1fee63c3"
+ width="280" height="180">
 
-To create the `node` as a primitive type in java.
+Now, let's proceed with implementing the linked list data structure. We'll start by creating a `Node` class and then build the `LinkedList` class that manages the nodes and provides various operations to manipulate the list.
+
+* Create a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next Node in the linked list.
 ```java
 class Node {
     int data;
@@ -31,87 +35,40 @@ class Node {
     }
 }
 ```
-* We define a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next Node in the linked list.
-  
-To create the `node` as a non-primitive type in c++.
-```c++
-class Node {
-public:
-    std::string data;
-    Node* next;
-
-    Node(const std::string& data) {
-        this->data = data;
-        this->next = nullptr;
-    }
-};
-```
-
-Link node in java.
+* Create a `LinkedList`, the class has a pointer to the head node, which is the starting point of the list.
 
 ```java
-public class Main {
-    public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
-
-        linkedList.insert(10);
-```
-
-
-
-
-
-
-**Types of Linked List**:
-
-* `Single linked list`: A type of linked list that is unidirectional, it can be traversed in only **one direction** from `head` to the last node `tail`.
-     
-* `Double linked list`: It is a special type of linked list where each node contains a **pointer to the previous** node as well as the next node of the linked 
-   list.
-  
-* `Circular linked list`: Is a type of linked list in which the first and the last nodes are also **connected** to each other to form a circle.
-
-
-
-
-
-
-
-
-
-## Example 
-
-### Primitive 
-
-* linked list of primitive data types in Java.
-  
-```java
-public class Main {
-    public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
-        linkedList.insert(10);
-        linkedList.insert(20);
-        linkedList.display();
-    }
-}
-
-class Node {
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-
 class LinkedList {
     private Node head;
 
     LinkedList() {
         this.head = null;
     }
+}
+```
+* Create an instance of the LinkedList class and insert value.
 
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert(10);
+        linkedList.insert(60);
+        linkedList.insert(90);
+    }
+}
+```
+* Perform an action 
+  
+ ```java
+class LinkedList {
+    private Node head;
+
+    LinkedList() {
+        this.head = null;
+    }
+    /* insert a new element at the end of the linked list */
     public void insert(int data) {
         Node value = new Node(data);
 
@@ -125,7 +82,7 @@ class LinkedList {
             current.next = value;
         }
     }
-
+   /* to print the contents of the linked list */
     public void display() {
         if (head == null) {
             System.out.println("Linked list is empty.");
@@ -138,133 +95,45 @@ class LinkedList {
             System.out.println();
         }
     }
-}
-```
-* linked list of primitive data types in c++.
-```c++
-#include <iostream>
-
-class Node {
-public:
-    int data;
-    Node* next;
-
-    Node(int data) {
-        this->data = data;
-        this->next = nullptr;
-    }
-};
-
-class LinkedList {
-private:
-    Node* head;
-
-public:
-    LinkedList() {
-        this->head = nullptr;
+   /*  delete a specific element from the linked list */
+   public void delete(int data) {
+      if (head == null) {
+        System.out.println("Linked list is empty.");
+        return;
     }
 
-    void insert(int data) {
-        Node* node = new Node(data);
+    if (head.data == data) {
+        head = head.next;
+        return;
+    }
 
-        if (head == nullptr) {
-            head = node;
-        } else {
-            Node* current = head;
-            while (current->next != nullptr) {
-                current = current->next;
-            }
-            current->next = node;
+    Node current = head;
+    Node prev = null;
+    while (current != null) {
+        if (current.data == data) {
+            prev.next = current.next;
+            return;
         }
+        prev = current;
+        current = current.next;
     }
 
-    void display() {
-        if (head == nullptr) {
-            std::cout << "Linked list is empty." << std::endl;
-        } else {
-            Node* current = head;
-            while (current != nullptr) {
-                std::cout << current->data << " ";
-                current = current->next;
-            }
-            std::cout << std::endl;
-        }
-    }
-};
+    System.out.println(data + " not found in the linked list.");
+}
 
-int main() {
-    LinkedList linkedList;
-    linkedList.insert(10);
-    linkedList.insert(20);
-    linkedList.insert(30);
-    linkedList.insert(40);
-    linkedList.display();
-    return 0;
 }
 ```
-### Non-Primitive
-* linked list of non-primitive data types in Java.
-  
-```java
-public class Main {
-  public static void main(String[] args) {
-    LinkedListNode<String> head = new LinkedListNode<>(new String("Lama"));
-    LinkedListNode< String > second = new LinkedListNode<>(new String("Sara"));
-    LinkedListNode<String> third = new LinkedListNode<>(new String("Eman"));
-      head.next = second;
-      second.next = third;
-        /* Print the elements of the linked list */
-        LinkedListNode<String> current = head;
-        while (current != null) {
-            System.out.println(current.val);
-            current = current.next;
-        } }
-}
-
-class LinkedListNode<T> {
-    T val;
-    LinkedListNode<T> next;
-
-    LinkedListNode(T val) {
-        this.val = val;
-    } }
-```
-* linked list of non primitive data types in c++:
-  
-```c++
-#include <iostream>
-#include <string>
-
-struct Person {
-    std::string name;
-    Person(const std::string& n) : name(n) {}
-};
-
-struct PersonNode {
-    Person val;
-    PersonNode* next;
-    PersonNode(const Person& p) : val(p), next(nullptr) {}
-};
-
-void printPersonList(PersonNode* head) {
-    PersonNode* current = head;
-    while (current != nullptr) {
-        std::cout << "Name:  " << current-> val.name;
-        current = current->next;
-    }}
-
-int main() {
-    PersonNode* head = new PersonNode(Person("Lama"));
-    PersonNode* second = new PersonNode(Person("Noura"));
-    PersonNode* third = new PersonNode(Person("Lamyaa"));
-    head->next = second;
-    second->next = third;
-    /* Print the elements of the linked list */
-   printPersonList(head);
-}
-  ```
 > In java and c++, you can declare and initialize linked list in a similar way.
 
+
+**Types of Linked List**:
+
+* `Single linked list`: A type of linked list that is unidirectional, it can be traversed in only **one direction** from `head` to the last node `tail`.
+     
+* `Double linked list`: It is a special type of linked list where each node contains a **pointer to the previous** node as well as the next node of the linked 
+   list.
+  
+* `Circular linked list`: Is a type of linked list in which the first and the last nodes are also **connected** to each other to form a circle.
 
 ## Projects
 | Project Title | Deadline |
