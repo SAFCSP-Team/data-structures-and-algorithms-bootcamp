@@ -92,7 +92,7 @@ root.number = 3;
 <br/>
 <br/>
 
-- Tree class implementation:
+- `Tree` class implementation:
 
 1 - Create Tree.
 2 - Create tree root (node object).
