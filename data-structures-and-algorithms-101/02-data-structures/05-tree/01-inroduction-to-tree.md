@@ -92,99 +92,86 @@ root.number = 3;
 <br/>
 <br/>
 
-- Create a child for the **root** node
-1 - Craete node object with the name **child**.   
-2 - Link/add **child** object to the **root** children (left/center/right).
-
-```java
-
-// 1- Create an object of node
-Node child = new Node(2);
-// 2- Linke/add child object to the root children (left/center/right).
-root.left = child;
-
-```
-
-<br/>
-<br/>
-
-- Access and print the **root** and the **left** child data:
-```java
-// print the root value
-System.out.println(root.number);
-// print the left child value
-System.out.println(root.left.number);
-```
-
-Output:
-```java
-3
-2
-```
-
-<br/>
-<br/>
-
 - Tree class implementation:
+
+1 - Create Tree.
+2 - Create tree root (node object).
+3 - Accecc the root data and print it.
+4 - Accecc and update the **root** data to be (3).
+5 - Create root child (left child).
+6 - Print tree values
+
 
 ```java 
 
-class Tree{
-    /* properties */
-    Node root;
 
-    /* operations */
-    /* Add left child to a parent */
-    void addLeft(Node parent, Node node){
-        parent.left = node;
+public class Node {
+
+    // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+    Node(int number) {
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
     }
-
-    /* Add right child to a parent */
-    void addRightNode(Node parent, Node node){
-        /* Implementation */
-    }
-
-   // Access all tree nodes data and print vlaue inorder
-    public void printTreeValues(Node node) {
-        if (node != null) {
-          printTreeValues(node.left);
-          System.out.print(" " + node.key);
-          printTreeValues(node.right);
-        }
-        }
-
 
 }
 
-class Main {
+class Tree {
+
+    Node root;
+
+    Tree(int key) {
+        root = new Node(key);
+    }
+
+    Tree() {
+        root = null;
+    }
+
+    // Print tree values function
+    public void printTreeValues(Node node) {
+        if (node != null) {
+            printTreeValues(node.left);
+            System.out.println(" " + node.number);
+            printTreeValues(node.right);
+        }
+    }
+
     public static void main(String[] args) {
 
-   // Access all tree nodes data and print vlaue inorder
+        // 1 - Create Tree
         Tree tree = new Tree();
 
-        Node root = new Node(1);
-        root.left =  new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        tree.addLeft(root.right, new Node(5));
+        // 2 - Create tree root (node object)
+        tree.root = new Node(1);
+
+        // 3 - Accecc the root data and print it
+        System.out.println(tree.root);
+
+        // 4 - Accecc and update the **root** data to be (3)
+        tree.root.number = 3;
+
+        // 5 - Create root child (left child)
+        tree.root.left = new Node(2);
+
+        // 6 - Print tree values
+        System.out.println("Print tree values");
+        tree.printTreeValues(tree.root);
 
     }
 
-Tree tree = new Tree();
-      
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-      
-        System.out.print("Pre order Traversal: ");
-        tree.traversePreOrder(tree.root);
-        System.out.print("\nIn order Traversal: ");
-        tree.traverseInOrder(tree.root);
-      
 }
 ```
 
+>Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.
 
 Now we will implement the same logic and code of the above tree but for **employees**:
 
