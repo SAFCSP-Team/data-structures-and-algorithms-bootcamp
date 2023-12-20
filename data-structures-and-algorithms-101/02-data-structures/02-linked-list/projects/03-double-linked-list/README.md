@@ -32,7 +32,7 @@ public class Main {
         list.insertAtEnd(40);
 
         list.displayList();
-    }
+    }}
 public class Node {
     public int data;
     public Node previous;
@@ -78,6 +78,6 @@ public class DoublyLinkedList {
     }
 
 /* your code here */
-} }
+} 
 ```
 
