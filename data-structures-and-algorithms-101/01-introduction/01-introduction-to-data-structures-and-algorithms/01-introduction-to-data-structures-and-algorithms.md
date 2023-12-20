@@ -83,8 +83,6 @@ Look at the following image.
 
 > The empty pointers does not means it does not exist, pointers always exists but since we don't use them they get erased from the images. 
 
-<!-- Same concept applies on other data structures, such as linked list.  -->
-
 Now let us try to implement the data structure,
 
 ```Java
@@ -105,20 +103,6 @@ In the code above, we implemented the slice in <i>Image 1</i>, which is just a n
 
 Create and link elements,
 ```java 
-
-class Node{
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data){
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
-
 class Main {
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -132,48 +116,19 @@ class Main {
 Perform an action on the complete tree,
 ```java 
 
-class Node{
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data){
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 class Tree{
     /* properties */
     Node root;
 
     /* operations */
-
-    /* Add a node to a parent */
+    /* Add left child to a parent */
     void addLeft(Node parent, Node node){
-        /* Implementation */
-    }
-    void addRightNode parent, Node node){
-        /* Implementation */
+        parent.left = node;
     }
 
-    /* Traverse the tree pre-order */
-    void preOrderTraverse(Node node){
+    /* Add right child to a parent */
+    void addRightNode(Node parent, Node node){
         /* Implementation */
-        }
-
-    /* Traverse the tree post-order */
-    void postOrderTraverse(Node node){
-        /* Implementation */
-    }
-
-    /* Traverse the tree in-order */
-    void inOrderTraverse(Node node){
-        if(node == null) return;
-        inOrderTraverse(node.left);
-        inOrderTraverse(node.right);
-        System.out.println(node.data);
     }
 }
 
@@ -184,19 +139,12 @@ class Main {
         root.left =  new Node(2);
         root.right = new Node(3);
         root.left.left = new Node(4);
-
-        tree.inOrderTraverse(root);
+        tree.addLeft(root.right, new Node(5));
 
     }
 }
 ```
 
-```
-4
-2
-3
-1
-```
  > The code above is used for learning purposes only.
 
 As you can see, since the `slice` was ready, we used it to create nodes, link it to each others and even applied the operations on it. This concludes that by focusing only on the repetitive part (which is the **slice**) that forms the pattern, we simplified our thinking and handling of data structures.

@@ -4,20 +4,19 @@
 
 In this project, we will cover the fundamentals of the queue.
 
-
 ### Problem
 
-Create a queue class using an array-based approach.
+Create a `queue` class using an array-based approach.
 
 ### Implementation
 
-Write the implementation of the queue class to store the invoice number.
-1. Create a Queue class using an array-based approach that contains two methods: enQueue and display.
+Write the implementation of the `queue` class to store the invoice number.
+
+1. Create a `queue `class using an array-based approach that contains two methods: enQueue and display.
 2. The `enQueue` method allows to add a new element.
 3. The `display` method print all element in the queue.
 
-> Run the main method to verify the implementation. 
-
+> Run the main method to verify the implementation.
 
 ````Java
 public class QueueArray {

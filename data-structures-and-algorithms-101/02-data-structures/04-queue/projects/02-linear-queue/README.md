@@ -26,8 +26,7 @@ Write the implemenation of the `queue` to store the orders.
 1. Create either queue array or queue linked list.
 2. In the main method, add the follwoing orders `["black coffe", "latte"]`.
 3. Remove/`Dequeue` the two orders, then add another orders which are `["mocca", "espreso", "americano"]`
-4. Print the of the current orders.
-5. Finally print the value of `head` and the value of `tail`.
+4. Finally print the value of `head` and the value of `tail`.
 
 ````Java
 public class Main {

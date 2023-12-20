@@ -12,6 +12,13 @@ Figure 1
 ![data representation](./images/Company-employees-tree.jpg)
 
 
+<p align="center">
+  <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Company-employees-tree.jpg"
+width="300" height="300" >
+</p>
+
+
+
 
 ## Concept
 
@@ -30,7 +37,12 @@ Figure 3
 ![data representation](./images/Node-element.jpg)
 
 
-`Node` class implementation:
+<p align="center">
+  <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Node-element.jpg"
+width="300" height="300" >
+</p>
+
+- `Node` class implementation:
 
 ```java
 
@@ -38,14 +50,304 @@ public class Node {
 
     // Data
     int number;
-    // Pointer
-    ArrayList<Node> children = new ArrayList<Node>();
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+}
+
+```
+
+The above code is representing a `node` of integer **data** type and the **pointers** as references to the nodes children.   
+The node here have only 3 pointers that means it can have only 3 children
+
+- Now let's add a constructor to the `node` class and create an object of node with the name **root** in the main function.
+```java
+
+public class Node {
+
+    // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+}
 
 }
 
 ```
 
+In the above code:     
+The node **data** is (1).  
+At the moment the **pointers** is refrencing to (null) as there is no node children created yet.  
 
+- Now lets's see how to update the node **data**? we will update the **data** to be (3).
+
+```java
+
+public class Node {
+
+     // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
+}
+
+}
+
+```
+
+- Now We will see how to create a child for the **root** node?   
+1 - Craete node object with the name **child**.   
+2 - Link/add **child** object to the **root** children (left/center/right).
+
+```java
+
+public class Node {
+
+     // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
+        // 1- Create an object of node
+        Node child = new Node(2);
+
+
+        // 2- Linke/add child object to the root children (left/center/right).
+        root.left = child;
+
+}
+
+}
+```
+In the above code we linked the child object to the root's of a **left** pointer, the **center** and **right** pointers is still pointing to null.
+
+- Now let's print the root and the left child values:
+
+```java
+
+public class Node {
+
+     // Data
+    int number;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+    Node(int number){
+        this.number = number;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+ public static void main(String[] args) {
+        
+        // Create an object of node
+        Node root = new Node(1);
+
+        // Update the node data
+        root.number = 3;
+
+
+        // Create an object of node
+        Node child = new Node(2);
+
+
+        // Add child object to the root children (left/center/right).
+        root.left = child;
+
+
+        // print the root value
+        System.out.println(root.number);
+        // print the left child value
+        System.out.println(root.left.number);
+
+
+}
+
+}
+```
+
+Output:
+
+```java
+3
+2
+```
+
+In the above implementation we did implement a tree of integers, but how would the implementation be if it was of non premetive data type?
+
+Now we will implement the same logic and code of the above tree but for **employees**:
+
+- Employee class:
+
+```java
+public class Employee {
+    int id;
+    String name;
+    String role;
+
+    Employee(int id, String name, String role){
+        this.id = id;
+        this.name = name;
+        this.role = role;
+    }
+  
+}
+```
+
+
+- Node class
+
+```java
+
+public class Node {
+
+     // Data
+    Employee data;
+    // Pointers
+    Node left;
+    Node center;
+    Node right;
+
+    // Constructor
+ Node(Employee e) {
+  data = e;
+  left = null;
+  center = null;
+  right = null;
+  }
+
+public static void main(String[] args) {
+
+        // Create Employees
+        Employee e = new Employee(01,"Ahmed","CEO");
+        
+        // Create an object of node
+        Node root = new Node(e);
+
+        // Update the node data (1- change name) (2- change id)
+        root.data.name = "mohammed";
+        root.data.id = 02;
+
+
+        // Create Employees
+        Employee e1 = new Employee(03,"Ali","HR Manager");
+        
+        // Create an object of node
+        Node child = new Node(e1);
+
+
+        // Add child object to the root children (left/center/right).
+        root.left = child;
+
+
+        // print the root value (name)
+        System.out.println(root.data.name);
+        // print the left child value (name)
+        System.out.println(root.left.data.name);
+
+
+}
+
+}
+```
+
+Output:
+
+```java
+mohammed
+Ali
+```
+
+
+- **Tree traversal**
+
+The process of visiting required node to perform special operation or visiting each node and print their values.
+
+There are three ways to travers tree:
+
+1- Pre-order traversal
+
+- Visit the root node
+- Visit all nodes from the left side
+- Visit all node from the right side
+- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
+
+2- In-order traversal
+
+- Visit all nodes from the left side
+- Visit the root node
+- Visit all node from the right side
+- Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
+
+
+3- Post-order traversal
+
+- Visit all nodes from the left side
+- Visit all node from the right side
+- Visit the root node
+- Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
+
+<br/>
 
 
 - **Types of tree**
@@ -76,159 +378,6 @@ public class Node {
 5 - B-tree
 - A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
 
-
-## Example 
-This implementation is for general tree, the node can have multiple children.
-
-### Primitive 
-
-In this example we will create a `tree` of integers.
-
-Node class consists of 2 attributes: `int number`,  `ArrayList children` to store the node children and a `constructor` that takes a value as a parameter and assigne it to the `number` attribute.
-
-
-- TreeNode class
-
-Java code
-```java
-import java.util.ArrayList;
-
-
-public class TreeNode {
-
-    // Node Data
-    int number;
-    // Node Children
-    ArrayList<TreeNode> children = new ArrayList<TreeNode>();
-
-    // Constructor to create the node
-    TreeNode(int number){
-        this.number = number;
-    }
-
-    public static void main(String[] args) {
-        
-        // Create the root
-        TreeNode root = new TreeNode(1);
-
-        // Create TreeNodes
-        TreeNode child1 = new TreeNode(2);
-        TreeNode child2 = new TreeNode(3);
-        TreeNode child3 = new TreeNode(4);
-
-        // Add the TreeNodes as the root children
-        root.children.add(child1);
-        root.children.add(child2);
-        root.children.add(child3);
-
-        // Print the root and the children data
-        System.out.println(root.number);
-        System.out.println(root.children.get(0).number);
-        System.out.println(root.children.get(1).number);
-        System.out.println(root.children.get(2).number);
-
-    }
-
-    
-}
-```
-
-Output:
-```java
-1
-2
-3
-4
-```
-
-
-
-### non-primitive
-
-In this example we will create a `tree` of employees.
-
-- Employee class
-
-Java code
-```java
-class Employee {
-
-    int id;
-    String name;
-    String role;
-
-    Employee(int id, String name, String role){
-        this.id = id;
-        this.name = name;
-        this.role = role;
-    }
-  
-}
-
-```
-
-
-Tree class consists of 1 attributes: `Employee employee` and a `constructor` that takes `employee` as a parameter and assigne it to the `employee` attribute.
-
-
-- TreeNode class
-
-Java code
-```java
-
-public class TreeNode {
-
-    // Node Data
-    Employee employee;
-    // Node Children
-    ArrayList<TreeNode> children = new ArrayList<TreeNode>();
-
-    // Constructor to create the node
-    TreeNode(Employee e){
-        this.employee = e;
-    }
-
-    public static void main(String[] args) {
-
-        // Create Employees
-        Employee e = new Employee(01,"Ahmed","CEO");
-        Employee e1 = new Employee(02,"Ali","IT Managaer");
-        Employee e2 = new Employee(03,"Abdullah","HR Manager");
-        Employee e3 = new Employee(04,"Mohammed","Finance Manager");
-        
-        // Create the root
-        TreeNode root = new TreeNode(e);
-
-        // Create TreeNodes
-        TreeNode child1 = new TreeNode(e1);
-        TreeNode child2 = new TreeNode(e2);
-        TreeNode child3 = new TreeNode(e3);
-
-        // Add the TreeNodes as the root children
-        root.children.add(child1);
-        root.children.add(child2);
-        root.children.add(child3);
-
-        // Print the root and the children names
-        System.out.println(root.employee.name);
-        System.out.println(root.children.get(0).employee.name);
-        System.out.println(root.children.get(1).employee.name);
-        System.out.println(root.children.get(2).employee.name);
-
-    }
-
-    
-}
-
-```
-
-Output:
-```java
-Ahmed
-Ali
-Abdullah
-Mohammed
-```
 
 ## Projects
 

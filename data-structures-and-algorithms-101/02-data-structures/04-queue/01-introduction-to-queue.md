@@ -10,7 +10,7 @@ We use the same concept in the data structure to organize the data in programs, 
 
 ## Concept
 
-`Queue` is a **linear data structure**. `queue` are organized in a line/queue the first element in the queue is called`head`. The end of the element in the queue is called the `tail`.
+`Queue` is a **linear data structure**. `queue` are organized in a line/queue. The first element in the `queue` is called`head`. The end of the element in the `queue`is called the`tail`.
 
 ![1702810878533](images/01-introduction-to-queue/1702810878533.png)
 
@@ -20,7 +20,7 @@ We use the same concept in the data structure to organize the data in programs, 
 
 **Queue Operation**
 
-Every new element will be added at the end of the queue. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
+Every new element will be added at the end of the `queue`. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
 
 ![1702810965330](images/01-introduction-to-queue/1702810965330.png)
 
@@ -30,8 +30,8 @@ Every new element will be added at the end of the queue. The first element in th
 
 > Each programming language has different names for enqueue and dequeue operations.
 >
-> * enqueue = push / addFirst / insert
-> * dequeue = pop / removeLast /delete
+> * enqueue = push / addFirst / insert.
+> * dequeue = pop / removeLast /delete.
 
 **Why do we use a queue?**
 
@@ -46,7 +46,136 @@ To ensure that elements are processed in the order in which they were added, mak
 * **Circular Queue**: It arranges the data in a circular order where the rear end is connected with the front end.
 * **Priority Queue**: Elements with higher priority are dequeued before elements with lower priority. If elements with the same priority occur, they are served according to their order in the queue.
 
+## Implementation
+
+### Queue Array
+
+1. Declare the `queue array`, by creating a class, with the following attributes.
+   ```java
+   class QueueArray {
+       int array[];
+       int front;
+       int rear;
+       int size;
+
+       public QueueArray(int size) {
+           array = new int[size];
+           front = -1;
+           rear = -1;
+           this.size = size;
+       }
+
+
+       public static void main(String[] args) {
+
+
+       }
+   }
+   ```
+
+> We have declared the `front` which has the index of the first element and `rear` which has the last element, to easily do the operations.
+
+2. Create an object from `DequeArray` and insert an element.
+
+   ```java
+   public static void main(String[] args) {
+
+           QueueArray queue = new QueueArray(4);
+           queue.front++;
+           queue.rear++;
+           queue.array[rear] = 1;
+
+   }
+   ```
+3. Update the element value.
+
+```java
+queue.array[rear] = 50;
+```
+
+
+<img width="300" alt="An element in the queue array" src="https://github-production-user-asset-6210df.s3.amazonaws.com/149315149/291831594-29388372-f231-45f3-b55b-959f56b29c25.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231220%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231220T083636Z&X-Amz-Expires=300&X-Amz-Signature=22cde6c46925b05f630b7ed0ddfb50a42eab260868f4fd584b70dffccf07674b&X-Amz-SignedHeaders=host&actor_id=149315149&key_id=0&repo_id=729945960">
+
+> Now we have created an element in the `queue`
+
+4. To make the insertion and deletion easy, we declare a methods `enqueue` and `dequeue`.
+   **`enqueue` method:**
+
+```java
+void enqueue(int item) {
+        if ((front == 0 && rear == size - 1) || front == rear + 1) {
+            System.out.println("Overflow");
+            return;
+        }
+
+        if (front == -1) {
+            front = 0;
+            rear = 0;
+        }
+
+        else if (front == 0)
+            front = size - 1;
+
+        else
+            front = front - 1;
+
+        array[front] = item;
+    }
+
+    public static void main(String[] args) {
+
+        QueueArray queue = new QueueArray(2);
+        queue.enqueue(10);
+
+    }
+```
+
+**`dequeue` method**:
+
+```java
+int dequeue() {
+        if (front == -1) {
+            System.out.println("Underflow");
+            return -1;
+        }
+
+        int item = array[front];
+
+        if (front == rear) {
+            front = -1;
+            rear = -1;
+        }
+
+        else if (front == size - 1)
+            front = 0;
+
+        else
+            front = front + 1;
+
+        return item;
+    }
+
+    public static void main(String[] args) {
+
+        QueueArray queue = new QueueArray(2);
+        queue.enqueue(10);
+        System.out.println(queue.dequeue());
+
+    }
+```
+
+## Types of queue
+
+* **Linear Queue**: A linear `queue` is the most basic form of a `queue`, where elements are stored in a linear manner.
+* **Deque (Double-Ended Queue)**: It allows insertion and removal of elements from both ends.
+* **Circular Queue**: It arranges the data in a circular order where the rear end is connected with the front end.
+* **Priority Queue**: Elements with higher priority are dequeued before elements with lower priority. If elements with the same priority occur, they are served according to their order in the queue.
+
 ## Example
+
+another way to use queue is by using the built-in classes.
+
+> Some programming language doesn't have built-in class to support queue.
 
 ### Primitive
 
@@ -156,7 +285,6 @@ public class Main {
 #### C++
 
 ````cpp
-
 #include <iostream>
 #include <queue>
 
@@ -190,9 +318,9 @@ int main() {
 ## Projects
 
 
-| Project ID         | Project Title   | Deadline |
-| ------------------- | --------------- | -------- |
-| DSAProject01Queue01 | Linear Queue    |          |
-| DSAProject01Queue02 | Circular Queue |          |
-| DSAProject01Queue03 | Deque           |          |
-| DSAProject01Queue04 | Priority Queue  |          |
+| Project ID          | Project Title  | Deadline |
+| ------------------- | -------------- | -------- |
+| DSAProject01Queue01 | Linear Queue   |          |
+| DSAProject01Queue02 | Circular Queue |          |
+| DSAProject01Queue03 | Deque          |          |
+| DSAProject01Queue04 | Priority Queue |          |

@@ -7,6 +7,7 @@ It is important to note that an organized library significantly improves the eas
 In computer programming, in most cases, there is a need to **store a large number of similar data**. for example, books or weekdays. So, instead of using different variable names to represent each value, it is **better to define an array and store all the elements in it** to significantly improve the ease of dealing with data.
 
 `Array`: is a collection of similar data items grouped together.
+
 - Arrays can store **primitive** data types or **non-primitive** data type.
 - The `length` of an array refers to the **number of elements** contained within the array.
 - An array is **simple data structure** where each data element can be randomly **accessed** using its **index number**.
@@ -16,61 +17,73 @@ In computer programming, in most cases, there is a need to **store a large numbe
 
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-01.png">
 
+## Implementation 
+Before implementing the five-element vowel array, let us try to implement part of it. For example, let us create an array that contains only the letter A.
+
+<img width="910" alt="Introduction to Arrays-02" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-02.png">
+
+To create an array, you first need to declare it. You specify the type of elements it will hold and give it a name. 
+
+In our case, the name of the array is **vowels** and its type is **char**.
+```java
+char[] vowels;
+```
+After declaring an array, you must allocate memory for it and specify its size. 
+
+```java
+vowels = new char[1];
+```
+> Or you can combine the previous two steps into one step, declaring the array and specifying its size.
+```java
+char[] vowels = new char[1];
+```
+
+Now you can assign the value of 'A' to the array. Remember Each element in the array has an index, starting from 0 for the first element.
+
+```java
+vowels[0] = 'A';
+```
+We have added a capital letter A in the array. If you want to change the value to be similar to what is in the picture, you can access the elements of the array using its index and change the value.
+
+```java
+vowels[0] = 'a';
+```
+Great, we have created the array and added the element to it, but what would change if we wanted to create the complete array with the five elements?
+```java
+char[] vowels = new char[5];
+
+// Assigning values to the array elements
+vowels[0] = 'a";
+vowels[1] = 'e';
+vowels[2] = 'i';
+vowels[3] = 'o';
+vowels[4] = 'u';
+```
+As you noticed, nothing changed except the size of the array. Instead of 1, it became 5.
+
+There are also different ways to create the array, such as creating it and adding elements to it in one step.
+```java
+char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+```
+Also, your array might contain a complex type or what we call a non-primitive data type. For example, the array contains objects of the Person class.
+```java
+Person[] peopleArray;
+```
+To perform any operations on each element of an array, you can use loops. For example, to print all the elements of the "vowels" array:
+```java
+for (int i = 0; i < vowels.length; i++) {
+    System.out.println(vowels[i]);
+}
+```
+
+## Types
 Types of arrays based on their dimensions :
 
 - `One-Dimensional Arrays`: These are the simplest and most common type of arrays. Elements are arranged in a **single row**.
 - `Multi-Dimensional Array`: Has **more than one dimension**. It can have two or more dimensions in rows and columns, similar to a 3D object. The most common type of multi-dimensional array is a two-dimensional array.
 
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-02.png">
+<img width="910" alt="Introduction to Arrays-03" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/images/Introduction%20to%20Arrays-03.png">
 
-## Example 
-
-### Primitive 
-- Arrays of primitive data types in Java:
-
-```java
-public static void main(String[] args) {
-    int numbers[] = {1, 2, 3, 4, 5};
-    double grades[] = {85.5, 90.0, 77.5, 92.5};
-    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
-}
-```
-
-- Arrays of primitive data types in C++ :
-```c++
-int main() {
-   int numbers[] = {1, 2, 3, 4, 5};
-   double grades[] = {85.5, 90.0, 77.5, 92.5};
-   char vowels[] = {'a', 'e', 'i', 'o', 'u'};
-   return 0;
-}
-```
-> In C++ and java, you can declare and initialize arrays similarly. 
-
-### Non-primitive
-Consider a class called "Person" that represents a person's name and age. 
-
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/Person.java)objects in Java.
-
-``` java
-public static void main(String[] args) {
-   Person[] peopleArray = new Person[3];
-   peopleArray[0] = new Person("Alice", 25);
-   peopleArray[1] = new Person("Bob", 30);
-   peopleArray[2] = new Person("Charlie", 35);
-}
-```
-- Array of [Person](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/code/person.cpp) objects in C++.
-```C++
-int main() {
-    Person peopleArray[] = {
-          Person("John", 25),
-          Person("Alice", 30),
-          Person("Bob", 35)
-    };
-    return 0;
-}
-```
 ## Projects
 
 |Project Title | Deadline |
