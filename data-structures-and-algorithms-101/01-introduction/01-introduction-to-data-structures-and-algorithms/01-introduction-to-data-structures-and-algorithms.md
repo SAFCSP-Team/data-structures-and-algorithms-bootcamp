@@ -72,16 +72,16 @@ The concept of pointers is crucial, and as you saw we can form different organiz
 
 #### Perspective
 
-Usually, when we face a new problem leading us to use a data structure, we think of the implementation as a **whole data structure** being implemented and its operations is performed on this complete data structure. But, what we don't know about is a way of thinking about data structure that can simplify the process greatly.
+Usually, when we face a new problem leading us to use a data structure, we think of the implementation as a **whole data structure** being implemented and its operations are performed on this complete data structure. But, what we don't know about is a way of thinking about data structure that can simplify the process greatly.
 
 As we covered earlier, data structures consist of two main components, a **node** and **pointers**. If we take these components and understand how they are related we can be comfortable using and implementing data structures.
 
 Look at the following image. 
 ![slice-pattern](./images/slice-pattern.jpg)
 
-(<i>Image 1</i>) let us call it a `slice`, represent each node in a binary tree data structure, which means each node have two pointers, one for the left child the the other for the right child. Each node in the tree uses the same **pattern**. If we duplicated the `slice` (<i>Image 2</i>) and linked them together using pointers, we can then have a complete tree (<i>Image 3</i>).
+(<i>Image 1</i>) let us call it a `slice`, representing each node in a binary tree data structure, which means each node has two pointers, one for the left child the the other for the right child. Each node in the tree uses the same **pattern**. If we duplicated the `slice` (<i>Image 2</i>) and linked them together using pointers, we can then have a complete tree (<i>Image 3</i>).
 
-> The empty pointers does not means it does not exist, pointers always exists but since we don't use them they get erased from the images. 
+> The empty pointers do not mean it does not exist, pointers always exist but since we don't use them they get erased from the images. 
 
 Now let us try to implement the data structure,
 
@@ -99,7 +99,7 @@ class Node{
 }
 
 ```
-In the code above, we implemented the slice in <i>Image 1</i>, which is just a node with two pointers. This slice can be used now to create tree nodes and link them together to build the complete tree data structure and perform actions on it as the following.
+In the code above, we implemented the slice in <i>Image 1</i>, which is just a node with two pointers. This slice can be used now to create tree nodes and link them together to build the complete tree data structure and perform actions on it as follows.
 
 Create and link elements,
 ```java 
@@ -147,9 +147,14 @@ class Main {
 
  > The code above is used for learning purposes only.
 
-As you can see, since the `slice` was ready, we used it to create nodes, link it to each others and even applied the operations on it. This concludes that by focusing only on the repetitive part (which is the **slice**) that forms the pattern, we simplified our thinking and handling of data structures.
+As you can see, since the `slice` was ready, we used it to create nodes, link them to each other, and even apply the operations on it. This concludes that by focusing only on the repetitive part (which is the **slice**) that forms the pattern, we simplified our thinking and handling of data structures.
 
-Additionally, we can apply same perspective on `linked list` or any other data structure. By focusing on the slice and its pattern.
+Take a look the the image below,
+![slice-code](./images/slice-code.jpg)
+
+Did you notice something? All our focus in coding was handling the slice itself. Once we created the structure of node we used it to perform all other operations on the data structure. As an example, if we want to print the entire data structure we will first start from the first node or element, print its data, and then follow the pointers to find other elements and print them as well. Thus, all our focus was on handling a single slice at a time.
+
+Additionally, we can apply the same perspective on a `linked list` or any other data structure. By focusing on the slice and its pattern.
 
 ![linked-list-slice-pattern](./images/linked-list-slice-pattern.jpg)
 ### Manipulate 
