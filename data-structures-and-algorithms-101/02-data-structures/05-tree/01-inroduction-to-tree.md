@@ -105,26 +105,7 @@ root.number = 3;
 ```java 
 
 
-public class Node {
-
-    // Data
-    int number;
-    // Pointers
-    Node left;
-    Node center;
-    Node right;
-
-    // Constructor
-    Node(int number) {
-        this.number = number;
-        this.left = null;
-        this.center = null;
-        this.right = null;
-    }
-
-}
-
-class Tree {
+public class Tree {
 
     Node root;
 
