@@ -12,6 +12,13 @@ Figure 1
 ![data representation](./images/Company-employees-tree.jpg)
 
 
+<p align="center">
+  <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Company-employees-tree.jpg"
+width="300" height="300" >
+</p>
+
+
+
 
 ## Concept
 
