@@ -6,7 +6,7 @@ Let's say there are two cards in the treasure hunt, the first card would contain
 
 To simulate the treasure hunt in our program, we need to use a `linked list` to represent the sequence of cards, each card is like a `node`. Each `node` **contains two parts**, the information about the card itself and a `pointer`(or reference) to the next card in the list.
 
-## Concep
+## Concept
 
 A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. Each node contains the `data` and a `pointer` to the next node in the sequence. The last node in the list has a pointer to null, `tail` indicates the end of the list.
 
@@ -23,7 +23,7 @@ In a `linked list`, a node represents an individual element in the sequence, whi
 
 Now, let's proceed with implementing the linked list data structure. We'll start by creating a `Node` class and then build the `LinkedList` class that manages the nodes and provides various operations to manipulate the list.
 
-* Create a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next `Node` in the linked list.
+* Create a `Node` class that holds an **integer** data type. The data variable stores the integer value, and the next variable is a reference to the next `Node` in the linked list. (primitive)
 ```java
 class Node {
     int data;
@@ -35,17 +35,40 @@ class Node {
     }
 }
 ```
-* Example of a non-primitive `Node` class that holds an **string** data type in c++.
-```c++
+* The `Node` class holds a reference to a Student object and another Node object. (non-primitive).
+```java
 class Node {
-public:
-    std::string data;
-    Node* next;
+    public Student data;
+    public Node next;
 
-    Node(const std::string& data) : data(data), next(nullptr) {}
-};
+    public Node(Student data) {
+        this.data = data;
+        this.next = null;
+    }
+}
 ```
-* Create a `LinkedList`, the class has a `pointer` to the **head** node, which is the starting point of the list.
+* The `Student` class that represents a student with a name and an age.
+```java
+class Student {
+    private String name;
+    private int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+```
+* Create a `LinkedList`, the class has a `pointer` to the **head** node, which is the starting point of the list. (primitive)
 ```java
 class LinkedList {
     private Node head;
@@ -55,7 +78,32 @@ class LinkedList {
     }
 }
 ```
-* Create an instance and link the first node to LinkedList.
+*  Create a `LinkedList`, the class manages the insertion and display operations on the linked list. (non-primitive)
+  
+```java
+class LinkedList {
+    public Node head;
+
+    public LinkedList() {
+        head = null;
+    }
+
+    public void insert(Student data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+    }
+
+```
+* Create an instance and link the first node to LinkedList. (primitive)
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -68,9 +116,19 @@ public class Main {
         linkedList.head = firstNode;
     }
 }
-
 ```
-* Perform an action 
+* Create an instance and link the first node to LinkedList. (non-primitive)
+```java
+public class Main {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+
+        Student student1 = new Student("John", 20);
+    }
+}
+```
+
+* Perform an action (primitive)
   
  ```java
 class LinkedList {
@@ -134,6 +192,59 @@ class LinkedList {
 
 }
 
+```
+* Perform an action. (non-primitive)
+```java
+class LinkedList {
+    public Node head;
+
+    public LinkedList() {
+        head = null;
+    }
+
+    public void insert(Student data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+    }
+
+    public void display() {
+        if (head == null) {
+            System.out.println("Linked list is empty.");
+            return;
+        }
+
+        Node current = head;
+        while (current != null) {
+            System.out.println("Name: " + current.data.getName() + ", Age: " + current.data.getAge());
+            current = current.next;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+
+        Student student1 = new Student("John", 20);
+        Student student2 = new Student("Jane", 22);
+        Student student3 = new Student("Alex", 19);
+
+        linkedList.insert(student1);
+        linkedList.insert(student2);
+        linkedList.insert(student3);
+
+        linkedList.display();
+    }
+}
 ```
 > In java and c++, you can declare and initialize linked list in a similar way.
 
