@@ -154,7 +154,7 @@ public class Tree {
 
 ```
 
->Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.\\
+>Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.
 
 Output:
 ```java
@@ -164,6 +164,12 @@ Print tree values
 2
 3
 ```
+
+`Tree` after running the above code:
+
+Figure 4
+![data representation](./images/Tree-intro-ex.jpg)
+
 
 <br/>
 <br/>
