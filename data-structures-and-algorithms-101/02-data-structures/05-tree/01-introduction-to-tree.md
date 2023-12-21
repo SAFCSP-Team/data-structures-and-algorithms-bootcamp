@@ -93,7 +93,7 @@ root.number = 3;
 <br/>
 
 Since the node creating is covered.
-Now we will explain how to **implement the complete tree**, and **linking nodes together** and **perform operations on it**.
+Now we will explain how to **implement the complete tree**, **linking nodes together** and **perform operations on it**.
 
 - `Tree` class implementation:
 
