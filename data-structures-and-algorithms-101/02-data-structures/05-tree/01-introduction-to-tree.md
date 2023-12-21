@@ -178,7 +178,7 @@ Figure 4
 <br/>
 
 - `Tree` Implementation with non-premitive data type.   
-We will follow the same logic, steps and code of the above tree but for **employees**
+We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
 
 - `Employee` class:
 
