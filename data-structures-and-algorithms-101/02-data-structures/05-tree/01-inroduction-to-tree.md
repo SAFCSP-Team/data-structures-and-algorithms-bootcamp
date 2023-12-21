@@ -168,7 +168,7 @@ Print tree values
 3
 ```
 
-`Tree` after running the above code:
+After running the previous code, the `Tree` will look like the following (figure 4).
 
 Figure 4
 ![data representation](./images/Tree-intro-ex.jpg)
