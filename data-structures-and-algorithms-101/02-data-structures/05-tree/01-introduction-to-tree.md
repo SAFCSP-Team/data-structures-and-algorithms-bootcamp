@@ -92,7 +92,7 @@ root.number = 3;
 <br/>
 <br/>
 
-Since the node creating is covered.
+Since the node class is covered.
 Now we will explain how to **implement the complete tree**, **linking nodes together** and **perform operations on it**.
 
 - `Tree` class implementation:
