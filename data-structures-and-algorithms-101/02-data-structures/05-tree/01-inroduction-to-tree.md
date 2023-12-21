@@ -92,6 +92,9 @@ root.number = 3;
 <br/>
 <br/>
 
+Since the node creating is covered.
+Now we will explain how to **implement the complete tree**, and **linking nodes together** and **perform operations on it**.
+
 - `Tree` class implementation:
 
 1 - Create Tree.  
