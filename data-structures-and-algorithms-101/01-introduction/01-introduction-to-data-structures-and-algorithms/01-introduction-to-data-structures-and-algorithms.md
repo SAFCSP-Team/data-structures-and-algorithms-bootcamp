@@ -122,8 +122,16 @@ class Tree{
 
     /* operations */
     /* Add left child to a parent */
-    void addLeft(Node parent, Node node){
-        parent.left = node;
+    void addLeft(Node node){
+         if(this.root == null ) {
+            this.root = node;
+        }else{
+            Node parent = this.root;
+            while (parent.left != null){
+                parent = parent.left;
+            }
+            parent.left = node;
+        }
     }
 
     /* Add right child to a parent */
@@ -132,15 +140,11 @@ class Tree{
     }
 }
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Tree tree = new Tree();
-        Node root = new Node(1);
-        root.left =  new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        tree.addLeft(root.right, new Node(5));
-
+        tree.addLeft(new Node(5));
+        tree.addLeft(new Node(3));
     }
 }
 ```
