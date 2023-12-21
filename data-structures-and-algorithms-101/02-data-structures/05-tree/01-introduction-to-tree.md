@@ -100,7 +100,7 @@ Now we will explain how to **implement the complete tree**, **linking nodes toge
 1 - Create Tree.  
 2 - Create tree root (node object).  
 3 - Access the _root_ data and print it.  
-4 - Access and update the _root_ data to be (3).  
+4 - Update the _root_ data to be (3).  
 5 - Create root child (left child).  
 6 - Print tree values  
 
@@ -140,7 +140,7 @@ public class Tree {
         System.out.println("Print root value");
         System.out.println(T.root.number);
 
-        // 4 - Access and update the **root** data to be (3)
+        // 4 - Update the **root** data to be (3)
         T.root.number = 3;
 
         // 5 - Create root child (left child)
