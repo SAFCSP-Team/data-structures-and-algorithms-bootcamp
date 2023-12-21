@@ -128,4 +128,4 @@ class LinkedList<T> {
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Single linkedlist](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/01-single-linked-list) | - | 
+| [Single linkedlist](https://github.com/SAFCSP-Team/single-linked-list) | - | 
