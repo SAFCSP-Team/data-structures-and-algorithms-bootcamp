@@ -97,12 +97,12 @@ Now we will explain how to **implement the complete tree**, **linking nodes toge
 
 - `Tree` class implementation:
 
-1 - Create Tree.  
+1 - Create tree.  
 2 - Create tree root (node object).  
 3 - Access the _root_ data and print it.  
 4 - Update the _root_ data to be (3).  
 5 - Create root child (left child).  
-6 - Print tree values  
+6 - Print tree values.
 
 
 ```java 
