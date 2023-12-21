@@ -69,7 +69,7 @@ Node root = new Node(1);
 <br/>
 <br/>
 
-- Accecc the **root** data and print it.
+- Access the **root** data and print it.
 ```java
 // print the root value
 System.out.println(root.number);
@@ -83,7 +83,7 @@ Output:
 <br/>
 <br/>
 
-- Accecc and update the **root** data to be (3)
+- Update the **root** data to be (3)
 
 ```java
 root.number = 3;
@@ -92,12 +92,15 @@ root.number = 3;
 <br/>
 <br/>
 
+Since the node creating is covered.
+Now we will explain how to **implement the complete tree**, and **linking nodes together** and **perform operations on it**.
+
 - `Tree` class implementation:
 
 1 - Create Tree.  
 2 - Create tree root (node object).  
-3 - Accecc the _root_ data and print it.  
-4 - Accecc and update the _root_ data to be (3).  
+3 - Access the _root_ data and print it.  
+4 - Access and update the _root_ data to be (3).  
 5 - Create root child (left child).  
 6 - Print tree values  
 
@@ -133,11 +136,11 @@ public class Tree {
         // 2 - Create tree root (node object)
         T.root = new Node(1);
 
-        // 3 - Accecc the root data and print it\
+        // 3 - Access the root data and print it\
         System.out.println("Print root value");
         System.out.println(T.root.number);
 
-        // 4 - Accecc and update the **root** data to be (3)
+        // 4 - Access and update the **root** data to be (3)
         T.root.number = 3;
 
         // 5 - Create root child (left child)
@@ -154,7 +157,7 @@ public class Tree {
 
 ```
 
->Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.\\
+>Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.
 
 Output:
 ```java
@@ -164,6 +167,12 @@ Print tree values
 2
 3
 ```
+
+After running the previous code, the `Tree` will look like the following (figure 4).
+
+Figure 4
+![data representation](./images/Tree-intro-ex.jpg)
+
 
 <br/>
 <br/>
@@ -247,11 +256,11 @@ public class Tree {
         // 2 - Create tree root (node object)
         T.root = new Node( new Employee(01,"Ahmed","CEO") );
 
-        // 3 - Accecc the root data and print it
+        // 3 - Access the root data and print it
         System.out.println("Print root value");
         System.out.println(T.root.employeeData.name);
 
-        // 4 - Accecc and update the root data (employee name)t o be (Anas)
+        // 4 - Access and update the root data (employee name)t o be (Anas)
         T.root.employeeData.name = "Anas";
 
         // 5 - Create root child (left child)

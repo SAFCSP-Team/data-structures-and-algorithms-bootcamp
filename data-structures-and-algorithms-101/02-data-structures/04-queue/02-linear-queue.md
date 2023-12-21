@@ -2,7 +2,7 @@
 
 ## Concept
 
-A **linear queue**, also known as a **simple queue** is a type of `queue` data structures, where the elements are stored in a linear or sequential manner. The first element is called `head`, and the last element of the queue is called `tail`.
+A **linear queue**, also known as a **simple queue** is a type of `queue` data structure, where the elements are stored in a linear or sequential manner. The first element is called `head`, and the last element of the queue is called `tail`.
 
 The primary operations of the queue are:
 
