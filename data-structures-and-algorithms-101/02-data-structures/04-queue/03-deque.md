@@ -2,7 +2,7 @@
 
 ## Concept
 
-**Deque** or **double ended queue** is type of `queue` data structures. The `deque` can insert and delete from both ends, at the start of the `queue` and at the end of the `queue`.
+**Deque** or **double ended queue** is type of `queue` data structure. The `deque` can insert and delete from both ends, at the start of the `queue` and at the end of the `queue`.
 
 ![1702996668122](images/04-dequeues/1702996668122.png)
 
@@ -298,4 +298,10 @@ Front: 5
 Rear: 20
 ```
 
-````
+
+## Projects
+
+
+| Project ID   | Project Title     | Deadline |
+| ------------ | ----------------- | -------- |
+| DSAProject02 | [Deque]() |          |

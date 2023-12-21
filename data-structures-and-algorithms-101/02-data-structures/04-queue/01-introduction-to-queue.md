@@ -62,7 +62,6 @@ In this section we will impelment the queue using `array`.
    }
    ```
 
-Create a **constructor** to **declare an array**, and assign **default value -1** for **front** and **rear** when an object is created. For the constructor parameter, we pass the size, which will be the size/length of the **Array**.
 
 2. Create a **constructor** to **declare an array**, and assign **default value -1** for **front** and **rear** when an object created. The constructor parameter, we pass the size, which it will be the size/length of the **Array**.
 
