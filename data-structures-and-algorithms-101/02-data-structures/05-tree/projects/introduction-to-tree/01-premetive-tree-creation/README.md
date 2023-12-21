@@ -10,73 +10,92 @@ Create a tree to store names.
 
 Using Java programming language: 
 
-In `TreeNode` class:
+In `Node` class:
 
-1 - Declare name attribute as String.
+1 - create String (name) attribute to store the name.
+2 - Create 3 pointer (left, center, right).
 
 In `main` class:
 
-2 - Craete {child2} with the name Khalid and {child3} with the name Abdullah.
-
-3 - Add {child2} and {child3} to the root children.
-
-4 - Print root child2 name.
-
-5 - Output should be the same as below:
+3 - Create Tree with than name (T).
+4 - Accecc the root data (name) and print it
+5 - Update the root data (name) to be Mohammed
+6 - Create root child (left child) with the name "Ali"
+7 - Print tree values using (printTreeValues) method.
+8 - Output should be the same as below:
 ```java
-Mohammed
+Print root value
 Ahmed
-Khalid
-Abdullah
+Print tree values
+ Ali
+ Mohammed
 ```
 
 
 
 ```java
 
-import java.util.ArrayList;
 
+class Node {
 
-public class TreeNode {
+    // Data
+    /* your code here 1 - create String (name) attribute to store the name  */ 
 
-    // Node data
-    // ** add your code here **
-    // 1 - Declare name attribute as String
+    // Pointers
+    /* your code here 2 - Create 3 pointer (left, center, right) */ 
+     
 
-    // Node Children
-    ArrayList<TreeNode> children = new ArrayList<TreeNode>();
-
-    // Constructor to create the node
-    TreeNode(int name){
+    // Constructor
+    Node(String name) {
         this.name = name;
+        this.left = null;
+        this.center = null;
+        this.right = null;
+    }
+
+}
+
+public class Tree {
+
+    Node root;
+
+    Tree(String name) {
+        root = new Node(name);
+    }
+
+    Tree() {
+        root = null;
+    }
+
+    // Print tree values function
+    public void printTreeValues(Node node) {
+        if (node != null) {
+            printTreeValues(node.left);
+            System.out.println(" " + node.name);
+            printTreeValues(node.right);
+        }
     }
 
     public static void main(String[] args) {
-        
-        // Create the root
-        TreeNode root = new TreeNode("Mohammed");
 
-        // Create TreeNodes
-        TreeNode child1 = new TreeNode("Ahmed");
-         // ** add your code here **
-        // 2 - craete {child2} with the name Khalid and {child3} with the name Abdullah 
+         /* your code here 3 - Create Tree with than name (T) */ 
 
+        // Create tree root (node object) with the name "Ahmed"
+        T.root = new Node("Ahmed");
 
-        // Add the TreeNodes as the root children
-        root.children.add(child1);
-           // ** add your code here **
-        // 3 - add {child2} and {child3} to the root children 
+        System.out.println("Print root value");
+         /* your code here 4 - Accecc the root data (name) and print it */ 
 
+        /* your code here 5 - Update the root data (name) to be Mohammed */ 
 
-        // Print the root and the children data
-        System.out.println(root.name);
-        System.out.println(root.children.get(0).name);
-        System.out.println(root.children.get(1).name);
-            // ** add your code here **
-        // 4 - print root child2 name
+        /* your code here 6 - Create root child (left child) with the name "Ali"*/ 
+
+        System.out.println("Print tree values");
+        /* your code here 7 - Print tree values */ 
+
     }
 
-    
 }
+
 
 ```
