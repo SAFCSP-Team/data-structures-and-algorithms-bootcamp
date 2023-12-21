@@ -17,7 +17,8 @@ In computer programming, a stack is similar to this stack of books. It is a data
 
 
 ## Implementation
-To implement a stack, you can use an [array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/01-introduction-to-arrays.md) or a [linked list](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/01-introduction-to-linked-list.md). Previously, we learned about the characteristics of each of them, and now let's explore how the implementation of a stack can differ for each of them.
+To implement a stack, you can use an [array](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/01-arrays/01-introduction-to-arrays.md) or a [linked list](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/01-introduction-to-linked-list.md).  
+Previously, we learned about the characteristics of each of them, and now let's explore how the implementation of a stack can differ for each of them.
 
 Both array-based and linked list-based implementations have their advantages and trade-offs. The choice between them depends on factors such as the expected size of the stack, memory requirements, and the specific needs of your application.
 
