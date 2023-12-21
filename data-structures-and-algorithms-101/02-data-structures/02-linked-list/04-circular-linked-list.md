@@ -129,5 +129,5 @@ int main() {
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Circular linked list](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/tree/main/data-structures-and-algorithms-101/02-data-structures/02-linked-list/projects/03-circular-linked-list) | - | 
+| [Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list) | - | 
 
