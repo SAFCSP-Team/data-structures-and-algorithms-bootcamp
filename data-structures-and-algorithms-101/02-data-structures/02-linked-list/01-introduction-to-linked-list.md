@@ -261,4 +261,4 @@ Types of Linked List:
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Introdction to linked list](https://github.com/SAFCSP-Team/Introduction-to-linked-list) | - | 
+| [Introduction to linked list](https://github.com/SAFCSP-Team/Introduction-to-linked-list) | - | 
