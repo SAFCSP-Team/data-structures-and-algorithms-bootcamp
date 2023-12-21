@@ -5,12 +5,16 @@ To effectively **manage** contact information on smartphones or email applicatio
 To address this challenge, `sorting algorithms` **are utilized to arrange** contacts alphabetically by name. This systematic approach offers an efficient way to **locate and access** desired contacts swiftly and conveniently.
 
 ## Concept
-> Sorting is a process of rearrangement of a list of elements to the correct order since handling the elements in a certain order is more efficient than handling random elements.
+`Sorting` is a **data structure** operation, which is used for making easy **searching and arranging** of element or record.
 
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/cb97b83b-5768-4d41-8b54-c5ffe270bf8f)
+![bubble-sort-gif-9](https://user-images.githubusercontent.com/36489953/42171410-83532a64-7e19-11e8-95a1-b2dd3aaedc43.gif)
 
 
-
+There are many fundamental and advance sorting algorithms
+* merge sort.
+* insert sort
+* 
+  
 
 ## Example 
 
