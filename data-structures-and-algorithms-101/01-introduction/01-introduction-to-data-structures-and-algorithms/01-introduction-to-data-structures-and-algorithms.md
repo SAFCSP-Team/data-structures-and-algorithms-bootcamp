@@ -126,11 +126,11 @@ class Tree{
          if(this.root == null ) {
             this.root = node;
         }else{
-            Node parent = this.root;
-            while (parent.left != null){
-                parent = parent.left;
+            Node current = this.root;
+            while (current.left != null){
+                current = current.left;
             }
-            parent.left = node;
+            current.left = node;
         }
     }
 
