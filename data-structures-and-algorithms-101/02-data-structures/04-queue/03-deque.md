@@ -298,6 +298,147 @@ Front: 5
 Rear: 20
 ```
 
+#### Non-Primitive
+
+##### **Java**
+
+```Java
+class DequeArray {
+    Object arr[];
+    int front;
+    int rear;
+    final int size = 5;
+
+    public DequeArray() {
+        arr = new Object[size];
+        front = -1;
+        rear = 0;
+    }
+
+    boolean isFull() {
+        return ((front == 0 && rear == size - 1) || front == rear + 1);
+    }
+
+    boolean isEmpty() {
+        return (front == -1);
+    }
+
+    void addFront(Object key) {
+        if (isFull()) {
+            System.out.println("Overflow");
+            return;
+        }
+
+        if (front == -1) {
+            front = 0;
+            rear = 0;
+        } else if (front == 0)
+            front = size - 1;
+
+        else
+            front = front - 1;
+
+        arr[front] = key;
+    }
+
+    void addRear(Object key) {
+        if (isFull()) {
+            System.out.println(" Overflow ");
+            return;
+        }
+
+        if (front == -1) {
+            front = 0;
+            rear = 0;
+        } else if (rear == size - 1)
+            rear = 0;
+
+        else
+            rear = rear + 1;
+
+        arr[rear] = key;
+    }
+
+    void deleteFront() {
+        if (isEmpty()) {
+            System.out.println("Queue Underflow\n");
+            return;
+        }
+
+        // Deque has only one element
+        if (front == rear) {
+            front = -1;
+            rear = -1;
+        } else if (front == size - 1)
+            front = 0;
+
+        else
+            front = front + 1;
+    }
+
+    void deleteRear() {
+        if (isEmpty()) {
+            System.out.println(" Underflow");
+            return;
+        }
+
+        if (front == rear) {
+            front = -1;
+            rear = -1;
+        } else if (rear == 0)
+            rear = size - 1;
+        else
+            rear = rear - 1;
+    }
+
+    Object getFront() {
+        if (isEmpty()) {
+            System.out.println(" Underflow");
+            return -1;
+        }
+        return arr[front];
+    }
+
+    Object getRear() {
+        if (isEmpty() || rear < 0) {
+            System.out.println(" Underflow\n");
+            return -1;
+        }
+        return arr[rear];
+    }
+}
+class Person {
+    String name;
+    Person(String name) {
+        this.name = name;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+
+        DequeArray queue = new DequeArray();
+
+        queue.addFront(new Person("Fahad"));
+        queue.addFront(new Person("Khaled"));
+        queue.addRear(new Person("Majed"));
+        queue.addRear(new Person("Faris"));
+
+        queue.deleteFront();
+
+        System.out.println(queue.front);
+        System.out.println(queue.rear);
+
+    }
+}
+
+```
+
+**OUTPUT**
+```
+0
+2
+```
+
 
 ## Projects
 

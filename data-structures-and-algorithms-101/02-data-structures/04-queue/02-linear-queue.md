@@ -1,6 +1,7 @@
 # Linear Queue
 
 ## Concept
+> We have covered and implement the queue in the introduction.
 
 A **linear queue**, also known as a **simple queue** is a type of `queue` data structure, where the elements are stored in a linear or sequential manner. The first element is called `head`, and the last element of the queue is called `tail`.
 
@@ -13,7 +14,7 @@ The primary operations of the queue are:
 
 ## Example
 
-We can use either `Linked list` or `Array` to create a `queue` data structure.
+> We can use either `Linked list` or `Array` to create a `queue` data structure.
 
 ### Primitive 
 
