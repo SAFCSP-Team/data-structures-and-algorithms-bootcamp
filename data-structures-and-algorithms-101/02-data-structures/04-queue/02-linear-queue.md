@@ -411,4 +411,4 @@ int main() {
 
 | Project ID   | Project Title     | Deadline |
 | ------------ | ----------------- | -------- |
-| DSAProject01 | [Linear Queue]() |          |
+| DSAProject01 | [Linear Queue](https://github.com/SAFCSP-Team/linear-queue-project) |          |
