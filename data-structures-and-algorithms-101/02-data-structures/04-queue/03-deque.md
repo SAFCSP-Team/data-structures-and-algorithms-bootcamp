@@ -445,4 +445,4 @@ public class Main {
 
 | Project ID   | Project Title     | Deadline |
 | ------------ | ----------------- | -------- |
-| DSAProject02 | [Deque]() |          |
+| DSAProject02 | [Deque](https://github.com/SAFCSP-Team/deque-project) |          |
