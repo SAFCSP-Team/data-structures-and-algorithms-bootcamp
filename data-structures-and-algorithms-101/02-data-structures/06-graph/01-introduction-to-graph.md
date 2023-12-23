@@ -1,10 +1,11 @@
 # Introduction to Graph
-You can think of the graph as releastionship between people in a social network. where Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
+You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
 
-![Alt text](<data-structures-and-algorithms - Intro Graph Directed Example.jpg>)
+<img width="350" alt="An element in the queue array" src="data-structures-and-algorithms - Intro Graph Directed Example.jpg">
+
 
 ## Concept
-A Graph is a non-linear data structure is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
+A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
 
 There are two components of a graph:
 1. Node - A node represents an entity (object) in the graph.
@@ -12,7 +13,7 @@ There are two components of a graph:
 
 The way to represent a graph is using an Adjacency Matrix or Adjacency List.
 
-> Generally, graphs are used to model probelms defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
+> Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 ## Implementation
 [description]
 
