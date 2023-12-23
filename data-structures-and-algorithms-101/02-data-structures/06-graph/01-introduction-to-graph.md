@@ -19,11 +19,22 @@ The way to represent a graph is using an Adjacency Matrix or Adjacency List.
 
 
 ## Types
-There are two 
-1 - Directed Graph is a graph where each edge is directed. Each node is directed at another node with a specific requirement of what node should be referenced next.
+
+* ###  **Directed Graph** 
+It's a graph where each edge is directed. Each node is directed at another node with a specific requirement of what node should be referenced next.
+
+<img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/526780a5-45f0-43c1-b0c2-80606975eb41">
+
+<hr>
 
 
-2 - Undirected Graph is a graph where each edge is undirected or bi-directional. This means that the undirected graph does not move in any direction.
+
+* ### **Undirected Graph** 
+It's a graph where each edge is undirected or bi-directional. This means that the undirected graph does not move in any direction.
+
+<img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/3ddb74c8-f4e0-4d32-9491-e1a37761a3f2">
+
+
 
 ## Projects
 
