@@ -47,7 +47,7 @@ class Node {
     }
 }
 ```
-* The `Student` class that represents a student with a name and an age.
+* The `Student` class represents a student with a name and an age.
 ```java
 class Student {
     private String name;
@@ -193,7 +193,7 @@ class LinkedList {
 }
 
 ```
-* Perform an action. (non-primitive)
+* Perform some action. (non-primitive)
 ```java
 class LinkedList {
     public Node head;
@@ -202,6 +202,7 @@ class LinkedList {
         head = null;
     }
 
+   /* insert a new element at the end of the linked list */
     public void insert(Student data) {
         Node newNode = new Node(data);
 
