@@ -155,7 +155,9 @@ Front: 5
 Rear: 20
 ```
 
-##### **C++**
+<hr>
+
+**C++**
 
 ```cpp
 #include <iostream>
@@ -298,9 +300,11 @@ Front: 5
 Rear: 20
 ```
 
+<hr>
+
 #### Non-Primitive
 
-##### **Java**
+**Java**
 
 ```Java
 class DequeArray {
@@ -439,6 +443,147 @@ public class Main {
 2
 ```
 
+<hr>
+
+**C++**
+
+```cpp
+#include <iostream>
+#include <string>
+
+template <typename T> class Deque {
+private:
+  struct Node {
+    T data;
+    Node *next;
+    Node *prev;
+  };
+
+  Node *first;
+  Node *last;
+
+public:
+  Deque() : first(nullptr), last(nullptr) {}
+
+  ~Deque() {
+    while (!isEmpty()) {
+      popFront();
+    }
+  }
+
+  bool isEmpty() const { return (first == nullptr); }
+
+  void pushFront(const T &value) {
+    Node *newNode = new Node;
+    newNode->data = value;
+    newNode->next = first;
+    newNode->prev = nullptr;
+
+    if (isEmpty()) {
+      last = newNode;
+    } else {
+      first->prev = newNode;
+    }
+
+    first = newNode;
+  }
+
+  void pushBack(const T &value) {
+    Node *newNode = new Node;
+    newNode->data = value;
+    newNode->next = nullptr;
+    newNode->prev = last;
+
+    if (isEmpty()) {
+      first = newNode;
+    } else {
+      last->next = newNode;
+    }
+
+    last = newNode;
+  }
+
+  void popFront() {
+    if (isEmpty()) {
+      std::cout << "Deque is empty. Cannot pop from the front." << std::endl;
+      return;
+    }
+
+    Node *temp = first;
+    first = first->next;
+
+    if (first == nullptr) {
+      last = nullptr;
+    } else {
+      first->prev = nullptr;
+    }
+
+    delete temp;
+  }
+
+  void popBack() {
+    if (isEmpty()) {
+      std::cout << "Deque is empty. Cannot pop from the back." << std::endl;
+      return;
+    }
+
+    Node *temp = last;
+    last = last->prev;
+
+    if (last == nullptr) {
+      first = nullptr;
+    } else {
+      last->next = nullptr;
+    }
+
+    delete temp;
+  }
+
+  const T &front() const {
+    if (isEmpty()) {
+      std::cout << "Deque is empty. No front element." << std::endl;
+      exit(1);
+    }
+
+    return first->data;
+  }
+
+  const T &back() const {
+    if (isEmpty()) {
+      std::cout << "Deque is empty. No back element." << std::endl;
+      exit(1);
+    }
+
+    return last->data;
+  }
+};
+class Person {
+public:
+  std::string name;
+};
+int main() {
+  Deque<Person> deque;
+
+  deque.pushFront(Person{"Fahad"});
+  deque.pushFront(Person{"Majed"});
+  deque.pushBack(Person{"Khaled"});
+  deque.pushFront(Person{"Faris"});
+
+
+  deque.popFront();
+  deque.popBack();
+
+  std::cout << deque.front().name << std::endl;
+  std::cout << deque.back().name << std::endl;
+
+  return 0;
+}
+```
+**OUTPUT**
+```
+Majed
+Fahad
+```
 
 ## Projects
 
