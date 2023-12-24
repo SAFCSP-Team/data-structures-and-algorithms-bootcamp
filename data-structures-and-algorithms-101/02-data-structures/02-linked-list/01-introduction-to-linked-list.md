@@ -94,7 +94,7 @@ public class Main {
     }
 }
 ```
-* Create an instance and link the first node to LinkedList. (non-primitive)
+* Creates a new Node object with a Student object as its data and links the first node to the second node. (non-primitive)
 ```java
 public class Main {
      public static void main(String[] args) {
