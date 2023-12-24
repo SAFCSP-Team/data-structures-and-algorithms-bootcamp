@@ -12,7 +12,7 @@ Searching algorithms are like plans that help us find what we're looking for eff
  - `Sequential Search`: traversed sequentially and every element is checked. For example: Linear Search.
  - `Interval Search`: These algorithms are specifically designed for searching in sorted data structures. These search algorithms are much more efficient than Linear Search as they repeatedly target the center of the search structure and divide the search space in half. For Example: Binary Search.
 
-<img width="910" alt="your alt text" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/rec/binary-and-linear-search-animations.gif" />
+<img width="910" alt="binary and linear search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/rec/binary-and-linear-search-animations.gif" />
 
 
 ## Projects
