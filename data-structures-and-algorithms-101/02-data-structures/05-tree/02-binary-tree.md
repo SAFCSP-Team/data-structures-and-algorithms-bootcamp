@@ -37,10 +37,6 @@ Figure 1
 - `Internal node`: Any node with a child and a parent
 
 
-We looked into the different types of binary trees. Now you will see some operations you can perform on binary trees.
-
-
-
 ## Example 
 We will crete a tree of integers and we will perform the operations on it.
 
