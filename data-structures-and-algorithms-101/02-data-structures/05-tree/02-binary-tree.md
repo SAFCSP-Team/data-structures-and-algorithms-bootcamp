@@ -41,43 +41,6 @@ We looked into the different types of binary trees. Now you will see some operat
 
 
 
-**Binary tree operation**
-<br/>
-
-1 - Create node
-
-2 - Create tree of nodes
-
-How Do You Traverse a Binary Tree in Data Structures?
-
-Traverse: The process of visiting required node to perform special operation or visiting each node and perform an action, for example: print their values.
-
-There are three ways to travers tree:
-
-1- Pre-order traversal
-
-- Visit the root node
-- Visit all nodes from the left side
-- Visit all node from the right side
-
-2- In-order traversal
-
-- Visit all nodes from the left side
-- Visit the root node
-- Visit all node from the right side
-
-
-3- Post-order traversal
-
-- Visit all nodes from the left side
-- Visit all node from the right side
-- Visit the root node
-
-
-We will look into these operation in the example section
-
-
-
 ## Example 
 We will crete a tree of integers and we will perform the operations on it.
 
