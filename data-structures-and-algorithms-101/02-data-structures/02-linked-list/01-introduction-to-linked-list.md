@@ -77,10 +77,10 @@ class Student {
 }
 
 ```
-* Create an instance and link the first node to LinkedList. (primitive)
+* Create an instance and link the first node to the second node. (primitive)
 ```java
 public class Main {
-  public static void main(String[] args) {
+     public static void main(String[] args) {
         LinkedList linkedlist = new LinkedList();
 
         /* Create the first node */
@@ -109,21 +109,22 @@ public class Main {
 ```
 
 * The structure and basic functionality of the `linked list` class can be the same for both **primitive** and **non-primitive** types.
+  
 ```java
-class LinkedList {
-    private Node head;
+public class LinkedList {
+    public Node head;
 
-    LinkedList() {
+  public LinkedList() {
         this.head = null;
     }
 }
 ```
 * Perform an action (primitive) 
  ```java
-class LinkedList {
-    private Node head;
+public class LinkedList {
+    public Node head;
 
-    LinkedList() {
+  public LinkedList() {
         this.head = null;
     }
     /* insert a new element at the end of the linked list */
@@ -182,9 +183,9 @@ class LinkedList {
 }
 
 ```
-* Perform some action. (non-primitive)
+* Perform an action (non-primitive) 
 ```java
-class LinkedList {
+public class LinkedList {
     public Node head;
 
     public LinkedList() {
@@ -206,6 +207,7 @@ class LinkedList {
         }
     }
 
+   /* to print the contents of the linked list */
     public void display() {
         if (head == null) {
             System.out.println("Linked list is empty.");
@@ -217,6 +219,32 @@ class LinkedList {
             System.out.println("Name: " + current.data.getName() + ", Age: " + current.data.getAge());
             current = current.next;
         }
+    }
+  /*  delete a specific element from the linked list */
+   public void delete(String name) {
+        if (head == null) {
+            System.out.println("Linked list is empty.");
+            return;
+        }
+
+        if (head.data.getName().equals(name)) {
+            head = head.next;
+            return;
+        }
+
+        Node current = head;
+        Node previous = null;
+
+        while (current != null) {
+            if (current.data.getName().equals(name)) {
+                previous.next = current.next;
+                return;
+            }
+            previous = current;
+            current = current.next;
+        }
+
+        System.out.println("Node with name " + name + " not found in the linked list.");
     }
 }
 ```
