@@ -1,6 +1,5 @@
 # Binary tree
-
-Binary tree is a tree used to store and organize hierarchical data
+Binary tree is type of tree data structure and it will be covered in the following sections.
 
 ## Concept
 
