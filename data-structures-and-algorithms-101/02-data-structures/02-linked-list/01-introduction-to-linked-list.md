@@ -38,8 +38,8 @@ class Node {
 * Here is another example of creating a Node class to hold Student data.
 ```java
 class Node {
-    public Student data;
-    public Node next;
+    Student data;
+    Node next;
 
     public Node(Student data) {
         this.data = data;
@@ -77,41 +77,6 @@ class Student {
 }
 
 ```
-* Create a `LinkedList`, the class has a `pointer` to the **head** node, which is the starting point of the list. (primitive)
-```java
-class LinkedList {
-    private Node head;
-
-    LinkedList() {
-        this.head = null;
-    }
-}
-```
-*  Create a `LinkedList`, the class manages the insertion and display operations on the linked list. (non-primitive)
-  
-```java
-class LinkedList {
-    public Node head;
-
-    public LinkedList() {
-        head = null;
-    }
-
-    public void insert(Student data) {
-        Node newNode = new Node(data);
-
-        if (head == null) {
-            head = newNode;
-        } else {
-            Node current = head;
-            while (current.next != null) {
-                current = current.next;
-            }
-            current.next = newNode;
-        }
-    }
-
-```
 * Create an instance and link the first node to LinkedList. (primitive)
 ```java
 public class Main {
@@ -121,26 +86,39 @@ public class Main {
         /* Create the first node */
         Node firstNode = new Node(10);
 
-        /* Link the first node to the LinkedList */
+        Node secondNode = new Node(20);
+        firstNode.next = secondNode;
+        
         linkedList.head = firstNode;
+        linkedList.display();
     }
 }
 ```
 * Create an instance and link the first node to LinkedList. (non-primitive)
 ```java
 public class Main {
-    public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+     public static void main(String[] args) {
+        Node firstNode = new Node(new Student("lama", 22)); 
+        Node secondNode = new Node(new Student("lamya", 24));
 
-        Student student1 = new Student("John", 20);
-        linkedList.insert(student1);
-        linkedList.display();
+        System.out.println(firstNode.data.getName());
+        firstNode.next = secondNode;
+        System.out.println(firstNode.next.data.getName());
     }
 }
-
 ```
-* Perform an action (primitive)
-  
+
+* The structure and basic functionality of the `linked list` class can be the same for both **primitive** and **non-primitive** types.
+```java
+class LinkedList {
+    private Node head;
+
+    LinkedList() {
+        this.head = null;
+    }
+}
+```
+* Perform an action (primitive) 
  ```java
 class LinkedList {
     private Node head;
@@ -239,22 +217,6 @@ class LinkedList {
             System.out.println("Name: " + current.data.getName() + ", Age: " + current.data.getAge());
             current = current.next;
         }
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
-
-        Student student1 = new Student("John", 20);
-        Student student2 = new Student("Jane", 22);
-        Student student3 = new Student("Alex", 19);
-
-        linkedList.insert(student1);
-        linkedList.insert(student2);
-        linkedList.insert(student3);
-
-        linkedList.display();
     }
 }
 ```
