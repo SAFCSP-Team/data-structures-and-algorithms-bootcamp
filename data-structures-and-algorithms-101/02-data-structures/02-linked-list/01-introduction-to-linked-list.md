@@ -124,10 +124,12 @@ public class Main {
         LinkedList linkedList = new LinkedList();
 
         Student student1 = new Student("John", 20);
+        linkedList.insert(student1);
+        linkedList.display();
     }
 }
-```
 
+```
 * Perform an action (primitive)
   
  ```java
