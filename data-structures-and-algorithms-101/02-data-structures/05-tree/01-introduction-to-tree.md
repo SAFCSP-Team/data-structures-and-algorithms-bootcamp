@@ -352,9 +352,12 @@ There are three ways to travers tree:
 
 ## Projects
 
+https://github.com/SAFCSP-Team/tree-with-premitive-data-type/tree/main
+
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|TreeProject01| [Tree with primitive data types](projects/introduction-to-tree/01-premetive-tree-creation/README.md) | - | 
+|TreeProject01| [Tree with primitive data types](https://github.com/SAFCSP-Team/tree-with-premitive-data-type/tree/main) | - | 
+
 
 
 
