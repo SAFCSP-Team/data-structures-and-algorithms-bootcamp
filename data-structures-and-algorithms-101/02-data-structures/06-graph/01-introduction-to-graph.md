@@ -13,14 +13,20 @@ There are two components of a graph:
 
 The way to represent a graph is using an Adjacency Matrix or Adjacency List.
 
-* **Adjacency List**
-
-![Alt text](<Screenshot 1445-06-10 at 10.47.31 PM.png>)
-
-
 * **Adjacency Matrix**
 
-<img width="350" alt="An element in the queue array" src="data-structures-and-algorithms - Intro Graph Directed Example.jpg">
+![Alt text](<Screenshot 1445-06-11 at 10.35.03 AM.png>)
+
+* **Adjacency List**
+
+![Alt text](<data-structures-and-algorithms - Adjacency Matrix.jpg>)
+
+
+
+* **Graph**
+
+
+<img width="350" alt="An element in the queue array" src="data-structures-and-algorithms - Intro Graph Directed Example (1).jpg">
 
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
