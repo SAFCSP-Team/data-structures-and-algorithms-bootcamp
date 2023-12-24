@@ -15,7 +15,7 @@ Figure 1
 
 ## Concept
 
-A tree is a collection of nodes that are connected by edges and non-linear data structure, which represent nodes in a hierarchical order.
+`Tree` is a collection of nodes that are connected by edges and non-linear data structure, which represent nodes in a hierarchical order.
 
 Figure 2
 ![data representation](./images/Tree.jpg)
