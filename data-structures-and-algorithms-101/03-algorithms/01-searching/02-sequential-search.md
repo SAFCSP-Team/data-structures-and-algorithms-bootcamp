@@ -1,8 +1,7 @@
 # Sequential Search
 
 The diagram below shows how this search works. Starting at the first item in the list, we simply move from item to item, following the underlying sequential ordering until we either find what we are looking for or run out of items. If we run out of items, we have discovered that the item we were searching for was not present.
-<img width="910" alt="Sequential Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/rec/Sequential-Search.png
-" />
+<img width="910" alt="Sequential Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/rec/Sequential-Search.png" />
 
 ## Concept
 In sequential search, also known as linear search, we check each item in the list one by one until we find a match or reach the end of the list. If a matching item is found, we return its index value. However, if we go through the entire list without finding a match, we return -1 to indicate that the item was not found.
