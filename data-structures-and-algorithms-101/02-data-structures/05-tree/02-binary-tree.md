@@ -1,4 +1,4 @@
-# Introduction to binary tree
+# Binary tree
 
 Binary tree is a tree used to store and organize hierarchical data
 
