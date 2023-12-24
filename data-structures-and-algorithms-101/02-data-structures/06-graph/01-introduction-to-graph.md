@@ -11,7 +11,7 @@ There are two components of a graph:
 1. Node - A node represents an entity (object) in the graph.
 2. Edge - An edge is a line or arc that connects a pair of vertices in the graph.
 
-The way to represent a graph is using an Adjacency Matrix or Adjacency List.
+The way to represent a graph is using an Adjacency Matrix, Adjacency List or Graph.
 
 * **Adjacency Matrix**
 
@@ -31,7 +31,89 @@ The way to represent a graph is using an Adjacency Matrix or Adjacency List.
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 ## Implementation
-[description]
+We can implement the graph using **two dimensional array**. The first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
+
+> There're many ways to implement the graph, but we'll use the two dimensional array.
+
+```java
+import java.util.ArrayList;
+class Node {
+    char data;
+
+    public Node(char data) {
+        this.data = data;
+    }
+}
+
+class Graph {
+
+    public ArrayList<Node> nodes = new ArrayList<>();
+    int[][] adjMatrix;
+
+    public Graph(int size) {
+        nodes = new ArrayList<>();
+        adjMatrix = new int[size][size];
+    }
+
+    public void addNode(Node item){
+        nodes.add(item);
+    }
+
+    public void addEdge(int src, int dst) {
+        adjMatrix[src][dst] = 1;
+    }
+
+    public boolean checkEdge(int src, int dst) {
+        if(adjMatrix[src][dst] == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void printGrapn() {
+
+        for(Node node : nodes) {
+            System.out.print("\t"+ node.data + " ");
+        }
+        System.out.println();
+
+        for(int i = 0; i < adjMatrix.length; i++) {
+            System.out.print(nodes.get(i).data + "\t");
+
+            for(int j = 0; j < adjMatrix.length; j++) {
+                System.out.print(adjMatrix[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Graph graphObj = new Graph(5);
+
+        graphObj.addNode(new Node('A'));
+        graphObj.addNode(new Node('B'));
+        graphObj.addNode(new Node('C'));
+        graphObj.addNode(new Node('D'));
+        graphObj.addNode(new Node('E'));
+
+        graphObj.addEdge(0,1);
+        graphObj.addEdge(1,2);
+        graphObj.addEdge(1,4);
+        graphObj.addEdge(2, 3);
+        graphObj.addEdge(2, 4);
+        graphObj.addEdge(4, 0);
+        graphObj.addEdge(4, 2);
+
+
+        graphObj.printGrapn();
+
+    }
+}
+```
 
 
 ## Types
