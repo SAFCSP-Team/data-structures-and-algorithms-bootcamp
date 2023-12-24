@@ -354,7 +354,7 @@ There are three ways to travers tree:
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-[Tree with primitive data types](https://github.com/SAFCSP-Team/tree-with-premitive-data-type/tree/main) | -
+[Tree with non-primitive data types](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main) | -
 
 
 
