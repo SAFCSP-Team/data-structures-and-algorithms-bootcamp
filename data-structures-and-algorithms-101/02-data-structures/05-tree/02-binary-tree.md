@@ -38,7 +38,7 @@ Figure 1
 
 
 ## Example 
-We will crete a tree of integers and we will perform the operations on it.
+We will create a tree of integers and we will perform the operations on it.
 
 ### Primitive 
 
