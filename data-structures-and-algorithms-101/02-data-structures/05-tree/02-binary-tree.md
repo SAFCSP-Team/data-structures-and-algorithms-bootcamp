@@ -38,11 +38,12 @@ Figure 1
 
 
 ## Example 
-We will create a tree of integers and we will perform the traversal operations on it.
+We will create a tree of integers and we will perform the traversal operations on it.  
+Since the `binary tree` has maximun two children, then the node should have only two pointers (left and right).
 
 ### Primitive 
 
-- In `node` class we will declate the attibutes, create a constructor.
+- In `node` class we will declare the attributes (data and pointers), create a constructor.
 
 ```java
 
