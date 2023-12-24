@@ -193,16 +193,16 @@ class LinkedList {
 
    /* insert a new element at the end of the linked list */
     public void insert(Student data) {
-        Node newNode = new Node(data);
+        Node value = new Node(data);
 
         if (head == null) {
-            head = newNode;
+            head = value;
         } else {
             Node current = head;
             while (current.next != null) {
                 current = current.next;
             }
-            current.next = newNode;
+            current.next = value;
         }
     }
 
