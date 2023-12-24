@@ -35,7 +35,7 @@ class Node {
     }
 }
 ```
-* The `Node` class holds a reference to a Student object and another Node object. (non-primitive).
+* Here is another example of creating a Node class to hold Student data.
 ```java
 class Node {
     public Student data;
@@ -62,9 +62,18 @@ class Student {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
     }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 }
 
 ```
