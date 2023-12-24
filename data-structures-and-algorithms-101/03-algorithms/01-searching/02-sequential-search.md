@@ -19,6 +19,7 @@ unction sequentialSearch(list, item):
 In this pseudocode, the list represents the list in which we are performing the search, and the item is the element we are searching for.
 > You can translate this pseudocode into your preferred programming language to implement the Sequential Search algorithm.
 ## Example 
+Implementing the Sequential Search algorithm in Java for an array:
 ```java
 public class SequentialSearch {
     public static int sequentialSearch(int[] arr, int item) {
@@ -42,6 +43,7 @@ public class SequentialSearch {
     }
 }
 ```
+In the main method, we create an example array myArray and specify the searchItem as 9. We call the sequentialSearch method with these arguments and store the result in the result variable. Finally, we check the value of result and print appropriate messages based on whether the item was found or not.
 ## Projects
 |Project Title | Deadline |
 |:-----------:|:-------------|
