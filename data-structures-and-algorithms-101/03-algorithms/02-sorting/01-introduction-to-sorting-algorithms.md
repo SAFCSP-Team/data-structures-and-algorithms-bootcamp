@@ -20,8 +20,10 @@ To address this challenge, `sorting algorithms` **are utilized to arrange** cont
    <img src="https://miro.medium.com/v2/resize:fit:832/format:webp/1*mh9np1i9PCF2F-4dSEMKuA.gif"
       width="280" height="180">
       
-* `Quicksort`: The quick sort is based upon partitioning the list into smaller lists (based on pivot point). Elements are arranged on the basis of whether they are 
-   smaller or larger than the pivot.
+* `Quicksort`: The quick sort is based upon partitioning the list into smaller lists (based on pivot point). Elements are arranged on the basis of whether they are smaller or larger than the pivot.
+
+
+   <img src="https://miro.medium.com/v2/resize:fit:1250/format:webp/1*MqYi387Jyd16H2GHWyn46Q.gif" width="280" height="180">
   
 * `Bubble sort`: The simplest of all the sorting algorithms. In bubble sort, we compare each element with its adjacent neighbor and swap if it's bigger.
   
