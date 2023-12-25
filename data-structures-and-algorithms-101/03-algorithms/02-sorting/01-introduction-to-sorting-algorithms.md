@@ -9,8 +9,8 @@ To address this challenge, `sorting algorithms` **are utilized to arrange** cont
 ## Concept
 
 > Sorting is a **data structure** operation, which is used for making easy **searching and arranging** of elements or records.
-> 
-![bubble-sort-gif-9](https://user-images.githubusercontent.com/36489953/42171410-83532a64-7e19-11e8-95a1-b2dd3aaedc43.gif)
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 
 `Sorting algorithms` offer several benefits. They enhance data accessibility by facilitating quick searches and lookups, optimize data processing by enabling efficient algorithms that rely on sorted data, and improve the overall performance of applications that rely on sorted data.
 
