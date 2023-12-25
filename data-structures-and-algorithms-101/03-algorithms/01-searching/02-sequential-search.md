@@ -43,7 +43,7 @@ public class SequentialSearch {
     }
 }
 ```
-In the main method, we create an example array **Array** and specify the **searchItem as 9**. We call the sequentialSearch method with these arguments and store the result in the result variable. Finally, we check the value of result and print appropriate messages based on whether the item was found or not.
+In the main method, we create an example array **Array** and specify the **searchItem as 9**. We call the sequentialSearch method with these arguments and store the result in the result variable.
 
 - Implementing the Sequential Search algorithm in Java for a linked list:
 ```java
