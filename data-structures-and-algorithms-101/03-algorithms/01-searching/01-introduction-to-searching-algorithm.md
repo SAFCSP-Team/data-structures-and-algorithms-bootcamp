@@ -8,9 +8,9 @@ Imagine you have a list of names written on a piece of paper. To find a particul
 Searching algorithms are like **plans that help us find what we're looking** for efficiently. They can be used in various real-life situations, from finding information on the internet to solving puzzles. By understanding different search algorithms, you can become better at finding things and solving problems effectively.
 
 
- There are lots of different search algorithms but we can divide them into two basic types, algorithms that **don’t make any assumptions about the order** of the list`liner search`, and algorithms that **assume the list is already in order** `binary search`.
+ There are lots of different search algorithms but we can divide them into two basic types, algorithms that **don’t make any assumptions about the order** of the list `Sequential search`, and algorithms that **assume the list is already in order** `binary search`.
  
-- `Liner search`: typically involves sequentially scanning the list **from the beginning until the desired element is found or the end** of the list is reached.
+- `Sequential search` (a.k.a Sequential Search) : typically involves sequentially scanning the list **from the beginning until the desired element is found or the end** of the list is reached.
 
 - `Binary search`: this algorithm assumes that the list is already in ascending or descending order, and we **leverage the order** of the list to perform more efficient searches **by reducing the search space**. 
 
