@@ -157,7 +157,7 @@ public class Tree {
 
 ```
 
->Note: in printTreeValues we used a specific method called in-ordert traverse. It will be explained in details in below sections.
+>Note: in printTreeValues function, we used a specific method called in-ordert traverse. It will be explained in the following sections.
 
 Output:
 ```java
