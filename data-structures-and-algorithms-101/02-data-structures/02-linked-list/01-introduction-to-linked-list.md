@@ -77,20 +77,22 @@ class Student {
 }
 
 ```
-* Create an instance and link the first node to the second node. (primitive)
+* Create the nodes and link the first node to the second node. (primitive)
 ```java
 public class Main {
      public static void main(String[] args) {
-        LinkedList linkedlist = new LinkedList();
 
         /* Create the first node */
         Node firstNode = new Node(10);
 
+        /* Create the second node */
         Node secondNode = new Node(20);
+
+   /* link the first node to the second node */
         firstNode.next = secondNode;
-        
-        linkedList.head = firstNode;
-        linkedList.display();
+
+        System.out.println(firstNode.data);
+        System.out.println(secondNode.data);
     }
 }
 ```
@@ -99,7 +101,7 @@ public class Main {
 public class Main {
      public static void main(String[] args) {
         Node firstNode = new Node(new Student("lama", 22)); 
-        Node secondNode = new Node(new Student("lamya", 24));
+        Node secondNode = new Node(new Student("lamya", 25));
 
         System.out.println(firstNode.data.getName());
         firstNode.next = secondNode;
@@ -183,6 +185,22 @@ public class LinkedList {
 }
 
 ```
+* Create an instance of the `LinkedList` class then call the various methods such as insert and display, to perform operations on the `Linkedlist` class. (primitive)
+```java
+public class Main {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+
+        /* insert elements */
+        linkedList.insert(10);
+        linkedList.insert(20);
+        linkedList.insert(30);
+
+        /* display the linked list */
+        linkedList.display();
+    }
+}
+  ```
 * Perform an action (non-primitive) 
 ```java
 public class LinkedList {
@@ -248,6 +266,27 @@ public class LinkedList {
     }
 }
 ```
+* Create an instance of the `LinkedList` class and insert three Student objects into the linked list and display it.
+```java
+public class Main {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+
+        /* insert new elements into the linked list */
+        linkedList.insert(new Student("lama", 21));
+        linkedList.insert(new Student("lamya", 25));
+        linkedList.insert(new Student("noura", 24));
+
+        /* display the contents of the linked list */
+        linkedList.display();
+
+        linkedList.delete("noura");
+
+        /* display the contents after deletion */
+        linkedList.display();
+    }
+}
+  ```
 > In java and c++, you can declare and initialize linked list in a similar way.
 
 ## Types
