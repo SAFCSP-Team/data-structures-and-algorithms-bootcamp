@@ -129,9 +129,9 @@ Post order Traversal:  4 2 3 1
 
 ## Projects
 
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
-|TreeProject02| [Tree with non primitive (Employees) data types](projects/binary-tree/README.md) | - | 
+Project Title | Deadline |
+|:-----------:|:-------------|
+|TreeProject02| [Tree with non primitive (Employees) data types](binary-tree-with-non-premetive-data-type/README.md) | - | 
 
 
 
