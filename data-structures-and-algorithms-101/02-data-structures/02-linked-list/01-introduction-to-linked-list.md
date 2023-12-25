@@ -88,6 +88,9 @@ public class Main {
         /* Create the second node */
         Node secondNode = new Node(20);
 
+        /* update first Node value */
+        firstNode.data = 15;
+
    /* link the first node to the second node */
         firstNode.next = secondNode;
 
@@ -109,6 +112,8 @@ public class Main {
     }
 }
 ```
+* Above is an example of how can we use and manipulate nodes by directly accessing and manipulating their data and pointers, we will cover how can we build a 
+ `linked list` class that will hold these operations within.
 
 * The structure and basic functionality of the `linked list` class can be the same for both **primitive** and **non-primitive** types.
   
