@@ -260,7 +260,7 @@ public class Tree {
         System.out.println("Print root value");
         System.out.println(T.root.employeeData.name);
 
-        // 4 - Access and update the root data (employee name)t o be (Anas)
+        // 4 - Access and update the root data (employee name) to be (Anas)
         T.root.employeeData.name = "Anas";
 
         // 5 - Create root child (left child)
