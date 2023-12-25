@@ -1,22 +1,27 @@
 # Introduction to Graph
-You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
+You can think of the `graph` as a **relationship between people in a social network**. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled. We can **organize this data by using Graph**.
 
 <img width="350" alt="Graph Example" src="data-structures-and-algorithms - Intro Graph Directed Example.jpg">
 
 ### **Graph Attributes are**:
 Let's take the image above as an example.
-The **nodes** are holding a data, which represent khaled, Fahad, and Majed.
+The **nodes** are holding data, which represent Khaled, Fahad, and Majed.
+
 <img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example.jpg">
 
 The **edges** are the arrows between the nodes, which represent the relationship between them.
+
 <img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example (1).jpg">
 
 
 **Weight** which is the value of the edge.
 
-> The different between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
+> The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
-> Example of the weighted graph is the map navigation, where the nodes are the citites and the edges are the roads between the cities. And the weight of the edge is the distance between the cities.
+> An example of the weighted graph is the map navigation, where the nodes are the cities and the edges are the roads between the cities. And the weight of the edge is the distance between the cities.
+
+> Some resources refer to the node as a **vertex** and the edge as an **arc**.
+
 
 ## Concept
 A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
