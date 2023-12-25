@@ -8,7 +8,7 @@ In `sequential search`, also known as **linear search**, we **check each item in
 
 The number of **total comparisons** in this algorithm is equal to the size of the **data structure**. If our **data structure has N items**, it takes **N comparisons in the worst case** if the item at the end of the data structure or does not exist.
 
-Pseudocode representation of the Sequential Search algorithm:
+A pseudocode representation of the sequential search algorithm:
 ```
 unction sequentialSearch(list, item):
     for i from 0 to length(list)-1 do:
