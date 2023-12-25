@@ -140,7 +140,7 @@ public class Tree {
         System.out.println("Print root value");
         System.out.println(T.root.number);
 
-        // 4 - Update the **root** data to be (3)
+        // 4 - Update the root data to be (3)
         T.root.number = 3;
 
         // 5 - Create root child (left child)
