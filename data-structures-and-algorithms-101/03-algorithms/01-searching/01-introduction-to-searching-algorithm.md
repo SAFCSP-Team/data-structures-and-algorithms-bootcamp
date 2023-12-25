@@ -5,12 +5,14 @@ Imagine you have a list of names written on a piece of paper. To find a particul
 
 ## Concept
 
-Searching algorithms are like plans that help us find what we're looking for efficiently. They can be used in various real-life situations, from finding information on the internet to solving puzzles. By understanding different search algorithms, you can become better at finding things and solving problems effectively.
+Searching algorithms are like **plans that help us find what we're looking** for efficiently. They can be used in various real-life situations, from finding information on the internet to solving puzzles. By understanding different search algorithms, you can become better at finding things and solving problems effectively.
 
 
- Based on the type of search operation, these algorithms are generally classified into two categories:
- - `Sequential Search`: traversed sequentially and every element is checked. For example: Linear Search.
- - `Interval Search`: These algorithms are specifically designed for searching in sorted data structures. These search algorithms are much more efficient than Linear Search as they repeatedly target the center of the search structure and divide the search space in half. For Example: Binary Search.
+ There are lots of different search algorithms but we can divide them into two basic types, algorithms that **don’t make any assumptions about the order** of the list`liner search`, and algorithms that **assume the list is already in order** `binary search`.
+ 
+- `Liner search`: typically involves sequentially scanning the list **from the beginning until the desired element is found or the end** of the list is reached.
+
+- `Binary search`: this algorithm assumes that the list is already in ascending or descending order, and we **leverage the order** of the list to perform more efficient searches **by reducing the search space**. 
 
 <img width="910" alt="binary and linear search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/rec/binary-and-linear-search-animations.gif" />
 
