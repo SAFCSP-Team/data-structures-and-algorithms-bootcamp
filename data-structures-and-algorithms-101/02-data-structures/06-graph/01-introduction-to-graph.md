@@ -1,8 +1,22 @@
 # Introduction to Graph
 You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
 
-<img width="350" alt="An element in the queue array" src="data-structures-and-algorithms - Intro Graph Directed Example.jpg">
+<img width="350" alt="Graph Example" src="data-structures-and-algorithms - Intro Graph Directed Example.jpg">
 
+### **Graph Attributes are**:
+Let's take the image above as an example.
+The **nodes** are holding a data, which represent khaled, Fahad, and Majed.
+<img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example.jpg">
+
+The **edges** are the arrows between the nodes, which represent the relationship between them.
+<img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example (1).jpg">
+
+
+**Weight** which is the value of the edge.
+
+> The different between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
+
+> Example of the weighted graph is the map navigation, where the nodes are the citites and the edges are the roads between the cities. And the weight of the edge is the distance between the cities.
 
 ## Concept
 A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
@@ -26,14 +40,14 @@ The way to represent a graph is using an Adjacency Matrix, Adjacency List or Gra
 * **Graph**
 
 
-<img width="350" alt="An element in the queue array" src="data-structures-and-algorithms - Intro Graph Directed Example (1).jpg">
+<img width="350" alt="Graph Directed Example" src="data-structures-and-algorithms - Intro Graph Directed Example (1).jpg">
 
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 ## Implementation
-We can implement the graph using **two dimensional array**. The first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
+There are many way to implement the graph, but we'll use the **Adjacency Matrix**.
+We can implement the graph using **two dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
 
-> There're many ways to implement the graph, but we'll use the two dimensional array.
 
 ```java
 import java.util.ArrayList;
@@ -139,12 +153,3 @@ It's a graph where each edge is undirected or bi-directional. This means that th
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
 |GraphProject01| [Type of Graph]() | - | 
-
-
-
-
-
-
-
-
-
