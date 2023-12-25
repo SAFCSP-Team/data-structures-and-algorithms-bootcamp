@@ -287,13 +287,14 @@ Anas
 ```
 
 <br/>
-<br/>
 
 After running the previous code, the `Tree` will look like the following (figure 5).
 
 Figure 5
 ![data representation](./images/Tree-intro-emp-ex.jpg)
 
+<br/>
+<br/>
 
 - **Tree traversal**
 
