@@ -10,7 +10,7 @@ The number of **total comparisons** in this algorithm is equal to the size of th
 
 A pseudocode representation of the sequential search algorithm:
 ```
-unction sequentialSearch(list, item):
+function sequentialSearch(list, item):
     for i from 0 to length(list)-1 do:
         if list[i] equals item then:
             return i
