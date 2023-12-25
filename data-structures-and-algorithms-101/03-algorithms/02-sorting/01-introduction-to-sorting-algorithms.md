@@ -31,9 +31,6 @@ To address this challenge, `sorting algorithms` **are utilized to arrange** cont
    
 ## Example 
 
-### Primitive 
-
-### Non-primitive
 
 ## Projects
 
