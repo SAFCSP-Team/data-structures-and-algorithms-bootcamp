@@ -1,4 +1,4 @@
-# Introduction to Tree
+# Introduction to tree
 
 In data structure, tree is another way to organize the data.
 
