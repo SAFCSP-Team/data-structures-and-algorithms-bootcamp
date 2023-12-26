@@ -207,7 +207,7 @@ B	0	0
 ## Types
 
 * ###  **Directed Graph** 
-It's a graph where each edge is directed. Each node is directed at another node with a specific requirement of what node should be referenced next.
+It's a graph where each edge is directed. Each node is directed at another node with a specific requirement of what node should be referenced next. In the image below A is adjacent to B, but B is not adjacent to A. That's mean you can't go from B to A, without having to go through other nodes. 
 
 <img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/526780a5-45f0-43c1-b0c2-80606975eb41">
 
@@ -217,7 +217,7 @@ It's a graph where each edge is directed. Each node is directed at another node 
 
 * ### **Undirected Graph** 
 It's a graph where each edge is undirected or bi-directional. This means all nodes are connected to each other. 
-
+In the image below D is adjacent to B, and B is adjacent to D.
 
 <img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/3ddb74c8-f4e0-4d32-9491-e1a37761a3f2">
 
