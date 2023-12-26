@@ -216,7 +216,8 @@ It's a graph where each edge is directed. Each node is directed at another node 
 
 
 * ### **Undirected Graph** 
-It's a graph where each edge is undirected or bi-directional. This means that the undirected graph does not move in any direction.
+It's a graph where each edge is undirected or bi-directional. This means all nodes are connected to each other. 
+
 
 <img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/3ddb74c8-f4e0-4d32-9491-e1a37761a3f2">
 
