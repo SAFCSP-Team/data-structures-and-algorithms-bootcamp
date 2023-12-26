@@ -53,7 +53,7 @@ Great, we have created the array and added the element to it, but what would cha
 char[] vowels = new char[5];
 
 // Assigning values to the array elements
-vowels[0] = 'a";
+vowels[0] = 'a';
 vowels[1] = 'e';
 vowels[2] = 'i';
 vowels[3] = 'o';
