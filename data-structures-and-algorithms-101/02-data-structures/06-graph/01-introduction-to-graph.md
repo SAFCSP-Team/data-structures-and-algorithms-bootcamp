@@ -203,6 +203,48 @@ B	0	0
 
 ```
 
+8. Create a method called **deleteEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 0. which means that the source node is not connected to the destination node.
+
+```java
+public void deleteEdge(int src, int dst) {
+        adjMatrix[src][dst] = 0;
+    }
+
+```
+
+9. Call **deleteEdge** in the main method, and pass the index of A and B, to delete the edge between the node A and B.
+
+```java
+
+objGraph.deleteEdge(0, 1);
+
+```
+
+10. Create **updateNode** method that takes two parameters, the first one is the index of node that you want to update and the second one is the new node.
+
+```java
+
+public void updateNode(int index, Node item) {
+        if(index < nodes.size()) {
+            nodes.set(index, item);
+        }
+    }
+
+```
+
+11. Call **updateNode** in the main method, and pass the index of B and the new node.
+
+```java
+
+objGraph.updateNode(1, new Node('C'));
+```
+
+**OUTPUT**
+```
+	A 	C 
+A	0	0	
+C	0	0
+```
 
 ## Types
 
