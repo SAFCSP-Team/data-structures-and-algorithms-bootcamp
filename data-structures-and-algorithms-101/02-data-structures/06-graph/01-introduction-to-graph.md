@@ -1,17 +1,17 @@
 # Introduction to Graph
 You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
 
-<img width="350" alt="Graph Example" src="data-structures-and-algorithms - Intro Graph Directed Example.jpg">
+<img width="350" alt="Graph Example" src="images/Intro Graph Directed Example.jpg">
 
 ### **Graph Attributes are**:
 Let's take the image above as an example.
 The **nodes** are holding data, which represent Khaled, Fahad, and Majed.
 
-<img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example.jpg">
+<img width="300" alt="Graph - Node" src="images/Graph Directed Node Example.jpg">
 
 The **edges** are the arrows between the nodes, which represent the relationship between them.
 
-<img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example (1).jpg">
+<img width="300" alt="Graph - Node" src="images/Graph Directed Edge Example.jpg">
 
 
 **Weight** which is the value of the edge.
@@ -31,20 +31,17 @@ The way to represent a graph is using an Adjacency Matrix, Adjacency List, or Gr
 
 * **Adjacency Matrix**
 
-
-![Alt text](<Screenshot 1445-06-11 at 10.35.03 AM.png>)
+<img width="350" alt="Graph - Node" src="images/Graph Adjacency Matrix Example.png">
 
 * **Adjacency List**
 
-
-![Alt text](<data-structures-and-algorithms - Adjacency Matrix.jpg>)
-
+<img width="350" alt="Graph - Node" src="images/Graph Adjacency List.jpg">
 
 
 * **Graph**
 
 
-<img width="350" alt="Graph Directed Example" src="data-structures-and-algorithms - Intro Graph Directed Example (1).jpg">
+<img width="350" alt="Graph Directed Example" src="images/Graph Directed Example.jpg">
 
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
@@ -176,7 +173,7 @@ public class Main {
 
 We have succssfully created a graph with two nodes and an edge between them.
 
-<img width="350" alt="A-B_Graph" src="data-structures-and-algorithms - Graph Edges.jpg">
+<img width="350" alt="A-B_Graph" src="images/Directed Nodes Connected.jpg">
 
 
 7. Create a method to print the graph using **Adjacency Matrix**.
