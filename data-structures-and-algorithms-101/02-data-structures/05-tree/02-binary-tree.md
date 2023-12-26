@@ -131,7 +131,7 @@ Post order Traversal:  4 2 3 1
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-|TreeProject02| [Tree with non primitive (Employees) data types](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
+|[Tree with non primitive (Employees) data types](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
 
 
 
