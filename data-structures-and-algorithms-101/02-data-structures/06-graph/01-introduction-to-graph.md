@@ -45,8 +45,8 @@ The way to represent a graph is using an Adjacency Matrix, Adjacency List or Gra
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 ## Implementation
-There are many way to implement the graph, but we'll use the **Adjacency Matrix**.
-We can implement the graph using **two dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
+We will implement **the directed graph** using the **adjacency matrix**.
+The way to implement the adjacency matrix is by using **two dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
 
 
 1. Create a class called **Node** that has a data and a constructor that takes the data as a parameter.
