@@ -226,4 +226,4 @@ It's a graph where each edge is undirected or bi-directional. This means that th
 
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|GraphProject01| [Type of Graph]() | - | 
+|GraphProject01| [Type of Graph](https://github.com/SAFCSP-Team/introduction-to-graph-project) | - | 
