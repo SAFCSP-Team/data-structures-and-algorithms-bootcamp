@@ -3,7 +3,7 @@
 
 A `double linked list` is an enhanced version of a linked list that allows **bidirectional traversal**. Each `node` in a **double linked list** contains of additional pointer called the `previous pointer`, which points to the previous node in the list. This feature enables efficient **traversal** both **forward and backward** through the list. Unlike singly linked lists, where traversal is only possible in one direction.
 
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/68ff54de-1471-4260-9b89-1bf8db7ada7a)
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/90ac4a5d-7b54-48f3-8bce-f70daa60fc90)
 
  `Doubly linked list` enables efficient implementation of operations like **reverse traversal, 
   inserting elements** before or after a given node, and **deleting** a node with direct access to it.
