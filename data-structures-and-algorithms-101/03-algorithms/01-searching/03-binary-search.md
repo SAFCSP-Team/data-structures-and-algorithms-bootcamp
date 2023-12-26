@@ -28,6 +28,8 @@ The key idea behind Binary Search is to divide the search space in half at each 
 - If the middle element is less than the target element, the target element must be in the upper half of the list. Update the low pointer to `mid + 1` and repeat from step 3.
 
 5. Repeat steps 3 and 4 until the target element is found or If the low pointer exceeds the high pointer, the target element is not present in the list.
+<img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-03.jpg" />
+
 
 A pseudocode representation of the binary search algorithm:
 ```
@@ -52,7 +54,96 @@ In this pseudocode, the list represents the list in which we are performing the 
 > You can translate this pseudocode into your preferred programming language to implement the Sequential Search algorithm.
 
 ## Example 
+- Implementing the binary search algorithm in Java for an array:
+```java
+public class BinarySearch {
+    public static int binarySearch(int[] array, int target) {
+        int low = 0;
+        int high = array.length - 1;
 
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (array[mid] == target) {
+                return mid; // Found the target element at index mid
+            } else if (array[mid] < target) {
+                low = mid + 1; // Target is in the upper half of the array
+            } else {
+                high = mid - 1; // Target is in the lower half of the array
+            }
+        }
+
+        return -1; // Target element not found in the array
+    }
+
+    public static void main(String[] args) {
+        int[] array = {1, 3, 5, 7, 9, 11, 13, 15};
+        int target = 9;
+
+        int result = binarySearch(array, target);
+        if (result == -1) {
+            System.out.println("Target element not found in the array");
+        } else {
+            System.out.println("Target element found at index " + result);
+        }
+    }
+}
+```
+In the main method, we create an example array and target element. We then call the binarySearch method and print the result accordingly.
+
+- Implementing the binary search algorithm in Java for a linked list:
+```java
+    public static ListNode binarySearch(ListNode head, int target) {
+        ListNode low = head;
+        ListNode high = getTail(head);
+
+        while (low != high && low != null && high != null && low != high.next) {
+            ListNode mid = getMid(low, high);
+
+            if (mid.val == target) {
+                return mid;  // Found the target element
+            } else if (mid.val < target) {
+                low = mid.next;  // Target is in the upper half of the list
+            } else {
+                high = mid;  // Target is in the lower half of the list
+            }
+        }
+
+        if (low != null && low.val == target) {
+            return low;  // Found the target element
+        }
+
+        return null;  // Target element not found in the list
+    }
+
+//calculates the mid node 
+    private static ListNode getMid(ListNode low, ListNode high) {
+        ListNode slow = low;
+        ListNode fast = low;
+
+        while (fast != high && fast.next != high) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+
+
+// calculates the high node 
+    private static ListNode getTail(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+
+        return current;
+    }
+```
 
 ## Projects
 
