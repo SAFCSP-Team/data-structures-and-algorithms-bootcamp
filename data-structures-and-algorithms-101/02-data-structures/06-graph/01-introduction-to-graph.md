@@ -5,18 +5,20 @@ You can think of the graph as a relationship between people in a social network.
 
 ### **Graph Attributes are**:
 Let's take the image above as an example.
-The **nodes** are holding a data, which represent khaled, Fahad, and Majed.
+The **nodes** are holding data, which represent Khaled, Fahad, and Majed.
+
 <img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example.jpg">
 
 The **edges** are the arrows between the nodes, which represent the relationship between them.
+
 <img width="300" alt="Graph - Node" src="data-structures-and-algorithms - Copy of Intro Graph Directed Example (1).jpg">
 
 
 **Weight** which is the value of the edge.
 
-> The different between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
+> The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
-> Example of the weighted graph is the map navigation, where the nodes are the citites and the edges are the roads between the cities. And the weight of the edge is the distance between the cities.
+> An example of the weighted graph is the map navigation, where the nodes are the cities and the edges are the roads between the cities. And the weight of the edge is the distance between the cities.
 
 ## Concept
 A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
@@ -25,13 +27,15 @@ There are two components of a graph:
 1. Node - A node represents an entity (object) in the graph.
 2. Edge - An edge is a line or arc that connects a pair of vertices in the graph.
 
-The way to represent a graph is using an Adjacency Matrix, Adjacency List or Graph.
+The way to represent a graph is using an Adjacency Matrix, Adjacency List, or Graph.
 
 * **Adjacency Matrix**
+
 
 ![Alt text](<Screenshot 1445-06-11 at 10.35.03 AM.png>)
 
 * **Adjacency List**
+
 
 ![Alt text](<data-structures-and-algorithms - Adjacency Matrix.jpg>)
 
@@ -46,10 +50,10 @@ The way to represent a graph is using an Adjacency Matrix, Adjacency List or Gra
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 ## Implementation
 We will implement **the directed graph** using the **adjacency matrix**.
-The way to implement the adjacency matrix is by using **two dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
+The way to implement the adjacency matrix is by using a **two-dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
 
 
-1. Create a class called **Node** that has a data and a constructor that takes the data as a parameter.
+1. Create a class called **Node** that has data and a constructor that takes the data as a parameter.
    
 ```java
 
