@@ -3,7 +3,7 @@
 
 A `double linked list` is an enhanced version of a linked list that allows **bidirectional traversal**. Each `node` in a **double linked list** contains of additional pointer called the `previous pointer`, which points to the previous node in the list. This feature enables efficient **traversal** both **forward and backward** through the list. Unlike singly linked lists, where traversal is only possible in one direction.
 
-![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/6e7ee626-df74-4e29-8771-eb23d84d4f19)
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/68ff54de-1471-4260-9b89-1bf8db7ada7a)
 
  `Doubly linked list` enables efficient implementation of operations like **reverse traversal, 
   inserting elements** before or after a given node, and **deleting** a node with direct access to it.
@@ -24,9 +24,10 @@ public class Main {
     doublyLinkedList.delete(14);
     System.out.println("List after deleting 14:");
     doublyLinkedList.display();
-    }}
+    }
+}
 
-class Node {
+public class Node {
     int data;
     Node previous;
     Node next;
@@ -34,10 +35,12 @@ class Node {
         this.data = data;
         this.previous = null;
         this.next = null;
-    }}
+    }
+}
 
 class DoublyLinkedList {
  Node head;
+
  public void insert(int data) {
     Node Node = new Node(data);
      if (head == null) {
@@ -51,6 +54,7 @@ class DoublyLinkedList {
           current.next = Node;
         }
     }
+
     public void delete(int data) {
         if (head == null) {
             return;
@@ -76,6 +80,7 @@ class DoublyLinkedList {
             current = current.next;
         }
     }
+
     public void display() {
         Node current = head;
         while (current != null) {
@@ -146,6 +151,7 @@ void reverseList(Node** head) {
       right = right->prev;
    }
 }
+
 int main() {
    Node* headNode = newNode("E");
    insert(&headNode, "D");
