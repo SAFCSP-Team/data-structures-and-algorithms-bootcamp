@@ -21,6 +21,13 @@ By using `Quick Sort`, you can efficiently sort the stack of papers based on the
 * the Pivot can be Picked as the first, last element or can be a random element.
 ## Example 
 
+* Quick Sort for Arrays:
+
+
+
+* Quick Sort for Linked Lists:
+> QuickSort in `linkedlist` works by using the last element of the list as the pivot Element. The Logic is Divided into 2 methods , they are:
+
 
 ## Projects
 
