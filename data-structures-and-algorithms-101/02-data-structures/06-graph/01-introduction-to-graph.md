@@ -5,20 +5,24 @@ You can think of the graph as a relationship between people in a social network.
 
 ### **Graph Attributes are**:
 Let's take the image above as an example.
-The **nodes** are holding data, which represent Khaled, Fahad, and Majed.
+* The **nodes** are holding data, which represent Khaled, Fahad, and Majed.
 
 <img width="300" alt="Graph - Node" src="images/Graph Directed Node Example.jpg">
 
-The **edges** are the arrows between the nodes, which represent the relationship between them.
+* The **edges** are the arrows between the nodes, which represent the relationship between them.
 
 <img width="300" alt="Graph - Node" src="images/Graph Directed Edge Example.jpg">
 
 
-**Weight** which is the value of the edge.
+* The **weight** is the value of the edge.
+
+An example of the weighted graph is the map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. And the **weight** of the edge is the **distance** between the cities.
+
+<img width="300" alt="Graph - Node" src="images/Graph Weight.jpg">
 
 > The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
-> An example of the weighted graph is the map navigation, where the nodes are the cities and the edges are the roads between the cities. And the weight of the edge is the distance between the cities.
+
 
 ## Concept
 A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
@@ -176,7 +180,7 @@ We have succssfully created a graph with two nodes and an edge between them.
 <img width="350" alt="A-B_Graph" src="images/Directed Nodes Connected.jpg">
 
 
-7. Create a method to print the graph using **Adjacency Matrix**.
+7. Create a method to **print** the graph using **Adjacency Matrix**.
 
 ```java
     public void printAdjMatrix() {
@@ -239,6 +243,10 @@ public void updateNode(int index, Node item) {
 
 objGraph.updateNode(1, new Node('C'));
 ```
+
+12. Call **printAdjMatrix** in the main method, to print the graph, so we can see the changes.
+
+
 
 **OUTPUT**
 ```
