@@ -67,7 +67,7 @@ In the main method, we create an example array **Array** and specify the **searc
 ## Projects
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[text](-) | - | 
+|[linear search](https://github.com/SAFCSP-Team/linear-search) | - | 
 
 
 
