@@ -302,6 +302,26 @@ let's say wa have the following employees tree that stores the employees names o
 Figure 6
 ![data representation](./images/Tree-intro-emp-ex-oporations.jpg)
 
+We have multiple 4 operation to perform on the above tree:
+
+- Operartion 1: search node
+search and find specific node
+
+We will search and find **Yasser**:
+
+- Operartion 2: delete node
+delete specific node
+
+
+- Operartion 3: insert node 
+insert node in a specific place
+
+- Operartion 4: update node 
+update specific node 
+
+
+
+
 
 
 - **Tree traversal**
