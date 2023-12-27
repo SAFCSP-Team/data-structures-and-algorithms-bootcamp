@@ -173,9 +173,9 @@ After running the previous code, the `Tree` will look like the following (figure
 Figure 4
 ![data representation](./images/Tree-intro-ex.jpg)
 
+<br/>
+<br/>
 
-<br/>
-<br/>
 
 - `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
@@ -295,6 +295,14 @@ Figure 5
 
 <br/>
 <br/>
+
+Knowing that we have covered the basics of bulding the tree, we will learn more oporations to perform on the tree.
+let's say wa have the following employees tree that stores the employees names only:
+
+Figure 6
+![data representation](./images/Tree-intro-emp-ex-oporations.jpg)
+
+
 
 - **Tree traversal**
 
