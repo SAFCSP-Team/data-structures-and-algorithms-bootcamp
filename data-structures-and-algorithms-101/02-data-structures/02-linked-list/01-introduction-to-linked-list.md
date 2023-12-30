@@ -141,54 +141,30 @@ public class LinkedList {
         if (head == null) {
             head = value;
         } else {
-            Node current = head;
-            while (current.next != null) {
-                current = current.next;
-            }
-            current.next = value;
+            value.next = head;
+            head = value;
         }
     }
    /* to print the contents of the linked list */
     public void display() {
-        if (head == null) {
-            System.out.println("Linked list is empty.");
-        } else {
-            Node current = head;
-            while (current != null) {
-                System.out.print(current.data + " ");
-                current = current.next;
-            }
-            System.out.println();
+     Node node = head;
+        while(node!=null)
+        {
+            System.out.print(node.data + " ");
+            node = node.next;
         }
     }
    /*  delete a specific element from the linked list */
    public void delete(int data) {
-      if (head == null) {
-        System.out.println("Linked list is empty.");
-        return;
-    }
-
-    if (head.data == data) {
-        head = head.next;
-        return;
-    }
-
-    Node current = head;
-    Node prev = null;
-    while (current != null) {
-        if (current.data == data) {
-            prev.next = current.next;
-            return;
+     if (head == null){
+         System.out.println("List is empty, not possible to delete");
+         return;
         }
-        prev = current;
-        current = current.next;
-    }
 
-    System.out.println(data + " not found in the linked list.");
+        System.out.println("Deleted: " + head.data);
+        // move head to next node
+        head = head.next;
 }
-
-}
-
 ```
 * Create an instance of the `LinkedList` class then call the various methods such as insert and display, to perform operations on the `Linkedlist` class. (primitive)
 ```java
