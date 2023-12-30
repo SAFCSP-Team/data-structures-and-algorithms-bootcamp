@@ -100,8 +100,8 @@ The secondElement = Name: Bob Age: 30
 
 ## Projects
 |Project Title | Deadline |
-|:-----------:|:-------------|
-|[One Dimensional Array](https://github.com/SAFCSP-Team/one-dimensional-arrays) | - | 
+|:-----------:|:-------------:|
+|[One Dimensional Array](https://github.com/SAFCSP-Team/one-dimensional-arrays) | 30 Dec 2023 | 
 
 
 
