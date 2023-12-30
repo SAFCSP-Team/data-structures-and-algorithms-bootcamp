@@ -53,7 +53,7 @@ public static void main(String[] args) {
      System.out.println("Number of columns: " + columns);
 
      int secondElement = twoDArray[1][2]; // Row 1, Column 2
-     System.out.println("Element at (1, 2): " + element);
+     System.out.println("Element at (1, 2): " + secondElement);
 }
 ```
 **Output**
