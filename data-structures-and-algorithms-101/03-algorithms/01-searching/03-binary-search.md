@@ -6,9 +6,9 @@
 What did you do when the Last guess was too low! Did you continue to guess numbers smaller than the last number, or did you ignore them and start trying larger numbers?
 
 ## Concept
-The "guess number game" is a popular example that demonstrates the application of the Binary Search algorithm. The Binary Search algorithm is used to efficiently narrow down the search space and find the correct number with fewer attempts.
+The "guess number game" is a popular example that demonstrates the application of the `binary search algorithm`. The binary search algorithm is **used to efficiently narrow down the search space** and find the correct number with fewer attempts.
 
-The key idea behind Binary Search is to divide the search space in half at each step. By comparing the middle element with the target, we can determine whether the target is in the first half or the second half of the list. This approach allows us to eliminate half of the remaining elements with each comparison, making the search process very efficient.
+The key idea behind binary search is to **divide the search space in half at each step**. By **comparing the middle element with the target**, we can determine whether the target is in the first half or the second half of the list. This approach allows us to eliminate half of the remaining elements with each comparison, making the search process very efficient.
 
 #### Here's how the Binary Search algorithm works  in a step-by-step manner:
 
@@ -16,7 +16,7 @@ The key idea behind Binary Search is to divide the search space in half at each 
 
 2. Set two pointers, “low” and “high,” to the first and last indices of the list, respectively.
 
-3. Calculate the middle index as the average of the low and high indices: `mid = (low + high) / 2`.
+3. Calculate the middle index as the average of the low and high indices: mid = **(low + high) / 2**.
 <img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-01.png" />
 4. Compare the middle element with the target element that you are searching for.
 <img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-02.png" />
@@ -149,7 +149,7 @@ In the main method, we create an example array and target element. We then call 
 
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[text](-) | - | 
+|[Binary Search](https://github.com/SAFCSP-Team/binary-search) | - | 
 
 
 
