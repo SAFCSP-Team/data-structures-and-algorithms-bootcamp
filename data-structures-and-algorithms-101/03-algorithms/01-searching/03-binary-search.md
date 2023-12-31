@@ -148,7 +148,7 @@ In the main method, we create an example array and target element. We then call 
 ## Projects
 
 |Project Title | Deadline |
-|:-----------:|:-------------|
+|:-----------:|:-------------:|
 |[Binary Search](https://github.com/SAFCSP-Team/binary-search) | - | 
 
 
