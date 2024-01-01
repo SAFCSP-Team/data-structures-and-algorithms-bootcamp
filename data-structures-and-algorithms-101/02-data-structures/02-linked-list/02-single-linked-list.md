@@ -2,7 +2,7 @@
 
 ## Concept 
 
-`Single Linked List ` is a **linear data structure** in which elements, called `nodes`, are connected via `pointers` or references. Each node contains two parts, the data and a reference to the next node in the sequence. The first node in the list is called the `head`, and the last node is called the `tail`.
+`Single Linked List ` is a **linear data structure** in which elements, called `nodes`, Each node **contains two parts**, the `data` and a `reference` to the next node in the sequence. The first node in the list is called the `head`, and the last node is called the `tail`.
 
 **Common Singly Linked List Operations**
 
