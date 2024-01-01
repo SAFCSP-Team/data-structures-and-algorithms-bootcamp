@@ -90,7 +90,7 @@ public class Main {
         /* update first Node value */
         firstNode.data = 15;
 
-   /* link the first node to the second node */
+        /* link the first node to the second node */
         firstNode.next = secondNode;
 
         System.out.println(firstNode.data);
