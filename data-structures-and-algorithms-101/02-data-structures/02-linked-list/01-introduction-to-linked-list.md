@@ -118,7 +118,7 @@ public class Main {
   
 ```java
 public class LinkedList {
-    public Node head;
+  public Node head;
 
   public LinkedList() {
         this.head = null;
@@ -128,7 +128,7 @@ public class LinkedList {
 * Perform an action (primitive) 
  ```java
 public class LinkedList {
-    public Node head;
+  public Node head;
 
   public LinkedList() {
         this.head = null;
@@ -146,7 +146,7 @@ public class LinkedList {
     }
    /* to print the contents of the linked list */
     public void display() {
-     Node node = head;
+        Node node = head;
         while(node!=null)
         {
             System.out.print(node.data + " ");
