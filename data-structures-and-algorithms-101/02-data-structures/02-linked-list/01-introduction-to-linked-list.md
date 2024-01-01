@@ -8,7 +8,7 @@ To simulate the treasure hunt in our program, we need to use a `linked list` to 
 
 ## Concept
 
-A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. Each node contains the `data` and a `pointer` to the next node in the sequence. The last node in the list has a pointer to null, `tail` indicates the end of the list.
+A `linked list` is a **data structure** that consists of a **sequence of elements called nodes**. The last node in the list has a pointer to null, `tail` indicates the end of the list.
 
 ![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/9216e3bd-ecd2-44e0-99d2-857a761e827e)
 
