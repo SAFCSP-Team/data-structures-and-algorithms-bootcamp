@@ -14,17 +14,88 @@ A `double linked list` is an enhanced version of a linked list that allows **bid
 * Double linked list of primitive data types in java.
 ```java
 public class Main {
-  public static void main(String[] args) {
-    DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
-    doublyLinkedList.insert(7);
-    doublyLinkedList.insert(14);
-    doublyLinkedList.insert(21);
-    System.out.println("Original list:");
-    doublyLinkedList.display();
-    doublyLinkedList.delete(14);
-    System.out.println("List after deleting 14:");
-    doublyLinkedList.display();
+    public static void main(String[] args) {
+        DoublyLinkedList doublyList = new DoublyLinkedList();
+
+        doublyList.insert(7);
+        doublyList.insert(14);
+        doublyList.insert(21);
+
+        System.out.println("Original list:");
+
+        doublyList.display();
+        doublyList.delete(14);
+
+        System.out.println("List after deleting 14:");
+
+        doublyList.display();
     }
+}
+
+class Node {
+    int data;
+    Node previous;
+    Node next;
+    public Node(int data) {
+        this.data = data;
+        this.previous = null;
+        this.next = null;
+    }
+}
+
+class DoublyLinkedList {
+    Node head;
+
+    public void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node currentNode = head;
+            while (currentNode.next != null) {
+                currentNode = currentNode.next;
+            }
+            newNode.previous = currentNode;
+            currentNode.next = newNode;
+        }
+    }
+
+    public void delete(int data) {
+        if (head == null) {
+            return;
+        }
+        Node currentNode = head;
+        while (currentNode != null) {
+            if (currentNode.data == data) {
+                if (currentNode.previous == null) {
+                    /*  Node to delete is the head node */
+                    head = currentNode.next;
+                    if (head != null) {
+                        head.previous = null;
+                    }
+                } else {
+                    /* Node to delete is not the head node */
+                    currentNode.previous.next = currentNode.next;
+                    if (currentNode.next != null) {
+                        currentNode.next.previous = currentNode.previous;
+                    }
+                }
+                break;
+            }
+            currentNode = currentNode.next;
+        }
+    }
+
+    public void display() {
+        Node currentNode = head;
+        while (currentNode != null) {
+            System.out.print(currentNode.data + " ");
+            currentNode = currentNode.next;
+        }
+        System.out.println();
+    }
+}
+
 }
 
 public class Node {
