@@ -133,7 +133,7 @@ public class LinkedList {
   public LinkedList() {
         this.head = null;
     }
-    /* insert a new element at the end of the linked list */
+    /* insert a new element at the first of the linked list */
     public void insert(int data) {
         Node value = new Node(data);
 
@@ -153,7 +153,7 @@ public class LinkedList {
             node = node.next;
         }
     }
-   /*  delete a specific element from the linked list */
+   /*  delete first node from the linked list */
    public void delete(int data) {
      if (head == null){
          System.out.println("List is empty, not possible to delete");
