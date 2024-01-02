@@ -221,6 +221,13 @@ Since the tree creation is covered now, we will create and add more nodes to the
     }
 ```
 
+ 
+After adding the nodes above, the tree will be as the below figuer 5 is showing:
+
+Figure 5
+![data representation](./images/intro-integers-tree.jpg)
+
+
 
 - `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
