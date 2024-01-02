@@ -239,6 +239,47 @@ Figure 5
 ![data representation](./images/intro-integers-tree.jpg)
 
 
+- **Search** operation:
+Let's build a function to search the `node` 12:
+
+```java
+
+public Node iterativeSearch(Node root, int target) {
+        if (root == null) {
+            System.out.println("Tree is empty");
+            return null;
+        }
+
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            Node currentNode = stack.pop();
+
+            if (currentNode.number == target) {
+                return currentNode;
+            }
+
+            if (currentNode.right != null) {
+                stack.push(currentNode.right);
+            }
+
+            if (currentNode.left != null) {
+                stack.push(currentNode.left);
+            }
+
+            if (currentNode.center != null) {
+                stack.push(currentNode.center);
+            }
+        }
+
+        return null;
+    }
+
+
+```
+ 
+
 
 - `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
