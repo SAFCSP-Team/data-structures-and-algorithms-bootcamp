@@ -206,10 +206,8 @@ Let's delete the left child of the root:
     }
 ```
 
-
-
-
-
+<br/>
+<br/>
 
 Since the tree creation is covered, now we will create and add more nodes to the previous tree:
 
