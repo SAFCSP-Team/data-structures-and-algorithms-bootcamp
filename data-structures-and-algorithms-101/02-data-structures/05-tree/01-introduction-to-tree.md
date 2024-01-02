@@ -204,8 +204,6 @@ Since the tree creation is covered now, we will create and add more nodes to the
 ``` java
  public static void main(String[] args) {
 
-        // 5 - Add more nodes to the tree
-
         T.root.left = new Node(2);
         T.root.center = new Node(4);
         T.root.right = new Node(5);
@@ -218,6 +216,7 @@ Since the tree creation is covered now, we will create and add more nodes to the
         T.root.right.center = new Node(10);
         T.root.right.right = new Node(11);
 
+        T.root.right.left.left = new Node(12);
 
     }
 ```
