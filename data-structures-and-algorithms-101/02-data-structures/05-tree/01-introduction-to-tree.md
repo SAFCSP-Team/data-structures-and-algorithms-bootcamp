@@ -239,9 +239,11 @@ Figure 5
 ![data representation](./images/intro-integers-tree.jpg)
 
 
-- **Search** operation:
-Let's build a function to search the `node` 12:
+- **Search** operation:   
+We will build a function to search for a specific `node`:     
+This function will take the the **root node** and **target value** as properties.
 
+  
 ```java
 
 public Node iterativeSearch(Node root, int target) {
@@ -278,7 +280,15 @@ public Node iterativeSearch(Node root, int target) {
 
 
 ```
- 
+  
+Now in `main` we will seach for the node 12:
+
+```java
+ public static void main(String[] args) {
+        Node target = T.iterativeSearch(T.root, 2);
+        System.out.println(target == null? "" : target.number);
+}
+```
 
 
 - `Tree` Implementation with non-premitive data type.   
