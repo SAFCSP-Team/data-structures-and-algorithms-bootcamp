@@ -342,64 +342,6 @@ Figure 5
 <br/>
 <br/>
 
-Knowing that we have covered the basics of bulding the tree, we will learn more oporations to perform on the tree.
-let's say wa have the following employees tree that stores the employees names only:
-
-Figure 6
-![data representation](./images/Tree-intro-emp-ex-oporations.jpg)
-
-We have multiple 4 operation to perform on the above tree:
-
-- Operartion 1: search node
-search and find specific node
-
-We will search and find **Yasser**:
-
-- Operartion 2: delete node
-delete specific node
-
-
-- Operartion 3: insert node 
-insert node in a specific place
-
-- Operartion 4: update node 
-update specific node 
-
-
-
-
-
-
-- **Tree traversal**
-
-The process of Access required node to perform special operation or visiting each node and print their values.
-
-There are three ways to travers tree:
-
-1- Pre-order traversal
-
-- Access the root node
-- Access all nodes from the left side
-- Access all node from the right side
-- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
-
-2- In-order traversal
-
-- Access all nodes from the left side
-- Access the root node
-- Access all node from the right side
-- Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
-
-
-3- Post-order traversal
-
-- Access all nodes from the left side
-- Access all node from the right side
-- Access the root node
-- Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
-
-<br/>
-
 
 ## Types
 
