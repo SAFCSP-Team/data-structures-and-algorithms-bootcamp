@@ -197,6 +197,19 @@ Figure 4
 <br/>
 <br/>
 
+- **Delete** operation:  
+Let's delete the left child of the root:
+
+``` java
+ public static void main(String[] args) {
+        T.root.left = null;
+    }
+```
+
+
+
+
+
 
 Since the tree creation is covered, now we will create and add more nodes to the previous tree:
 
