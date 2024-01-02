@@ -41,6 +41,9 @@ Figure 1
 
 The process of Access required node to perform special operation or visiting each node and print their values.
 
+Figure 2
+![data representation](./images/Copy-of-tree-intro.jpg)
+
 There are three ways to travers tree:
 
 1- Pre-order traversal
