@@ -198,7 +198,7 @@ Figure 4
 <br/>
 
 
-Since the tree creation is covered now, we will create and add more nodes to the previous tree:
+Since the tree creation is covered, now we will create and add more nodes to the previous tree:
 
 
 ``` java
