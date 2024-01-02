@@ -179,7 +179,6 @@ public void printTreeValues(Node root) {
 
 ```
 
->Note: in printTreeValues function, we used a specific method called in-ordert traverse. It will be explained in the following sections.
 
 Output:
 ```java
@@ -197,6 +196,31 @@ Figure 4
 
 <br/>
 <br/>
+
+
+Since the tree creation is covered now, we will create and add more nodes to the previous tree:
+
+
+``` java
+ public static void main(String[] args) {
+
+        // 5 - Add more nodes to the tree
+
+        T.root.left = new Node(2);
+        T.root.center = new Node(4);
+        T.root.right = new Node(5);
+
+        T.root.left.left = new Node(6);
+        T.root.left.center = new Node(7);
+        T.root.left.right = new Node(8);
+
+        T.root.right.left = new Node(9);
+        T.root.right.center = new Node(10);
+        T.root.right.right = new Node(11);
+
+
+    }
+```
 
 
 - `Tree` Implementation with non-premitive data type.   
