@@ -197,8 +197,19 @@ Figure 4
 <br/>
 <br/>
 
+- **Delete** operation:  
+Let's delete the left child of the root:
 
-Since the tree creation is covered now, we will create and add more nodes to the previous tree:
+``` java
+ public static void main(String[] args) {
+        T.root.left = null;
+    }
+```
+
+<br/>
+<br/>
+
+Since the tree creation is covered, now we will create and add more nodes to the previous tree:
 
 
 ``` java
@@ -216,11 +227,71 @@ Since the tree creation is covered now, we will create and add more nodes to the
         T.root.right.center = new Node(10);
         T.root.right.right = new Node(11);
 
-        T.root.right.left.left = new Node(12);
+        Node target = T.iterativeSearch(T.root, 12);
 
     }
 ```
 
+ 
+After adding the nodes above, the tree will be as the below figuer 5 is showing:
+
+Figure 5
+![data representation](./images/intro-integers-tree.jpg)
+
+
+- **Search** operation:   
+We will build a function to search for a specific `node`
+This function will take the the **root node** and **target value** as properties.
+
+  
+```java
+
+public Node searchNode(Node root, int target) {
+        if (root == null) {
+            System.out.println("Tree is empty");
+            return null;
+        }
+
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            Node currentNode = stack.pop();
+
+            if (currentNode.number == target) {
+                return currentNode;
+            }
+
+            if (currentNode.right != null) {
+                stack.push(currentNode.right);
+            }
+
+            if (currentNode.left != null) {
+                stack.push(currentNode.left);
+            }
+
+            if (currentNode.center != null) {
+                stack.push(currentNode.center);
+            }
+        }
+
+        return null;
+    }
+
+
+```
+  
+Now in `main` we will seach for the node 12:
+
+```java
+ public static void main(String[] args) {
+        Node target = T.iterativeSearch(T.root, 2);
+        System.out.println(target == null? "" : target.number);
+}
+```
+
+<br/>
+<br/>
 
 - `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
@@ -333,9 +404,9 @@ Anas
 
 <br/>
 
-After running the previous code, the `Tree` will look like the following (figure 5).
+After running the previous code, the `Tree` will look like the following (figure 6).
 
-Figure 5
+Figure 6
 ![data representation](./images/Tree-intro-emp-ex.jpg)
 
 <br/>
