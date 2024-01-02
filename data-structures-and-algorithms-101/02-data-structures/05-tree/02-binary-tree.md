@@ -35,6 +35,40 @@ Figure 1
 - A tree where every `internal nodes` has exactly one child.
 - `Internal node`: Any node with a child and a parent
 
+<br/>
+
+**Tree traversal**
+
+The process of Access required node to perform special operation or visiting each node and print their values.
+
+There are three ways to travers tree:
+
+1- Pre-order traversal
+
+- Access the root node
+- Access all nodes from the left side
+- Access all node from the right side
+- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
+
+2- In-order traversal
+
+- Access all nodes from the left side
+- Access the root node
+- Access all node from the right side
+- Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
+
+
+3- Post-order traversal
+
+- Access all nodes from the left side
+- Access all node from the right side
+- Access the root node
+- Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
+
+<br/>
+
+
+
 
 ## Example 
 We will create a tree of integers and we will perform the traversal operations on it.  
