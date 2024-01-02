@@ -290,6 +290,8 @@ Now in `main` we will seach for the node 12:
 }
 ```
 
+<br/>
+<br/>
 
 - `Tree` Implementation with non-premitive data type.   
 We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
@@ -402,9 +404,9 @@ Anas
 
 <br/>
 
-After running the previous code, the `Tree` will look like the following (figure 5).
+After running the previous code, the `Tree` will look like the following (figure 6).
 
-Figure 5
+Figure 6
 ![data representation](./images/Tree-intro-emp-ex.jpg)
 
 <br/>
