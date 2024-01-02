@@ -185,8 +185,8 @@ Output:
 Print root value
 1
 Print tree values
-2
 3
+2
 ```
 
 After running the previous code, the `Tree` will look like the following (figure 4).
