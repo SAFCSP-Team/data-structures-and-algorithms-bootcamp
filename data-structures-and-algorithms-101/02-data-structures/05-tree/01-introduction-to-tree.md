@@ -240,13 +240,13 @@ Figure 5
 
 
 - **Search** operation:   
-We will build a function to search for a specific `node`:     
+We will build a function to search for a specific `node`
 This function will take the the **root node** and **target value** as properties.
 
   
 ```java
 
-public Node iterativeSearch(Node root, int target) {
+public Node searchNode(Node root, int target) {
         if (root == null) {
             System.out.println("Tree is empty");
             return null;
