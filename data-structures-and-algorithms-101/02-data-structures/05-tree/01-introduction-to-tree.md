@@ -119,14 +119,36 @@ public class Tree {
         root = null;
     }
 
-    // Print tree values function
-    public void printTreeValues(Node node) {
-        if (node != null) {
-            printTreeValues(node.left);
-            System.out.println(" " + node.number);
-            printTreeValues(node.right);
+public void printTreeValues(Node root) {
+
+        if (root == null) {
+            System.out.println("Tree is empty");
+            return;
         }
-    }
+
+        Stack<Node> stack = new Stack<Node>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+
+            Node currentNode = stack.pop();
+
+            System.out.println(currentNode.number);
+
+            if (currentNode.right != null) {
+                stack.push(currentNode.right);
+            }
+
+            if (currentNode.left != null) {
+                stack.push(currentNode.left);
+            }
+
+            if (currentNode.center != null) {
+                stack.push(currentNode.center);
+            }
+
+        }
+
 
     public static void main(String[] args) {
 
