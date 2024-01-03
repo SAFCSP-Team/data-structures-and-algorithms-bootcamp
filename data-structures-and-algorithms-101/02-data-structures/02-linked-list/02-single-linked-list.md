@@ -22,110 +22,61 @@
 
 ### Primitive 
 
-* Single linked list of primitive data types in c++ .
-```c++
-#include <iostream>
-
-class Node {
-public:
-  int data;
-  Node* next; 
- Node(int data) {
- this->data = data;
- this->next = nullptr;
-    }
-};
-
-class LinkedList {
-private:
-  Node* head;
-public:
-  LinkedList() {
-  head = nullptr;
-    }
- void insert(int data) {
-  Node* node = new Node(data);
-   if (head == nullptr) {
-     head = node;
-      } else {
-      Node* current = head;
-      while (current->next != nullptr) {
-      current = current->next;
-            }
-            current->next = node;
-        }  }
-
- void display() {
-  Node* current = head;
-      while (current != nullptr) {
-         std::cout << current->data << " ";
-         current = current->next;
-        }
-        std::cout << std::endl;
-    }
-};
-
-int main() {
-    LinkedList linkedList;
-    linkedList.insert(1);
-    linkedList.insert(2);
-    linkedList.insert(3);
-    linkedList.display();
-
-    return 0;
-}
-```
-
-### Non-Primitive
-* Single linked list of non-primitive data types in Java.
+* Single linked list of primitive data types.
 ```java
+class Node {
+    public int data;
+    public Node next;
 
-public class Main {
- public static void main(String[] args) {
-   LinkedList<String> linkedList = new LinkedList<>();
-   linkedList.insert("LAMA");
-   linkedList.insert("SARA");
-   linkedList.insert("EMAN");
-   linkedList.display();
-    } }
-
-class Node<T> {
-    T data;
-    Node<T> next;
-    Node(T data) {
+    public Node(int data) {
         this.data = data;
         this.next = null;
-    } }
-
-class LinkedList<T> {
-    private Node<T> head;
-    LinkedList() {
-        this.head = null;
     }
- void insert(T data) {
- Node<T> newNode = new Node<>(data);
-    if (head == null) {
-     head = newNode;
-    } else {
-    Node<T> current = head;
-    while (current.next != null) {
-    current = current.next;
-     }
-    current.next = newNode;
+}
+
+class LinkedList {
+    private Node head;
+
+    public LinkedList() {
+        head = null;
+    }
+
+    public void insert(int data) {
+        Node node = new Node(data);
+        if (head == null) {
+            head = node;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = node;
         }
     }
- void display() {
-  if (head == null) {
-   System.out.println("Linked list is empty.");
-   } else {
-   Node<T> current = head;
-  while (current != null) {
-   System.out.println(current.data);
-   current = current.next;
-            }
-        }  } }
+
+    public void display() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert(1);
+        linkedList.insert(2);
+        linkedList.insert(3);
+        linkedList.display();
+    }
+}
+
 ```
+
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Single linkedlist](https://github.com/SAFCSP-Team/single-linked-list) | - | 
+| [Single linkedlist](https://github.com/SAFCSP-Team/single-linked-list) | 5 Jan 2024 | 
