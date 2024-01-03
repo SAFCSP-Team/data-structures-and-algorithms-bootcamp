@@ -82,7 +82,7 @@ class QueueArray {
 
 > We have declared the `front` and `rear`, to easily do the operations **enqueue** and **dequeue**.
 
-2. Create an object from `QueueArray` class and insert an element.
+3. Create an object from `QueueArray` class and insert an element.
    
    ```java
    public static void main(String[] args) {
@@ -97,7 +97,7 @@ class QueueArray {
    
    Every time we have add an element, we increase the rear by one [**queue.rear++**].
    
-3. Update the element value.
+4. Update the element value.
 
 ```java
 queue.array[rear] = 50;
@@ -108,14 +108,14 @@ queue.array[rear] = 50;
 
 > Now we have created an element in the `queue`
 
-4. In the QueueArray class, create a method that check if the queue is empty.
+5. In the QueueArray class, create a method that check if the queue is empty.
    
    ```java
    boolean isEmpty() {
            return front == -1;
        }
    ```
-5. Create a method that check if the queue if full.
+6. Create a method that check if the queue if full.
    
    ```java
    boolean isFull() {
@@ -127,7 +127,7 @@ queue.array[rear] = 50;
 
 ![1703064728345](images/01-introduction-to-queue/1703064728345.png)
 
-6. To make the insertion and deletion process easy, we declare a methods `enqueue` and `dequeue`.
+7. To make the insertion and deletion process easy, we declare a methods `enqueue` and `dequeue`.
 
 ```java
 void enqueue(int item) {
@@ -183,7 +183,7 @@ In the code above. We have created a dequeue method that increment the **front b
 
 So far we have created the following methods **[isFull(), isEmpty, enqueue(), dequeue()]** in the QueueArray class.
 
-Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
+8. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
 
 ```java
 class Main {
