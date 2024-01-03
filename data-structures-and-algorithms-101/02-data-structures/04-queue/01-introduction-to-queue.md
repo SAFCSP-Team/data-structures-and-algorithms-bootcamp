@@ -157,10 +157,9 @@ The code above. We have created an enqueue method, which inserts a new element a
 First the enqueue method takes an argument of type integer, before inserting the value to the queue. It checks if the queue is not full. If the queue is full, it will print **Overflow** and return.
 If the queue is not full, then it will check if the queue is empty or not. 
 
-If the queue is empty, then the front and rear will be set to **0**. 
-
 If the queue is not empty, then the rear will be incremented by 1. Finally, the item will be **inserted at the rear**.
 
+8. Now let's create a method that will remove the element from the queue.
 
 ```java
 **`dequeue` method**:
@@ -183,7 +182,7 @@ In the code above. We have created a dequeue method that increment the **front b
 
 So far we have created the following methods **[isFull(), isEmpty, enqueue(), dequeue()]** in the QueueArray class.
 
-8. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
+9. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
 
 ```java
 class Main {
@@ -213,6 +212,9 @@ In the main method. We have created a queue array that has the following values.
 FRONT: 1
 REAR: 3
 ````
+
+
+
 
 ## Types of queue
 
