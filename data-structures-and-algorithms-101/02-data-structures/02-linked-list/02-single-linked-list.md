@@ -75,6 +75,61 @@ return 0;
 }
 
 ```
+### Non-Primitive
+* Single linked list of non-primitive data types in Java.
+```java
+
+public class Main {
+ public static void main(String[] args) {
+   LinkedList<String> linkedList = new LinkedList<>();
+   linkedList.insert("LAMA");
+   linkedList.insert("SARA");
+   linkedList.insert("EMAN");
+   linkedList.display();
+    } }
+class Node<T> {
+    T data;
+    Node<T> next;
+    Node(T data) {
+        this.data = data;
+        this.next = null;
+    } }
+class LinkedList<T> {
+    private Node<T> head;
+    LinkedList() {
+        this.head = null;
+    public static void main(String[] args) {
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert(1);
+        linkedList.insert(2);
+        linkedList.insert(3);
+        linkedList.display();
+    }
+ void insert(T data) {
+ Node<T> newNode = new Node<>(data);
+    if (head == null) {
+     head = newNode;
+    } else {
+    Node<T> current = head;
+    while (current.next != null) {
+    current = current.next;
+     }
+    current.next = newNode;
+        }
+    }
+ void display() {
+  if (head == null) {
+   System.out.println("Linked list is empty.");
+   } else {
+   Node<T> current = head;
+  while (current != null) {
+   System.out.println(current.data);
+   current = current.next; }
+   }  }
+   }
+}
+
+```
 
 ## Projects
 | Project Title | Deadline |
