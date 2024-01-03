@@ -213,6 +213,138 @@ FRONT: 1
 REAR: 3
 ````
 
+### Queue Linked-list
+
+1. Declare **QueueLinkedList** class, by creating a class, with the following **attributes**.
+   
+   ```java
+
+    class QueueLinkedList {
+      public Node front;
+      public Node rear;
+
+      QueueLinkedList() {
+        this.front = null;
+        this.rear = null;
+      }  
+    }
+
+   ```
+   
+   > We have declared the `front` and `rear`, to easily do the operations **enqueue** and **dequeue**.
+
+2. Declare a class Node inside the **QueueLinkedList** class, with the following **attributes**.
+   
+   ```java
+    class Node {
+      public int data;
+      public Node next;
+
+      Node(int data) {
+        this.data = data;
+        this.next = null;
+      }
+    }
+   ```
+   
+   > We have declared the `data` and `next`, to easily do the operations **enqueue** and **dequeue**.
+3. Let's try to add an element to the queue excplitly in the main method.
+   ```java
+      public class Main {
+        public static void main(String[] args) {
+          Node objNode = new Node(10);
+          objNode.next = new Node(20);
+          objNode.next.next = new Node(30);
+
+          System.out.println(objNode.next.data);
+
+        }
+      }
+   ```
+
+**OUTPUT**
+
+```
+20
+```
+
+
+4. Create **enqueue* method that insert a node at the end of the element.
+
+   ```java
+      public void enqueue(int item) {
+        Node newNode = new Node(item);
+
+          // if the queue is empty then set front and rear to the new node
+           if(front == null){
+               front = newNode;
+               rear = newNode;
+               return;
+           }
+
+           // if the queue is not empty then set the rear to the new node
+           rear.next = newNode;
+           rear = newNode;
+
+       }
+   ```
+> The last node will be the rear, and the first node will be the front.
+
+5. Create a **dequeue** method that remove the first element from the queue.
+
+   ```java
+      public int dequeue() {
+        if(this.rear == null ) {
+          System.out.println("Queue is empty!");
+          return -1;
+        }
+        // store the front in a variable to return it later
+        int result = front.data;
+        // removing the pointer from the front node
+        front = front.next;
+
+        return result;
+
+       }
+   ```
+> We set the **front to front.next** to remove the first element from the queue.
+
+6. Create a method called display to print the queue linked-list.
+   
+   ```java
+      public void display() {
+        Node current = front;
+        while(current != null) {
+          System.out.println(current.data);
+          current = current.next;
+        }
+       }
+   ```
+
+7. Now let's test the code in the main method.
+
+   ```java
+      public static void main(String[] args) {
+        QueueLinkedList queue = new QueueLinkedList();
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.dequeue();
+        queue.enqueue(40);
+
+        queue.display();
+       }
+   ```
+
+**OUTPUT**
+```
+20
+30
+40
+```
+
+
 ## Types of queue
 
 * **Linear Queue**: A linear `queue` is the most basic form of a `queue`, where elements are stored in a linear manner.
