@@ -213,9 +213,6 @@ FRONT: 1
 REAR: 3
 ````
 
-
-
-
 ## Types of queue
 
 * **Linear Queue**: A linear `queue` is the most basic form of a `queue`, where elements are stored in a linear manner.
