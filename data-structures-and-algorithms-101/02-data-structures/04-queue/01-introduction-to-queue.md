@@ -103,7 +103,8 @@ class QueueArray {
 queue.array[rear] = 50;
 ```
 
-<img width="300" alt="An element in the queue array" src="https://github-production-user-asset-6210df.s3.amazonaws.com/149315149/291831594-29388372-f231-45f3-b55b-959f56b29c25.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231220%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231220T083636Z&X-Amz-Expires=300&X-Amz-Signature=22cde6c46925b05f630b7ed0ddfb50a42eab260868f4fd584b70dffccf07674b&X-Amz-SignedHeaders=host&actor_id=149315149&key_id=0&repo_id=729945960">
+<img width="300" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/b05e9dd1-6f61-4dd4-b21a-9fa7df586b0c">
+
 
 > Now we have created an element in the `queue`
 
