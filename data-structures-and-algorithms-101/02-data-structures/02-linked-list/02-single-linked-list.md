@@ -22,56 +22,56 @@
 
 ### Primitive 
 
-* Single linked list of primitive data types.
-```java
-class Node {
-    public int data;
-    public Node next;
+* Single linked list of primitive data types in c++.
+```c++
+#include <iostream>
 
-    public Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
+class Node {
+public:
+int data;
+Node* next;
+Node(int data) {
+this->data = data;
+this->next = nullptr;
 }
+};
 
 class LinkedList {
-    private Node head;
-
-    public LinkedList() {
-        head = null;
-    }
-
-    public void insert(int data) {
-        Node node = new Node(data);
-        if (head == null) {
-            head = node;
-        } else {
-            Node current = head;
-            while (current.next != null) {
-                current = current.next;
-            }
-            current.next = node;
-        }
-    }
-
-    public void display() {
-        Node current = head;
-        while (current != null) {
-            System.out.print(current.data + " ");
-            current = current.next;
-        }
-        System.out.println();
-    }
+private:
+Node* head;
+public:
+LinkedList() {
+head = nullptr;
 }
+void insert(int data) {
+Node* node = new Node(data);
+if (head == nullptr) {
+head = node;
+} else {
+Node* current = head;
+while (current->next != nullptr) {
+current = current->next;
+}
+current->next = node;
+} }
 
-public class Main {
-    public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
-        linkedList.insert(1);
-        linkedList.insert(2);
-        linkedList.insert(3);
-        linkedList.display();
-    }
+void display() {
+Node* current = head;
+while (current != nullptr) {
+std::cout << current->data << " ";
+current = current->next;
+}
+std::cout << std::endl;
+}
+};
+
+int main() {
+LinkedList linkedList;
+linkedList.insert(1);
+linkedList.insert(2);
+linkedList.insert(3);
+linkedList.display();
+return 0;
 }
 
 ```
