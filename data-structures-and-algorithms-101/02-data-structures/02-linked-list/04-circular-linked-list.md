@@ -19,10 +19,10 @@ There are basically two types of `circular linked list`:
 ```java
 public class CircularLinkedList {
   private class Node {
-   int data;
+   int value;
    Node next;
-    Node(int data) {
-     this.data = data;
+    Node(int value) {
+     this.value = value;
      this.next = null;
         }
     }
