@@ -356,12 +356,37 @@ public class Tree {
     }
 
     // Print tree values function
-    public void printTreeValues(Node node) {
-        if (node != null) {
-            printTreeValues(node.left);
-            System.out.println(" " + node.employeeData.name);
-            printTreeValues(node.right);
+   public void printTreeValues(Node root) {
+
+        if (root == null) {
+            System.out.println("Tree is empty");
+            return;
         }
+
+        Stack<Node> stack = new Stack<Node>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            Node currentNode = stack.pop();
+
+            System.out.println(currentNode.employeeData.name);
+
+            if (currentNode.right != null) {
+                stack.push(currentNode.right);
+            }
+
+            if (currentNode.left != null) {
+                stack.push(currentNode.left);
+            }
+
+            if (currentNode.center != null) {
+                stack.push(currentNode.center);
+            }
+
+        }
+
+        System.out.println("Tree values are printed");
+        return;
     }
 
     public static void main(String[] args) {
@@ -398,8 +423,9 @@ Output:
 Print root value
 Ahmed
 Print tree values
-Khalid
 Anas
+Khalid
+Tree values are printed
 ```
 
 <br/>
