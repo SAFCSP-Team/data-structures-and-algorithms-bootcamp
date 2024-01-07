@@ -88,6 +88,6 @@ Types of arrays based on their dimensions :
 
 |Project Title | Deadline |
 |:-----------:|:-------------:|
-|[Array with primitive data types](https://github.com/SAFCSP-Team/array-with-primitive-data-type) |  30 Dec 2023  | 
-|[Array with non-primitive data types ](https://github.com/SAFCSP-Team/array-with-non-primitive-data-type) |  30 Dec 2023  | 
+|[Array With Primitive Data Types](https://github.com/SAFCSP-Team/array-with-primitive-data-type) |  30 Dec 2023  | 
+|[Array With Non-Primitive Data Types](https://github.com/SAFCSP-Team/array-with-non-primitive-data-type) |  30 Dec 2023  | 
 
