@@ -240,5 +240,5 @@ int main() {
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
- [Double linked list](https://github.com/SAFCSP-Team/double-linked-list) | - | 
+ [Double linked list](https://github.com/SAFCSP-Team/double-linked-list) | 9 Jan 2024 | 
 
