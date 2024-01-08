@@ -63,10 +63,11 @@ class StackArray {
     public StackArray(int size) {
         data = new int[size];
         top = -1; // Initialize the top index to -1 (empty stack)
+        this.size = size;
     }
     public void push(int value) {
         if (top == size - 1) {
-            System.out.println("Stack Overflow: Cannot push element, stack is full.");
+            System.out.println("Stack is full.");
             return;
         }
         data[++top] = value; // Increment top and add the element to the stack
@@ -74,7 +75,7 @@ class StackArray {
 
     public void pop() {
         if (top == -1) {
-            System.out.println("Stack Underflow: Cannot pop element, stack is empty.");
+            System.out.println("Stack is empty.");
             return;
         }
         --top; // Decrement top to remove the top element (no need to delete or clear memory)

@@ -129,5 +129,5 @@ int main() {
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list) | - | 
+| [Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list) | 9 Jan 2024 | 
 
