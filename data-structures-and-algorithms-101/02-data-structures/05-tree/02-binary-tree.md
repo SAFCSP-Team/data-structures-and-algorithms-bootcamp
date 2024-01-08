@@ -100,68 +100,168 @@ class Node {
 
 ```java
 
-class BinaryTree {
-  Node root;
+import java.util.Stack;
 
-  BinaryTree(int key) {
-  root = new Node(key);
-  }
+class Node {
+  int key;
+  Node left, right;
 
-  BinaryTree() {
-  root = null;
-  }
-
-  // Traverse Inorder
-  public void traverseInOrder(Node node) {
-  if (node != null) {
-    traverseInOrder(node.left);
-    System.out.print(" " + node.key);
-    traverseInOrder(node.right);
-  }
-  }
-
-  // Traverse Postorder
-  public void traversePostOrder(Node node) {
-  if (node != null) {
-    traversePostOrder(node.left);
-    traversePostOrder(node.right);
-    System.out.print(" " + node.key);
-  }
-  }
-
-  // Traverse Preorder
-  public void traversePreOrder(Node node) {
-  if (node != null) {
-    System.out.print(" " + node.key);
-    traversePreOrder(node.left);
-    traversePreOrder(node.right);
-  }
-  }
-
-  public static void main(String[] args) {
-  BinaryTree tree = new BinaryTree();
-
-  tree.root = new Node(1);
-  tree.root.left = new Node(2);
-  tree.root.right = new Node(3);
-  tree.root.left.left = new Node(4);
-
-  System.out.print("Pre order Traversal: ");
-  tree.traversePreOrder(tree.root);
-  System.out.print("\nIn order Traversal: ");
-  tree.traverseInOrder(tree.root);
-  System.out.print("\nPost order Traversal: ");
-  tree.traversePostOrder(tree.root);
+  public Node(int item) {
+    key = item;
+    left = right = null;
   }
 }
 
+class BinaryTree {
+  Node root;
+
+  BinaryTree(Node root) {
+    this.root = root;
+  }
+
+  BinaryTree() {
+    root = null;
+  }
+
+  // Pre-order traverse
+  public void printTreeValues(Node root) {
+
+    if (root == null) {
+      System.out.println("Tree is empty");
+      return;
+    }
+
+    Stack<Node> stack = new Stack<Node>();
+    stack.push(root);
+
+    while (!stack.isEmpty()) {
+      Node currentNode = stack.pop();
+
+      System.out.print(" " + currentNode.key);
+
+      if (currentNode.right != null) {
+        stack.push(currentNode.right);
+      }
+
+      if (currentNode.left != null) {
+        stack.push(currentNode.left);
+      }
+
+    }
+
+    return;
+  }
+
+  public void addRight(Node parent, Node newNode) {
+
+    if (root == null) {
+      System.out.println("Tree is empty");
+      return;
+    }
+
+    Stack<Node> stack = new Stack<Node>();
+    stack.push(root);
+
+    while (!stack.isEmpty()) {
+      Node currentNode = stack.pop();
+
+      if (currentNode == parent) {
+
+        if (currentNode.right == null) {
+          currentNode.right = newNode;
+          System.out.println("child added successfully");
+        } else {
+          System.out.println("parent already has a right child");
+          return;
+        }
+
+      }
+
+      if (currentNode.right != null) {
+        stack.push(currentNode.right);
+      }
+
+      if (currentNode.left != null) {
+        stack.push(currentNode.left);
+      }
+
+    }
+
+    return;
+  }
+
+  public void addLeft(Node parent, Node newNode) {
+
+    if (root == null) {
+      System.out.println("Tree is empty");
+      return;
+    }
+
+    Stack<Node> stack = new Stack<Node>();
+    stack.push(root);
+
+    while (!stack.isEmpty()) {
+      Node currentNode = stack.pop();
+
+      if (currentNode == parent) {
+
+        if (currentNode.left == null) {
+          currentNode.left = newNode;
+          System.out.println("Child added successfully");
+        } else {
+          System.out.println("Parent already has a left child");
+          return;
+        }
+
+      }
+
+      if (currentNode.right != null) {
+        stack.push(currentNode.right);
+      }
+
+      if (currentNode.left != null) {
+        stack.push(currentNode.left);
+      }
+
+    }
+
+    return;
+  }
+
+  public static void main(String[] args) {
+    
+    // Root creation
+    BinaryTree tree = new BinaryTree(new Node(1));
+
+    // Add children to root
+    tree.addLeft(tree.root, new Node(2));
+    tree.addRight(tree.root, new Node(3));
+
+    // Add children to left child
+    tree.addLeft(tree.root.left, new Node(4));
+    tree.addRight(tree.root.left, new Node(5));
+
+    // Add children to right child
+    tree.addLeft(tree.root.right, new Node(6));
+    tree.addRight(tree.root.right, new Node(7));
+
+    System.out.print("Print tree values");
+    tree.printTreeValues(tree.root);
+
+  }
+
+}
 ```
 
 Output
 ```
-Pre order Traversal:  1 2 4 3
-In order Traversal:  4 2 1 3
-Post order Traversal:  4 2 3 1
+Child added successfully
+child added successfully
+Child added successfully
+child added successfully
+Child added successfully
+child added successfully
+Print tree values 1 2 4 5 3 6 7              
 ```
 
 ## Projects
