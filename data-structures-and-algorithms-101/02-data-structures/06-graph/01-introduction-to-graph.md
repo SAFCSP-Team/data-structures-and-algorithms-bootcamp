@@ -1,20 +1,28 @@
 # Introduction to Graph
 You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
 
+> We can represent the connection between them as a graph drawing.
+
 <img width="350" alt="Graph Example" src="images/Intro Graph Directed Example.jpg">
 
-### **Graph Attributes are**:
-Let's take the image above as an example.
-* The **nodes** are holding data, which represent Khaled, Fahad, and Majed.
+
+## Concept
+A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as **vertices**, and the links that connect the vertices are called **edges**.
+
+> **vertices** are another name for **nodes**.
+
+### Graph Attributes
+
+* The **node** is holding data, which represent Khaled, Fahad, and Majed.
 
 <img width="300" alt="Graph - Node" src="images/Graph Directed Node Example.jpg">
 
-* The **edges** are the arrows between the nodes, which represent the relationship between them.
+* The **edge** is the arrow between the nodes, which represent the relationship between them.
 
 <img width="300" alt="Graph - Node" src="images/Graph Directed Edge Example.jpg">
 
 
-* The **weight** is the value of the edge.
+* The **weight** are the value of the edge.
 
 An example of the weighted graph is the map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. And the **weight** of the edge is the **distance** between the cities.
 
@@ -22,33 +30,30 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 
 > The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
-
-
-## Concept
-A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as nodes, and the links that connect the nodes are called edges.
-
-There are two components of a graph:
-1. Node - A node represents an entity (object) in the graph.
-2. Edge - An edge is a line or arc that connects a pair of vertices in the graph.
-
-The way to represent a graph is using an Adjacency Matrix, Adjacency List, or Graph.
+### Graph Representation
+Tho most popular ways to represent a graph are using an **Adjacency Matrix** or **Adjacency List**.
 
 * **Adjacency Matrix**
 
 <img width="350" alt="Graph - Node" src="images/Graph Adjacency Matrix Example.png">
 
+<br><br>
+
 * **Adjacency List**
 
 <img width="350" alt="Graph - Node" src="images/Graph Adjacency List.jpg">
 
+<br><br>
 
 * **Graph**
 
 
 <img width="350" alt="Graph Directed Example" src="images/Graph Directed Example.jpg">
 
+<br><br>
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
+> 
 ## Implementation
 We will implement **the directed graph** using the **adjacency matrix**.
 The way to implement the adjacency matrix is by using a **two-dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
@@ -68,7 +73,7 @@ class Node {
 
 ```
 
-1. Create a class called **Graph** that has an array list of nodes and in the constructor initialize nodes.
+2. Create a class called **Graph** that has an array list of Node and in the constructor initialize the array list.
 
 ```java
 import java.util.ArrayList;
@@ -123,7 +128,9 @@ B
 ```
 
 Right now we have only created a node but we didn't create a relationship between them.
-Create two dimensional array attribtue called **adjMatrix**. And in the constructor we have initialized the array with the size of nodes length.
+
+5. To connect the nodes to each other, create two dimensional array attribtue called **adjMatrix**. 
+And in the constructor we have initialized the array with the size of nodes length.
 
 ```java
 class Graph {
@@ -142,7 +149,7 @@ class Graph {
 
 In the code above we have created a two dimensional array attribtue called **adjMatrix**. And in the constructor we have initialized the array with the size of nodes length.
 
-5. In Graph class create a method called **addEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 1. which means that the source node is connected to the destination node.
+6. In Graph class create a method called **addEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 1. which means that the source node is connected to the destination node.
 
 ```java
 public void addEdge(int src, int dst) {
@@ -152,7 +159,7 @@ public void addEdge(int src, int dst) {
 
 
 
-6. Call **addEdge** in the main method, and pass the index of A and B, to create an edge between the node A and B.
+7. Call **addEdge** in the main method, and pass the index of A and B, to create an edge between the node A and B.
 
 ```java
 public class Main {
@@ -179,8 +186,9 @@ We have succssfully created a graph with two nodes and an edge between them.
 
 <img width="350" alt="A-B_Graph" src="images/Directed Nodes Connected.jpg">
 
+<br>
 
-7. Create a method to **print** the graph using **Adjacency Matrix**.
+8. Create a method to **print** the graph using **Adjacency Matrix**.
 
 ```java
     public void printAdjMatrix() {
@@ -208,7 +216,7 @@ B	0	0
 
 ```
 
-8. Create a method called **deleteEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 0. which means that the source node is not connected to the destination node.
+9. Create a method called **deleteEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 0. which means that the source node is not connected to the destination node.
 
 ```java
 public void deleteEdge(int src, int dst) {
@@ -217,7 +225,7 @@ public void deleteEdge(int src, int dst) {
 
 ```
 
-9. Call **deleteEdge** in the main method, and pass the index of A and B, to delete the edge between the node A and B.
+10. Call **deleteEdge** in the main method, and pass the index of A and B, to delete the edge between the node A and B.
 
 ```java
 
@@ -225,7 +233,7 @@ objGraph.deleteEdge(0, 1);
 
 ```
 
-10. Create **updateNode** method that takes two parameters, the first one is the index of node that you want to update and the second one is the new node.
+11. Create **updateNode** method that takes two parameters, the first one is the index of node that you want to update and the second one is the new node.
 
 ```java
 
@@ -237,14 +245,14 @@ public void updateNode(int index, Node item) {
 
 ```
 
-11. Call **updateNode** in the main method, and pass the index of B and the new node.
+12. Call **updateNode** in the main method, and pass the index of B and the new node.
 
 ```java
 
 objGraph.updateNode(1, new Node('C'));
 ```
 
-12. Call **printAdjMatrix** in the main method, to print the graph, so we can see the changes.
+13. Call **printAdjMatrix** in the main method, to print the graph, so we can see the changes.
 
 
 
