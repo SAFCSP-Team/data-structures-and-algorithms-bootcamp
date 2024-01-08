@@ -17,9 +17,9 @@ The key idea behind binary search is to **divide the search space in half at eac
 2. Set two pointers, “low” and “high,” to the first and last indices of the list, respectively.
 
 3. Calculate the middle index as the average of the low and high indices: mid = **(low + high) / 2**.
-<img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-01.png" />
+<img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-01.jpg" />
 4. Compare the middle element with the target element that you are searching for.
-<img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-02.png" />
+<img width="910" alt="Binary Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-search-02.jpg" />
 
 - If the middle element is equal to the target element, the search is successful, and the element is found.
  
