@@ -30,6 +30,8 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 
 > The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
+
+
 ### Graph Representation
 Tho most popular ways to represent a graph are using an **Adjacency Matrix** or **Adjacency List**.
 
@@ -53,7 +55,7 @@ Tho most popular ways to represent a graph are using an **Adjacency Matrix** or 
 <br><br>
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
-> 
+
 ## Implementation
 We will implement **the directed graph** using the **adjacency matrix**.
 The way to implement the adjacency matrix is by using a **two-dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
