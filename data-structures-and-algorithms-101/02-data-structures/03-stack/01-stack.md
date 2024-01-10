@@ -183,4 +183,4 @@ class StackLinkedList {
 ## Projects
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|DSAProject01| [Stack](https://github.com/SAFCSP-Team/stack) | - | 
+|DSAProject01| [Stack](https://github.com/SAFCSP-Team/stack) | 12 Jan 2024 | 
