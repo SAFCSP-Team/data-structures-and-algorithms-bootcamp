@@ -22,7 +22,7 @@ To implement a stack, you can use an [array](https://github.com/SAFCSP-Team/data
 Both array-based and linked list-based implementations have their advantages and trade-offs. The choice between them depends on factors such as the expected size of the stack, memory requirements, and the specific needs of your application.
 
 #### Implementing a stack class in java using an array:
-create a class called StackArray with three properties, data, top, and size. and create a constructor to initialize the array and the top index to -1 (empty stack).
+create a class called StackArray with a constructor to initialize the array and the top index to -1 (empty stack).
 ```java
 class StackArray {
     private int[] data; // Array to store the stack elements
@@ -183,4 +183,4 @@ class StackLinkedList {
 ## Projects
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|DSAProject01| [Stack](https://github.com/SAFCSP-Team/stack) | 12 Jan 2024 | 
+|DSAProject01| [Stack](https://github.com/SAFCSP-Team/stack) | - Jan 2024 | 
