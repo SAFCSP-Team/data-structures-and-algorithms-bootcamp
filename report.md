@@ -23,6 +23,10 @@ When a project is due, the project status will be updated as follows.
 |[Two-Dimensional Array](https://github.com/SAFCSP-Team/two-dimensional-array)| 🟢 | 🟤 |
 |[Three-Dimensional Array](https://github.com/SAFCSP-Team/three-dimensional-array)| 🟢 | 🟢 |
 |[Introduction to linked list](https://github.com/SAFCSP-Team/Introduction-to-linked-list)| 🔴 | - |
-|[Single linkedlist](https://github.com/SAFCSP-Team/single-linked-list)| 🔴 | - |
+|[Single linked list](https://github.com/SAFCSP-Team/single-linked-list)| 🔴 | - |
+|[Double linked list](https://github.com/SAFCSP-Team/double-linked-list)| 🔴 | - |
+|[Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list)| 🔴 | - |
+
+
 
 
