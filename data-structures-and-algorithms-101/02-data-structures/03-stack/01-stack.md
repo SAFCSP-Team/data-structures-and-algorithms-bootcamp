@@ -153,7 +153,7 @@ class StackLinkedList {
     }
 
     public void pop() {
-        if (isEmpty()) {
+        if (top == null) {
             System.out.println("Stack Underflow: Cannot pop element, stack is empty.");
             return;
         }
@@ -162,7 +162,7 @@ class StackLinkedList {
     }
 
     public int top() {
-        if (isEmpty()) {
+        if (top == null) {
             System.out.println("Stack is empty.");
             return -1; // Return a default value indicating an empty stack
         }
