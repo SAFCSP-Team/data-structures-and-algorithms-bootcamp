@@ -93,10 +93,35 @@ Sorted section: `2, 3, 5, 7, 8, 9`
             arr[i] = temp;
         }
 ```
+* In the main method, an array of numbers is initialized, and the unsorted array is printed, The `selectionSort` method is called to sort the array and printed.
+
+```java
+  public static void main(String[] args) {
+        int[] numbers = {9, 2, 5, 1, 7, 4};
+
+        System.out.println("Unsorted numbers:");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println();
+
+        // Call the selectionSort method
+        selectionSort(numbers);
+
+        System.out.println("Sorted numbers:");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+    }
+}
+```
 The output is :
 ```
-Original Array: 5 2 4 6 1 3 
-Sorted Array: 1 2 3 4 5 6
+Unsorted numbers:
+9 2 5 1 7 4
+Sorted numbers:
+1 2 4 5 7 9
 ```
 ## Projects
 
