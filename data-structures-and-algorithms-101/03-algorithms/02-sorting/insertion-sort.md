@@ -9,6 +9,9 @@ An array is split into two parts: sorted and unsorted. Initially, the sorted 
 
 `Insertion sort` is a simple sorting algorithm that builds the final sorted array one item at a time. It works by iteratively inserting each element into its proper position within the already sorted portion of the array.
 
+
+[image]()
+
 Let's look at an example:
 
 * The first element is already sorted. So, we pick the second element (3) and compare it with the first element (4). Since 3 is smaller than 4, we swap them. Now, the first two elements are sorted.
