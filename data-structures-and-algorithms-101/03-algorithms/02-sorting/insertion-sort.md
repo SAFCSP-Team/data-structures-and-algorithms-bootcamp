@@ -1,5 +1,5 @@
 
-# Introduction
+# Insertion Sort Algorithm
 
 Insertion sort is similar to how you would sort playing cards. You start with an empty left hand and the cards face down on the table. Then you remove one card at a time from the table and insert it into the correct position in the left hand. To find the correct position for a card, you compare it with each of the cards already in the hand. At all times, the cards held in the left hand are sorted.
 
@@ -7,7 +7,7 @@ An array is split into two parts: sorted and unsorted. Initially, the sorted 
 
 ## Concept
 
-`Insertion sort` is a simple sorting algorithm that builds the final sorted array one item at a time. It works by iteratively inserting each element into its proper position within the already sorted portion of the array.
+`Insertion sort` is a simple sorting algorithm that builds the final sorted array one item at a time. It works by iteratively inserting each element into its proper position within the already sorted portion of the data set.
 
 
 [image]()
