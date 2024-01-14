@@ -79,36 +79,35 @@ Since the `binary tree` has maximun two children, then the node should have only
 
 ### Primitive 
 
-- In `node` class we will declare the attributes (data and pointers), create a constructor.
+- In `node` class we will declare the attributes (data and pointers) and create a constructor.
 
 ```java
-
 class Node {
-  int key;
+  int data;
   Node left, right;
 
   public Node(int item) {
-  key = item;
-  left = right = null;
+    data = item;
+    left = right = null;
   }
 }
 ```
 
-- In `binary tree` class we will declare the root as an attribute, create constructor, create traversal operations/functions to print the nodes values.
+- In `binary tree` class we will declare the root as an attribute  
+1 - create constructor  
+2 - create Pre-order traversal operation/function to print the nodes values   
+3 - create search function to find a specific node   
+4 - create addLeft and addRight function  
 
-- In `main` we will create node, create a tree of nodes, perform traversal operations/functions.
 
 ```java
+import java.util.Stack;
 
 class BinaryTree {
   Node root;
 
-  BinaryTree(Node root) {
+  public BinaryTree(Node root) {
     this.root = root;
-  }
-
-  BinaryTree() {
-    root = null;
   }
 
   // Pre-order traverse
@@ -125,7 +124,7 @@ class BinaryTree {
     while (!stack.isEmpty()) {
       Node currentNode = stack.pop();
 
-      System.out.print(" " + currentNode.key);
+      System.out.print(" " + currentNode.data);
 
       if (currentNode.right != null) {
         stack.push(currentNode.right);
@@ -136,15 +135,14 @@ class BinaryTree {
       }
 
     }
-
     return;
   }
 
-  public void addRight(Node parent, Node newNode) {
+  public Node search(Node root, int target) {
 
     if (root == null) {
       System.out.println("Tree is empty");
-      return;
+      return null;
     }
 
     Stack<Node> stack = new Stack<Node>();
@@ -153,16 +151,8 @@ class BinaryTree {
     while (!stack.isEmpty()) {
       Node currentNode = stack.pop();
 
-      if (currentNode == parent) {
-
-        if (currentNode.right == null) {
-          currentNode.right = newNode;
-          System.out.println("child added successfully");
-        } else {
-          System.out.println("parent already has a right child");
-          return;
-        }
-
+      if (currentNode.data == target) {
+        return currentNode;
       }
 
       if (currentNode.right != null) {
@@ -174,71 +164,78 @@ class BinaryTree {
       }
 
     }
-
-    return;
+    return null;
   }
 
-  public void addLeft(Node parent, Node newNode) {
+  public void addRight(Node root, int parentData, int newNodeData) {
 
-    if (root == null) {
-      System.out.println("Tree is empty");
-      return;
+    Node newNode = new Node(newNodeData);
+    Node parent = search(root, parentData);
+
+    if (parent != null) {
+
+      if (parent.right == null) {
+        parent.right = newNode;
+        System.out.println(newNodeData + " child added successfully");
+      } else {
+        System.out.println("parent already has a right child");
+        return;
+      }
+    } else {
+      System.out.println(parentData + " parent not fount");
     }
 
-    Stack<Node> stack = new Stack<Node>();
-    stack.push(root);
-
-    while (!stack.isEmpty()) {
-      Node currentNode = stack.pop();
-
-      if (currentNode == parent) {
-
-        if (currentNode.left == null) {
-          currentNode.left = newNode;
-          System.out.println("Child added successfully");
-        } else {
-          System.out.println("Parent already has a left child");
-          return;
-        }
-
-      }
-
-      if (currentNode.right != null) {
-        stack.push(currentNode.right);
-      }
-
-      if (currentNode.left != null) {
-        stack.push(currentNode.left);
-      }
-
-    }
-
-    return;
   }
+
+  public void addLeft(Node root, int parentData, int newNodeData) {
+
+    Node newNode = new Node(newNodeData);
+    Node parent = search(root, parentData);
+
+    if (parent != null) {
+
+      if (parent.left == null) {
+        parent.left = newNode;
+        System.out.println(newNodeData + " child added successfully");
+      } else {
+        System.out.println("parent already has a right child");
+        return;
+      }
+    } else {
+      System.out.println(parentData + " parent not fount");
+    }
+
+  }
+
+}
+```
+
+- In `main` we will use and call binary tree class functions:
+
+```java
 
   public static void main(String[] args) {
-    
+
     // Root creation
     BinaryTree tree = new BinaryTree(new Node(1));
 
     // Add children to root
-    tree.addLeft(tree.root, new Node(2));
-    tree.addRight(tree.root, new Node(3));
+    tree.addLeft(tree.root,1, 2);
+    tree.addRight(tree.root, 1, 3);
 
     // Add children to left child
-    tree.addLeft(tree.root.left, new Node(4));
-    tree.addRight(tree.root.left, new Node(5));
+    tree.addLeft(tree.root,2, 4);
+    tree.addRight(tree.root, 2, 5);
 
     // Add children to right child
-    tree.addLeft(tree.root.right, new Node(6));
-    tree.addRight(tree.root.right, new Node(7));
+    tree.addLeft(tree.root,3, 6);
+    tree.addRight(tree.root, 3, 7);
 
     System.out.print("Print tree values");
     tree.printTreeValues(tree.root);
 
   }
 
-}
 ```
 
 Output
