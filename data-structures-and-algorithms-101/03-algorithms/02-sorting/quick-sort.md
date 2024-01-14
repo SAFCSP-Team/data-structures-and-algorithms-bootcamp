@@ -19,20 +19,22 @@ By using `Quick Sort`, you can efficiently sort the stack of papers based on the
 
 [image]()
 
-* the Pivot can be Picked as the first, last element or can be a random element.
+ the Pivot can be Picked as the first, last element or can be a random element.
 
 Let's see how this would play out with a stack of papers and their names:
 
-Unsorted stack: [Sarah, Mark, Emma, John, Alex, Lisa]
+Unsorted stack: `[Sarah, Mark, Emma, John, Alex, Lisa]`
 
 Step 1: Select a pivot.
 
 Let's say we randomly choose "Emma" as the pivot.
+
 Step 2: Partition the papers.
 
 You compare each name to the pivot ("Emma") and place them on the left or right side accordingly:
 Names smaller than "Emma" go to the left: [Alex, Emma]
 Names larger than "Emma" go to the right: [Mark, John, Sarah, Lisa]
+
 Step 3: Recursively apply steps 1 and 2.
 
 Now, you have two smaller stacks: [Alex, Emma] and [Mark, John, Sarah, Lisa].
@@ -40,20 +42,24 @@ You repeat steps 1 and 2 for each smaller stack.
 For the [Alex, Emma] stack:
 
 Select "Alex" as the pivot.
-Partition the remaining names: [Alex, Emma]
-For the [Mark, John, Sarah, Lisa] stack:
+
+Partition the remaining names: `[Alex, Emma]`
+For the `[Mark, John, Sarah, Lisa]` stack:
 
 Select "John" as the pivot.
-Partition the remaining names: [John, Mark, Sarah, Lisa]
+
+Partition the remaining names: `[John, Mark, Sarah, Lisa]`
 Now, you have the following smaller stacks:
 
-[Alex, Emma]
-[John, Mark, Sarah, Lisa]
+* `[Alex, Emma]`
+* `[John, Mark, Sarah, Lisa]`
 For each smaller stack, you repeat steps 1 and 2 until you have individual papers or stacks with only one paper in them.
 
 Combine the sorted stacks.
 
-Once all the smaller stacks are sorted, you combine them to obtain the fully sorted stack of papers: [Alex, Emma, John, Lisa, Mark, Sarah]
+Once all the smaller stacks are sorted, you combine them to obtain the fully sorted stack of papers: 
+
+`[Alex, Emma, John, Lisa, Mark, Sarah]`
   
 ## Example 
 
