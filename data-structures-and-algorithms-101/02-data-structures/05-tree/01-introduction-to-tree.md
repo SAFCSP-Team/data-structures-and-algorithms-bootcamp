@@ -8,24 +8,23 @@ Let's say you have a big company and your company have a large number of employe
 
 Tree should be considered here, lets's see how the company employees would be organized using the tree as the below image (figuer 1):
 
-Figure 1
-![data representation](./images/Company-employees-tree.jpg)
-
+Figure 1  
+<img width="910" alt="Introduction to tree" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Company-employees-tree.jpg">
 
 
 ## Concept
 
 `Tree` is a collection of nodes that are connected by edges and non-linear data structure, which represent nodes in a hierarchical order.
 
-Figure 2
-![data representation](./images/Tree.jpg)
+Figure 2  
+<img width="910" alt="Introduction to tree" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Tree.jpg">
 
 
 ## Implementation
 As we explained before, the tree is a collection of nodes, and each node in the tree will contain data and pointers. The pointers in the tree node will depend on how many children a node can have, for example, let us implement a tree with a maximum of three children (left, center, and right). The node will look as the following (Figure 3).
 
-Figure 3
-![data representation](./images/Node-element.jpg)
+Figure 3  
+<img width="910" alt="Introduction to tree" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Node-element.jpg">
 
 As always, to implement the tree we will define the `Node` class first since it is the main component that will construct the whole tree.
 
@@ -98,11 +97,7 @@ Now we will explain how to **implement the complete tree**, **linking nodes toge
 - `Tree` class implementation:
 
 1 - Create tree.  
-2 - Create tree root (node object).  
-3 - Access the _root_ data and print it.  
-4 - Update the _root_ data to be (3).  
-5 - Create root child (left child).  
-6 - Print tree values.
+2 - Print tree values.
 
 
 ```java 
@@ -148,9 +143,17 @@ public void printTreeValues(Node root) {
             }
 
         }
+}
+
+}
 
 
-    public static void main(String[] args) {
+```
+
+Use tree class in the main function:
+```java
+
+ public static void main(String[] args) {
 
         // 1 - Create Tree
         Tree T = new Tree();
@@ -158,7 +161,7 @@ public void printTreeValues(Node root) {
         // 2 - Create tree root (node object)
         T.root = new Node(1);
 
-        // 3 - Access the root data and print it\
+        // 3 - Access the root data and print it
         System.out.println("Print root value");
         System.out.println(T.root.number);
 
@@ -174,11 +177,7 @@ public void printTreeValues(Node root) {
 
     }
 
-}
-
-
 ```
-
 
 Output:
 ```java
@@ -191,8 +190,8 @@ Print tree values
 
 After running the previous code, the `Tree` will look like the following (figure 4).
 
-Figure 4
-![data representation](./images/Tree-intro-ex.jpg)
+Figure 4  
+<img width="910" alt="Introduction to tree" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Tree-intro-ex.jpg">
 
 <br/>
 <br/>
@@ -230,64 +229,6 @@ Since the tree creation is covered, now we will create and add more nodes to the
         Node target = T.searchNode(T.root, 12);
 
     }
-```
-
- 
-After adding the nodes above, the tree will be as the below figuer 5 is showing:
-
-Figure 5
-![data representation](./images/intro-integers-tree.jpg)
-
-
-- **Search** operation:   
-We will build a function to search for a specific `node`
-This function will take the the **root node** and **target value** as properties.
-
-  
-```java
-
-public Node searchNode(Node root, int target) {
-        if (root == null) {
-            System.out.println("Tree is empty");
-            return null;
-        }
-
-        Stack<Node> stack = new Stack<>();
-        stack.push(root);
-
-        while (!stack.isEmpty()) {
-            Node currentNode = stack.pop();
-
-            if (currentNode.number == target) {
-                return currentNode;
-            }
-
-            if (currentNode.right != null) {
-                stack.push(currentNode.right);
-            }
-
-            if (currentNode.left != null) {
-                stack.push(currentNode.left);
-            }
-
-            if (currentNode.center != null) {
-                stack.push(currentNode.center);
-            }
-        }
-
-        return null;
-    }
-
-
-```
-  
-Now in `main` we will seach for the node 12:
-
-```java
- public static void main(String[] args) {
-        Node target = T.iterativeSearch(T.root, 2);
-        System.out.println(target == null? "" : target.number);
-}
 ```
 
 <br/>
