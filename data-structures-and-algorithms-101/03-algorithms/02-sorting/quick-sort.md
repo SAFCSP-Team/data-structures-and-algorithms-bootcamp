@@ -15,19 +15,53 @@ By using `Quick Sort`, you can efficiently sort the stack of papers based on the
 
 ## Concept
 
-`Quick Sort` is a highly efficient and widely used **sorting algorithm** known for its **average-case performance**. It follows the **divide-and-conquer** approach to sort an array or list of elements. The algorithm selects a `pivot` element from the array and partitions the remaining elements **into two sub-arrays**, one with elements **smaller than** the `pivot` and the other with **elements greater than** the `pivot`. This process is recursively applied to the sub-arrays until the entire array is sorted.
+`Quick sort` is a widely used and efficient sorting algorithm that follows the divide-and-conquer paradigm. It works by selecting a pivot element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. 
 
- ![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/ce310502-bb9a-4539-8749-bcb694343876)
-* the Pivot can be Picked as the first, last element or can be a random element.
+[image]()
+
+ the Pivot can be Picked as the first, last element or can be a random element.
+
+Let's see how this would play out with a stack of papers and their names:
+
+Unsorted stack: `[Sarah, Mark, Emma, John, Alex, Lisa]`
+
+Step 1: Select a pivot.
+
+Let's say we randomly choose "Emma" as the pivot.
+
+Step 2: Partition the papers.
+
+You compare each name to the pivot ("Emma") and place them on the left or right side accordingly:
+Names smaller than "Emma" go to the left: [Alex, Emma]
+Names larger than "Emma" go to the right: [Mark, John, Sarah, Lisa]
+
+Step 3: Recursively apply steps 1 and 2.
+
+Now, you have two smaller stacks: [Alex, Emma] and [Mark, John, Sarah, Lisa].
+You repeat steps 1 and 2 for each smaller stack.
+For the [Alex, Emma] stack:
+
+Select "Alex" as the pivot.
+
+Partition the remaining names: `[Alex, Emma]`
+For the `[Mark, John, Sarah, Lisa]` stack:
+
+Select "John" as the pivot.
+
+Partition the remaining names: `[John, Mark, Sarah, Lisa]`
+Now, you have the following smaller stacks:
+
+* `[Alex, Emma]`
+* `[John, Mark, Sarah, Lisa]`
+For each smaller stack, you repeat steps 1 and 2 until you have individual papers or stacks with only one paper in them.
+
+Combine the sorted stacks.
+
+Once all the smaller stacks are sorted, you combine them to obtain the fully sorted stack of papers: 
+
+`[Alex, Emma, John, Lisa, Mark, Sarah]`
+  
 ## Example 
-
-* Quick Sort for Arrays:
-
-
-
-* Quick Sort for Linked Lists:
-> QuickSort in `linkedlist` works by using the last element of the list as the pivot Element. The Logic is Divided into 2 methods , they are:
-
 
 ## Projects
 
