@@ -128,7 +128,7 @@ queue.array[rear] = 50;
    
    In the image below the queue array is full. We know that the rear is the index of the last element, so if the rear = size -1 will be true, that means the array is full.
 
-![1703064728345](images/01-introduction-to-queue/1703064728345.png)
+![Alt text](<data-structures Queue Array.jpg>)
 
 7. To make the insertion and deletion process easy, we declare methods `enqueue` and `dequeue`.
 
@@ -141,7 +141,7 @@ void enqueue(int item) {
         }
 
         // if the queue is empty then set front and rear to 0
-        if (front == -1) {
+        if (isEmpty()) {
             front = 0;
             rear = 0;
         }
@@ -157,22 +157,20 @@ void enqueue(int item) {
 
 The code above. We have created an enqueue method, which inserts a new element at the rear. Let's break the code line by line.
 
-First the enqueue method takes an argument of type integer, before inserting the value to the queue. It checks if the queue is not full. If the queue is full, it will print **Overflow** and return.
-If the queue is not full, then it will check if the queue is empty or not. 
+First the enqueue method takes an argument of type integer, before inserting the value to the queue. It checks if the queue is not full. If the queue is full, it will print **Overflow** and exit the method.
 
-If the queue is not empty, then the rear will be incremented by 1. Finally, the item will be **inserted at the rear**.
+The rear will be incremented by 1 if the queue is not full.
 
-8. Now let's create a method that will remove the element from the queue.
+Finally, the item will be **inserted at the rear**.
 
-```java
-**`dequeue` method**:
+8. Now let's create a method that will remove the first element from the queue.
 
 ```java
-void dequeue(){
-        if(isEmpty()){
+void dequeue() {
+        if(isEmpty()) {
             System.out.println("Queue is empty. Nothing to dequeue");
             // if the queue has only one element then set front and rear to -1
-        } else if (front == rear){
+        } else if (front == rear) {
             front = rear = -1;
             // if the queue has more than one element then increment front by 1
         } else {
@@ -183,9 +181,10 @@ void dequeue(){
 
 In the code above. We have created a dequeue method that increments the **front by one**, and if the queue has only one element then the front and rear will be **-1**.
 
-So far we have created the following methods **[isFull(), isEmpty, enqueue(), dequeue()]** in the QueueArray class.
+So far in the QueueArray class we have created the following methods: 
+**[isFull(), isEmpty(), enqueue(), dequeue()]**.
 
-9. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
+1. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
 
 ```java
 class Main {
@@ -196,38 +195,51 @@ class Main {
         queue.enqueue(20);
         queue.enqueue(30);
         queue.dequeue();
+        queue.dequeue();
         queue.enqueue(40);
+        queue.enqueue(50);
 
-        System.out.println(queue.front);
-        System.out.println(queue.rear);
+        System.out.println("Front: " + queue.front);
+        System.out.println("Rear: " + queue.rear);
     }
 }
 ```
 
 In the main method. We have created a queue array that has the following values.
 
-![data-structures-and-algorithms - Copy of Queue Array (2)](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/812ac14b-d246-4214-bfaa-3b4062cdd83c)
-
+![Alt text](<data-structures - Queue Array-1.jpg>)
 
 **OUTPUT**
 
 ````
-FRONT: 1
-REAR: 3
+Front: 2
+Rear: 4
 ````
 
+> What is the problem with the previews queue array?
+
+Even if we dequeue the first, two elements, the queue array is considered is full, becuase the rear is equal to the size - 1.
+
+To solve this problem, we can make the queue array circular, so we can add more elements to the queue array.
+
 ### Queue Array Circular
+As we can see in the image above, the queue array is not circular, which means that the queue array is not efficient.
+
 We can modify the queue array to be circular, by changing the isFull() method, enqueue() method, and dequeue() method.
 
-1. In the **isFull()** method, we will change the condition to be **(rear == size - 1) || (rear == front - 1)**.
+1. In the **isFull()** method, modify the condition.
 
 ```java
-boolean isFull() {
-        return (rear == size - 1) || (rear == front - 1);
+    boolean isFull() {
+        if(rear == size -1|| front == rear -1 ) {
+            return true;
+        }
+        return false;
     }
 ```
 
-2. In the **enqueue()** method, we will change the condition to be **(rear == size - 1) || (rear == front - 1)**.
+2. In the **enqueue()** method, instead of incrementing the rear by 1,
+we will change the increment of the rear to be **(rear + 1) % size**.
 
 ```java
 void enqueue(int item) {
@@ -252,7 +264,10 @@ void enqueue(int item) {
     }
 ```
 
-3. In the **dequeue()** method, we will change the condition to be **(front == -1)**.
+> The % operator returns the remainder of two numbers.
+> We change the increment of the rear so can add more elements at the end of the queue array.
+
+3. In the **dequeue()** method, change the decrement of the front.
 
 ```java
 void dequeue() {
@@ -278,11 +293,23 @@ public static void main(String[] args) {
         queue.enqueue(20);
         queue.enqueue(30);
         queue.dequeue();
+        queue.dequeue();
         queue.enqueue(40);
+        queue.enqueue(50);
 
-        System.out.println(queue.front);
-        System.out.println(queue.rear);
+        queue.enqueue(60);
+        queue.enqueue(70);
+
+        System.out.println("Front: " + queue.front);
+        System.out.println("Rear: " + queue.rear);
     }
+```
+
+**OUTPUT**
+```java
+Front: 2
+Rear: 1
+
 ```
 
 ### Queue Linked-list
@@ -341,7 +368,7 @@ public static void main(String[] args) {
 ```
 
 
-4. Create **enqueue* method that inserts a node at the end of the element.
+4. Create **enqueue** method that inserts a node at the end of the element.
 
    ```java
       public void enqueue(int item) {
@@ -498,7 +525,7 @@ int main() {
 20
 ````
 
-### Non-Prmitive
+### Non-Primitive
 
 #### Java
 
