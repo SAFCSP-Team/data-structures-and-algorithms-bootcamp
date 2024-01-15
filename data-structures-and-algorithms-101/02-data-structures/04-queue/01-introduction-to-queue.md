@@ -600,5 +600,4 @@ int main() {
 | Project ID          | Project Title  | Deadline |
 | ------------------- | -------------- | -------- |
 | DSAProject01Queue01 | [Introduction to Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)   |          |
-| DSAProject01Queue01 | [Linear Queue](https://github.com/SAFCSP-Team/linear-queue-project)   |          |
-| DSAProject01Queue03 | [Deque](https://github.com/SAFCSP-Team/deque-project)          |          |
+
