@@ -101,5 +101,8 @@ public class BubbleSort {
 ```
 
 ## Projects
+| Project Title | Deadline |
+|:-----------:|:-------------|
+| [Bubble sort](https://github.com/SAFCSP-Team/bubble-sort/tree/main) | - | 
 
 

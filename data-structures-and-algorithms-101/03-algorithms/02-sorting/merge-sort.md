@@ -5,7 +5,7 @@
 
 [image]()
 
-Imagine you have a list of numbers [5, 1, 3, 9, 4, 2, 7, 6].
+Imagine you have a list of numbers `[5, 1, 3, 9, 4, 2, 7, 6]`.
 
 The steps  to sort them using merge sort are as follows:
 
@@ -28,7 +28,7 @@ Similarly, with the second part [4, 2, 7, 6] to get [2, 4] and [6, 7].
 We merge the two halves [1, 5] and [3, 9] to get [1, 3, 5, 9]. 
 and merge [2, 4] and [6, 7] to get [2, 4, 6, 7]
 ```
-Merging them back together, you obtain the final sorted list: [1, 2, 3, 4, 5, 6, 7, 9].
+Merging them back together, you obtain the final sorted list: `[1, 2, 3, 4, 5, 6, 7, 9]`.
 
 ## Implementation
 
