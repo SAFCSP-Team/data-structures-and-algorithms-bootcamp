@@ -10,8 +10,8 @@ Binary tree is a tree where every node has maximum two child nodes
 **Types of binary tree**
 <br/>
 
-Figure 1
-![data representation](./images/Types-of-binary-tree.jpg)
+Figure 1    
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Types-of-binary-tree.jpg">
 
 1 - Full Binary Tree
 - A tree where tree nodes can have either two children or no child.
@@ -41,8 +41,8 @@ Figure 1
 
 The process of Access required node to perform special operation or visiting each node and print their values.
 
-Figure 2
-![data representation](./images/Copy-of-tree-intro.jpg)
+Figure 2  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Copy-of-tree-intro.jpg">
 
 There are three ways to travers tree:
 
