@@ -249,19 +249,20 @@ Output
 Print tree values 1 2 4 5 3 6 7           
 ```
 
+<br/>
 
-**Decision tree**
-
+**Decision tree**    
 Decision tree is one of binary tree's applications. it's binary tree assoitated with decision process.
-Decesion tree helps the program to decide whether to take an action or not based on specific actions/questions.
+Decesion tree helps the program to decide whether to take an action or not based on specific actions/questions.   
+   
+**Example**     
+Let's say you want to decide whether to go on a trip or not? and you want that to be decided that based on some questions:  
 
-let's say you want to decide whether to go on a trip or not? and you want that to be decided that based on some questions.
-
-Do you have valid passport?
-Did your company approved your vacation?
-Do you have the budget for this trip?
-
-Here is how the decision tree should be built as the following (Figuer 3) shows:
+Do you have valid passport?   
+Did your company approved your vacation?   
+Do you have the budget for this trip?  
+   
+Here is how the decision tree should be built as the following (Figuer 3) shows:  
 
 Figuer 3
 
@@ -270,7 +271,7 @@ Figuer 3
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-|[Tree with non primitive (Employees) data types](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
+|[Binary tree - Decision tree](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
 
 
 
