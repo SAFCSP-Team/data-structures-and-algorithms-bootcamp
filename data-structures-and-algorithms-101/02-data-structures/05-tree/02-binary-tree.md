@@ -74,8 +74,8 @@ There are three ways to travers tree:
 
 
 ## Example 
-We will create a tree of integers and we will perform the traversal operations on it.  
-Since the `binary tree` has maximun two children, then the node should have only two pointers (left and right).
+We will create a tree of integers and we will perform the Pre-order traversal and add operations on it.  
+Since the `binary tree` has maximun two children, then the `node` should have only two pointers (left and right).
 
 ### Primitive 
 
@@ -210,7 +210,7 @@ class BinaryTree {
 }
 ```
 
-- In `main` we will use and call binary tree class functions:
+- In `main` we will bulid the tree using binary tree class functions:
 
 ```java
 
@@ -240,14 +240,31 @@ class BinaryTree {
 
 Output
 ```
-Child added successfully
-child added successfully
-Child added successfully
-child added successfully
-Child added successfully
-child added successfully
-Print tree values 1 2 4 5 3 6 7              
+2 child added successfully
+3 child added successfully
+4 child added successfully
+5 child added successfully
+6 child added successfully
+7 child added successfully
+Print tree values 1 2 4 5 3 6 7           
 ```
+
+
+**Decision tree**
+
+Decision tree is one of binary tree's applications. it's binary tree assoitated with decision process.
+Decesion tree helps the program to decide whether to take an action or not based on specific actions/questions.
+
+let's say you want to decide whether to go on a trip or not? and you want that to be decided that based on some questions.
+
+Do you have valid passport?
+Did your company approved your vacation?
+Do you have the budget for this trip?
+
+Here is how the decision tree should be built as the following (Figuer 3) shows:
+
+Figuer 3
+
 
 ## Projects
 
