@@ -95,4 +95,7 @@ Sorted Array: 1 2 3 4 5 6
 
 ```
 ## Projects
+| Project Title | Deadline |
+|:-----------:|:-------------|
+| [Insertion sort](https://github.com/SAFCSP-Team/insertion-sort/tree/main) |-| 
 
