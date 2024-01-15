@@ -34,7 +34,7 @@ Every new element will be added at the end of the queue. The first element in th
 
 **Enqueue**: add an element at the end of the queue.
 
-**Dequeue**: return the last element from the queue and remove it from the queue.
+**Dequeue**: return the first element from the queue and remove it from the queue.
 
 > Each programming language has different names for enqueue and dequeue operations.
 > 
@@ -70,7 +70,7 @@ class QueueArray {
     int array[];
     int front;
     int rear;
-    int size = 4;
+    int size = 5;
 
     public QueueArray() {
         array = new int[size];
@@ -103,7 +103,7 @@ class QueueArray {
 queue.array[rear] = 50;
 ```
 
-<img width="300" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/b05e9dd1-6f61-4dd4-b21a-9fa7df586b0c">
+<img width="300" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/first-example-array.jpg">
 
 
 > Now we have created an element in the `queue`
