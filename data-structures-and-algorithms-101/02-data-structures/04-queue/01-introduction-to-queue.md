@@ -109,21 +109,24 @@ queue.array[rear] = 50;
 > Now we have created an element in the `queue`
 
 5. In the QueueArray class, create a method that checks if the queue is empty.
-   
+   > The method will return true if the queue is empty
+
    ```java
    boolean isEmpty() {
            return front == -1;
        }
    ```
+
 6. Create a method that checks if the queue is full.
-   
+   > The method will return true if the queue is full
+
    ```java
    boolean isFull() {
-           return (front == 0 && rear == size - 1);
+           return (rear == size - 1);
        }
    ```
    
-   In the image below the queue array is full. We know that the tail is the index of the last element, so if the tail = size -1 will be true, that means the array is full.
+   In the image below the queue array is full. We know that the rear is the index of the last element, so if the rear = size -1 will be true, that means the array is full.
 
 ![1703064728345](images/01-introduction-to-queue/1703064728345.png)
 
@@ -212,6 +215,75 @@ In the main method. We have created a queue array that has the following values.
 FRONT: 1
 REAR: 3
 ````
+
+### Queue Array Circular
+We can modify the queue array to be circular, by changing the isFull() method, enqueue() method, and dequeue() method.
+
+1. In the **isFull()** method, we will change the condition to be **(rear == size - 1) || (rear == front - 1)**.
+
+```java
+boolean isFull() {
+        return (rear == size - 1) || (rear == front - 1);
+    }
+```
+
+2. In the **enqueue()** method, we will change the condition to be **(rear == size - 1) || (rear == front - 1)**.
+
+```java
+void enqueue(int item) {
+        // check if the queue is full or not
+        if (isFull()) {
+            System.out.println("Overflow");
+            return;
+        }
+
+        // if the queue is empty then set front and rear to 0
+        if (front == -1) {
+            front = 0;
+            rear = 0;
+        }
+        // if the queue is not empty then rear will be increment by 1
+        else {
+            rear = (rear + 1) % size;
+
+        }
+        // insert the item at the rear
+        array[rear] = item;
+    }
+```
+
+3. In the **dequeue()** method, we will change the condition to be **(front == -1)**.
+
+```java
+void dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty. Nothing to dequeue");
+            // if the queue has only one element then set front and rear to -1
+        } else if (front == rear) {
+            front = rear = -1;
+            // if the queue has more than one element then increment front by 1
+        } else {
+            front = (front + 1) % size;
+        }
+    }
+```
+
+4. Now let's test the code in the main method.
+
+```java
+public static void main(String[] args) {
+        QueueArray queue = new QueueArray();
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.dequeue();
+        queue.enqueue(40);
+
+        System.out.println(queue.front);
+        System.out.println(queue.rear);
+    }
+```
 
 ### Queue Linked-list
 
