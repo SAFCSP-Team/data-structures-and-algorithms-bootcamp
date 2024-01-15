@@ -95,7 +95,7 @@ class QueueArray {
    }
    ```
    
-   Every time we have add an element, we increase the rear by one [**queue.rear++**].
+   Every time we have added an element, we increase the rear by one [**queue.rear++**].
    
 4. Update the element value.
 
@@ -103,19 +103,19 @@ class QueueArray {
 queue.array[rear] = 50;
 ```
 
-<img width="300" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/first-example-array.jpg">
+<img width="600" alt="An element in the queue array" src="https://raw.githubusercontent.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/main/data-structures-and-algorithms-101/02-data-structures/04-queue/images/01-introduction-to-queue/first-example-array.jpg">
 
 
 > Now we have created an element in the `queue`
 
-5. In the QueueArray class, create a method that check if the queue is empty.
+5. In the QueueArray class, create a method that checks if the queue is empty.
    
    ```java
    boolean isEmpty() {
            return front == -1;
        }
    ```
-6. Create a method that check if the queue if full.
+6. Create a method that checks if the queue is full.
    
    ```java
    boolean isFull() {
@@ -127,7 +127,7 @@ queue.array[rear] = 50;
 
 ![1703064728345](images/01-introduction-to-queue/1703064728345.png)
 
-7. To make the insertion and deletion process easy, we declare a methods `enqueue` and `dequeue`.
+7. To make the insertion and deletion process easy, we declare methods `enqueue` and `dequeue`.
 
 ```java
 void enqueue(int item) {
@@ -178,7 +178,7 @@ void dequeue(){
     }
 ```
 
-In the code above. We have created a dequeue method that increment the **front by one**, and if the queue has only one element then the front and rear will be **-1**.
+In the code above. We have created a dequeue method that increments the **front by one**, and if the queue has only one element then the front and rear will be **-1**.
 
 So far we have created the following methods **[isFull(), isEmpty, enqueue(), dequeue()]** in the QueueArray class.
 
@@ -269,20 +269,20 @@ REAR: 3
 ```
 
 
-4. Create **enqueue* method that insert a node at the end of the element.
+4. Create **enqueue* method that inserts a node at the end of the element.
 
    ```java
       public void enqueue(int item) {
         Node newNode = new Node(item);
 
-          // if the queue is empty then set front and rear to the new node
+          // If the queue is empty then set the front and rear to the new node
            if(front == null){
                front = newNode;
                rear = newNode;
                return;
            }
 
-           // if the queue is not empty then set the rear to the new node
+           // If the queue is not empty then set the rear to the new node
            rear.next = newNode;
            rear = newNode;
 
@@ -290,7 +290,7 @@ REAR: 3
    ```
 > The last node will be the rear, and the first node will be the front.
 
-5. Create a **dequeue** method that remove the first element from the queue.
+5. Create a **dequeue** method that removes the first element from the queue.
 
    ```java
       public int dequeue() {
