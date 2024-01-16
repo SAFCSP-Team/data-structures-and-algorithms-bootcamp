@@ -128,7 +128,9 @@ queue.array[rear] = 50;
    
    In the image below the queue array is full. We know that the rear is the index of the last element, so if the rear = size -1 will be true, that means the array is full.
 
-![Alt text](<data-structures Queue Array.jpg>)
+
+
+![1702810965330](images/01-introduction-to-queue/data-structures-Queue-Array.jpg)
 
 7. To make the insertion and deletion process easy, we declare methods `enqueue` and `dequeue`.
 
@@ -184,7 +186,7 @@ In the code above. We have created a dequeue method that increments the **front 
 So far in the QueueArray class we have created the following methods: 
 **[isFull(), isEmpty(), enqueue(), dequeue()]**.
 
-1. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
+9. Let's create an object from **QueueArray** class, and call the methods that we have created in the **main method.**
 
 ```java
 class Main {
@@ -207,7 +209,7 @@ class Main {
 
 In the main method. We have created a queue array that has the following values.
 
-![Alt text](<data-structures - Queue Array-1.jpg>)
+![Alt text](images/01-introduction-to-queue/data-structures-Queue-Array-2.jpg)
 
 **OUTPUT**
 
@@ -218,7 +220,7 @@ Rear: 4
 
 > What is the problem with the previews queue array?
 
-Even if we dequeue the first, two elements, the queue array is considered is full, becuase the rear is equal to the size - 1.
+Even if we dequeue the first, two elements, the queue array is considered is full, becuase in the **isFull()** method it return true if the rear is equal to the size - 1.
 
 To solve this problem, we can make the queue array circular, so we can add more elements to the queue array.
 
