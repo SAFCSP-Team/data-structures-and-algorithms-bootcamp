@@ -124,5 +124,9 @@ Sorted numbers:
 1 2 4 5 7 9
 ```
 ## Projects
+| Project Title | Deadline |
+|:-----------:|:-------------|
+| [Selection sort](https://github.com/SAFCSP-Team/selection-sort/blob/main/README.md) | - | 
+
 
 
