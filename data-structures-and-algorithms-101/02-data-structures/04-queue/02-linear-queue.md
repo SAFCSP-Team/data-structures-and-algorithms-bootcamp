@@ -34,7 +34,7 @@ public class QueueArray {
     }
 
     public boolean isFull(){
-        if(front == 0 && rear == SIZE - 1){
+        if(rear == SIZE - 1){
             return true;
         }
         return false;
@@ -51,11 +51,11 @@ public class QueueArray {
 
     public void enQueue(int element) {
         if(isFull()) {
-            System.out.println("QueueLinkedList.Queue is full");
+            System.out.println("Queue is full");
             return;
         }
         // if the queue is empty
-        if(front == -1) {
+        if(isEmpty()) {
             front = 0;
         }
 
@@ -68,7 +68,7 @@ public class QueueArray {
         int element;
 
         if(isEmpty()){
-            System.out.println("QueueLinkedList.Queue is empty");
+            System.out.println("Queue is empty");
             return (-1);
         }
         else {
@@ -115,6 +115,17 @@ public class QueueArray {
 }
 
 ````
+
+**Output:**
+
+```
+Item -> 1  
+Item -> 2  
+Item -> 3  
+1 Deleted
+Item -> 2  
+Item -> 3  
+```
 
 - In C++ Programming language:
 
@@ -210,17 +221,40 @@ int main() {
 }
 ```
 
+**Output:**
+```
+Item -> 1
+Item -> 2
+Item -> 3
+1 Deleted
+Item -> 2
+Item -> 3
+```
+
 ### Non-primitive
 
 - In Java programming language: 
 
 ````Java
-import java.util.Arrays;
+class User {
+    String username;
+    String password;
+
+    User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+
+    public String getUser() {
+        return this.username + ", " + this.password;
+    }
+}
 
 public class QueueArray {
     final int SIZE = 5;
 
-    String items[] = new String[SIZE];
+    User items[] = new User[SIZE];
 
     int front, rear;
 
@@ -245,7 +279,7 @@ public class QueueArray {
         }
     }
 
-    public void enQueue(String element) {
+    public void enQueue(User element) {
         if(isFull()) {
             System.out.println("QueueLinkedList.Queue is full");
             return;
@@ -260,8 +294,8 @@ public class QueueArray {
 
     }
 
-    public String deQueue() {
-        String element;
+    public User deQueue() {
+
 
         if(isEmpty()){
             System.out.println("QueueLinkedList.Queue is empty");
@@ -269,7 +303,7 @@ public class QueueArray {
         }
         else {
 
-            element = items[front];
+            User element = items[front];
 
             if(front >= rear){
                 front = -1;
@@ -290,16 +324,16 @@ public class QueueArray {
         }
         else {
             for(i = front; i <= rear; i++)
-                System.out.println("Item -> " + items[i] + " ");
+                System.out.println("Item -> " + items[i].getUser() + " ");
         }
     }
 
     public static void main(String[] args) {
         QueueArray queueArray = new QueueArray();
 
-        queueArray.enQueue("A");
-        queueArray.enQueue("B");
-        queueArray.enQueue("C");
+        queueArray.enQueue(new User("fahad12", "P@ssw0rd"));
+        queueArray.enQueue(new User("sara97", "123456"));
+        queueArray.enQueue(new User("devahmed", "secret"));
 
         queueArray.display();
 
@@ -310,6 +344,16 @@ public class QueueArray {
     }
 }
 ````
+**Output:**
+```
+Item -> fahad12, P@ssw0rd 
+Item -> sara97, 123456 
+Item -> devahmed, secret 
+User@681a9515 Deleted
+Item -> sara97, 123456 
+Item -> devahmed, secret 
+```
+
 
 - In C++ Programming language:
 
@@ -404,6 +448,16 @@ int main() {
 
     return 0;
 }
+```
+
+**Output:**
+```
+Item -> A
+Item -> B
+Item -> C
+A Deleted
+Item -> B
+Item -> C
 ```
 
 ## Projects

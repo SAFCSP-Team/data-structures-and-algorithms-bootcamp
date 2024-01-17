@@ -17,7 +17,7 @@ Operations of the deque are:
 
 ## Example
 
-#### Primitive
+### Primitive
 
 ##### **Java**
 
@@ -302,7 +302,7 @@ Rear: 20
 
 <hr>
 
-#### Non-Primitive
+### Non-Primitive
 
 **Java**
 

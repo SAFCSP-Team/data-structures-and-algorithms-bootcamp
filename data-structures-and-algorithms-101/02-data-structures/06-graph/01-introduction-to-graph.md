@@ -31,27 +31,42 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 > The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
 ## Terminology
-* **Vertex** - A vertex, also called a "node", is a data object that can have zero or more adjacent vertices.
-* **Edge** - An edge is a connection between two nodes.
-* **Vertex Adjacency** - When a vertex is connected to another vertex.
+* **Simple Graph** - A simple graph is an unweighted, undirected graph containing no loops or multiple edges.
 * **In-degree** - The number of edges pointing to a vertex in a directed graph.
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
 * **Self-Loop** - A self-loop is an edge that connects a vertex to itself.
-* **Cycle Graph** - Is a node that can traverse through a path and return to itself.
-* **Acyclic Graph** - When a directed graph doesn't have cycle vertex it's called Acyclic.
+
+<img width="200" alt="Graph - Node" src="images/graph-loop.png">
+
+* **Cyclic Graph** - A node that can traverse through a path and return to itself.
+
+<img width="200" alt="Graph - Node" src="images/graph-cyclic.png">
+
+> Vertex  A is self-loop vertex.
+
+* **Acyclic Graph** - When a directed graph doesn't have cyclic vertex it's called Acyclic.
 * **Connected Graph** - A connected graph is graph in which each vertex is connected to at least one other vertex.
+
+<img width="200" alt="Graph - Node" src="images/graph-connected.png">
+
 * **Disconnected Graph** - A disconnected graph is a graph where some vertices may not have edges.
+
+<img width="200" alt="Graph - Node" src="images/graph-disconnected.png">
+
+
 * **Complete Graph** - A complete graph is a graph where each vertex is connected to every other vertex.
+
+<img width="200" alt="Graph - Node" src="images/graph-completed2.png">
+
 * **Subgraph** - A subgraph is a subset of the vertices and edges of a graph.
-* **Simple Graph** - A simple graph is an unweighted, undirected graph containing no loops or multiple edges.
-* **Dense Graph** - A graph is dense if the number of edges is close to the maximal number of edges.
-* **Sparse Graph** - A graph is sparse if the number of edges is close to the minimal number of edges.
-* **Tree** - A tree is an undirected graph which contains no cycles.
 * **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices.
-* **Weakly Connected Graph** - A directed graph is weakly connected when there is a path between each pair of vertices when the graph 
-* **Simple Path** - A simple path is a path with no repeated vertices.
-  
+
+<img width="200" alt="Graph - Node" src="images/graph-connected.png">
+
+* **Weakly Connected Graph** - A directed graph is weakly connected when there is a path between each pair of vertices when the graph   
+
+<img width="200" alt="Graph - Node" src="images/graph-weakly-connected.png">
 
 
 ### Graph Representation
