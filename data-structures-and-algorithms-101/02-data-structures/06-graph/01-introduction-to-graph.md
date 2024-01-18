@@ -57,7 +57,7 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 
 * **Complete Graph** - A complete graph is a graph where each vertex is connected to every other vertex.
 
-<img width="200" alt="Graph - Node" src="images/graph-completed2.png">
+<img width="280" alt="Graph - Node" src="images/graph-completed2.png">
 
 * **Subgraph** - A subgraph is a subset of the vertices and edges of a graph.
 * **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices.
