@@ -26,7 +26,7 @@ A **Graph is a non-linear data structure** is a pictorial representation of a se
 
 An example of the weighted graph is the map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. And the **weight** of the edge is the **distance** between the cities.
 
-<img width="300" alt="Graph - Node" src="images/Graph Weight.jpg">
+<img width="350" alt="Graph - Node" src="images/Graph-Weight.jpg">
 
 > The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
