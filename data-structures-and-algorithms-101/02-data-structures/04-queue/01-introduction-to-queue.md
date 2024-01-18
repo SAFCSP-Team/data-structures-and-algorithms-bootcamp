@@ -2,7 +2,10 @@
 
 Have you ever been in a line? we usually form a line whenever we want to be served whether it's at a coffee shop, or a bank. When we form a line the serving process will be much easier and controllable. Each new customer who comes in will join the last of the line, and the first customer in the line will be served first, after a customer gets served, they leave the line.
 
-![1702812022182](images/01-introduction-to-queue/1702812022182.png)
+
+
+<img width="500" alt="An element in the queue array" src="images/01-introduction-to-queue/1702812022182.png">
+
 
 We use the same concept in the data structure to organize the data in programs, it's called a `queue`, which has the same concept as what we described earlier.
 
@@ -16,11 +19,12 @@ Queue is a **linear data structure**.  The first element in the `queue` is calle
 
 **Queue Array**
 
-![1703064728345](images/01-introduction-to-queue/1703064728345.png)
+<img width="500" alt="An element in the queue array" src="images/01-introduction-to-queue/1703064728345.png">
 
 **Queue Linked-list**
 
-![1702810878533](images/01-introduction-to-queue/1702810878533.png)
+
+<img width="500" alt="An element in the queue array" src="images/01-introduction-to-queue/1702810878533.png">
 
 > Some resources refer to the first element in the queue as [head, front],
 > 
@@ -30,7 +34,8 @@ Queue is a **linear data structure**.  The first element in the `queue` is calle
 
 Every new element will be added at the end of the queue. The first element in the line will be processed first, once the element is processed it will be removed from the queue.
 
-![1702810965330](images/01-introduction-to-queue/1702810965330.png)
+<img width="500" alt="An element in the queue array" src="images/01-introduction-to-queue/1702810965330.png">
+
 
 **Enqueue**: add an element at the end of the queue.
 
@@ -103,7 +108,7 @@ class QueueArray {
 queue.array[rear] = 50;
 ```
 
-<img width="600" alt="An element in the queue array" src="https://raw.githubusercontent.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/main/data-structures-and-algorithms-101/02-data-structures/04-queue/images/01-introduction-to-queue/first-example-array.jpg">
+<img width="500" alt="An element in the queue array" src="https://raw.githubusercontent.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/main/data-structures-and-algorithms-101/02-data-structures/04-queue/images/01-introduction-to-queue/first-example-array.jpg">
 
 
 > Now we have created an element in the `queue`
@@ -128,9 +133,8 @@ queue.array[rear] = 50;
    
    In the image below the queue array is full. We know that the rear is the index of the last element, so if the rear = size -1 will be true, that means the array is full.
 
+<img width="500" alt="An element in the queue array" src="images/01-introduction-to-queue/data-structures-Queue-Array.jpg">
 
-
-![1702810965330](images/01-introduction-to-queue/data-structures-Queue-Array.jpg)
 
 7. To make the insertion and deletion process easy, we declare methods `enqueue` and `dequeue`.
 
@@ -209,7 +213,8 @@ class Main {
 
 In the main method. We have created a queue array that has the following values.
 
-![Alt text](images/01-introduction-to-queue/data-structures-Queue-Array-2.jpg)
+<img width="500" alt="An element in the queue array" src="images/01-introduction-to-queue/data-structures-Queue-Array-2.jpg">
+
 
 **OUTPUT**
 
