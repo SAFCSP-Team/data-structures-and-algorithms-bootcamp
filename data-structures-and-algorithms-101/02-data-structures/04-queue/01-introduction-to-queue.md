@@ -455,7 +455,7 @@ Rear: 1
 
 ## Example
 
-Another way to use queue is by using the built-in classes.
+Another way to use queue is by using the built-in classes, [Interface Queue<E>](https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html) and [Class LinkedList<E>](https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/util/LinkedList.html). 
 
 > Some programming language doesn't have built-in class to support queue.
 
