@@ -258,14 +258,15 @@ Decesion tree helps the program to decide whether to take an action or not based
 **Example**     
 Let's say you want to decide whether to go on a trip or not? and you want that to be decided that based on some questions:  
 
-Do you have valid passport?   
+
 Did your company approved your vacation?   
+Is the airline ticket availabe?   
 Do you have the budget for this trip?  
    
 Here is how the decision tree should be built as the following (Figuer 3) shows:  
 
 Figuer 3     
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Decision Tree Example.jpg">
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Decision-Tree-Example.jpg">
 
 
 
