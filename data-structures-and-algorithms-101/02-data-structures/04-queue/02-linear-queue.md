@@ -1,14 +1,14 @@
 # Linear Queue
 
 ## Concept
-> We have covered and implement the queue in the introduction.
+> We have covered and implemented the queue in the introduction.
 
 A **linear queue**, also known as a **simple queue** is a type of `queue` data structure, where the elements are stored in a linear or sequential manner. The first element is called `head`, and the last element of the queue is called `tail`.
 
 The primary operations of the queue are:
 
 * **Enqueue**: The insertion of a node at the end of the queue, which is at the `rear`/`tail`.
-* **Dequeue**: The deletion of a node occuers at the start of the queue, which is at the `head`/`front`.
+* **Dequeue**: The deletion of a node occurs at the start of the queue, which is at the `head`/`front`.
 
 ![1702816143315](images/02-linear-queue/1702816143315.png)
 
@@ -459,10 +459,3 @@ A Deleted
 Item -> B
 Item -> C
 ```
-
-## Projects
-
-
-| Project ID   | Project Title     | Deadline |
-| ------------ | ----------------- | -------- |
-| DSAProject01 | [Linear Queue](https://github.com/SAFCSP-Team/linear-queue-project) |          |
