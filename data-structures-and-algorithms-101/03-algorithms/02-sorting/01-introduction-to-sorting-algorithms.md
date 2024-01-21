@@ -42,6 +42,6 @@ These are just a few examples of `sorting algorithms`, and there are many more a
 
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[text](-) | - | 
+|[Introduction to sorting](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/02-sorting/project/introduction-to-sorting.md) | - | 
 
 
