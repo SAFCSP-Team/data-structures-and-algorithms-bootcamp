@@ -167,3 +167,8 @@ public class MergeSort {
 
 
 ## Projects
+| Project Title | Deadline |
+|:-----------:|:-------------|
+| [Merge sort](https://github.com/SAFCSP-Team/merge-sort) | - | 
+
+
