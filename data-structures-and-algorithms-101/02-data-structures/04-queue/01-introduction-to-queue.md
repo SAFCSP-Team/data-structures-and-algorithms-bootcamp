@@ -606,5 +606,5 @@ int main() {
 
 | Project ID          | Project Title  | Deadline |
 | ------------------- | -------------- | -------- |
-| DSAProject01Queue01 | [Introduction to Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)   |          |
+| DSAProject01Queue01 | [Introduction to Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)   |      23/1/2024    |
 
