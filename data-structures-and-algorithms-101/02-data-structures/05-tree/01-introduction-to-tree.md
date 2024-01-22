@@ -121,7 +121,7 @@ Now we will explain how to **implement the complete tree**, **linking nodes toge
 
 - `Tree` class implementation:
 
-1 - Create tree.  
+1 - Tree class.  
 2 - Print tree values function.
 
 
