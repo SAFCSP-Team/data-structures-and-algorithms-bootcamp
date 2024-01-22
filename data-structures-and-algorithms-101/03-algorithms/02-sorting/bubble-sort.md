@@ -1,4 +1,4 @@
-# Bubbled Sort Algorithm
+# Bubble Sort Algorithm
 
 Imagine you have a group of friends lined up based on their heights, and you want to sort them from shortest to tallest using the `bubble sort algorithm`.
 
