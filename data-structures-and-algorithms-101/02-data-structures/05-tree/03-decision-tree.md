@@ -25,5 +25,5 @@ Figuer 3
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-|[Binary tree - Decision tree](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
+|[Decision tree project](https://github.com/SAFCSP-Team/decision-tree-project) | - | 
 
