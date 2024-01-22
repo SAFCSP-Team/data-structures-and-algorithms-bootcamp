@@ -80,14 +80,14 @@ Sorted section: `2, 3, 5, 7, 8, 9`
         for (int i = 0; i < n - 1; i++) {
             int minIndex = i;
             
-            // Find the index of the minimum element in the unsorted part of the array
+            /* Find the index of the minimum element in the unsorted part of the array */
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[minIndex]) {
                     minIndex = j;
                 }
             }
             
-            // Swap the found minimum element with the first element
+            /* Swap the found minimum element with the first element */
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
@@ -106,7 +106,7 @@ Sorted section: `2, 3, 5, 7, 8, 9`
 
         System.out.println();
 
-        // Call the selectionSort method
+        /* Call the selectionSort method */
         selectionSort(numbers);
 
         System.out.println("Sorted numbers:");
