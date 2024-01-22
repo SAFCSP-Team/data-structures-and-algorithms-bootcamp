@@ -189,13 +189,10 @@ Now we will use the tree class on the main function:
         // 2 - Create tree root (node object)
         tree.root = new Node(1);
 
-        // 3 - Accecc the root data and print it\
         System.out.println("Print root value");
         System.out.println(tree.root.number);
         System.out.println();
 
-
-        // 4 - Accecc and update the **root** data to be (3)
         tree.root.number = 3;
 
         tree.root.left = 2;
