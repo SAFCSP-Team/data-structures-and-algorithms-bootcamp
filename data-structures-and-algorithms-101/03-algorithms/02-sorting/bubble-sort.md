@@ -1,6 +1,6 @@
 # Bubbled Sort Algorithm
 
-Imagine you have a group of friends lined up based on their heights, and you want to sort them from shortest to tallest using the bubble sort algorithm.
+Imagine you have a group of friends lined up based on their heights, and you want to sort them from shortest to tallest using the `bubble sort algorithm`.
 
 Step 1: Compare adjacent **heights** and swap if necessary.
 
@@ -13,7 +13,7 @@ Step 3: Repeat the process until the end of the line.
 You continue this process, comparing adjacent heights and swapping if necessary, until you reach the end of the line.
 Repeat Steps 1 to 3 until the line is sorted.
 
-After reaching the end of the line, you repeat the entire process from the beginning until no more swaps are needed. This ensures that the tallest friend "bubbles" up to the end of the line in each iteration.
+After reaching the end of the line, you repeat the entire process from the beginning until no more swaps are needed. This ensures that the tallest friend **"bubbles"** up to the end of the line in each iteration.
 
 
 ## Concept
