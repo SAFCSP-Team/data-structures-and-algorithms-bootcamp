@@ -92,10 +92,6 @@ root.number = 3;
 <br/>
 <br/>
 
-
-<br/>
-<br/>
-
 - Link the **root** with child node (Add right child)
 
 ```java
