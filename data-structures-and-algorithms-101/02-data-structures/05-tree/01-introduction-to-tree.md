@@ -131,11 +131,11 @@ class Tree {
 
     Node root;
 
-    Tree(Node root) {
+    public Tree(Node root) {
         this.root = root
     }
 
-    Tree() {
+    public Tree() {
         root = null;
     }
 
