@@ -273,8 +273,8 @@ Now in `main` we will seach for the node 12:
 
 ```java
  public static void main(String[] args) {
-        Node target = T.iterativeSearch(2);
-        System.out.println(target == null? "Target not fount" : "target found");
+        Node target = T.searchNode(2);
+        System.out.println(target == null? "Target not fount" : "Target found");
 }
 ```
 
