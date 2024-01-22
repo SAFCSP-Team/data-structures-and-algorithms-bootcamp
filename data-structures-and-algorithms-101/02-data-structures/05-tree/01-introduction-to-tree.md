@@ -101,6 +101,21 @@ root.right = new Node(2);
 <br/>
 <br/>
 
+- **Delete** operation:  
+Let's delete the right child of the root:
+
+``` java
+ public static void main(String[] args) {
+        root.right = null;
+    }
+```
+
+<br/>
+<br/>
+
+<br/>
+<br/>
+
 Since the node class is covered.
 Now we will explain how to **implement the complete tree**, **linking nodes together** and **perform operations on it**.
 
@@ -204,18 +219,6 @@ After running the previous code, the `Tree` will look like the following (figure
 
 Figure 4
 ![data representation](./images/Tree-intro-ex.jpg)
-
-<br/>
-<br/>
-
-- **Delete** operation:  
-Let's delete the left child of the root:
-
-``` java
- public static void main(String[] args) {
-        T.root.left = null;
-    }
-```
 
 <br/>
 <br/>
