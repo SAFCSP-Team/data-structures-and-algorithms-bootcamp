@@ -292,7 +292,7 @@ public Node searchNode(int target) {
 
 ```
   
-Now in `main` we will seach for the node 12:
+Now in `main` we will seach for the node 8:
 
 ```java
  public static void main(String[] args) {
