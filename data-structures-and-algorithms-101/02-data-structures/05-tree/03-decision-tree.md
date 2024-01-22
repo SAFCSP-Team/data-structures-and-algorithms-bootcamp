@@ -5,7 +5,7 @@ Decision tree is one of binary tree's applications. it's binary tree assoitated 
 Decesion tree helps the program to decide whether to take an action or not based on specific actions/questions.   
   
   
-## Example  
+## Example   
 
 ### Primitive  
    
