@@ -238,7 +238,6 @@ Since the tree creation is covered, now we will create and add more nodes to the
         T.root.right.center = new Node(10);
         T.root.right.right = new Node(11);
 
-        Node target = T.searchNode(T.root, 12);
 
     }
 ```
