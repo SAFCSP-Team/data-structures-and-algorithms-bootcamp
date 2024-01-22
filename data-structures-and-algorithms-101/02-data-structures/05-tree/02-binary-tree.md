@@ -37,7 +37,7 @@ Figure 1
 
 <br/>
 
-**Tree traversal**
+### Tree traversal
 
 The process of Access required node to perform special operation or visiting each node and print their values.
 
