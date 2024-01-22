@@ -44,15 +44,15 @@ public static void mergeSort(int[] arr) {
         int[] left = new int[mid];
         int[] right = new int[arr.length - mid];
 
-        // Divide the array into two halves
+        /* Divide the array into two halves */
         System.arraycopy(arr, 0, left, 0, mid);
         System.arraycopy(arr, mid, right, 0, arr.length - mid);
 
-        // Recursively sort the two halves
+        /* Recursively sort the two halves */
         mergeSort(left);
         mergeSort(right);
 
-        // Merge the sorted halves
+        /* Merge the sorted halves */
         merge(arr, left, right);
     }
 ```
@@ -79,14 +79,14 @@ public static void merge(int[] arr, int[] left, int[] right) {
             k++;
         }
 
-        // Copy the remaining elements of left[] if any
+        /* Copy the remaining elements of left[] if any */
         while (i < left.length) {
             arr[k] = left[i];
             i++;
             k++;
         }
 
-        // Copy the remaining elements of right[] if any
+        /* Copy the remaining elements of right[] if any */
         while (j < right.length) {
             arr[k] = right[j];
             j++;
@@ -97,74 +97,79 @@ public static void merge(int[] arr, int[] left, int[] right) {
 The `merge` method combines the sorted sub-arrays into a single sorted array. It takes three parameters: the original array and two subarrays (left and right) that are already sorted.
 The method combines the elements from the left and right subarrays in the correct order and places them back into the original array.
 
+## Example
 
-## Examples
 ```java
 public class MergeSort {
-
     public static void mergeSort(int[] arr) {
-        if (arr.length <= 1) {
+        if (arr == null || arr.length <= 1) {
             return;
         }
-
-        int mid = arr.length / 2;
-        int[] left = new int[mid];
-        int[] right = new int[arr.length - mid];
-
-        // Divide the array into two halves
-        System.arraycopy(arr, 0, left, 0, mid);
-        System.arraycopy(arr, mid, right, 0, arr.length - mid);
-
-        // Recursively sort the two halves
-        mergeSort(left);
-        mergeSort(right);
-
-        // Merge the sorted halves
-        merge(arr, left, right);
+        int[] temp = new int[arr.length];
+        mergeSort(arr, temp, 0, arr.length - 1);
     }
 
-    public static void merge(int[] arr, int[] left, int[] right) {
-        int i = 0, j = 0, k = 0;
+    private static void mergeSort(int[] arr, int[] temp, int left, int right) {
+        if (left < right) {
+            int mid = left + (right - left) / 2;
+            mergeSort(arr, temp, left, mid);         /* Sort left subarray */
+            mergeSort(arr, temp, mid + 1, right);   /* Sort right subarray */
+            merge(arr, temp, left, mid, right);    /* Merge both sorted subarrays */
+        }
+    }
 
-        while (i < left.length && j < right.length) {
-            if (left[i] <= right[j]) {
-                arr[k] = left[i];
+    private static void merge(int[] arr, int[] temp, int left, int mid, int right) {
+        /* Copy elements to the temporary array */
+        for (int i = left; i <= right; i++) {
+            temp[i] = arr[i];
+        }
+        
+        int i = left;        /* Pointer for the left subarray */
+        int j = mid + 1;    /* Pointer for the right subarray */
+        int k = left;      /* Pointer for the merged array */
+
+        /* Merge the two subarrays by comparing elements */
+        while (i <= mid && j <= right) {
+            if (temp[i] <= temp[j]) {
+                arr[k] = temp[i];
                 i++;
             } else {
-                arr[k] = right[j];
+                arr[k] = temp[j];
                 j++;
             }
             k++;
         }
 
-        // Copy the remaining elements of left[] if any
-        while (i < left.length) {
-            arr[k] = left[i];
+        /* Copy the remaining elements from the left subarray */
+        while (i <= mid) {
+            arr[k] = temp[i];
             i++;
             k++;
         }
-
-        // Copy the remaining elements of right[] if any
-        while (j < right.length) {
-            arr[k] = right[j];
-            j++;
-            k++;
-        }
+        
+        /* No need to copy the remaining elements from the right subarray */
     }
 
     public static void main(String[] args) {
-        int[] arr = {9, 5, 1, 3, 8, 4, 2, 7, 6};
+        int[] arr = { 9, 5, 1, 3, 8, 4, 2, 7, 6 };
+        System.out.println("Original array: ");
+        printArray(arr);
         mergeSort(arr);
-
         System.out.println("Sorted array: ");
+        printArray(arr);
+    }
+
+    private static void printArray(int[] arr) {
         for (int num : arr) {
             System.out.print(num + " ");
         }
+        System.out.println();
     }
-
 }
-```
 
+
+
+```
 
 ## Projects
 | Project Title | Deadline |
