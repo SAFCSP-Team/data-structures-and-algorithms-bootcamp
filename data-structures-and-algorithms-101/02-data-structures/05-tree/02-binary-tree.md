@@ -37,9 +37,8 @@ Figure 1
 
 <br/>
 
-### Tree traversal
-
-The process of Access required node to perform special operation or visiting each node and print their values.
+### Tree traversal  
+It is the process of accessing a required node to perform special operation or visiting each node and print their values.
 
 Figure 2  
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Copy-of-tree-intro.jpg">
