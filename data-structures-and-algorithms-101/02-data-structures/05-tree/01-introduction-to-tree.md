@@ -253,7 +253,7 @@ Figure 5
 
 - **Search** operation:   
 We will build a function to search for a specific `node`
-This function will take the the **target value** as properties and returns the **target node** if found.
+This function will take the the **target value** as propertie and returns the **target node** if found.
 
   
 ```java
