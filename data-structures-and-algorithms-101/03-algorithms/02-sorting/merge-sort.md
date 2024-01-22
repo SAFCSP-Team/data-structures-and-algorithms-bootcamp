@@ -1,7 +1,7 @@
-# Merge sort algorithm 
+# Merge Sort Algorithm 
 
 ## Concept
-`Merge sort` is a popular sorting algorithm that follows the divide-and-conquer approach to sort a list of things, like numbers, in a particular order. It works by dividing the list into smaller parts, sorting those parts, and then combining them back together to get the final sorted list. 
+`Merge sort` is a popular sorting algorithm that follows the `divide-and-conquer` approach to sort a list of things, like numbers, in a particular order. It works by dividing the list into smaller parts, sorting those parts, and then combining them back together to get the final sorted list. 
 
 [image]()
 
