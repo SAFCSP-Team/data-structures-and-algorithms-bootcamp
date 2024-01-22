@@ -107,11 +107,7 @@ Now we will explain how to **implement the complete tree**, **linking nodes toge
 - `Tree` class implementation:
 
 1 - Create tree.  
-2 - Create tree root (node object).  
-3 - Access the _root_ data and print it.  
-4 - Update the _root_ data to be (3).  
-5 - Create root child (left child).  
-6 - Print tree values.
+2 - Print tree values function.
 
 
 ```java 
@@ -167,6 +163,32 @@ class Tree {
 
 ```
 
+Now we will use the tree class on the main function:
+
+```java
+ public static void main(String[] args) {
+
+        // 1 - Create Tree
+        Tree tree = new Tree();
+
+        // 2 - Create tree root (node object)
+        tree.root = new Node(1);
+
+        // 3 - Accecc the root data and print it\
+        System.out.println("Print root value");
+        System.out.println(tree.root.number);
+        System.out.println();
+
+
+        // 4 - Accecc and update the **root** data to be (3)
+        tree.root.number = 3;
+
+        tree.root.left = 2;
+        System.out.println("Print tree values");
+        tree.printTreeValues();
+
+
+```
 
 Output:
 ```java
@@ -175,6 +197,7 @@ Print root value
 Print tree values
 3
 2
+Tree values are printed
 ```
 
 After running the previous code, the `Tree` will look like the following (figure 4).
@@ -273,8 +296,8 @@ Now in `main` we will seach for the node 12:
 
 ```java
  public static void main(String[] args) {
-        Node target = T.searchNode(2);
-        System.out.println(target == null? "Target not fount" : "Target found");
+        Node target = T.searchNode(8);
+        System.out.println(target == null? "" : target.number);
 }
 ```
 
