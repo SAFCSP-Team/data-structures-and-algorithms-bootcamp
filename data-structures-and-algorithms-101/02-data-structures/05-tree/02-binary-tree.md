@@ -110,15 +110,15 @@ class BinaryTree {
   }
 
   // Pre-order traverse
-  public void printTreeValues(Node root) {
+  public void print() {
 
-    if (root == null) {
+    if (this.root == null) {
       System.out.println("Tree is empty");
       return;
     }
 
     Stack<Node> stack = new Stack<Node>();
-    stack.push(root);
+    stack.push(this.root);
 
     while (!stack.isEmpty()) {
       Node currentNode = stack.pop();
@@ -137,7 +137,7 @@ class BinaryTree {
     return;
   }
 
-  public Node search(Node root, int target) {
+  public Node search(int target) {
 
     if (root == null) {
       System.out.println("Tree is empty");
@@ -145,7 +145,7 @@ class BinaryTree {
     }
 
     Stack<Node> stack = new Stack<Node>();
-    stack.push(root);
+    stack.push(this.root);
 
     while (!stack.isEmpty()) {
       Node currentNode = stack.pop();
@@ -166,10 +166,10 @@ class BinaryTree {
     return null;
   }
 
-  public void addRight(Node root, int parentData, int newNodeData) {
+  public void addRight(int parentData, int newNodeData) {
 
     Node newNode = new Node(newNodeData);
-    Node parent = search(root, parentData);
+    Node parent = search(parentData);
 
     if (parent != null) {
 
@@ -186,10 +186,10 @@ class BinaryTree {
 
   }
 
-  public void addLeft(Node root, int parentData, int newNodeData) {
+  public void addLeft(int parentData, int newNodeData) {
 
     Node newNode = new Node(newNodeData);
-    Node parent = search(root, parentData);
+    Node parent = search(parentData);
 
     if (parent != null) {
 
@@ -219,19 +219,19 @@ class BinaryTree {
     BinaryTree tree = new BinaryTree(new Node(1));
 
     // Add children to root
-    tree.addLeft(tree.root,1, 2);
-    tree.addRight(tree.root, 1, 3);
+    tree.addLeft(1, 2);
+    tree.addRight(1, 3);
 
     // Add children to left child
-    tree.addLeft(tree.root,2, 4);
-    tree.addRight(tree.root, 2, 5);
+    tree.addLeft(2, 4);
+    tree.addRight(2, 5);
 
     // Add children to right child
-    tree.addLeft(tree.root,3, 6);
-    tree.addRight(tree.root, 3, 7);
+    tree.addLeft(3, 6);
+    tree.addRight(3, 7);
 
     System.out.print("Print tree values");
-    tree.printTreeValues(tree.root);
+    tree.print();
 
   }
 
