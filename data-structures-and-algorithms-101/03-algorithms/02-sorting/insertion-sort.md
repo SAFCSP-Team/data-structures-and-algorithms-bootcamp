@@ -27,7 +27,7 @@ Let's look at an example:
 We continue this process until the unsorted part becomes empty.
 
 
-## Examples
+## Implementation 
 
  Before we implement the code, here's how the insertion sort algorithm works:
 
@@ -57,7 +57,7 @@ public class InsertionSort {
             int key = arr[i];
             int j = i - 1;
             
-            // Move elements of arr[0..i-1] that are greater than key, to one position ahead of their current position
+            /* Move elements of arr[0..i-1] that are greater than key, to one position ahead of their current position */
             while (j >= 0 && arr[j] > key) {
                 arr[j + 1] = arr[j];
                 j--;
@@ -65,7 +65,7 @@ public class InsertionSort {
             
             arr[j + 1] = key;
             
-            // Print array after each iteration
+            /* Print array after each iteration */
             System.out.print("Iteration " + i + ": ");
             printArray(arr);
         }
@@ -83,8 +83,7 @@ public class InsertionSort {
 
 The output
 
-```java
-
+```
 Original Array: 5 2 4 6 1 3 
 Iteration 1: 2 5 4 6 1 3 
 Iteration 2: 2 4 5 6 1 3 
@@ -92,7 +91,6 @@ Iteration 3: 2 4 5 6 1 3
 Iteration 4: 1 2 4 5 6 3 
 Iteration 5: 1 2 3 4 5 6 
 Sorted Array: 1 2 3 4 5 6 
-
 ```
 ## Projects
 | Project Title | Deadline |
