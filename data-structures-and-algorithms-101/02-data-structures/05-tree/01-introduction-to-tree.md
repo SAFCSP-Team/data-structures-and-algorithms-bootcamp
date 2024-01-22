@@ -128,38 +128,6 @@ class Tree {
         root = null;
     }
 
-    public Node searchNode(Node root, int target) {
-        if (root == null) {
-            System.out.println("Tree is empty");
-            return null;
-        }
-
-        Stack<Node> stack = new Stack<>();
-        stack.push(root);
-
-        while (!stack.isEmpty()) {
-            Node currentNode = stack.pop();
-
-            if (currentNode.number == target) {
-                return currentNode;
-            }
-
-            if (currentNode.right != null) {
-                stack.push(currentNode.right);
-            }
-
-            if (currentNode.left != null) {
-                stack.push(currentNode.left);
-            }
-
-            if (currentNode.center != null) {
-                stack.push(currentNode.center);
-            }
-        }
-
-        return null;
-    }
-
     public void printTreeValues(Node root) {
 
         if (root == null) {
@@ -261,19 +229,19 @@ Figure 5
 
 - **Search** operation:   
 We will build a function to search for a specific `node`
-This function will take the the **root node** and **target value** as properties.
+This function will take the the **target value** as properties and returns the **target node** if found.
 
   
 ```java
 
-public Node searchNode(Node root, int target) {
-        if (root == null) {
+public Node searchNode(int target) {
+        if (this.root == null) {
             System.out.println("Tree is empty");
             return null;
         }
 
         Stack<Node> stack = new Stack<>();
-        stack.push(root);
+        stack.push(this.root);
 
         while (!stack.isEmpty()) {
             Node currentNode = stack.pop();
@@ -305,8 +273,8 @@ Now in `main` we will seach for the node 12:
 
 ```java
  public static void main(String[] args) {
-        Node target = T.iterativeSearch(T.root, 2);
-        System.out.println(target == null? "" : target.number);
+        Node target = T.iterativeSearch(2);
+        System.out.println(target == null? "Target not fount" : "target found");
 }
 ```
 
