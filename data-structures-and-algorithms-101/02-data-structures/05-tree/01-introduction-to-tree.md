@@ -131,8 +131,8 @@ class Tree {
 
     Node root;
 
-    Tree(int number) {
-        root = new Node(number);
+    Tree(Node root) {
+        this.root = root
     }
 
     Tree() {
