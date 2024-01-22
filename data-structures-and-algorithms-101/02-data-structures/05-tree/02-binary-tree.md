@@ -13,25 +13,25 @@ Binary tree is a tree where every node has maximum two child nodes
 Figure 1    
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Types-of-binary-tree.jpg">
 
-1 - Full Binary Tree
+1. Full Binary Tree
 - A tree where tree nodes can have either two children or no child.
   
 
-2 - Complete Binary Tree 
+2. Complete Binary Tree 
 - A tree where each nodes on all levels except the last level has two children.
 - A tree where at the lowest level, all leaves should reside possibly on the left side.
 
 
-3 - Perfect Binary Tree
+3. Perfect Binary Tree
 - A tree where every node must have two children and every leaf is present on the same level.
 
 
-4 - Balanced Binary Tree
+4. Balanced Binary Tree
 - `Balance factor` = height(left subtree) - height(right subtree)
 - It balances a binary tree for each node if its `balance factor` is either -1,0 or 1. The height of the left subtree and that of the right tree can vary by at most one.
 
 
-5 - Degenerate Binary Tree
+5. Degenerate Binary Tree
 - A tree where every `internal nodes` has exactly one child.
 - `Internal node`: Any node with a child and a parent
 
