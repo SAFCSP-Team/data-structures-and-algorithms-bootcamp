@@ -254,8 +254,7 @@ Print tree values 1 2 4 5 3 6 7
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-|[Binary tree - Decision tree](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
-
+|[Binary tree project](https://github.com/SAFCSP-Team/binary-tree-project) | - | 
 
 
 
