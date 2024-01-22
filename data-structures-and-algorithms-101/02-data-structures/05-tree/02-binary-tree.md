@@ -45,14 +45,14 @@ Figure 2
 
 There are three ways to travers tree:
 
-1- Pre-order traversal
+1. Pre-order traversal
 
 - Access the root node
 - Access all nodes from the left side
 - Access all node from the right side
 - Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
 
-2- In-order traversal
+2. In-order traversal
 
 - Access all nodes from the left side
 - Access the root node
@@ -60,7 +60,7 @@ There are three ways to travers tree:
 - Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
 
 
-3- Post-order traversal
+3. Post-order traversal
 
 - Access all nodes from the left side
 - Access all node from the right side
@@ -93,10 +93,10 @@ class Node {
 ```
 
 - In `binary tree` class we will declare the root as an attribute  
-1 - create constructor  
-2 - create Pre-order traversal operation/function to print the nodes values   
-3 - create search function to find a specific node   
-4 - create addLeft and addRight function  
+1. create constructor  
+2. create Pre-order traversal operation/function to print the nodes values   
+3. create search function to find a specific node   
+4. create addLeft and addRight function  
 
 
 ```java
