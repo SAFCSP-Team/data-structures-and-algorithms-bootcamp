@@ -23,14 +23,13 @@ Operations of the deque are:
 
 ````Java
 class DequeArray {
-    static final int MAX = 100;
     int arr[];
     int front;
     int rear;
     int size;
 
     public DequeArray(int size) {
-        arr = new int[MAX];
+        arr = new int[size];
         front = -1;
         rear = 0;
         this.size = size;
@@ -134,25 +133,28 @@ class DequeArray {
 
     public static void main(String[] args) {
 
-        DequeArray deque = new DequeArray(4);
+        DequeArray deque = new DequeArray(5);
 
-        deque.addFront(10);
-        deque.addRear(15);
+        deque.addFront(7);
+        deque.addFront(6);
         deque.addFront(5);
-        deque.addRear(20);
+
+        deque.addRear(8);
+        deque.addRear(9);
 
         System.out.println("Front: "+ deque.getFront());
         System.out.println("Rear: "+ deque.getRear());
 
     }
 }
+
 ````
 
 **OUTPUT**
 
 ```
 Front: 5
-Rear: 20
+Rear: 9
 ```
 
 <hr>
