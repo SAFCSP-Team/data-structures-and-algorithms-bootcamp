@@ -2,15 +2,15 @@
 
 ## Concept
 
-**Deque** or **double ended queue** is type of `queue` data structure. The `deque` can insert and delete from both ends, at the start of the `queue` and at the end of the `queue`.
+**Deque** or **double-ended queue** is a type of `queue` data structure. The `deque` can insert and delete from both ends, at the start of the `queue` and at the end of the `queue`.
 
 ![1702996668122](images/04-dequeues/1702996668122.png)
 
-> To implement a queue, you can use an `array` or a `linked list`.
+> To implement a deque, you can use an `array` or a `linked list`.
 
 Operations of the deque are:
 
-> * addFirst: add an element at the begining of the queue.
+> * addFirst: add an element at the beginning of the queue.
 > * addLast: add an element at the end of the queue.
 > * deleteFirst: remove the first element.
 > * deleteLast: remove the last element.
