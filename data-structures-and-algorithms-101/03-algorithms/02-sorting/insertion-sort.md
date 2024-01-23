@@ -13,11 +13,14 @@ An array is split into two parts: sorted and unsorted. Initially, the sorted 
 [image]()
 
 Let's look at an example:
+```
+[4, 3, 2, 10, 12, 1, 5, 6]
+```
 
 * The first element is already sorted. So, we pick the second element (3) and compare it with the first element (4). Since 3 is smaller than 4, we swap them. Now, the first two elements are sorted.
 
 ```
-[4, 3, 2, 10, 12, 1, 5, 6]
+[3, 4, 2, 10, 12, 1, 5, 6]
 ```
 * Next, we pick the third element (2) and compare it with the first element (3). Since 2 is smaller than 3, we swap them. Then, we compare 2 with 4 and swap them. Now, the first three elements are sorted.
 
