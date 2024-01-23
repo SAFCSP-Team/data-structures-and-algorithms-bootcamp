@@ -36,8 +36,7 @@ To address this challenge, `sorting algorithms` **are utilized to arrange** cont
   
   [image]()
   
-These are just a few examples of `sorting algorithms`, and there are many more available. Each **algorithm** has different time and space complexity characteristics, making them suitable for different scenarios depending on the **size** of the input data, **available memory**, and desired performance.
-  
+
 ## Projects
 
 |Project Title | Deadline |
