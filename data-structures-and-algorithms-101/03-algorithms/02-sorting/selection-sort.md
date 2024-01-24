@@ -11,61 +11,61 @@ The `selection sort` algorithm is a simple sorting algorithm that works by repea
 
 Here's how the selection sort algorithm can be applied to the flashcards scenario:
 
-You begin with the unsorted section, which contains all the flashcards. The sorted section is **initially empty**.
+You begin with the unsorted section, which contains all the flashcards with numbers: `8, 3, 2, 9, 7`. The sorted section is **initially empty**.
 
 Step 1: Find the `smallest` number in the unsorted section.
 
-You scan through the flashcards and find the card with the smallest number, let's say it's 5.
+You scan through the flashcards and find the card with the smallest number, it's 2.
 
 Step 2: **Swap** the smallest number with the first number in the unsorted section.
-You swap the flashcard with 5 with the first flashcard in the unsorted section.
+You swap the flashcard with 2 with the first flashcard in the unsorted section.
 
-Unsorted section: ` 8, 3, 2, 9, 7`
+Unsorted section: ` 8, 3, 9, 7`
 
-Sorted section: `5`
+Sorted section: `2`
 
 Step 3: **Move** the boundary between the sorted and unsorted sections to the right.
 
-The flashcard with 5 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 2, 9, 7`
+The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 9, 7`
 
-Unsorted section: `8, 3, 2, 9, 7`
+Unsorted section: `8, 3, 9, 7`
 
-Sorted section: `5`
+Sorted section: `2`
 
 Repeat Steps 1 to 3 until the entire stack is sorted.
 
 In the next iteration:
 
-The smallest number in the unsorted section is `2`
+The smallest number in the unsorted section is `3`
 
-Swap the flashcard with 2 with the first flashcard in the unsorted section.
+Swap the flashcard with 3 with the first flashcard in the unsorted section.
 
-Unsorted section: `8, 3, 9, 7`
+Unsorted section: `8, 9, 7`
 
-Sorted section: `2, 5`
+Sorted section: `2, 3`
 
 After moving the boundary:
-Unsorted section: `8, 3, 9, 7`
+Unsorted section: `8, 9, 7`
 
-Sorted section: `2, 5`
+Sorted section: `2, 3`
 
 In the subsequent iterations, you continue to find the smallest number in the unsorted section, swap it with the first number in the unsorted section, and move the boundary.
 
 Unsorted section: `8, 9, 7`
 
-Sorted section: `2, 5, 3`
+Sorted section: `2, 3`
 
 Unsorted section: `8, 9`
 
-Sorted section: `2, 5, 3, 7`
+Sorted section: `2, 3, 7`
 
 Unsorted section: `9`
 
-Sorted section: `2, 5, 3, 7, 8`
+Sorted section: `2, 3, 7, 8`
 
 Finally, after the last iteration:
 Unsorted section: (empty)
-Sorted section: `2, 3, 5, 7, 8, 9`
+Sorted section: `2, 3, 7, 8, 9`
 
 
 
