@@ -5,9 +5,9 @@
 A binary search tree (BST) is a type of binary tree that follows a specific ordering property.   
     
 - In a binary search tree, for any given node:   
-1 - The value of every node in the left subtree is less than the value of the current node.     
-2- The value of every node in the right subtree is greater than or equal to the value of the current node.    
-3 - Binary search trees do not allow duplicate values. If a value already exists in the tree and an insertion operation is performed with the same value, it is typically ignored.
+1. The value of every node in the left subtree is less than the value of the current node.     
+2. The value of every node in the right subtree is greater than or equal to the value of the current node.    
+3. Binary search trees do not allow duplicate values. If a value already exists in the tree and an insertion operation is performed with the same value, it is typically ignored.
 
 
 <br/>
