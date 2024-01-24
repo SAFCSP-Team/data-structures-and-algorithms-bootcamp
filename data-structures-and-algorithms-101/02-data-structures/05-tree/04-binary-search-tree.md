@@ -151,6 +151,12 @@ public static void main(String[] args) {
 
 ```
 
+Output:
+```java
+print tree values:
+ 8 3 1 6 4 7 10 14 13
+```
+
 ## Projects
 
 Project Title | Deadline |
