@@ -18,7 +18,6 @@ Step 1: Find the `smallest` number in the unsorted section.
 You scan through the flashcards and find the card with the smallest number, it's 2.
 
 Step 2: **Swap** the smallest number with the first number in the unsorted section.
-You swap the flashcard with 2 with the first flashcard in the unsorted section.
 
 Unsorted section: ` 8, 3, 9, 7`
 
