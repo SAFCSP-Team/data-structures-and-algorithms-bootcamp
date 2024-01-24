@@ -55,6 +55,8 @@ class Node {
 
 1. Print function 
 2. Insert function
+3. Search function
+4. Delete funcrion 
 
 
 ```java
@@ -90,10 +92,12 @@ public class BinarySearchTree {
             }
 
         }
+
+        System.out.println();
         return;
     }
 
-public void insert(int value) {
+    public void insert(int value) {
         Node newNode = new Node(value);
 
         if (root == null) {
@@ -125,6 +129,85 @@ public void insert(int value) {
         }
     }
 
+    public boolean search(int value) {
+        if (this.root == null) {
+            return false;
+        }
+
+        Stack<Node> stack = new Stack<>();
+        stack.push(this.root);
+
+        while (!stack.isEmpty()) {
+            Node current = stack.pop();
+
+            if (current.val == value) {
+                return true;
+            }
+
+            if (value < current.val && current.left != null) {
+                stack.push(current.left);
+            } else if (value > current.val && current.right != null) {
+                stack.push(current.right);
+            }
+        }
+
+        return false;
+    }
+
+    public boolean delete(int value) {
+        if (this.root == null) {
+            return false;
+        }
+
+        Stack<Node> stack = new Stack<>();
+        Node curr = this.root;
+        Node prev = null;
+        boolean isLeftChild = false;
+
+        // Search for the taget (curr) and it's parent (prev)
+        while (curr != null) {
+            stack.push(curr);
+
+            if (value == curr.val) {
+                break;
+            }
+
+            prev = curr;
+
+            if (value < curr.val) {
+                curr = curr.left;
+                isLeftChild = true;
+            } else {
+                curr = curr.right;
+                isLeftChild = false;
+            }
+        }
+
+        // Case: the target was not found
+        if (curr == null) {
+            System.out.println("The target was not found");
+            return false;
+        }
+
+        // Case: the target has no children (leaf node)
+        if (curr.left == null && curr.right == null) {
+            if (curr == root) {
+                root = null;
+            } else if (isLeftChild) {
+                prev.left = null;
+            } else {
+                prev.right = null;
+            }
+        // Case: the target is not a leaf node    
+        } else {
+            System.out.println("The target { " + value + " } is not a leaf node");
+            return false;
+        }
+
+        return true;
+    }
+
+    
 }
 
 ```
@@ -132,7 +215,7 @@ public void insert(int value) {
 Now we will use the BinarySearchTree in the main function:
 
 ```java
-public static void main(String[] args) {
+ public static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree();
 
         bst.insert(8);
@@ -145,9 +228,22 @@ public static void main(String[] args) {
         bst.insert(7);
         bst.insert(13);
 
-        System.out.println("print tree values:");
+        System.out.println("\nprint tree values:");
         bst.print();
-}
+
+        int deleteTerget = 13;
+        bst.delete(deleteTerget);
+
+        System.out.println("\nAfter deletion of " + deleteTerget + ":");
+        bst.print();
+
+        int searchTarget = 14;
+        System.out.println("\nWas the serach target: { " + searchTarget + "} found?" );
+        System.out.println(bst.search(searchTarget));
+
+        
+
+    }
 
 ```
 
@@ -155,10 +251,15 @@ Output:
 ```java
 print tree values:
  8 3 1 6 4 7 10 14 13
+
+After deletion of 13:
+ 8 3 1 6 4 7 10 14
+
+Was the serach target: { 14 } found?
+true
 ```
 
 ## Projects
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-|[Binary tree - Decision tree](https://github.com/SAFCSP-Team/binary-tree-with-non-premetive-data-type) | - | 
