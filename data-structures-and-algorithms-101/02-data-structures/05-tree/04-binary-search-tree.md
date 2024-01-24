@@ -50,7 +50,7 @@ class Node {
 1. Print function 
 2. Insert function
 3. Search function
-4. Delete funcrion 
+4. Delete function 
 
 
 ```java
