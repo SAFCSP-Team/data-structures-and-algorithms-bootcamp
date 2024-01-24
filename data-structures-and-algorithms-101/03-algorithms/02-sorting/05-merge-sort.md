@@ -99,7 +99,10 @@ The method combines the elements from the left and right subarrays in the correc
 
 ## Example
 
+The `mergeSort` method takes an integer array (arr) as a parameter and sorts it using the merge sort algorithm.
+
 ```java
+
 public class MergeSort {
     public static void mergeSort(int[] arr) {
         if (arr == null || arr.length <= 1) {
@@ -140,14 +143,19 @@ public class MergeSort {
             k++;
         }
 
-        /* Copy the remaining elements from the left subarray */
+         /* Copy the remaining elements from the left and right subarrays */
+
         while (i <= mid) {
             arr[k] = temp[i];
             i++;
             k++;
         }
         
-        /* No need to copy the remaining elements from the right subarray */
+        while (j <= right) {
+            arr[k] = temp[j];
+            j++;
+            k++;
+        }
     }
 
     public static void main(String[] args) {
