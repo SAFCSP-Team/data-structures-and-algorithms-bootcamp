@@ -304,6 +304,165 @@ A	0	0
 C	0	0
 ```
 
+### Adjacency List
+an Adjacency List is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a vertex in the graph.
+
+> It's basically an array of linked lists.
+
+Let's implement adjacency list to represent the graph.
+
+1. Create a class called **Node** that has data and a constructor that takes the data as a parameter.
+   
+```java
+
+class Node {
+    char data;
+
+    public Node(char data) {
+        this.data = data;
+    }
+}
+
+```
+
+2. Create a class called **Graph** that has an attribute of array list of Linked list and in the constructor initialize the array list.
+
+```java
+
+public class Graph {
+
+    static ArrayList<LinkedList<Node>> array;
+
+    Graph() {
+        array = new ArrayList<>();
+    }
+
+}
+
+```
+
+> ArrayList or Dynamic Array is a resizable array. It's like an array but it's size is not fixed.
+
+3. In the main method create an object from the **Graph** class and add a vertex to the graph.
+
+```java
+
+public class Main {
+    public static void main(String[] args) {
+
+        Graph graph = new Graph();
+
+        graph.array.get(0).add(new Node('A')); // index of the vertex is 0
+
+    }
+}
+```
+
+4. To make the adding process easier, create a method called **addVertex** that takes a node as a parameter and add it to the array list of nodes.
+
+```java
+
+public void addVertex(Node node) {
+        LinkedList<Node> nodeList = new LinkedList<>();
+        nodeList.add(node);
+        array.add(nodeList);
+}
+
+```
+
+5. Call **addVertex** in the main method, and pass the node A as a parameter.
+
+```java
+
+public class Main {
+    public static void main(String[] args) {
+
+        Graph graph = new Graph();
+
+        graph.addVertex(new Node('A')); // index of the vertex is 0
+
+    }
+}
+```
+
+6. Create a method called **addEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And add the destination node to the source node.
+
+```java
+
+public void addEdge(int src, int dst) {
+        
+        LinkedList<Node> currentList = array.get(src); // list type
+        Node dstNode = array.get(dst).get(0); // node type
+        currentList.add(dstNode);
+
+    }
+
+```
+
+7. Call **addEdge** in the main method.
+
+```java
+
+Graph graph = new Graph();
+
+graph.addVertex(new Node('A')); // 0
+graph.addVertex(new Node('B')); // 1
+graph.addVertex(new Node('C')); // 2
+        
+graph.addEdge(0, 1);
+graph.addEdge(1, 1);
+graph.addEdge(1, 2);
+
+```
+
+8. Create a method called **print** that prints the graph using adjacency list.
+
+```java
+
+public void print() {
+        for (LinkedList<Node> list : array) {
+            for (Node node : list) {
+                System.out.print(node.data + " -> ");
+            }
+            System.out.println();
+        }
+    }
+
+```
+
+9. Call **print** in the main method.
+
+```java 
+
+public static void main(String[] args) {
+
+        Graph graph = new Graph();
+
+        graph.addVertex(new Node('A')); // 0
+        graph.addVertex(new Node('B')); // 1
+        graph.addVertex(new Node('C')); // 2
+
+
+        graph.addEdge(0, 1);
+        graph.addEdge(1, 0);
+        graph.addEdge(1, 2);
+
+
+        graph.print();
+}
+
+```
+
+**Output**
+
+```
+
+A -> B -> 
+B -> A -> C -> 
+C -> 
+
+```
+
 ## Types
 
 * ###  **Directed Graph** 
