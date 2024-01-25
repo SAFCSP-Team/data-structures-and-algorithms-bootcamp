@@ -21,13 +21,7 @@ A binary search tree (BST) is a type of binary tree that follows a specific orde
 
 Figuer 1     
 
-        8   
-      /   \
-     3     10   
-    / \      \
-   1   6      14  
-      / \    /
-     4   7  13   
+
 
    
 In this example, the binary search tree follows the ordering property, where all values in the left subtree are less than the current node, and all values in the right subtree are greater than or equal to the current node.
@@ -56,7 +50,7 @@ class Node {
 1. Print function 
 2. Insert function
 3. Search function
-4. Delete funcrion 
+4. Delete function 
 
 
 ```java
