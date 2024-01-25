@@ -21,7 +21,7 @@ Figuer 1
 <img width="910" alt="Introduction to Decision tree-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/binary-search-tree-example.jpg">
 
    
-In this example, the binary search tree follows the ordering property, where all values in the left subtree are less than the current node, and all values in the right subtree are greater than or equal to the current node.
+In the above example, the binary search tree follows the ordering property, where all values in the left subtree are less than the current node, and all values in the right subtree are greater than or equal to the current node.
 
 
 - `Node` class implementation:
