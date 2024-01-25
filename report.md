@@ -27,7 +27,7 @@ When a project is due, the project status will be updated as follows.
 |[Double linked list](https://github.com/SAFCSP-Team/double-linked-list)| 🔴 | 🔴 |
 |[Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list)| 🔴 | 🔴 |
 |[Stack](https://github.com/SAFCSP-Team/stack)|🔴|🔴|
-
+|[Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)|||
 
 
 
