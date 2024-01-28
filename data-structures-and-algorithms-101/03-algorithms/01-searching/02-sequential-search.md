@@ -34,7 +34,7 @@ public class SequentialSearch {
     public static void main(String[] args) {
         int[] Array = {3, 7, 2, 1, 9, 5};
         int searchItem = 9;
-        int result = sequentialSearch(myArray, searchItem);
+        int result = sequentialSearch(Array, searchItem);
         if (result == -1) {
             System.out.println("Item not found in the array");
         } else {
@@ -42,6 +42,9 @@ public class SequentialSearch {
         }
     }
 }
+```
+```
+Item found at index 4
 ```
 In the main method, we create an example array **Array** and specify the **searchItem as 9**. We call the sequentialSearch method with these arguments and store the result in the result variable.
 
