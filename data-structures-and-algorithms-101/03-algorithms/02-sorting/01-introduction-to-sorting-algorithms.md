@@ -41,6 +41,6 @@ To address this challenge, `sorting algorithms` **are utilized to arrange** cont
 
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[Introduction to sorting](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/02-sorting/project/introduction-to-sorting.md) | - | 
+|[Introduction to sorting](https://github.com/SAFCSP-Team/introduction-to-sorting) | - | 
 
 
