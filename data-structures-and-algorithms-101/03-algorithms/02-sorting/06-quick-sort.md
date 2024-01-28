@@ -1,7 +1,7 @@
 # Quick Sort Algorithm
 Imagine you have a stack of unsorted papers with different numbers written on them, and you want to arrange them in ascending order. Each paper represents a task, and the numbers on the papers indicate their priority. You want to use `Quick Sort` to efficiently sort the tasks **based on their priority**.
 
-Here's how Quick Sort can be applied to this scenario:
+ Here's how Quick Sort can be applied to this **scenario**:
 
 **Select a Pivot:** Choose a random paper from the stack as the pivot.
 
