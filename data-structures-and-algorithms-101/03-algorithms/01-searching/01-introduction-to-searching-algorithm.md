@@ -18,4 +18,4 @@ Searching algorithms are like **plans that help us find what we're looking** for
 
 
 ## Projects
- using [Searching Sorted tool](https://www.cs.usfca.edu/~galles/visualization/Search.html) to find the value at index 17 using both linear and binary search approaches.
+use [Searching Sorted List](https://www.cs.usfca.edu/~galles/visualization/Search.html) tool to find the value at index 17 using both linear and binary search approaches.
