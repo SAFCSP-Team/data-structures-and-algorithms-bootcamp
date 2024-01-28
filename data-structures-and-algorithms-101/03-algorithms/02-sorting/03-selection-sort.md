@@ -1,7 +1,7 @@
 
 # Selection Sort Algorithm
 
-Imagine you are organizing a stack of flashcards with numbers written on them. The numbers are randomly arranged, and you want to sort them in ascending order using the selection sort algorithm.
+Imagine you are **organizing** a stack of `flashcards` with numbers written on them. The numbers are randomly arranged, and you want to sort them in **ascending order** using the `selection sort algorithm`.
 
 ## Concept
 
