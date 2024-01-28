@@ -309,7 +309,7 @@ B	0 0
 
 ```
 
-10. Call **removeEdge** in the main method, and pass the index of A and B.
+11. Call **removeEdge** in the main method, and pass the index of A and B.
 
 ```java
 
@@ -341,117 +341,101 @@ B	0 0
 
 Another way to represent a graph relation is by using **Adjacency List**, which is an array list of linked list.
 
-1. Create a class called **Node** that has data and a constructor that takes the data as a parameter.
+1. Create a class called **Vertex** that has data and a constructor that takes the data as a parameter.
    
 ```java
 
-class Node {
+public class Vertex {
+
     char data;
 
-    public Node(char data) {
+    public Vertex(char data) {
         this.data = data;
     }
 }
-
 ```
 
-2. Create a class called **Graph** that has an attribute of array list of Linked list and in the constructor initialize the array list.
+2. Create a class called **Graph** that has an array list of linked list of Vertex and in the constructor initialize the array list of linked list.
 
 ```java
+    import java.util.ArrayList;
+    import java.util.LinkedList;
 
-public class Graph {
+    public class Graph {
 
-    static ArrayList<LinkedList<Node>> array;
+        public ArrayList<LinkedList<Vertex>> vertices;
 
-    Graph() {
-        array = new ArrayList<>();
+        public Graph() {
+            vertices = new ArrayList<>();
+        }
     }
-
-}
-
 ```
 
 > ArrayList or Dynamic Array is a resizable array. It's like an array but it's size is not fixed.
 
-3. In the main method create an object from the **Graph** class and add a vertex to the graph.
+3. Create a method called **addVertex** that takes a vertex as a parameter and add it to the array list of linked list.
 
 ```java
 
-public class Main {
-    public static void main(String[] args) {
-
-        Graph graph = new Graph();
-
-        graph.array.get(0).add(new Node('A')); // index of the vertex is 0
-
+    public void addVertex(Vertex v) {
+        LinkedList<Vertex> list = new LinkedList<>();
+        list.add(v);
+        vertices.add(list);
     }
-}
 ```
 
-4. To make the adding process easier, create a method called **addVertex** that takes a node as a parameter and add it to the array list of nodes.
+4. Call **addVertex** in the main method, and pass the vertex A as a parameter.
 
 ```java
+    class Main {
+        public static void main(String[] args) {
 
-public void addVertex(Node node) {
-        LinkedList<Node> nodeList = new LinkedList<>();
-        nodeList.add(node);
-        array.add(nodeList);
-}
+            Graph graph = new Graph();
 
-```
-
-5. Call **addVertex** in the main method, and pass the node A as a parameter.
-
-```java
-
-public class Main {
-    public static void main(String[] args) {
-
-        Graph graph = new Graph();
-
-        graph.addVertex(new Node('A')); // index of the vertex is 0
-
+            graph.addVertex(new Vertex('A'));
+            System.out.println(graph.vertices.get(0).get(0).data);
+        }
     }
-}
 ```
 
-6. Create a method called **addEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And add the destination node to the source node.
+**OUTPUT**
+
+```
+A
+```
+
+5. Create a method called **addEdge** that takes two parameters, source and destination.
 
 ```java
-
-public void addEdge(int src, int dst) {
-        
-        LinkedList<Node> currentList = array.get(src); // list type
-        Node dstNode = array.get(dst).get(0); // node type
-        currentList.add(dstNode);
-
+    public void addEdge(int src, int dst) {
+        LinkedList<Vertex> list = vertices.get(src); // get the list of vertices at index src
+        Vertex dstVertex = vertices.get(dst).get(0); // get the vertex at index dst
+        list.add(dstVertex); // add the vertex to the list
     }
-
 ```
 
-7. Call **addEdge** in the main method.
+6. Call the **addEdge** method in the main method, and add vertiecs A, B, and C. Connect A to B and B to C.
 
 ```java
 
-Graph graph = new Graph();
+    Graph graph = new Graph();
 
-graph.addVertex(new Node('A')); // 0
-graph.addVertex(new Node('B')); // 1
-graph.addVertex(new Node('C')); // 2
-        
-graph.addEdge(0, 1);
-graph.addEdge(1, 1);
-graph.addEdge(1, 2);
+    graph.addVertex(new Vertex('A'));
+    graph.addVertex(new Vertex('B'));
+    graph.addVertex(new Vertex('C'));
+    graph.addEdge(0, 1);
+    graph.addEdge(1, 2);
+    graph.addEdge(2, 0);
 
 ```
 
-8. Create a method called **print** that prints the graph using adjacency list.
+7. In the Graph class, Create a print method that prints the graph using adjacency list.
 
 ```java
 
-public void print() {
-        for (LinkedList<Node> list : array) {
-            for (Node node : list) {
+    public void print() {
+        for (LinkedList<Vertex> list : vertices) {
+            for (Vertex node : list) {
                 System.out.print(node.data + " -> ");
             }
             System.out.println();
@@ -460,40 +444,35 @@ public void print() {
 
 ```
 
-9. Call **print** in the main method.
+8. Call **print** in the main method.
 
-```java 
+```java
 
-public static void main(String[] args) {
+    class Main {
+        public static void main(String[] args) {
 
-        Graph graph = new Graph();
+            Graph graph = new Graph();
 
-        graph.addVertex(new Node('A')); // 0
-        graph.addVertex(new Node('B')); // 1
-        graph.addVertex(new Node('C')); // 2
+            graph.addVertex(new Vertex('A'));
+            graph.addVertex(new Vertex('B'));
+            graph.addVertex(new Vertex('C'));
+            graph.addEdge(0, 1);
+            graph.addEdge(1, 2);
+            graph.addEdge(2, 0);
 
-
-        graph.addEdge(0, 1);
-        graph.addEdge(1, 0);
-        graph.addEdge(1, 2);
-
-
-        graph.print();
-}
-
-```
-
-**Output**
+            graph.print();
+        }
+    }
 
 ```
 
+**OUTPUT**
+
+```
 A -> B -> 
-B -> A -> C -> 
-C -> 
-
+B -> C -> 
+C -> A -> 
 ```
-
-
 
 
 ## Projects
