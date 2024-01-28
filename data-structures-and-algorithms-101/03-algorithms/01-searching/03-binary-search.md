@@ -96,23 +96,25 @@ In the main method, we create an example array and target element. We then call 
 
 - Implementing the binary search algorithm in Java for a linked list:
 ```java
-    public ListNode binarySearch(int target) {
-        ListNode low = this.head;
-        ListNode high = getTail(this.head);
+public class LinkedList {
+    Node head;
+    public Node binarySearch(int target) {
+        Node low = this.head;
+        Node high = getTail(this.head);
 
         while (low != high && low != null && high != null && low != high.next) {
-            ListNode mid = getMid(low, high);
+            Node mid = getMid(low, high);
 
-            if (mid.val == target) {
+            if (mid.data == target) {
                 return mid;  // Found the target element
-            } else if (mid.val < target) {
+            } else if (mid.data < target) {
                 low = mid.next;  // Target is in the upper half of the list
             } else {
                 high = mid;  // Target is in the lower half of the list
             }
         }
 
-        if (low != null && low.val == target) {
+        if (low != null && low.data == target) {
             return low;  // Found the target element
         }
 
@@ -120,9 +122,9 @@ In the main method, we create an example array and target element. We then call 
     }
 
 //calculates the mid node 
-    private static ListNode getMid(ListNode low, ListNode high) {
-        ListNode slow = low;
-        ListNode fast = low;
+    private Node getMid(Node low, Node high) {
+        Node slow = low;
+        Node fast = low;
 
         while (fast != high && fast.next != high) {
             slow = slow.next;
@@ -134,12 +136,12 @@ In the main method, we create an example array and target element. We then call 
 
 
 // calculates the high node 
-    private static ListNode getTail(ListNode head) {
+    private Node getTail(Node head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode current = head;
+        Node current = head;
         while (current.next != null) {
             current = current.next;
         }
