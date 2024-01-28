@@ -1,4 +1,5 @@
 # Introduction to Graph
+
 You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
 
 > We can represent the connection between them as a graph drawing.
@@ -24,14 +25,17 @@ A **Graph is a non-linear data structure** is a pictorial representation of a se
 
 * The **weight** is the value of the edge.
 
-An example of the weighted graph is map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. The **weight** of the edge is the **distance** between the cities.
 
-<img width="350" alt="Graph - Node" src="images/Graph-Weight.jpg">
-
-> The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
 ## Terminology
 * **Simple Graph** - A simple graph is an unweighted, undirected graph containing no loops or multiple edges.
+* **Weighted Graph** - A weighted graph is a graph with numbers assigned to its edges.
+
+An example of the weighted graph is map navigation, where the **vertices** are the cities and the **edges** are the roads between the cities. The **weight** of the edge is the **distance** between the cities.
+
+<img width="350" alt="Graph - Node" src="images/Graph-Weight.jpg">
+
+> The difference between the edges and weighted is that the edges are just a connection between the vertices, but the weighted have a value of the edge.
 * **In-degree** - The number of edges pointing to a vertex in a directed graph.
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
@@ -39,7 +43,7 @@ An example of the weighted graph is map navigation, where the **nodes** are the 
 > Vertex A is self-loop.
 <img width="200" alt="Graph - Node" src="images/graph-loop.png">
 
-* **Cyclic Graph** - A node that can traverse through a path and return to itself.
+* **Cyclic Graph** - A vertex that can traverse through a path and return to itself.
 
 <img width="200" alt="Graph - Node" src="images/graph-cyclic.png">
 
