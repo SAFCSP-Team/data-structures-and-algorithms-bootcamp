@@ -1,7 +1,7 @@
 # Introduction to Graph
-If we have relationship between people, as an example khaled know Fahad and Fahad know Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store this relationship in a data structure? 
+If we have a relationship between people, for example, Khaled knows Fahad and Fahad knows Khaled and Majed, but Majed doesn't know either Khaled nor Fahad. How can we store this relationship in a data structure? 
 
-Well, we can use **Graph** to store this relationship. Graph is data structure that store objects and their relationships with other objects.
+Well, we can use **Graph** to store this relationship. Graph is a data structure that stores objects and their relationships with other objects.
 
 > We can represent the connection between them as a graph drawing.
 
@@ -22,7 +22,7 @@ A **Graph is a non-linear data structure** is a pictorial representation of a se
 
 <img width="300" alt="Graph - Node" src="images/Graph2.jpg">
 
-* **Edge** - Is a connection between two vertices, its a line that connects two vertices.
+* **Edge** - Is a connection between two vertices, it's a line that connects two vertices.
 > In the example above, the edges are the relationship between the people.
 
 <img width="300" alt="Graph - Node" src="images/Graph3.jpg">
@@ -32,7 +32,7 @@ A **Graph is a non-linear data structure** is a pictorial representation of a se
 * ###  **Directed Graph** 
 The edges in a directed graph have one direction. This means that the edges only go one way. 
 
-Vertex A has edge to vertex B, but B doesn't have edge to A. That means we can go from A to B but we can't go from B to A.
+Vertex A has an edge to vertex B, but B doesn't have an edge to A. That means we can go from A to B but we can't go from B to A.
 
 <img width="350" alt="An element in the queue array" src="images/Graph-Directied.jpg">
 
@@ -41,9 +41,9 @@ Vertex A has edge to vertex B, but B doesn't have edge to A. That means we can g
 <hr>
 
 * ### **Undirected Graph** 
-The edges in an undirected does not have one direction. This means that the edges can go both ways.
+The edges in an undirected do not have one direction. This means that the edges can go both ways.
 
-Vertex A has edge to vertex B, and B has edge to A. That means we can go from A to B and from B to A.
+Vertex A has an edge to vertex B, and B has an edge to A. That means we can go from A to B and from B to A.
 
 <img width="350" alt="An element in the queue array" src="images/Graph-UnDirected.jpg">
 
@@ -65,7 +65,7 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 * **In-degree** - The number of edges pointing to a vertex in a directed graph.
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
-* **Self-Loop** - A self-loop is an vertex that has an edge to itself.
+* **Self-Loop** - A self-loop is a vertex that has an edge to itself.
 
 > Vertex A is self-loop.
 
