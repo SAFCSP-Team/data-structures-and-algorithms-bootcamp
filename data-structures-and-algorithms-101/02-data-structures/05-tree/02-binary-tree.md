@@ -207,28 +207,7 @@ class BinaryTree {
 
   }
 
-  public static void main(String[] args) {
-
-    // Root creation
-    BinaryTree tree = new BinaryTree(new Node(1));
-
-    // Add children to root
-    tree.addLeft(1, 2);
-    tree.addRight(1, 3);
-
-    // Add children to left child
-    tree.addLeft(2, 4);
-    tree.addRight(2, 5);
-
-    // Add children to right child
-    tree.addLeft(3, 6);
-    tree.addRight(3, 7);
-
-    System.out.print("Print tree values");
-    tree.print();
-
-  }
-
+ 
 }
 
 ```
