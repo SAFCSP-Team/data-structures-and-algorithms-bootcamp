@@ -36,7 +36,7 @@ An example of the weighted graph is map navigation, where the **nodes** are the 
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
 * **Self-Loop** - A self-loop is an edge that connects a vertex to itself.
-
+> Vertex A is self-loop.
 <img width="200" alt="Graph - Node" src="images/graph-loop.png">
 
 * **Cyclic Graph** - A node that can traverse through a path and return to itself.
