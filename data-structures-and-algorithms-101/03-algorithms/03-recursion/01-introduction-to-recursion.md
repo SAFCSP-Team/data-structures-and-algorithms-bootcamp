@@ -4,7 +4,7 @@ Recursion is a powerfull algorithm used to solve complex proramming problems. It
 ## Concept  
 Recursion algorithm is the process of solving programming problems by breacking the problem into smaller ones. It involves the function calling it-self in it's definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
    
-Recursion algorithm structure must follow 3 main condition/process in the function definition:    
+Recursion algorithm structure must follow 2 main condition/process in the function definition:    
 1. Base case:   
 Condition that beacks the loop and stops the function.    
 2. Recursive call:    
@@ -44,7 +44,7 @@ For example let's calculate 3! :
 Call the Factorial() function in main method:
 ```java
 public static void main(String[] args) {
-        System.err.println(Factorial(3));
+        System.out.println(Factorial(3));
     }
 ```
 
