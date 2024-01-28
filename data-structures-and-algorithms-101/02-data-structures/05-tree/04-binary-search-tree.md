@@ -251,7 +251,7 @@ true
 ```
 
 ## Projects  
-  
+
 Project Title | Deadline |
 |:-----------:|:-------------|
-|[Binary search tree project](https://github.com/SAFCSP-Team/binary-search-tree-project | - | 
+|[Binary search tree project](https://github.com/SAFCSP-Team/binary-search-tree-project) | - | 
