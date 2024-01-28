@@ -250,7 +250,8 @@ Was the serach target: { 14 } found?
 true
 ```
 
-## Projects
+## Projects  
 
 Project Title | Deadline |
 |:-----------:|:-------------|
+|[Binary search tree project](https://github.com/SAFCSP-Team/binary-search-tree-project) | - | 

@@ -89,13 +89,16 @@ public class BinarySearch {
     }
 }
 ```
+```
+Target element found at index 4
+```
 In the main method, we create an example array and target element. We then call the binarySearch method and print the result accordingly.
 
 - Implementing the binary search algorithm in Java for a linked list:
 ```java
-    public static ListNode binarySearch(ListNode head, int target) {
-        ListNode low = head;
-        ListNode high = getTail(head);
+    public ListNode binarySearch(int target) {
+        ListNode low = this.head;
+        ListNode high = getTail(this.head);
 
         while (low != high && low != null && high != null && low != high.next) {
             ListNode mid = getMid(low, high);

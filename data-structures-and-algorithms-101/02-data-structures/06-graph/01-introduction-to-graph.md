@@ -1,52 +1,82 @@
 # Introduction to Graph
-You can think of the graph as a relationship between people in a social network. Let's say Khaled is connected to Fahad and Fahad is connected to Majed, but Majed is not connected to Khaled.
+If we have relationship between people, as an example khaled know Fahad and Fahad know Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store this relationship in a data structure? 
+
+Well, we can use **Graph** to store this relationship. Graph is data structure that store objects and their relationships with other objects.
 
 > We can represent the connection between them as a graph drawing.
 
-<img width="350" alt="Graph Example" src="images/Intro Graph Directed Example.jpg">
+<img width="350" alt="Graph Example" src="images/Graph1.jpg">
 
 
 ## Concept
-A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as **vertices**, and the links that connect the vertices are called **edges**.
+A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed **vertices**, and the links that connect the vertices are called **edges**.
+
+> Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 
 > **vertices** are another name for **nodes**.
 
 ### Graph Attributes
 
-* The **node** is holding data, which represent Khaled, Fahad, and Majed.
+* **Vertex** - Is an object that can store data. 
+> In the example above, the vertices are objects that represent people.
 
-<img width="300" alt="Graph - Node" src="images/Graph Directed Node Example.jpg">
+<img width="300" alt="Graph - Node" src="images/Graph2.jpg">
 
-* The **edge** is the arrow between the nodes, which represent the relationship between them.
+* **Edge** - Is a connection between two vertices, its a line that connects two vertices.
+> In the example above, the edges are the relationship between the people.
 
-<img width="300" alt="Graph - Node" src="images/Graph Directed Edge Example.jpg">
+<img width="300" alt="Graph - Node" src="images/Graph3.jpg">
 
+## Types
 
-* The **weight** are the value of the edge.
+* ###  **Directed Graph** 
+The edges in a directed graph have one direction. This means that the edges only go one way. 
 
-An example of the weighted graph is the map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. And the **weight** of the edge is the **distance** between the cities.
+Vertex A has edge to vertex B, but B doesn't have edge to A. That means we can go from A to B but we can't go from B to A.
+
+<img width="350" alt="An element in the queue array" src="images/Graph-Directied.jpg">
+
+> It's like a one-way street, where you can go from A to B but you can't go from B to A.
+
+<hr>
+
+* ### **Undirected Graph** 
+The edges in an undirected does not have one direction. This means that the edges can go both ways.
+
+Vertex A has edge to vertex B, and B has edge to A. That means we can go from A to B and from B to A.
+
+<img width="350" alt="An element in the queue array" src="images/Graph-UnDirected.jpg">
+
+> It's like a two-way street, where you can go from A to B and from B to A.
+
+<hr>
+
+* ### **Weighted Graph**
+It's a graph that has a value on each edge, the edge value is referred to as **weight** or **cost**.
+
+An example of the weighted graph is map navigation, where the **vertices** are the cities and the **edges** are the roads between the cities. The **weight** of the edge is the **distance** between the cities.
+
+> The difference between the edges and weighted is that the edges are just a connection between the vertices, but the weighted have a value of the edge.
 
 <img width="350" alt="Graph - Node" src="images/Graph-Weight.jpg">
-
-> The difference between the edges and weighted is that the edges are just a connection between the nodes, but the weighted have a value of the edge.
 
 ## Terminology
 * **Simple Graph** - A simple graph is an unweighted, undirected graph containing no loops or multiple edges.
 * **In-degree** - The number of edges pointing to a vertex in a directed graph.
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
-* **Self-Loop** - A self-loop is an edge that connects a vertex to itself.
+* **Self-Loop** - A self-loop is an vertex that has an edge to itself.
+
+> Vertex A is self-loop.
 
 <img width="200" alt="Graph - Node" src="images/graph-loop.png">
 
-* **Cyclic Graph** - A node that can traverse through a path and return to itself.
+* **Cyclic Graph** - A vertex that can traverse through a path and return to itself.
 
 <img width="200" alt="Graph - Node" src="images/graph-cyclic.png">
 
-> Vertex  A is self-loop vertex.
-
-* **Acyclic Graph** - When a directed graph doesn't have cyclic vertex it's called Acyclic.
-* **Connected Graph** - A connected graph is graph in which each vertex is connected to at least one other vertex.
+* **Acyclic Graph** - When a directed graph doesn't have a cyclic vertex it's called Acyclic.
+* **Connected Graph** - A connected graph is a graph in which each vertex is connected to at least one other vertex.
 
 <img width="200" alt="Graph - Node" src="images/graph-connected.png">
 
@@ -57,7 +87,7 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 
 * **Complete Graph** - A complete graph is a graph where each vertex is connected to every other vertex.
 
-<img width="280" alt="Graph - Node" src="images/graph-completed2.png">
+<img width="200" alt="Graph - Node" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/30b0d3aa-f85a-45cc-98b6-4116a23e37dd">
 
 * **Subgraph** - A subgraph is a subset of the vertices and edges of a graph.
 * **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices.
@@ -74,24 +104,21 @@ Tho most popular ways to represent a graph are using an **Adjacency Matrix** or 
 
 * **Adjacency Matrix**
 
+We can represent a graph using a two-dimensional array. Where the rows represent the source vertex and the columns represent the destination vertex. If the value is 1, that means that the source vertex is connected and if the value is 0, that means that the source vertex is not connected.
+
 <img width="350" alt="Graph - Node" src="images/Graph Adjacency Matrix Example.png">
 
 <br><br>
 
 * **Adjacency List**
 
+We can represent a graph using array of linked list. Where the index of the array list represent the source vertex and the linked list represent the destination vertex.
+
 <img width="350" alt="Graph - Node" src="images/Graph Adjacency List.jpg">
 
-<br><br>
-
-* **Graph**
-
-
-<img width="350" alt="Graph Directed Example" src="images/Graph Directed Example.jpg">
 
 <br><br>
 
-> Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 
 ## Implementation
 We will implement **the directed graph** using the **adjacency matrix**.
@@ -463,22 +490,6 @@ C ->
 
 ```
 
-## Types
-
-* ###  **Directed Graph** 
-It's a graph where each edge is directed. Each node is directed at another node with a specific requirement of what node should be referenced next. In the image below A is adjacent to B, but B is not adjacent to A. That's mean you can't go from B to A, without having to go through other nodes. 
-
-<img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/526780a5-45f0-43c1-b0c2-80606975eb41">
-
-<hr>
-
-
-
-* ### **Undirected Graph** 
-It's a graph where each edge is undirected or bi-directional. This means all nodes are connected to each other. 
-In the image below D is adjacent to B, and B is adjacent to D.
-
-<img width="350" alt="An element in the queue array" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/3ddb74c8-f4e0-4d32-9491-e1a37761a3f2">
 
 
 

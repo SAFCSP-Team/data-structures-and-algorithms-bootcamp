@@ -1,7 +1,7 @@
 
 # Selection Sort Algorithm
 
-Imagine you are organizing a stack of flashcards with numbers written on them. The numbers are randomly arranged, and you want to sort them in ascending order using the selection sort algorithm.
+Imagine you are **organizing** a stack of `flashcards` with numbers written on them. The numbers are randomly arranged, and you want to sort them in **ascending order** using the `selection sort algorithm`.
 
 ## Concept
 
@@ -26,10 +26,6 @@ Sorted section: `2`
 Step 3: **Move** the boundary between the sorted and unsorted sections to the right.
 
 The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 9, 7`
-
-Unsorted section: `8, 3, 9, 7`
-
-Sorted section: `2`
 
 Repeat Steps 1 to 3 until the entire stack is sorted.
 

@@ -22,7 +22,7 @@ In this pseudocode, the list represents the list in which we are performing the 
 - Implementing the sequential search algorithm in java for an array:
 ```java
 public class SequentialSearch {
-    public static int sequentialSearch(int[] arr, int item) {
+    public int sequentialSearch(int[] arr, int item) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == item) {
                 return i;
@@ -34,7 +34,7 @@ public class SequentialSearch {
     public static void main(String[] args) {
         int[] Array = {3, 7, 2, 1, 9, 5};
         int searchItem = 9;
-        int result = sequentialSearch(myArray, searchItem);
+        int result = sequentialSearch(Array, searchItem);
         if (result == -1) {
             System.out.println("Item not found in the array");
         } else {
@@ -43,12 +43,21 @@ public class SequentialSearch {
     }
 }
 ```
+```
+Item found at index 4
+```
 In the main method, we create an example array **Array** and specify the **searchItem as 9**. We call the sequentialSearch method with these arguments and store the result in the result variable.
 
 - Implementing the sequential search algorithm in Java for a linked list:
 ```java
+public class LinkedList {
+    public Node head;
+
+    public LinkedList() {
+       this.head = null;
+   }
     public int sequentialSearch(int item) {
-        Node current = head;
+        Node current = this.head;
         int index = 0; // position of the node
 
         while (current != null) {
