@@ -9,7 +9,7 @@ Well, we can use **Graph** to store this relationship. Graph is data structure t
 
 
 ## Concept
-A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed **vertices**, and the links that connect the vertices are called **edges**.
+A **Graph is a non-linear data structure** It's way to orgnize data by stores objects and their relationships with other objects, which is called **vertices** and **edges**. 
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
 
@@ -100,7 +100,7 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 
 
 ### Graph Representation
-Tho most popular ways to represent a graph are using an **Adjacency Matrix** or **Adjacency List**.
+The most common way to represent a graph relation on data structure is by using **Adjacency Matrix** or **Adjacency List**.
 
 * **Adjacency Matrix**
 
@@ -121,66 +121,68 @@ We can represent a graph using array of linked list. Where the index of the arra
 
 
 ## Implementation
-We will implement **the directed graph** using the **adjacency matrix**.
-The way to implement the adjacency matrix is by using a **two-dimensional array**. Where the first dimension is the number of nodes and the second dimension is the number of nodes that are connected to the first node.
+In this seciton we will implement **the directed graph**
 
+### Adjacency List
 
-1. Create a class called **Node** that has data and a constructor that takes the data as a parameter.
+It's way to represent a graph relation by using two-dimensional array.
+
+1. Create a class called **Vertex** that has data and a constructor that takes the data as a parameter.
    
 ```java
 
-class Node {
+public class Vertex {
+
     char data;
 
-    public Node(char data) {
+    public Vertex(char data) {
         this.data = data;
     }
 }
 
 ```
 
-2. Create a class called **Graph** that has an array list of Node and in the constructor initialize the array list.
+2. Create a class called **Graph** that has an array list of Vertex and in the constructor initialize the array list.
 
 ```java
 import java.util.ArrayList;
 
+public class Graph {
 
-class Graph {
-
-    public ArrayList<Node> nodes = new ArrayList<>();
+    public ArrayList<Vertex> vertices; // declare an array list of Vertex
 
     public Graph() {
-        nodes = new ArrayList<>();
+        vertices = new ArrayList<>(); // initialize the array list of Vertex
     }
-
 }
-```
-> Now we have created two classes, one for the node and the other for the graph. The next step is to create a method to add a node to the graph.
 
-3. In **Graph** class, create a method called **addNode** that takes a node as a parameter and add it to the array list of nodes.
+```
+> Now we have created two classes, one for the vertex and the other for the graph. The next step is to create a method to add a vertex to the graph.
+
+3. In **Graph** class, create a method called **addVertex** that takes an object of type Vertex and store it in the array list.
 
 ```java
 
-public void addNode(Node item){
-        nodes.add(item);
+public void addVertex(Vertex vertex) {
+        vertices.add(vertex);
     }
 
 ```
 
-4. In main method, create an object from the **Graph** class and add the nodes A and B to the graph.
+4. Now we can test the graph. In main method, create an object from the **Graph** class and add the vertices A and B to the graph.
 
 ```java
 
 public class Main {
+
     public static void main(String[] args) {
-        
-        Graph objGraph = new Graph();
+        Graph graph = new Graph();
 
-        objGraph.addNode(new Node('A'));
-        objGraph.addNode(new Node('B'));
+        graph.addVertex(new Vertex('A'));
+        graph.addVertex(new Vertex('B'));
 
-        System.out.println(objGraph.nodes.get(0).data);
-        System.out.println(objGraph.nodes.get(1).data);
+        System.out.println(graph.vertices.get(0).data);
+        System.out.println(graph.vertices.get(1).data);
     }
 }
 
@@ -193,29 +195,30 @@ A
 B
 ```
 
-Right now we have only created a node but we didn't create a relationship between them.
+Right now we have only created a vertices but we didn't create a relationship between them.
+> We can create a relations by using adjacency matrix 
 
-5. To connect the nodes to each other, create two dimensional array attribtue called **adjMatrix**. 
-And in the constructor we have initialized the array with the size of nodes length.
+5. Create a vertices relation using adjacency matrix. In the Graph class create a two dimensional array, whcih will hold the vertices relation.
 
 ```java
-class Graph {
+public class Graph {
 
-    public ArrayList<Node> nodes = new ArrayList<>();
-    int[][] adjMatrix;
+    public ArrayList<Vertex> vertices;
 
-    public Graph(int size) {
-        nodes = new ArrayList<>();
-        // Initialize the adjacency matrix
-        adjMatrix = new int[size][size];
+    int [][] adjMatrix; // two-dimensional array
+
+    public Graph() {
+        vertices = new ArrayList<>();
+        adjMatrix = new int[vertices.size()][vertices.size()]; // initialize the adjaceny matrix with the size of vertices length
     }
+
+    public void addVertex(Vertex vertex) { vertices.add(vertex); }
 }
 
 ```
 
-In the code above we have created a two dimensional array attribtue called **adjMatrix**. And in the constructor we have initialized the array with the size of nodes length.
 
-6. In Graph class create a method called **addEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 1. which means that the source node is connected to the destination node.
+6. In Graph class create a method called **addEdge** that takes two parameters, source and destination.
 
 ```java
 public void addEdge(int src, int dst) {
@@ -229,26 +232,22 @@ public void addEdge(int src, int dst) {
 
 ```java
 public class Main {
+
     public static void main(String[] args) {
+        Graph graph = new Graph(2);
 
-        // 4 Create a graph node object
-        Graph objGraph = new Graph(2);
+        graph.addVertex(new Vertex('A')); // index 0
+        graph.addVertex(new Vertex('B')); // index 1
 
-        objGraph.addNode(new Node('A'));
-        objGraph.addNode(new Node('B'));
-
-        // pass the index of the source node and the index of destination node
-        objGraph.addEdge(0,1);
-
-        objGraph.printAdjMatrix();
+        graph.addEdge(0, 1); // This will connect A to B
 
     }
 }
 ```
 
-> In the objGraph constructor, we have passed 2 as a parameter, which is the count of the nodes. 
+> In the graph constructor, we have passed 2 as a parameter, which is the count of the vertices. 
 
-We have succssfully created a graph with two nodes and an edge between them.
+We have succssfully created a graph with two vertices and an edge between them.
 
 <img width="350" alt="A-B_Graph" src="images/Directed Nodes Connected.jpg">
 
@@ -259,84 +258,88 @@ We have succssfully created a graph with two nodes and an edge between them.
 8. Create a method to **print** the graph using **Adjacency Matrix**.
 
 ```java
-    public void printAdjMatrix() {
-
-        for(Node node : nodes) {
-            System.out.print("\t"+ node.data + " ");
+    public void display() {
+        System.out.print("\t");
+        for (int i = 0; i < vertices.size(); i++) {
+            System.out.print(vertices.get(i).data + " "); // print vertices destination
         }
         System.out.println();
+        for (int i = 0; i < vertices.size(); i++) {
 
-        for(int i = 0; i < adjMatrix.length; i++) {
-            System.out.print(nodes.get(i).data + "\t");
-
-            for(int j = 0; j < adjMatrix.length; j++) {
-                System.out.print(adjMatrix[i][j] + "\t");
+            System.out.print(vertices.get(i).data + "\t"); // print vertices source
+            for (int j = 0; j < vertices.size(); j++) {
+                System.out.print(adjMatrix[i][j] + " "); // print two-dimensional array
             }
             System.out.println();
         }
     }
 ```
-**OUTPUT**
-```
-	A 	B 
-A	0	1	
-B	0	0
 
-```
-
-9. Create a method called **deleteEdge** that takes two parameters, the first one is the source node and the second one is the destination node. And set the value of the adjMatrix to 0. which means that the source node is not connected to the destination node.
+9. Call the **display** method in the main method, to print the graph.
 
 ```java
-public void deleteEdge(int src, int dst) {
+    public static void main(String[] args) {
+        Graph graph = new Graph(2);
+
+        graph.addVertex(new Vertex('A'));
+        graph.addVertex(new Vertex('B'));
+
+        graph.addEdge(0, 1);
+
+        graph.display();
+
+    }
+```
+
+**OUTPUT**
+
+```
+	A B 
+A	0 1 
+B	0 0 
+```
+
+10. Create a method called **removeEdge**, it's similar to **addEdge** method, but instead of setting the value to 1, we set it to 0.
+
+```java
+
+    public void removeEdge(int src, int dst) {
         adjMatrix[src][dst] = 0;
     }
 
 ```
 
-10. Call **deleteEdge** in the main method, and pass the index of A and B, to delete the edge between the node A and B.
+10. Call **removeEdge** in the main method, and pass the index of A and B.
 
 ```java
 
-objGraph.deleteEdge(0, 1);
+public static void main(String[] args) {
+        Graph graph = new Graph(2);
 
-```
+        graph.addVertex(new Vertex('A'));
+        graph.addVertex(new Vertex('B'));
 
-11. Create **updateNode** method that takes two parameters, the first one is the index of node that you want to update and the second one is the new node.
+        graph.addEdge(0, 1);
 
-```java
+        graph.removeEdge(0, 1);
 
-public void updateNode(int index, Node item) {
-        if(index < nodes.size()) {
-            nodes.set(index, item);
-        }
+        graph.display();
+
     }
 
 ```
 
-12. Call **updateNode** in the main method, and pass the index of B and the new node.
-
-```java
-
-objGraph.updateNode(1, new Node('C'));
-```
-
-13. Call **printAdjMatrix** in the main method, to print the graph, so we can see the changes.
-
-
-
 **OUTPUT**
+
 ```
-	A 	C 
-A	0	0	
-C	0	0
+	A B 
+A	0 0 
+B	0 0 
 ```
 
 ### Adjacency List
-an Adjacency List is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a vertex in the graph.
 
-> It's basically an array of linked lists.
-
-Let's implement adjacency list to represent the graph.
+Another way to represent a graph relation is by using **Adjacency List**, which is an array list of linked list.
 
 1. Create a class called **Node** that has data and a constructor that takes the data as a parameter.
    
