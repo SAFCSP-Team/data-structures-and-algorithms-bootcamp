@@ -48,7 +48,7 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 * **Acyclic Graph** - When a directed graph doesn't have cyclic vertex it's called Acyclic.
 * **Connected Graph** - A connected graph is graph in which each vertex is connected to at least one other vertex.
 
-<img width="200" alt="Graph - Node" src="images/graph-connected.png">
+<img width="200" alt="Graph - Node" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/30b0d3aa-f85a-45cc-98b6-4116a23e37dd">
 
 * **Disconnected Graph** - A disconnected graph is a graph where some vertices may not have edges.
 
