@@ -2,11 +2,11 @@
 Recursion is a powerfull algorithm used to solve complex proramming problems. It will be explained in details in the following section.  
    
 ## Concept  
-Recursion algorithm is the process of solving programming problems by breacking the problem into smaller ones. It involves the function calling it-self in it's definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
+Recursion algorithm is the process of solving programming problems by breaking the problem into smaller ones. It involves the function calling it-self in it's definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
    
-Recursion algorithm structure must follow 3 main condition/process in the function definition:    
+Recursion algorithm structure must follow 2 main conditions/processes in the function definition:    
 1. Base case:   
-Condition that beacks the loop and stops the function.    
+Condition that breaks the loop and stops the function.    
 2. Recursive call:    
 Statement that calls the function it-self.    
 
@@ -27,7 +27,7 @@ For example let's calculate 3! :
   
 ## Implementaion
 
-- Factorial() function below solvs the factorial problem by using the recursion algorithm:
+- Factorial() function below solves the factorial problem by using the recursion algorithm:
 
 ``` java
  public static int Factorial(int n) {
@@ -44,7 +44,7 @@ For example let's calculate 3! :
 Call the Factorial() function in main method:
 ```java
 public static void main(String[] args) {
-        System.err.println(Factorial(3));
+        System.out.println(Factorial(3));
     }
 ```
 
@@ -60,15 +60,15 @@ Output:
 ```java 
   
 // Pre-order traverse
-  public void printTreeValues(Node root) {
+  public void printTreeValues() {
 
-    if (root == null) {
+    if (this.root == null) {
       System.out.println("Tree is empty");
       return;
     }
 
     Stack<Node> stack = new Stack<Node>();
-    stack.push(root);
+    stack.push(this.root);
 
     while (!stack.isEmpty()) {
       Node currentNode = stack.pop();
@@ -116,6 +116,6 @@ void print(Node node){
 
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[Introduction to recursion]() | - | 
+|[Recursion project](https://github.com/SAFCSP-Team/recursion-project) | - | 
 
 

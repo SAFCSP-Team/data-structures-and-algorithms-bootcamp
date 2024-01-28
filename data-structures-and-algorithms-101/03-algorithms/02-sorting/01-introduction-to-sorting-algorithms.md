@@ -2,7 +2,7 @@
 
 `Sorting` is arranging items in a particular order so as to access them easily. We apply sorting in our day-to-day life in several instances.
 
-When you need to  **manage** contact information on smartphones, contact lists often need to handle a significant number of contacts. However, finding specific contacts within these lists can be a daunting task.
+When you need to  **manage** contact information on smartphones, contact lists often need to handle a significant number of contacts. Therefore, finding specific contacts within these lists can be a daunting task.
 
 To address this challenge, `sorting algorithms` **are utilized to arrange** contacts alphabetically by name, this systematic approach offers an efficient way to **locate and access** desired contacts swiftly and conveniently.
 
@@ -41,6 +41,6 @@ To address this challenge, `sorting algorithms` **are utilized to arrange** cont
 
 |Project Title | Deadline |
 |:-----------:|:-------------|
-|[Introduction to sorting](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/02-sorting/project/introduction-to-sorting.md) | - | 
+|[Introduction to sorting](https://github.com/SAFCSP-Team/introduction-to-sorting) | - | 
 
 
