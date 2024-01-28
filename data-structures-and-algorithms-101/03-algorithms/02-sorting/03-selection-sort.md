@@ -27,10 +27,6 @@ Step 3: **Move** the boundary between the sorted and unsorted sections to the ri
 
 The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 9, 7`
 
-Unsorted section: `8, 3, 9, 7`
-
-Sorted section: `2`
-
 Repeat Steps 1 to 3 until the entire stack is sorted.
 
 In the next iteration:
