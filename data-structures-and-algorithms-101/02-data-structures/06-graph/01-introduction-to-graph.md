@@ -7,13 +7,13 @@ You can think of the graph as a relationship between people in a social network.
 
 
 ## Concept
-A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as **vertices**, and the links that connect the vertices are called **edges**.
+A **Graph is a non-linear data structure** is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed **vertices**, and the links that connect the vertices are called **edges**.
 
 > **vertices** are another name for **nodes**.
 
 ### Graph Attributes
 
-* The **node** is holding data, which represent Khaled, Fahad, and Majed.
+* The **node** is holding data, which represents Khaled, Fahad, and Majed.
 
 <img width="300" alt="Graph - Node" src="images/Graph Directed Node Example.jpg">
 
@@ -22,9 +22,9 @@ A **Graph is a non-linear data structure** is a pictorial representation of a se
 <img width="300" alt="Graph - Node" src="images/Graph Directed Edge Example.jpg">
 
 
-* The **weight** are the value of the edge.
+* The **weight** is the value of the edge.
 
-An example of the weighted graph is the map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. And the **weight** of the edge is the **distance** between the cities.
+An example of the weighted graph is map navigation, where the **nodes** are the cities and the **edges** are the roads between the cities. The **weight** of the edge is the **distance** between the cities.
 
 <img width="350" alt="Graph - Node" src="images/Graph-Weight.jpg">
 
@@ -43,12 +43,12 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 
 <img width="200" alt="Graph - Node" src="images/graph-cyclic.png">
 
-> Vertex  A is self-loop vertex.
+> Vertex  A is a self-loop vertex.
 
-* **Acyclic Graph** - When a directed graph doesn't have cyclic vertex it's called Acyclic.
-* **Connected Graph** - A connected graph is graph in which each vertex is connected to at least one other vertex.
+* **Acyclic Graph** - When a directed graph doesn't have a cyclic vertex it's called Acyclic.
+* **Connected Graph** - A connected graph is a graph in which each vertex is connected to at least one other vertex.
 
-<img width="200" alt="Graph - Node" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/30b0d3aa-f85a-45cc-98b6-4116a23e37dd">
+<img width="200" alt="Graph - Node" src="images/graph-connected.png">
 
 * **Disconnected Graph** - A disconnected graph is a graph where some vertices may not have edges.
 
@@ -57,7 +57,7 @@ An example of the weighted graph is the map navigation, where the **nodes** are 
 
 * **Complete Graph** - A complete graph is a graph where each vertex is connected to every other vertex.
 
-<img width="280" alt="Graph - Node" src="images/graph-completed2.png">
+<img width="200" alt="Graph - Node" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/30b0d3aa-f85a-45cc-98b6-4116a23e37dd">
 
 * **Subgraph** - A subgraph is a subset of the vertices and edges of a graph.
 * **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices.
