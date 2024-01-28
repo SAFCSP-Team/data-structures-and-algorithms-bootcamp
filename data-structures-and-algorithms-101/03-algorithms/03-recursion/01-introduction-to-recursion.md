@@ -2,7 +2,7 @@
 Recursion is a powerfull algorithm used to solve complex proramming problems. It will be explained in details in the following section.  
    
 ## Concept  
-Recursion algorithm is the process of solving programming problems by breacking the problem into smaller ones. It involves the function calling it-self in it's definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
+Recursion algorithm is the process of solving programming problems by breaking the problem into smaller ones. It involves the function calling it-self in it's definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
    
 Recursion algorithm structure must follow 2 main condition/process in the function definition:    
 1. Base case:   
