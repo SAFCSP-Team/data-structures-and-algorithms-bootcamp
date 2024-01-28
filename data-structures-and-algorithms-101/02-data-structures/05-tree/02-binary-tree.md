@@ -100,7 +100,7 @@ class Node {
 
 
 ```java
-import java.util.Stack;
+
 
 class BinaryTree {
   Node root;
@@ -108,6 +108,7 @@ class BinaryTree {
   public BinaryTree(Node root) {
     this.root = root;
   }
+
 
   // Pre-order traverse
   public void print() {
@@ -139,7 +140,7 @@ class BinaryTree {
 
   public Node search(int target) {
 
-    if (root == null) {
+    if (this.root == null) {
       System.out.println("Tree is empty");
       return null;
     }
@@ -206,7 +207,9 @@ class BinaryTree {
 
   }
 
+ 
 }
+
 ```
 
 - In `main` we will bulid the tree using binary tree class functions:
