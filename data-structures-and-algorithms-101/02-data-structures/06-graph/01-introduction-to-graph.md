@@ -7,12 +7,12 @@ Well, we can use **Graph** to store this relationship. Graph is a data structure
 
 <img width="350" alt="Graph Example" src="images/Graph1.jpg">
 
-> Where the circles are the objects and the arrow are the relationship between them.
+> Where the circles are the objects and the arrows are the relationship between them.
 
 ## Concept
 A **Graph is a non-linear data structure** It's way to orgnize data by stores objects and their relationships with other objects, which is called **vertices** and **edges**. 
 
-> Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the nodes are people and the edges are friendship relationships between them.
+> Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the vertices are people and the edges are friendship relationships between them.
 
 > **vertices** are another name for **nodes**.
 
