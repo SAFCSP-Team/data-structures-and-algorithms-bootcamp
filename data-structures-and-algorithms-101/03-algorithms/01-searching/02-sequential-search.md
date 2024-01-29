@@ -53,9 +53,6 @@ In the main method, we create an example array **Array** and specify the **searc
 public class LinkedList {
     public Node head;
 
-    public LinkedList() {
-       this.head = null;
-   }
     public int sequentialSearch(int item) {
         Node current = this.head;
         int index = 0; // position of the node
@@ -70,6 +67,7 @@ public class LinkedList {
 
         return -1;  // Return -1 if not found
     }
+}
 ```
 
 
