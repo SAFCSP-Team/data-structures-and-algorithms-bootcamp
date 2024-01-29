@@ -148,6 +148,7 @@ public class LinkedList {
 
         return current;
     }
+}
 ```
 
 ## Projects
