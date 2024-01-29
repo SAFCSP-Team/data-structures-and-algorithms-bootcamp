@@ -22,7 +22,7 @@ In this pseudocode, the list represents the list in which we are performing the 
 - Implementing the sequential search algorithm in java for an array:
 ```java
 public class SequentialSearch {
-    public int sequentialSearch(int[] arr, int item) {
+    public static int sequentialSearch(int[] arr, int item) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == item) {
                 return i;
