@@ -7,6 +7,7 @@ Well, we can use **Graph** to store this relationship. Graph is a data structure
 
 <img width="350" alt="Graph Example" src="images/Graph1.jpg">
 
+> Where the circles are the objects and the arrow are the relationship between them.
 
 ## Concept
 A **Graph is a non-linear data structure** It's way to orgnize data by stores objects and their relationships with other objects, which is called **vertices** and **edges**. 
