@@ -28,14 +28,16 @@ In the first iteration:
 
 You compare Lama (160cm) and Sara (175cm). Since Lama is shorter, no swap is needed.
 You compare Sara (175cm) and Noura (155cm). Since Sara is taller, you swap their positions.
+You compare Sara (175cm) and Manar (168cm). Since Sara is taller, you swap their positions.
 
-`Updated line: [Lama (160cm), Noura (155cm), Sara (175cm), Manar (168cm)]`
+`Updated line: [Lama (160cm), Noura (155cm), Manar (168cm), Sara (175cm)]`
 
 In the second iteration:
 
 You compare Lama (160cm) and Noura (155cm). Since Lama is taller, you swap their positions.
-You compare Lama (160cm) and Sara (175cm). Since Noura is shorter, no swap is needed.
-You compare Sara (175cm) and Manar (168cm). Since Sara is taller, you swap their positions.
+You compare Lama (160cm) and Manar (168cm). Since Lama is shorter, no swap is needed.
+You compare Lama (160cm) and Sara (175cm). Since Lama is shorter, no swap is needed.
+
 
 `Updated line: [Noura (155cm), Lama (160cm), Manar (168cm), Sara (175cm)]`
 
@@ -59,13 +61,13 @@ public class BubbleSort {
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         
-        // Traverse through all array elements
+        /* Traverse through all array elements */
         for (int i = 0; i < n - 1; i++) {
-            // Last i elements are already in place
+            /* Last i element are already in place */
             for (int j = 0; j < n - i - 1; j++) {
-                // Compare adjacent elements
+                /* Compare adjacent elements */
                 if (arr[j] > arr[j + 1]) {
-                    // Swap if the current element is greater than the next element
+                    /* Swap if the current element is greater than the next element */
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
@@ -73,6 +75,7 @@ public class BubbleSort {
             }
         }
     }
+}
 ```
 
 * The main method initializes an array of numbers, calls the `bubbleSort` method to sort the array, and then prints the sorted array.
@@ -88,7 +91,7 @@ public class BubbleSort {
         
         System.out.println();
         
-        // Call the bubbleSort method
+        /* Call the bubbleSort method */
         bubbleSort(numbers);
         
         System.out.println("Sorted numbers:");
@@ -96,8 +99,14 @@ public class BubbleSort {
             System.out.print(num + " ");
         }
     }
-}
+```
 
+The output is :
+```
+Unsorted numbers:
+9 2 5 1 7 4 
+Sorted numbers:
+1 2 4 5 7 9 
 ```
 
 ## Projects
