@@ -16,19 +16,18 @@ Let's look at an example:
 ```
 [4, 3, 2, 10, 12, 1, 5, 6]
 ```
-
-* The first element is already sorted. So, we pick the second element (3) and compare it with the first element (4). Since 3 is smaller than 4, we swap them. Now, the first two elements are sorted.
-
+* Compare the first element (4) with the second element (3). Since 3 is smaller than 4, we swap them.
+  
 ```
 [3, 4, 2, 10, 12, 1, 5, 6]
 ```
-* Next, we pick the third element (2) and compare it with the first element (3). Since 2 is smaller than 3, we swap them. Then, we compare 2 with 4 and swap them. Now, the first three elements are sorted.
+
+* Next, we pick the third element (2) and compare it with the second element (4). Since 2 is smaller than 4, we swap them. Then, we compare 2 with 3 and swap them. Now, the first three elements are sorted.
 
 ```
 [2, 3, 4, 10, 12, 1, 5, 6]
 ```
 We continue this process until the unsorted part becomes empty.
-
 
 ## Implementation 
 
