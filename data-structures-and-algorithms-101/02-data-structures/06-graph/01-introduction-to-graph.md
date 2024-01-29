@@ -23,7 +23,7 @@ A **Graph is a non-linear data structure** It's way to orgnize data by stores ob
 
 <img width="300" alt="Graph - Node" src="images/Graph2.jpg">
 
-* **Edge** - Is a connection between two vertices, it's a line that connects two vertices.
+* **Edge** - Is a connection between two vertices.
 > In the example above, the edges are the relationship between the people.
 
 <img width="300" alt="Graph - Node" src="images/Graph3.jpg">
@@ -88,9 +88,14 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 
 * **Complete Graph** - A complete graph is a graph where each vertex is connected to every other vertex.
 
-<img width="200" alt="Graph - Node" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/149315149/30b0d3aa-f85a-45cc-98b6-4116a23e37dd">
+<img width="200" alt="Graph - Node" src="images/complete-graph.png">
+
+
 
 * **Subgraph** - A subgraph is a subset of the vertices and edges of a graph.
+
+<img width="200" alt="Graph - Node" src="images/sub-graph.png">
+
 * **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices.
 
 <img width="200" alt="Graph - Node" src="images/graph-connected.png">
