@@ -123,15 +123,15 @@ public class LinkedList {
 
 //calculates the mid node 
     private Node getMid(Node low, Node high) {
-        Node slow = low;
-        Node fast = low;
+        Node mid = low;
+        Node check = low;
 
-        while (fast != high && fast.next != high) {
-            slow = slow.next;
-            fast = fast.next.next;
+        while (check != high && check.next != high) {
+            mid = mid.next;
+            check = check.next.next;
         }
 
-        return slow;
+        return mid;
     }
 
 
