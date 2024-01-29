@@ -10,22 +10,23 @@ The `selection sort` algorithm is a simple sorting algorithm that works by repea
 [image]()
 
 Here's how the selection sort algorithm can be applied to the flashcards scenario:
+> partition point or boundary represents the point of division between the sorted and unsorted sections of the flashcards.
 
 You begin with the unsorted section, which contains all the flashcards with numbers: `8, 3, 2, 9, 7`. The sorted section is **initially empty**.
 
-Step 1: Find the `smallest` number in the unsorted section.
+* Step 1: Find the `smallest` number in the unsorted section.
 
-You scan through the flashcards and find the card with the smallest number, it's 2.
+  You scan through the flashcards and find the card with the smallest number, it's 2.
 
-Step 2: **Swap** the smallest number with the first number in the unsorted section.
+* Step 2: **Swap** the smallest number with the first number in the unsorted section `8, 3, 2, 9, 7`.
 
-Unsorted section: ` 8, 3, 9, 7`
+   * unsorted section: ` 8, 3, 9, 7`
 
-Sorted section: `2`
+   * Sorted section: `2`
 
-Step 3: **Move** the boundary between the sorted and unsorted sections to the right.
+* Step 3: **Move** the boundary between the sorted and unsorted sections to the right.
 
-The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 9, 7`
+   * The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 9, 7`
 
 Repeat Steps 1 to 3 until the entire stack is sorted.
 
@@ -88,7 +89,7 @@ Sorted section: `2, 3, 7, 8, 9`
             arr[i] = temp;
         }
 ```
-* In the main method, an array of numbers is initialized, and the unsorted array is printed, The `selectionSort` method is called to sort the array and printed.
+* In the main method, an array of numbers is initialized, and the unsorted array is printed, The `selectionSort` method is called to sort the array and then the sorted array will be printed it."
 
 ```java
   public static void main(String[] args) {
