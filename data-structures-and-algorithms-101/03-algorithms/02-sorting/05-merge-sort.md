@@ -99,84 +99,79 @@ The method combines the elements from the left and right subarrays in the correc
 
 ## Example
 
-The `mergeSort` method takes an integer array (arr) as a parameter and sorts it using the merge sort algorithm.
+The `mergeSort` method takes an integer array (numbers) as a parameter and sorts it using the merge sort algorithm.
 
 ```java
-
 public class MergeSort {
     public static void mergeSort(int[] arr) {
-        if (arr == null || arr.length <= 1) {
+        if (arr.length <= 1) {
             return;
         }
-        int[] temp = new int[arr.length];
-        mergeSort(arr, temp, 0, arr.length - 1);
-    }
-
-    private static void mergeSort(int[] arr, int[] temp, int left, int right) {
-        if (left < right) {
-            int mid = left + (right - left) / 2;
-            mergeSort(arr, temp, left, mid);         /* Sort left subarray */
-            mergeSort(arr, temp, mid + 1, right);   /* Sort right subarray */
-            merge(arr, temp, left, mid, right);    /* Merge both sorted subarrays */
-        }
-    }
-
-    private static void merge(int[] arr, int[] temp, int left, int mid, int right) {
-        /* Copy elements to the temporary array */
-        for (int i = left; i <= right; i++) {
-            temp[i] = arr[i];
-        }
         
-        int i = left;        /* Pointer for the left subarray */
-        int j = mid + 1;    /* Pointer for the right subarray */
-        int k = left;      /* Pointer for the merged array */
-
-        /* Merge the two subarrays by comparing elements */
-        while (i <= mid && j <= right) {
-            if (temp[i] <= temp[j]) {
-                arr[k] = temp[i];
+        int mid = arr.length / 2;
+        int[] left = new int[mid];
+        int[] right = new int[arr.length - mid];
+        
+        /* Divide the array into two halves */
+        System.arraycopy(arr, 0, left, 0, mid);
+        System.arraycopy(arr, mid, right, 0, arr.length - mid);
+        
+        /* Recursively sort the two halves */
+        mergeSort(left);
+        mergeSort(right);
+        
+        /* Merge the sorted halves */
+        merge(arr, left, right);
+    }
+    
+    public static void merge(int[] arr, int[] left, int[] right) {
+        int i = 0, j = 0, k = 0;
+        
+        while (i < left.length && j < right.length) {
+            if (left[i] <= right[j]) {
+                arr[k] = left[i];
                 i++;
             } else {
-                arr[k] = temp[j];
+                arr[k] = right[j];
                 j++;
             }
             k++;
         }
-
-         /* Copy the remaining elements from the left and right subarrays */
-
-        while (i <= mid) {
-            arr[k] = temp[i];
+        
+        /* Copy the remaining elements of left[] if any */
+        while (i < left.length) {
+            arr[k] = left[i];
             i++;
             k++;
         }
         
-        while (j <= right) {
-            arr[k] = temp[j];
+        /* Copy the remaining elements of right[] if any */
+        while (j < right.length) {
+            arr[k] = right[j];
             j++;
             k++;
         }
     }
-
+    
     public static void main(String[] args) {
-        int[] arr = { 9, 5, 1, 3, 8, 4, 2, 7, 6 };
-        System.out.println("Original array: ");
-        printArray(arr);
-        mergeSort(arr);
-        System.out.println("Sorted array: ");
-        printArray(arr);
-    }
-
-    private static void printArray(int[] arr) {
-        for (int num : arr) {
+        int[] numbers = {9, 2, 5, 1, 7, 4};
+        
+        System.out.println("Unsorted numbers:");
+        for (int num : numbers) {
             System.out.print(num + " ");
         }
+        
         System.out.println();
+        
+        /* Call the mergeSort method */
+        mergeSort(numbers);
+        
+        System.out.println("Sorted numbers:");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
     }
 }
-
-
-
 ```
 
 ## Projects
