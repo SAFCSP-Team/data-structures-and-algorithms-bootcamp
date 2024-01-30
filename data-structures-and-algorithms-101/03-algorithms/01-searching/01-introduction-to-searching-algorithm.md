@@ -14,7 +14,7 @@ Searching algorithms are like **plans that help us find what we're looking** for
 
 - `Binary search`: this algorithm assumes that the list is already in ascending or descending order, and we **leverage the order** of the list to perform more efficient searches **by reducing the search space**. 
 
-<img width="910" alt="binary and linear search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/rec/binary-and-linear-search-animations.gif" />
+<img width="910" alt="binary and linear search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-vs-linear-search-animations.gif" />
 
 
 ## Projects
