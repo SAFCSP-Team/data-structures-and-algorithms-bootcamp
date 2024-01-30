@@ -13,13 +13,13 @@ The steps  to sort them using merge sort are as follows:
 1. **Divide**:  divide the list into two halves.
 ```  [5, 1, 3, 9],  [4, 2, 7, 6]. ```
 
-2. **Sort**: Now, you focus on each half separately. You repeat the process of dividing and sorting for each half until you reach the smallest possible parts. 
+2. **Sort**: Now, you focus on each half separately. You repeat the process of dividing and sorting for each half until you reach the smallest possible parts.
+   
 ```
-divide [5, 1, 3, 9] into [5, 1] and [3, 9]. We sort those smaller parts to get [1, 5] and [3, 9].
-Similarly, with the second part [4, 2, 7, 6] to get [2, 4] and [6, 7].
+divide [5, 1, 3, 9] into [5, 1] and [3, 9] then [5], [1] and [3], [9]. We sort those smaller parts to get [1], [5] and [3], [9].
+
+Similarly, with the second part [4, 2, 7, 6] to get [2], [4] and [6], [7].
 ```
-
-
 
 3. **Merge**: Once you have sorted the smaller parts, you start merging them back together. You compare the numbers from both parts and put them in the correct order. You keep doing this until you have merged all the parts into one big sorted list.
 
