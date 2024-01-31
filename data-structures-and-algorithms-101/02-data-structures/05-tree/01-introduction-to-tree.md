@@ -4,7 +4,8 @@ In the data structure, the tree is another way to organize the data.
 
 When to use the tree and why?
 
-Let's say you have a big company and your company has a large number of employees, the company has a CEO, managers, and employees... How would you organize the employees considering their roles/positions?
+Let's say you have a big company and your company has a large number of employees, the company has a CEO, managers, and employees...   
+How would you organize the employees considering their roles/positions?
 
 The tree should be considered here, let's see how the company employees would be organized using the tree in the below image (figure 1):
 
