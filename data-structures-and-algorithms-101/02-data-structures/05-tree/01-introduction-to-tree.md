@@ -105,9 +105,9 @@ root.right = new Node(2);
 Let's delete the right child of the root:
 
 ``` java
- public static void main(String[] args) {
-        root.right = null;
-    }
+ 
+root.right = null;
+    
 ```
 
 <br/>
