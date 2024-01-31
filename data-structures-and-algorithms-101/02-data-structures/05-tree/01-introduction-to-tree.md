@@ -493,7 +493,7 @@ Figure 6
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-[Tree with primitive data type](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main) | -
+[Tree project](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main) | -
 
 
 
