@@ -19,7 +19,7 @@ By using `Quick Sort`, you can efficiently sort the stack of papers based on the
 
 [image]()
 
- the Pivot can be Picked as the first, last element or can be a random element.
+ the Pivot can be picked as the first, last element or can be a random element.
 
 Let's see how this would play out with a stack of papers and their names:
 
@@ -73,6 +73,7 @@ public class QuickSort {
     }
 
     /* Function to partition the array and return the pivot index */
+
     static int partition(int[] arr, int low, int high) {
         int pivot = arr[high]; /* Choosing the last element as the pivot */
         int i = low - 1;
@@ -113,6 +114,15 @@ public class QuickSort {
     }
 }
 
+```
+
+The output is:
+
+```
+Original array:
+7 2 1 6 8 5 3 4
+Sorted array:
+1 2 3 4 5 6 7 8
 ```
 
 ## Projects
