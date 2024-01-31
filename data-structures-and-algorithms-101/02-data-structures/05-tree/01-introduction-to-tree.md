@@ -199,6 +199,8 @@ Now we will use the tree class on the main function:
         System.out.println("Print tree values");
         tree.printTreeValues();
 
+}
+
 
 ```
 
@@ -257,7 +259,11 @@ This function will take the **target value** as properties and return the **targ
 We will use the **stack** for the search operation, so we must import stack library **import java.util.Stack;**
   
 ```java
+
 import java.util.Stack;
+
+class Tree {
+
 public Node searchNode(int target) {
         if (this.root == null) {
             System.out.println("Tree is empty");
@@ -289,7 +295,7 @@ public Node searchNode(int target) {
 
         return null;
     }
-
+}
 
 ```
   
