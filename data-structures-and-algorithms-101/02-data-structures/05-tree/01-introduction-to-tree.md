@@ -1,12 +1,12 @@
 # Introduction to tree
 
-In data structure, tree is another way to organize the data.
+In the data structure, the tree is another way to organize the data.
 
 When to use the tree and why?
 
-Let's say you have a big company and your company have a large number of employees, the company have CEO, managers, directors.. How would you orgnanize the employees considering their roles/position?
+Let's say you have a big company and your company has a large number of employees, the company has a CEO, managers, and directors... How would you organize the employees considering their roles/positions?
 
-Tree should be considered here, lets's see how the company employees would be organized using the tree as the below image (figuer 1):
+The tree should be considered here, let's see how the company employees would be organized using the tree in the below image (figure 1):
 
 Figure 1
 ![data representation](./images/Company-employees-tree.jpg)
@@ -15,7 +15,7 @@ Figure 1
 
 ## Concept
 
-`Tree` is a collection of nodes that are connected by edges and non-linear data structure, which represent nodes in a hierarchical order.
+`Tree` is a collection of nodes that are connected by edges and non-linear data structures, which represent nodes in a hierarchical order.
 
 Figure 2
 ![data representation](./images/Tree.jpg)
@@ -71,7 +71,7 @@ Node root = new Node(1);
 
 - Access the **root** data and print it.
 ```java
-// print the root value
+//Print the root value
 System.out.println(root.number);
 ```
 
@@ -92,7 +92,7 @@ root.number = 3;
 <br/>
 <br/>
 
-- Link the **root** with child node (Add right child)
+- Link the **root** with a child node (Add a right child)
 
 ```java
 root.right = new Node(2);
@@ -117,7 +117,7 @@ root.right = null;
 <br/>
 
 Since the node class is covered.
-Now we will explain how to **implement the complete tree**, **linking nodes together** and **perform operations on it**.
+Now we will explain how to **implement the complete tree**, **linking nodes together**, and **perform operations on it**.
 
 - `Tree` class implementation:
 
@@ -186,7 +186,7 @@ Now we will use the tree class on the main function:
         // 1 - Create Tree
         Tree tree = new Tree();
 
-        // 2 - Create tree root (node object)
+        // 2 - Create a tree root (node object)
         tree.root = new Node(1);
 
         System.out.println("Print root value");
@@ -253,7 +253,7 @@ Figure 5
 
 - **Search** operation:   
 We will build a function to search for a specific `node`
-This function will take the **target value** as propertie and returns the **target node** if found.
+This function will take the **target value** as properties and returns the **target node** if found.
 
   
 ```java
@@ -305,8 +305,8 @@ Now in `main` we will seach for the node 8:
 <br/>
 <br/>
 
-- `Tree` Implementation with non-premitive data type.   
-We will follow the same logic, steps and code of the above tree but for **employees** instead of integers.
+- `Tree` Implementation with non-primitive data type.   
+We will follow the same logic, steps, and code of the above tree but for **employees** instead of integers.
 
 - `Employee` class:
 
@@ -406,7 +406,7 @@ public class Tree {
         // 1 - Create Tree
         Tree T = new Tree();
 
-        // 2 - Create tree root (node object)
+        // 2 - Create a tree root (node object)
         T.root = new Node( new Employee(01,"Ahmed","CEO") );
 
         // 3 - Access the root data and print it
@@ -460,7 +460,7 @@ Figure 6
 
 2 - Binary tree
 
-- A tree where the node has at most two child.
+- A tree where the node has at most two children.
 
 3 - Binary search tree (BST)
 
@@ -471,13 +471,13 @@ Figure 6
 4 - AVL tree
 
 - A self-balancing binary search tree
-- Each node stores a value called a `balanced factor`, whose value is either -1, 0 or 1.
+- Each node stores a value called a `balanced factor`, whose value is either -1, 0, or 1.
 - `balanced factor` = (height of left subtree - height of right subtree) or (height of right subtree - height of left subtree)
-- The tree in figure 2 is AVL tree.
+- The tree in Figure 2 is AVL tree.
 - Example: The `balanced factor` for the node `A` = (height of left subtree {1} - height of right subtree {1}) = {0}.
   
 5 - B-tree
-- A special kind of self balancing tree, where the node can contain more than one key and can have more then two child.
+- A special kind of self-balancing tree, where the node can contain more than one key and can have more than two children.
 
 
 ## Projects
