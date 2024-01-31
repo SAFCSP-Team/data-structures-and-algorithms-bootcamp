@@ -252,12 +252,12 @@ Figure 5
 
 
 - **Search** operation:   
-We will build a function to search for a specific `node`
-This function will take the **target value** as properties and return the **target node** if found.
-
+In the `Tree` class, we will build a function to search for a specific `node`    
+This function will take the **target value** as properties and return the **target node** if found.   
+We will use the **stack** for the search operation, so we must import stack library **import java.util.Stack;**
   
 ```java
-
+import java.util.Stack;
 public Node searchNode(int target) {
         if (this.root == null) {
             System.out.println("Tree is empty");
