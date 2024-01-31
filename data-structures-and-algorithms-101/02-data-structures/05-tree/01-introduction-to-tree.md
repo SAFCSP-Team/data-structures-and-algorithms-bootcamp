@@ -4,12 +4,12 @@ In the data structure, the tree is another way to organize the data.
 
 When to use the tree and why?
 
-Let's say you have a big company and your company has a large number of employees, the company has a CEO, managers, and directors... How would you organize the employees considering their roles/positions?
+Let's say you have a big company and your company has a large number of employees, the company has a CEO, managers, and employees... How would you organize the employees considering their roles/positions?
 
 The tree should be considered here, let's see how the company employees would be organized using the tree in the below image (figure 1):
 
-Figure 1
-![data representation](./images/Company-employees-tree.jpg)
+Figure 1  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Company-employees-tree.jpg">
 
 
 
@@ -17,15 +17,16 @@ Figure 1
 
 `Tree` is a collection of nodes that are connected by edges and non-linear data structures, which represent nodes in a hierarchical order.
 
-Figure 2
-![data representation](./images/Tree.jpg)
+Figure 2  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Tree.jpg">
+
 
 
 ## Implementation
 As we explained before, the tree is a collection of nodes, and each node in the tree will contain data and pointers. The pointers in the tree node will depend on how many children a node can have, for example, let us implement a tree with a maximum of three children (left, center, and right). The node will look as the following (Figure 3).
 
-Figure 3
-![data representation](./images/Node-element.jpg)
+Figure 3  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Node-element.jpg">
 
 As always, to implement the tree we will define the `Node` class first since it is the main component that will construct the whole tree.
 
@@ -216,8 +217,8 @@ Tree values are printed
 
 After running the previous code, the `Tree` will look like the following (figure 4).
 
-Figure 4
-![data representation](./images/Tree-intro-ex.jpg)
+Figure 4  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Tree-intro-ex.jpg">
 
 <br/>
 <br/>
@@ -249,8 +250,8 @@ Since the tree creation is covered, now we will create and add more nodes to the
  
 After adding the nodes above, the tree will be as the below figure 5 shows:
 
-Figure 5
-![data representation](./images/intro-integers-tree.jpg)
+Figure 5  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/intro-integers-tree.jpg">
 
 
 - **Search** operation:   
@@ -450,8 +451,9 @@ Tree values are printed
 
 After running the previous code, the `Tree` will look like the following (figure 6).
 
-Figure 6
-![data representation](./images/Tree-intro-emp-ex.jpg)
+Figure 6  
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Tree-intro-emp-ex.jpg">
+
 
 <br/>
 <br/>
