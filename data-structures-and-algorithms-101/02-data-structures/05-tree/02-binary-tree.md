@@ -1,9 +1,9 @@
 # Binary tree
-Binary tree is type of tree data structure and it will be covered in the following sections.
+Binary tree is a type of tree data structure and it will be covered in the following sections.
 
 ## Concept
 
-Binary tree is a tree where every node has maximum two child nodes 
+The binary tree is a tree where every node has a maximum of two child nodes 
 
 
 
@@ -18,7 +18,7 @@ Figure 1
   
 
 2. Complete Binary Tree 
-- A tree where each nodes on all levels except the last level has two children.
+- A tree where each node on all levels except the last level has two children.
 - A tree where at the lowest level, all leaves should reside possibly on the left side.
 
 
@@ -32,40 +32,40 @@ Figure 1
 
 
 5. Degenerate Binary Tree
-- A tree where every `internal nodes` has exactly one child.
+- A tree where every `internal node` has exactly one child.
 - `Internal node`: Any node with a child and a parent
 
 <br/>
 
 ### Tree traversal  
-It is the process of accessing a required node to perform special operation or visiting each node and print their values.
+It is the process of accessing a required node to perform a special operation or visiting each node and printing its values.
 
 Figure 2  
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Copy-of-tree-intro.jpg">
 
-There are three ways to travers tree:
+There are three ways to traverse a tree:
 
 1. Pre-order traversal
 
 - Access the root node
 - Access all nodes from the left side
-- Access all node from the right side
-- Example: in figuer 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
+- Access all nodes from the right side
+For example: in figure 2, the pre-order path is: `A -> B -> D -> E -> C -> F -> G -> H`.
 
 2. In-order traversal
 
 - Access all nodes from the left side
 - Access the root node
-- Access all node from the right side
-- Example: in figuer 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
+- Access all nodes from the right side
+- Example: in Figure 2, the in-order path is: `D -> B -> E -> A -> F -> C -> G -> H`.
 
 
 3. Post-order traversal
 
 - Access all nodes from the left side
-- Access all node from the right side
+- Access all nodes from the right side
 - Access the root node
-- Example: in figuer 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
+- Example: in Figure 2, the post-order path is: `D -> E -> B -> F -> H -> G -> C -> A`.
 
 <br/>
 
@@ -74,11 +74,11 @@ There are three ways to travers tree:
 
 ## Example 
 We will create a tree of integers and we will perform the Pre-order traversal and add operations on it.  
-Since the `binary tree` has maximun two children, then the `node` should have only two pointers (left and right).
+Since the `binary tree` has a maximum of two children, then the `node` should have only two pointers (left and right).
 
 ### Primitive 
 
-- In `node` class we will declare the attributes (data and pointers) and create a constructor.
+- In the `node` class we will declare the attributes (data and pointers) and create a constructor.
 
 ```java
 class Node {
@@ -92,11 +92,11 @@ class Node {
 }
 ```
 
-- In `binary tree` class we will declare the root as an attribute  
-1. create constructor  
-2. create Pre-order traversal operation/function to print the nodes values   
-3. create search function to find a specific node   
-4. create addLeft and addRight function  
+- In the `binary tree` class we will declare the root as an attribute  
+1. Create constructor  
+2. Create a Pre-order traversal operation/function to print all the nodes values   
+3. Create a search function to find a specific node   
+4. Create addLeft and addRight function  
 
 
 ```java
@@ -212,7 +212,7 @@ class BinaryTree {
 
 ```
 
-- In `main` we will bulid the tree using binary tree class functions:
+- In `main` we will build the tree using binary tree class functions:
 
 ```java
 
@@ -221,15 +221,15 @@ class BinaryTree {
     // Root creation
     BinaryTree tree = new BinaryTree(new Node(1));
 
-    // Add children to root
+    // Add children to the root
     tree.addLeft(1, 2);
     tree.addRight(1, 3);
 
-    // Add children to left child
+    // Add children to the left child
     tree.addLeft(2, 4);
     tree.addRight(2, 5);
 
-    // Add children to right child
+    // Add children to the right child
     tree.addLeft(3, 6);
     tree.addRight(3, 7);
 
