@@ -1,5 +1,5 @@
 # Binary tree
-Binary tree is a type of tree data structure and it will be covered in the following sections.
+A binary tree is a type of tree data structure and it will be covered in the following sections.
 
 ## Concept
 
@@ -11,7 +11,9 @@ The binary tree is a tree where every node has a maximum of two child nodes
 <br/>
 
 Figure 1    
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Types-of-binary-tree.jpg">
+<p align="center">
+  <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Types-of-binary-tree.jpg">
+</p>
 
 1. Full Binary Tree
 - A tree where tree nodes can have either two children or no child.
@@ -40,8 +42,10 @@ Figure 1
 ### Tree traversal  
 It is the process of accessing a required node to perform a special operation or visiting each node and printing its values.
 
-Figure 2  
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Copy-of-tree-intro.jpg">
+Figure 2   
+<p align="center">
+  <img width="460" height="300" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Copy-of-tree-intro.jpg">
+</p>
 
 There are three ways to traverse a tree:
 
