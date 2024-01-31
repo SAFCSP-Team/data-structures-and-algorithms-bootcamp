@@ -57,7 +57,7 @@ public class Node {
 <br/>
 <br/>
 
-- Create an object of `node` with the name **root** in the main function.
+- Create an object of `node` with the name **root** in the main method.
 ```java
 public static void main(String[] args) {
 Node root = new Node(1);
@@ -179,7 +179,7 @@ class Tree {
 
 ```
 
-Now we will use the tree class on the main function:
+Now we will use the tree class on the main method:
 
 ```java
  public static void main(String[] args) {
