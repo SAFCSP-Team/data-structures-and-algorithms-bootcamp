@@ -73,7 +73,6 @@ public class QuickSort {
     }
 
     /* Function to partition the array and return the pivot index */
-
     static int partition(int[] arr, int low, int high) {
         int pivot = arr[high]; /* Choosing the last element as the pivot */
         int i = low - 1;
@@ -100,6 +99,14 @@ public class QuickSort {
         }
     }
 
+    /* Function to print an array */
+    static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         int[] arr = {7, 2, 1, 6, 8, 5, 3, 4};
         int n = arr.length;
@@ -113,7 +120,6 @@ public class QuickSort {
         printArray(arr);
     }
 }
-
 ```
 
 The output is:
