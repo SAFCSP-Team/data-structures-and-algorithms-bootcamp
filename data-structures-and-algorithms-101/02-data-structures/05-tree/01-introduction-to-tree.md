@@ -245,7 +245,7 @@ Since the tree creation is covered, now we will create and add more nodes to the
 ```
 
  
-After adding the nodes above, the tree will be as the below figuer 5 is showing:
+After adding the nodes above, the tree will be as the below figure 5 shows:
 
 Figure 5
 ![data representation](./images/intro-integers-tree.jpg)
@@ -253,7 +253,7 @@ Figure 5
 
 - **Search** operation:   
 We will build a function to search for a specific `node`
-This function will take the **target value** as properties and returns the **target node** if found.
+This function will take the **target value** as properties and return the **target node** if found.
 
   
 ```java
@@ -293,7 +293,7 @@ public Node searchNode(int target) {
 
 ```
   
-Now in `main` we will seach for the node 8:
+Now in `main` we will search for the node 8:
 
 ```java
  public static void main(String[] args) {
