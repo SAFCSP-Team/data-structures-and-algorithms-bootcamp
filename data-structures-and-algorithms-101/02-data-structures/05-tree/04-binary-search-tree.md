@@ -51,8 +51,9 @@ class Node {
 
 
 ```java
+import java.util.Stack;
 
-public class BinarySearchTree {
+class BinarySearchTree {
     private Node root;
 
     public BinarySearchTree() {
