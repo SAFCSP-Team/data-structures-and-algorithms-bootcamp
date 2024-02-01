@@ -155,7 +155,7 @@ public class BinarySearchTree {
         Node prev = null;
         boolean isLeftChild = false;
 
-        // Search for the taget (curr) and it's parent (prev)
+        // Search for the target (curr) and its parent (prev)
         while (curr != null) {
             stack.push(curr);
 
