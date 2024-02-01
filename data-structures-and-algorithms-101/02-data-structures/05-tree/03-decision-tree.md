@@ -15,9 +15,9 @@ Did your company approve your vacation?
 Is the airline ticket available?   
 Do you have the budget for this trip?   
    
-Here is how the decision tree should be built as the following (Figure 3) shows:  
+Here is how the decision tree should be built as the following (Figure 1) shows:  
   
-Figure 3     
+Figure 1     
 <img width="910" alt="Introduction to Decision tree-01" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/05-tree/images/Decision-Tree-Example.jpg">
 
 ## Implementation
