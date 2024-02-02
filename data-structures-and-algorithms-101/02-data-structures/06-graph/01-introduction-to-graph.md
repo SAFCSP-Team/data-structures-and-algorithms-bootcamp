@@ -1,5 +1,5 @@
 # Graph
-If we have a relationship between people, for example, Khaled knows Fahad and Fahad knows Khaled and Majed, but Majed doesn't know either Khaled nor Fahad. How can we store this relationship in a data structure? 
+If we have a relationship between people, for example, Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store this relationship in a data structure? 
 
 Well, we can use **Graph** to store this relationship. Graph is a data structure that stores objects and their relationships with other objects.
 
