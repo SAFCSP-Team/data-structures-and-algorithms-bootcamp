@@ -8,9 +8,11 @@ Well, we can use **Graph** to store this relationship. Graph is a data structure
 <img width="350" alt="Graph Example" src="images/Graph1.jpg">
 
 > Where the circles are the objects and the arrows are the relationship between them.
-
+> The objects in the graph are called a vertex
+> The relationship that connects to vertices is called an edge
+ 
 ## Concept
-A **Graph is a non-linear data structure** It's way to orgnize data by stores objects and their relationships with other objects, which is called **vertices** and **edges**. 
+A **Graph is a non-linear data structure** It's a way to organize data by storing objects and their relationships with other objects, which are called **vertices** and **edges**. 
 
 > Generally, graphs are used to model problems defined in terms of relationships or connections between objects. One example of this is a social network, where the vertices are people and the edges are friendship relationships between them.
 
@@ -18,12 +20,12 @@ A **Graph is a non-linear data structure** It's way to orgnize data by stores ob
 
 ### Graph Attributes
 
-* **Vertex** - Is an object that can store data. 
+* **Vertex** is an object that can store data. 
 > In the example above, the vertices are objects that represent people.
 
 <img width="300" alt="Graph - Node" src="images/Graph2.jpg">
 
-* **Edge** - Is a connection between two vertices.
+* **Edge** is a connection between two vertices.
 > In the example above, the edges are the relationship between the people.
 
 <img width="300" alt="Graph - Node" src="images/Graph3.jpg">
