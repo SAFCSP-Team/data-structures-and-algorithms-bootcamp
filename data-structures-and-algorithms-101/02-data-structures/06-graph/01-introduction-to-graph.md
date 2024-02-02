@@ -1,5 +1,13 @@
 # Graph
-If we have a relationship between people, for example, Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store this relationship in a data structure? 
+Graph is data structure and mathematical concept that is used to represent relationships between objects.
+
+For some cases it's hard to define the relationship between objects, specially if the relationship is complex.
+
+Let's see one of the use case of the graph.
+
+If we have a relationship between three objects, for example (Khaled, Fahad, and Majed).
+
+Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store this represen the relationship between them? 
 
 Well, we can use **Graph** to store this relationship. Graph is a data structure that stores objects and their relationships with other objects.
 
