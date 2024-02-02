@@ -110,7 +110,7 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 
 <img width="200" alt="Graph - Node" src="images/graph-connected.png">
 
-* **Weakly Connected Graph** - A directed graph is weakly connected when a vertex has no out-degree. e.g. vertex B can't go to any other vertex.
+* **Weakly Connected Graph** - A directed graph is weakly connected when a graph have connection between all the vertices, but has vertex with no out-degree. e.g. vertex B can't go to any other vertex.
 
 <img width="200" alt="Graph - Node" src="images/graph-weakly-connected.png">
 
