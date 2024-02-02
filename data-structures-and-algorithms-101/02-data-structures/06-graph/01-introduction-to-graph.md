@@ -52,7 +52,7 @@ Vertex A has an edge to vertex B, but B doesn't have an edge to A. That means we
 <hr>
 
 * ### **Undirected Graph** 
-The edges in an undirected do not have one direction. This means that the edges can go both ways.
+The edges in an undirected do not have a specified direction. This means that the edges can go both ways.
 
 Vertex A has an edge to vertex B, and B has an edge to A. That means we can go from A to B and from B to A.
 
@@ -106,11 +106,11 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 
 <img width="200" alt="Graph - Node" src="images/sub-graph.png">
 
-* **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices.
+* **Strongly Connected Graph** - A directed graph is strongly connected when there is a path between each pair of vertices. e.g. vertex A can go to any other vertex.
 
 <img width="200" alt="Graph - Node" src="images/graph-connected.png">
 
-* **Weakly Connected Graph** - A directed graph is weakly connected when there is a path between each pair of vertices when the graph   
+* **Weakly Connected Graph** - A directed graph is weakly connected when a vertex has no out-degree. e.g. vertex B can't go to any other vertex.
 
 <img width="200" alt="Graph - Node" src="images/graph-weakly-connected.png">
 
@@ -122,7 +122,7 @@ The most common way to represent a graph relation on data structure is by using 
 
 We can represent a graph using a two-dimensional array. Where the rows represent the source vertex and the columns represent the destination vertex. If the value is 1, that means that the source vertex is connected and if the value is 0, that means that the source vertex is not connected.
 
-<img width="350" alt="Graph - Node" src="images/Graph Adjacency Matrix Example.png">
+<img width="350" alt="Graph - Node" src="images/graph-adj-matrix.png">
 
 <br><br>
 
@@ -130,7 +130,7 @@ We can represent a graph using a two-dimensional array. Where the rows represent
 
 We can represent a graph using array of linked list. Where the index of the array list represent the source vertex and the linked list represent the destination vertex.
 
-<img width="350" alt="Graph - Node" src="images/Graph Adjacency List.jpg">
+<img width="350" alt="Graph - Node" src="images/graph-adj-list.png">
 
 
 <br><br>
@@ -139,7 +139,7 @@ We can represent a graph using array of linked list. Where the index of the arra
 ## Implementation
 In this seciton we will implement **the directed graph**
 
-### Adjacency List
+### Adjacency Matrix
 
 It's way to represent a graph relation by using two-dimensional array.
 
