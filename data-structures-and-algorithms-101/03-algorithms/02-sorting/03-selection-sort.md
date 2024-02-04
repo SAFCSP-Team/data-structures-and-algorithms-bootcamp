@@ -122,7 +122,7 @@ Sorted numbers:
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Selection sort](https://github.com/SAFCSP-Team/selection-sort/blob/main/README.md) | - | 
+| [Selection sort](https://github.com/SAFCSP-Team/selection-sort) | - | 
 
 
 
