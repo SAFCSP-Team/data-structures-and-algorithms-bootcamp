@@ -15,11 +15,11 @@ By using `Quick Sort`, you can efficiently sort the stack of papers based on the
 
 ## Concept
 
-`Quick sort` is a widely used and efficient sorting algorithm that follows the divide-and-conquer paradigm. It works by selecting a pivot element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. 
+`Quick sort` is a widely used and efficient sorting algorithm that follows the `divide-and-conquer` paradigm. It works by selecting a `pivot` element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. 
 
 [image]()
 
- the Pivot can be picked as the first, last element or can be a random element.
+ the `pivot` can be picked as the first, last element or can be a random element.
 
 Let's see how this would play out with a stack of papers and their names:
 
