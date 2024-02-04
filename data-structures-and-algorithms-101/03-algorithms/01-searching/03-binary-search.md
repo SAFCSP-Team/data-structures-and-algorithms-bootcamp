@@ -56,7 +56,7 @@ In this pseudocode, the list represents the list in which we are performing the 
 ## Example 
 - Implementing the binary search algorithm in Java for an array:
 ```java
-public class BinarySearch {
+public class Array {
     public static int binarySearch(int[] array, int target) {
         int low = 0;
         int high = array.length - 1;

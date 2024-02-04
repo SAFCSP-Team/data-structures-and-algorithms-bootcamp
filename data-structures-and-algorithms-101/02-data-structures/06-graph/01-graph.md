@@ -1,13 +1,13 @@
 # Graph
-Graph is data structure and mathematical concept that is used to represent relationships between objects.
+Graph is a data structure and mathematical concept that is used to represent relationships between objects.
 
-For some cases it's hard to define the relationship between objects, specially if the relationship is complex.
+In some cases, it's hard to define the relationship between objects, especially if the relationship is complex.
 
-Let's see one of the use case of the graph.
+Let's see one of the use cases of the graph.
 
 If we have a relationship between three objects, for example (Khaled, Fahad, and Majed).
 
-Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store this represen the relationship between them? 
+Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store these objects with their relationship? 
 
 Well, we can use **Graph** to store this relationship. Graph is a data structure that stores objects and their relationships with other objects.
 
@@ -211,10 +211,10 @@ A
 B
 ```
 
-Right now we have only created a vertices but we didn't create a relationship between them.
-> We can create a relations by using adjacency matrix 
+Right now we have only created vertices but we haven't created a relationship between them.
+> We can create relations by using an adjacency matrix 
 
-5. Create a vertices relation using adjacency matrix. In the Graph class create a two dimensional array, whcih will hold the vertices relation.
+5. Create a vertices relation using an adjacency matrix. In the Graph class create a two-dimensional array, which will hold the vertices relation.
 
 ```java
 public class Graph {
@@ -355,7 +355,10 @@ B	0 0
 
 ### Adjacency List
 
-Another way to represent a graph relation is by using **Adjacency List**, which is an array list of linked list.
+Another way to represent a graph relation is by using **Adjacency List**, which is an array list that stores a linked list.
+
+Where the array list represents the source vertex and the linked list represents the destination vertex.
+
 
 1. Create a class called **Vertex** that has data and a constructor that takes the data as a parameter.
    
@@ -387,9 +390,9 @@ public class Vertex {
     }
 ```
 
-> ArrayList or Dynamic Array is a resizable array. It's like an array but it's size is not fixed.
+> ArrayList or Dynamic Array is a resizable array. It's like an array but its size is not fixed.
 
-3. Create a method called **addVertex** that takes a vertex as a parameter and add it to the array list of linked list.
+3. Create a method called **addVertex** that takes a vertex as a parameter and adds it to the array list of linked list.
 
 ```java
 
@@ -430,7 +433,7 @@ A
     }
 ```
 
-6. Call the **addEdge** method in the main method, and add vertiecs A, B, and C. Connect A to B and B to C.
+6. Call the **addEdge** method in the main method, and add vertices A, B, and C. Connect A to B and B to C.
 
 ```java
 
@@ -445,7 +448,7 @@ A
 
 ```
 
-7. In the Graph class, Create a print method that prints the graph using adjacency list.
+7. In the Graph class, Create a print method that prints the graph using an adjacency list.
 
 ```java
 

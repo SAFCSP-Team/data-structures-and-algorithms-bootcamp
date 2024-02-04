@@ -20,13 +20,13 @@ You begin with the unsorted section, which contains all the flashcards with numb
 
 * Step 2: **Swap** the smallest number with the first number in the unsorted section `8, 3, 2, 9, 7`.
 
-   * unsorted section: ` 8, 3, 9, 7`
+   * unsorted section: ` 3, 8, 9, 7`
 
    * Sorted section: `2`
 
 * Step 3: **Move** the boundary between the sorted and unsorted sections to the right.
 
-   * The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `8, 3, 9, 7`
+   * The flashcard with 2 is now in the sorted section, and the remaining unsorted section contains the flashcards: `3, 8, 9, 7`
 
 Repeat Steps 1 to 3 until the entire stack is sorted.
 
@@ -122,7 +122,7 @@ Sorted numbers:
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
-| [Selection sort](https://github.com/SAFCSP-Team/selection-sort/blob/main/README.md) | - | 
+| [Selection sort](https://github.com/SAFCSP-Team/selection-sort) | - | 
 
 
 
