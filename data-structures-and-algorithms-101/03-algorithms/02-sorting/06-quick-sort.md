@@ -32,14 +32,14 @@ Let's say we randomly choose "Emma" as the pivot.
 Step 2: Partition the papers.
 
 You compare each name to the pivot ("Emma") and place them on the left or right side accordingly:
-Names smaller than "Emma" go to the left: [Alex, Emma]
-Names larger than "Emma" go to the right: [Mark, John, Sarah, Lisa]
+Names smaller than "Emma" go to the left: `[Alex, Emma]`.
+Names larger than "Emma" go to the right: `[Mark, John, Sarah, Lisa]`
 
 Step 3: Recursively apply steps 1 and 2.
 
-Now, you have two smaller stacks: [Alex, Emma] and [Mark, John, Sarah, Lisa].
+Now, you have two smaller stacks: `[Alex, Emma]` and `[Mark, John, Sarah, Lisa]`.
 You repeat steps 1 and 2 for each smaller stack.
-For the [Alex, Emma] stack:
+For the `[Alex, Emma]` stack:
 
 Select "Alex" as the pivot.
 
