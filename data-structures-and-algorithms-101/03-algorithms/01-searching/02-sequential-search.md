@@ -1,6 +1,6 @@
 # Sequential Search
 
-The diagram below shows how this search works. Starting at the first item in the list, we simply move from item to item, following the underlying **sequential ordering** until we either find what we are looking for or run out of items. If we run out of items, we have discovered that the item we were searching for was not present.
+The diagram below shows how this search works. Starting at the first item in the list, we simply move from item to item, following the underlying **sequential ordering** until we either find what we are looking for or run out of items. If we run out of items, we have discovered that the item we were searching for was not found.
 <img width="910" alt="Sequential Search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/sequential-search.png" />
 
 ## Concept
@@ -46,7 +46,7 @@ public class SequentialSearch {
 ```
 Item found at index 4
 ```
-In the main method, we create an example array **Array** and specify the **searchItem as 9**. We call the sequentialSearch method with these arguments and store the result in the result variable.
+In the main method, we create an example array **Array** and specify the **searchItem as 9**. We call the `sequentialSearch` method with these arguments and store the result in the result variable.
 
 - Implementing the sequential search algorithm in Java for a linked list:
 ```java
