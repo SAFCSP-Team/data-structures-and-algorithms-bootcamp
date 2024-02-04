@@ -18,7 +18,7 @@ You begin with the unsorted section, which contains all the flashcards with numb
 
   You scan through the flashcards and find the card with the smallest number, it's 2.
 
-* Step 2: **Swap** the smallest number with the first number in the unsorted section `8, 3, 2, 9, 7`.
+* Step 2: **Replace** the smallest number with the first number in the unsorted section `8, 3, 2, 9, 7`.
 
    * unsorted section: ` 8, 3, 9, 7`
 
@@ -34,7 +34,7 @@ In the next iteration:
 
 The smallest number in the unsorted section is `3`
 
-Swap the flashcard with 3 with the first flashcard in the unsorted section.
+Replace the flashcard with 3 with the first flashcard in the unsorted section.
 
 Unsorted section: `8, 9, 7`
 
