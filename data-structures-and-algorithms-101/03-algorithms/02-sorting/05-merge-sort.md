@@ -174,6 +174,14 @@ public class MergeSort {
 }
 ```
 
+Output is 
+```
+Unsorted numbers:
+9 2 5 1 7 4 
+Sorted numbers:
+1 2 4 5 7 9 
+```
+
 ## Projects
 | Project Title | Deadline |
 |:-----------:|:-------------|
