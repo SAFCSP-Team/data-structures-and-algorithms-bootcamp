@@ -17,7 +17,9 @@ By using `Quick Sort`, you can efficiently sort the stack of papers based on the
 
 `Quick sort` is a widely used and efficient sorting algorithm that follows the `divide-and-conquer` paradigm. It works by selecting a `pivot` element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. 
 
-[image]()
+
+![S@3x (1)](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/2743bd5e-b721-4e6a-af71-b8adb883d835)
+
 
  the `pivot` can be picked as the first, last element or can be a random element.
 
