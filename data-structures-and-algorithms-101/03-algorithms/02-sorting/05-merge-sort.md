@@ -63,7 +63,8 @@ Use the System.arraycopy() method to copy the elements from the original array t
 The left array will contain the elements from index 0 to mid-1.
 The right array will contain the elements from mid to the end of the array.
 ```
-
+> System.arraycopy() copies an array from a source array to a destination array, starting the copy action from the source position to the target position until the 
+ specified length.
 ```java
 public static void merge(int[] arr, int[] left, int[] right) {
         int i = 0, j = 0, k = 0;
