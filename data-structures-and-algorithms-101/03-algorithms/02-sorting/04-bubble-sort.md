@@ -39,7 +39,7 @@ In the second iteration:
 
 You compare Lama (160cm) and Noura (155cm). Since Lama is taller, you swap their positions.
 You compare Lama (160cm) and Manar (168cm). Since Lama is shorter, no swap is needed.
-You compare Lama (160cm) and Sara (175cm). Since Lama is shorter, no swap is needed.
+You compare Manar (168cm) and Sara (175cm). Since Manar is shorter, no swap is needed.
 
 
 `Updated line: [Noura (155cm), Lama (160cm), Manar (168cm), Sara (175cm)]`
