@@ -3,7 +3,7 @@
 ## Concept
 `Merge sort` is a popular sorting algorithm that follows the `divide-and-conquer` approach to sort a list of things, like numbers, in a particular order. It works by dividing the list into smaller parts, sorting those parts, and then combining them back together to get the final sorted list. 
 
-[image]()
+![202402041653-ezgif com-video-to-gif-converter](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/47e8aa7f-c559-4a9a-8342-7832283159d1)
 
 Imagine you have a list of numbers `[5, 1, 3, 9, 4, 2, 7, 6]`.
 
