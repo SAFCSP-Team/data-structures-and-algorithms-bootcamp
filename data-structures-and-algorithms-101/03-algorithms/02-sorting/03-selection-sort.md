@@ -7,7 +7,8 @@ Imagine you are **organizing** a stack of `flashcards` with numbers written on t
 
 The `selection sort` algorithm is a simple sorting algorithm that works by repeatedly selecting the minimum (or maximum) element from the unsorted part of the array and swapping it with the first unsorted element. This gradually builds up a sorted portion of the array.
 
-[image]()
+![ezgif com-animated-gif-maker (1)](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/00dea9ba-b28a-4d47-82a8-0ba4068672a3)
+
 
 Here's how the selection sort algorithm can be applied to the flashcards scenario:
 > partition point or boundary represents the point of division between the sorted and unsorted sections of the flashcards.
