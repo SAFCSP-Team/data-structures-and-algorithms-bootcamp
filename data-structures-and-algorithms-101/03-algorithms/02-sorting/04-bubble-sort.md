@@ -20,6 +20,9 @@ After reaching the end of the line, you repeat the entire process from the begin
 
 The `Bubble sort` algorithm is comparison-based. Each pair of adjacent elements are compared with each other and the elements are swapped if they are not in order. This is repeated until the list is sorted.
 
+
+![S4GIF-ezgif com-video-to-gif-converter](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/09c84453-6e78-4086-8676-d5152f73fcce)
+
 Let's see how this would play out with a group of friends and their heights:
 
 `Unsorted line: [Lama (160cm), Sara (175cm), Noura (155cm), Manar (168cm)]`
