@@ -10,7 +10,10 @@ An array is split into two parts: sorted and unsorted. Initially, the sorted 
 `Insertion sort` is a simple sorting algorithm that builds the final sorted array one item at a time. It works by iteratively inserting each element into its proper position within the already sorted portion of the data set.
 
 
-[image]()
+
+
+![image](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/25900738-2532-4631-8076-1d82bf7d8bdc)
+
 
 Let's look at an example:
 ```
