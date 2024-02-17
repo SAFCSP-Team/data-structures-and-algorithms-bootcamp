@@ -22,109 +22,89 @@ The primary operations of the queue are:
 
 ````Java
 public class QueueArray {
-    final int SIZE = 5;
 
-    int items[] = new int[SIZE];
+    String array[];
+    int front;
+    int rear;
+    final int size;
 
-    int front, rear;
-
-    QueueArray() {
-        front = -1;
-        rear = -1;
+    QueueArray(int size) {
+        this.size = size;
+        this.front = -1;
+        this.rear = -1;
+        this.array = new String[size];
     }
 
-    public boolean isFull(){
-        if(rear == SIZE - 1){
-            return true;
-        }
-        return false;
+    public boolean isEmpty() {
+        return front == -1;
     }
 
-    public boolean isEmpty(){
-        if(front == -1) {
-            return true;
-        }
-        else {
-            return false;
-        }
+    public boolean isFull() {
+        return rear == size -1;
     }
 
-    public void enQueue(int element) {
+    public void enqueue(String element) {
         if(isFull()) {
             System.out.println("Queue is full");
-            return;
+            return; // exit the method
         }
-        // if the queue is empty
+
         if(isEmpty()) {
-            front = 0;
-        }
-
-        rear++;
-        items[rear] = element;
-
-    }
-
-    public int deQueue() {
-        int element;
-
-        if(isEmpty()){
-            System.out.println("Queue is empty");
-            return (-1);
+            front = rear = 0;
         }
         else {
-
-            element = items[front];
-
-            if(front >= rear){
-                front = -1;
-                rear = -1;
-            }
-            else {
-                front++;
-            }
-            System.out.println( element + " Deleted");
-            return (element);
+            rear = rear + 1;
         }
+
+        array[rear] = element;
+    }
+
+    public void dequeue() {
+        if(isEmpty()) {
+            System.out.println("Queue is empty!");
+            return;
+        }
+
+        if(rear == 0 ) {
+            front = rear = -1;
+        }
+        else {
+            front += 1;
+        }
+
+
     }
 
     public void display() {
-        int i;
-        if(isEmpty()) {
-            System.out.println("Queue is empty!");
-        }
-        else {
-            for(i = front; i <= rear; i++)
-                System.out.println("Item -> " + items[i] + "  ");
+        int temp = front;
+        for(int i = temp; i <= rear; i++) {
+
+            System.out.println(array[i]);
         }
     }
 
     public static void main(String[] args) {
-        QueueArray queueArray = new QueueArray();
 
-        queueArray.enQueue(1);
-        queueArray.enQueue(2);
-        queueArray.enQueue(3);
+        QueueArray que = new QueueArray(3);
+  
+        que.enqueue("Abdulmalik");
+        que.enqueue("Khalid");
+        que.enqueue("Fahad");
+  
+        que.dequeue();
+  
+        que.display();
+  
+      }
 
-        queueArray.display();
-
-        queueArray.deQueue();
-
-        queueArray.display();
-
-    }
 }
-
 ````
 
 **Output:**
 
 ```
-Item -> 1  
-Item -> 2  
-Item -> 3  
-1 Deleted
-Item -> 2  
-Item -> 3  
+Khalid
+Fahad  
 ```
 
 - In C++ Programming language:
