@@ -34,13 +34,13 @@ We can measure the time and space complexity for each algorithm regardless of th
 
 ### Big O notation
 
-`Big O notation` is a mathematical notation used to describe the performance of an algorithm and provides a way to express how the running time or space requirements of an algorithm grow as the input size increases.
+`Big O notation` is a mathematical notation used to describe the performance of an algorithm and express how its running time or space requirements grow with the input size. 
 
-Big O notation allows us to compare the efficiency of different algorithms and understand their scalability. It helps in optimizing algorithms and selecting the most appropriate solution for a given problem.
+By utilizing Big O notation, we can compare the efficiency of different algorithms and make informed decisions about algorithm optimization.
 
-It's important to note that Big O notation provides an upper bound on the growth rate of an algorithm. It focuses on the worst-case scenario, assuming that the algorithm takes the maximum time or space for any input. 
+Big O notation is represented as O(f(n)), where 'f(n)' represents the growth rate of the algorithm and 'n' represents the input size. The 'O' symbolizes the upper bound of the growth rate.
 
-Big O notation uses a formulaic representation, typically denoted as O(f(n)), where 'f(n)' represents the growth rate of the algorithm. The 'n' in 'f(n)' represents the input size. The 'O' represents the upper bound of the growth rate.
+It's important to understand that Big O notation gives an upper bound on the growth rate of an algorithm. It focuses on the worst-case scenario, assuming that the algorithm takes the maximum time or space for any input.
 
 The key time and space complexities:
 
