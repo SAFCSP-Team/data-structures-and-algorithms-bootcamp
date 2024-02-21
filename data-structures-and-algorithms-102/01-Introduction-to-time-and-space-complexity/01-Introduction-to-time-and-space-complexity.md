@@ -29,7 +29,7 @@ Each computer runs the algorithm faster than the other, that's because they have
 
 <!--- Link the big O --->
 
-We can measure the time and space complexity for each algorithm regardless of the hardware capabilities by using the `big O notation`.
+We can measure the time and space complexity for each algorithm regardless of the hardware capabilities by using the `Big O notation`.
 
 
 ### Big O notation
