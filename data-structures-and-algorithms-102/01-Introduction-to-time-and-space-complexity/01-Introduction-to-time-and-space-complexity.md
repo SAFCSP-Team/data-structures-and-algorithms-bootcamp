@@ -1,9 +1,9 @@
 # Introduction to Time and Space Complexity
 
 <!--- Why is there more than one way to write/perform an algorithm --->
-We know that inoder to solve a problem, we need to write an algorithm. But, what if we have more than one algorithm to solve the problem, e.g. sorting an array, we can use **bubble sort, or merge sort**, and so on.
+We know that in order to solve a problem, we need to write an algorithm. But, what if we have more than one algorithm to solve the problem, e.g. sorting an array, we can use **bubble sort, or merge sort**, and so on.
 
-So, we have more than an algorithm that solves a problem, but we need to know how to measure the performance of an algorithm and compare them to determine which one is the best for a given problem.
+So, we have more than an algorithm that solves a problem, we need to know how to measure the performance of an algorithm and compare them to determine which one is the best for a given problem.
 
 It's the **algorithm's efficiency**, and when we say efficiency, we mean **time complexity and space complexity.**
 
@@ -57,7 +57,7 @@ The key time and space complexities:
 5. **O(n^2)** `Quadratic time`: The running time grows quadratically with the input size. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
 
 
-6. **O(2^n)** `Exponential time`: The running time grows exponentially with the input size. This represents algorithms with very slow performance as the input size increases. for example the `Fibonacci` function due to it makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
+6. **O(2^n)** `Exponential time`: The running time grows exponentially with the input size. This represents algorithms with very slow performance as the input size increases. for example, the `Fibonacci` function due to it makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
 
 - For instance, if you call Fibonacci(5), the function will make 15 recursive calls. However, if you call Fibonacci(10), it will make 1,023 recursive calls.
 
