@@ -34,30 +34,30 @@ We can measure the time and space complexity for each algorithm regardless of th
 
 ### Big O notation
 
-`Big O notation` is a mathematical notation used to describe the performance of an algorithm and express how its running time or space requirements grow with the input size. 
+`Big O notation` is a **mathematical notation** used to **describe the performance** of an algorithm and express **how its running time or space requirements grow** with the input size. 
 
-By utilizing Big O notation, we can compare the efficiency of different algorithms and make informed decisions about algorithm optimization.
+By utilizing Big O notation, we can **compare the efficiency** of different algorithms and make informed decisions about algorithm optimization.
 
-Big O notation is represented as O(f(n)), where 'f(n)' represents the growth rate of the algorithm and 'n' represents the input size. The 'O' symbolizes the upper bound of the growth rate.
+Big O notation **is represented as O(f(n))**, where `'f(n)'` represents **the growth rate** of the algorithm and `'n'` represents the **input size**. The `'O'` **symbolizes the upper bound** of the growth rate.
 
-It's important to understand that Big O notation gives an upper bound on the growth rate of an algorithm. It focuses on the worst-case scenario, assuming that the algorithm takes the maximum time or space for any input.
+It's important to understand that **Big O notation gives an upper bound on the growth rate** of an algorithm. It f**ocuses on the worst-case** scenario, assuming that the algorithm takes the **maximum time or space for any input**.
 
 The key time and space complexities:
 
-1. **O(1)** `Constant time`: The algorithm's running time remains constant, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
+1. **O(1)** `Constant time`: The algorithm's **running time remains constant**, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
 
 
-2. **O(log n)** `Logarithmic time`: The running time grows logarithmically with the input size. As the input size increases, the running time increases, but at a progressively slower rate. An example is Binary search on a sorted array Recursive calls split the problem in half, reducing the time required decreases.
+2. **O(log n)** `Logarithmic time`: **The running time grows logarithmically with the input size**. As the input size increases, the running time increases, but at a progressively slower rate. An example is Binary search on a sorted array Recursive calls split the problem in half, reducing the time required decreases.
 
-3. **O(n)** `Linear time`: The running time grows linearly with the input size. If the input size doubles, the running time will also roughly double. Examples include iterating through an array or performing a linear search.
+3. **O(n)** `Linear time`: **The running time grows linearly with the input size**. If the input size doubles, the running time will also roughly double. Examples include iterating through an array or performing a linear search.
 
-4. **O(N log N)** `Linearithmic Time`: The running time grows in proportion to the number of elements multiplied by the logarithm of the number of elements. This complexity often arises in efficient sorting algorithms like merge sort or quicksort.
-
-
-5. **O(n^2)** `Quadratic time`: The running time grows quadratically with the input size. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
+4. **O(N log N)** `Linearithmic Time`: **The running time grows in proportion to the number of elements multiplied by the logarithm of the number of elements**. This complexity often arises in efficient sorting algorithms like merge sort or quicksort.
 
 
-6. **O(2^n)** `Exponential time`: The running time grows exponentially with the input size. This represents algorithms with very slow performance as the input size increases. for example, the `Fibonacci` function due to it makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
+5. **O(n^2)** `Quadratic time`: **The running time grows quadratically with the input size**. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
+
+
+6. **O(2^n)** `Exponential time`: **The running time grows exponentially with the input size**. This represents algorithms with very slow performance as the input size increases. for example, the `Fibonacci` function makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
 
 - For instance, if you call Fibonacci(5), the function will make 15 recursive calls. However, if you call Fibonacci(10), it will make 1,023 recursive calls.
 
@@ -85,11 +85,11 @@ Algorithm: Sorting an array using different algorithms
    - Time Complexity:
      - In the worst case, the algorithm requires iterating over the array multiple times, comparing and swapping adjacent elements until the array is sorted.
      - As the input size (n) increases, the number of iterations increases quadratically.
-     - Therefore, the time complexity is O(n^2), where n is the size of the array.
+     - Therefore, the **time complexity is O(n^2)**, where n is the size of the array.
 
    - Space Complexity:
      - The algorithm uses a constant amount of additional space to store variables for the sorting process.
-     - Regardless of the input size, the space complexity remains O(1), indicating constant space usage.
+     - Regardless of the input size, **the space complexity remains O(1)**, indicating constant space usage.
 
 2. Merge Sort Implementation:
    ```java
@@ -146,11 +146,11 @@ Algorithm: Sorting an array using different algorithms
    - Time Complexity:
      - The recursive calls have a logarithmic time complexity of O(log n), where n is the size of the array.
      - The merging process takes linear time O(n) in each recursive call.
-     - Therefore, the overall time complexity is O(n log n).
+     - Therefore, the **overall time complexity is O(n log n)**.
 
    - Space Complexity:
      - The algorithm uses additional space to create temporary arrays during the merge process.
-     - In each recursive call, the space complexity is O(n), where n is the size of the array.
+     - In each recursive call, **the space complexity is O(n)**, where n is the size of the array.
 
 3. Quick Sort Implementation:
    ```java
@@ -182,11 +182,11 @@ Algorithm: Sorting an array using different algorithms
 
    - Time Complexity:
      - The algorithm selects a pivot element, partitions the array, and recursively sorts the two resulting subarrays.
-     - In the worst case, where the pivot always selects the smallest or largest element, the time complexity becomes O(n^2).
+     - In the worst case, where the pivot always selects the smallest or largest element, **the time complexity becomes O(n^2)**.
 
    - Space Complexity:
      - The algorithm uses a small amount of additional space for the recursive function calls.
-     - In the worst case, the recursion depth can reach O(n).
+     - In the worst case, **the recursion depth can reach O(n)**.
 
 
 ## Project
