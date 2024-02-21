@@ -38,9 +38,9 @@ We can measure the time and space complexity for each algorithm regardless of th
 
 By utilizing Big O notation, we can **compare the efficiency** of different algorithms and make informed decisions about algorithm optimization.
 
-Big O notation **is represented as O(f(n))**, where `'f(n)'` represents **the growth rate** of the algorithm and `'n'` represents the **input size**. The `'O'` **symbolizes the upper bound** of the growth rate.
+Big O notation **is represented as** `O(f(n))`, where `f(n)` represents **the growth rate** of the algorithm and `n` represents the **input size**. The `O` **symbolizes the upper bound** of the growth rate.
 
-It's important to understand that **Big O notation gives an upper bound on the growth rate** of an algorithm. It f**ocuses on the worst-case** scenario, assuming that the algorithm takes the **maximum time or space for any input**.
+It's important to understand that **Big O notation gives an upper bound on the growth rate** of an algorithm. It **focuses on the worst-case** scenario, assuming that the algorithm takes the **maximum time or space for any input**.
 
 The key time and space complexities:
 
