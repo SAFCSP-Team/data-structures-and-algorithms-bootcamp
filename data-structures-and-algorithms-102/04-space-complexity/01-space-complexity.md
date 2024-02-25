@@ -48,7 +48,7 @@ Variables and data structures take up space: when you declare variables or use d
 
 Function calls take up space: whenever you call a function, the program needs to allocate memory for the function call stack, which includes function arguments, local variables, return addresses, and other bookkeeping information. Each function call adds to the space complexity, and if you have nested function calls or recursive functions, it can lead to a significant increase in space usage.
 
-### Space complexity can be expressed in different ways:
+### Examples of different space complexity:
 
 
 1. Constant Space `O(1)`: algorithms that use a fixed number of variables or a fixed-size array have constant space complexity.
@@ -93,20 +93,6 @@ public void printPairs(int[] numbers) {
 }
 ```
 The `printPairs` method prints all possible pairs of numbers from the input array. It uses nested loops to iterate over each element of the array twice. As a result, the memory usage grows quadratically with the input size n. For every element in the array, the method requires space to store the pair of numbers being printed.
-
-
-4. Exponential Space `O(2^n)`: if the amount of memory used grows exponentially with the input size. These algorithms typically involve recursive algorithms with branching paths that create a large number of intermediate solutions.
-
-
-```java
-
-public int fibonacci(int n) {
-    if (n <= 1) {
-        return n;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
-```
 
 ## Example
 
