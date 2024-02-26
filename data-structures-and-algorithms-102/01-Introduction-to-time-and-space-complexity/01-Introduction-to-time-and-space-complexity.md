@@ -190,3 +190,6 @@ Algorithm: Sorting an array using different algorithms
 
 
 ## Project
+Project ID | Project Title | Deadline |
+|:-----|:-----------:|:-------------|
+|DSA102| [Big O Notation](https://github.com/SAFCSP-Team/big-o-project) | - | 
