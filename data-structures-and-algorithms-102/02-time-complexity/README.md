@@ -181,10 +181,13 @@ If the low index is not equal to the high index, the method calculates the midpo
 By implementing this enhancement, we reduce the time complexity from O(n) to O(log n) and achieve a more efficient algorithm for finding the maximum element in an array.
 
 
+<br/>
 
+## Projects
 
-
-
+Project Title | Deadline |
+|:-----------:|:-|
+|[Time calculation project](https://github.com/SAFCSP-Team/time-calculation-project) || 
 
 
 
