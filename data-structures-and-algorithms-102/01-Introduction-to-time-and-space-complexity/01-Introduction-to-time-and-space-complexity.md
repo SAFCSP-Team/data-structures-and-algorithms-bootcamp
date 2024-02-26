@@ -51,7 +51,7 @@ The key time and space complexities:
 
 3. **O(n)** `Linear time`: **The running time grows linearly with the input size**. If the input size doubles, the running time will also roughly double. Examples include iterating through an array or performing a linear search.
 
-4. **O(N log N)** `Linearithmic Time`: **The running time grows in proportion to the number of elements multiplied by the logarithm of the number of elements**. This complexity often arises in efficient sorting algorithms like merge sort or quicksort.
+4. **O(N log N)** `Linearithmic time`: **The running time grows in proportion to the number of elements multiplied by the logarithm of the number of elements**. This complexity often arises in efficient sorting algorithms like merge sort or quicksort.
 
 
 5. **O(n^2)** `Quadratic time`: **The running time grows quadratically with the input size**. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
