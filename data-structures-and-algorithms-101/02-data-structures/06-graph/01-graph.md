@@ -3,11 +3,9 @@ Graph is a data structure and mathematical concept that is used to represent rel
 
 In some cases, it's hard to define the relationship between objects, especially if the relationship is complex.
 
-Let's see one of the use cases of the graph.
-
 If we have a relationship between three objects, for example (Khaled, Fahad, and Majed).
 
-Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know neither Khaled nor Fahad. How can we store these objects with their relationship? 
+Khaled knows Fahad. And Fahad knows Khaled and Majed, but Majed doesn't know either Khaled or Fahad. How can we store these objects with their relationship? 
 
 Well, we can use **Graph** to store this relationship. Graph is a data structure that stores objects and their relationships with other objects.
 
