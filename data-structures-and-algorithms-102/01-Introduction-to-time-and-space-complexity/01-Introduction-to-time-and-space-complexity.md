@@ -10,9 +10,9 @@ It's the **algorithm's efficiency**, and when we say efficiency, we mean **time 
 
 ## Contact 
 <!--- What is time and space complexity --->
-`Time complexity` it's the **time** that an algorithm takes to complete a task. 
+**Time complexity** is the **time** that an algorithm takes to complete a task. 
 
-`Space complexity` it's the **space in memory** that an algorithm takes to complete a task.
+**Space complexity** is the **space in memory** that an algorithm takes to complete a task.
 
 
 So, `time complexity` and `space complexity` are the **two main factors that affect the performance** of our algorithm, and **choosing the best algorithm for a given problem is based on it**.
