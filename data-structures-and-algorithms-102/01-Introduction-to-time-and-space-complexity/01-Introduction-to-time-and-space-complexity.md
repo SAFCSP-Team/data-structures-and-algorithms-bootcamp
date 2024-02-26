@@ -15,16 +15,16 @@ It's the **algorithm's efficiency**, and when we say efficiency, we mean **time 
 **Space complexity** is the **space in memory** that an algorithm takes to complete a task.
 
 
-So, `time complexity` and `space complexity` are the **two main factors that affect the performance** of our algorithm, and **choosing the best algorithm for a given problem is based on it**.
+So, **time complexity** and **space complexity** are the **two main factors that affect the performance** of our algorithm, and **choosing the best algorithm for a given problem is based on it**.
 
 <!--- What is the purpose of time and space complexity --->
 
 Each computer runs the algorithm faster than the other, that's because they have different hardware capabilities, and that's why we need to have a way to measure the time and space complexity regardless of the hardware capabilities. 
 
 
-<!--- Note CPU, Memory --->
-> * Time complexity depends on the CPU speed and the number of instructions that the CPU can execute in a given time.
-> * Space complexity depends on the memory size and the number of variables that the algorithm uses.
+<!--- Note CPU and Memory --->
+> * **Time complexity** depends on the **CPU speed** and the number of instructions that the CPU can execute in a given time.
+> * **Space complexity** depends on the **memory size** and the number of variables that the algorithm uses.
 
 
 <!--- Link the big O --->
