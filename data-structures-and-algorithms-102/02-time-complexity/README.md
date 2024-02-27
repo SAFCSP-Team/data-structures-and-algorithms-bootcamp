@@ -1,4 +1,4 @@
-# Time calculation
+# Time complexity
 
 We will learn how to **calculate** the time complexity of a piece of code using big O notation.
 
