@@ -48,7 +48,7 @@ public int sum(int[] array) {
 * The `sum` method has a space complexity of O(1).
 
   
-> This code uses the Arrays.stream method to create a stream of the elements in the input array and then calculates the sum of the elements using the sum method. So is easier 
+> we use the Arrays.stream method to create a stream of the elements in the input array and then calculate the sum of the elements using the sum method. So is easier 
   to read, but it requires the use of the Java Streams API.
 
 The space complexity of the `sum` function is `O(1)`.
