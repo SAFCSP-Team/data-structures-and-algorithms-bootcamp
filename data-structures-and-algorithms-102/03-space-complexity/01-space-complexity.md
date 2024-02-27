@@ -4,7 +4,7 @@
 
 ## Concept
 
-`Space complexity` refers to the amount of memory or storage space required by an algorithm to solve a problem. It is a measure of the extra space used by the algorithm, beyond the input data, to perform its computations.
+`Space complexity` refers to the amount of memory or storage space required by an algorithm to solve a problem. It is a measure of the space used by the algorithm, to perform its computations.
 
 ## Calculation
  let’s understand how to calculate the space complexity of an algorithm.
@@ -22,12 +22,12 @@ let’s determine the space complexity of a program that sums all integer elemen
 
 ```java
 
-public int sumArray(int[] array) {
+public int sum(int[] array) {
     int size = array.length;
     int sum = 0;
 
-    for (int iterator = 0; iterator < size; iterator++) {
-        sum += array[iterator];
+    for (int i = 0; i < size; i++) {
+        sum += array[i];
     }
 
     return sum;
@@ -35,21 +35,41 @@ public int sumArray(int[] array) {
 
 ```
 
-* array – the function’s only argument – the space taken by the array is equal 4n bytes where n is the length of the array
+* array – the space taken by the array is equal to 4*n (4n) bytes where n is the length of the array
 * size – a 4-byte integer
 * sum – a 4-byte integer
-* iterator – a 4-byte integer
+* i – a 4-byte integer
   
-The total space needed for this algorithm to complete is `4n + 4 + 4 + 4 (bytes)`, so the space complexity of that operation is `O(n)`.
+The total space for this algorithm to complete is `4n + 4 + 4 + 4 (16n bytes)`, so we discard the constant and the space complexity of that operation is `O(n)`.
+
+So how we can enhance the space complexity:
+
+```java
+public int sum(int[] array) {
+    if (array == null || array.length == 0) {
+        return 0;
+    }
+    return Arrays.stream(array).sum();
+}
+```
+* The `if` statement has a space complexity of O(1).
+* The `Arrays.stream` method has a space complexity of O(1).
+* The `sum` method has a space complexity of O(1).
+
+  
+> This code uses the Arrays.stream method to create a stream of the elements in the input array and then calculates the sum of the elements using the sum method. So is easier 
+  to read, but it requires the use of the Java Streams API.
+
+The space complexity of the `sum` function is `O(1)`.
+
 
 ### Rules for Calculating Space Complexity
 
-Variables and data structures take up space: when you declare variables or use data structures (arrays, objects, etc.) in your code, they occupy memory space based on their size and data type. The space complexity increases with the number and size of variables and data structures used in your program.
+**Variables and data structures take up space:** When you declare variables or use data structures (arrays, objects, etc.) in your code, they occupy memory space based on their size and data type. The space complexity increases with the number and size of variables and data structures used in your program.
 
-Function calls take up space: whenever you call a function, the program needs to allocate memory for the function call stack, which includes function arguments, local variables, return addresses, and other bookkeeping information. Each function call adds to the space complexity, and if you have nested function calls or recursive functions, it can lead to a significant increase in space usage.
+**Function calls take up space:** When you call a function, the program needs to allocate memory for the function call stack, which includes function arguments, local variables, return addresses, and other bookkeeping information. Each function call adds to the space complexity, and if you have nested function calls or recursive functions, it can lead to a significant increase in space usage.
 
 ### Examples of different space complexity:
-
 
 1. Constant Space `O(1)`: algorithms that use a fixed number of variables or a fixed-size array have constant space complexity.
 
@@ -62,9 +82,11 @@ public void printNumbers(int[] numbers) {
     }
 }
 ```
+* `int[] numbers` - This is an array of integers, the size of an integer (int) is 4 bytes and the size of the array is determined by the length of the array, which is stored as an integer value. 
+* `i` - This is an integer variable used as the loop counter. The size of an integer (int) in Java is typically 4 bytes.
+* `i++` - loop counter so the size is 4 bytes.
 
- The `printNumbers` method takes an array of integers as input and prints each element. The space complexity is constant because the memory usage remains fixed, regardless of the size of the input array. The 
- method only requires space for the input array itself and a few variables for iteration.
+The space complexity of the `printNumbers` function is O(1), 
 
 
 2. Linear Space `O(n)`: if the amount of memory used is directly proportional to the input size (n).
@@ -81,18 +103,35 @@ public int[] createArray(int n) {
 ```
 The `createArray` method creates an array of size n and assigns consecutive numbers to its elements. The space complexity is linear because the memory usage grows proportionally with the input size n. The method requires space to store the array of size n, as well as a few variables for iteration.
 
+* `int n` - This is an integer value representing the size of the array to be created so n takes 4 bytes.
+* `arr` - This is an array of integers with a length of n. The space complexity of an array is proportional to its length, which is n in this case.
+* `i` - This is an integer variable used as the loop counter so takes 4 bytes.
+* `arr[i] = i` statement - This statement assigns the value of i to the i-th element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in 
+   the array and the loop counter so takes 4 bytes 
+
+ the space complexity of the `createArray` function is O(n)
+
+
 3. Quadratic Space `O(n^2)`: if the amount of memory used is proportional to the square of the input size. These algorithms often involve nested loops or matrices where the dimensions are determined by the input size.
 
 ```java
-public void printPairs(int[] numbers) {
-    for (int i = 0; i < numbers.length; i++) {
-        for (int j = 0; j < numbers.length; j++) {
-            System.out.println(numbers[i] + ", " + numbers[j]);
+public int[][] create2DArray(int n) {
+    int[][] arr = new int[n][n];
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            arr[i][j] = i * n + j;
         }
     }
+    return arr;
 }
 ```
-The `printPairs` method prints all possible pairs of numbers from the input array. It uses nested loops to iterate over each element of the array twice. As a result, the memory usage grows quadratically with the input size n. For every element in the array, the method requires space to store the pair of numbers being printed.
+ * `int n` - This is an integer value representing the size of the 2D array to be created so takes 4 bytes.
+ * `arr` - This is a 2D array of integers with a size of n x n. The space complexity of a 2D array is proportional to its size, which is n^2 in this case.
+ * `i and j` - These are integer variables used as loop counters so each of them takes 4 bytes.
+ * `arr[i][j]` - This sssigns the value of i * n + j to the (i, j) element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in the array 
+   and the loop counters.
+   
+ The space complexity of the create2DArray function is O(n^2), 
 
 ## Example
 
@@ -100,14 +139,16 @@ Here's a comparison of Bubble Sort and Insertion Sort in terms of their space co
 
 1. Bubble Sort.
 
+> The input parameter arr has a space complexity of O(n), but it is not included in the calculation for the function but this array is passed as a parameter to the function, so it is not included in the 
+ space complexity calculation of the function. 
  ```java
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
+        int n = arr.length; // The variable 'n' has a space complexity of O(1)
+        for (int i = 0; i < n - 1; i++) { // The loop counter 'i' has a space complexity of O(1)
+            for (int j = 0; j < n - i - 1; j++) { // The loop counter 'j' has a space complexity of O(1)
                 if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
+                    int temp = arr[j]; // The variable 'temp' has a space complexity of O(1)
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
@@ -116,8 +157,6 @@ public class BubbleSort {
     }
 }
 ```
-
-The implementation maintains an input array arr and uses a few variables for comparisons and swaps. The sorting is done directly on the input array without requiring additional memory.
 
 The output
 
@@ -131,10 +170,11 @@ space complexity is constant (O(1))
 ``` java
 public class InsertionSort {
     public static void insertionSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 1; i < n; i++) {
-            int key = arr[i];
-            int j = i - 1;
+        // The input parameter 'arr' has a space complexity of O(n), but it is not included in the calculation for the function
+        int n = arr.length; // The variable 'n' has a space complexity of O(1)
+        for (int i = 1; i < n; i++) { // The loop counter 'i' has a space complexity of O(1)
+            int key = arr[i]; // The variable 'key' has a space complexity of O(1)
+            int j = i - 1; // The loop counter 'j' has a space complexity of O(1)
             while (j >= 0 && arr[j] > key) {
                 arr[j + 1] = arr[j];
                 j--;
