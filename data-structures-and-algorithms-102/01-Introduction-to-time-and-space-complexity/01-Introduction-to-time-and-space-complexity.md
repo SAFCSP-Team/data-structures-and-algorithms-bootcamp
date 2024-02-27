@@ -59,6 +59,10 @@ The key time and space complexities:
 
 6. **O(2^n)** `Exponential time`: **The running time grows exponentially with the input size**. This represents algorithms with very slow performance as the input size increases. for example, the `Fibonacci` function makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
 
+
+
+<img src="img.png" alt="Big O Notation" width="400"/>
+
 - For instance, if you call Fibonacci(5), the function will make 15 recursive calls. However, if you call Fibonacci(10), it will make 1,023 recursive calls.
 
 >  `Fibonacci`  function calculates the n-th number in the Fibonacci sequence recursively. The Fibonacci sequence is defined as follows: each number is the sum of the two preceding ones, starting from 0 and 1.
