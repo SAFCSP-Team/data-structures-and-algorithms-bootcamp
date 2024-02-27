@@ -87,6 +87,7 @@ for (i = 1; i <= n; i++){       // 1 assignment, (1 comparison + 1 increment) do
 }
 ```
 
+
 - Time calculation  
 -> T(1 + 2n + n + 2n^2 + 2n^2)   
 -> T(1 + 3n + 4n^2)   
@@ -95,12 +96,25 @@ for (i = 1; i <= n; i++){       // 1 assignment, (1 comparison + 1 increment) do
 -> **O(n^2)**
 <br/>
    
-3. Variables are combined only if they refer to the same input
+3. Variables are combined only if they refer to the same input   
    
-- T(3n + 2n + 2m + 7m)   
--> Variables are combined only if they refer to the same input (3n, 2n), (2m, 7m)       
--> T(5n + 9m)   
--> Ignore constant (5, 9)   
+```java
+int a = 0;
+int b = 0;
+
+for (i = 1; i <= n; i++){       // 1 assignment, (1 comparison + 1 increment) done n times                          //{( 1+(1+1)*n )}
+        a = a + 1;              // (1 assignment + 1 addition(+))  done n times                                     //{( {( 2n )} 
+}
+
+for (i = 1; i <= m; i++){       // 1 assignment, (1 comparison + 1 increment) done m times                          //{( 1+(1+1)*m )}
+        b = b + 1;              // (1 assignment + 1 addition(+))  done m times                                     //{( {( 2m )} 
+}
+```
+   
+- T(1 + 2n + 2n + 1 + 2m + 2m)   
+-> Variables are combined only if they refer to the same input (2n, 2n), (2m, 2m)       
+-> T(2 + 4n + 4m)   
+-> Ignore constant (2, 4, 4)   
 -> T(n + m)    
 -> **O(n + m)**
 <br/>
