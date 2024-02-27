@@ -23,24 +23,15 @@ let’s determine the space complexity of a program that sums all integer elemen
 ```java
 
 public int sum(int[] array) {
-    int size = array.length;
     int sum = 0;
-
-    for (int i = 0; i < size; i++) {
-        sum += array[i];
-    }
-
+    int[] temp = new int[array.length];
+    System.arraycopy(array, 0, temp, 0, array.length);
+    array = temp;
     return sum;
 }
 
 ```
-
-* array – the space taken by the array is equal to 4*n (4n) bytes where n is the length of the array
-* size – a 4-byte integer
-* sum – a 4-byte integer
-* i – a 4-byte integer
   
-The total space for this algorithm to complete is `4n + 4 + 4 + 4 (16n bytes)`, so we discard the constant and the space complexity of that operation is `O(n)`.
 
 So how we can enhance the space complexity:
 
