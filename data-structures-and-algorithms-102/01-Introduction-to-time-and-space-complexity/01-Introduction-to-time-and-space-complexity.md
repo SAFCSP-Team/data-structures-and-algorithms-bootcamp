@@ -8,7 +8,7 @@ So, we have more than an algorithm that solves a problem, we need to know how to
 It's the **algorithm's efficiency**, and when we say efficiency, we mean **time complexity and space complexity.**
 
 
-## Contact 
+## Concept 
 <!--- What is time and space complexity --->
 **Time complexity** is the **time** that an algorithm takes to complete a task. 
 
