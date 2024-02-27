@@ -83,7 +83,6 @@ The space complexity of the `printNumbers` function is O(1),
 2. Linear Space `O(n)`: if the amount of memory used is directly proportional to the input size (n).
 
 ```java
-
 public int[] createArray(int n) {
     int[] arr = new int[n];
     for (int i = 0; i < n; i++) {
@@ -92,7 +91,6 @@ public int[] createArray(int n) {
     return arr;
 }
 ```
-The `createArray` method creates an array of size n and assigns consecutive numbers to its elements. The space complexity is linear because the memory usage grows proportionally with the input size n. The method requires space to store the array of size n, as well as a few variables for iteration.
 
 * `int n` - This is an integer value representing the size of the array to be created so n takes 4 bytes.
 * `arr` - This is an array of integers with a length of n. The space complexity of an array is proportional to its length, which is n in this case.
@@ -100,7 +98,7 @@ The `createArray` method creates an array of size n and assigns consecutive 
 * `arr[i] = i` statement - This statement assigns the value of i to the i-th element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in 
    the array and the loop counter so takes 4 bytes 
 
- the space complexity of the `createArray` function is O(n)
+ The space complexity of the `createArray` function is O(n)
 
 
 3. Quadratic Space `O(n^2)`: if the amount of memory used is proportional to the square of the input size. These algorithms often involve nested loops or matrices where the dimensions are determined by the input size.
@@ -122,7 +120,7 @@ public int[][] create2DArray(int n) {
  * `arr[i][j]` - This sssigns the value of i * n + j to the (i, j) element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in the array 
    and the loop counters.
    
- The space complexity of the create2DArray function is O(n^2), 
+ The space complexity of the `create2DArray` function is O(n^2), 
 
 ## Example
 
