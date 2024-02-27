@@ -201,7 +201,7 @@ By implementing this enhancement, we reduce the time complexity from O(n) to O(l
 
 Project Title | Deadline |
 |:-----------:|:-|
-|[Time calculation project](https://github.com/SAFCSP-Team/time-complexity-project) || 
+|[Time complexity project](https://github.com/SAFCSP-Team/time-complexity-project) || 
 
 
 
