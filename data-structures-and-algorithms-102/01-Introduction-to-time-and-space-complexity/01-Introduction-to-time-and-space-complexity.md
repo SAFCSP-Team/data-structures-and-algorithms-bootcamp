@@ -61,7 +61,10 @@ The key time and space complexities:
 
 
 
-<img src="img.png" alt="Big O Notation" width="400"/>
+
+<img style="text-align: center;" src="img.png" alt="Big O Notation" width="600"/>
+
+
 
 - For instance, if you call Fibonacci(5), the function will make 15 recursive calls. However, if you call Fibonacci(10), it will make 1,023 recursive calls.
 
