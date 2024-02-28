@@ -123,7 +123,7 @@ for (i = 1; i <= m; i++){       // 1 assignment, (1 comparison + 1 increment) do
 Consider the below pseudocode      
 ```java  
 if (condition){
-for (i = 1; i <= n; i++){       // 1 assignment, (1 comparison + 1 increment) done n times    {( 1+(1+1)*n )} -> O(n)
+for (i = 1, i <= n, i++){       // 1 assignment, (1 comparison + 1 increment) done n times    {( 1+(1+1)*n )} -> O(n)
 }
 } else {
 x = 8;                          // 1 assignment                                                   {(1)}       -> O(1)
