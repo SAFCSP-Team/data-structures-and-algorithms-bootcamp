@@ -20,18 +20,8 @@ So we can say that space complexity is the combination or sum up of the auxiliar
 
 let’s determine the space complexity of a program that sums all integer elements in an array:
 
-```java
+![sc3](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/128614ea-474e-4f5b-96d9-3c5dc7cd5ae6)
 
-public int sum(int[] array) {
-    int sum = 0;
-    int[] temp = new int[array.length];
-    System.arraycopy(array, 0, temp, 0, array.length);
-    array = temp;
-    return sum;
-}
-
-```
-  
 
 So how we can enhance the space complexity:
 
@@ -48,7 +38,7 @@ public int sum(int[] array) {
 * The `sum` method has a space complexity of O(1).
 
   
-> This code uses the Arrays.stream method to create a stream of the elements in the input array and then calculates the sum of the elements using the sum method. So is easier 
+> we use the Arrays.stream method to create a stream of the elements in the input array and then calculate the sum of the elements using the sum method. So is easier 
   to read, but it requires the use of the Java Streams API.
 
 The space complexity of the `sum` function is `O(1)`.
@@ -83,7 +73,6 @@ The space complexity of the `printNumbers` function is O(1),
 2. Linear Space `O(n)`: if the amount of memory used is directly proportional to the input size (n).
 
 ```java
-
 public int[] createArray(int n) {
     int[] arr = new int[n];
     for (int i = 0; i < n; i++) {
@@ -92,7 +81,6 @@ public int[] createArray(int n) {
     return arr;
 }
 ```
-The `createArray` method creates an array of size n and assigns consecutive numbers to its elements. The space complexity is linear because the memory usage grows proportionally with the input size n. The method requires space to store the array of size n, as well as a few variables for iteration.
 
 * `int n` - This is an integer value representing the size of the array to be created so n takes 4 bytes.
 * `arr` - This is an array of integers with a length of n. The space complexity of an array is proportional to its length, which is n in this case.
@@ -100,7 +88,7 @@ The `createArray` method creates an array of size n and assigns consecutive 
 * `arr[i] = i` statement - This statement assigns the value of i to the i-th element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in 
    the array and the loop counter so takes 4 bytes 
 
- the space complexity of the `createArray` function is O(n)
+ The space complexity of the `createArray` function is O(n)
 
 
 3. Quadratic Space `O(n^2)`: if the amount of memory used is proportional to the square of the input size. These algorithms often involve nested loops or matrices where the dimensions are determined by the input size.
@@ -122,7 +110,7 @@ public int[][] create2DArray(int n) {
  * `arr[i][j]` - This sssigns the value of i * n + j to the (i, j) element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in the array 
    and the loop counters.
    
- The space complexity of the create2DArray function is O(n^2), 
+ The space complexity of the `create2DArray` function is O(n^2), 
 
 ## Example
 
@@ -130,8 +118,6 @@ Here's a comparison of Bubble Sort and Insertion Sort in terms of their space co
 
 1. Bubble Sort.
 
-> The input parameter arr has a space complexity of O(n), but it is not included in the calculation for the function but this array is passed as a parameter to the function, so it is not included in the 
- space complexity calculation of the function. 
  ```java
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
@@ -190,7 +176,7 @@ space complexity (O(1))
 
 ## Projects
 | Project Title | Deadline |
-|:-----------:|:-------------|
-|Space complexity project|[Space complexity](https://github.com/SAFCSP-Team/space-compexity/tree/main)| 
+|:-----------:|:-|
+|[Space complexity project](https://github.com/SAFCSP-Team/space-compexity/tree/main)| |
 
 
