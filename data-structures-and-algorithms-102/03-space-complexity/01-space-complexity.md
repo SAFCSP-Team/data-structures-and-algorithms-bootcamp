@@ -128,8 +128,6 @@ Here's a comparison of Bubble Sort and Insertion Sort in terms of their space co
 
 1. Bubble Sort.
 
-> The input parameter arr has a space complexity of O(n), but it is not included in the calculation for the function but this array is passed as a parameter to the function, so it is not included in the 
- space complexity calculation of the function. 
  ```java
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
@@ -188,7 +186,7 @@ space complexity (O(1))
 
 ## Projects
 | Project Title | Deadline |
-|:-----------:|:-------------|
-|Space complexity project|[Space complexity](https://github.com/SAFCSP-Team/space-compexity/tree/main)| 
+|:-----------:|:-|
+|[Space complexity project](https://github.com/SAFCSP-Team/space-compexity/tree/main)| |
 
 
