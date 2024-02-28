@@ -109,7 +109,8 @@ for (i = 1; i <= m; i++){       // 1 assignment, (1 comparison + 1 increment) do
 }
 ```
    
-- T(1 + 2n + 2n + 1 + 2m + 2m)   
+- Time calculation  
+-> T(1 + 2n + 2n + 1 + 2m + 2m)   
 -> Variables are combined only if they refer to the same input (2n, 2n), (2m, 2m)       
 -> T(2 + 4n + 4m)   
 -> Ignore constant (2, 4, 4)   
