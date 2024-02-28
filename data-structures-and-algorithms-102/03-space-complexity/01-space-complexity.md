@@ -20,18 +20,8 @@ So we can say that space complexity is the combination or sum up of the auxiliar
 
 let’s determine the space complexity of a program that sums all integer elements in an array:
 
-```java
+![sc3](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/128614ea-474e-4f5b-96d9-3c5dc7cd5ae6)
 
-public int sum(int[] array) {
-    int sum = 0;
-    int[] temp = new int[array.length];
-    System.arraycopy(array, 0, temp, 0, array.length);
-    array = temp;
-    return sum;
-}
-
-```
-  
 
 So how we can enhance the space complexity:
 
