@@ -68,7 +68,7 @@ The key time and space complexities:
 
 The image below describes the growth rates of different complexities in Big O notation:
 
-<img src="images/bigo.png" alt="Big O Notation" width="900"/>
+<img src="images/big-o.png" alt="Big O Notation" width="900"/>
 
 ## Example
 Algorithm: Sorting an array using different algorithms
