@@ -9,8 +9,7 @@ Time complexity in Big O notation measures how an algorithm’s running time inc
 Each line of your code takes a certain time to run, and we can calculate the time for each statement by defining the type of the statement first.   
 <br/>
 1. Assignment, operations (+,-,*,etc...)   
-It takes (1) time complexity   
-     
+        
 ```java
 int x = 1;  // 1
 x = 1 + 2;  // 1 assignment + 1 addition(+)
@@ -20,8 +19,7 @@ The time complexity for the above code is **O(1)**
 <br/>
    
 2. Comparison   
-It takes (1) time complexity
-   
+      
 ```java
 if (condition){}  // 1 comparison
 ```
@@ -29,7 +27,7 @@ The time complexity for the above code is **O(1)**
 <br/>
     
 3. Return   
-It takes (1) time complexity  
+   
 ```java   
 return result;    // 1 
 ```
