@@ -65,7 +65,7 @@ It's important to understand that **Big O notation gives an upper bound on the g
 
 >  `Fibonacci`  function calculates the n-th number in the Fibonacci sequence recursively. The Fibonacci sequence is defined as follows: each number is the sum of the two preceding ones, starting from 0 and 1.
 
-> The Big O notation is applicable to both time and space complexities.
+> The Big O notation **applies to both time and space complexities.**
 
 The image below describes the growth rates of different complexities in Big O notation:
 
