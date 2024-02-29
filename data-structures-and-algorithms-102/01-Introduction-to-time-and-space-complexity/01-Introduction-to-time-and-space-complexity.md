@@ -42,7 +42,8 @@ Big O notation **is represented as** `O(f(n))`, where `f(n)` represents **the gr
 
 It's important to understand that **Big O notation gives an upper bound on the growth rate** of an algorithm. It **focuses on the worst-case** scenario, assuming that the algorithm takes the **maximum time or space for any input**.
 
-The key time and space complexities:
+**The key time and space complexities:**
+
 
 1. **O(1)** `Constant time`: The algorithm's **running time remains constant**, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
 
