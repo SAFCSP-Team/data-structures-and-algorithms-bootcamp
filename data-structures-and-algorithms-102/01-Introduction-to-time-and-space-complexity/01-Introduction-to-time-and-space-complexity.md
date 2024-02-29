@@ -48,7 +48,7 @@ It's important to understand that **Big O notation gives an upper bound on the g
 1. **O(1)** `Constant time`: The algorithm's **running time remains constant**, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
 
 
-2. **O(log n)** `Logarithmic time`: **The running time grows logarithmically with the input size**. As the input size increases, the running time increases, but at a progressively slower rate. An example is Binary search on a sorted array Recursive calls split the problem in half, reducing the time required decreases.
+2. **O(log n)** `Logarithmic time`: **The running time grows logarithmically with the input size**. As the input size increases, the running time increases, but at a progressively slower rate. An example is Binary search on a sorted array recursive calls split the problem in half, reducing the time required decreases.
 
 3. **O(n)** `Linear time`: **The running time grows linearly with the input size**. If the input size doubles, the running time will also roughly double. Examples include iterating through an array or performing a linear search.
 
