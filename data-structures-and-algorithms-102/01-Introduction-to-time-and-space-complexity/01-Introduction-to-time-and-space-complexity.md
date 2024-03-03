@@ -42,30 +42,28 @@ Big O notation **is represented as** `O(f(n))`, where `f(n)` represents **the gr
 
 It's important to understand that **Big O notation gives an upper bound on the growth rate** of an algorithm. It **focuses on the worst-case** scenario, assuming that the algorithm takes the **maximum time or space for any input**.
 
-**The key time and space complexities:**
+The Big O notation **applies to both time and space complexities.**
+
+### The Big O notation complexities
 
 
-1. **O(1)** `Constant time`: The algorithm's **running time remains constant**, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
+1. **O(1)** `Constant`: The algorithm's **growth rate remains constant**, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
+
+2. **O(log n)** `Logarithmic`: **The growth rate increases logarithmically with the input size**. An example of **time complexity** is the Binary search on a sorted array of recursive calls that split the problem in half, reducing the time required decreases.
+
+3. **O(n)** `Linear`: **The growth rate increases linearly with the input size**. If the input size doubles, the growth rate will also roughly double. Examples include iterating through an array or performing a linear search.
+
+4. **O(n log n)** `Linearithmic`: **The growth rate increases in proportion to the number of elements multiplied by the logarithm of the number of elements**. For example the time complexity of merge sort or quicksort algorithms.
 
 
-2. **O(log n)** `Logarithmic time`: **The running time grows logarithmically with the input size**. As the input size increases, the running time increases, but at a progressively slower rate. An example is Binary search on a sorted array recursive calls split the problem in half, reducing the time required decreases.
-
-3. **O(n)** `Linear time`: **The running time grows linearly with the input size**. If the input size doubles, the running time will also roughly double. Examples include iterating through an array or performing a linear search.
-
-4. **O(n log n)** `Linearithmic time`: **The running time grows in proportion to the number of elements multiplied by the logarithm of the number of elements**. This complexity often arises in efficient sorting algorithms like merge sort or quicksort.
+5. **O(n^2)** `Quadratic`: **The growth rate increases quadratically with the input size**. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
 
 
-5. **O(n^2)** `Quadratic time`: **The running time grows quadratically with the input size**. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
+6. **O(2^n)** `Exponential`: **The growth rate increases exponentially with the input size**. This represents algorithms with very slow performance as the input size increases. For example, the time complexity of the `Fibonacci` function makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
 
-
-6. **O(2^n)** `Exponential time`: **The running time grows exponentially with the input size**. This represents algorithms with very slow performance as the input size increases. for example, the `Fibonacci` function makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
-
-- The function makes redundant calculations, leading to an exponential time complexity.
 - For instance, if you call Fibonacci(5), the function will make 15 recursive calls. However, if you call Fibonacci(10), it will make 1,023 recursive calls.
 
 >  `Fibonacci`  function calculates the n-th number in the Fibonacci sequence recursively. The Fibonacci sequence is defined as follows: each number is the sum of the two preceding ones, starting from 0 and 1.
-
-> The Big O notation **applies to both time and space complexities.**
 
 The image below describes the growth rates of different complexities in Big O notation:
 
