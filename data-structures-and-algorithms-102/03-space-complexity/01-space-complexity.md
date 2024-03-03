@@ -4,21 +4,21 @@
 
 ## Concept
 
-`Space complexity` refers to the amount of memory or storage space required by an algorithm to solve a problem. It is a measure of the space used by the algorithm, to perform its computations.
+The `space complexity` of an algorithm refers to the amount of memory or storage space required by the algorithm to perform its computations, it includes the space used by auxiliary data structures as well as the space needed to store input values during the algorithm's execution.
 
 ## Calculation
- let’s understand how to calculate the space complexity of an algorithm.
- 
+
+To calculate the space complexity of an algorithm, we consider the auxiliary space used by the algorithm, which refers to any extra or temporary space it requires. Additionally, we factor in the space used by the input values.
+ 
 ```
 Space Complexity = Auxiliary Space + Space used for input values
 ```
 
- The auxiliary space is nothing but the space required by an algorithm during the execution of that algorithm and it's not equal to the space complexity because space complexity includes space for input values 
- along with it also.
+So we can say that `space complexity `is the combination or sum up of the auxiliary space and the space used by input values.
 
-So we can say that space complexity is the combination or sum up of the auxiliary space and the space used by input values.
 
 let’s determine the space complexity of a program that sums all integer elements in an array:
+> when you declare variables they occupy memory space based on their size and data type.
 
 ![sc3](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/128614ea-474e-4f5b-96d9-3c5dc7cd5ae6)
 
@@ -44,72 +44,57 @@ public int sum(int[] array) {
 The space complexity of the `sum` function is `O(1)`.
 
 
-### Rules for Calculating Space Complexity
-
-**Variables and data structures take up space:** When you declare variables or use data structures (arrays, objects, etc.) in your code, they occupy memory space based on their size and data type. The space complexity increases with the number and size of variables and data structures used in your program.
-
-**Function calls take up space:** When you call a function, the program needs to allocate memory for the function call stack, which includes function arguments, local variables, return addresses, and other bookkeeping information. Each function call adds to the space complexity, and if you have nested function calls or recursive functions, it can lead to a significant increase in space usage.
-
 ### Examples of different space complexity:
 
-1. Constant Space `O(1)`: algorithms that use a fixed number of variables or a fixed-size array have constant space complexity.
-
-
+1. Constant Space `O(1)`
+   
 ```java
-
-public void printNumbers(int[] numbers) {
-    for (int i = 0; i < numbers.length; i++) {
-        System.out.println(numbers[i]);
-    }
-}
+ public static int calculateSum(int x, int y) {    // 4 bytes for each variable
+        int a = x + y;      // 4 bytes
+        return a;   // 4 bytes
+    } // 4 + 4 + 4 = 16 bytes
 ```
-* `int[] numbers` - This is an array of integers, the size of an integer (int) is 4 bytes and the size of the array is determined by the length of the array, which is stored as an integer value. 
-* `i` - This is an integer variable used as the loop counter. The size of an integer (int) in Java is typically 4 bytes.
-* `i++` - loop counter so the size is 4 bytes.
+* `a` , `x` and `y` : is constant so each of them have a O(1) space complexity.
 
-The space complexity of the `printNumbers` function is O(1), 
+The space complexity of the `calculateSum` function is O(1).
 
 
-2. Linear Space `O(n)`: if the amount of memory used is directly proportional to the input size (n).
+2. Linear Space `O(n)`
 
 ```java
-public int[] createArray(int n) {
-    int[] arr = new int[n];
-    for (int i = 0; i < n; i++) {
+public int[] createArray(int n) {   // 4 bytes
+    int[] arr = new int[n];  // 4 * n bytes
+    for (int i = 0; i < n; i++) { // 4 bytes
         arr[i] = i;
     }
-    return arr;
+    return arr; // 4 bytes
 }
 ```
 
-* `int n` - This is an integer value representing the size of the array to be created so n takes 4 bytes.
-* `arr` - This is an array of integers with a length of n. The space complexity of an array is proportional to its length, which is n in this case.
-* `i` - This is an integer variable used as the loop counter so takes 4 bytes.
-* `arr[i] = i` statement - This statement assigns the value of i to the i-th element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in 
-   the array and the loop counter so takes 4 bytes 
-
- The space complexity of the `createArray` function is O(n)
+* `int n`: is constant so O(1) space complexity.
+* `arr`: is n so the space complexity is linear O(n).
+* `i` : is constant so O(1) space complexity.
+  
+The space complexity of the `createArray` function is O(n).
 
 
-3. Quadratic Space `O(n^2)`: if the amount of memory used is proportional to the square of the input size. These algorithms often involve nested loops or matrices where the dimensions are determined by the input size.
+3. Quadratic Space `O(n^2)`
 
 ```java
-public int[][] create2DArray(int n) {
-    int[][] arr = new int[n][n];
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+public int[][] create2DArray(int n) { // 4 bytes
+    int[][] arr = new int[n][n]; // 4 * n * n bytes
+    for (int i = 0; i < n; i++) {       // 4 bytes
+        for (int j = 0; j < n; j++) {  // 4 bytes
             arr[i][j] = i * n + j;
         }
     }
-    return arr;
+    return arr; // 4 bytes
 }
 ```
- * `int n` - This is an integer value representing the size of the 2D array to be created so takes 4 bytes.
- * `arr` - This is a 2D array of integers with a size of n x n. The space complexity of a 2D array is proportional to its size, which is n^2 in this case.
- * `i and j` - These are integer variables used as loop counters so each of them takes 4 bytes.
- * `arr[i][j]` - This sssigns the value of i * n + j to the (i, j) element of the array arr. It does not require any additional memory, as it only performs an operation on the existing data in the array 
-   and the loop counters.
-   
+ * `int n`: is constant so O(1) space complexity.
+ * `arr`: size of n x n so, the space complexity of a 2D array is n^2 in this case.
+ * `i and j`: is constant so O(1) space complexity.
+ 
  The space complexity of the `create2DArray` function is O(n^2), 
 
 ## Example
