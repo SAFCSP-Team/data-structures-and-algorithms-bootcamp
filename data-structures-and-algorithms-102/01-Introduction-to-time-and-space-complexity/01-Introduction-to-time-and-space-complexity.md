@@ -47,11 +47,12 @@ The Big O notation **applies to both time and space complexities.**
 ### The Big O notation complexities
 
 
-1. **O(1)** `Constant`: The algorithm's **growth rate remains constant**, regardless of the input size. An example is accessing an element in an array by its index. Regardless of the size of the array, the time taken to access the element remains constant.
+1. **O(1)** `Constant`: The algorithm's **growth rate remains constant**, regardless of the input size. An example of a constant space complexity is a method that takes a number as input and returns true if it is even.
 
-2. **O(log n)** `Logarithmic`: **The growth rate increases logarithmically with the input size**. An example of **time complexity** is the Binary search on a sorted array of recursive calls that split the problem in half, reducing the time required decreases.
+2. **O(log n)** `Logarithmic`: **The growth rate increases logarithmically with the input size**. An example of time complexity is the Binary search on a sorted array of recursive calls that split the problem in half, reducing the time required decreases.
 
-3. **O(n)** `Linear`: **The growth rate increases linearly with the input size**. If the input size doubles, the growth rate will also roughly double. Examples include iterating through an array or performing a linear search.
+3. **O(n)** `Linear`: **The growth rate increases linearly with the input size**. If the input size doubles, the growth rate will also roughly double. An example of linear space complexity is a method that creates a new array copy from the input array.
+
 
 4. **O(n log n)** `Linearithmic`: **The growth rate increases in proportion to the number of elements multiplied by the logarithm of the number of elements**. For example the time complexity of merge sort or quicksort algorithms.
 
