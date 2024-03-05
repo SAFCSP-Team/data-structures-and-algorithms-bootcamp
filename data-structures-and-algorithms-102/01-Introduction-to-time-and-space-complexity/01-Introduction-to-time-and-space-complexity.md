@@ -57,7 +57,7 @@ The Big O notation **applies to both time and space complexities.**
 4. **O(n log n)** `Linearithmic`: **The growth rate increases in proportion to the number of elements multiplied by the logarithm of the number of elements**. For example the time complexity of merge sort or quicksort algorithms.
 
 
-5. **O(n^2)** `Quadratic`: **The growth rate increases quadratically with the input size**. If the input size doubles, the running time will roughly increase by a factor of four. Examples include nested loops.
+5. **O(n^2)** `Quadratic`: **The growth rate increases quadratically with the input size**. Examples of time complexity include nested loops.
 
 
 6. **O(2^n)** `Exponential`: **The growth rate increases exponentially with the input size**. This represents algorithms with very slow performance as the input size increases. For example, the time complexity of the `Fibonacci` function makes two recursive calls for each level of recursion. This means that the number of recursive calls doubles with each increase in the input size.
