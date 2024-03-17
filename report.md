@@ -27,7 +27,12 @@ When a project is due, the project status will be updated as follows.
 |[Double linked list](https://github.com/SAFCSP-Team/double-linked-list)| 🟠  | 🔴 |
 |[Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list)| 🟠  | 🔴 |
 |[Stack](https://github.com/SAFCSP-Team/stack)|🟤|🔴|
-|[Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)||🟢|
+|[Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)|||
+|[Deque](https://github.com/SAFCSP-Team/deque-project)|||
+|[Tree](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main)|🔴||
+|[Binary-Tree](https://github.com/SAFCSP-Team/binary-tree-project)|||
+
+
 
 
 
