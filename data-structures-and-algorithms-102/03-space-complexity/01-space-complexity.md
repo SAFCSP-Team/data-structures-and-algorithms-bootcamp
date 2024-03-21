@@ -92,7 +92,7 @@ public int[][] create2DArray(int n) { // 4 bytes
 }
 ```
  * `int n`: is constant so O(1) space complexity.
- * `arr`: size of n x n so, the space complexity of a 2D array is n^2 in this case.
+ * `arr`: size of n x n so, the space complexity of a 2D array is O(n^2) in this case.
  * `i and j`: is constant so O(1) space complexity.
  
  The space complexity of the `create2DArray` function is O(n^2), 
