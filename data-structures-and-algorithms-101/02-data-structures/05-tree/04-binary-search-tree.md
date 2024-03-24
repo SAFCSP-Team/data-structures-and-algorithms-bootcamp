@@ -151,6 +151,11 @@ class BinarySearchTree {
             return false;
         }
 
+ if (this.root.val == value) {
+            this.root = null;
+return true;
+        }
+
         Stack<Node> stack = new Stack<>();
         Node curr = this.root;
         Node prev = null;
