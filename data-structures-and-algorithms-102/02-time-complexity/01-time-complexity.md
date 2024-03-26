@@ -116,15 +116,23 @@ Line #3 (1 assignment + 1 addition(+))  done n * n times                        
 int a = 0;
 int b = 0;
 
-for (i = 1; i <= n; i++){       // 1 assignment, (1 comparison + 1 increment) done n times                          //{( 1+(1+1)*n )}
-        a = a + 1;              // (1 assignment + 1 addition(+))  done n times                                     //{( {( 2n )} 
+for (i = 1; i <= n; i++){      // Line #1
+        a = a + 1;             // Line #2
 }
 
-for (i = 1; i <= m; i++){       // 1 assignment, (1 comparison + 1 increment) done m times                          //{( 1+(1+1)*m )}
-        b = b + 1;              // (1 assignment + 1 addition(+))  done m times                                     //{( {( 2m )} 
+for (i = 1; i <= m; i++){       // Line #3
+        b = b + 1;              // Line #4
 }
+```   
+- Time analyses:   
 ```
-   
+Line #1 1 assignment, (1 comparison + 1 increment) done n times  ( 1+(1+1)*n )
+Line #2 (1 assignment + 1 addition(+))  done n times             ( 2n )
+Line #3 1 assignment, (1 comparison + 1 increment) done m times  ( 1+(1+1)*m )
+Line #4 (1 assignment + 1 addition(+))  done m times             ( 2m )
+```
+<br/>
+
 - Time calculation  
 -> T(1 + 2n + 2n + 1 + 2m + 2m)   
 -> Variables are combined only if they refer to the same input (2n, 2n), (2m, 2m)       
@@ -139,12 +147,18 @@ for (i = 1; i <= m; i++){       // 1 assignment, (1 comparison + 1 increment) do
 Consider the below pseudocode      
 ```java  
 if (condition){
-for (i = 1, i <= n, i++){       // 1 assignment, (1 comparison + 1 increment) done n times    {( 1+(1+1)*n )} -> O(n)
+for (i = 1, i <= n, i++){       //Line #1
 }
 } else {
-x = 8;                          // 1 assignment                                                   {(1)}       -> O(1)
+x = 8;                          //Line #2
 }
+```   
+- Time analyses:   
 ```
+Line #1 1 assignment, (1 comparison + 1 increment) done n times  ( 1+(1+1)*n ) -> O(n)
+Line #2 1 assignment                                             (1)-> O(1)
+```
+<br/>
 
 The time complexity for the above code is **O(n)** as it is the worst-case.   
 O(n) > O(1).  
