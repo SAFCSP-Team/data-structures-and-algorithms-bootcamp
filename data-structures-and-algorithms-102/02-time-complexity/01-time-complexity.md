@@ -49,8 +49,10 @@ for (i = 1; i <= n; i++){} // 1 assignment, (1 comparison + 1 increment) done n 
 - The time complexity for the above code is   
 -> T(1 + (1 + 1) * n )   
 -> T(1 + 2n)   
+-> Ignore constant (1, 2)    
 -> T(n)   
--> **O(n)**   
+-> **O(n)**
+> *Ignore constant* is one of Big O rules and it will be explained in the following section 
 <br/>
 <br/>
 
@@ -61,11 +63,19 @@ Big O follows the rules listed below in time calculations
 1. Ignore constant
 
 ```java
-int x = 0;                     // 1 assignment
-for ( i = 1; i<=n; i++){       // 1 assignment, (1 comparison + 1 increment) done n times {( 1+(1+1)*n )}
-x = i + 1;                     // ( 1 assignment + 1 addition(+) ) done n times           {( (1+1)*n )}
+int x = 0;                     // Line #1
+for ( i = 1; i<=n; i++){       // Line #2
+x = i + 1;                     // Line #3
 }
 ```
+- Time analyses:   
+```
+Line #1 1 assignment
+Line #2 1 assignment, (1 comparison + 1 increment) done n times ( 1+(1+1)*n )
+Line #3 ( 1 assignment + 1 addition(+) ) done n times           ( (1+1)*n )
+```  
+<br/>
+
 - Time calculation  
 -> T(1 + (1 + 1)*n + (1 + 1)*n)   
 -> T(1 + 2n + 2n)   
@@ -78,13 +88,19 @@ x = i + 1;                     // ( 1 assignment + 1 addition(+) ) done n times 
 2. Drop lower values   
    
 ```java
-for (i = 1; i <= n; i++){       // 1 assignment, (1 comparison + 1 increment) done n times                          //{( 1+(1+1)*n )}
-    for (j = 1; j <= n; j++){   // 1 assignment done n times, (1 comparison + 1 increment) done n * n times         //{( 1*n + (1+1)n*n )}
-        x = y + z;              // (1 assignment + 1 addition(+))  done n * n times                                 //{( (1+1)n*n )} 
+for (i = 1; i <= n; i++){       // Line #1
+    for (j = 1; j <= n; j++){   // Line #2
+        x = y + z;              // Line #3
       }
 }
+```   
+- Time analyses:   
 ```
-
+Line #1 1 assignment, (1 comparison + 1 increment) done n times                          ( 1+(1+1)*n )   
+Line #2 1 assignment done n times, (1 comparison + 1 increment) done n * n times         ( 1*n + (1+1)n*n )   
+Line #3 (1 assignment + 1 addition(+))  done n * n times                                 ( (1+1)n*n )
+```
+<br/>
 
 - Time calculation  
 -> T(1 + 2n + n + 2n^2 + 2n^2)   
