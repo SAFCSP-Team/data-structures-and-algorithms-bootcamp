@@ -22,11 +22,11 @@ When a project is due, the project status will be updated as follows.
 |4|[One Dimensional Array](https://github.com/SAFCSP-Team/one-dimensional-arrays) | 🟢 | 🟤 |
 |5|[Two-Dimensional Array](https://github.com/SAFCSP-Team/two-dimensional-array)| 🟢 | 🟤 |
 |6|[Three-Dimensional Array](https://github.com/SAFCSP-Team/three-dimensional-array)| 🟢 | 🟢 |
-|7|[Introduction to linked list](https://github.com/SAFCSP-Team/Introduction-to-linked-list)| 🟠  | 🔴 |
-|8|[Single linked list](https://github.com/SAFCSP-Team/single-linked-list)| 🟠  | 🔴 |
-|9|[Double linked list](https://github.com/SAFCSP-Team/double-linked-list)| 🟠  | 🔴 |
-|10|[Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list)| 🟠  | 🔴 |
-|11|[Stack](https://github.com/SAFCSP-Team/stack)|🟤|🔴|
+|7|[Introduction to linked list](https://github.com/SAFCSP-Team/Introduction-to-linked-list)| 🟠  |  🟠 |
+|8|[Single linked list](https://github.com/SAFCSP-Team/single-linked-list)| 🟠  |  🟠 |
+|9|[Double linked list](https://github.com/SAFCSP-Team/double-linked-list)| 🟠  |  🟠 |
+|10|[Circular linked list](https://github.com/SAFCSP-Team/circular-linked-list)| 🟠  |  🟠 |
+|11|[Stack](https://github.com/SAFCSP-Team/stack)| 🟠| 🟠|
 |12|[Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)|🟢|🟢|
 |13|[Deque](https://github.com/SAFCSP-Team/deque-project)|🟢|🔴|
 |14|[Tree](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main)|🟠||
