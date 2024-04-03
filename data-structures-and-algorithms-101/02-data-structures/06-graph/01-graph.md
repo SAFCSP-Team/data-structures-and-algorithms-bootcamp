@@ -70,7 +70,7 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 <img width="350" alt="Graph - Node" src="images/Graph-Weight.jpg">
 
 ## Terminology
-* **Simple Graph** - A simple graph is an unweighted, undirected graph containing no loops or multiple edges.
+* **Simple Graph** - A simple graph is an unweighted, undirected graph containing no self-loops or multiple edges.
 * **In-degree** - The number of edges pointing to a vertex in a directed graph.
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
