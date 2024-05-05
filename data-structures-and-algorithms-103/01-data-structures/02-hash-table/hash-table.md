@@ -14,6 +14,7 @@ Imagine you have a list of phone numbers that you need to store and manage effic
     }
 ```
 
+
 Collision Handling:
 
 When two keys are hashed to the same index in a hash table. `Collisions` are a problem because every slot in a hash table is supposed to store a single element, to handle collisions there are various techniques to handle such as chaining and open addressing.
@@ -73,7 +74,8 @@ public class HashTableArray {
     } 
 ```
 
-the `Entry` class that holds a key-value pair.
+The `Entry` class holds a key-value pair.
+
 ```java
 public class Entry {
     int key;// to determine index
@@ -97,7 +99,8 @@ public int getValue(){
 }
 }
 ```
-main method
+In the main method create an instance of the `HashTableArray` class called hash with a size of 6 and called put method.
+
 ```java
 public class Main{
         public static void main(String[] args) {
