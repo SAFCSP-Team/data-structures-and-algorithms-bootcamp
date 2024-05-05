@@ -8,20 +8,110 @@ Imagine you have a list of phone numbers that you need to store and manage effic
  
  so the hash table stores key and value pairs but the key is generated through a hashing function `hash(key) = k % array_size`.
 
-Collision Handling: Since multiple keys can hash to the same index,  to handle collisions there are various techniques to handle such as chaining and open addressing.
+ ```java
+    public int hashFunction(int key, int arrSize) {
+        return key % arrSize;
+    }
+```
 
+Collision Handling:
 
+When two keys are hashed to the same index in a hash table. `Collisions` are a problem because every slot in a hash table is supposed to store a single element, to handle collisions there are various techniques to handle such as chaining and open addressing.
 
 
 #### Chaining
- each bucket in the hash table contains a linked list to store multiple key-value pairs that hash to the same index
- so we can handle an random number of collisions without requiring additional memory for storing elements.
+
+ Each bucket in the hash table contains a linked list to store multiple key-value pairs that hash to the same index
+ so we can handle a random number of collisions using an array of linked lists, each index has its own linked list.
+
  
 #### Open Address
 
-stores all key-value pairs directly in the hash table itself, without using separate data structures like linked lists.
+Stores all key-value pairs directly in the hash table itself, without using separate data structures like linked lists.
 when a collision occurs, open addressing involves probing the table to find an alternative index for the colliding element (checking the next available slot)
 
+
+## Implementation
+
+Hash table using chaining technique 
+
+```java
+
+public class HashTableArray {
+    Entry[]arrayhash;
+    int size;
+    public HashTableArray(int size){
+        this.size=size;  
+        arrayhash = new Entry[this.size];
+        for(int i=0; i<arrayhash.length;i++)
+        arrayhash[i]=new Entry ();
+    }
+    public int GetHash(int key){ 
+        return key % size;    // calculates the hash value for a given key
+    }
+    public void put(int key, int value){
+        int index= GetHash(key);
+        Entry ArrayValue= arrayhash[index];// linked list
+        Entry newItem = new Entry(key,value);
+        newItem.next=ArrayValue;
+        ArrayValue.next=newItem;
+    }
+    public int Get(int key){
+        int value = 0;
+        int index=GetHash(key);
+        Entry ArrayValue= arrayhash[index];
+        while (ArrayValue!=null) {
+            if(ArrayValue.GetKey() == key){
+                value= ArrayValue.value;
+                break;
+            }
+            ArrayValue=ArrayValue.next;
+        }
+        return value;
+     }
+
+    } 
+```
+
+the `Entry` class that holds a key-value pair.
+```java
+public class Entry {
+    int key;// to determine index
+    int value;// string
+    Entry next;
+
+public Entry(int key, int value){ //cons
+    this.key=key;
+    this.value=value;
+    this.next=null;
+}
+public Entry(){
+next = null;
+}
+
+public int GetKey(){
+    return key;
+}
+public int getValue(){
+    return value;
+}
+}
+```
+main method
+```java
+public class Main{
+        public static void main(String[] args) {
+
+            HashTableArray hash= new HashTableArray(6);
+            hash.put(10, 2);
+            hash.put(7,5);
+            hash.put(4,1);
+
+            System.out.println(hash.Get(10));
+
+        }
+    }
+```
 ## Projects
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
