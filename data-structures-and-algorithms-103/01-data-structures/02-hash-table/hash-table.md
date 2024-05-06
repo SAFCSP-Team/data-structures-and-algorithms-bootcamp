@@ -24,12 +24,16 @@ When two keys are hashed to the same index in a hash table. `Collisions` are a p
 
  Each bucket in the hash table contains a linked list to store multiple key-value pairs that hash to the same index
  so we can handle a random number of collisions using an array of linked lists, each index has its own linked list.
+ 
+ ![ezgif com-animated-gif-maker (7)](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/280ae568-3431-43e1-a700-1cb70fb75ada)
 
  
 #### Open Address
 
 Stores all key-value pairs directly in the hash table itself, without using separate data structures like linked lists.
 when a collision occurs, open addressing involves probing the table to find an alternative index for the colliding element (checking the next available slot)
+
+![open addressing](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/7eccfdfc-e047-45bf-8182-43574b208ecd)
 
 
 ## Implementation
