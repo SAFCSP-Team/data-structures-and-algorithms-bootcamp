@@ -14,6 +14,8 @@ so set data structure revolves around storing a collection of unique elements. I
 
 we can be implemented using various data structures, such as `arrays`, `linked-lists`, or `hash tables`, depending on the specific requirements and constraints of the use case.
 
+![SET@4x](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/7367037b-58de-4bf1-bd6d-3ece6c2997ec)
+
 
 ### Implementation
 
