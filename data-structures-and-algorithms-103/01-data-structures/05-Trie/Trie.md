@@ -1,22 +1,14 @@
 # Trie
   
 Trie is a special type of tree, it was developed to solve multiple string-related problems. Storing strings in the Trie allows us to quickly search and retrieve worlds.   
-   
-Consider we have to search for the word **Hi** in a tree of 1000 nodes:   
-- BST search time complexity is O(log(n)). Where n is the number of nodes in the tree.   
-Searching for the word **Hi** will take O(log(1000)).     
-- Trie search time complexity is  O(k). Where k is the word length.    
-Searching for the word **Hi** will take O(2).
-
-O(2) is faster than O(log(1000)).   
-While BST is considered one of the fastest data structures in searching for data, when it comes to strings Trie is even faster than BST.
 <br/>
 <br/>
    
      
 ## Concept     
 Trie only stores and manipulates strings, by splitting the words into it's letters and storing each letter in a separate node.    
-> Trie only contains lowercase letters.
+> Trie only contains lowercase letters.   
+> Trie is non-binary, the Node can have multiple children.
 <br/>
 
 ### Node structure
