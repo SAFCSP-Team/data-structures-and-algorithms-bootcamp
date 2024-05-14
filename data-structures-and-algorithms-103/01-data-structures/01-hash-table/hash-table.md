@@ -4,9 +4,9 @@ Imagine you have a list of phone numbers that you need to store and manage effic
 
 ## Concept
 
- type of data structure in which the index value of the data element is generated from a hash function, this enables very fast data access as the index value behaves as a key for the data value.
+ Type of data structure in which the index value of the data element is generated from a hash function, this enables very fast data access as the index value behaves as a key for the data value.
  
- so the hash table stores key and value pairs but the key is generated through a hashing function `hash(key) = k % array_size`.
+ so the hash table stores key and value pairs but the key is generated through a hashing function `hash = k % array_size`.
 
  ```java
     public int hashFunction(int key, int arrSize) {
@@ -15,9 +15,10 @@ Imagine you have a list of phone numbers that you need to store and manage effic
 ```
 
 
-Collision Handling:
 
-When two keys are hashed to the same index in a hash table. `Collisions` are a problem because every slot in a hash table is supposed to store a single element, to handle collisions there are various techniques to handle such as chaining and open addressing.
+### Collision Handling
+
+When two keys are hashed to the same index in a hash table. `Collisions` are a problem because every slot in a hash table is supposed to store a **single** element, to handle collisions there are various techniques to handle such as `chaining` and `open addressing`.
 
 
 #### Chaining
@@ -31,7 +32,7 @@ When two keys are hashed to the same index in a hash table. `Collisions` are a p
 #### Open Address
 
 Stores all key-value pairs directly in the hash table itself, without using separate data structures like linked lists.
-when a collision occurs, open addressing involves probing the table to find an alternative index for the colliding element (checking the next available slot)
+when a collision occurs, open addressing involves probing the table to find an alternative index for the colliding element (checking the next available slot).
 
 ![open addressing](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/7eccfdfc-e047-45bf-8182-43574b208ecd)
 
@@ -45,22 +46,26 @@ Hash table using chaining technique
 public class HashTableArray {
     Entry[]arrayhash;
     int size;
-    public HashTableArray(int size){
+
+    public HashTableArray(int size){ //cons
         this.size=size;  
         arrayhash = new Entry[this.size];
         for(int i=0; i<arrayhash.length;i++)
         arrayhash[i]=new Entry ();
     }
+
     public int GetHash(int key){ 
         return key % size;    // calculates the hash value for a given key
     }
-    public void put(int key, int value){
+
+    public void put(int key, int value){ //insert
         int index= GetHash(key);
         Entry ArrayValue= arrayhash[index];// linked list
         Entry newItem = new Entry(key,value);
         newItem.next=ArrayValue;
         ArrayValue.next=newItem;
     }
+
     public int Get(int key){
         int value = 0;
         int index=GetHash(key);
@@ -122,5 +127,6 @@ public class Main{
 ## Projects
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
+|[Hash Table](https://github.com/SAFCSP-Team/hash-table-project/blob/main/README.md)|Hash Table Project|
 
 
