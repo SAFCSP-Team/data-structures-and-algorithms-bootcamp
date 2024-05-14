@@ -25,7 +25,108 @@ Heaps have various applications, like:
 - **Binary Heap** is used for pathfinding algorithms to Find the shortest path between two points in a graph.
 
 ### Implementation
+We are going to implement a max-heap using an array. 
+```java
+ public class Heap {
+    private int[] heap;
+    private int size;
 
+    public Heap(int capacity) {
+        heap = new int[capacity]; // Initial capacity of the heap
+        size = 0;
+    }
+
+    public void insert(int value) {
+        ensureCapacity();
+        heap[size++] = value;
+        heapify(size - 1);
+    }
+
+    public int delete() {
+        if (isEmpty()) {
+            return -1; // or any suitable value to indicate error
+        }
+        int root = heap[0];
+        heap[0] = heap[--size];
+        heapify(0);
+        return root;
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            return -1; // or any suitable value to indicate error
+        }
+        return heap[0];
+    }
+
+    public int extract() {
+        int max = peek();
+        if (max != -1) {
+            delete();
+        }
+        return max;
+    }
+
+    private void heapify(int index) {
+        int leftChild = 2 * index + 1;
+        int rightChild = 2 * index + 2;
+        int largest = index;
+
+        if (leftChild < size && heap[leftChild] > heap[largest]) {
+            largest = leftChild;
+        }
+
+        if (rightChild < size && heap[rightChild] > heap[largest]) {
+            largest = rightChild;
+        }
+
+        if (largest != index) {
+            swap(index, largest);
+            heapify(largest);
+        }
+    }
+
+    private void swap(int i, int j) {
+        int temp = heap[i];
+        heap[i] = heap[j];
+        heap[j] = temp;
+    }
+
+    private void ensureCapacity() {
+        if (size == heap.length) {
+            int[] newHeap = new int[size * 2];
+            System.arraycopy(heap, 0, newHeap, 0, size);
+            heap = newHeap;
+        }
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+}
+
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Heap heap = new Heap(5);
+
+        // Insert elements into the heap
+        heap.insert(10);
+        heap.insert(5);
+        heap.insert(15);
+        heap.insert(20);
+        heap.insert(8);
+
+        // Print the heap
+        System.out.println("Heap: ");
+        while (!heap.isEmpty()) {
+            System.out.print(heap.delete() + " ");
+        }
+        System.out.println();
+    }
+}
+```
 
 ### Projects
 
