@@ -27,34 +27,46 @@ Heaps have various applications, like:
 ### Implementation
 We are going to implement a max-heap using an array. 
 ```java
- public class Heap {
+public class Heap {
     private int[] heap;
     private int size;
-
+  
     public Heap(int capacity) {
-        heap = new int[capacity]; // Initial capacity of the heap
+        heap = new int[capacity];
         size = 0;
     }
+  
+    public boolean isEmpty() {
+        return size == 0;
+    }
 
+    private void ensureCapacity() {
+        if (size == heap.length) {
+            int[] newHeap = new int[size * 2];
+            System.arraycopy(heap, 0, newHeap, 0, size);
+            heap = newHeap;
+        }
+    }
+  
     public void insert(int value) {
         ensureCapacity();
         heap[size++] = value;
-        heapify(size - 1);
+        heapifyUp(size - 1);
     }
 
     public int delete() {
         if (isEmpty()) {
-            return -1; // or any suitable value to indicate error
+            return -1; 
         }
         int root = heap[0];
         heap[0] = heap[--size];
-        heapify(0);
+        heapifyDown(0);
         return root;
     }
 
     public int peek() {
         if (isEmpty()) {
-            return -1; // or any suitable value to indicate error
+            return -1; 
         }
         return heap[0];
     }
@@ -67,7 +79,16 @@ We are going to implement a max-heap using an array.
         return max;
     }
 
-    private void heapify(int index) {
+    private void heapifyUp(int index) {
+        int parent = (index - 1) / 2;
+        while (index > 0 && heap[index] > heap[parent]) {
+            swap(index, parent);
+            index = parent;
+            parent = (index - 1) / 2;
+        }
+    }
+
+    private void heapifyDown(int index) {
         int leftChild = 2 * index + 1;
         int rightChild = 2 * index + 2;
         int largest = index;
@@ -82,7 +103,7 @@ We are going to implement a max-heap using an array.
 
         if (largest != index) {
             swap(index, largest);
-            heapify(largest);
+            heapifyDown(largest);
         }
     }
 
@@ -98,13 +119,7 @@ We are going to implement a max-heap using an array.
             System.arraycopy(heap, 0, newHeap, 0, size);
             heap = newHeap;
         }
-    }
-
-    public boolean isEmpty() {
-        return size == 0;
-    }
-}
-
+    } 
 ```
 ```java
 public class Main {
