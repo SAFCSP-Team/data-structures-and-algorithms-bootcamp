@@ -44,7 +44,7 @@ This variable is used to detect if the node is storing a letter that is consider
 Figure 1 shows the node structure on the left, and on the right shows the root node after adding the letter **h** to its `array`, and assigning a false value to the `isEndOfWord` variable.   
 
 Figure 1    
-<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/data-structures-and-algorithms%20-%20Figuer%204.jpg">
+<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/array1.gif">
 <br/>
 <br/>
 
@@ -64,7 +64,7 @@ The Trie will be as the below figure 2 shows:
    
 Figure 2   
 
-<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/data-structures-and-algorithms%20-%20Figuer%201.jpg">
+<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/t3%404x.png">
 
 Trie provides a way to reduce redundancy by storing common prefixes of strings just once. In our case "**Se**" is the common prefix between **Se**e and **Se**at.   
 
@@ -78,7 +78,7 @@ After adding the new words, the Trie will be as the below Figure 3 shows:
    
 Figure 3   
 
-<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/data-structures-and-algorithms%20-%20Figuer%202.jpg">
+<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/t1%404x.png">
 
    
 
@@ -123,7 +123,7 @@ care,
 cast,
 cave.   
    
-<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/data-structures-and-algorithms%20-%20Figuer%203.jpg">
+<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/t2%404x.png">
 
    
 Node class
