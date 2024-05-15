@@ -45,7 +45,7 @@ public class MaxHeap {
         if (count == heap.length) { // Check if the array is full.
            // Resizes the array with double the length of the current array.
             int[] newHeap = new int[heap.length * 2];
-            System.arraycopy(heap, 0, newHeap, 0, size);
+            System.arraycopy(heap, 0, newHeap, 0, count);
             heap = newHeap;
         }
     }
