@@ -29,8 +29,8 @@ Heaps have various applications, like:
 We are going to implement a `max-heap` class using an array. 
 ```java
 public class MaxHeap {
-    private int[] heap; // Array to store the heap elements.
-    private int count; // The number of elements in the heap. 
+    public int[] heap; // Array to store the heap elements.
+    public int count; // The number of elements in the heap. 
   
     public MaxHeap(int capacity) {
         heap = new int[capacity];
@@ -41,7 +41,7 @@ public class MaxHeap {
         return count == 0; 
     }
 
-    private void ensureCapacity() {
+    public void ensureCapacity() {
         if (count == heap.length) { // Check if the array is full.
            // Resizes the array with double the length of the current array.
             int[] newHeap = new int[heap.length * 2];
@@ -81,7 +81,7 @@ public class MaxHeap {
         return max;
     }
 
-    private void heapifyUp(int index) {
+    public void heapifyUp(int index) {
         int parent = (index - 1) / 2; // Calculates the index of the parent element.
 
         /* enters a loop that continues until the `index` reaches the root of the heap (index 0),
@@ -94,7 +94,7 @@ public class MaxHeap {
         }
     }
 
-    private void heapifyDown(int index) {
+    public void heapifyDown(int index) {
         int leftChild = 2 * index + 1; // Calculates the index of the left Child element.
         int rightChild = 2 * index + 2; // Calculates the index of the right Child element.
         int largest = index; // Store the index of the largest element, initializing it as the current index.
@@ -116,7 +116,7 @@ public class MaxHeap {
         }
     }
 
-    private void swap(int i, int j) {
+    public void swap(int i, int j) {
         int temp = heap[i];
         heap[i] = heap[j];
         heap[j] = temp;
@@ -127,19 +127,19 @@ The main class
 ```java
 public class main {
     public static void main(String[] args) {
-        MaxHeap heap = new MaxHeap(5);
+        MaxHeap heapNumbers = new MaxHeap(5);
 
         // Insert elements into the heap
-        heap.insert(10);
-        heap.insert(5);
-        heap.insert(15);
-        heap.insert(20);
-        heap.insert(8);
+        heapNumbers.insert(10);
+        heapNumbers.insert(5);
+        heapNumbers.insert(15);
+        heapNumbers.insert(20);
+        heapNumbers.insert(8);
 
         // Print the heap
         System.out.println("Heap: ");
-        while (!heap.isEmpty()) {
-            System.out.print(heap.delete() + " ");
+        for (int element : heapNumbers.heap) {
+            System.out.print(element + " ");
         }
         System.out.println();
     }
@@ -147,6 +147,8 @@ public class main {
 ```
 Output
 ```
+Heap: 
+20 15 10 5 8 
 ```
 
 ### Projects
