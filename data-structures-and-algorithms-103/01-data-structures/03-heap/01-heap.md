@@ -5,19 +5,20 @@
 
 The heap property ensures that the highest/lowest priority element is always at the root of the heap. However, there is **no specific order or relationship between nodes** at any level, so the **heap is not sorted**.
 
-##### Types of Heaps:
-There are two main types of heap:
+**Types of Heaps:**
+
+There are two main types of heap
 
 `Max Heap` The value of each node is **less than or equal** to the value of the parent, and **the greatest value is at the root**.
 
 `Min Heap` The value of each node is **greater than or equal** to the value of its parent, and **the smallest value is at the root**. 
 
-##### Heap Operations
+**Heap Operations:**
 - `heapify`: Constructs a heap from an unordered array.
 - `insert`: Inserts an element into the heap while Ensuring the heap property.
 - `delete`: Removes an element from the heap while Ensuring the heap property.
-- `peek (Find max/min)`: Retrieves the element with the highest/lowest priority without removing it.
-- `Extract(Max/Min)`: Retrieves the element with the highest/lowest priority and removes it.
+- `peek (Find max/min)`: Retrieves the highest/lowest priority element without removing it.
+- `Extract(Max/Min)`: Retrieves the highest/lowest priority element and removes.
 
 Heaps have various applications, like:
 - Heap is used while implementing a **priority queue**.
@@ -25,42 +26,43 @@ Heaps have various applications, like:
 - **Binary Heap** is used for pathfinding algorithms to Find the shortest path between two points in a graph.
 
 ### Implementation
-We are going to implement a max-heap using an array. 
+We are going to implement a `max-heap` class using an array. 
 ```java
-public class Heap {
-    private int[] heap;
-    private int size;
+public class MaxHeap {
+    private int[] heap; // Array to store the heap elements.
+    private int count; // The number of elements in the heap. 
   
-    public Heap(int capacity) {
+    public MaxHeap(int capacity) {
         heap = new int[capacity];
-        size = 0;
+        count = 0; // Initialize the count to -1 (empty heap).
     }
   
     public boolean isEmpty() {
-        return size == 0;
+        return count == 0; 
     }
 
     private void ensureCapacity() {
-        if (size == heap.length) {
-            int[] newHeap = new int[size * 2];
+        if (count == heap.length) { // If the count is equal to the length that the array is full.
+           // resizes the array with double the length of the current array (length * 2).
+            int[] newHeap = new int[heap.length * 2];
             System.arraycopy(heap, 0, newHeap, 0, size);
             heap = newHeap;
         }
     }
   
     public void insert(int value) {
-        ensureCapacity();
-        heap[size++] = value;
-        heapifyUp(size - 1);
+        ensureCapacity(); // ensures that the heap has enough capacity.
+        heap[count++] = value; // adds the new element at the current count index and increments it.  
+        heapifyUp(count - 1); // check the heap property. 
     }
 
     public int delete() {
         if (isEmpty()) {
             return -1; 
         }
-        int root = heap[0];
-        heap[0] = heap[--size];
-        heapifyDown(0);
+        int root = heap[0]; // If the heap is not empty, it retrieves the maximum element at the root (index 0). 
+        heap[0] = heap[--count]; // It replaces the root with the last element in the heap.
+        heapifyDown(0); // check the heap property. 
         return root;
     }
 
@@ -80,9 +82,11 @@ public class Heap {
     }
 
     private void heapifyUp(int index) {
-        int parent = (index - 1) / 2;
+        int parent = (index - 1) / 2; // calculates the index of the parent element.
+        /* enters a loop that continues until the `index` reaches the root of the heap (index 0),
+           or the element at the current `index` is not greater than its parent.*/
         while (index > 0 && heap[index] > heap[parent]) {
-            swap(index, parent);
+            swap(index, parent); // If the element is not the root and its value is greater than its parent's, swap them.
             index = parent;
             parent = (index - 1) / 2;
         }
@@ -93,11 +97,11 @@ public class Heap {
         int rightChild = 2 * index + 2;
         int largest = index;
 
-        if (leftChild < size && heap[leftChild] > heap[largest]) {
+        if (leftChild < count && heap[leftChild] > heap[largest]) {
             largest = leftChild;
         }
 
-        if (rightChild < size && heap[rightChild] > heap[largest]) {
+        if (rightChild < count && heap[rightChild] > heap[largest]) {
             largest = rightChild;
         }
 
@@ -112,19 +116,13 @@ public class Heap {
         heap[i] = heap[j];
         heap[j] = temp;
     }
-
-    private void ensureCapacity() {
-        if (size == heap.length) {
-            int[] newHeap = new int[size * 2];
-            System.arraycopy(heap, 0, newHeap, 0, size);
-            heap = newHeap;
-        }
-    } 
+} 
 ```
+The main class  
 ```java
-public class Main {
+public class main {
     public static void main(String[] args) {
-        Heap heap = new Heap(5);
+        MaxHeap heap = new MaxHeap(5);
 
         // Insert elements into the heap
         heap.insert(10);
@@ -141,6 +139,9 @@ public class Main {
         System.out.println();
     }
 }
+```
+Output
+```
 ```
 
 ### Projects
