@@ -125,8 +125,8 @@ public class Main{
     }
 ```
 ## Projects
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
-|[Hash Table](https://github.com/SAFCSP-Team/hash-table-project/blob/main/README.md)|Hash Table Project|
+| Project Title | Deadline |
+:-----------:|:-------------|
+|[Hash Table](https://github.com/SAFCSP-Team/hash-table-project/blob/main/README.md)|
 
 
