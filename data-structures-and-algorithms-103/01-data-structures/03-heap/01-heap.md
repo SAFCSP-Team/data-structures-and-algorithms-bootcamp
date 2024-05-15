@@ -42,8 +42,8 @@ public class MaxHeap {
     }
 
     private void ensureCapacity() {
-        if (count == heap.length) { // If the count is equal to the length that the array is full.
-           // resizes the array with double the length of the current array (length * 2).
+        if (count == heap.length) { // Check if the array is full.
+           // Resizes the array with double the length of the current array.
             int[] newHeap = new int[heap.length * 2];
             System.arraycopy(heap, 0, newHeap, 0, size);
             heap = newHeap;
@@ -51,18 +51,18 @@ public class MaxHeap {
     }
   
     public void insert(int value) {
-        ensureCapacity(); // ensures that the heap has enough capacity.
-        heap[count++] = value; // adds the new element at the current count index and increments it.  
-        heapifyUp(count - 1); // check the heap property. 
+        ensureCapacity(); // Ensures that the heap has enough capacity.
+        heap[count++] = value; // Adds the new element at the current count index and increments it.  
+        heapifyUp(count - 1); // Check the heap property. 
     }
 
     public int delete() {
         if (isEmpty()) {
             return -1; 
         }
-        int root = heap[0]; // If the heap is not empty, it retrieves the maximum element at the root (index 0). 
+        int root = heap[0]; // Retrieves the maximum element at the root (index 0). 
         heap[0] = heap[--count]; // It replaces the root with the last element in the heap.
-        heapifyDown(0); // check the heap property. 
+        heapifyDown(0); // Check the heap property. 
         return root;
     }
 
@@ -82,9 +82,11 @@ public class MaxHeap {
     }
 
     private void heapifyUp(int index) {
-        int parent = (index - 1) / 2; // calculates the index of the parent element.
+        int parent = (index - 1) / 2; // Calculates the index of the parent element.
+
         /* enters a loop that continues until the `index` reaches the root of the heap (index 0),
            or the element at the current `index` is not greater than its parent.*/
+
         while (index > 0 && heap[index] > heap[parent]) {
             swap(index, parent); // If the element is not the root and its value is greater than its parent's, swap them.
             index = parent;
@@ -93,19 +95,21 @@ public class MaxHeap {
     }
 
     private void heapifyDown(int index) {
-        int leftChild = 2 * index + 1;
-        int rightChild = 2 * index + 2;
-        int largest = index;
+        int leftChild = 2 * index + 1; // Calculates the index of the left Child element.
+        int rightChild = 2 * index + 2; // Calculates the index of the right Child element.
+        int largest = index; // Store the index of the largest element, initializing it as the current index.
 
-        if (leftChild < count && heap[leftChild] > heap[largest]) {
-            largest = leftChild;
+        // checks if the leftchild index is within the heap bounds, and the element at the leftchild index is larger than the element at the largest index.
+        if (leftChild < count && heap[leftChild] > heap[largest]) {  
+            largest = leftChild; 
+        }
+        // Perform a similar check for the right child index, updating largest if necessary.
+        if (rightChild < count && heap[rightChild] > heap[largest]) { 
+            largest = rightChild; 
         }
 
-        if (rightChild < count && heap[rightChild] > heap[largest]) {
-            largest = rightChild;
-        }
-
-        if (largest != index) {
+        // If the current index is not equal to the largest, that means the heap property is violated. Needs to swap them.
+        if (largest != index) { 
             swap(index, largest);
             heapifyDown(largest);
         }
