@@ -99,7 +99,8 @@ public class MaxHeap {
         int rightChild = 2 * index + 2; // Calculates the index of the right Child element.
         int largest = index; // Store the index of the largest element, initializing it as the current index.
 
-        // checks if the leftchild index is within the heap bounds, and the element at the leftchild index is larger than the element at the largest index.
+        /* Checks if the leftchild index in the heap bounds, and the element in the leftchild index
+         is larger than the element at the largest index.*/
         if (leftChild < count && heap[leftChild] > heap[largest]) {  
             largest = leftChild; 
         }
