@@ -249,6 +249,12 @@ public class AVL {
 
 ```
    
+Output
+   
+```java
+2 1 4 3 5
+```
+   
    
 ## Projects   
    
