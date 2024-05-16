@@ -11,91 +11,66 @@ There are several ways to implement a priority queue. The most common are:
 - Sorted Linked List
 - Balanced Binary Search Tree
 
+Implement Priority Queue using Sorted Linked List
+
 
 ```java
 
-import java.util.ArrayList;
+public class PriorityQueue {
 
-// Implementing a Priority Queue using a Max-Heap
-class PQOne {
-  // Function to heapify the tree
-  void heapify(ArrayList<Integer> hT, int i) {
-    int size = hT.size();
-    // Find the largest among root, left child and right child
-    int largest = i;
-    int l = 2 * i + 1;
-    int r = 2 * i + 2;
-    if (l < size && hT.get(l) > hT.get(largest))
-      largest = l;
-    if (r < size && hT.get(r) > hT.get(largest))
-      largest = r;
+    // Node class to represent each element in the priority queue 
+    private class Node {
+        int value; // is the priority value
+        Node next; 
 
-    // Swap and continue heapifying if root is not largest
-    if (largest != i) {
-      int temp = hT.get(largest);
-      hT.set(largest, hT.get(i));
-      hT.set(i, temp);
-
-      heapify(hT, largest);
-    }
-  }
-
-  // Function to insert an element into the tree
-  void insert(ArrayList<Integer> hT, int newNum) {
-    int size = hT.size();
-    if (size == 0) {
-      hT.add(newNum);
-    } else {
-      hT.add(newNum);
-      for (int i = size / 2 - 1; i >= 0; i--) {
-        heapify(hT, i);
-      }
-    }
-  }
-
-  // Function to delete an element from the tree
-  void deleteNode(ArrayList<Integer> hT, int num) {
-    int size = hT.size();
-    int i;
-    for (i = 0; i < size; i++) {
-      if (num == hT.get(i))
-        break;
+        Node(int value) {
+            this.value = value;
+        }
     }
 
-    int temp = hT.get(i);
-    hT.set(i, hT.get(size - 1));
-    hT.set(size - 1, temp);
+    private Node head = null;
 
-    hT.remove(size - 1);
-    for (int j = size / 2 - 1; j >= 0; j--) {
-      heapify(hT, j);
+    // Add an element and maintain the order of the elements in the priority queue
+    public void add(int value) {
+        Node newNode = new Node(value);
+        
+        // if the priority queue is empty or the new element has the highest priority
+        if (head == null || head.value > value) {
+            newNode.next = head;
+            head = newNode;
+        } else { // if the new element has lower priority than the head
+            Node current = head;
+            while (current.next != null && current.next.value < value) {
+                current = current.next;
+            }
+            // finally add the new element
+            newNode.next = current.next;
+            current.next = newNode;
+        }
     }
-  }
 
-  // Print the tree
-  void printArray(ArrayList<Integer> array, int size) {
-    for (Integer i : array) {
-      System.out.print(i + " ");
+    // Dequeue the element which are the front/head of the priority queue
+    public int remove() {
+
+        // if the priority queue is not empty
+        if (head != null) {
+            int value = head.value;
+            head = head.next;
+            return value;
+        } else {
+            throw new RuntimeException("Queue is empty");
+        }
     }
-    System.out.println();
-  }
 
-  // Driver code
-  public static void main(String args[]) {
-
-    ArrayList<Integer> array = new ArrayList<Integer>();
-    int size = array.size();
-
-    PQOne h = new PQOne();
-    h.insert(array, 3);
-    h.insert(array, 4);
-    h.insert(array, 9);
-    h.insert(array, 5);
-    h.insert(array, 2);
-
-    System.out.println("Priority Queue:");
-    h.printArray(array, size);
-
-  }
+    public static void main(String[] args) {
+        PriorityQueue pq = new PriorityQueue();
+        pq.add(3);
+        pq.add(1);
+        pq.add(2);
+        System.out.println(pq.remove()); // 1
+        System.out.println(pq.remove()); // 2
+        System.out.println(pq.remove()); // 3
+    }
 }
 ```
+
