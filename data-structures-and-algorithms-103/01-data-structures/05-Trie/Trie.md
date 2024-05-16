@@ -284,5 +284,6 @@ true
 ## Projects
 
 Project Title | Deadline |
-|:-----------:|:-------------|
-|[Trie]() | - | 
+|:-----------:|:-------------|   
+|[Trie](https://github.com/SAFCSP-Team/trie-project/edit/main/README.md) |
+
