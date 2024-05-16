@@ -1,9 +1,8 @@
 # Priority Queue 
-In emergency rooms, queue patients based on the severity of their condition, not the order they arrived.
-The highest priority patient is treated first. This is a priority queue.
+In emergency rooms, patients wait in line or queue, and they are treated based on the highest priority, and not the order they arrived. Well, we have a data structure **Priority Queue** which behaves the same as an emergency queue, the element with the highest/lowest value gets processed first.  
 
 ## Priority Queue 
-A priority queue is a data structure that stores an element based on its value priority. Either the highest or lowest priority element is dequeued first.
+A priority queue is a data structure that stores an element based on its value priority. Either the highest or lowest priority element is dequeued/processed first.
 
 
 ## Implementations
