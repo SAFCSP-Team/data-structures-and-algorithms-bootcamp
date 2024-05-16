@@ -90,7 +90,7 @@ public class MaxHeap {
         while (index > 0 && heap[index] > heap[parent]) {
             swap(index, parent); // If the element is not the root and its value is greater than its parent's, swap them.
             index = parent;
-            parent = (index - 1) / 2;
+            heapifyUp(index)
         }
     }
 
