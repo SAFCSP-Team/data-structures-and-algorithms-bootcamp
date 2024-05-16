@@ -56,15 +56,26 @@ public class MaxHeap {
         heapifyUp(count - 1); // Check the heap property. 
     }
 
-    public int delete() {
+    public void delete(int value) {
         if (isEmpty()) {
-            return -1; 
+            System.out.println("the heap is empty ");
         }
-        int root = heap[0]; // Retrieves the maximum element at the root (index 0). 
-        heap[0] = heap[--count]; // It replaces the root with the last element in the heap.
-        heapifyDown(0); // Check the heap property. 
-        return root;
-    }
+        int index = -1;
+        for (int i = 0; i < count; i++) {
+            if (heap[i] == value) {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1) {
+            System.out.println("the element is not found ");
+        }
+        heap[index] = heap[--count];
+        int[] newHeap = new int[heap.length -1];
+        System.arraycopy(heap, 0, newHeap, 0, count);
+        heap = newHeap;
+        heapifyDown(index);
+}
 
     public int peek() {
         if (isEmpty()) {
@@ -76,7 +87,7 @@ public class MaxHeap {
     public int extract() {
         int max = peek();
         if (max != -1) {
-            delete();
+            delete(heap[0]);
         }
         return max;
     }
