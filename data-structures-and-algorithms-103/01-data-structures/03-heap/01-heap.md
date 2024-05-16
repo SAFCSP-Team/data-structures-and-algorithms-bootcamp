@@ -90,7 +90,7 @@ public class MaxHeap {
         while (index > 0 && heap[index] > heap[parent]) {
             swap(index, parent); // If the element is not the root and its value is greater than its parent's, swap them.
             index = parent;
-            heapifyUp(index)
+            heapifyUp(index);
         }
     }
 
@@ -142,6 +142,11 @@ public class main {
             System.out.print(element + " ");
         }
         System.out.println();
+        
+        System.out.println("Heap peek: "+ heapNumbers.peek()); 
+        System.out.println("Extract: "+ heapNumbers.extract()); 
+        System.out.println("Heap peek: "+ heapNumbers.peek()); 
+        
     }
 }
 ```
@@ -149,6 +154,9 @@ Output
 ```
 Heap: 
 20 15 10 5 8 
+Heap peek: 20
+Extract: 20
+Heap peek: 15
 ```
 
 ### Projects
