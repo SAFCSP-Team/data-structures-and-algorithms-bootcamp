@@ -127,7 +127,7 @@ The main class
 ```java
 public class main {
     public static void main(String[] args) {
-        MaxHeap heapNumbers = new MaxHeap(5);
+        MaxHeap heapNumbers = new MaxHeap(6);
 
         // Insert elements into the heap
         heapNumbers.insert(10);
@@ -135,6 +135,7 @@ public class main {
         heapNumbers.insert(15);
         heapNumbers.insert(20);
         heapNumbers.insert(8);
+        heapNumbers.insert(13);
 
         // Print the heap
         System.out.println("Heap: ");
@@ -153,7 +154,7 @@ public class main {
 Output
 ```
 Heap: 
-20 15 10 5 8 
+20 15 13 5 8 10 
 Heap peek: 20
 Extract: 20
 Heap peek: 15
