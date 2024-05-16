@@ -46,8 +46,9 @@ class Hashset {
 
 ```
 
-Project ID | Project Title | Deadline |
-|:-----|:-----------:|:-------------|
+| Project Title | Deadline |
+|:-----------:|:-------------|
+|[Set Project](https://github.com/SAFCSP-Team/set-project)||
 
 
 
