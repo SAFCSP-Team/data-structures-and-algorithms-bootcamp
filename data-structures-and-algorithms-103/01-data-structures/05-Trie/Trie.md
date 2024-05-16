@@ -278,12 +278,13 @@ true
 [fees, fresh]
 ```
 
-
+<br/>
+<br/>
 
 
 ## Projects
 
-Project Title | Deadline |
-|:-----------:|:-------------|   
+Project Title | 
+|:-----------:|
 |[Trie](https://github.com/SAFCSP-Team/trie-project/edit/main/README.md) |
 
