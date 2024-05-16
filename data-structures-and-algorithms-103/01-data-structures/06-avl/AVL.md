@@ -241,8 +241,6 @@ public class AVL {
         tree.insert(3);
         tree.insert(4);
         tree.insert(5);
-        // tree.insert(60);
-        // tree.insert(80);
 
         tree.printPreOrder();
     }
