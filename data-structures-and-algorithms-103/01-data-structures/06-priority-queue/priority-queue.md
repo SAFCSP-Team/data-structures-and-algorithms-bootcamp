@@ -6,7 +6,7 @@ A priority queue is a data structure that stores an element based on its value p
 
 
 ## Implementations
-There are several ways to implement a priority queue. The most common are:
+There are several ways to implement a priority queue, and the most common ways are:
 - Binary Heap(Sorted Heap)
 - Sorted Linked List
 - Balanced Binary Search Tree
