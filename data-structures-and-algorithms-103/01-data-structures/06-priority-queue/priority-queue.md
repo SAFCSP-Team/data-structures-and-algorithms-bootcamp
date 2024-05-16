@@ -74,3 +74,7 @@ public class PriorityQueue {
 }
 ```
 
+Project Title | 
+|:-----------:|
+|[Priority Queue]([https://github.com/SAFCSP-Team/trie-project/edit/main/README.md](https://github.com/SAFCSP-Team/priority-queue)) |
+
