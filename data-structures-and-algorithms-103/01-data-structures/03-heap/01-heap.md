@@ -75,7 +75,8 @@ public class MaxHeap {
         System.arraycopy(heap, 0, newHeap, 0, count);
         heap = newHeap;
         heapifyDown(index);
-}
+        System.out.println("Number " + value + " has been deleted");
+        }
 
     public int peek() {
         if (isEmpty()) {
@@ -156,8 +157,15 @@ public class main {
         System.out.println();
         
         System.out.println("Heap peek: "+ heapNumbers.peek()); 
-        System.out.println("Extract: "+ heapNumbers.extract()); 
-        System.out.println("Heap peek: "+ heapNumbers.peek()); 
+            heapNumbers.extract(); 
+        System.out.println("Heap peek: "+ heapNumbers.peek());
+        
+        heapNumbers.delete(10);
+        
+        System.out.println("Heap: ");
+        for (int element : heapNumbers.heap) {
+            System.out.print(element + " ");
+        }
         
     }
 }
@@ -167,8 +175,11 @@ Output
 Heap: 
 20 15 13 5 8 10 
 Heap peek: 20
-Extract: 20
+Number 20 has been deleted
 Heap peek: 15
+Number 10 has been deleted
+Heap: 
+15 8 13 5 
 ```
 
 ### Projects
