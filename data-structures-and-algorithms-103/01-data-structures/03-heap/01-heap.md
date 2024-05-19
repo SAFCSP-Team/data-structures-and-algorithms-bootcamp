@@ -5,15 +5,15 @@
 
 The heap property ensures that the highest/lowest priority element is always at the root of the heap. However, there is **no specific order or relationship between nodes** at any level, so the **heap is not sorted**.
 
-**Types of Heaps:**
+**Types of Heaps**
 
-There are two main types of heap
+There are two main types of heap:
 
 `Max Heap` The value of each node is **less than or equal** to the value of the parent, and **the greatest value is at the root**.
 
 `Min Heap` The value of each node is **greater than or equal** to the value of its parent, and **the smallest value is at the root**. 
 
-**Heap Operations:**
+**Heap Operations**
 - `heapify`: Constructs a heap from an unordered array.
 - `insert`: Inserts an element into the heap while Ensuring the heap property.
 - `delete`: Removes an element from the heap while Ensuring the heap property.
@@ -27,6 +27,11 @@ Heaps have various applications, like:
 
 ### Implementation
 We are going to implement a `max-heap` class using an array. 
+
+Each element in an array at index `i` has:
+- A parent at index `(i-1)/2`.
+- A left child at index `2 * i + 1`.
+- A right child at index `2 * i + 2`.
 ```java
 public class MaxHeap {
     public int[] heap; // Array to store the heap elements.
@@ -88,6 +93,7 @@ public class MaxHeap {
     public int extract() {
         int max = peek();
         if (max != -1) {
+            System.out.print("Extract method: ");
             delete(heap[0]);
         }
         return max;
@@ -121,7 +127,7 @@ public class MaxHeap {
             largest = rightChild; 
         }
 
-        // If the current index is not equal to the largest, that means the heap property is violated. Needs to swap them.
+        // If the current index is not equal to the largest, the heap property is violated. Needs to swap them.
         if (largest != index) { 
             swap(index, largest);
             heapifyDown(largest);
@@ -140,7 +146,6 @@ The main class
 public class main {
     public static void main(String[] args) {
         MaxHeap heapNumbers = new MaxHeap(6);
-
         // Insert elements into the heap
         heapNumbers.insert(10);
         heapNumbers.insert(5);
@@ -149,20 +154,23 @@ public class main {
         heapNumbers.insert(8);
         heapNumbers.insert(13);
 
-        // Print the heap
-        System.out.println("Heap: ");
+        // Print the heap.
+        System.out.print("Heap: ");
         for (int element : heapNumbers.heap) {
             System.out.print(element + " ");
         }
         System.out.println();
-        
-        System.out.println("Heap peek: "+ heapNumbers.peek()); 
-            heapNumbers.extract(); 
+
+        // Print the peek of the heap.
         System.out.println("Heap peek: "+ heapNumbers.peek());
-        
+        // Call the extract.
+        heapNumbers.extract();
+        // Print the peek of the heap.
+        System.out.println("Heap peek: "+ heapNumbers.peek());
+       // Delete number 10 from the heap.
         heapNumbers.delete(10);
-        
-        System.out.println("Heap: ");
+        // Print the heap.
+        System.out.print("Heap: ");
         for (int element : heapNumbers.heap) {
             System.out.print(element + " ");
         }
@@ -172,14 +180,12 @@ public class main {
 ```
 Output
 ```
-Heap: 
-20 15 13 5 8 10 
+Heap: 20 15 13 5 8 10 
 Heap peek: 20
-Number 20 has been deleted
+Extract method: Number 20 has been deleted
 Heap peek: 15
 Number 10 has been deleted
-Heap: 
-15 8 13 5 
+Heap: 15 8 13 5 
 ```
 
 ### Projects
