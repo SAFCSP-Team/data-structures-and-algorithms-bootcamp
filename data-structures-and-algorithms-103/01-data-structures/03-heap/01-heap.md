@@ -18,7 +18,7 @@ There are two main types of heap:
 - `insert`: Inserts an element into the heap while Ensuring the heap property.
 - `delete`: Removes an element from the heap while Ensuring the heap property.
 - `peek (Find max/min)`: Retrieves the highest/lowest priority element without removing it.
-- `Extract(Max/Min)`: Retrieves the highest/lowest priority element and removes.
+- `extract(Max/Min)`: Retrieves the highest/lowest priority element and removes.
 
 Heaps have various applications, like:
 - Heap is used while implementing a **priority queue**.
