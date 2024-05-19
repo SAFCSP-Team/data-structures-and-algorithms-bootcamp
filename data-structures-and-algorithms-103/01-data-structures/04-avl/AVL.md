@@ -257,4 +257,8 @@ Output
    
    
 ## Projects   
+
+Project Title | 
+|:-----------:|
+|[AVL](https://github.com/SAFCSP-Team/avl-project/blob/main/README.md) |
    
