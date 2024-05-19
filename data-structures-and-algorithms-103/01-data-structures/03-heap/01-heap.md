@@ -58,13 +58,14 @@ public class MaxHeap {
     public void insert(int value) {
         ensureCapacity(); // Ensures that the heap has enough capacity.
         heap[count++] = value; // Adds the new element at the current count index and increments it.  
-        heapifyUp(count - 1); // Check the heap property. 
+        heapifyUp(count - 1); // Apply the concept of heap. 
     }
 
     public void delete(int value) {
         if (isEmpty()) {
             System.out.println("the heap is empty ");
         }
+        // Search for the index of the required value
         int index = -1;
         for (int i = 0; i < count; i++) {
             if (heap[i] == value) {
@@ -75,11 +76,12 @@ public class MaxHeap {
         if (index == -1) {
             System.out.println("the element is not found ");
         }
+        // Replaces the value with the last element in the heap and reduces the count by 1, then resizes the array.
         heap[index] = heap[--count];
         int[] newHeap = new int[heap.length -1];
         System.arraycopy(heap, 0, newHeap, 0, count);
         heap = newHeap;
-        heapifyDown(index);
+        heapifyDown(index); // Apply the concept of heap.
         System.out.println("Number " + value + " has been deleted");
         }
 
@@ -141,6 +143,8 @@ public class MaxHeap {
     }
 } 
 ```
+> For more information about `System.arraycopy()` method [read](https://www.javatpoint.com/post/java-system-arraycopy-method).
+
 The main class  
 ```java
 public class main {
