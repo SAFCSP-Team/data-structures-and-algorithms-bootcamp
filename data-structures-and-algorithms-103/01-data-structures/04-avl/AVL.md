@@ -3,7 +3,7 @@ AVL is named after its inventors Adelson, Velskii, and Landis.
 
    
 Consider we want to insert the below values in the order from left to right:   
-1, 2, 3, 4, 5, 6
+1, 2, 3, 4, 5, 6.
 
    
 Figure 1: Binary search tree (BST) vs AVL tree   
