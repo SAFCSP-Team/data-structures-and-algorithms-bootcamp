@@ -1,1 +1,13 @@
 # Backtracking Algorithms
+
+### Concept 
+
+### Implementation
+
+
+### Projects
+
+|Project Title | Deadline |
+|:-----------:|:-------------:|
+|[Backtracking Algorithms project](https://github.com/SAFCSP-Team/backtracking-algorithms-project) | - | 
+
