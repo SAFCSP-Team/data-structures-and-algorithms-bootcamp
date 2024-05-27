@@ -9,5 +9,5 @@
 
 |Project Title | Deadline |
 |:-----------:|:-------------:|
-|[Backtracking Algorithms project](https://github.com/SAFCSP-Team/backtracking-algorithms-project) | - | 
+|[Backtracking algorithms project](https://github.com/SAFCSP-Team/backtracking-algorithms-project) | - | 
 
