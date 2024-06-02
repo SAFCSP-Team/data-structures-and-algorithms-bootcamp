@@ -56,15 +56,15 @@ public class DivideConquer {
         
     }
 }
-
-
+```
+The output
+```
+The maximum number is: 47
 ```
 
-```java
+## Projects
+| Project Title | Deadline |
+:-----------:|:-------------|
+|[Divide and Conquer](https://github.com/SAFCSP-Team/divide-and-conquer-project)|
 
-```
 
-## Project
-
-  
- 
