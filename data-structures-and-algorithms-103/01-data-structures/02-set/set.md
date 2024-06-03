@@ -6,7 +6,7 @@
 
 
 
-### Concept
+## Concept
 
 The first thing to remember about Sets is that every element is `unique`. It’s like having a basket of fruits, and no two fruits in it are the same, this uniqueness is the superpower of Sets!
 
@@ -17,7 +17,7 @@ we can be implemented using various data structures, such as `arrays`, `linked-l
 ![SET@4x](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/7367037b-58de-4bf1-bd6d-3ece6c2997ec)
 
 
-### Implementation
+## Implementation
 
 We implementing a Set data structure using the `HashSet` class to allow to store of multiple values in a collection using a hash table. The hash table stores the values in an unordered method with the help of a hashing mechanism. 
 
@@ -45,6 +45,8 @@ class Hashset {
 
 
 ```
+
+## Projects
 
 | Project Title | Deadline |
 |:-----------:|:-------------|
