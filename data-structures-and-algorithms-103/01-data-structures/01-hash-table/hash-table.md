@@ -36,7 +36,6 @@ when a collision occurs, open addressing involves probing the table to find an a
 
 ![open addressing](https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148945652/7eccfdfc-e047-45bf-8182-43574b208ecd)
 
-
 ## Implementation
 
 Hash table using chaining technique 
