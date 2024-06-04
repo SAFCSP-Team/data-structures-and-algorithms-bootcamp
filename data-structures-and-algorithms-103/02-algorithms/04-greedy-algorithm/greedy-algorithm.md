@@ -3,8 +3,10 @@
 ## Concept   
 
 A Greedy algorithm is an approach to solving a problem where the solution is fast and is the best solution based on the current situation. Sometimes it will not bring the most optimal result, but it will bring you close to it.
-
+   
 Greedy algorithms are used to solve multiple famous problems. Some of these problems solutions do not bring the most optimal solution.
+
+
 ### Class attendance problem:   
 
 Consider you have the list of classes below, and you want to attend the most classes you can.
@@ -67,15 +69,17 @@ The Greedy algorithm didn't bring the most optimal solution here!
 The solution should pick a Gaming Chair and MacBook laptop, resulting in 3500$ and reaching the exact basket capacity of 30kg with more resulting value in it.   
    
 **The Greedy algorithm doesn't bring the most optimal solution every time. But it's fast and easy to implement.**
+
+
+## Example   
+
+**Travel plan problem**     
    
-## Example  
-
-Travel to Euoro example 
-
 Consider you have to travel to Europe and you have a list of places you want to visit during your trip. You have a **time capacity of 3 hours** only. 
 You decided to list your places with the **time** each place will take and a **score of points** representing how much you want to visit the place.
 We will use a Greedy algorithm to solve this problem and create a plan containing the places you should visit.   
    
+- Classes list:
    
 place 1:    
 time: 1 hour   
@@ -93,12 +97,25 @@ place 4:
 time: 3 hour  
 score: 5 point  
 
-Solution:
-Using Greedy algorithm.   
+- Solution:
    
-1. Pick the place that has the most points and will fit into the the time capacity you have.
-2. Pick the next place that has the most points and will fit into the the remaining time capacity you have. And so on.
+Using Greedy algorithm.   
+1. Pick the place that has the most points and will fit into the time capacity you have.
+2. Pick the next place that has the most points and will fit into the remaining time capacity you have. And so on.
 
+- Result:
+     
+Plan :    
+Name: Place 3 Time: 1 Score: 15   
+Name: Place 2 Time: 2 Score: 10   
+
+   
+## Implementation  
+
+   
+
+
+     
 ```java
 
 class Place {
