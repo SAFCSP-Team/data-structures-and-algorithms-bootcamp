@@ -1,14 +1,10 @@
-# Greedy algorithms
-
+# Greedy algorithms   
+   
+## Concept   
 
 A Greedy algorithm is an approach to solve a problem where the solutiun is fast and is the best solution based on the current situation. Sometime it will not bring the most optimal result, but it will bring you close to it.
 
 Greedy algorithms is used to slove multiple famouse problems. Some of these problems solutions is not bringing the most optimal solution.
-
-## Concept   
-
-Greedy Algorithms uses the below process to solve the problem:
-
 ### Class attendance problem:   
 
 Consider you have the list of classes below, and you want to attend the most classes you can.
@@ -33,7 +29,6 @@ History 11-12
 **The greedy algorithm is working very well and it does bring the most optimal solution to the class attendance problem.**   
    
 Figure 1    
-<img width="910" alt="Introduction to Trie" src="">
 <br/>
 <br/>
 
