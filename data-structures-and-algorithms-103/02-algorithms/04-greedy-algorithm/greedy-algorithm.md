@@ -26,7 +26,7 @@ Math 9-10
 English 10-11
 History 11-12
 
-**The greedy algorithm is working very well and it does bring the most optimal solution to the class attendance problem.**   
+**The greedy algorithm is working very well solving the problem and it does bring the most optimal solution to the class attendance problem.**   
    
 Figure 1    
 <br/>
