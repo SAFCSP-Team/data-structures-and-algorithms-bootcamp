@@ -2,9 +2,9 @@
    
 ## Concept   
 
-A Greedy algorithm is an approach to solve a problem where the solutiun is fast and is the best solution based on the current situation. Sometime it will not bring the most optimal result, but it will bring you close to it.
+A Greedy algorithm is an approach to solving a problem where the solution is fast and is the best solution based on the current situation. Sometimes it will not bring the most optimal result, but it will bring you close to it.
 
-Greedy algorithms is used to slove multiple famouse problems. Some of these problems solutions is not bringing the most optimal solution.
+Greedy algorithms are used to solve multiple famous problems. Some of these problems solutions do not bring the most optimal solution.
 ### Class attendance problem:   
 
 Consider you have the list of classes below, and you want to attend the most classes you can.
@@ -29,7 +29,7 @@ Math 9-10
 English 10-11   
 History 11-12   
 
-**The greedy algorithm is working very well solving the problem and it does bring the most optimal solution to the class attendance problem.**   
+**The greedy algorithm is working very well in solving the problem and it does bring the most optimal solution to the class attendance problem.**   
    
 Figure 1    
    
@@ -37,7 +37,7 @@ Figure 1
 ### Knapsack problem:   
 
 
-Consider we you have a basket that has a **capacity of 30kg** and a list of items. You should pick the most expensive items and fill the basket with it, without exceeding the basket capacity.
+Consider you have a basket that has a **capacity of 30kg** and a list of items. You should pick the most expensive items and fill the basket with it, without exceeding the basket capacity.
 
 - Items list:
   
@@ -63,20 +63,20 @@ Using Greedy algorithm.
    
 The solution will pick the TV as its the most expensive item and insert it in the basket. The basket will be holding 3000$ and 30kg, reaching the full basket capacity.   
      
-- Disscussion:
+- Discussion:
 
 The Greedy algorithm didn't bring the most optimal solution here!   
-The solution should pick Gaming Chair and MacBook laptop, resulting in 3500$ and reaching the exact basket capacity of 30kg with more resulting value in it.   
+The solution should pick a Gaming Chair and MacBook laptop, resulting in 3500$ and reaching the exact basket capacity of 30kg with more resulting value in it.   
    
-**Greedy algorithm doesn't bring the most optimal solution everytime. But it's fast and easy to implement.**
+**The Greedy algorithm doesn't bring the most optimal solution every time. But it's fast and easy to implement.**
    
 ## Example  
 
 Travel to Euoro example 
 
-Consider you have to travel to europ and you have a list of places you want to visit during your trip. Your have a **time capacity of 3 hours** only. 
+Consider you have to travel to Europe and you have a list of places you want to visit during your trip. You have a **time capacity of 3 hours** only. 
 You decided to list your places with the **time** each place will take and a **score of points** representing how much you want to visit the place.
-We will use Greedy algorithm to solve this problem and create a plan conataining the places you should visit.   
+We will use a Greedy algorithm to solve this problem and create a plan containing the places you should visit.   
    
    
 place 1:    
@@ -89,7 +89,7 @@ score: 10 points
    
 place 3:  
 time: 1 hour  
-score: 15 point  
+score: 15 points  
    
 place 4:  
 time: 3 hour  
@@ -98,8 +98,8 @@ score: 5 point
 Solution:
 Using Greedy algorithm.   
    
-1. Pick the place that has the most point and will fit into the the time capacity you have.
-2. Pick the next place that has the most point and will fit into the the remaining time capacity you have. And so on.
+1. Pick the place that has the most points and will fit into the the time capacity you have.
+2. Pick the next place that has the most points and will fit into the the remaining time capacity you have. And so on.
 
 ```java
 
