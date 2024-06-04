@@ -74,28 +74,26 @@ The solution should pick Gaming Chair and MacBook laptop, resulting in 3500$ and
 
 Travel to Euoro example 
 
-consider you have to travel to europ and you have a list of places you want to visit during your trip. Your have a **time capacity of 3 hours** only. 
+Consider you have to travel to europ and you have a list of places you want to visit during your trip. Your have a **time capacity of 3 hours** only. 
 You decided to list your places with the **time** each place will take and a **score of points** representing how much you want to visit the place.
-We will use Greedy algorithm to solve this problem to create a plan conataining te places you should visit.   
+We will use Greedy algorithm to solve this problem and create a plan conataining the places you should visit.   
    
    
-place 1: 
-time: 1 hour
-score: 5 points
-
-place 2:
-time: 2 hours
-score: 10 points
-
-place 3:
-time: 1 hour
-score: 15 point
-
-
-place 4:
-time: 3 hour
-score: 5 point
-
+place 1:    
+time: 1 hour   
+score: 5 points   
+   
+place 2:   
+time: 2 hours   
+score: 10 points   
+   
+place 3:  
+time: 1 hour  
+score: 15 point  
+   
+place 4:  
+time: 3 hour  
+score: 5 point  
 
 Solution:
 Using Greedy algorithm.   
