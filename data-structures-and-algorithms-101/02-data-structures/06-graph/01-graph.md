@@ -14,8 +14,8 @@ Well, we can use **Graph** to store this relationship. Graph is a data structure
 <img width="350" alt="Graph Example" src="images/Graph1.jpg">
 
 > Where the circles are the objects and the arrows are the relationship between them.
-> The objects in the graph are called a vertex
-> The relationship that connects to vertices is called an edge
+> The objects in the graph are called a vertex.
+> The relationship that connects to vertices is called an edge.
  
 ## Concept
 A **Graph is a non-linear data structure** It's a way to organize data by storing objects and their relationships with other objects, which are called **vertices** and **edges**. 
