@@ -243,6 +243,6 @@ Name: Place 2 Time: 2 Score: 10
 ## Projects
 | Project Title | Deadline |
 :-----------:|:-------------|
-|[Greedy Algorithm]()|
+|[Greedy Algorithm](https://github.com/SAFCSP-Team/greedy-algorithm-project)|
 
 
