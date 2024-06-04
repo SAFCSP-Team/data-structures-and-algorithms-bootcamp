@@ -237,3 +237,12 @@ Plan :
 Name: Place 3 Time: 1 Score: 15
 Name: Place 2 Time: 2 Score: 10
 ```
+
+
+
+## Projects
+| Project Title | Deadline |
+:-----------:|:-------------|
+|[Greedy Algorithm]()|
+
+
