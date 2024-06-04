@@ -61,7 +61,7 @@ Using Greedy algorithm.
    
 - Result:
    
-The solution will pick the TV as its the most expensive item and insert it in the basket. The basket will be holding 3000$ and 30kg, reaching the full basket capacity.   
+The solution will pick the TV as it is the most expensive item and insert it in the basket. The basket will be holding 3000$ and 30kg, reaching the full basket capacity.   
      
 - Discussion:
 
