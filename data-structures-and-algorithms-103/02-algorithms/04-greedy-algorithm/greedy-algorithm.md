@@ -9,61 +9,67 @@ Greedy algorithms is used to slove multiple famouse problems. Some of these prob
 
 Consider you have the list of classes below, and you want to attend the most classes you can.
 
+- Classes list:
+    
 Math 9-10    
 CS 9:30-10:30    
 English 10-11   
 Programming 10:30-11:30   
 History 11-12   
 
+- Solution:
 
-Solution:   
-Using Greedy algorithm.
-
+Using Greedy algorithm.   
 1. Pick the class that ends the soonest. This is the first class you’ll hold in this classroom.
 2. Now, you have to pick a class that starts after the first class. Again, pick the class that ends the soonest. This is the second class you’ll hold.
 
-Math 9-10
-English 10-11
-History 11-12
+- Result:
+
+Math 9-10   
+English 10-11   
+History 11-12   
 
 **The greedy algorithm is working very well solving the problem and it does bring the most optimal solution to the class attendance problem.**   
    
 Figure 1    
-<br/>
-<br/>
-
-
+   
+   
 ### Knapsack problem:   
 
 
 Consider we you have a basket that has a **capacity of 30kg** and a list of items. You should pick the most expensive items and fill the basket with it, without exceeding the basket capacity.
 
-TV: 
-weight: 30kg   
-price: 3000$   
+- Items list:
+  
+TV:   
+weight: 30kg    
+price: 3000$    
    
-Gaming Chair: 
-weight: 25kg   
-price: 1500$   
+Gaming Chair:    
+weight: 25kg    
+price: 1500$    
 
-MacBook laptop: 
-weight: 5kg   
-price: 2000$   
-
-Solution:
-Using Greedy algorithm.
-
+MacBook laptop:    
+weight: 5kg     
+price: 2000$     
+   
+- Solution:
+   
+Using Greedy algorithm.    
 1. Pick the most expensive thing that will fit in your knapsack.
 2. Pick the next most expensive thing that will fit in your knapsack. And so on.
+   
+- Result:
+   
+The solution will pick the TV as its the most expensive item and insert it in the basket. The basket will be holding 3000$ and 30kg, reaching the full basket capacity.   
+     
+- Disscussion:
 
-The solution will pick the TV as its the most expensive item and insert it in the basket. The basket will be holding 3000$ and 30kg, reaching the full basket capacity.
-The Greedy algorithm didn't bring the most optimal solution here!
-
-The solution should pick Gaming Chair and MacBook laptop, resulting in 3500$ and reaching the exact basket capacity of 30kg with more resulting value in it.
-
-Greedy algorithm doesn't bring the most optimal solution everytime. But it's fast and easy to implement.
-
-
+The Greedy algorithm didn't bring the most optimal solution here!   
+The solution should pick Gaming Chair and MacBook laptop, resulting in 3500$ and reaching the exact basket capacity of 30kg with more resulting value in it.   
+   
+**Greedy algorithm doesn't bring the most optimal solution everytime. But it's fast and easy to implement.**
+   
 ## Example  
 
 Travel to Euoro example 
