@@ -30,9 +30,7 @@ English 10-11
 History 11-12   
 
 **The greedy algorithm is working very well in solving the problem and it does bring the most optimal solution to the class attendance problem.**   
-   
-Figure 1    
-   
+      
    
 ### Knapsack problem:   
 
