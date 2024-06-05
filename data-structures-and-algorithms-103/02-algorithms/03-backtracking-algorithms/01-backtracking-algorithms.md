@@ -17,6 +17,10 @@ Types of problems solved by backtracking algorithms:
 - Enumeration Problem: try to find all feasible solutions.
 
 ### Implementation
+Suppose you have two bikes 'B1' & 'B2'. And 1 car 'C'. Find all possible ways to arrange them. 
+
+**Constraint:** Car should not be between bikes.
+<img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148013077/bf6cc992-fdd8-41e4-bf3f-6f23ddb14af2" width="1000" height="400" />
 
 
 ### Projects
