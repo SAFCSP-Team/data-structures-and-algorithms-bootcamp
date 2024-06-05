@@ -11,7 +11,9 @@ There are two main types of heap:
 
 `Max Heap` The value of each node is **less than or equal** to the value of the parent, and **the greatest value is at the root**.
 
-`Min Heap` The value of each node is **greater than or equal** to the value of its parent, and **the smallest value is at the root**. 
+`Min Heap` The value of each node is **greater than or equal** to the value of its parent, and **the smallest value is at the root**.
+
+<img src="./images/type_of_heap.png" width="1200" height="400" />
 
 **Heap Operations**
 - `heapify`: Constructs a heap from an unordered array.
