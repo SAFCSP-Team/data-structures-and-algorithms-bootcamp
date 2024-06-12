@@ -17,5 +17,5 @@ Searching algorithms are like **plans that help us find what we're looking** for
 <img width="990" alt="binary and linear search" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/03-algorithms/01-searching/resources/binary-vs-linear-search-animations.gif" />
 
 
-## Projects
+## Project
 use [Searching Sorted List](https://www.cs.usfca.edu/~galles/visualization/Search.html) tool to find the value at index 17 using both linear and binary search approaches.
