@@ -29,10 +29,10 @@ When a project is due, the project status will be updated as follows.
 |11|[Stack](https://github.com/SAFCSP-Team/stack)| 🟠| 🟠|
 |12|[Queue](https://github.com/SAFCSP-Team/introduction-to-queue-project)|🟢|🟢|
 |13|[Deque](https://github.com/SAFCSP-Team/deque-project)|🟢|🟢|
-|14|[Tree](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main)|🟠||
-|15|[Binary Tree](https://github.com/SAFCSP-Team/binary-tree-project)|🟢||
-|16|[Decision Tree](https://github.com/SAFCSP-Team/decision-tree-project)|🟠||
-|17|[Binary Search Tree](https://github.com/SAFCSP-Team/binary-search-tree-project)|🟠||
+|14|[Tree](https://github.com/SAFCSP-Team/tree-with-non-premitive-data-type/tree/main)|🟠|🟢|
+|15|[Binary Tree](https://github.com/SAFCSP-Team/binary-tree-project)|🟢|🟢|
+|16|[Decision Tree](https://github.com/SAFCSP-Team/decision-tree-project)|🟠|🟢|
+|17|[Binary Search Tree](https://github.com/SAFCSP-Team/binary-search-tree-project)|🟠|🟢|
 |18|[Graph](https://github.com/SAFCSP-Team/graph-project)| | 
 
 
