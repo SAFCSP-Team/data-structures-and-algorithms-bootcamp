@@ -1,25 +1,25 @@
 # Introduction to recursion   
-Recursion is a powerfull algorithm used to solve complex proramming problems. It will be explained in details in the following section.  
+Recursion is a powerful algorithm used to solve complex programming problems. It will be explained in detail in the following section.  
    
 ## Concept  
-Recursion algorithm is the process of solving programming problems by breaking the problem into smaller ones. It involves the function calling it-self in it's definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
+Recursion algorithm is the process of solving programming problems by breaking the problem into smaller ones. It involves the function calling itself in its definition. Recursion could be **single** ( calling it-self once ) or **multiple** ( calling it-self more than once )
    
-Recursion algorithm structure must follow 2 main conditions/processes in the function definition:    
+The recursion algorithm structure must follow 2 main conditions/processes in the function definition:    
 1. Base case:   
-Condition that breaks the loop and stops the function.    
+The condition that breaks the loop and stops the function.    
 2. Recursive call:    
-Statement that calls the function it-self.    
+A statement that calls the function itself.    
 
 ## Example 
  
 Factorial:   
-The factorial of a non-negative integer N it's written as N! and pronounced "N factorial".
+The factorial of a non-negative integer N is written as N! and pronounced "N factorial".
 
-The definition of (N!) recursiveley:    
+The definition of (N!) recursively:    
 0! = 1    
 N! = N x (N-1)!    
   
-For example let's calculate 3! :  
+For example, let's calculate 3! :  
 3! = 3 x 2!   
 = 3 x 2 x 1!   
 = 3 x 2 x 1 x 0!   
@@ -27,7 +27,7 @@ For example let's calculate 3! :
   
 ## Implementaion
 
-- Factorial() function below solves the factorial problem by using the recursion algorithm:
+- The factorial () function below solves the factorial problem by using the recursion algorithm:
 
 ``` java
  public static int Factorial(int n) {
@@ -41,7 +41,7 @@ For example let's calculate 3! :
     }
 ```  
 
-Call the Factorial() function in main method:
+Call the Factorial() function in the main method:
 ```java
 public static void main(String[] args) {
         System.out.println(Factorial(3));
@@ -53,7 +53,7 @@ Output:
 6
 ```
 
-- print() function below is the same funciton we used to print the tree valuse using stack, we will see how we can print tree values using recursion algorithm instead of stack.
+- print() function below is the same function we used to print the tree values using stack, we will see how we can print tree values using the recursion algorithm instead of stack.
   
 1. print() using stack:   
   
