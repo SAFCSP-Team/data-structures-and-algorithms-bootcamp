@@ -98,4 +98,11 @@ public class Main {
     }
 }
 ```
+
 ## Projects
+| Project Title | Deadline |
+:-----------:|:-------------|
+|[Breadth first search](https://github.com/SAFCSP-Team/breadth-first-search-project/tree/main)|
+
+
+
