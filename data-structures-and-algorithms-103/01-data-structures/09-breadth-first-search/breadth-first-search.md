@@ -53,6 +53,9 @@ the BFS algorithm ensures that all vertices at a particular level are visited be
 `Graph` class to represent a graph using an adjacency list
 
 ```java
+import java.util.LinkedList;
+import java.util.Queue;
+
 
 class Graph {
     int vertices;
@@ -71,6 +74,7 @@ class Graph {
         adjList[u].add(v); 
     
     }
+}
 ```
 
 ```java
