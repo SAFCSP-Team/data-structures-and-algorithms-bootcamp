@@ -22,52 +22,67 @@ Suppose you have two bikes 'B1' & 'B2'. And 1 car 'C'. Find all possible ways to
 **Constraint:** Car should not be between bikes.
 <img src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/assets/148013077/bf6cc992-fdd8-41e4-bf3f-6f23ddb14af2" width="1000" height="400" />
 ```java
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class backtracking {
     public static void main(String[] args) {
-        String[] vehicles = {"B1", "B2", "C"};
-        int count = 0;
-
-        count = arrangeVehicles(vehicles, 0,count);
-        System.out.println("We have " + count + " possible ways");
-
+        String[] vehicles = {"C", "B2", "B1"};
+        arrangeVehicles(vehicles);
     }
 
-    public static int arrangeVehicles(String[] vehicles, int currentIndex,int count) {
-        if (currentIndex == vehicles.length - 1) {
-            if(vehicles[1]!="C"){
-                ++count;
-            for (String vehicle : vehicles) {
+    public static void arrangeVehicles(String[] vehicles) {
+        ArrayList<String[]> solution = new ArrayList<>();
+
+        for (int i = 0; i < vehicles.length; i++) {
+            for (int j = 0; j < vehicles.length; j++) {
+                if (i == j) {
+                    continue;
+                }
+
+                swap(vehicles, i, j);
+
+                if (vehicles[1]== "C") {
+                    swap(vehicles, i, j); // Backtrack from the swap
+                    continue;
+                } else if (!isRowInList(vehicles, solution)) {
+                    solution.add(Arrays.copyOf(vehicles, vehicles.length));
+                }
+            }
+        }
+
+        System.out.println("All the possible ways of arranging 2 bikes and 1 car:");
+        for (String[] arrangement : solution) {
+            for (String vehicle : arrangement) {
                 System.out.print(vehicle + " ");
             }
             System.out.println();
-            return count ;
         }
     }
-        for (int i = currentIndex; i < vehicles.length; i++) {
-            swap(vehicles, currentIndex, i);
-            count= arrangeVehicles(vehicles, currentIndex + 1,count);
-            swap(vehicles, currentIndex, i);
+
+    public static void swap(String[] array, int i, int j) {
+        String temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+
+    public static boolean isRowInList(String[] arr, ArrayList<String[]> list) {
+        for (String[] row : list) {
+            if (Arrays.equals(arr, row)) {
+                return true;
+            }
         }
-        return count;
+        return false;
     }
-
-    public static void swap(String[] vehicles, int i, int j) {
-        String temp = vehicles[i];
-        vehicles[i] = vehicles[j];
-        vehicles[j] = temp;
-    }
-
-
 }
 ```
 Output:
 ```
+All the possible ways of arranging 2 bikes and 1 car:
 B1 B2 C 
 B2 B1 C 
-C B2 B1 
 C B1 B2 
-We have 4 possible ways
-
+C B2 B1 
 ```
 
 ### Projects
