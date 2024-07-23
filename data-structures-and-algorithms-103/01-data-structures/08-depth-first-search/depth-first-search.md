@@ -131,9 +131,9 @@ A B E F D C
 
 
 ## Projects
-| Project Title | Deadline |
-:-----------:|:-------------|
-|[Depth first search]()|
+| Project Title
+:-----------:|
+|[Depth first search](https://github.com/SAFCSP-Team/depth-first-search-project)|
 
 
 
