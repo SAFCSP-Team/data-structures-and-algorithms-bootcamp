@@ -38,99 +38,89 @@ when a collision occurs, open addressing involves probing the table to find an a
 
 ## Implementation
 
-Hash table using a chaining technique 
+
+Create a hash table using the linked lists collision chaining technique 
 
 ```java
+import java.util.LinkedList;
 
-public class HashTableArray {
-    Entry[]arrayhash;
-    int size;
+public class Hash {
+    // Number of buckets
+    private int size;
+   // Hash table of size size
+    private  LinkedList<Integer>[] table;
 
-    public HashTableArray(int size){ //constructor
-        this.size=size;  
-        arrayhash = new Entry[this.size];
-        for(int i=0; i<arrayhash.length;i++)
-        arrayhash[i]=new Entry ();
-    }
-
-    public int GetHash(int key){ 
-        return key % size;    // calculates the hash value for a given key
-    }
-
-    public void put(int key, int value){ //insert
-        int index= GetHash(key);
-        Entry ArrayValue= arrayhash[index];// linked list
-        Entry newItem = new Entry(key,value);
-        newItem.next=ArrayValue;
-        ArrayValue.next=newItem;
-    }
-
-    public int Get(int key){
-        int value = 0;
-        int index=GetHash(key);
-        Entry ArrayValue= arrayhash[index];
-        while (ArrayValue!=null) {
-            if(ArrayValue.GetKey() == key){
-                value= ArrayValue.value;
-                break;
-            }
-            ArrayValue=ArrayValue.next;
+    public Hash(int size) {
+        this.size = size;
+        this.table = new LinkedList[size]; //  each position in the table initially points to an empty LinkedList.
+        for (int i = 0; i < size; i++) {  // iterates over each index in the table array.
+            table[i] = new LinkedList<>(); //to ensure that each bucket in the hash table initially points to an empty linked list, ready to store elements.
+          }
         }
-        return value;
-     }
-
-    } 
 ```
 
-The `Entry` class holds a key-value pair.
 
+ The `hashFunction()` method calculates the hash value for a given key and `insertItem()` method inserts a key into the hash table.
+ 
 ```java
-public class Entry {
-    int key;  // to determine index
-    int value;   
-    Entry next;
+    public int hashFunction(int key) {
+        return (key % size);
+    }
 
-public Entry(int key, int value){ //constructor
-    this.key=key;
-    this.value=value;
-    this.next=null;
-}
-public Entry(){
-next = null;
-}
 
-public int GetKey(){
-    return key;
-}
-public int getValue(){
-    return value;
-}
-}
+    public void insertItem(int key) {
+        // get the hash index of key
+        int index = hashFunction(key);
+        // insert key into hash table at that index
+        table[index].add(key);
+    }
+
+    public void displayHash() {
+        for (int i = 0; i < size; i++) {   //iterates through each bucket in the table array and prints the bucket index followed by the keys stored in the linked list at that index.
+            System.out.print(i);
+            for (int x : table[i]) {
+                System.out.print(" --> " + x);
+            }
+            System.out.println();
+        }
+    }
+
+
 ```
 In the main method create an instance of the `HashTableArray` class called hash with a size of 6 and called put method.
 
 ```java
-public class Main{
-        public static void main(String[] args) {
+    public static void main(String[] args) {
+        // array that contains keys to be mapped
+        int[] a = { 15, 11, 27, 8, 12 };
 
-            HashTableArray hash= new HashTableArray(6);
-            hash.put(10, 2);
-            hash.put(7,5);
-            hash.put(4,1);
+        // Create a empty has of BUCKET_SIZE
+        Hash h = new Hash(7);
 
-            System.out.println(hash.Get(10));
-
+        // insert the keys into the hash table
+        for (int x : a) {
+            h.insertItem(x);
         }
+
+        // Display the hash table
+        h.displayHash();
     }
+}
 ```
 output
-```java 
+```java
+0
+1 --> 15 --> 8
 2
+3 --> 3
+4 --> 11
+5 --> 12
+6 --> 27 --> 6
 ```
 
 ## Projects
 | Project Title | Deadline |
 :-----------:|:-------------|
-|[Hash Table](https://github.com/SAFCSP-Team/hash-table-project/blob/main/README.md)|
+|[Hash Table](https://github.com/SAFCSP-Team/hash-table-project/tree/main)|
 
 
