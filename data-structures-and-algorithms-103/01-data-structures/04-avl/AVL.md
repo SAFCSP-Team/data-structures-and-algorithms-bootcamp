@@ -22,7 +22,7 @@ The searching operation in the AVL tree is much faster than BST.
 Self-balancing binary search tree.    
 
 Figure 2: AVL tree   
-<img width="910" alt="AVL" src="https://github.com/fahadLine/data-structure/blob/main/DS-L03/AVL/Images/data-structures-and-algorithms%20-%20Figuer%202%20(1).jpg">
+<img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/data-structures-and-algorithms-figuer-2.jpg">
 
 
 
@@ -59,7 +59,7 @@ To rebalance the tree there are 2 operations to be performed based on the balanc
 This operation is performed when the balance factor is > +1.    
      
 Figure 3   
-<img width="910" alt="AVL" src="https://github.com/fahadLine/data-structure/blob/main/DS-L03/AVL/Images/data-structures-and-algorithms%20-%20Figuer%206.jpg">
+<img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/data-structures-and-algorithms-figuer-3.jpg">
 
 
    
@@ -67,7 +67,7 @@ Figure 3
 This operation is performed when the balance factor is < -1.   
    
 Figure 4   
-<img width="910" alt="AVL" src="https://github.com/fahadLine/data-structure/blob/main/DS-L03/AVL/Images/data-structures-and-algorithms%20-%20Figuer%205.jpg">
+<img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/data-structures-and-algorithms-figuer-4.jpg">
 
 
 
