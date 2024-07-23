@@ -47,7 +47,7 @@ import java.util.LinkedList;
 public class Hash {
     // Number of buckets
     private int size;
-   // Hash table of size size
+
     private  LinkedList<Integer>[] table;
 
     public Hash(int size) {
@@ -92,7 +92,7 @@ In the main method, an array a is created with keys to be inserted into the hash
 ```java
     public static void main(String[] args) {
         // array that contains keys to be mapped
-        int[] a = { 15, 11, 27, 8, 12 };
+        int[] a = { 15, 11, 27, 8, 12, 3, 6};
 
         Hash h = new Hash(7);
 
