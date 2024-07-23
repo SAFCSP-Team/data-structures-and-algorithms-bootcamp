@@ -17,11 +17,11 @@ F ->
    
   
 The graph is built by a collection of vertices, and each vertex contains a list.     
-Ex:    
+Ex:   
 - The vertex (A) is a list of (A) -> (B).     
 - The vertex (B) is a list of (B) -> (C) -> (D) -> (E).    
    
-The technique is     
+## The Depth First Search technique:       
 - Push the first vertex to the stack (A).     
 - Pop and print the vertex (A).  
 - Mark (A) as visited.  
