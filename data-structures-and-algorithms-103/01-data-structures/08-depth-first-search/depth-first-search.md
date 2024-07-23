@@ -4,7 +4,7 @@
 Depth First Search is a graph traversal algorithm that traverses the graph in a depthward motion and uses a stack to remember to get the next vertex to start a search when a dead end occurs in any iteration.   
   
 Consider the below `graph` of vertices of characters :   
-
+  
 Image in progress.    
   
 Figure 1   
