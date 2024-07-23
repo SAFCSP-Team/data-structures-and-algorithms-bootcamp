@@ -4,9 +4,9 @@ Imagine you have a list of phone numbers that you need to store and manage effic
 
 ## Concept
 
- Type of data structure in which the index value of the data element is generated from a hash function, this enables very fast data access as the index value behaves as a key for the data value.
+ Hash table is a type of data structure in which the index value of the data element is generated from a hash function, so the hash table stores key and value pairs but the key is generated through a hashing function `hash = k % array_size`.
  
- so the hash table stores key and value pairs but the key is generated through a hashing function `hash = k % array_size`.
+
 
  ```java
     public int hashFunction(int key, int arrSize) {
@@ -18,7 +18,7 @@ Imagine you have a list of phone numbers that you need to store and manage effic
 
 ### Collision Handling
 
-When two keys are hashed to the same index in a hash table. `Collisions` are a problem because every slot in a hash table is supposed to store a **single** element, to handle collisions there are various techniques to handle such as `chaining` and `open addressing`.
+Collision Handling happens when two keys are hashed to the same index in a hash table. `Collisions` are a problem because every slot in a hash table is supposed to store a **single** element, to handle collisions there are various techniques to handle such as `chaining` and `open addressing`.
 
 
 #### Chaining
@@ -38,7 +38,7 @@ when a collision occurs, open addressing involves probing the table to find an a
 
 ## Implementation
 
-Hash table using chaining technique 
+Hash table using a chaining technique 
 
 ```java
 
@@ -46,7 +46,7 @@ public class HashTableArray {
     Entry[]arrayhash;
     int size;
 
-    public HashTableArray(int size){ //cons
+    public HashTableArray(int size){ //constructor
         this.size=size;  
         arrayhash = new Entry[this.size];
         for(int i=0; i<arrayhash.length;i++)
@@ -86,11 +86,11 @@ The `Entry` class holds a key-value pair.
 
 ```java
 public class Entry {
-    int key;// to determine index
-    int value;// string
+    int key;  // to determine index
+    int value;   
     Entry next;
 
-public Entry(int key, int value){ //cons
+public Entry(int key, int value){ //constructor
     this.key=key;
     this.value=value;
     this.next=null;
@@ -122,6 +122,10 @@ public class Main{
 
         }
     }
+```
+output
+```java 
+2
 ```
 
 ## Projects
