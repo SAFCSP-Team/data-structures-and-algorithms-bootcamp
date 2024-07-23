@@ -87,14 +87,13 @@ public class Hash {
 
 
 ```
-In the main method create an instance of the `HashTableArray` class called hash with a size of 6 and called put method.
+In the main method, an array a is created with keys to be inserted into the hash table.
 
 ```java
     public static void main(String[] args) {
         // array that contains keys to be mapped
         int[] a = { 15, 11, 27, 8, 12 };
 
-        // Create a empty has of BUCKET_SIZE
         Hash h = new Hash(7);
 
         // insert the keys into the hash table
