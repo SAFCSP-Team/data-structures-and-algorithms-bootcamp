@@ -1,10 +1,41 @@
 # Depth First Search 
 
 # Concept
-Depth First Search is a graph traversal algorithm that traverses the graph in a depthward motion and uses a stack to remember to get the next vertex to start a search when a dead end occurs in any iteration.
+Depth First Search is a graph traversal algorithm that traverses the graph in a depthward motion and uses a stack to remember to get the next vertex to start a search when a dead end occurs in any iteration.   
+  
+Consider the below graph:  
 
-<!-- Theory Image to support the explation -->
+Image in progress.    
+  
+Figure 1   
+A -> B  
+B -> C -> D -> E  
+C -> A  
+D -> F  
+E -> F  
+F ->   
+   
+  
+The graph is built by a collection of vertices, and each vertex contains a list.     
+Ex:    
+- The vertex (A) is a list of (A) -> (B).     
+- The vertex (B) is a list of (B) -> (C) -> (D) -> (E).    
+   
+The technique is     
+- Push the first vertex to the stack (A).     
+- Pop and print the vertex (A).  
+- Mark (A) as visited.  
+- Loop the first list (A) -> (B), and check whether the vertex is traveled or not.    
+- Push the first list's **untraveled vertices** until the last vertex (B).       
+- The stack now has all the **untraveled vertices** of the first list. (A) is already visited so the stack now has only (B).  
+  
+Repeat till the end of the vertices   
+- Pop and print the vertex (B).   
+- Mark (B) as visited.     
+- ...   
 
+
+  
 # Implementation
 
 
@@ -50,14 +81,8 @@ public void DFS(int StartVerIndx) {
 
 Main method: 
   
-Create the following `graph` and perform the **DFS** on it:   
+Create the `graph` in the Figure 1 and perform the **DFS** on it:   
   
-A -> B  
-B -> C -> D -> E  
-C -> A  
-D -> F  
-E -> F  
-F ->   
   
    
 ```java
