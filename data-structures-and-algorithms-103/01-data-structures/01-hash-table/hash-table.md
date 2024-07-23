@@ -4,7 +4,7 @@ Imagine you have a list of phone numbers that you need to store and manage effic
 
 ## Concept
 
- Hash table is a type of data structure in which the index value of the data element is generated from a hash function, so the hash table stores key and value pairs but the key is generated through a hashing function `hash = k % array_size`.
+ Hash table is a type of data structure in which the index value of the data element is generated from a hash function `hash = k % array_size`.
  
 
 
