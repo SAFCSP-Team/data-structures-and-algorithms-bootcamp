@@ -7,7 +7,7 @@ Consider we want to insert the below values in the order from left to right:
 
    
 Figure 1: Binary search tree (BST) vs AVL tree   
-<img width="910" alt="AVL" src="https://github.com/fahadLine/data-structure/blob/main/DS-L03/AVL/Images/data-structures-and-algorithms%20-%20Figuer%201%20(1).jpg">
+<img width="910" alt="AVL" src="https://github.com/fahadLine/data-structure/blob/main/DS-L03/AVL/Images/data-structures-and-algorithms-figuer-1.jpg">
    
 
 Now if we want to search for the value 6 in both trees, in BST we should traverse through all the nodes in the tree to reach the target **performing 5 steps**. On the other hand in the AVL tree, we only have to **perform 2 steps** to reach our target.   
