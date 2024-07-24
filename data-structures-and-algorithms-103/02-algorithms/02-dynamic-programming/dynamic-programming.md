@@ -1,11 +1,11 @@
 # Dynamic Programming
-A dynamic programming is an algorithm technique that is used to solve problems. by breaking the problem into smaller subproblems then solve each subproblem once and store the solution to avoid redundancies, so we can have an `optimal solution`.
+Dynamic programming is an algorithm technique that is used to solve problems. by breaking the problem into smaller subproblems then solve each subproblem once and store the solution to avoid redundancies, so we can have an `optimal solution`.
 
 <p align="center" >
 <img src="images/example.png" width="500" alt="example sub-problems">
 </p>
 
-> * Why we use dynamic programming? To optimize the time complexity of an algorithm from `O(2^n)` to `O(n)` or `O(n^2)`. 
+> * Why do we use dynamic programming? To optimize the time complexity of an algorithm from `O(2^n)` to `O(n)` or `O(n^2)`. 
 > * By using dynamic programming we can find the number of ways to do something, and find an optimal solution to a problem. 
 
 
@@ -20,7 +20,7 @@ A dynamic programming is an algorithm technique that is used to solve problems. 
 2. **Bottom-up approach**(`tabulation`): This approach involves solving the problem iteratively and storing the subproblems' solutions to avoid redundancies.
 
 ## Example
-Let's take an example of Airline Ticket Price problem. airline companies often use dynmaic pricing to adjust the price of tickets based on the demand and the time left before the flight. 
+Let's take an example of the Airline Ticket Price problem. airline companies often use dynamic pricing to adjust the price of tickets based on the demand and the time left before the flight. 
 
 **First**: break down the problem into smaller subproblems: 
 
@@ -35,30 +35,31 @@ Let's take an example of Airline Ticket Price problem. airline companies often u
 
 ## Implementation 
 
-Let's take the fibonacci sequence to demonstrate the dynamic programming technique.
+Let's take the Fibonacci sequence to demonstrate the dynamic programming technique.
 
-> * Fibonacci sequence is a series of numbers that the next number is sum of the two prvious numbers subtracting the first number by -1 and the second number by -2, F n-1 + F n-2.
+> * Fibonacci sequence is a series of numbers in which the next number is the sum of the two previous numbers subtracting the first number by -1 and the second number by -2, F n-1 + F n-2.
 > * Fibonacci sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34,... .
 > * Example: The fibonacci sequence of 6 = 3 + 5 = 8.
 
 
-Let's solve the fibonacci sequence using recursion, and then we will optimize the solution using dynamic programming.
+Let's solve the Fibonacci sequence using recursion, and then we will optimize the solution using dynamic programming.
 ```java
+
 class Main {
-  public static void main(String[] args) {
-     
-    System.out.println(fib(6));
-  }
-  
-  public static int fibonacci(int number) {
-      if(number <= 2) {
-        return 1;
-      } else {
-        // Fibonacci formula  fib(n) = fib(n-1) + fib(n-2)
-        return fibonacci(number - 1) + fibonacci(number - 2);
-      }
+    public static void main(String[] args) {
+       
+      System.out.println(fibonacci(6));
     }
-}
+    
+    public static int fibonacci(int number) {
+        if(number <= 2) {
+          return 1;
+        } else {
+          // Fibonacci formula  fib(n) = fib(n-1) + fib(n-2)
+          return fibonacci(number - 1) + fibonacci(number - 2);
+        }
+      }
+  }
 ```
 Output: `8`
 
