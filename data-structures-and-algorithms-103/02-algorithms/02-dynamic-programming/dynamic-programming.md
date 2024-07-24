@@ -1,6 +1,9 @@
 # Dynamic Programming
 A dynamic programming is a algorithm technique that is used to solve problems. by breaking the problem into a smaller subproblems then solve each subproblem once and store the solution to avoid redundancies, so we can have an `optimal solution`.
 
+<img src="images/example.png" width="500" alt="example sub-problems">
+
+
 > * Why we use dynamic programming? To optimize the time complexity of an algorithm from `O(2^n)` to `O(n)` or `O(n^2)`. 
 > * By using dynamic programming we can find the number of ways to do something, and find an optimal solution to a problem. 
 
@@ -59,6 +62,9 @@ class Main {
 Output: `8`
 
 Although the output is correct, but the time complexity of the algorithm is `O(2^n)` which is not optimal, if we want to calculate the fibonacci sequence of 50, it will take a long time to get the result.
+
+<img src="images/fib.png" width="500" alt="example sub-problems">
+
 
 Notice that we have **redundancies** in the solution, for example, the fibonacci sequence of 3 is calculated twice, and the fibonacci sequence of 2 is calculated three times.
 
