@@ -1,15 +1,15 @@
 # Breadth First Search
 
 ## Concept
-BFS is explores all the vertices of a `graph` in breadth-first order, we use a `queue` data structure technique to store the vertices. The queue follows the First In First Out (FIFO) principle, which means that the neighbors of the node will be displayed, beginning with the node that was put first.
+BFS explores all the vertices of a `graph` in breadth-first order, we use a `queue` data structure technique to store the vertices. The queue follows the First In First Out (FIFO) principle, which means that the neighbors of the vertex will be displayed, beginning with the vertex that was put first.
 
 
 so we operate BFS algorithm:
 
-1. start from the source node.
-2. add that node at the front of the queue to the visited list.
-3. make a list of the nodes as visited that are close to that vertex.
-4. dequeue the nodes once they are visited.
+1. start from the source vertex.
+2. add that vertex at the front of the queue to the visited list.
+3. make a list of the vertex as visited.
+4. dequeue the vertex once they are visited.
 5. repeat the actions until the queue is empty.
 
 
