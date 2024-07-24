@@ -39,7 +39,7 @@ Now the first Node in our Trie (root) will be storing the letter **h** in its ar
 This variable is used to detect if the node is storing a letter that is considered to be the end of a word in our Trie or not.
 <br/>
 
-Figure 1 shows the node structure on the left, and on the right shows the root node after adding the letter **h** to its `array`, and assigning a false value to the `isEndOfWord` variable.   
+Figure 1 shows the node structure on the left, and on the right shows the root node after adding the letter **h** to its `array`, and assigning a `false` value to the `isEndOfWord` variable.   
 
 Figure 1    
 <img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/array1.gif">
