@@ -16,6 +16,14 @@ A divide-and-conquer is a technique of estimating a large problem by:
 * Resolving the related problems (conquer)
 * Mixing them together will produce the final output (combine)
 
+
+
+
+https://github.com/user-attachments/assets/5d25309d-18fa-4955-b34e-6b7f82935cd0
+
+
+
+
 there are some algorithms that follow the divide-and-conquer algorithm like `Quick Sort` and `Merge Sort`.
 
 ## Implementation
