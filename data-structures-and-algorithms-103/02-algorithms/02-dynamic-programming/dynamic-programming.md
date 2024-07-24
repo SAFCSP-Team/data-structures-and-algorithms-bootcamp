@@ -148,4 +148,4 @@ Output: `8`
 ## Projects
 | Project Title | Deadline |
 :-----------:|:-------------|
-|[Dynamic Programming](https://github.com/SAFCSP-Team/dynamic-programming-project/tree/main)|
+|[Dynamic Programming](https://github.com/SAFCSP-Team/DP-project/tree/main)|
