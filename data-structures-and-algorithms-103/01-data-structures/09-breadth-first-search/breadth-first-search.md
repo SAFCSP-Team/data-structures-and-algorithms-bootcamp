@@ -104,7 +104,7 @@ public class Main {
         graph.addEdge(2, 4);
 
         System.out.print( "Breadth First Traversal starting from vertex 0: ");
-        graph.bfs(0); // starting from vertex 0 
+        graph.breadthfirstSearch(0); // starting from vertex 0 
     }
 }
 ```
