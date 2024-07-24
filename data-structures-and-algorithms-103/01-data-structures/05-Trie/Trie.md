@@ -18,7 +18,7 @@ Each Node holds the following information:
 The Node stores only one of the word letters in an array, The index of every letter position is calculated using the ASCII code.
 The array size is 26 (the number of the English alphabet).   
    
-Assuming we want to insert the word **hi** in the Trie. the letter **h** ASCII code is 104. To calculate the index for the letter **h** we subtract the letter **a** from it.   
+Assuming we want to insert the word **hi** in the Trie. the letter **h** `ASCII code` is 104. To calculate the index for the letter **h** we subtract the letter **a** from it.   
     
 letter **h** index is:   
 `'h' - 'a' =
