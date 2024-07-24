@@ -59,4 +59,4 @@ public class GraphWeighted {
 
 Project ID | Project Title | Deadline |
 |:-----|:-----------:|:-------------|
-|WeightedGraph| [Weighted Graph Project]() | - | 
+|WeightedGraph| [Weighted Graph Project](https://github.com/SAFCSP-Team/weighted-graph-project/tree/main) | - | 
