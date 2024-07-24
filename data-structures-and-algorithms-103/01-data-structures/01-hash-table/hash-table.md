@@ -1,6 +1,6 @@
 # Hash Table
 
-Imagine you have a list of phone numbers that you need to store and manage efficiently. by implementing a hash table in this scenario, you can associate each person's name with their corresponding phone number, where the person's name as the `key` and the phone number is a value. This allows for quick and direct access to phone numbers based on the names of the individuals.
+Imagine you have a list of phone numbers that you need to store and manage efficiently. by implementing a hash table in this scenario, you can associate each person's name with their corresponding phone number, where the person's name is the `key` and the phone number is a `value`. This allows for quick and direct access to phone numbers based on the names of the individuals.
 
 ## Concept
 
