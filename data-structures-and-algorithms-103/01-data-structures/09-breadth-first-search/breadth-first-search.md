@@ -1,7 +1,7 @@
 # Breadth First Search
 
 ## Concept
-Explores all the vertices of a graph in breadth-first order, we use a queue data structure technique to store the vertices. The queue follows the First In First Out (FIFO) principle, which means that the neighbors of the node will be displayed, beginning with the node that was put first.
+BFS is explores all the vertices of a `graph` in breadth-first order, we use a queue data structure technique to store the vertices. The queue follows the First In First Out (FIFO) principle, which means that the neighbors of the node will be displayed, beginning with the node that was put first.
 
 
 so we operate BFS algorithm:
@@ -12,13 +12,24 @@ so we operate BFS algorithm:
 4. dequeue the nodes once they are visited.
 5. repeat the actions until the queue is empty.
 
-the BFS algorithm ensures that all vertices at a particular level are visited before moving on to the next level, by enqueuing the neighboring vertices of each vertex.
+
+### Example
 
 
-[gif in progress]()
+
+
+https://github.com/user-attachments/assets/4bbbaaff-1ff0-46d1-96a1-dfd6cb1e3939
+
+
+
+
+the BFS algorithm ensures that all vertices at a particular level are visited before moving on to the next level, by enqueuing the neighboring vertices of each vertex
+
+
+
 ## Implementation
 
- Function to perform `Breadth First Search` on a graph and represented using adjacency list 
+ Function to perform `Breadth First Search` on a graph.
 
 ```java
    public void breadthfirstSearch(int startNode){
@@ -27,17 +38,15 @@ the BFS algorithm ensures that all vertices at a particular level are visited be
         Queue<Integer> queue = new LinkedList<>();
         boolean[] visited = new boolean[vertices];
 
-        /* Mark the current node as visited and enqueue it */
+        /* mark the current node as visited and enqueue it */
         visited[startNode] = true;
         queue.add(startNode);
 
-        /* Iterate over the queue */
+        /* iterate over the queue */
         while (!queue.isEmpty()) {
             /* Dequeue a vertex from queue and print it */
             int currentNode = queue.poll();
             System.out.print(currentNode + " ");
-
-            /* Get all adjacent vertices of the dequeued */
 
             /* vertex currentNode If an adjacent has not been visited, then mark it visited and enqueue it */
             for (int neighbor : adjList[currentNode]) {
@@ -50,7 +59,7 @@ the BFS algorithm ensures that all vertices at a particular level are visited be
     }
 ```
 
-`Graph` class to represent a graph using an adjacency list
+`Graph` class 
 
 ```java
 import java.util.LinkedList;
@@ -81,7 +90,6 @@ class Graph {
 public class Main {
     public static void main(String[] args)
     {
-        /* Number of vertices in the graph */
         int vertices = 5;
 
         /* Create a graph */
@@ -89,20 +97,22 @@ public class Main {
         Graph graph = new Graph(vertices);
 
         /* Add edges to the graph */
-        graph.addEdge(0, 1);
+        graph.addEdge(0, 1); // adds an edge between vertices 0 and 1.
         graph.addEdge(0, 2);
         graph.addEdge(1, 3);
         graph.addEdge(1, 4);
         graph.addEdge(2, 4);
 
-        // Perform BFS traversal starting from vertex 0
-        System.out.print(
-            "Breadth First Traversal starting from vertex 0: ");
-        graph.bfs(0);
+        System.out.print( "Breadth First Traversal starting from vertex 0: ");
+        graph.bfs(0); // starting from vertex 0 
     }
 }
 ```
 
+the output
+```java
+Breadth First Traversal starting from vertex 0: 0 1 2 3 4
+```
 ## Projects
 | Project Title | Deadline |
 :-----------:|:-------------|
