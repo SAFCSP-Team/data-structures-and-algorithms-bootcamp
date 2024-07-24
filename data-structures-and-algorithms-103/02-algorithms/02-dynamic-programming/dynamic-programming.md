@@ -63,13 +63,13 @@ class Main {
 ```
 Output: `8`
 
-Although the output is correct, but the time complexity of the algorithm is `O(2^n)` which is not optimal, if we want to calculate the fibonacci sequence of 50, it will take a long time to get the result.
+Although the output is correct, the time complexity of the algorithm is `O(2^n)` which is not optimal, if we want to calculate the Fibonacci sequence of 50, it will take a long time to get the result.
 
 <p align="center" >
 <img src="images/fib.png" width="500" alt="example sub-problems">
 </p>
 
-Notice that we have **redundancies** in the solution, for example, the fibonacci sequence of 3 is calculated twice, and the fibonacci sequence of 2 is calculated three times.
+Notice that we have **redundancies** in the solution, for example, the Fibonacci sequence of 3 is calculated twice, and the Fibonacci sequence of 2 is calculated three times.
 
 #### Dynamic programming has two techniques to solve the problem.
 
@@ -77,19 +77,19 @@ Notice that we have **redundancies** in the solution, for example, the fibonacci
 
 In this technique, we solve the problem `recursively` and store the solution of the subproblems in a `map`.
 
-> map is a data structure that holds key-value pairs, the key is the fibonacci number and the value is the result.
+> map is a data structure that holds key-value pairs, the key is the Fibonacci number and the value is the result.
 
 ```java
 import java.util.HashMap;
 import java.util.Map;
 
 class Main {
-  // memo will hold the solution of the subproblems the key is fibonacci number and the value is the result.
+  // memo will hold the solution of the subproblems the key is Fibonacci number and the value is the result.
   private static Map<Integer, Integer> memo = new HashMap<>();
 
 
     public static void main(String[] args) {
-        System.out.println(fibonacci(50)); // Example usage
+        System.out.println(fibonacci(6)); // Example usage
     }
 
     public static int fibonacci(int number) {
@@ -144,7 +144,7 @@ Output: `8`
 
 
 > * Remember to use the `memoization` technique to store the solution of the subproblems to avoid redundancies.
-> * `memoization` is a latin word that means "remembering".
+> * `memoization` is a Latin word that means "remembering".
 
 ## Projects
 | Project Title | Deadline |
