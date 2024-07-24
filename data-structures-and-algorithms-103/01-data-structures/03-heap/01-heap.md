@@ -1,9 +1,9 @@
 # Heap
 
-### Concept 
+## Concept 
 `Heap` is a hierarchical data structure that can be implemented using various underlying structures, such as arrays or trees.  
 
-The heap property ensures that the highest/lowest priority element is always at the root of the heap. However, there is **no specific order or relationship between nodes** at any level, so the **heap is not sorted**.
+**The heap property** ensures that the highest/lowest value element is always at the root of the heap. However, there is **no specific order or relationship between nodes** at any level, so the **heap is not sorted**.
 
 **Types of Heaps**
 
@@ -17,8 +17,8 @@ There are two main types of heap:
 
 **Heap Operations**
 - `heapify`: Constructs a heap from an unordered array.
-- `insert`: Inserts an element into the heap while Ensuring the heap property.
-- `delete`: Removes an element from the heap while Ensuring the heap property.
+- `insert`: Inserts an element into the heap while ensuring the heap property.
+- `delete`: Removes an element from the heap while ensuring the heap property.
 - `peek (Find max/min)`: Retrieves the highest/lowest priority element without removing it.
 - `extract(Max/Min)`: Retrieves the highest/lowest priority element and removes.
 
@@ -27,7 +27,7 @@ Heaps have various applications, like:
 - **Heapsort** is a sorting algorithm that uses a heap to sort the value in ascending or descending order.
 - **Binary Heap** is used for pathfinding algorithms to Find the shortest path between two points in a graph.
 
-### Implementation
+## Implementation
 We are going to implement a `max-heap` class using an array. 
 
 Each element in an array at index `i` has:
@@ -41,7 +41,7 @@ public class MaxHeap {
   
     public MaxHeap(int capacity) {
         heap = new int[capacity];
-        count = 0; // Initialize the count to -1 (empty heap).
+        count = 0; // Initialize the count to 0 (empty heap).
     }
   
     public boolean isEmpty() {
