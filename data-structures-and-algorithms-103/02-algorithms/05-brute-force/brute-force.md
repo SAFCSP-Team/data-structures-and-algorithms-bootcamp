@@ -11,16 +11,7 @@ so you would start by trying the first possible combination (e.g., 000) and then
 The brute Force Algorithm involves guessing all possible combinations until the correct one is found or systematically going through each option one by one.
 
 
-For example, to find the **highest** number in an array, rather than sorting it first a brute force method may involve scanning each element in the array in sequence to determine the largest number.
 
-```
-int max = array[0];
-for (int i = 0; i < array.length; i++) {
-  if (array[i] > max) {
-    max = array[i];
-  }
-}
-```
 ## Implementation
 
 In this implementation, we generate all possible combinations of characters of a given length.
@@ -50,6 +41,36 @@ public class BruteForce {
         bruteForce(characters, length);
     }
 }
+```
+the output
+```
+aaa
+aab
+aac
+aba
+abb
+abc
+aca
+acb
+acc
+baa
+bab
+bac
+bba
+bbb
+bbc
+bca
+bcb
+bcc
+caa
+cab
+cac
+cba
+cbb
+cbc
+cca
+ccb
+ccc
 ```
 
 ## Projects
