@@ -5,6 +5,9 @@ If a graph edge has a value associated with it, then it is called a weighted gra
 
 One of the use cases of the weighted graph is map navigation. Where the **vertices** are the current location and destination the **edges** are the roads which connected to the destination, and the **weights** are the distance between the two locations.
 
+<p align="center" >
+<img width="350" alt="Graph - Node" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-101/02-data-structures/06-graph/images/Graph-Weight.jpg">
+</p>
 
 ## Concept
 <!-- What is the weighted graph? -->
