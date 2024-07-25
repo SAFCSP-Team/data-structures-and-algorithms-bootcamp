@@ -32,7 +32,7 @@ public class Backtracking {
     }
 
     public static void arrangeVehicles(String[] vehicles) {
-        ArrayList<String[]> solution = new ArrayList<>();
+        ArrayList<String[]> solutions = new ArrayList<>();
 
         for (int i = 0; i < vehicles.length; i++) {
             for (int j = 0; j < vehicles.length; j++) {
@@ -45,14 +45,14 @@ public class Backtracking {
                 if (vehicles[1]== "C") {
                     swap(vehicles, i, j); // Backtrack from the swap
                     continue;
-                } else if (!isRowInList(vehicles, solution)) {
-                    solution.add(Arrays.copyOf(vehicles, vehicles.length));
+                } else if (!isRowInList(vehicles, solutions)) {
+                    solutions.add(Arrays.copyOf(vehicles, vehicles.length));
                 }
             }
         }
 
         System.out.println("All the possible ways of arranging 2 bikes and 1 car:");
-        for (String[] arrangement : solution) {
+        for (String[] arrangement : solutions) {
             for (String vehicle : arrangement) {
                 System.out.print(vehicle + " ");
             }
