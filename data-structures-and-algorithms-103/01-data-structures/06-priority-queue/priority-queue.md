@@ -13,6 +13,7 @@ There are several ways to implement a priority queue, and the most common ways a
 
 Implement `Priority Queue` using `Sorted Linked List`
 
+> In the following implementation, the lowest value will be dequeued first.
 
 ```java
 
