@@ -17,6 +17,7 @@ We can implement weighted graph using **Adjacency Matrix**, where each cell of t
 > Adjacency Matrix is a 2D array, the column represents the source vertex and the row represents the destination vertex.
 
 <!-- Weighted Graph Theory + 2D Array Image -->
+![image](https://github.com/user-attachments/assets/cd76712b-958a-4423-b217-1b3205f8052f)
 
 
 ```java 
