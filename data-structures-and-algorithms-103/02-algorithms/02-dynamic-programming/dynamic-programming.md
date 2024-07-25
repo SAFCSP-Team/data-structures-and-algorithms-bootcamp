@@ -11,7 +11,7 @@ Dynamic programming is an algorithm technique that is used to solve problems. by
 
 ## Steps to Solve Dynamic Programming Problems
 1. **Identify the subproblems**: Break down the problem into smaller subproblems.
-2. **Solve each subproblem once and store the solution**: Use the `memoization` technique to store the solution of the subproblems to avoid redundancies.
+2. **Solve each subproblem once and store the solution**: Once you solve the subproblem, store the solution to avoid redundancies using `memoization` or `tabulation`.
 3. **Solve the main problem**: Solve the main problem by using the solutions of the subproblems.
 
 ## Dynamic Programming Types:
@@ -112,6 +112,7 @@ class Main {
 
 }
 ```
+Output: `8`
 
 ##### Second technique is `Bottom-Up`(`Tabulation`) 
 
@@ -143,7 +144,8 @@ class Main {
 Output: `8`
 
 
-> * Remember to use the `memoization` technique to store the solution of the subproblems to avoid redundancies.
+> * Remember to use the `memoization` or `tabulation` technique to store the solution of the subproblems to avoid redundancies.
+> * `memoization` uses `recursion` and `linked list` to store the solution of the subproblems, and `tabulation` uses `iteration` and `array` to store the solution of the subproblems.
 > * `memoization` is a Latin word that means "remembering".
 
 ## Projects
