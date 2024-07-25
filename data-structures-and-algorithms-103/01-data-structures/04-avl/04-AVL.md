@@ -70,10 +70,9 @@ This operation is performed when the balance factor is < -1.
    
 Figure 4   
 <img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/data-structures-and-algorithms-figuer-4.jpg">
-
-
-
-
+> The AVL tree needs to maintain the BST properties, so if the tree is in the rebalancing process and the new node is smaller than the right node, we should perform the right rotation on the right node first and then proceed to left rotate the node.  
+  
+  
    
 ## Example  
 
