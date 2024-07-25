@@ -8,6 +8,8 @@ Consider the below `graph` of vertices of characters :
 Image in progress.    
   
 Figure 1   
+<img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/08-depth-first-search/images/fish_4x_720.png">
+ 
 A -> B  
 B -> C -> D -> E  
 C -> A  
@@ -26,8 +28,8 @@ Ex:
 - Pop and print the vertex (A).  
 - Mark (A) as visited.  
 - Loop the first list (A) -> (B), and check whether the vertex is traveled or not.    
-- Push the first list's **untraveled vertices** until the last vertex (B).       
-- The stack now has all the **untraveled vertices** of the first list. (A) is already visited so the stack now has only (B).  
+- Push the first list's **unvisited vertices** until the last vertex (B).       
+- The stack now has all the **unvisited vertices** of the first list. (A) is already visited so the stack now has only (B).  
   
 Repeat till the end of the vertices   
 - Pop and print the vertex (B).   
