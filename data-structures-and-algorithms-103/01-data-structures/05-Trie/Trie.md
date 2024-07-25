@@ -241,7 +241,7 @@ public class Trie {
         return words;
     }
 ```   
-Main  
+Main method  
 ```java
     public static void main(String[] args) {
 
