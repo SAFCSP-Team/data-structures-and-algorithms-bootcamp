@@ -2,9 +2,9 @@
 
 Imagine you have a deck of cards that needs to be sorted in ascending order, by applying the divide and conquer approach to sort a deck of cards
 
-* `divide` the deck into smaller subgroups.
-* `conquer` each subgroup by sorting them independently.
-* `combine` the sorted subgroups by merging them back together, and finally obtain a fully sorted deck.
+* `Divide` the deck into smaller subgroups.
+* `Conquer` each subgroup by sorting them independently.
+* `Combine` the sorted subgroups by merging them back together, and finally obtain a fully sorted deck.
 
 ## Concept
 
@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/5d25309d-18fa-4955-b34e-6b7f82935cd0
 
 
 
-there are some algorithms that follow the divide-and-conquer algorithm like `Quick Sort` and `Merge Sort`.
+some algorithms follow the divide-and-conquer algorithm like `Quick Sort` and `Merge Sort`.
 
 ## Implementation
 
