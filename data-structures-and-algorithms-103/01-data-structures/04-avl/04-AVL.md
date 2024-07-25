@@ -23,7 +23,7 @@ The searching operation in the AVL tree is much faster than BST.
 Self-balancing binary search tree.    
 
 Figure 2: AVL tree   
-<img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/data-structures-and-algorithms-figuer-2.jpg">
+<img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/fig-2.png">
 
 
 - AVL is a binary search tree itself, let's have a reminder of the binary search tree properties:    
