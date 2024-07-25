@@ -1,6 +1,6 @@
 # Backtracking Algorithms
 
-### Concept 
+## Concept 
 **Backtracking** is a general algorithmic technique to solve problems by **recursively exploring all possible solutions**.
 
 **How does Backtracking work?**
@@ -16,7 +16,7 @@ Types of problems solved by backtracking algorithms:
 - Optimization Problem: search for the best possible solution.
 - Enumeration Problem: try to find all feasible solutions.
 
-### Implementation
+## Implementation
 Suppose you have two bikes 'B1' & 'B2'. And 1 car 'C'. Find all possible ways to arrange them. 
 
 **Constraint:** Car should not be between bikes.
@@ -25,7 +25,7 @@ Suppose you have two bikes 'B1' & 'B2'. And 1 car 'C'. Find all possible ways to
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class backtracking {
+public class Backtracking {
     public static void main(String[] args) {
         String[] vehicles = {"C", "B2", "B1"};
         arrangeVehicles(vehicles);
