@@ -183,10 +183,10 @@ public class AVL {
 
     private Node rightRotate(Node currentNode) {
         Node leftNode = currentNode.left;
-        Node T2 = leftNode.right;
+        Node tempNode = leftNode.right;
 
         leftNode.right = currentNode;
-        currentNode.left = T2;
+        currentNode.left = tempNode;
 
         currentNode.height = Math.max(height(currentNode.left), height(currentNode.right)) + 1;
         leftNode.height = Math.max(height(leftNode.left), height(leftNode.right)) + 1;
@@ -195,16 +195,16 @@ public class AVL {
     }
 
     private Node leftRotate(Node currentNode) {
-        Node leftNode = currentNode.right;
-        Node T2 = leftNode.left;
+        Node rightNode = currentNode.right;
+        Node tempNode = rightNode.left;
 
-        leftNode.left = currentNode;
-        currentNode.right = T2;
+        rightNode.left = currentNode;
+        currentNode.right = tempNode;
 
         currentNode.height = Math.max(height(currentNode.left), height(currentNode.right)) + 1;
-        leftNode.height = Math.max(height(leftNode.left), height(leftNode.right)) + 1;
+        rightNode.height = Math.max(height(rightNode.left), height(rightNode.right)) + 1;
 
-        return leftNode;
+        return rightNode;
     }
 
     public void printPreOrder() {
