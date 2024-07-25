@@ -144,7 +144,7 @@ public boolean isEmpty() {
         }
     }
 ```
-9.heapifyDown(int index) Method: Maintain the heap property. 
+9. heapifyDown(int index) Method: Maintain the heap property. 
 - Repeatedly swaps the element with its larger child until the heap property is satisfied.
 ```java
     public void heapifyDown(int index) {
