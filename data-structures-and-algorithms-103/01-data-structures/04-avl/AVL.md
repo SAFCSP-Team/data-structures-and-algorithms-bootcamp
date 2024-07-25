@@ -261,5 +261,5 @@ Output
 
 Project Title | 
 |:-----------:|
-|[AVL](https://github.com/SAFCSP-Team/avl-project/blob/main/README.md) |
+|[AVL](https://github.com/SAFCSP-Team/avl-project/tree/main) |
    
