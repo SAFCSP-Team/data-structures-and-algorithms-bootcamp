@@ -25,6 +25,7 @@ public class PriorityQueue {
 
         Node(int value) {
             this.value = value;
+            this.next = null;
         }
     }
 
@@ -34,8 +35,12 @@ public class PriorityQueue {
     public void add(int value) {
         Node newNode = new Node(value);
         
+        if(head == null) {
+            head = newNode;
+            return;
+        }
         // if the priority queue is empty or the new element has the highest priority
-        if (head == null || head.value > value) {
+        if (head.value > value) {
             newNode.next = head;
             head = newNode;
         } else { // if the new element has lower priority than the head
