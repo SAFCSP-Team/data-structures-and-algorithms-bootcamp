@@ -26,14 +26,15 @@ Figure 2: AVL tree
 <img width="910" alt="AVL" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/04-avl/Images/data-structures-and-algorithms-figuer-2.jpg">
 
 
-
 - AVL is a binary search tree itself, let's have a reminder of the binary search tree properties:    
        
 In a binary search tree, for any given node:   
 1. The value of every node in the left subtree is less than the value of the current node.     
 2. The value of every node in the right subtree is greater than the value of the current node.    
 3. Binary search trees do not allow duplicate values. If a value already exists in the tree and an insertion operation is performed with the same value, it is typically ignored.
+<br/>
 
+> There are multiple types of self-balancing trees, and AVL is one of them. 
 - AVL is a self-balancing tree
 
 Each node in the tree holds 2 information that helps to detect if the tree is balanced or not:   
