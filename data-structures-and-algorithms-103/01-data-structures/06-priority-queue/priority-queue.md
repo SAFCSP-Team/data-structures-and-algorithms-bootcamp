@@ -73,12 +73,14 @@ public class PriorityQueue {
     }
 }
 ```
+
 **OUTPUUT**
 ```
 1
 2
 3
-``
+```
+
 Project Title | 
 |:-----------:|
 |[Priority Queue](https://github.com/SAFCSP-Team/priority-queue) |
