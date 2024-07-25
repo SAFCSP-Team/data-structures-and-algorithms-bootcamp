@@ -80,6 +80,94 @@ public void DFS(int StartVerIndx) {
 
 
 ```
+  
+Vertex class   
+  
+```java
+package GraphDFS;
+
+public class Vertex {
+
+        char data;
+
+        public Vertex(char data) {
+            this.data = data;
+        }
+}
+
+```
+   
+Graph class   
+   
+```java
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Graph {
+
+    public ArrayList<LinkedList<Vertex>> vertices;
+
+    public Graph() {
+        vertices = new ArrayList<>();
+    }
+
+    public void addVertex(Vertex v) {
+        LinkedList<Vertex> list = new LinkedList<>();
+        list.add(v);
+        vertices.add(list);
+    }
+
+    public void addEdge(int src, int dst) {
+        LinkedList<Vertex> list = vertices.get(src); // get the list of vertices at index src
+        Vertex dstVertex = vertices.get(dst).get(0); // get the vertex at index dst
+        list.add(dstVertex); // add the vertex to the list
+    }
+
+    public void print() {
+        for (LinkedList<Vertex> list : vertices) {
+            for (Vertex node : list) {
+                System.out.print(node.data + " -> ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void DFS(int StartVerIndx) {
+        // Array to track visited vertices
+        boolean[] visited = new boolean[this.vertices.size()];
+    
+        Stack<Integer> stack = new Stack<>();
+        stack.push(StartVerIndx);
+    
+        while (!stack.isEmpty()) {
+            int vertexIndex = stack.pop();
+            if (!visited[vertexIndex]) {
+                visited[vertexIndex] = true;
+                System.out.print(vertices.get(vertexIndex).get(0).data + " ");
+    
+                LinkedList<Vertex> list = vertices.get(vertexIndex);
+                for (int i = 1; i < list.size(); i++) {
+                    int adjacentVertexIndex = getVertexIndex(list.get(i).data);
+                    if (!visited[adjacentVertexIndex]) {
+                        stack.push(adjacentVertexIndex);
+                    }
+                }
+            }
+        }
+    }
+    
+    private int getVertexIndex(char data) {
+        for (int i = 0; i < vertices.size(); i++) {
+            if (vertices.get(i).get(0).data == data) {
+                return i;
+            }
+        }
+        return -1;
+    }
+```
 
 Main method: 
   
