@@ -20,11 +20,11 @@ Dynamic programming is an algorithm technique that is used to solve problems. by
 2. **Bottom-up approach**(`tabulation`): This approach involves solving the problem iteratively and storing the subproblems' solutions to avoid redundancies.
 
 ## Example
-Let's take the Fibonacci sequence to demonstrate the dynamic programming technique.
+Let's take the Fibonacci sequence as an example.
 
 > * Fibonacci sequence is a series of numbers in which the next number is the sum of the two previous numbers subtracting the first number by -1 and the second number by -2, F n-1 + F n-2.
 > * Fibonacci sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34,... .
-> * Example: The fibonacci sequence of 6 is 3 + 5 = 8.
+> * Example: The Fibonacci sequence of 6 is 3 + 5 = 8.
 
 * **First:** Break down the problem into smaller subproblems.
 * **Second:** Solve each subproblem once and store the solution.
