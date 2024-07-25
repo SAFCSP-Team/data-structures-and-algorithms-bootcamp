@@ -6,7 +6,7 @@ Dynamic programming is an algorithm technique that is used to solve problems. by
 </p>
 
 > * Why do we use dynamic programming? To optimize the time complexity of an algorithm from `O(2^n)` to `O(n)` or `O(n^2)`. 
-> * By using dynamic programming we can find the number of ways to do something, and find an optimal solution to a problem. 
+> * By using dynamic programming we can find the number of ways to solve a problem and find an optimal solution to a problem. 
 
 
 ## Steps to Solve Dynamic Programming Problems
@@ -84,7 +84,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Main {
-  // memo will hold the solution of the subproblems the key is Fibonacci number and the value is the result.
+  // memo will hold the solution of the subproblems the key is the Fibonacci number and the value is the result.
   private static Map<Integer, Integer> memo = new HashMap<>();
 
 
