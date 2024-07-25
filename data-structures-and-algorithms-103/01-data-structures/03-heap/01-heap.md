@@ -226,6 +226,14 @@ Number 10 has been deleted
 Heap: 15 8 13 5 
 ```
 
+
+https://github.com/user-attachments/assets/e85b091d-b912-44b4-a8ce-b6d47171d174
+
+
+
+https://github.com/user-attachments/assets/7b3d8736-002b-4e0f-a32b-5926c9bac38b
+
+
 ### Projects
 
 |Project Title | Deadline |
