@@ -181,30 +181,30 @@ public class AVL {
 
     }
 
-    private Node rightRotate(Node y) {
-        Node x = y.left;
-        Node T2 = x.right;
+    private Node rightRotate(Node currentNode) {
+        Node leftNode = currentNode.left;
+        Node T2 = leftNode.right;
 
-        x.right = y;
-        y.left = T2;
+        leftNode.right = currentNode;
+        currentNode.left = T2;
 
-        y.height = Math.max(height(y.left), height(y.right)) + 1;
-        x.height = Math.max(height(x.left), height(x.right)) + 1;
+        currentNode.height = Math.max(height(currentNode.left), height(currentNode.right)) + 1;
+        leftNode.height = Math.max(height(leftNode.left), height(leftNode.right)) + 1;
 
-        return x;
+        return leftNode;
     }
 
-    private Node leftRotate(Node x) {
-        Node y = x.right;
-        Node T2 = y.left;
+    private Node leftRotate(Node currentNode) {
+        Node leftNode = currentNode.right;
+        Node T2 = leftNode.left;
 
-        y.left = x;
-        x.right = T2;
+        leftNode.left = currentNode;
+        currentNode.right = T2;
 
-        x.height = Math.max(height(x.left), height(x.right)) + 1;
-        y.height = Math.max(height(y.left), height(y.right)) + 1;
+        currentNode.height = Math.max(height(currentNode.left), height(currentNode.right)) + 1;
+        leftNode.height = Math.max(height(leftNode.left), height(leftNode.right)) + 1;
 
-        return y;
+        return leftNode;
     }
 
     public void printPreOrder() {
