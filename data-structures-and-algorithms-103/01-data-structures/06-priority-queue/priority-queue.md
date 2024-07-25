@@ -1,5 +1,5 @@
 # Priority Queue 
-In emergency rooms, patients wait in line or queue, and they are treated based on the highest priority, and not the order they arrived. Well, we have a data structure **Priority Queue** which behaves the same as an emergency queue, the element with the highest/lowest value gets processed first.  
+In emergency rooms, patients wait in line or queue, and they are treated based on **the highest priority**, and not the order in which they arrive. Well, we have a data structure **Priority Queue** which behaves the same as an emergency queue, the element with the highest/lowest value gets processed first.  
 
 ## Priority Queue 
 A priority queue is a data structure that stores an element based on its value priority. Either the highest or lowest priority element is dequeued/processed first.
@@ -11,7 +11,7 @@ There are several ways to implement a priority queue, and the most common ways a
 - Sorted Linked List
 - Balanced Binary Search Tree
 
-Implement Priority Queue using Sorted Linked List
+Implement `Priority Queue` using `Sorted Linked List`
 
 
 ```java
