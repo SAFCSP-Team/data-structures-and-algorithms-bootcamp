@@ -4,6 +4,7 @@ In emergency rooms, patients wait in line or queue, and they are treated based o
 ## Priority Queue 
 A priority queue is a data structure that stores an element based on its value priority. Either the highest or lowest priority element is dequeued/processed first.
 
+> Priority Queue elements are sorted based on the highest/lowest value.
 
 ## Implementations
 There are several ways to implement a priority queue, and the most common ways are:
