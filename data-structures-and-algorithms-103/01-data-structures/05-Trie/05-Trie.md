@@ -1,6 +1,6 @@
 # Trie
   
-Trie is a special type of tree, it was developed to solve multiple string-related problems. Storing strings in the Trie allows us to quickly search and retrieve worlds.   
+Trie is a special type of tree, it was developed to solve multiple string-related problems. Storing strings in the Trie allows us to quickly search and retrieve words.   
 <br/>
 <br/>
    
