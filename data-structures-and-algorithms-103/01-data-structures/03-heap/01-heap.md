@@ -48,6 +48,9 @@ public class MaxHeap {
         return count == 0; 
     }
 
+
+/* The purpose of the method is to dynamically resize the underlying array when it becomes full.*/
+
     public void ensureCapacity() {
         if (count == heap.length) { // Check if the array is full.
            // Resizes the array with double the length of the current array.
@@ -103,26 +106,27 @@ public class MaxHeap {
         return max;
     }
 
+/* The goal of this method is to maintain the heap property by "fixing" the heap after any action. By repeatedly swapping the element with its parent until the heap property is satisfied.*/
+
     public void heapifyUp(int index) {
         int parent = (index - 1) / 2; // Calculates the index of the parent element.
 
-        /* enters a loop that continues until the `index` reaches the root of the heap (index 0),
-           or the element at the current `index` is not greater than its parent.*/
-
+//enters a loop that continues until the `index` reaches the root of the heap (index 0),
+//or the element at the current `index` is not greater than its parent.
         while (index > 0 && heap[index] > heap[parent]) {
             swap(index, parent); // If the element is not the root and its value is greater than its parent's, swap them.
             index = parent;
             heapifyUp(index);
         }
     }
-
+/* The goal of this method is to maintain the heap property by "fixing" the heap after any action. By repeatedly swapping the element with its larger child until the heap property is satisfied.*/
     public void heapifyDown(int index) {
         int leftChild = 2 * index + 1; // Calculates the index of the left Child element.
         int rightChild = 2 * index + 2; // Calculates the index of the right Child element.
         int largest = index; // Store the index of the largest element, initializing it as the current index.
 
-        /* Checks if the leftchild index in the heap bounds, and the element in the leftchild index
-         is larger than the element at the largest index.*/
+// Checks if the leftchild index in the heap bounds,
+// and the element in the leftchild index is larger than the element at the largest index.
         if (leftChild < count && heap[leftChild] > heap[largest]) {  
             largest = leftChild; 
         }
