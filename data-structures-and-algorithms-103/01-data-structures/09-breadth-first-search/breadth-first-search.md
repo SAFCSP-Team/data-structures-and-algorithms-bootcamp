@@ -110,7 +110,7 @@ public class Main {
 
 the output
 ```java
-Breadth First Traversal starting from vertex 0: 0 1 2 3 4
+Breadth First search starting from vertex 0: 0 1 2 3 4
 ```
 ## Projects
 | Project Title | Deadline |
