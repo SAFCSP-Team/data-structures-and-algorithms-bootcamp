@@ -1,11 +1,10 @@
 # Weighted Graph
-<!-- Here I give a real life example of weighted graph -->
+<!-- Here I give a real-life example of a weighted graph -->
 If a graph edge has a value associated with it, then it is called a weighted graph. The value is referred to as the weight or cost of the edge.
 
 
-One of the use case of the weighted graph is map navigation. Where the **vertices** are the current location and destination and the **edges** are the roads which connected to the destination, and the **weights** are the distance between the two locations.
+One of the use cases of the weighted graph is map navigation. Where the **vertices** are the current location and destination the **edges** are the roads which connected to the destination, and the **weights** are the distance between the two locations.
 
-<!-- Image descripte the uses of weighted graph in map navigation -->
 
 ## Concept
 <!-- What is the weighted graph? -->
@@ -22,41 +21,70 @@ We can implement weighted graph using **Adjacency Matrix**, where each cell of t
 </p>
 
 ```java 
+import java.util.ArrayList;
+
 public class GraphWeighted {
 
+    class Vertex {
+        char data;
+
+        public Vertex(char data) {
+            this.data = data;
+        }
+    }
+
+    private ArrayList<Vertex> vertices = new ArrayList<>();
     private int[][] adjacencyMatrix;
 
     public GraphWeighted(int numVertices) {
         adjacencyMatrix = new int[numVertices][numVertices];
     }
 
-    public void addEdge(int source, int destination, int weight) {
-        adjacencyMatrix[source][destination] = weight;
-        adjacencyMatrix[destination][source] = weight;
+    public void addVertex(char data) {
+        vertices.add(new Vertex(data));
     }
 
-    public static void main(String[] args) {
+    public void addEdge(int source, int destination, int weight) {
+        adjacencyMatrix[source][destination] = weight;
+    }
 
-        GraphWeighted graph = new GraphWeighted(4);
-
-         // source , destination, weight
-        graph.addEdge(0, 1, 5);
-        graph.addEdge(1, 2, 13);
-        graph.addEdge(2, 3, 9);
-        graph.addEdge(3, 1, 7);
-        
-        // Print the adjacency matrix
-        for (int source = 0; source < 4; source++) {
-            for (int dest = 0; dest < 4; dest++) {
-                System.out.print(graph.adjacencyMatrix[source][dest] + "\t");
+    public void display() {
+        System.out.print("\t");
+        for (Vertex vertex : vertices) {
+            System.out.print(vertex.data + "\t");
+        }
+        System.out.println();
+        for (int i = 0; i < adjacencyMatrix.length; i++) {
+            System.out.print(this.vertices.get(i).data + "\t");
+            for (int j = 0; j < adjacencyMatrix[i].length; j++) {
+                System.out.print(adjacencyMatrix[i][j] + "\t");
             }
             System.out.println();
         }
     }
+
+    public static void main(String[] args) {
+        GraphWeighted graph = new GraphWeighted(3);
+        graph.addVertex('A');
+        graph.addVertex('B');
+        graph.addVertex('C');
+
+        graph.addEdge(0, 1, 2);
+        graph.addEdge(1, 2, 6);
+        graph.addEdge(2, 0, 8);
+
+        graph.display();
+    }
 }
 
 ```
-
+**OUTPUT**
+```
+        A       B       C
+A       0       2       0
+B       0       0       6
+C       8       0       0
+```
 ## Projects
 
 Project ID | Project Title | Deadline |
