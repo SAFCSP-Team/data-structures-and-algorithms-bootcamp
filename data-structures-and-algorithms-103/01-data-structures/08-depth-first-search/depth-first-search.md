@@ -34,7 +34,7 @@ Ex:
 Repeat till the end of the vertices   
 - Pop and print the vertex (B).   
 - Mark (B) as visited.     
-- ...   
+- Reapeat.
 
 
   
