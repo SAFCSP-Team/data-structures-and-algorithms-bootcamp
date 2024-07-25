@@ -27,7 +27,7 @@ Ex:
 - Push the first vertex to the stack (A).     
 - Pop and print the vertex (A).  
 - Mark (A) as visited.  
-- Loop the first list (A) -> (B), and check whether the vertex is traveled or not.    
+- Loop the first list (A) -> (B), and check whether the vertex is visited or not.    
 - Push the first list's **unvisited vertices** until the last vertex (B).       
 - The stack now has all the **unvisited vertices** of the first list. (A) is already visited so the stack now has only (B).  
   
