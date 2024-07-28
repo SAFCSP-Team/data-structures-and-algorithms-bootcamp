@@ -4,7 +4,7 @@
 
 A Greedy algorithm is an approach to solving a problem where the solution is fast and is the best solution based on the current situation. Sometimes it will not bring the most optimal result, but it will bring you close to it.
    
-Greedy algorithms are used to solve multiple famous problems. Some of these problems solutions do not bring the most optimal solution.
+Greedy algorithms are used to solve multiple famous problems.
 
 
 ### Class attendance problem:   
