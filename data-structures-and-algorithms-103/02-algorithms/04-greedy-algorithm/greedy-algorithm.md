@@ -138,8 +138,6 @@ public class TravelPlan {
     Place places[] = { new Place("Place 1", 1, 5), new Place("Place 2", 2, 10), new Place("Place 3", 1, 15),
             new Place("Place 4", 3, 5) };
 
-    TravelPlan() {
-    }
 
     public Place[] greedyAlgorithm() {
 
