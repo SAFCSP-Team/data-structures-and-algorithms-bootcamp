@@ -39,82 +39,111 @@ when a collision occurs, open addressing involves probing the table to find an a
 ## Implementation
 
 
+
+Create `Node` class.
+
+```java
+    private static class Node {
+        int key;
+        int value;
+        Node next;
+
+        public Node(int key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+```
+
 Create a hash table using the linked lists collision chaining technique 
 
 ```java
-import java.util.LinkedList;
-
-public class Hash {
-    // Number of buckets
+public class HashTable {
     private int size;
+    private Node[] table;
 
-    private  LinkedList<Integer>[] table;
-
-    public Hash(int size) {
+    public HashTable(int size) {
         this.size = size;
-        this.table = new LinkedList[size]; //  each position in the table initially points to an empty LinkedList.
-        for (int i = 0; i < size; i++) {  // iterates over each index in the table array.
-            table[i] = new LinkedList<>(); //to ensure that each bucket in the hash table initially points to an empty linked list, ready to store elements.
-          }
-        }
+        table = new Node[size];
+    }
 ```
 
 
- The `hashFunction()` method calculates the hash value for a given key and `insertItem()` method inserts a key into the hash table.
- 
+The `put` method inserts a new key-value pair into the hash table.
 ```java
-    public int hashFunction(int key) {
-        return (key % size);
-    }
 
-
-    public void insertItem(int key) {
-        // get the hash index of key
-        int index = hashFunction(key);
-        // insert key into hash table at that index
-        table[index].add(key);
-    }
-
-    public void displayHash() {
-        for (int i = 0; i < size; i++) {   //iterates through each bucket in the table array and prints the bucket index followed by the keys stored in the linked list at that index.
-            System.out.print(i);
-            for (int x : table[i]) {
-                System.out.print(" --> " + x);
+    public void put(int key, int value) {
+        int index = hash(key);
+        Node node = table[index];
+        if (node == null) {
+            table[index] = new Node(key, value);
+        } else {
+            while (node.next != null) {
+                node = node.next;
             }
-            System.out.println();
+            node.next = new Node(key, value);
         }
     }
-
-
 ```
-In the main method, an array a is created with keys to be inserted into the hash table.
+The `get` method retrieves the value associated with a given key.
 
 ```java
-    public static void main(String[] args) {
-        // array that contains keys to be mapped
-        int[] a = { 15, 11, 27, 8, 12, 3, 6};
-
-        Hash h = new Hash(7);
-
-        // insert the keys into the hash table
-        for (int x : a) {
-            h.insertItem(x);
+    public int get(int key) {
+        int index = hash(key);
+        Node node = table[index];
+        while (node != null) {
+            if (node.key == key) {
+                return node.value;
+            }
+            node = node.next;
         }
+        return -1; // not found
+    }
+```
 
-        // Display the hash table
-        h.displayHash();
+The `hash` method calculates the index of the table based on the key. 
+
+```java
+
+   private int hash(int key) {
+        return key % size;
+    }
+```
+
+Main method
+```java
+
+    public static void main(String[] args) {
+        HashTable hashTable = new HashTable(10);
+
+        hashTable.put(1, 10);
+        hashTable.put(2, 20);
+        hashTable.put(11, 30);
+        hashTable.put(12, 40);
+
+
+        System.out.println("Get value for key 1: " + hashTable.get(1));
+        System.out.println("Get value for key 2: " + hashTable.get(2));
+        System.out.println("Get value for key 11: " + hashTable.get(11));
+        System.out.println("Get value for key 12: " + hashTable.get(12));
+        System.out.println("Get value for key 3: " + hashTable.get(3));
+
+        
     }
 }
+
 ```
+
+
+
 output
 ```java
-0
-1 --> 15 --> 8
-2
-3 --> 3
-4 --> 11
-5 --> 12
-6 --> 27 --> 6
+Get value for key 1: 10
+Get value for key 2: 20
+Get value for key 11: 30
+Get value for key 12: 40
+Get value for key 3: -1
 ```
 
 ## Projects
