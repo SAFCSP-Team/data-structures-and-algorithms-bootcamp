@@ -76,7 +76,7 @@ After adding the new words, the Trie will be as the below Figure 3 shows:
    
 Figure 3   
 
-<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/t1%404x.png">
+<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/trie-fig-3.png">
 
 <br/>
 
