@@ -62,7 +62,7 @@ The Trie will be as the below figure 2 shows:
    
 Figure 2   
 
-<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/t3%404x.png">
+<img width="910" alt="Introduction to Trie" src="https://github.com/SAFCSP-Team/data-structures-and-algorithms-bootcamp/blob/main/data-structures-and-algorithms-103/01-data-structures/05-Trie/Images/t3@4x-fig-2.png">
 
 Trie provides a way to reduce redundancy by storing common prefixes of strings just once. In our case "**Se**" is the common prefix between **Se**e and **Se**at.   
 
