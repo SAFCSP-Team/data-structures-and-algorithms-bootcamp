@@ -56,8 +56,8 @@ price: 2000$
 - Solution:
    
 Using Greedy algorithm.    
-1. Pick the most expensive thing that will fit in your knapsack.
-2. Pick the next most expensive thing that will fit in your knapsack. And so on.
+1. Pick the most expensive item that will fit in your knapsack.
+2. Pick the next most expensive item that will fit in your knapsack. And so on.
    
 - Result:
    
