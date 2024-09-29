@@ -74,7 +74,7 @@ An example of the weighted graph is map navigation, where the **vertices** are t
 * **In-degree** - The number of edges pointing to a vertex in a directed graph.
 * **Out-degree** - The number of edges pointing out of a vertex in a directed graph.
 * **Path** - A path is a sequence of edges between two vertices.
-* **Self-Loop** - A self-loop is a vertex that has an edge to itself.
+* **Self-Loop** - A self-loop is an edge that connects a vertex to itself.
 
 > Vertex A is self-loop.
 
