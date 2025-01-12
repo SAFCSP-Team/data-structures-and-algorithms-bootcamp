@@ -13,7 +13,7 @@ Figure 1: Binary search tree (BST) vs AVL tree
 Now if we want to search for the value 6 in both trees, in a BST, we need to traverse through all the nodes in the tree to reach the target, **performing 5 steps**. On the other hand, in an AVL tree, we only need to **perform 2 steps** to reach our target
 
 
-The searching operation in the AVL tree is much faster than BST.
+The search operation in the AVL tree is much faster than that of BST.
 
 <br/>
 <br/>
@@ -46,11 +46,11 @@ Example: In Figure 2 the height for node `4` is:
 **{2}**.   
    
 3. `Balance factor`: is equal to **(height of left node - height of right node)**.   
-Example: In Figure 2 the balance factor for the node `4` is:   
+Example: In Figure 2 the balance factor for node `4` is:   
 **{1 - 1 = 0}**.   
 
 When calculating the balance factor for a particular node that has no left node (left child), the height of the left node is (-1), the same rule applies to the right node (right child) if there is no right node.   
-Example: In Figure 2 the balance factor for the node `6` is:   
+Example: In Figure 2 the balance factor for node `6` is:   
 **{ -1 - (-1) = -1 + 1 = 0}**.    
 <br/>
 - The tree is balanced when each node's balanced factor is either -1, 0, or 1. AVL is a self-balancing tree because it balances itself when the balance factor is not equal to these three values.     
