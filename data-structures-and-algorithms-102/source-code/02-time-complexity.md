@@ -1,4 +1,4 @@
-## finds the maximum value in an array of integers
+## find the maximum value in an array of integers
 ```java
     public static int findMax(int[] arr) {
         int max = 0;                                                                    
