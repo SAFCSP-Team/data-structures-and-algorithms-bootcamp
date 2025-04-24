@@ -33,44 +33,6 @@ History 11-12
 
 **The greedy algorithm is working very well in solving the problem and it does bring the most optimal solution to the class attendance problem.**   
       
-   
-### Knapsack problem:   
-
-
-Consider you have a basket that has a **capacity of 30kg** and a list of items. You should pick the most expensive items and fill the basket with it, without exceeding the basket capacity.
-
-- Items list:
-  
-TV:   
-weight: 30kg    
-price: 3000$    
-   
-Gaming Chair:    
-weight: 25kg    
-price: 1500$    
-
-MacBook laptop:    
-weight: 5kg     
-price: 2000$     
-   
-- Solution:
-   
-Using Greedy algorithm.    
-1. Pick the most expensive item that will fit in your knapsack.
-2. Pick the next most expensive item that will fit in your knapsack. And so on.
-   
-- Result:
-   
-The solution will pick the TV as it is the most expensive item and insert it in the basket. The basket will be holding 3000$ and 30kg, reaching the full basket capacity.   
-     
-- Discussion:
-
-The Greedy algorithm didn't bring the most optimal solution here!   
-The solution should pick a Gaming Chair and MacBook laptop, resulting in 3500$ and reaching the exact basket capacity of 30kg with more resulting value in it.   
-   
-**The Greedy algorithm doesn't bring the most optimal solution every time. But it's fast and easy to implement.**
-
-
 ## Example   
 
 **Travel plan problem**     
@@ -241,6 +203,6 @@ Name: Place 2 Time: 2 Score: 10
 ## Projects
 | Project Title | Deadline |
 :-----------:|:-------------|
-|[Greedy Algorithm](https://github.com/SAFCSP-Team/greedy-algorithm-project)|
+|[Greedy Algorithm](https://github.com/SAFCSP-Team/greedy-project)|
 
 
